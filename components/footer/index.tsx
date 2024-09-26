@@ -1,5 +1,15 @@
 import React from "react";
+import { FooterContainer } from "./styles";
+import GetInTouch from "../get-in-touch";
+import OurServices from "../our-services";
+import Social from "../social";
 
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <FooterContainer>
+      <GetInTouch />
+      <OurServices />
+      <Social />
+    </FooterContainer>
+  );
 };

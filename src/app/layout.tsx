@@ -6,10 +6,14 @@ import { ThemeProvider } from "@mui/material";
 import "./globals.css";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
-import createCache from "@emotion/cache";
-import { CacheProvider } from "@emotion/react";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import { Poppins } from "@next/font/google";
 
-const cache = createCache({ key: "css", prepend: true });
+const poppins = Poppins({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 // const metadata: Metadata = {
 //   title: "",
@@ -22,15 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <body>
-        <CacheProvider value={cache}>
+        <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />
             {children}
             <Footer />
           </ThemeProvider>
-        </CacheProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

@@ -1,3 +1,7 @@
+"use client";
+
+// it could be your App.tsx file or theme file that is included in your tsconfig.json
+
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
