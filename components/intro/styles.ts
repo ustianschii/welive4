@@ -24,7 +24,7 @@ export const Highlight = styled(MuiTypography)(({ theme }) => ({
   fontSize: theme.typography.h2.fontSize,
 }));
 
-export const Mission = styled(MuiTypography)(({}) => ({
+export const Mission = styled(MuiBox)(({}) => ({
   width: "50%",
   alignContent: "center",
   paddingLeft: "20px",
@@ -39,18 +39,18 @@ export const SubscribeContainer = styled(MuiBox)(({}) => ({
   display: "flex",
   marginTop: "30px",
   justifyContent: "flex-start",
-  gap: "30px",
+  gap: "10px",
 }));
 
 export const TextField = styled(MuiTextField)(({ theme }) => ({
   "& .MuiInputBase-root": {
-    borderRadius: "20px",
+    borderRadius: "20px 0 0 20px",
     backgroundColor: theme.palette.grey[200],
   },
 }));
 
 export const SubscribeButton = styled(MuiButton)(({}) => ({
-  borderRadius: "20px",
+  borderRadius: "0 20px 20px 0",
   textTransform: "none",
   fontSize: "16px",
 }));
