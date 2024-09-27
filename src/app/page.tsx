@@ -4,8 +4,7 @@
 import { Banner } from "../../components/banner";
 import { IntroText } from "../../components/intro";
 import { IntroSecondary } from "../../components/intro-secondary";
-
-// import { Banner } from "../../components/banner";
+import { Services } from "../../components/services";
 
 export default function Home() {
   return (
@@ -13,6 +12,7 @@ export default function Home() {
       <IntroText />
       <Banner />
       <IntroSecondary />
+      <Services />
     </>
   );
 }
