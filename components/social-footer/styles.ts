@@ -23,7 +23,11 @@ export const Links = styled(MuiBox)(({ theme }) => ({
   color: theme.palette.grey[300],
 }));
 
-export const Network = styled(MuiBox)(({ theme }) => ({
+export const Network = styled(MuiBox)(({}) => ({
   display: "flex",
   width: "100%",
+}));
+
+export const Typography = styled(MuiTypography)(({}) => ({
+  marginLeft: "10px",
 }));

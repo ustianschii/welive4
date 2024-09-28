@@ -1,11 +1,17 @@
 import {
   CardActionArea,
   CardActions,
-  CardContent,
   CardMedia,
   Typography,
 } from "@mui/material";
-import { Card, Description, Button, TitleIcon, SvgIcon } from "./styles";
+import {
+  Card,
+  Description,
+  Button,
+  TitleIcon,
+  SvgIcon,
+  CardContent,
+} from "./styles";
 import React from "react";
 import { ServiceCardTypes } from "./types";
 
@@ -18,7 +24,7 @@ export const ServiceCard: React.FC<ServiceCardTypes> = ({
   return (
     <Card>
       <CardActionArea>
-        <CardMedia component="img" height="140" image={image} />
+        <CardMedia component="img" height="250" image={image} />
         <CardContent>
           <TitleIcon>
             <Typography gutterBottom variant="h5" component="div">

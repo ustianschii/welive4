@@ -13,10 +13,11 @@ export const Wrapper = styled(MuiContainer)(({}) => ({
   padding: "30px 0",
 }));
 
-export const Title = styled(MuiTypography)(({}) => ({
+export const Title = styled(MuiTypography)(({ theme }) => ({
   width: "40%",
   lineHeight: "1.2",
   marginRight: "100px",
+  fontWeight: theme.typography.fontWeightMedium,
 }));
 
 export const Highlight = styled(MuiTypography)(({ theme }) => ({

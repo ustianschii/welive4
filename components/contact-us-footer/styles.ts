@@ -5,17 +5,20 @@ import {
 } from "@mui/material";
 
 export const Wrapper = styled(MuiBox)(({}) => ({
-  width: "35%",
+  width: "30%",
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: theme.typography.fontWeightBold,
-  fontSize: "30px",
+  fontSize: "25px",
   marginBottom: "10px",
 }));
 
-export const Address = styled(MuiTypography)(({}) => ({}));
-
-export const Copyright = styled(MuiTypography)(({}) => ({
-  marginTop: "50px",
+export const Links = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  height: "35%",
+  padding: "10px 0",
+  color: theme.palette.grey[300],
 }));

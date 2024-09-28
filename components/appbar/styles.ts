@@ -6,7 +6,10 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
-export const AppBar = styled(MuiAppBar)<AppBarProps>(({}) => ({}));
+export const AppBar = styled(MuiAppBar)<AppBarProps>(({}) => ({
+  backgroundColor: "white",
+  color: "black",
+}));
 
 export const SearchField = styled(MuiTextField)(({ theme }) => ({
   "& .MuiInputBase-root": {

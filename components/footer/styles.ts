@@ -16,3 +16,10 @@ export const Wrapper = styled(MuiBox)(({ theme }) => ({
   width: "100%",
   backgroundColor: theme.palette.grey[900],
 }));
+
+export const Box = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  width: "70%",
+  backgroundColor: theme.palette.grey[900],
+}));

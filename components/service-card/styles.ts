@@ -4,6 +4,7 @@ import {
   Button as MuiButton,
   Box as MuiBox,
   SvgIcon as MuiSvgIcon,
+  CardContent as MuiCardContent,
   styled,
 } from "@mui/material";
 
@@ -12,6 +13,10 @@ export const Card = styled(MuiCard)(({}) => ({
   margin: "10px",
   borderRadius: "20px",
   boxSizing: "border-box",
+}));
+
+export const CardContent = styled(MuiCardContent)(({}) => ({
+  padding: "20px",
 }));
 
 export const TitleIcon = styled(MuiBox)(({}) => ({
@@ -28,5 +33,5 @@ export const SvgIcon = styled(MuiSvgIcon)(({ theme }) => ({
 export const Button = styled(MuiButton)(({}) => ({
   borderRadius: "10px",
   textTransform: "none",
-  margin: "0 0 5px 5px",
+  margin: "0 0 10px 10px",
 }));
