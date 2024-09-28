@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { AppBar, SearchButtonIcon, SearchField } from "./styles";
+import { AppBar, SearchButtonIcon, SearchField, PagesButton } from "./styles";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { ROUTES } from "../../utils/constants";
 const pages = ["How It Works", "Pricing", "About Us"];
@@ -95,22 +95,9 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  mx: 3,
-                  color: "black",
-                  display: "block",
-                  fontFamily: "roboto",
-                  fontSize: "20px",
-                  textTransform: "none",
-                  fontWeight: "600",
-                }}
-              >
+              <PagesButton key={page} onClick={handleCloseNavMenu}>
                 {page}
-              </Button>
+              </PagesButton>
             ))}
           </Box>
           <Typography

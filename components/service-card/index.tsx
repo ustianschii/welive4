@@ -36,7 +36,7 @@ export const ServiceCard: React.FC<ServiceCardTypes> = ({
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" variant="contained">
+        <Button size="medium" variant="contained">
           Read more
         </Button>
       </CardActions>

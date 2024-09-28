@@ -32,7 +32,7 @@ export const Services = () => {
       <ServiceCard
         image="/images/simple.webp"
         title="Simple use"
-        description="A quick tap on your softphone will get all your smart devices to deliver the information you need."
+        description="A quick tap on your smartphone will get all your smart devices to deliver the information you need."
         icon={<SettingsIcon />}
       />
       <ServiceCard
