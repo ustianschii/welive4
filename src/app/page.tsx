@@ -5,6 +5,7 @@ import { Intro } from "../../components/intro";
 import { IntroSecondary } from "../../components/intro-secondary";
 import { Reviews } from "../../components/reviews";
 import { Services } from "../../components/services";
+import { reviews } from "../../components/review-card/reviews";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Intro />
       <IntroSecondary />
       <Services />
-      <Reviews />
+      <Reviews reviews={reviews} />
     </>
   );
 }
