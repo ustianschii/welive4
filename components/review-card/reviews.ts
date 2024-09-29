@@ -1,4 +1,6 @@
-export const reviews = [
+import { ReviewType } from "../reviews/types";
+
+export const reviews: ReviewType[] = [
   {
     name: "Jane Smith",
     text: "Floating entertainment center assemble and installation. Positive: Professionalism, Punctuality, Quality, Responsiveness, Value",

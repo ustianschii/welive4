@@ -18,6 +18,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
+  const [scrolled, setScrolled] = React.useState(false);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -27,8 +28,24 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" scrolled={scrolled}>
       <Container maxWidth="lg" disableGutters>
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
@@ -95,7 +112,11 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <PagesButton key={page} onClick={handleCloseNavMenu}>
+              <PagesButton
+                key={page}
+                onClick={handleCloseNavMenu}
+                scrolled={scrolled}
+              >
                 {page}
               </PagesButton>
             ))}
@@ -128,9 +149,10 @@ function ResponsiveAppBar() {
               id="outlined-basic"
               label="Search"
               variant="outlined"
+              size="small"
             ></SearchField>
-            <IconButton size="large">
-              <SearchButtonIcon />
+            <IconButton size="small">
+              <SearchButtonIcon scrolled={scrolled} />
             </IconButton>
           </Box>
         </Toolbar>
