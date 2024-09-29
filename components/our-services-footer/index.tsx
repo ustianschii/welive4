@@ -1,18 +1,24 @@
+import React from "react";
 import { Typography } from "@mui/material";
 import { Links, Title, Wrapper } from "./styles";
-import React from "react";
+
+const services = [
+  "Network",
+  "Home theater & entertainment",
+  "Smart home automation",
+  "Smart EV charger",
+  "Solar installation",
+  "TV Mounting",
+];
 
 const OurServices = () => {
   return (
     <Wrapper>
       <Title>Our services</Title>
       <Links>
-        <Typography>Network</Typography>
-        <Typography>Home theater & entertainment</Typography>
-        <Typography>Smart home automation</Typography>
-        <Typography>Smart EV charger</Typography>
-        <Typography>Solar installation</Typography>
-        <Typography>TV Mounting</Typography>
+        {services.map((service, index) => (
+          <Typography key={index}>{service}</Typography>
+        ))}
       </Links>
     </Wrapper>
   );

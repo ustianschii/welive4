@@ -78,6 +78,6 @@ export const StrongPointTitle = styled(MuiTypography)(({ theme }) => ({
   fontWeight: theme.typography.fontWeightBold,
 }));
 
-export const StrongPointContainer = styled(MuiTypography)(({}) => ({
+export const StrongPointContainer = styled(MuiBox)(({}) => ({
   display: "flex",
 }));

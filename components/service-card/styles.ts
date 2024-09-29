@@ -8,7 +8,7 @@ import {
   styled,
 } from "@mui/material";
 
-export const Card = styled(MuiCard)(({}) => ({
+export const Card = styled(MuiCard)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   position: "relative",
@@ -17,6 +17,10 @@ export const Card = styled(MuiCard)(({}) => ({
   borderRadius: "20px",
   boxSizing: "border-box",
   minHeight: "300px",
+  "&:hover": {
+    transform: "scale(1.01)", // Slightly enlarge the card on hover
+    boxShadow: theme.shadows[10], // Change the shadow on hover
+  },
 }));
 
 export const CardContent = styled(MuiCardContent)(({}) => ({

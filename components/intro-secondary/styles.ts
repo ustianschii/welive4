@@ -3,6 +3,7 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
   Button as MuiButton,
+  SvgIcon as MuiSvgIcon,
   styled,
 } from "@mui/material";
 
@@ -40,7 +41,33 @@ export const Button = styled(MuiButton)({
   margin: "30px 0 0 50px",
 });
 
-export const TextTitle = styled(MuiTypography)(({ theme }) => ({
+export const AchievementsTitle = styled(MuiBox)(({}) => ({
+  display: "flex",
+  justifyContent: "space-between",
+}));
+export const Achievements = styled(MuiBox)(({}) => ({
+  display: "flex",
+  flexDirection: "column",
+  gap: "20px",
+  margin: "0 0 0 90px",
+  justifyContent: "center",
+}));
+
+export const Achievement = styled(MuiBox)(({}) => ({
+  display: "flex",
+}));
+
+export const SvgIcon = styled(MuiSvgIcon)(({ theme }) => ({
+  color: theme.palette.primary.main,
+}));
+
+export const AchievementTitle = styled(MuiTypography)(({ theme }) => ({
+  fontSize: "18px",
+  fontWeight: theme.typography.fontWeightBold,
+  marginLeft: "10px",
+}));
+
+export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: theme.typography.fontWeightMedium,
   textAlign: "end",
 }));

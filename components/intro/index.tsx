@@ -16,7 +16,9 @@ import {
 import { Box } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-export const IntroText = () => {
+const strongPointsData = ["Vetted", "95% Retention rate", "Quality"];
+
+export const Intro = () => {
   return (
     <Wrapper disableGutters>
       <Box maxWidth={"50%"}>
@@ -38,24 +40,14 @@ export const IntroText = () => {
           <SubscribeButton variant="contained">Let&apos;s go</SubscribeButton>
         </SubscribeContainer>
         <StrongPoints>
-          <StrongPointContainer display={"flex"}>
-            <StrongPointIcon>
-              <CheckCircleOutlineIcon />
-            </StrongPointIcon>
-            <StrongPointTitle>Vetted</StrongPointTitle>
-          </StrongPointContainer>
-          <StrongPointContainer>
-            <StrongPointIcon>
-              <CheckCircleOutlineIcon />
-            </StrongPointIcon>
-            <StrongPointTitle>95% retention rate</StrongPointTitle>
-          </StrongPointContainer>
-          <StrongPointContainer>
-            <StrongPointIcon>
-              <CheckCircleOutlineIcon />
-            </StrongPointIcon>
-            <StrongPointTitle>Quality</StrongPointTitle>
-          </StrongPointContainer>
+          {strongPointsData.map((point, index) => (
+            <StrongPointContainer key={index}>
+              <StrongPointIcon>
+                <CheckCircleOutlineIcon />
+              </StrongPointIcon>
+              <StrongPointTitle>{point}</StrongPointTitle>
+            </StrongPointContainer>
+          ))}
         </StrongPoints>
       </Box>
       <SmartHomeImg />

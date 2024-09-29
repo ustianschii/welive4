@@ -3,13 +3,25 @@ import {
   BannerBox,
   ConsultationBox,
   ConsultationTitle,
-  TextTitle,
+  Title,
   Button,
   Wrapper,
   Highlight,
   Description,
   TextBox,
+  AchievementsTitle,
+  Achievements,
+  Achievement,
+  AchievementTitle,
+  SvgIcon,
 } from "./styles";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+
+const achievements = [
+  { title: "2000+ Smart Devices Installed" },
+  { title: "100% Customer Satisfaction" },
+  { title: "Customizable Smart Solutions" },
+];
 
 export const IntroSecondary = () => {
   return (
@@ -23,11 +35,22 @@ export const IntroSecondary = () => {
         </ConsultationBox>
       </BannerBox>
       <TextBox>
-        <TextTitle variant="h2">
-          A <Highlight>Smarter</Highlight> Way to
-          <Highlight>Live</Highlight>
-        </TextTitle>
-
+        <AchievementsTitle>
+          <Achievements>
+            {achievements.map((achievement, index) => (
+              <Achievement key={index}>
+                <SvgIcon>
+                  <CheckCircleOutlineIcon />
+                </SvgIcon>
+                <AchievementTitle>{achievement.title}</AchievementTitle>
+              </Achievement>
+            ))}
+          </Achievements>
+          <Title variant="h2">
+            A <Highlight>Smarter</Highlight> Way to
+            <Highlight>Live</Highlight>
+          </Title>
+        </AchievementsTitle>
         <Description>
           Smart technology has many cool designs and solutions to make your life
           more comfortable and bring additional passive income to your

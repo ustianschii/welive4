@@ -1,16 +1,18 @@
 "use client";
 // import styles from "./page.module.css";
 
-import { IntroText } from "../../components/intro";
+import { Intro } from "../../components/intro";
 import { IntroSecondary } from "../../components/intro-secondary";
+import { Reviews } from "../../components/reviews";
 import { Services } from "../../components/services";
 
 export default function Home() {
   return (
     <>
-      <IntroText />
+      <Intro />
       <IntroSecondary />
       <Services />
+      <Reviews />
     </>
   );
 }

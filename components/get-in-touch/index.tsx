@@ -18,6 +18,7 @@ const GetInTouch = () => {
           id="outlined-basic"
           label="Enter your email"
           variant="outlined"
+          size="small"
         />
         <SubscribeButton variant="contained">Subscribe</SubscribeButton>
       </SubscribeContainer>
