@@ -37,11 +37,10 @@ export const Card = styled(MuiCard)(({}) => ({
 }));
 
 export const Name = styled(MuiTypography)(({}) => ({
-  marginBottom: "10px",
+  // marginBottom: "10px",
 }));
 export const Description = styled(MuiTypography)(({}) => ({
-  fontWeight: "450",
-  fontSize: "15px",
+  fontSize: "16px",
 }));
 export const NameRating = styled(MuiBox)(({}) => ({
   display: "flex",

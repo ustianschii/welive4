@@ -12,8 +12,8 @@ import {
   StrongPointIcon,
   StrongPointTitle,
   StrongPointContainer,
+  Box,
 } from "./styles";
-import { Box } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 const strongPointsData = ["Vetted", "95% Retention rate", "Quality"];
@@ -21,7 +21,7 @@ const strongPointsData = ["Vetted", "95% Retention rate", "Quality"];
 export const Intro = () => {
   return (
     <Wrapper disableGutters>
-      <Box maxWidth={"50%"}>
+      <Box>
         <Title variant="h2">
           Welcome to <Highlight>WeLive4</Highlight>
           Your home is your <Highlight>Smart future</Highlight>
