@@ -3,7 +3,8 @@ import { ReviewType } from "../reviews/types";
 export const reviews: ReviewType[] = [
   {
     name: "Jane Smith",
-    text: "Floating entertainment center assemble and installation. Positive: Professionalism, Punctuality, Quality, Responsiveness, Value",
+    text: "Just simply amazing, I am so glad Anton from heyo smart reached out to me with a very decent and competitive quote. Anton provides an exceptionally good service, he is very calm, knowledgeable and resourceful, he helped me in setting up my home theater, mounting a 75 inch TV on the wall, and concealing the wires. Very professional service and I Highly recommended others to reach out to him to setup a smart home or anything.",
+
     rating: 5,
   },
   {
@@ -18,7 +19,8 @@ export const reviews: ReviewType[] = [
   },
   {
     name: "Jack Black",
-    text: "Just simply amazing, I am so glad Anton from heyo smart reached out to me with a very decent and competitive quote. Anton provides an exceptionally good service, he is very calm, knowledgeable and resourceful, he helped me in setting up my home theater, mounting a 75 inch TV on the wall, and concealing the wires. Very professional service and I Highly recommended others to reach out to him to setup a smart home or anything.",
+    text: "Floating entertainment center assemble and installation. Positive: Professionalism, Punctuality, Quality, Responsiveness, Value",
+
     rating: 5,
   },
 ];

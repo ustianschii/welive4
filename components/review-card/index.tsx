@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-import { Box, Card, CardContent, IconButton, Typography } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { CardContent, IconButton, Typography } from "@mui/material";
+
 import { Review as ReviewType } from "../review-card/types";
+import {
+  Wrapper,
+  Card,
+  Name,
+  Description,
+  NameRating,
+  ArrowBack,
+  ArrowForward,
+} from "./styles";
 
 interface ReviewContainerProps {
   reviews: ReviewType[];
@@ -25,41 +33,36 @@ export const Review: React.FC<ReviewContainerProps> = ({ reviews }) => {
   const displayedReviews = reviews.slice(currentIndex, currentIndex + 2);
 
   return (
-    <Box>
-      <Box display="flex" justifyContent="space-between" alignItems="stretch">
-        <IconButton onClick={handlePrev} disabled={currentIndex === 0}>
-          <ArrowBackIcon />
-        </IconButton>
+    <Wrapper>
+      <IconButton
+        onClick={handlePrev}
+        disabled={currentIndex === 0}
+        disableRipple
+        sx={{
+          color: currentIndex === 0 ? "lightgray" : "primary.main", // Disabled state color
+        }}
+      >
+        <ArrowBack />
+      </IconButton>
+      {displayedReviews.map((review, index) => (
+        <Card key={index}>
+          <CardContent sx={{ overflow: "hidden", p: "20px" }}>
+            <Description variant="body2">{review.text}</Description>
+            <NameRating>
+              <Name variant="h5">{review.name}</Name>
+              <Typography variant="caption">⭐⭐⭐⭐⭐</Typography>
+            </NameRating>
+          </CardContent>
+        </Card>
+      ))}
 
-        <Box sx={{ display: "flex", flex: 1 }}>
-          {displayedReviews.map((review, index) => (
-            <Card
-              key={index}
-              sx={{
-                marginBottom: 2,
-                width: "50%",
-                boxSizing: "border-box",
-                height: "200px",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <CardContent sx={{ flex: 1 }}>
-                <Typography variant="h6">{review.name}</Typography>
-                <Typography variant="body2">{review.text}</Typography>
-                <Typography variant="caption">{review.rating} ⭐</Typography>
-              </CardContent>
-            </Card>
-          ))}
-        </Box>
-
-        <IconButton
-          onClick={handleNext}
-          disabled={currentIndex + 2 >= reviews.length}
-        >
-          <ArrowForwardIcon />
-        </IconButton>
-      </Box>
-    </Box>
+      <IconButton
+        onClick={handleNext}
+        disabled={currentIndex + 2 >= reviews.length}
+        disableRipple
+      >
+        <ArrowForward />
+      </IconButton>
+    </Wrapper>
   );
 };
