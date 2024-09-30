@@ -24,16 +24,14 @@ export const Footer = () => {
         disableGutters
         sx={{ display: "flex", color: "white", p: "40px 0" }}
       >
-        <Box sx={{ maxWidth: "50%" }}>
+        <Box maxWidth={"50%"}>
           <Typography>Copyright 2024. All rights reserved.</Typography>
         </Box>
         <Box
-          sx={{
-            maxWidth: "50%",
-            display: "flex",
-            justifyContent: "end",
-            gap: "20px",
-          }}
+          maxWidth={"50%"}
+          display={"flex"}
+          justifyContent={"end"}
+          gap={"20px"}
         >
           <Typography>Privacy Policy</Typography>
           <Typography>Terms of Use</Typography>
