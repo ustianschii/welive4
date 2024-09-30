@@ -1,16 +1,13 @@
 import {
   AppBar as MuiAppBar,
-  // AppBarProps,
   TextField as MuiTextField,
   Button as MuiButton,
+  Box as MuiBox,
+  Typography as MuiTypography,
   styled,
 } from "@mui/material";
+import { TypographyProps } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-
-// export const AppBar = styled(MuiAppBar)<AppBarProps>(({}) => ({
-//   backgroundColor: "white",
-//   color: "black",
-// }));
 
 export const AppBar = styled(MuiAppBar)<{ scrolled: boolean }>(
   ({ scrolled, theme }) => ({
@@ -19,6 +16,48 @@ export const AppBar = styled(MuiAppBar)<{ scrolled: boolean }>(
     transition: "background-color 0.3s ease-in-out",
   })
 );
+
+export const MenuContainer = styled(MuiBox)(({ theme }) => ({
+  flexGrow: 1,
+  display: "flex",
+  [theme.breakpoints.up("md")]: {
+    display: "none",
+  },
+}));
+
+export const PagesContainer = styled(MuiBox)(({ theme }) => ({
+  flexGrow: 0.5,
+  display: "none",
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+  },
+  color: "black",
+}));
+
+export const MobileTitle = styled(MuiTypography)<TypographyProps>(
+  ({ theme }) => ({
+    marginRight: theme.spacing(2),
+    flexGrow: 1,
+    fontFamily: "roboto",
+    fontWeight: 700,
+    letterSpacing: ".3rem",
+    color: "inherit",
+    textDecoration: "none",
+    display: "flex",
+    [theme.breakpoints.up("md")]: {
+      display: "none",
+    },
+  })
+);
+
+export const SearchBox = styled(MuiBox)(({ theme }) => ({
+  flexGrow: 1,
+  display: "none",
+  justifyContent: "flex-end",
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+  },
+}));
 
 export const SearchField = styled(MuiTextField)(({ theme }) => ({
   "& .MuiInputBase-root": {

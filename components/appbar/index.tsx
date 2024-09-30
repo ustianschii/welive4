@@ -1,17 +1,24 @@
 "use client";
-
 import * as React from "react";
-import { AppBar, SearchButtonIcon, SearchField, PagesButton } from "./styles";
-import Box from "@mui/material/Box";
+import {
+  AppBar,
+  SearchButtonIcon,
+  SearchField,
+  PagesButton,
+  MenuContainer,
+  MobileTitle,
+  PagesContainer,
+  SearchBox,
+} from "./styles";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-// import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { ROUTES } from "../../utils/constants";
+
 const pages = ["How It Works", "Pricing", "About Us"];
 
 function ResponsiveAppBar() {
@@ -48,8 +55,7 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" scrolled={scrolled}>
       <Container maxWidth="lg" disableGutters>
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <MenuContainer>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -82,35 +88,11 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "roboto",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
+          </MenuContainer>
+          <MobileTitle variant="h5" noWrap component="a">
             WeLive4
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 0.5,
-              display: {
-                xs: "none",
-                md: "flex",
-                color: "black",
-              },
-            }}
-          >
+          </MobileTitle>
+          <PagesContainer>
             {pages.map((page) => (
               <PagesButton
                 key={page}
@@ -120,7 +102,7 @@ function ResponsiveAppBar() {
                 {page}
               </PagesButton>
             ))}
-          </Box>
+          </PagesContainer>
           <Typography
             variant="h6"
             noWrap
@@ -138,13 +120,7 @@ function ResponsiveAppBar() {
           >
             WeLive4
           </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: "flex",
-              justifyContent: "flex-end",
-            }}
-          >
+          <SearchBox>
             <SearchField
               id="outlined-basic"
               label="Search"
@@ -154,7 +130,7 @@ function ResponsiveAppBar() {
             <IconButton size="small">
               <SearchButtonIcon scrolled={scrolled} />
             </IconButton>
-          </Box>
+          </SearchBox>
         </Toolbar>
       </Container>
     </AppBar>
