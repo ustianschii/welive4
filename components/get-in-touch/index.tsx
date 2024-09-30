@@ -1,5 +1,5 @@
 import React from "react";
-import { Address, Title, Wrapper, Copyright } from "./styles";
+import { Address, Title, Wrapper } from "./styles";
 import {
   SubscribeButton,
   SubscribeContainer,
@@ -22,7 +22,6 @@ const GetInTouch = () => {
         />
         <SubscribeButton variant="contained">Subscribe</SubscribeButton>
       </SubscribeContainer>
-      <Copyright>Copyright 2024</Copyright>
     </Wrapper>
   );
 };

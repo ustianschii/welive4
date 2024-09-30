@@ -15,7 +15,3 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 }));
 
 export const Address = styled(MuiTypography)(({}) => ({}));
-
-export const Copyright = styled(MuiTypography)(({}) => ({
-  marginTop: "50px",
-}));

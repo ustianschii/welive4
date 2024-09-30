@@ -5,6 +5,7 @@ import OurServices from "../our-services-footer";
 import Social from "../social-footer";
 import { ContactUs } from "../contact-us-footer";
 import { Map } from "../google-map/index";
+import { Container, Divider, Typography } from "@mui/material";
 
 export const Footer = () => {
   return (
@@ -18,6 +19,26 @@ export const Footer = () => {
           <ContactUs />
         </Box>
       </FooterContainer>
+      <Divider variant="middle" sx={{ mb: "10px", backgroundColor: "grey" }} />
+      <Container
+        disableGutters
+        sx={{ display: "flex", color: "white", p: "40px 0" }}
+      >
+        <Box sx={{ maxWidth: "50%" }}>
+          <Typography>Copyright 2024. All rights reserved.</Typography>
+        </Box>
+        <Box
+          sx={{
+            maxWidth: "50%",
+            display: "flex",
+            justifyContent: "end",
+            gap: "20px",
+          }}
+        >
+          <Typography>Privacy Policy</Typography>
+          <Typography>Terms of Use</Typography>
+        </Box>
+      </Container>
     </Wrapper>
   );
 };
