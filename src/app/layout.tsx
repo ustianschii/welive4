@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material";
 import "./globals.css";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
+import { Analytics } from "../../components/analytics/analytics";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { Poppins } from "next/font/google";
 
@@ -27,6 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className}>
+      <Analytics />
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

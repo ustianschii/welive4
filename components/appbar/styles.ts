@@ -36,16 +36,20 @@ export const PagesContainer = styled(MuiBox)(({ theme }) => ({
 
 export const MobileTitle = styled(MuiTypography)<TypographyProps>(
   ({ theme }) => ({
-    marginRight: theme.spacing(2),
+    display: "flex",
+    marginRight: theme.spacing(5),
     flexGrow: 1,
     fontFamily: "roboto",
     fontWeight: 700,
     letterSpacing: ".3rem",
     color: "inherit",
     textDecoration: "none",
-    display: "flex",
     [theme.breakpoints.up("md")]: {
       display: "none",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      justifyContent: "center",
     },
   })
 );

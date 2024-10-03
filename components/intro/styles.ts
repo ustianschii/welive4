@@ -58,6 +58,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     width: "100%",
     padding: "0 10px",
+    whiteSpace: "pre-line",
   },
 }));
 
