@@ -1,3 +1,4 @@
+"use client";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,

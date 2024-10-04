@@ -1,3 +1,4 @@
+"use client";
 import {
   Card as MuiCard,
   Typography as MuiTypography,

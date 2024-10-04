@@ -1,3 +1,4 @@
+"use client";
 import {
   AppBar as MuiAppBar,
   TextField as MuiTextField,
@@ -9,13 +10,15 @@ import {
 import { TypographyProps } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
-export const AppBar = styled(MuiAppBar)<{ scrolled: boolean }>(
-  ({ scrolled, theme }) => ({
-    backgroundColor: scrolled ? theme.palette.primary.main : "white",
-    color: scrolled ? "white" : "black",
-    transition: "background-color 0.3s ease-in-out",
-  })
-);
+interface AppBarProps {
+  scrolled: boolean;
+}
+
+export const AppBar = styled(MuiAppBar)<AppBarProps>(({ scrolled, theme }) => ({
+  backgroundColor: scrolled ? theme.palette.primary.main : "white",
+  color: scrolled ? "white" : "black",
+  transition: "background-color 0.3s ease-in-out",
+}));
 
 export const MenuContainer = styled(MuiBox)(({ theme }) => ({
   flexGrow: 1,
@@ -77,7 +80,7 @@ export const SearchButtonIcon = styled(SearchIcon)<{ scrolled: boolean }>(
   })
 );
 
-export const PagesButton = styled(MuiButton)<{ scrolled: boolean }>(
+export const PagesButton = styled(MuiButton)<AppBarProps>(
   ({ scrolled, theme }) => ({
     margin: theme.spacing(2, 3),
     color: scrolled ? "white" : "black",
