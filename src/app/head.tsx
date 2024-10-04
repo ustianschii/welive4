@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Analytics } from "../../components/analytics/analytics";
 
 interface MetaProps {
   title: string;
@@ -14,6 +15,7 @@ export const Meta = ({
   return (
     <>
       <Head>
+        <Analytics />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content={keywords.join(", ")} />
         <meta name="description" content={description} />
