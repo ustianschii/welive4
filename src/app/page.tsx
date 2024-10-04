@@ -6,10 +6,12 @@ import { IntroSecondary } from "../../components/intro-secondary";
 import { Reviews } from "../../components/reviews";
 import { Services } from "../../components/services";
 import { reviews } from "../../components/review-card/reviews";
+import { Meta } from "./head";
 
 export default function Home() {
   return (
     <>
+      <Meta />
       <Intro />
       <IntroSecondary />
       <Services />

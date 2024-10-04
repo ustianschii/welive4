@@ -2,7 +2,6 @@
 
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material";
-// import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
@@ -16,11 +15,6 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// const metadata: Metadata = {
-//   title: "",
-//   description: "",
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className}>
-      <Analytics />
       <body>
+        <Analytics />
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Header />

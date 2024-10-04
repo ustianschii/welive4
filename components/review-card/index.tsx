@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { CardContent, IconButton, Typography } from "@mui/material";
 
