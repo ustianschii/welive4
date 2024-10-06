@@ -1,5 +1,3 @@
-// "use client";
-
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material";
 import "./globals.css";

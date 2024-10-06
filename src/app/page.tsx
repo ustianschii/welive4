@@ -1,4 +1,3 @@
-// "use client";
 // import styles from "./page.module.css";
 // de hotarit cu dark theme
 import { Intro } from "../../components/intro";
