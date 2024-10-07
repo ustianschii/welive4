@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <meta charSet="utf-8" />
         {/* <link rel="icon" href="logos/favicon.svg" type="image/svg+xml" /> */}
-        <title>WeLive4</title>
+        <title>WeLive4.</title>
       </Head>
       <body>
         <AppRouterCacheProvider>
