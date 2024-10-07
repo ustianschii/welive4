@@ -1,16 +1,21 @@
-import Head from "next/head";
-import { Poppins } from "next/font/google";
-import { ThemeProvider } from "@mui/material";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
-import { Analytics } from "../../components/analytics/analytics";
-import theme from "../styles/theme";
-import "./globals.css";
+import { Open_Sans, Raleway } from "next/font/google";
 
-const poppins = Poppins({
-  weight: ["400", "700"],
+import { ThemeProvider } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+
+import theme from "../styles/theme";
+import { Header } from "../../components/header";
+
+export const opensans = Open_Sans({
   subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  display: "swap",
+});
+
+export const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
   display: "swap",
 });
 
@@ -20,27 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.className}>
-      <Head>
-        <Analytics />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content={"welive4"} />
-        <meta
-          name="description"
-          content={
-            "Business & Smart Home Automation Design, Installation and support."
-          }
-        />
-        <meta charSet="utf-8" />
-        {/* <link rel="icon" href="logos/favicon.svg" type="image/svg+xml" /> */}
-        <title>WeLive4.</title>
-      </Head>
+    <html lang="en">
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
+            <CssBaseline />
             <Header />
             {children}
-            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
