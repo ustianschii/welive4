@@ -1,9 +1,10 @@
-"use client";
+// "use client";
 import {
   Container as MuiContainer,
   Box as MuiBox,
-  styled,
+  // styled,
 } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 export const FooterContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

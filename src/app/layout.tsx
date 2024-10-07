@@ -1,12 +1,12 @@
-import theme from "../styles/theme";
+import Head from "next/head";
+import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@mui/material";
-import "./globals.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { Poppins } from "next/font/google";
 import { Analytics } from "../../components/analytics/analytics";
-import Head from "next/head";
+import theme from "../styles/theme";
+import "./globals.css";
 
 const poppins = Poppins({
   weight: ["400", "700"],
