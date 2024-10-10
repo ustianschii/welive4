@@ -10,16 +10,13 @@ import {
   Container,
   Logo,
   AppBar,
-  LogoBox,
   CustomMenuIcon,
   DropDownMenu,
   Toolbar,
-  HeaderTextBox,
-  Title,
-  Highlighted,
-  Subtitle,
-  Button,
+  LogoBox,
 } from "./styles";
+import { HeaderProps } from "./types";
+import { Button } from "@mui/material";
 
 const pages = [
   "HOME",
@@ -33,7 +30,11 @@ const pages = [
   "BOOK NOW",
 ];
 
-export const Header = () => {
+export const Header: React.FC<HeaderProps> = ({
+  title,
+  button,
+  background,
+}) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -47,7 +48,7 @@ export const Header = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" background={background}>
       <Container maxWidth="xl" disableGutters>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -71,6 +72,7 @@ export const Header = () => {
           <LogoBox>
             <Logo />
           </LogoBox>
+
           <DropDownMenu>
             <IconButton
               size="large"
@@ -117,16 +119,8 @@ export const Header = () => {
             ))}
           </Box>
         </Toolbar>
-        <HeaderTextBox>
-          <Title>
-            WELCOME TO<Highlighted>WE LIVE 4</Highlighted>
-          </Title>
-          <Subtitle>
-            YOUR HOME IS <br /> YOUR <br />
-            <Highlighted>SMART FUTURE</Highlighted>
-          </Subtitle>
-        </HeaderTextBox>
-        <Button variant="outlined">GET A FREE QUOTE!</Button>
+        {title}
+        {button}
       </Container>
     </AppBar>
   );

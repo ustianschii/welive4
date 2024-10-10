@@ -5,7 +5,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 
 import theme from "../styles/theme";
-import { Header } from "../../components/header";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -30,7 +29,6 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Header />
             {children}
           </ThemeProvider>
         </AppRouterCacheProvider>
