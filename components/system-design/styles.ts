@@ -2,15 +2,15 @@ import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
-  Button as MuiButton,
 } from "@mui/material";
-import { DARK_GRAY, SEMI_BOLD, WHITE, BOLD } from "@/styles/constants";
+
+import { DARK_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     backgroundColor: DARK_GRAY,
-    height: "550px",
+    height: "content-fit",
   },
 }));
 
@@ -33,19 +33,6 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "50px",
-  },
-}));
-
-export const Button = styled(MuiButton)(({ theme }) => ({
-  color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    height: "60px",
-    fontFamily: opensans.style.fontFamily,
-    fontSize: "16px",
-    lineHeight: "120%",
-    fontWeight: BOLD,
-    border: "1px solid white",
+    paddingBottom: "20px",
   },
 }));

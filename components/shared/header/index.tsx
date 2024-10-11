@@ -17,6 +17,7 @@ import {
 } from "./styles";
 import { HeaderProps } from "./types";
 import { Button } from "@mui/material";
+import { GreenDivider } from "../green-divider";
 
 const pages = [
   "HOME",
@@ -122,6 +123,7 @@ export const Header: React.FC<HeaderProps> = ({
         {title}
         {button}
       </Container>
+      <GreenDivider />
     </AppBar>
   );
 };

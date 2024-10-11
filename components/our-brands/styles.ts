@@ -28,6 +28,6 @@ export const Box = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     width: "100%",
-    height: "180px",
+    height: "50%",
   },
 }));

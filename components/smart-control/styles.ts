@@ -2,19 +2,32 @@ import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
-  Button as MuiButton,
+  Box as MuiBox,
 } from "@mui/material";
-import { DARK_GRAY, SEMI_BOLD, WHITE, BOLD } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { DARK_GRAY, SEMI_BOLD, WHITE, REGULAR } from "@/styles/constants";
+import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     backgroundColor: DARK_GRAY,
-    height: "550px",
+    height: "content-fit",
   },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
+  color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: REGULAR,
+  lineHeight: "1.1",
+  textAlign: "center",
+
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "21px",
+    padding: "30px 0 20px 0",
+  },
+}));
+
+export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   fontWeight: SEMI_BOLD,
@@ -22,30 +35,16 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "35px",
-    padding: "35px 0",
+    fontSize: "30px",
   },
 }));
 
-export const Description = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
-  fontFamily: raleway.style.fontFamily,
-  textAlign: "center",
+export const CardContainer = styled(MuiBox)(({ theme }) => ({
+  display: "grid",
 
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "50px",
-  },
-}));
-
-export const Button = styled(MuiButton)(({ theme }) => ({
-  color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    height: "60px",
-    fontFamily: opensans.style.fontFamily,
-    fontSize: "16px",
-    lineHeight: "120%",
-    fontWeight: BOLD,
-    border: "1px solid white",
+    gap: "10px",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    padding: "30px 10px",
   },
 }));

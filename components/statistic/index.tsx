@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Container, Description, Title } from "./styles";
 import { Highlighted } from "../hero-title/styles";
-import { Box } from "@mui/material";
-import { GRAY } from "@/styles/constants";
+import { GreenDivider } from "../shared/green-divider";
+import { Separator } from "../shared/gray-separator";
 
 export const Statistic = () => {
   return (
@@ -24,7 +24,8 @@ export const Statistic = () => {
         </Description>
         <Button>GET A FREE QUOTE!</Button>
       </Container>
-      <Box width="100%" height="35px" sx={{ backgroundColor: GRAY }} />
+      <GreenDivider />
+      <Separator />
     </>
   );
 };

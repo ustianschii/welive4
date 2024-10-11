@@ -4,11 +4,13 @@ import { HeroTitle } from "../../components/hero-title";
 import { CustomButton } from "../../components/shared/header-button/index";
 import { MainServices } from "../../components/main-services/index";
 
-import { Divider } from "@mui/material";
-
-import { GREEN } from "@/styles/constants";
 import { OurBrands } from "../../components/our-brands";
 import { Statistic } from "../../components/statistic";
+import { RGBW } from "../../components/rgbw";
+import { SystemDesign } from "../../components/system-design";
+import { SmartControl } from "../../components/smart-control";
+import { Everyone } from "../../components/everyone";
+import { HowWeWorks } from "../../components/how-we-works";
 
 export default function Home() {
   return (
@@ -18,12 +20,14 @@ export default function Home() {
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
         background={`url('/header-mobile/hero-top.png')`}
       />
-      <Divider sx={{ background: GREEN, height: "3px" }} />
       <MainServices />
       <OurBrands />
-      <Divider sx={{ background: GREEN, height: "3px" }} />
       <Statistic />
-      <Divider sx={{ background: GREEN, height: "3px" }} />
+      <RGBW />
+      <SystemDesign />
+      <SmartControl />
+      <Everyone />
+      <HowWeWorks />
     </>
   );
 }
