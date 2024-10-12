@@ -1,17 +1,6 @@
 import { styled } from "@mui/material/styles";
-import {
-  Container as MuiContainer,
-  Typography as MuiTypography,
-  Box as MuiBox,
-} from "@mui/material";
-import {
-  BLACK,
-  GRAY,
-  LIGHT_BLACK,
-  REGULAR,
-  SEMI_BOLD,
-  WHITE,
-} from "@/styles/constants";
+import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
+import { LIGHT_BLACK, REGULAR, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiBox)(({ theme }) => ({

@@ -1,7 +1,4 @@
 "use client";
-import { Header } from "../../components/shared/header";
-import { HeroTitle } from "../../components/hero-title";
-import { CustomButton } from "../../components/shared/header-button/index";
 import { MainServices } from "../../components/main-services/index";
 
 import { OurBrands } from "../../components/our-brands";

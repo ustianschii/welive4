@@ -3,7 +3,6 @@ import { Box, Typography } from "@mui/material";
 
 import Image from "next/image";
 
-import { GreenDivider } from "../shared/green-divider";
 import { Container, LogoContainer, CustomLink, CardContainer } from "./styles";
 import { Card } from "../review-card";
 import { data } from "./data";
