@@ -1,51 +1,35 @@
-import {
-  Box as MuiBox,
-  Card as MuiCard,
-  Typography as MuiTypography,
-  styled,
-} from "@mui/material";
-import ArrowBackIosIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { styled } from "@mui/material/styles";
+import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
+import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { opensans, raleway } from "@/app/layout";
+import { BorderBottom } from "@mui/icons-material";
 
-export const Wrapper = styled(MuiBox)(({}) => ({
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "stretch",
-  marginBottom: "100px",
-}));
-
-export const ArrowBack = styled(ArrowBackIosIosIcon)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  fontSize: "35px",
-  "&.Mui-disabled": {
-    color: "lightgray", // This will change the color when disabled
+export const Container = styled(MuiBox)(({ theme }) => ({
+  position: "relative",
+  backgroundColor: GRAY,
+  [theme.breakpoints.down("sm")]: {
+    minHeight: "300px",
+    borderRadius: "15px",
+    padding: "10px 10px",
   },
 }));
-export const ArrowForward = styled(ArrowForwardIosIcon)(({ theme }) => ({
-  color: theme.palette.primary.main,
-  fontSize: "35px",
+
+export const Title = styled(MuiTypography)(({ theme }) => ({
+  color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  lineHeight: "1.1",
+
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "21px",
+    padding: "15px 0",
+  },
 }));
 
-export const Card = styled(MuiCard)(({}) => ({
-  display: "flex",
-  width: "40%",
-  margin: "0 10px",
-  boxSizing: "border-box",
-  minHeight: "280px",
-  flexDirection: "column",
-  position: "relative",
-}));
-
-export const Name = styled(MuiTypography)(({}) => ({
-  // marginBottom: "10px",
-}));
-export const Description = styled(MuiTypography)(({}) => ({
-  fontSize: "16px",
-}));
-export const NameRating = styled(MuiBox)(({}) => ({
-  display: "flex",
-  position: "absolute",
-  bottom: 20,
-  left: 20,
-  flexDirection: "column",
+export const Review = styled(MuiTypography)(({ theme }) => ({
+  color: WHITE,
+  fontFamily: raleway.style.fontFamily,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "14px",
+    marginBottom: "40px",
+  },
 }));

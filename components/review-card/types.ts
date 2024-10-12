@@ -1,5 +1,4 @@
-export interface Review {
+export interface CardTypes {
   name: string;
-  text: string;
-  rating: number; // Assuming rating is out of 5
+  review: string;
 }
