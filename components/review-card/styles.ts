@@ -1,8 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
-import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { GRAY, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
-import { BorderBottom } from "@mui/icons-material";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   position: "relative",

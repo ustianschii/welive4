@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Divider, Typography } from "@mui/material";
+import { Divider } from "@mui/material";
 
 import Image from "next/image";
 
@@ -19,7 +19,7 @@ import {
   AdressBox,
   Copyright,
 } from "./styles";
-import { BLACK, GRAY, WHITE } from "@/styles/constants";
+import { GRAY } from "@/styles/constants";
 
 export const Footer = () => {
   const ABOUT_US_LINKS = ["Privacy policy", "Our brands", "Reviews", "Blog"];
