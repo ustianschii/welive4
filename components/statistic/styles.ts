@@ -46,6 +46,6 @@ export const Button = styled(MuiButton)(({ theme }) => ({
     fontSize: "16px",
     lineHeight: "120%",
     fontWeight: BOLD,
-    border: "1px solid white",
+    border: "2px solid white",
   },
 }));

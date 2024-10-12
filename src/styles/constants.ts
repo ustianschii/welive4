@@ -4,6 +4,7 @@ export const WHITE = "#fff";
 export const DARK_GRAY = "#646464";
 export const GRAY = "#adadad";
 export const BLACK = "#000";
+export const LIGHT_BLACK = "#151517";
 
 export const REGULAR = "400";
 export const MEDIUM = "500";

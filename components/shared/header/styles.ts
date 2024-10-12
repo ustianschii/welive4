@@ -34,27 +34,6 @@ export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
   },
 }));
 
-export const LogoBox = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "280px",
-    height: "158px",
-  },
-}));
-
-export const Logo = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    width: "233px",
-    height: "70px",
-    backgroundImage: `url('/header-mobile/logo.png')`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-}));
-
 export const DropDownMenu = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     display: "flex",

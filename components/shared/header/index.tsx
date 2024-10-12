@@ -8,16 +8,15 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import {
   Container,
-  Logo,
   AppBar,
   CustomMenuIcon,
   DropDownMenu,
   Toolbar,
-  LogoBox,
 } from "./styles";
 import { HeaderProps } from "./types";
 import { Button } from "@mui/material";
 import { GreenDivider } from "../green-divider";
+import Image from "next/image";
 
 const pages = [
   "HOME",
@@ -70,10 +69,12 @@ export const Header: React.FC<HeaderProps> = ({
           >
             LOGO
           </Typography>
-          <LogoBox>
-            <Logo />
-          </LogoBox>
-
+          <Image
+            alt="logo"
+            src="/header-mobile/logo.png"
+            width={240}
+            height={120}
+          />
           <DropDownMenu>
             <IconButton
               size="large"

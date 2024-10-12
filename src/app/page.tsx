@@ -10,16 +10,13 @@ import { RGBW } from "../../components/rgbw";
 import { SystemDesign } from "../../components/system-design";
 import { SmartControl } from "../../components/smart-control";
 import { Everyone } from "../../components/everyone";
-import { HowWeWorks } from "../../components/how-we-works";
+import { HowWeWork } from "../../components/how-we-work";
+import { WhyChoose } from "../../components/why-choose";
+import { Reviews } from "../../components/reviews";
 
 export default function Home() {
   return (
     <>
-      <Header
-        title={<HeroTitle />}
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        background={`url('/header-mobile/hero-top.png')`}
-      />
       <MainServices />
       <OurBrands />
       <Statistic />
@@ -27,7 +24,9 @@ export default function Home() {
       <SystemDesign />
       <SmartControl />
       <Everyone />
-      <HowWeWorks />
+      <HowWeWork />
+      <WhyChoose />
+      <Reviews />
     </>
   );
 }

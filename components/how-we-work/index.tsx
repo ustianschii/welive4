@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Title, Description, CardContainer, Button } from "./styles";
 import { Highlighted } from "../hero-title/styles";
-import { Card } from "../how-we-works-card";
+import { Card } from "../how-we-work-card";
 import { CardData } from "./data";
 
-export const HowWeWorks = () => {
+export const HowWeWork = () => {
   return (
     <Container disableGutters>
       <Title>
         HOW WE <br />
-        <Highlighted>WORKS</Highlighted>
+        <Highlighted>WORK</Highlighted>
       </Title>
       <Description>
         Providing exceptional customer care is a core value at WE LIVE 4, and we
