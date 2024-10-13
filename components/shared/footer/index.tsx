@@ -4,8 +4,6 @@ import { Divider } from "@mui/material";
 
 import Image from "next/image";
 
-import { GreenDivider } from "../green-divider";
-
 import {
   Container,
   Description,
@@ -20,8 +18,9 @@ import {
   Copyright,
 } from "./styles";
 import { GRAY } from "@/styles/constants";
+import { FooterProps } from "./types";
 
-export const Footer = () => {
+export const Footer: React.FC<FooterProps> = ({ divider }) => {
   const ABOUT_US_LINKS = ["Privacy policy", "Our brands", "Reviews", "Blog"];
   const OUR_LOCATION_LINKS = [
     "Pennsylvania",
@@ -32,7 +31,7 @@ export const Footer = () => {
 
   return (
     <>
-      <GreenDivider />
+      {divider}
       <Container disableGutters>
         <Image
           alt="logo"

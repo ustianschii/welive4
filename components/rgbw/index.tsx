@@ -8,7 +8,7 @@ import { GREEN } from "@/styles/constants";
 import { Separator } from "../shared/gray-separator";
 import { GreenDivider } from "../shared/green-divider";
 
-export const RGBW = () => {
+export const Rgbw = () => {
   return (
     <>
       <Container disableGutters>

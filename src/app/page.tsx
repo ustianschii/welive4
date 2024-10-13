@@ -1,9 +1,8 @@
 "use client";
 import { MainServices } from "../../components/main-services/index";
-
 import { OurBrands } from "../../components/our-brands";
 import { Statistic } from "../../components/statistic";
-import { RGBW } from "../../components/rgbw";
+import { Rgbw } from "../../components/rgbw";
 import { SystemDesign } from "../../components/system-design";
 import { SmartControl } from "../../components/smart-control";
 import { Everyone } from "../../components/everyone";
@@ -17,7 +16,7 @@ export default function Home() {
       <MainServices />
       <OurBrands />
       <Statistic />
-      <RGBW />
+      <Rgbw />
       <SystemDesign />
       <SmartControl />
       <Everyone />

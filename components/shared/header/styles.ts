@@ -9,22 +9,30 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 interface AppBarProps {
   background?: string;
+  backcolor?: string;
+}
+interface ContainerProps {
+  height?: string;
 }
 
-export const AppBar = styled(MuiAppBar)<AppBarProps>(({ background }) => ({
-  backgroundColor: "transparent",
-  backgroundImage: background,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-}));
+export const AppBar = styled(MuiAppBar)<AppBarProps>(
+  ({ background, backcolor }) => ({
+    backgroundColor: backcolor,
+    backgroundImage: background ? background : "none",
+    backgroundRepeat: background ? "no-repeat" : "",
+    backgroundSize: background ? "cover" : "",
+    backgroundPosition: background ? "center" : "",
+  })
+);
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    height: "773px",
-    position: "relative",
-  },
-}));
+export const Container = styled(MuiContainer)<ContainerProps>(
+  ({ theme, height }) => ({
+    [theme.breakpoints.down("sm")]: {
+      height: height,
+      position: "relative",
+    },
+  })
+);
 
 export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
