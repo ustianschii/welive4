@@ -31,6 +31,7 @@ const pages = [
 
 export const Header: React.FC<HeaderProps> = ({
   title,
+  subtitle,
   button,
   background,
   backcolor,
@@ -127,6 +128,7 @@ export const Header: React.FC<HeaderProps> = ({
         </Toolbar>
         {dividerTop}
         {title}
+        {subtitle}
         {button}
       </Container>
       {divider}

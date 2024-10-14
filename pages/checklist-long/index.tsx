@@ -1,11 +1,12 @@
 import React from "react";
 import ChecklistLayout from "./layout";
+import { ChecklistLongFields } from "../../components/cheklist-long-fields";
 
 export default function ChecklistLong() {
   return (
     <>
       <ChecklistLayout>
-        <div>long</div>
+        <ChecklistLongFields />
       </ChecklistLayout>
     </>
   );

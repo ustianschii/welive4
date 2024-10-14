@@ -24,6 +24,7 @@ export default function ChecklistLayout({
             below
           </Subtitle>
         }
+        height="350px"
       />
       {children}
       <Footer />
