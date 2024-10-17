@@ -13,7 +13,7 @@ export const Typography = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "16px",
+    fontSize: "15px",
     margin: "0 10px 10px 10px",
   },
 }));
