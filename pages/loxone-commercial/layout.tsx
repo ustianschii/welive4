@@ -16,7 +16,7 @@ export default function CommercialLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="50px 0 30px 0">
+          <Subtitle m="50px 0 0 0">
             <Highlighted> LOXONE</Highlighted>FOR <br /> COMMERCIAL
           </Subtitle>
         }

@@ -23,7 +23,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const Highlighted = styled("span")(({}) => ({
+export const Highlighted = styled("span")(() => ({
   color: GREEN,
   marginLeft: "0.25em",
   marginRight: "0.25em",

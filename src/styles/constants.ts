@@ -1,4 +1,5 @@
 export const GREEN = "#59B202";
+export const BRIGHT_GREEN = "#69C350";
 export const GREEN_DARK = "#438006";
 export const WHITE = "#fff";
 export const GRAY = "#adadad";
