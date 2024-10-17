@@ -13,7 +13,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     backgroundColor: DARK_GRAY,
-    height: "5content-fit",
+    height: "content-fit",
   },
 }));
 

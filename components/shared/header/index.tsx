@@ -15,7 +15,6 @@ import {
 } from "./styles";
 import { HeaderProps } from "./types";
 import { Button } from "@mui/material";
-import { GreenDivider } from "../green-divider";
 import Image from "next/image";
 
 const pages = [
@@ -32,8 +31,13 @@ const pages = [
 
 export const Header: React.FC<HeaderProps> = ({
   title,
+  subtitle,
   button,
   background,
+  backcolor,
+  divider,
+  dividerTop,
+  height,
 }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -48,15 +52,15 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <AppBar position="static" background={background}>
-      <Container maxWidth="xl" disableGutters>
+    <AppBar position="static" background={background} backcolor={backcolor}>
+      <Container maxWidth="xl" disableGutters height={height}>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href=""
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -109,6 +113,7 @@ export const Header: React.FC<HeaderProps> = ({
               ))}
             </Menu>
           </DropDownMenu>
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
@@ -121,10 +126,12 @@ export const Header: React.FC<HeaderProps> = ({
             ))}
           </Box>
         </Toolbar>
+        {dividerTop}
         {title}
+        {subtitle}
         {button}
       </Container>
-      <GreenDivider />
+      {divider}
     </AppBar>
   );
 };

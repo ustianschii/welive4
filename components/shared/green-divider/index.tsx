@@ -4,5 +4,5 @@ import { Divider } from "@mui/material";
 import { GREEN } from "@/styles/constants";
 
 export const GreenDivider = () => {
-  return <Divider sx={{ background: GREEN, height: "3px" }} />;
+  return <Divider flexItem sx={{ background: GREEN, height: "2px" }} />;
 };
