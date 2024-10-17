@@ -5,7 +5,7 @@ import { ReturnOnInvestments } from "../../components/return-on-investment";
 import { ApplicationScenarios } from "../../components/application-scenarios";
 import { GreenBanner } from "../../components/shared/green-banner";
 
-import { data } from "./data";
+import { data } from "../../components/shared/green-banner/data-loxone-commercial";
 import { KeyFeatures } from "../../components/key-features";
 import { PartneredInstaller } from "../../components/partnered-installer";
 import { ActionBanner } from "../../components/shared/action-banner";
