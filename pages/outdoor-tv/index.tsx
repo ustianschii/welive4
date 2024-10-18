@@ -4,7 +4,6 @@ import OutdoorLayout from "./layout";
 import { GrayCardsBox } from "../../components/shared/gray-cards";
 import { grayCardsDataOutdoorTV } from "../../components/shared/gray-cards/data";
 import { BlackCardsBox } from "../../components/outdoor-tv-brands/index";
-import { tvBrands } from "../../components/outdoor-tv-brands/data";
 
 export default function Outdoor() {
   return (
@@ -14,7 +13,7 @@ export default function Outdoor() {
         imgheight={400}
         imgwidth={388}
       />
-      <BlackCardsBox data={tvBrands} />
+      <BlackCardsBox />
     </OutdoorLayout>
   );
 }
