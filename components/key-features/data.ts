@@ -62,3 +62,62 @@ export const data = [
     ],
   },
 ];
+
+export const dataLoxoneCommercial = [
+  {
+    icon: "/loxone-commercial/energy-management.png",
+    title: "Energy Management",
+    features: [
+      "Cut costs and save energy effortlessly! Our smart tech tracks usage, automates tasks, and adapts to your routine. Integrated with solar panels, it's your ticket to a sustainable living.",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/HVAC-control.png",
+    title: "HVAC Control",
+    features: [
+      "Save up to 40% on energy bills while customizing room temperatures for comfort. With automatic adjustments based on occupancy and easy control through the Loxone App.",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/lighting.png",
+    title: "Lighting",
+    features: [
+      "Loxone’s smart lights adjust to your needs, with dimming and color control for the perfect atmosphere. They save energy by automatically turning off when not needed.",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/shading.png",
+    title: "Shading",
+    features: [
+      "Save energy, enhance privacy, and enjoy comfort. Loxone’s blinds adjust to natural light, boost security, and can be controlled remotely.",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/security-access-control.png",
+    title: "Security & Access Control",
+    features: [
+      "Enjoy peace of mind with features like motion detection and video intercoms, all manageable through the Loxone App. Protect your privacy without cloud subscriptions.",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/audio.png",
+    title: "Audio",
+    features: [
+      "Enjoy personalized sound in every room, from waking up to your favorite tunes to enhancing movie nights with high-quality audio. Control it all from anywhere with the Loxone App.",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/outdoor-management.png",
+    title: "Outdoor Management",
+    features: [
+      "Automate maintenance tasks like pool cleaning and garden watering for hassle-free upkeep. Plus, you can set the perfect mood with automated lighting and music control",
+    ],
+  },
+  {
+    icon: "/loxone-commercial/aal.png",
+    title: "Ambient Assisted Living (AAL)",
+    features: [
+      "From preventing falls to regulating temperature, Loxone fosters comfort and well-being. No more reliance on caregivers while ensuring peace of mind with remote access via Loxone App.",
+    ],
+  },
+];
