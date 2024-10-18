@@ -35,7 +35,7 @@ export default function ResidentialLayout({
         }
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

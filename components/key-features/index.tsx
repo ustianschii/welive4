@@ -2,10 +2,11 @@ import React from "react";
 
 import { KeyFeaturesCard } from "../shared/key-features-card";
 
-import { data } from "./data";
+// import { data } from "./data";
 import { Container } from "./styles";
+import { KeyFeaturesProps } from "./types";
 
-export const KeyFeatures = () => {
+export const KeyFeatures: React.FC<KeyFeaturesProps> = ({ data }) => {
   return (
     <Container disableGutters>
       {data.map((item, index) => (
