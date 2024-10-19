@@ -75,9 +75,10 @@ export const Header: React.FC<HeaderProps> = ({
           </Typography>
           <Image
             alt="logo"
-            src="/header-mobile/logo.png"
+            src="/header-mobile/logo.svg"
             width={240}
             height={120}
+            style={{ marginLeft: "10px" }}
           />
           <DropDownMenu>
             <IconButton

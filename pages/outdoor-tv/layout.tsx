@@ -29,12 +29,12 @@ export default function OutdoorLayout({
         height="775px"
         divider={<GreenDivider />}
         subtitle={
-          <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSULVANIA & DELAWARE" />
+          <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE" />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

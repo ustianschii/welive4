@@ -43,3 +43,62 @@ export const grayCardsDataOutdoorTV = [
       "You may turn your outside area into a comfortable gathering place for enjoyment with our help. Don't let barriers inside your home limit your free time. Get an outdoor TV mount service today to enjoy your outdoor living space!",
   },
 ];
+
+export const grayCardsDataFrameTV = [
+  {
+    image: "/outdoor-tv/frame-tv-demo.png",
+    title: "What Is A Frame TV?",
+    firstdescription:
+      "When you're not watching TV, The Frame transforms into a beautiful work of art. The Frame comes preloaded with different types of art from various world-renowned artists.",
+    seconddescription:
+      "If you're a budding artist yourself, or just want something a bit more personal up on the big screen, you can upload your own photos and display them on The Frame.",
+    thirddescription:
+      "To give your gallery even more variety you can purchase additional artwork from the Art Store or a subscription for unlimited access to the vast collection.",
+  },
+];
+
+export const grayCardsDataEnergyManagement = [
+  {
+    image: "/energy-management/car-charger.svg",
+    title: "EV Charging Installation",
+    maindescription:
+      "Electric vehicles are the future, and WE LIVE 4 provides seamless EV charging installation. Loxone integrates energy management system in electric vehicle, allowing you to:",
+    firsttitle: "SCHEDULE CHARGING",
+    firstdescription:
+      "Take advantage of off-peak electricity rates by scheduling charging cycles during low-demand periods.",
+    secondtitle: "SOLAR INTEGRATION",
+    seconddescription:
+      "Our system ensures your EV gets charged using solar energy whenever available, minimizing your grid dependency.",
+    thirdtitle: "MONITOR CHARGING STATUS",
+    thirddescription:
+      "Conveniently track charging progress and energy consumption through our control app.",
+  },
+  {
+    image: "/energy-management/solar-panels.svg",
+    title: "Solar Power Systems",
+    maindescription:
+      "WE LIVE 4 offers expert installation of solar energy management systems. Paired with Loxone, you can maximize solar energy utilization, reduce reliance on the grid, and potentially see significant savings on your electricity bills.",
+    firsttitle: "SMARTLY MANAGE ENERGY FLOW",
+    firstdescription:
+      "Our system prioritizes solar energy usage, ensuring your home utilizes self-generated power whenever possible.",
+    secondtitle: "OPTIMIZE BATTERY STORAGE (IF APPLICABLE)",
+    seconddescription:
+      "If you've got a battery storage system, our system ensures optimal charging and discharging cycles, prolonging battery life and boosting self-sufficiency.",
+    thirdtitle: "REAL-TIME ENERGY MONITORING",
+    thirddescription:
+      "Keep tabs on your solar power generation and consumption in real-time with the easy-to-use control app.",
+  },
+];
+
+export const grayCardsDataEnergyManagementSecond = [
+  {
+    image: "/energy-management/wallbox.svg",
+    title: "Sustainable Wallbox",
+    firsttitle: "RIGHT-SIZED POWER FOR YOU",
+    firstdescription:
+      "We look at your electrical setup to find the right charger type, either single-phase or three-phase, to make sure the EV home charger installation goes smoothly and you can charge efficiently. WE LIVE 4 helps you cut your carbon footprint and makes charging easy for your busy life.",
+    secondtitle: "CONTROLLED BY SOLAR ENERGY",
+    seconddescription:
+      "WE LIVE 4 offers more than just driving. Our team will take care of the EV charging installation and provide ongoing support, so you can enjoy the convenience and savings of solar-powered charging with no hassle. ",
+  },
+];

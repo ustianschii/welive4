@@ -4,11 +4,21 @@ import { CardBox, Container, CardTitle, Description, Title } from "./styles";
 import { Highlighted } from "../../hero-title/styles";
 import { BlackCardsBoxProps } from "./types";
 
-export const BlackCardsBox: React.FC<BlackCardsBoxProps> = ({ data }) => {
+export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
+  data,
+  titlestart,
+  titleend,
+  titlehighlightedstart,
+  titlehighlightedend,
+}) => {
   return (
     <Container disableGutters>
       <Title>
-        OUR<Highlighted>SOLUTIONS</Highlighted>
+        <Highlighted>{titlehighlightedstart}</Highlighted> <br />
+        {titlestart}
+        <Highlighted>{titlehighlightedend}</Highlighted>
+        {titleend}
+        {/* OUR<Highlighted>SOLUTIONS</Highlighted> */}
       </Title>
       {data.map((item, index) => (
         <CardBox key={index}>

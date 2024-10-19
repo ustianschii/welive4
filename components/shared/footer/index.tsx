@@ -35,7 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
       <Container disableGutters>
         <Image
           alt="logo"
-          src="/header-mobile/logo.png"
+          src="/header-mobile/logo.svg"
           width={240}
           height={120}
         />

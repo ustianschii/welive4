@@ -56,3 +56,48 @@ export const blackCardsData = [
       "With this technology, you can get the internet in remote locations where traditional infrastructure won’t work or is nonexistent. ",
   },
 ];
+
+export const blackCardsOutdoorTvData = [
+  {
+    title: "FROM TELEVISION TO MASTERPIECE",
+    firstdescription:
+      "With the exclusive Art Mode feature, your TV becomes a canvas for your favorite artworks, NFTs, and personal photo collections. Enjoy a curated exhibition of your choosing, whether it's the art you've subscribed to or purchased from the Samsung Art Store, or your very own NFTs and photos.",
+    seconddescription:
+      "Immerse yourself in a gallery-like experience with the WE LIVE 4 Frame TV Installation Service can transform your downtime into an opportunity to appreciate and showcase your unique taste in art, right in the comfort of your home",
+  },
+  {
+    title: "STYLISH SAMSUNG BEZEL OPTIONS",
+    firstdescription:
+      "Customize not just the color but also the style of your bezel with WE LIVE 4. WE LIVE 4 makes it easy to achieve a fresh new look in a snap – our interchangeable bezels are magnetic, allowing you to effortlessly switch them at your whim.",
+    seconddescription:
+      "Personalize your space, reflect your style, and enjoy the versatility of WE LIVE 4 Samsung Frame TV Installation Service with Samsung bezel options. More colors, more styles, more you – because your TV should be as unique as your home.",
+  },
+];
+
+export const blackCardsOutdoorTvSecondData = [
+  {
+    title: "PERSONALIZED CONSULTATION",
+    firstdescription:
+      "We understand that every space is different, and our consultation service ensures that your Frame TV is mounted with precision and finesse, perfectly complementing your interior while delivering an immersive viewing experience.",
+  },
+  {
+    title: "FLAWLESS WIRE CONCEALMENT",
+    firstdescription:
+      "Effortlessly achieve a clean, wire-free flush mount for your Frame TV, ensuring a sleek and polished look, with VersaBox installation to discreetly conceal your Frame TV One Connect Box, cable box, or video streaming device.",
+  },
+  {
+    title: "COMPREHENSIVE TV BASIC SETUP",
+    firstdescription:
+      "Thoroughly perform the TV's basic setup, fine-tuning every detail to meet your preferences and specifications.",
+  },
+  {
+    title: "AV DEVICE CONNECTION & CONFIGURATION",
+    firstdescription:
+      "Seamlessly connect and configure all AV devices, guaranteeing a hassle-free and integrated entertainment system.",
+  },
+  {
+    title: "24/7 POST-INSTALLATION TECH SUPPORT",
+    firstdescription:
+      "Whether you have questions about optimizing settings, need adjustments, or encounter any concerns, our dedicated support team is just a call away.",
+  },
+];

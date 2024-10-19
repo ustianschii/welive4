@@ -16,27 +16,25 @@ export const BlackCardsBox = () => {
           OUTDOOR TV <br /> BRANDS
         </Highlighted>
       </Title>
-      {tvBrands.map((item, index) => (
-        <>
+      {tvBrands.map((item) => (
+        <React.Fragment key={item.id}>
           <Image
             alt="tv-brand"
             src={item.tvbrand}
-            height={40}
-            width={230}
+            height={35}
+            width={260}
             style={{ objectFit: "fill" }}
           />
-          <CardBox key={index}>
-            <CardTitle>{item.firsttitle}</CardTitle>
-            <Description>{item.firstdescription}</Description>
-            <CardTitle>{item.secondtitle}</CardTitle>
-            <Description>{item.seconddescription}</Description>
-            <CardTitle>{item.thirdtitle}</CardTitle>
-            <Description>{item.thirddescription}</Description>
+          <CardBox>
+            {item.features.map((feature, index) => (
+              <React.Fragment key={index}>
+                <CardTitle>{feature.title}</CardTitle>
+                <Description>{feature.description}</Description>
+              </React.Fragment>
+            ))}
           </CardBox>
-        </>
+        </React.Fragment>
       ))}
     </Container>
   );
 };
-
-//unique key prop

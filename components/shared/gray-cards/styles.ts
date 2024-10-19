@@ -5,8 +5,14 @@ import {
   Typography as MuiTypography,
 } from "@mui/material";
 
-import { DARK_GRAY, LIGHT_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import {
+  DARK_GRAY,
+  GREEN,
+  LIGHT_GRAY,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
+import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: LIGHT_GRAY,
@@ -39,12 +45,20 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
+export const Subtitle = styled(MuiTypography)(({ theme }) => ({
+  color: GREEN,
+  fontFamily: opensans.style.fontFamily,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "20px",
+    marginBottom: "10px",
+  },
+}));
+
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "start",
   [theme.breakpoints.down("sm")]: {
-    padding: "0 40px",
     marginBottom: "10px",
     fontSize: "15px",
   },

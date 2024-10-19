@@ -1,6 +1,6 @@
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
-import { raleway } from "@/app/layout";
+import { opensans } from "@/app/layout";
 
 export const Box = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
@@ -9,11 +9,11 @@ export const Box = styled(MuiBox)(({ theme }) => ({
 }));
 
 export const Typography = styled(MuiTypography)(({ theme }) => ({
-  fontFamily: raleway.style.fontFamily,
+  fontFamily: opensans.style.fontFamily,
   textAlign: "center",
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "15px",
+    fontSize: "16px",
     margin: "0 10px 10px 10px",
   },
 }));

@@ -10,4 +10,8 @@ export interface BlackCard {
 
 export interface BlackCardsBoxProps {
   data: BlackCard[];
+  titlestart?: string;
+  titleend?: string;
+  titlehighlightedstart?: string;
+  titlehighlightedend?: string;
 }

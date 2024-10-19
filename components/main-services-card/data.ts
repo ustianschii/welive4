@@ -10,7 +10,7 @@ export const servicesData = [
     link: "/",
   },
   {
-    img: "/services-images-mobile/energy-management.png",
+    img: "/services-images-mobile/energy-management.svg",
     text: "ENERGY MANAGEMENT",
     link: "/",
   },

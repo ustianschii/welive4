@@ -14,7 +14,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   alignItems: "center",
   backgroundColor: LIGHT_GRAY,
   [theme.breakpoints.down("sm")]: {
-    padding: "30px 10px 30px 10px",
+    padding: "20px 10px 30px 10px",
   },
 }));
 
@@ -38,8 +38,8 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "40px",
-    padding: "35px 30px",
+    fontSize: "37px",
+    marginBottom: "30px",
   },
 }));
 
