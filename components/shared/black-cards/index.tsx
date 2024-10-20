@@ -18,7 +18,6 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
         {titlestart}
         <Highlighted>{titlehighlightedend}</Highlighted>
         {titleend}
-        {/* OUR<Highlighted>SOLUTIONS</Highlighted> */}
       </Title>
       {data.map((item, index) => (
         <CardBox key={index}>

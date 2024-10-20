@@ -101,4 +101,72 @@ export const grayCardsDataEnergyManagementSecond = [
     seconddescription:
       "WE LIVE 4 offers more than just driving. Our team will take care of the EV charging installation and provide ongoing support, so you can enjoy the convenience and savings of solar-powered charging with no hassle. ",
   },
+  {
+    image: "/energy-management/app-control.svg",
+    title: "LOXONE Control App",
+    firsttitle: "SCHEDULE CHARGING",
+    firstdescription:
+      "Our app gives you control over when to charge your device, whether it’s overnight or syncing with your solar panels. Don’t stress about juggling schedules or peak hours anymore - easily schedule charging during off-peak hours and save money on energy bills. ",
+    secondtitle: "SOLAR INTEGRATION",
+    seconddescription:
+      "Go all-in on clean energy by going solar to power your EV, decreasing reliance on the grid, and boosting sustainable transportation. Our system design makes the most of solar energy, so you don’t have to rely on the grid as much.",
+    thirdtitle: "REAL-TIME MONITORING",
+    thirddescription:
+      "​Learn important details about your charging, like progress, estimated time, and how much longer it will take. By tracking your energy consumption, you can make better decisions about when to charge your devices, saving money and using energy more efficiently. ",
+  },
+];
+
+export const grayCardsDataEnergyManagementThird = [
+  {
+    image: "/energy-management/room.svg",
+    title: "Whole Home Solar System",
+    firstdescription:
+      "Forget one-size-fits-all—our top-quality solar panels and inverters are handpicked to match your energy requirements, delivering maximum efficiency with minimal waste.",
+    seconddescription:
+      "Our pros leave nothing to chance, taking into consideration every little detail from sun exposure to roof size, so your panels are placed just right, giving your entire home maximum energy production.",
+  },
+  {
+    image: "/energy-management/solar-panels-multiple.svg",
+    title: "Commercial Solar System",
+    firstdescription:
+      "At WE LIVE 4, we’re not just residential experts–we’re your partners in commercial solar success. Don’t worry about a thing - our team will handle the installations smoothly, and no disruptions are guaranteed.",
+    seconddescription:
+      "And, with our maintenance plans, your solar system will stay efficient for years, bringing long-term benefits to your business.",
+  },
+  {
+    image: "/energy-management/tesla-battery.svg",
+    title: "Tesla Battery Storage",
+    firstdescription:
+      "No hassle, just grab and store solar energy with our Tesla Powerwall to keep your home bright even after sunset or during unexpected power outages. Take charge of your energy future with WE LIVE 4 and have complete control over your energy usage.",
+    seconddescription:
+      "Our advanced solutions guarantee that your home remains powered and secure, regardless of any situation.",
+  },
+  {
+    image: "/energy-management/ev-charger.svg",
+    title: "EV Charger Integration",
+    firstdescription:
+      "Planning an electric vehicle? Our experts can design a solar power system with an EV charger, allowing you to power your car using solar energy.",
+    seconddescription:
+      "This means not only reducing your carbon footprint but also cutting down on your reliance on the traditional grid. ",
+  },
+  {
+    image: "/energy-management/integration.svg",
+    title: "LOXONE Integration",
+    firstdescription:
+      "No hassle, just grab and store solar energy to keep your home bright even after sunset or during unexpected power outages. Take charge of your energy future with WE LIVE 4 and have complete control over your energy usage.",
+    seconddescription:
+      "Our advanced solutions guarantee that your home remains powered and secure, regardless of any situation.",
+  },
+];
+
+export const grayCardsDataEnergyManagementFourth = [
+  {
+    image: "/energy-management/app-control-second.svg",
+    title: "LOXONE",
+    firstdescription:
+      "We use Loxone, a powerful and user-friendly smart home system, as the brain behind your energy savings. This powerful tech brain seamlessly connects with all your eco-friendly solutions, transforming your home into a smart energy haven.  ",
+    seconddescription:
+      "Imagine solar panels, EV chargers, and smart appliances working together to save you money and reduce your environmental impact.",
+    thirddescription: "That's the power of Loxone energy management systems!",
+  },
 ];

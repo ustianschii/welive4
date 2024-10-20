@@ -101,3 +101,49 @@ export const blackCardsOutdoorTvSecondData = [
       "Whether you have questions about optimizing settings, need adjustments, or encounter any concerns, our dedicated support team is just a call away.",
   },
 ];
+
+export const blackCardsEnergyManagementData = [
+  {
+    title: "TAILORED SYSTEM DESIGN",
+    firstdescription:
+      "Based on how you drive, we choose the perfect charger for you. Stop wasting money on unnecessary features and dealing with slow charging times. Trust us, we’ll create a system that’s perfect for you, making sure you charge efficiently and without breaking the bank.",
+  },
+  {
+    title: "SUPPORT FOR EVERY CAR BRAND",
+    firstdescription:
+      "Our chargers work with all the big brands and charging standards, so you won’t have any trouble charging any electric vehicle. Drive a Tesla Model S, Porsche Taycan, Audi e-tron, or any other electric car? Look no further than WE LIVE 4 for expert assistance!",
+  },
+  {
+    title: "REDUCE ENERGY USE",
+    firstdescription:
+      "Find out how you can make smarter energy choices when charging your devices. By integrating your EV charger with smart home systems like Loxone, you can save on electricity costs by charging during off-peak hours. ",
+  },
+  {
+    title: "100% MONITOR YOUR ENERGY USE",
+    firstdescription:
+      "Keep track of your EV’s charging status in real-time, including progress and estimated completion time. Use scheduled charging to save on electricity and sync with smart homes for automatic charging during sunny times. ",
+  },
+];
+
+export const blackCardsEnergyManagementSecondData = [
+  {
+    title: "CUSTOM SYSTEM DESIGN",
+    firstdescription:
+      "Get a solar system personalized for you at WE LIVE 4. Our experts create a system tailored to your home, considering your energy needs and available roof space. We have future plans in mind, enabling you to easily add batteries or EV chargers as required. ",
+  },
+  {
+    title: "HIDDEN CONDUIT",
+    firstdescription:
+      "We know how crucial it is for a solar system to be both reliable and visually appealing at WE LIVE 4. Our goal is to make sure your system looks like it’s part of your home, so we hide all the wires. ",
+  },
+  {
+    title: "SLEEK PANELS",
+    firstdescription:
+      "Our high-quality US-made panels handle any weather, so they’ll keep performing reliably for the long haul. We’re the experts in creating solar designs that perfectly complement your roof, making it look super cool and maximizing your energy production.",
+  },
+  {
+    title: "100% MONITOR YOUR ENERGY USE",
+    firstdescription:
+      "We’re here to help you connect your solar system with smart thermostats and lighting, making your home more efficient. Get live updates on your energy production and usage, take control, and save big. ",
+  },
+];

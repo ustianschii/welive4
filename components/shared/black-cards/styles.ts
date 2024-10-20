@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 
 import { BLACK, GREEN, LIGHT_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
@@ -25,7 +25,7 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     borderRadius: "10px",
-    padding: "30px",
+    padding: "25px",
     marginBottom: "20px",
   },
 }));
@@ -45,12 +45,12 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 
 export const CardTitle = styled(MuiTypography)(({ theme }) => ({
   color: GREEN,
-  fontFamily: raleway.style.fontFamily,
+  fontFamily: opensans.style.fontFamily,
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
+    fontSize: "18px",
     paddingBottom: "20px",
   },
 }));

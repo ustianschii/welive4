@@ -3,21 +3,16 @@ import {
   Container as MuiContainer,
   Box as MuiBox,
   Typography as MuiTypography,
+  Button as MuiButton,
 } from "@mui/material";
 
-import {
-  DARK_GRAY,
-  GREEN,
-  LIGHT_GRAY,
-  SEMI_BOLD,
-  WHITE,
-} from "@/styles/constants";
+import { BOLD, DARK_GRAY, GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: DARK_GRAY,
   [theme.breakpoints.down("sm")]: {
-    paddingTop: "30px",
+    paddingBottom: "30px",
   },
 }));
 
@@ -27,9 +22,7 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
   alignItems: "center",
   backgroundColor: DARK_GRAY,
 
-  [theme.breakpoints.down("sm")]: {
-    padding: "30px 0 50px 0",
-  },
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -61,5 +54,19 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     marginBottom: "10px",
     fontSize: "15px",
+  },
+}));
+
+export const Button = styled(MuiButton)(({ theme }) => ({
+  color: WHITE,
+  [theme.breakpoints.down("sm")]: {
+    width: "280px",
+    height: "60px",
+    fontFamily: opensans.style.fontFamily,
+    fontSize: "18px",
+    lineHeight: "120%",
+    fontWeight: BOLD,
+    border: "2px solid white",
+    margin: "40px 0",
   },
 }));

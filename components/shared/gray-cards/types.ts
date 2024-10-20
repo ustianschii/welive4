@@ -14,4 +14,5 @@ export interface GrayCardsBoxProps {
   data: GrayCard[];
   imgheight: number;
   imgwidth: number;
+  button?: React.ReactNode;
 }

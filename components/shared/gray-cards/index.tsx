@@ -10,6 +10,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
   data,
   imgheight,
   imgwidth,
+  button,
 }) => {
   return (
     <Container disableGutters>
@@ -20,7 +21,11 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
             src={item.image}
             height={imgheight}
             width={imgwidth}
-            style={{ borderRadius: "10px", objectFit: "cover" }}
+            style={{
+              borderRadius: "10px",
+              objectFit: "cover",
+              marginTop: "50px",
+            }}
           />
           <Title>{item.title}</Title>
           <Box m="0 40px">
@@ -32,6 +37,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
             <Subtitle>{item.thirdtitle}</Subtitle>
             <Description>{item.thirddescription}</Description>
           </Box>
+          {button}
         </CardBox>
       ))}
     </Container>
