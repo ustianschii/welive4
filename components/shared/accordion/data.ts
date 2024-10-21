@@ -92,3 +92,27 @@ export const outdoorSecondFaq = [
     answer: "No.",
   },
 ];
+
+export const homeTheaterFaq = [
+  {
+    question: "How much does home theater installation cost?",
+    answer: "No.",
+  },
+  {
+    question: "How big does a room need to be for a home theater?",
+    answer: "No.",
+  },
+  {
+    question:
+      "Do you offer installation services for a 5.1 home theater system?",
+    answer: "No.",
+  },
+  {
+    question: "What is the ideal location for a home theater?",
+    answer: "No.",
+  },
+  {
+    question: "Do you offer online/ remote consultations?",
+    answer: "No.",
+  },
+];

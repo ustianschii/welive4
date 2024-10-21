@@ -5,6 +5,7 @@ import { CardBox, Container, Title, Description, Subtitle } from "./styles";
 import Image from "next/image";
 import { GrayCardsBoxProps } from "./types";
 import { Box } from "@mui/material";
+import { Highlighted } from "../../hero-title/styles";
 
 export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
   data,
@@ -30,7 +31,14 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
             />
           )}
 
-          {item.title && <Title>{item.title}</Title>}
+          {(item.title && <Title>{item.title}</Title>) || (
+            <Title>
+              <Highlighted>{item.titlehighlightedstart}</Highlighted>
+              {item.titlestart}
+              <Highlighted>{item.titlehighlightedend}</Highlighted>
+              {item.titleend}
+            </Title>
+          )}
           <Box m="0 40px">
             <Description>{item.maindescription}</Description>
             <Subtitle>{item.firsttitle}</Subtitle>
