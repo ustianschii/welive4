@@ -175,3 +175,26 @@ export const BCHomeTheater = [
       "We stand behind every product and service we offer, ensuring that your investment is protected and your satisfaction is our top priority.",
   },
 ];
+
+export const BCHomeAudio = [
+  {
+    title: "SINGLE/MULTI-ROOM SETUP",
+    firstdescription:
+      "We are all about meeting your needs, whether it’s for a single room or a fully connected home system. Enjoy non-stop music streaming in every room of your house, with no interruptions as you move around.",
+  },
+  {
+    title: "CENTRALIZED CONTROL",
+    firstdescription:
+      "No more juggling remotes or running all over the place. Control volume, skip tracks, and make personalized playlists for different areas using the Loxone app or voice commands with smart speakers.",
+  },
+  {
+    title: "BEST-IN-CLASS BRANDS",
+    firstdescription:
+      "WE LIVE 4 teams up with leading brands to provide exceptional whole home audio systems, delivering a reliable and immersive sound experience in your entire house.",
+  },
+  {
+    title: "STREAMING MUSIC EVERYWHERE",
+    firstdescription:
+      "Enjoy your favorite tunes anywhere in your home with our whole house audio system! Stream from top services. Easily browse, control, and immerse yourself in the music with album art on your smart display.",
+  },
+];
