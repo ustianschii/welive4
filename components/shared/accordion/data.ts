@@ -116,3 +116,32 @@ export const homeTheaterFaq = [
     answer: "No.",
   },
 ];
+
+export const homeAudioFaq = [
+  {
+    question: "What do I need for whole home audio?",
+    answer: "No.",
+  },
+  {
+    question: "Does the whole home audio system include outdoor setup?",
+    answer: "No.",
+  },
+  {
+    question:
+      "Is it possible to play the same music in every room of my house?",
+    answer: "No.",
+  },
+  {
+    question:
+      "I’m curious about the appearance of my multi-room sound system installation.",
+    answer: "No.",
+  },
+  {
+    question: "Do you offer online/ remote consultations?",
+    answer: "No.",
+  },
+  {
+    question: "How much does home theater installation cost?",
+    answer: "No.",
+  },
+];

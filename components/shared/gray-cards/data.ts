@@ -264,3 +264,109 @@ export const GCHomeTheater = [
     thirddescription: "Centralized Control",
   },
 ];
+
+export const GCGameMediaTop = [
+  {
+    image: "/game-media/media-room.svg",
+    titlestart: "What Is A",
+    titlehighlightedend: "Media Room",
+    titleend: "?",
+    firstdescription:
+      "Searching for the perfect home entertainment center? A media room is your answer! A media room can be whatever you want it to be - a cozy home theater, an epic gaming room, or a versatile space for all your activities. ",
+    seconddescription:
+      "At WE LIVE 4, we excel in creating customized game room designs and media room installations. We understand the importance of personalization, which is why our experts work closely with you to bring your vision to life, ensuring that every detail reflects your distinctive style and fulfills your requirements. We manage every step, from picking the best equipment to installing it without any issues. ",
+    thirddescription:
+      "Ready to turn your vision into reality? Contact us today and let’s build your dream media room together!",
+  },
+];
+
+export const GCGameMediaBottom = [
+  {
+    image: "/game-media/3d-design.svg",
+    titlestart: "Customized",
+    titlehighlightedend: "3D Design",
+    firstdescription:
+      "WE LIVE 4 offers personalized 3D design service for game and media rooms.",
+    seconddescription:
+      "Just imagine chilling in your own badass home theater, with epic movies and the coolest audiovisual setup ever. Or a perfect gaming space designed for top performance, with the newest consoles and accessories.",
+    thirddescription:
+      "We carefully plan every detail of your space, including layout, furniture, acoustics, and lighting. Whether you’re into movies, games, or both, WE LIVE 4 customizes each design to fit your style and interests.",
+  },
+  {
+    image: "/game-media/av-configuration.svg",
+    titlehighlightedstart: "AV",
+    titleend: "Configuration",
+    firstdescription:
+      "We start by understanding your preferences, whether it’s immersive movie nights, adrenaline-fueled gaming sessions, or multi TV game room.",
+    seconddescription:
+      "We select top brands in the industry and find gear tailored to your specific usage requirements. ",
+    thirddescription:
+      "Our precise system design enables effortless connectivity and the option to play music in multiple rooms. Plus, we fine-tune every detail through advanced calibration for optimal performance.",
+  },
+  {
+    image: "/game-media/centralized-control.svg",
+    titlehighlightedstart: "Centralized",
+    titleend: "Control",
+    firstdescription:
+      "Simplify your entertainment experience with the Loxone app or voice commands. Adjust lighting, volume, temperature, and motorized screens all in one place. ",
+    seconddescription:
+      "Reduce eyestrain and enhance immersion with intelligent lighting that adapts to movie scenes or game dynamics, elevating your experience. ",
+    thirddescription:
+      "With multi-room audio and smart home integration, Loxone connects your entertainment space with the rest of your home for a truly connected experience. Save energy and enjoy peace of mind with Loxone automated features.",
+  },
+  {
+    image: "/game-media/rgbw.svg",
+    titlestart: "Customized",
+    titlehighlightedend: "RGBW design",
+    firstdescription:
+      "Do you need something more than just lighting in your playroom? How about a whole RGBW backlight system to enjoy any color combinations?",
+    seconddescription:
+      "Our team of professionals can create a full-fledged home RGBW backlight that will fill any space with rich and bright colors. We carefully design each solution so that it fits into your living space and fills every room with the light of your favorite colors.",
+    thirddescription:
+      "Our process begins with a comprehensive assessment of the layout of your home and your unique preferences. After that, our team of experts develops an individual system that will be most compatible with your design, moreover, it will complement it and fill it with new colors, while maintaining aesthetic appeal.",
+  },
+];
+
+export const GCHomeAudioFirst = [
+  {
+    image: "/home-audio/design.svg",
+    titlehighlightedstart: "Customized",
+    titleend: "System Design",
+    firstdescription:
+      "We don’t offer one-size-fits-all solutions. By considering your needs, preferences, and daily routines, we create a system that seamlessly integrates with your life.",
+    seconddescription:
+      "We recommend the right components based on your usage patterns–prioritizing powerful sound for entertaining, or emphasizing clear audio for movie nights and music streaming.",
+    thirddescription:
+      "Ready to turn your vision into reality? Contact us today and let’s build your dream media room together!",
+  },
+  {
+    image: "/home-audio/concealment.svg",
+    titlestart: "Speaker",
+    titlehighlightedend: "Concealment",
+    firstdescription:
+      "Our team is experienced in installing speakers on your ceiling and walls, ensuring they seamlessly fit with your home decor for a neat look. Enjoy immersive sound without sacrificing aesthetics.",
+    seconddescription:
+      "Our skilled techs guarantee precise placement and top-notch performance, creating a customized full home audio system just for you.",
+  },
+  {
+    image: "/home-audio/streaming.svg",
+    titlehighlightedstart: "Multi-Source",
+    titleend: "Streaming",
+    firstdescription:
+      "Enjoy unlimited music, podcasts, and audiobooks from popular platforms like Apple AirPlay 2, Spotify, TuneIn, and Google Play Music. Experience the ease of multi-user functionality, where each family member can stream their own music in separate rooms.",
+    seconddescription:
+      "With WE LIVE 4, you’ll have access to unlimited entertainment options that perfectly match your preferences, all seamlessly integrated into your whole home audio system.",
+  },
+];
+
+export const GCHomeAudioSecond = [
+  {
+    image: "/home-audio/integration.svg",
+    titlehighlightedstart: "LOXONE",
+    titleend: "Integration",
+    firstdescription:
+      "LOXONE automatically adjusts audio to match occupancy or time of day for the perfect atmosphere, no effort required. Greet guests with custom playlists or create a relaxing ambiance with pre-programmed music and lighting.",
+    seconddescription:
+      "WE LIVE 4 lets you monitor your home’s audio and ambiance remotely, giving you peace of mind and control from anywhere.",
+  },
+];
