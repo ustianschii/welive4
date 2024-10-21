@@ -170,3 +170,63 @@ export const grayCardsDataEnergyManagementFourth = [
     thirddescription: "That's the power of Loxone energy management systems!",
   },
 ];
+
+export const grayCardsAudioVisualSystems = [
+  {
+    image: "/audio-visual-systems/home-theater.svg",
+    title: "Home Theater System",
+    firstdescription:
+      "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations. ",
+    seconddescription:
+      "From selecting the perfect audiovisual components to craft the basement home theater design and seating arrangements, every detail is created to ensure an unforgettable viewing experience. ",
+    thirddescription:
+      "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
+  },
+  {
+    image: "/audio-visual-systems/gaming-media.svg",
+    title: "Gaming & Media Room",
+    firstdescription:
+      "Looking for a room that can be used for more than just theater purposes? Let’s head to the media room with WE LIVE 4! ",
+    seconddescription:
+      "Experience the pleasure of smooth traffic and customizable furniture arrangements for your space. Get lost in movies and games with rad lighting and mind-blowing audiovisual setups. ",
+    thirddescription:
+      "We’ll show you how to pick top-notch gear and smoothly integrate smart automated home tech for a hassle-free experience. Our skilled installation ensures optimal performance and continuous support maintains a smooth-running entertainment haven.",
+  },
+  {
+    image: "/audio-visual-systems/surround-sound.svg",
+    title: "Surround Sound System",
+    firstdescription:
+      "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution. ",
+    seconddescription: "5.1/5.2 surround sound system",
+    thirddescription: "7.1/7.2 surround sound system",
+  },
+  {
+    image: "/audio-visual-systems/home-audio.svg",
+    title: "Whole Home Audio System",
+    firstdescription:
+      "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
+    seconddescription:
+      "Our professional team can create a full home audio system that fills every space with rich, high -fidelity audio. We carefully design every solution to fit into your living area and fill every room with the full sound of your favorite songs.",
+    thirddescription:
+      "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
+  },
+  {
+    image: "/audio-visual-systems/outdoor-entertainment.svg",
+    title: "Outdoor Entertainment System",
+    firstdescription:
+      "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
+    seconddescription:
+      "At WE LIVE 4, we plan everything down to the last detail to ensure you have a great time. From optimizing viewing angles to seamlessly integrating technology into your outdoor space, we’re here to make your outdoor entertainment dreams a reality.",
+    thirddescription: "Why choose average when you can have something amazing?",
+  },
+];
+export const grayCardsAudioVisualSystemsLatest = [
+  {
+    firstdescription:
+      "At WE LIVE 4, we know your time is valuable. That’s why we prioritize simplicity and efficiency in every aspect of our commercial AV installation.",
+    seconddescription:
+      "When you choose WE LIVE 4, we’ll design a system process tailored to your specific industry needs and space layout.  Our streamlined approach ensures that we will complete your project on time and within budget. Plus, with our commitment to ongoing support and maintenance, you can trust that your AV system will continue to perform at its best long after installation. ",
+    thirddescription:
+      "Contact us today to learn more about how WE LIVE 4 can elevate your space and enhance your brand with our commercial AV systems.",
+  },
+];

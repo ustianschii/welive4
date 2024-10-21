@@ -16,18 +16,21 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
     <Container disableGutters>
       {data.map((item, index) => (
         <CardBox key={index}>
-          <Image
-            alt="service"
-            src={item.image}
-            height={imgheight}
-            width={imgwidth}
-            style={{
-              borderRadius: "10px",
-              objectFit: "cover",
-              marginTop: "50px",
-            }}
-          />
-          <Title>{item.title}</Title>
+          {item.image && (
+            <Image
+              alt="service"
+              src={item.image}
+              height={imgheight}
+              width={imgwidth}
+              style={{
+                borderRadius: "10px",
+                objectFit: "cover",
+                marginTop: "50px",
+              }}
+            />
+          )}
+
+          {item.title && <Title>{item.title}</Title>}
           <Box m="0 40px">
             <Description>{item.maindescription}</Description>
             <Subtitle>{item.firsttitle}</Subtitle>
