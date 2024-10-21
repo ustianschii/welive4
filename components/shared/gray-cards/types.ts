@@ -8,6 +8,10 @@ interface GrayCard {
   secondtitle?: string; //
   thirddescription?: string;
   thirdtitle?: string; //
+  titlehighlightedstart?: string;
+  titlestart?: string;
+  titlehighlightedend?: string;
+  titleend?: string;
 }
 
 export interface GrayCardsBoxProps {

@@ -147,3 +147,31 @@ export const blackCardsEnergyManagementSecondData = [
       "We’re here to help you connect your solar system with smart thermostats and lighting, making your home more efficient. Get live updates on your energy production and usage, take control, and save big. ",
   },
 ];
+
+export const BCHomeTheater = [
+  {
+    title: "PERSONALIZED DESIGN",
+    firstdescription:
+      "We take your preferences to heart, crafting a home theater sound system that's uniquely yours. With our personalized system design, your entertainment space becomes a reflection of your personality and style.",
+  },
+  {
+    title: "A-Z HOME THEATER SETUP",
+    firstdescription:
+      "From start to finish, our team takes care of every single detail, ensuring that your installation process is smooth, efficient, and hassle-free. ",
+  },
+  {
+    title: "BEST-IN-CLASS BRANDS",
+    firstdescription:
+      "All products have been handpicked from trusted brands with exceptional performance, ensuring that every time you hit play on your home theater sound system, you will be blown away.",
+  },
+  {
+    title: "INTUITIVE CONTROL",
+    firstdescription:
+      "From dynamic lighting adjustments to customized climate control, all accessible through one intuitive Loxone app.",
+  },
+  {
+    title: "WARRANTY AND GUARANTEE",
+    firstdescription:
+      "We stand behind every product and service we offer, ensuring that your investment is protected and your satisfaction is our top priority.",
+  },
+];
