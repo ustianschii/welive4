@@ -1,6 +1,6 @@
 interface GrayCard {
-  image: string;
-  title: string;
+  image?: string;
+  title?: string;
   maindescription?: string; //
   firsttitle?: string; //
   firstdescription: string;
@@ -12,7 +12,7 @@ interface GrayCard {
 
 export interface GrayCardsBoxProps {
   data: GrayCard[];
-  imgheight: number;
-  imgwidth: number;
+  imgheight?: number;
+  imgwidth?: number;
   button?: React.ReactNode;
 }

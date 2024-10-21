@@ -50,7 +50,7 @@ export default function Outdoor() {
       />
       <BlackCardsBoxShared
         titlestart="Why Should"
-        titlehighlightedstart="You Need A Frame TV Mount"
+        titlehighlightedend="You Need A Frame TV Mount"
         titleend="?"
         data={blackCardsOutdoorTvData}
       />
