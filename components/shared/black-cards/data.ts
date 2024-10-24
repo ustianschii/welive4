@@ -198,3 +198,39 @@ export const BCHomeAudio = [
       "Enjoy your favorite tunes anywhere in your home with our whole house audio system! Stream from top services. Easily browse, control, and immerse yourself in the music with album art on your smart display.",
   },
 ];
+
+export const BCHighPerformanceAudio = [
+  {
+    title: "WIRE CONCEALMENT",
+    firstdescription:
+      "With no more annoying wires to stress about, you can easily upgrade or modify your system whenever you feel like it, no problems. Safety is our top priority, so we only use wireless surround speakers or fire-rated cabling and follow industry standards, ensuring your peace of mind.",
+  },
+  {
+    title: "HIGH-PERFORMANCE AUDIO",
+    firstdescription:
+      "We choose top-tier speakers from trusted brands that are famous for their crystal-clear dialogue, detailed sound effects, and mind-blowing bass, all to make your listening experience incredible. But wait, there’s more. With our high-tech gear and skills, we fine-tune your surround sound system to make sure every inch of your place sounds just right. No dead zones in sight.",
+  },
+];
+
+export const BCOutdoorEntertainment = [
+  {
+    title: "PERSONALIZED SYSTEM DESIGN",
+    firstdescription:
+      "Our experts will consult with you to fully grasp your vision for the perfect outdoor entertainment. Then, we consider things like space, views, and sound to create a personalized layout that makes the most of your outdoor space.",
+  },
+  {
+    title: "EXPERT CALIBRATION",
+    firstdescription:
+      "Our team works on the audio setup to ensure clear, balanced, and deep sound with all the details. We do everything possible to make sure you have the best time watching movies, from finding the perfect angles to getting the poolside speakers just right.",
+  },
+  {
+    title: "BEST-IN-CLASS BRANDS",
+    firstdescription:
+      "Our selection includes the highest quality outdoor TVs, speakers, and equipment from reputable brands that are known for their exceptional performance and durability. WE LIVE 4 offers extended warranties and dedicated support, giving you peace of mind for your outdoor entertainment system. ",
+  },
+  {
+    title: "WEATHERPROOF SOLUTIONS",
+    firstdescription:
+      "Whether it’s rain, shine, or pool splashes, our outdoor entertainment systems can handle it all. Enjoy entertainment with no stress throughout the year. Our products fit seamlessly in with your outdoor environment, ensuring that your backyard stays gorgeous and remains weatherproof.",
+  },
+];

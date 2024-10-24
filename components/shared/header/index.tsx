@@ -76,8 +76,8 @@ export const Header: React.FC<HeaderProps> = ({
           <Image
             alt="logo"
             src="/header-mobile/logo.svg"
-            width={240}
-            height={120}
+            width={270}
+            height={150}
             style={{ marginLeft: "10px" }}
           />
           <DropDownMenu>
