@@ -370,3 +370,42 @@ export const GCHomeAudioSecond = [
       "WE LIVE 4 lets you monitor your home’s audio and ambiance remotely, giving you peace of mind and control from anywhere.",
   },
 ];
+
+export const GCMusicStreaming = [
+  {
+    image: "/high-performance-sound/tidal-app-demo.svg",
+    titlehighlightedstart: "High-end",
+    titleend: "Music Streaming",
+    firsttitle: "AD-FREE LISTENING",
+    firstdescription:
+      "Tidal’s premium subscription lets you fully immerse yourself in the music, no distractions. WE LIVE 4 will ensure a smooth connection between your surround sound system and Tidal, making control and playback effortless. ",
+    secondtitle: "EXTENSIVE, CURATED PLAYLISTS",
+    seconddescription:
+      "Explore unique genres, discover more about artists, and enjoy exclusive content you won’t find anywhere else. Experience curated playlists like never before with WE LIVE 4 expert surround sound installation. ",
+    thirdtitle: "SUPERIOR SOUND QUALITY",
+    thirddescription:
+      "Tidal differs from other streaming services because it has high-quality FLAC and MQA formats, keeping all the nuances of the original recording from an unmatched listening experience. Get ready to be blown away by the incredible sound quality of WE LIVE 4 surround sound systems. ",
+  },
+];
+
+export const GCOutdoorEntertainmentTV = [
+  {
+    image: "/outdoor-entertainment/outdoor-tv.svg",
+    titlestart: "Premium",
+    titlehighlightedend: "Outdoor TV",
+    firstdescription:
+      "Our selection provides unbeatable picture quality, using advanced display technologies that deliver stunning visuals even in bright sunlight. Enjoy our outdoor TVs year-round with their weatherproof construction, designed to withstand rain, snow, dust, and UV rays for maximum durability.",
+    seconddescription:
+      "WE LIVE 4 has brands that cater to different requirements, including gaming, poolside, and patio installations. ",
+  },
+];
+export const GCOutdoorEntertainmentSpeaker = [
+  {
+    image: "/outdoor-entertainment/outdoor-speaker.svg",
+    titlehighlightedstart: "Customized Outdoor Speaker System",
+    firstdescription:
+      "Enjoy personalized, high-quality sound for any occasion - from movie nights to peaceful moments of relaxation. With our best high-end outdoor speakers, you can enjoy high-quality sound even in rainy, sunny, or whether you need an outdoor sound system for pool.",
+    seconddescription:
+      "Our technicians skillfully hide wires and blend your audio system with your outdoor space, so you can enjoy glorious music with no visual distractions. ",
+  },
+];
