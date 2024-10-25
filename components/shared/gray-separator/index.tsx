@@ -1,6 +1,6 @@
 import React from "react";
 
-import { GRAY } from "@/styles/constants";
+import { BLACK } from "@/styles/constants";
 
 import { Box } from "@mui/material";
 
@@ -13,7 +13,7 @@ export const Separator: React.FC<{
     <Box
       height={height ?? "35px"}
       p={padding ?? ""}
-      sx={{ backgroundColor: GRAY }}
+      sx={{ backgroundColor: BLACK }}
     >
       {children}
     </Box>

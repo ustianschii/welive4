@@ -10,6 +10,8 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
   titleend,
   titlehighlightedstart,
   titlehighlightedend,
+  border,
+  bgcolor,
 }) => {
   return (
     <Container disableGutters>
@@ -20,10 +22,11 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
         {titleend}
       </Title>
       {data.map((item, index) => (
-        <CardBox key={index}>
+        <CardBox key={index} border={border ?? ""} bgcolor={bgcolor}>
           <CardTitle>{item.title}</CardTitle>
           <Description>{item.firstdescription}</Description>
           <Description>{item.seconddescription}</Description>
+          <Description>{item.thirddescription}</Description>
         </CardBox>
       ))}
     </Container>

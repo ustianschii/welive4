@@ -11,6 +11,10 @@ export const TRANSPARENT_GRAY = "#4e4e4e99";
 export const BLACK = "#000";
 export const LIGHT_BLACK = "#151517";
 
+export const MAIN_BACKGROUND_GRAY = "#3d3e40";
+export const SUBMIT_FORM_BACKGROUND = "#292931";
+export const TEXT_US_BACKGROUND = "#454547";
+
 export const REGULAR = "400";
 export const MEDIUM = "500";
 export const SEMI_BOLD = "600";

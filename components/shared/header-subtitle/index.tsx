@@ -7,12 +7,14 @@ export const HeaderSubtitle: React.FC<HeaderSubtitleTypes> = ({
   first,
   second,
   third,
+  other,
 }) => {
   return (
-    <Box>
+    <Box display="flex" flexDirection="column" alignItems="center">
       <Typography>{first}</Typography>
       <Typography>{second}</Typography>
       <Typography>{third}</Typography>
+      {other}
     </Box>
   );
 };
