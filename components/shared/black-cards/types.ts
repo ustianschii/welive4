@@ -14,4 +14,6 @@ export interface BlackCardsBoxProps {
   titleend?: string;
   titlehighlightedstart?: string;
   titlehighlightedend?: string;
+  border?: string;
+  bgcolor?: string;
 }

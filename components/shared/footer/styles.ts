@@ -6,14 +6,14 @@ import {
   Container as MuiContainer,
   Button as MuiButton,
 } from "@mui/material";
-import { BOLD, DARK_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { BLACK, BOLD, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: DARK_GRAY,
+  backgroundColor: BLACK,
   [theme.breakpoints.down("sm")]: {
     paddingBottom: "50px",
   },
