@@ -7,7 +7,7 @@ import { Footer } from "../../../components/shared/footer";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 import { Separator } from "../../../components/shared/gray-separator";
-import { ArticleContainer, Container } from "../styles";
+import { ArticleContainer, Container } from "../../../src/styles/blog-styles";
 
 export default function ArticleLayout({
   children,

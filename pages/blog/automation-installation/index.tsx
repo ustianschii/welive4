@@ -1,7 +1,13 @@
 import React from "react";
 
 import ArticleLayout from "./layout";
-import { Description, PublishDate, ReadMore, Subtitle, Title } from "../styles";
+import {
+  Description,
+  PublishDate,
+  ReadMore,
+  Subtitle,
+  Title,
+} from "../../../src/styles/blog-styles";
 import { Highlighted } from "../../../components/hero-title/styles";
 
 export default function AutomationInstallation() {

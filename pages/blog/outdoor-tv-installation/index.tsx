@@ -1,7 +1,12 @@
 import React from "react";
 
 import ArticleLayout from "./layout";
-import { Description, PublishDate, Subtitle, Title } from "../styles";
+import {
+  Description,
+  PublishDate,
+  Subtitle,
+  Title,
+} from "../../../src/styles/blog-styles";
 
 export default function OutdoorTvInstallation() {
   return (

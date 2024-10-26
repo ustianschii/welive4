@@ -1,7 +1,12 @@
 import React from "react";
 
 import ArticleLayout from "./layout";
-import { Description, PublishDate, Subtitle, Title } from "../styles";
+import {
+  Description,
+  PublishDate,
+  Subtitle,
+  Title,
+} from "../../../src/styles/blog-styles";
 import { Box, Typography } from "@mui/material";
 import { GREEN, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
