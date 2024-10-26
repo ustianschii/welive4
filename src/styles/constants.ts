@@ -15,6 +15,8 @@ export const MAIN_BACKGROUND_GRAY = "#3d3e40";
 export const SUBMIT_FORM_BACKGROUND = "#292931";
 export const TEXT_US_BACKGROUND = "#454547";
 export const SEPARATOR_BACKGROUND = "#616264";
+export const BLOG_CARD_BACKGROUND = "#787878";
+export const ARTICLE_BACKGROUND = "#373840";
 
 export const REGULAR = "400";
 export const MEDIUM = "500";
