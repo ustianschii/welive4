@@ -11,6 +11,8 @@ import { Footer } from "../../components/shared/footer";
 import { GreenDivider } from "../../components/shared/green-divider";
 
 import theme from "../styles/theme";
+import Head from "next/head";
+import { GREEN } from "@/styles/constants";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -31,6 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>We Live 4</title>
+        <meta name="description" content="Experience smart technology" />
+        <meta name="theme-color" content={GREEN} />
+      </Head>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
