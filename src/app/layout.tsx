@@ -9,6 +9,7 @@ import { HeroTitle } from "../../components/hero-title";
 import { CustomButton } from "../../components/shared/header-button";
 import { Footer } from "../../components/shared/footer";
 import { GreenDivider } from "../../components/shared/green-divider";
+import { Analytics } from "../../components/analytics/analytics";
 
 import theme from "../styles/theme";
 import { GREEN } from "@/styles/constants";
@@ -32,9 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <title>We Live 4</title>
-      <meta name="description" content="Experience smart technology" />
-      <meta name="theme-color" content={GREEN} />
+      <head>
+        <Analytics />
+        <title>We Live 4</title>
+        <meta name="description" content="Experience smart technology" />
+        <meta name="theme-color" content={GREEN} />
+      </head>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
