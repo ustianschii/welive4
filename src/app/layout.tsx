@@ -33,11 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>We Live 4</title>
-        <meta name="description" content="Experience smart technology" />
-        <meta name="theme-color" content={GREEN} />
-      </Head>
+      <title>We Live 4</title>
+      <meta name="description" content="Experience smart technology" />
+      <meta name="theme-color" content={GREEN} />
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
