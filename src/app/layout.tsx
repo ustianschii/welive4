@@ -38,7 +38,7 @@ export default function RootLayout({
             <Header
               title={<HeroTitle />}
               button={<CustomButton text={"GET A FREE QUOTE!"} />}
-              background={`url('/header-mobile/hero-top.png')`}
+              background={`url('/header-mobile/header-bg.png')`}
               divider={<GreenDivider />}
               height="775px"
             />
