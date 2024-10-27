@@ -12,7 +12,6 @@ import { GreenDivider } from "../../components/shared/green-divider";
 import { Analytics } from "../../components/analytics/analytics";
 
 import theme from "../styles/theme";
-import { GREEN } from "@/styles/constants";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -37,7 +36,6 @@ export default function RootLayout({
         <Analytics />
         <title>We Live 4</title>
         <meta name="description" content="Experience smart technology" />
-        <meta name="theme-color" content={GREEN} />
       </head>
       <body>
         <AppRouterCacheProvider>
