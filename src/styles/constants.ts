@@ -17,6 +17,8 @@ export const TEXT_US_BACKGROUND = "#454547";
 export const SEPARATOR_BACKGROUND = "#616264";
 export const BLOG_CARD_BACKGROUND = "#787878";
 export const ARTICLE_BACKGROUND = "#373840";
+export const MAIN_SERVICES_BACKGROUND = "#333740";
+export const OUR_BRANDS_ICONS_BACKGROUND = "#212123";
 
 export const REGULAR = "400";
 export const MEDIUM = "500";

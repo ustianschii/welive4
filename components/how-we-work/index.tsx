@@ -28,6 +28,7 @@ export const HowWeWork = () => {
           <Card
             key={index}
             background={card.background}
+            size={card.size}
             description={card.description}
             title={card.title}
           />

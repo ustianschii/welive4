@@ -4,8 +4,10 @@ import {
   Box as MuiBox,
   AppBar as MuiAppBar,
   Toolbar as MuiToolbar,
+  Menu as MuiMenu,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
 interface AppBarProps {
   background?: string;
@@ -48,6 +50,21 @@ export const DropDownMenu = styled(MuiBox)(({ theme }) => ({
   },
   [theme.breakpoints.up("md")]: {
     display: "none",
+  },
+}));
+
+export const Menu = styled(MuiMenu)(({ theme }) => ({
+  display: "none",
+  [theme.breakpoints.down("sm")]: {
+    display: "block",
+    "& .MuiPaper-root": {
+      minWidth: "100%",
+      borderRadius: "10px",
+      height: "500px",
+      backgroundColor: SEPARATOR_BACKGROUND,
+      backgroundImage: `url('dropdown-menu/dropdown-bg.svg')`,
+      padding: "10% 0 10% 10%",
+    },
   },
 }));
 

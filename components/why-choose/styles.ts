@@ -4,12 +4,12 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
-    backgroundColor: GRAY,
+    backgroundColor: SEPARATOR_BACKGROUND,
     height: "content-fit",
     textAlign: "center",
   },
@@ -17,7 +17,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
-  fontFamily: opensans.style.fontFamily,
+  fontFamily: raleway.style.fontFamily,
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
 

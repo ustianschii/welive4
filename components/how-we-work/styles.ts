@@ -5,14 +5,19 @@ import {
   Box as MuiBox,
   Button as MuiButton,
 } from "@mui/material";
-import { BOLD, DARK_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import {
+  BOLD,
+  MAIN_SERVICES_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     display: "flex",
     flexDirection: "column",
-    backgroundColor: DARK_GRAY,
+    backgroundColor: MAIN_SERVICES_BACKGROUND,
     height: "content-fit",
   },
 }));

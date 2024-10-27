@@ -10,7 +10,7 @@ export const SmartControl = () => {
   return (
     <>
       <Container disableGutters>
-        <Title>YOUR HOME-YOUR RULES</Title>
+        <Title>YOUR HOME - YOUR RULES</Title>
         <Subtitle>
           <Highlighted>
             SMART CONTROL <br /> AT YOUR FINGERTIPS

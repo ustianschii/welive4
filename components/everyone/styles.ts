@@ -4,11 +4,11 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { DARK_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: DARK_GRAY,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   [theme.breakpoints.down("sm")]: {},
 }));
 

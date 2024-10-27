@@ -3,7 +3,7 @@ import { Container as MuiContainer, Box as MuiBox } from "@mui/material";
 
 import Link from "next/link";
 
-import { DARK_GRAY, WHITE } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
@@ -11,7 +11,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: DARK_GRAY,
+    backgroundColor: MAIN_SERVICES_BACKGROUND,
     height: "content-fit",
     padding: "35px 10px",
   },

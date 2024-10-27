@@ -1,11 +1,11 @@
 export const servicesData = [
   {
-    img: "/services-images-mobile/loxone-automation.png",
+    img: "/services-images-mobile/loxone-automation.svg",
     text: "LOXONE AUTOMATION",
     link: "/",
   },
   {
-    img: "/services-images-mobile/entertainment-system.png",
+    img: "/services-images-mobile/entertainment-system.svg",
     text: "ENTERTAINMENT SYSTEM",
     link: "/",
   },
@@ -15,13 +15,18 @@ export const servicesData = [
     link: "/",
   },
   {
-    img: "/services-images-mobile/tv-mounting.png",
+    img: "/services-images-mobile/tv-mounting.svg",
     text: "TV MOUNTING",
     link: "/",
   },
   {
-    img: "/services-images-mobile/network-system.png",
+    img: "/services-images-mobile/network-system.svg",
     text: "NETWORK SYSTEM",
+    link: "/",
+  },
+  {
+    img: "/services-images-mobile/sound-system.svg",
+    text: "SOUND SYSTEM",
     link: "/",
   },
 ];

@@ -1,7 +1,8 @@
 import { styled } from "@mui/material/styles";
 import Image from "next/image";
 import { Button as MuiButton } from "@mui/material";
-import { WHITE, BOLD } from "@/styles/constants";
+import { WHITE, SEMI_BOLD } from "@/styles/constants";
+import { opensans } from "@/app/layout";
 
 export const Background = styled(Image)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {},
@@ -9,8 +10,13 @@ export const Background = styled(Image)(({ theme }) => ({
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
-  border: "1px solid white",
-  fontWeight: BOLD,
+  border: "2px solid white",
+  fontWeight: SEMI_BOLD,
+  fontFamily: opensans.style.fontFamily,
+  whiteSpace: "nowrap",
+  textOverflow: "ellipsis",
+  overflow: "hidden",
+  minWidth: 0,
 
   [theme.breakpoints.down("sm")]: {
     width: "100%",

@@ -5,11 +5,12 @@ export const HeroTitle = () => {
   return (
     <HeaderTextBox>
       <Title>
-        WELCOME TO<Highlighted>WE LIVE 4</Highlighted>
+        EXPERIENCE SMART TECHNOLOGY <br /> TODAY
       </Title>
       <Subtitle>
-        YOUR HOME IS <br /> YOUR <br />
-        <Highlighted>SMART FUTURE</Highlighted>
+        WE
+        <Highlighted>LIVE</Highlighted>4 THE <br />
+        <Highlighted>FUTURE</Highlighted>OF LIVING
       </Subtitle>
     </HeaderTextBox>
   );

@@ -18,15 +18,17 @@ export const Card: React.FC<CardProps> = ({ link, img, text }) => {
       maxWidth="50%"
       flexShrink={0}
     >
-      <Link href={link}>
+      <Box width="100%" height="80%">
         <Background
           alt="service"
           src={img}
-          layout="responsive"
-          width={100}
-          height={210}
+          width={250}
+          height={250}
+          style={{ width: "100%", height: "100%" }}
         />
-        <Button variant="outlined">{text} </Button>
+      </Box>
+      <Link href={link}>
+        <Button variant="outlined">{text}</Button>
       </Link>
     </Box>
   );

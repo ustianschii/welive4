@@ -3,11 +3,16 @@ import {
   Container as MuiContainer,
   Typography as MuiTypography,
 } from "@mui/material";
-import { BLACK, BOLD, GRAY, WHITE } from "@/styles/constants";
+import {
+  OUR_BRANDS_ICONS_BACKGROUND,
+  BOLD,
+  SEPARATOR_BACKGROUND,
+  WHITE,
+} from "@/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
-    backgroundColor: GRAY,
+    backgroundColor: SEPARATOR_BACKGROUND,
     height: "350px",
   },
 }));
@@ -24,7 +29,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 }));
 
 export const Box = styled(MuiTypography)(({ theme }) => ({
-  backgroundColor: BLACK,
+  backgroundColor: OUR_BRANDS_ICONS_BACKGROUND,
 
   [theme.breakpoints.down("sm")]: {
     width: "100%",

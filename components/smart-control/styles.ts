@@ -4,12 +4,17 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { DARK_GRAY, SEMI_BOLD, WHITE, REGULAR } from "@/styles/constants";
+import {
+  MAIN_SERVICES_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+  REGULAR,
+} from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
-    backgroundColor: DARK_GRAY,
+    backgroundColor: MAIN_SERVICES_BACKGROUND,
     height: "content-fit",
   },
 }));

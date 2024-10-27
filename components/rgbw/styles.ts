@@ -4,12 +4,17 @@ import {
   Typography as MuiTypography,
   Button as MuiButton,
 } from "@mui/material";
-import { BOLD, DARK_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import {
+  BOLD,
+  MAIN_SERVICES_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
 import { raleway, opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
-    backgroundColor: DARK_GRAY,
+    backgroundColor: MAIN_SERVICES_BACKGROUND,
     height: "900px",
     position: "relative",
     display: "flex",

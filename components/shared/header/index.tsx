@@ -1,21 +1,26 @@
 "use client";
 import * as React from "react";
+
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { Button } from "@mui/material";
+
 import {
   Container,
   AppBar,
   CustomMenuIcon,
   DropDownMenu,
   Toolbar,
+  Menu,
 } from "./styles";
 import { HeaderProps } from "./types";
-import { Button } from "@mui/material";
+
 import Image from "next/image";
+import { GREEN, WHITE } from "@/styles/constants";
+import { opensans } from "@/app/layout";
 
 const pages = [
   "HOME",
@@ -26,7 +31,6 @@ const pages = [
   "ENERGY MANAGEMENT",
   "TV MOUNTING",
   "BLOG",
-  "BOOK NOW",
 ];
 
 export const Header: React.FC<HeaderProps> = ({
@@ -78,7 +82,7 @@ export const Header: React.FC<HeaderProps> = ({
             src="/header-mobile/logo.svg"
             width={270}
             height={150}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "5%" }}
           />
           <DropDownMenu>
             <IconButton
@@ -105,11 +109,17 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
             >
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                  <Typography
+                    textAlign="center"
+                    color={index === 3 || index === 4 ? GREEN : WHITE}
+                    fontFamily={opensans.style.fontFamily}
+                    fontSize="24px"
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -133,6 +143,21 @@ export const Header: React.FC<HeaderProps> = ({
         {button}
       </Container>
       {divider}
+      {Boolean(anchorElNav) && (
+        <Box
+          sx={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
+            backdropFilter: "blur(5px)",
+            zIndex: 10,
+          }}
+          onClick={handleCloseNavMenu}
+        />
+      )}
     </AppBar>
   );
 };
