@@ -35,7 +35,7 @@ export default function NetworkLayout({
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

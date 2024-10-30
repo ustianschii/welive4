@@ -16,8 +16,8 @@ export default function AutomationLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="50px 5px 0 5px">
-            <Highlighted>
+          <Subtitle m="50px 5px 10px 5px">
+            <Highlighted sx={{ fontSize: "38px" }}>
               Loxone Automation: <br /> The New Future Of <br /> Smart
               Automation
             </Highlighted>

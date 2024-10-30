@@ -1,17 +1,18 @@
 interface GrayCard {
   image?: string;
   title?: string;
-  maindescription?: string; //
-  firsttitle?: string; //
-  firstdescription: string;
-  seconddescription: string;
-  secondtitle?: string; //
+  maindescription?: string;
+  firsttitle?: string;
+  firstdescription?: string;
+  seconddescription?: string;
+  secondtitle?: string;
   thirddescription?: string;
-  thirdtitle?: string; //
+  thirdtitle?: string;
   titlehighlightedstart?: string;
   titlestart?: string;
   titlehighlightedend?: string;
   titleend?: string;
+  descriptions?: string[];
 }
 
 export interface GrayCardsBoxProps {

@@ -2,7 +2,6 @@ import React from "react";
 
 import { KeyFeaturesCard } from "../shared/key-features-card";
 
-// import { data } from "./data";
 import { Container } from "./styles";
 import { KeyFeaturesProps } from "./types";
 

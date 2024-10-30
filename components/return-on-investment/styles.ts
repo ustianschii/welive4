@@ -4,7 +4,7 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { DARK_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 import Image from "next/image";
@@ -13,7 +13,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: DARK_GRAY,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   height: "content-fit",
   [theme.breakpoints.down("sm")]: {},
 }));

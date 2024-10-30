@@ -10,7 +10,7 @@ import {
   BCSystemDesign,
   BCSystemDesignWBorder,
 } from "../../components/shared/black-cards/data";
-import { BLACK } from "@/styles/constants";
+import { TEXT_US_BACKGROUND } from "@/styles/constants";
 import { SystemDesignForm } from "../../components/system-design-form";
 import { TextUs } from "../../components/text-us";
 
@@ -49,7 +49,7 @@ export default function SystemDesign() {
       <BlackCardsBoxShared
         data={BCSystemDesignWBorder}
         border="2px solid #59B202"
-        bgcolor={BLACK}
+        bgcolor={TEXT_US_BACKGROUND}
       />
       <Separator height="90px" padding="0 0 0 0">
         <Title>

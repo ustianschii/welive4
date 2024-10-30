@@ -32,9 +32,7 @@ export const ChecklistLongFields = () => {
       <FieldsBox>
         {data.map((item, index) => (
           <Card key={index}>
-            <Title>
-              <Highlighted>{item.title}</Highlighted>
-            </Title>
+            <Title>{item.title}</Title>
             <FormGroup sx={{ mb: "15px" }}>
               {item.variants.map((variant, idx) => (
                 <FormControlLabel
@@ -52,7 +50,7 @@ export const ChecklistLongFields = () => {
           </Card>
         ))}
         <ShareBox>
-          <Typography fontSize="20px" mb="10px">
+          <Typography fontSize="18px" mb="5px">
             <Highlighted>Share up to 20 pictures</Highlighted>
           </Typography>
           <UploadButton size="small">

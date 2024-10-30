@@ -36,7 +36,7 @@ export const grayCardsData = [
 export const grayCardsDataOutdoorTV = [
   {
     image: "/outdoor-tv/outdoor-tv-demo.png",
-    title: "Why Shoul You Need An Outdoor TV For Your Entertainment?",
+    title: "Why Should You Need An Outdoor TV For Your Entertainment?",
     firstdescription:
       "No need to stare at a little screen or miss out on the gorgeous outdoors. With our service, you can safely install your outdoor TV and start watching movies, sports, and shows outside beneath the stars. ",
     seconddescription:
@@ -197,8 +197,12 @@ export const grayCardsAudioVisualSystems = [
     title: "Surround Sound System",
     firstdescription:
       "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution. ",
-    seconddescription: "5.1/5.2 surround sound system",
-    thirddescription: "7.1/7.2 surround sound system",
+    descriptions: [
+      "5.1/5.2 surround sound system",
+      "7.1/7.2 surround sound system",
+      "7.1.4/7.1.6 surround sound system",
+      "7.2.4/7.2.6 surround sound system",
+    ],
   },
   {
     image: "/audio-visual-systems/home-audio.svg",
@@ -241,7 +245,12 @@ export const GCHomeTheater = [
       "We aim to fulfill your vision by healing your preferences at each stage. Our team handpicks furniture, lighting controls, and seating options, and calibrates the room to create a space that matches your vision.",
     seconddescription:
       "Get the ultimate home cinema experience with the latest 4K to 8K HD screens, surround sound, high-end home theater speakers and effortless streaming. Plus, with our acoustic treatments, you can expect crisp and true-to-life sound.",
-    thirddescription: "Furniture selection",
+    descriptions: [
+      "Furniture selection",
+      "Theater seating",
+      "Acoustic treatments",
+      "Screen & Speaker placement",
+    ],
   },
   {
     image: "/home-theater/installation.svg",
@@ -251,7 +260,11 @@ export const GCHomeTheater = [
       "Our technicians are skilled at handling all aspects of your setup. This includes discreetly wiring walls and ceilings, creating a seamless and clutter-free look that enhances your space.",
     seconddescription:
       "We take care of all the details, from optimizing device settings to provide the best experience. Sit back, relax, and enjoy unforgettable entertainment with our services.",
-    thirddescription: "In-wall wiring",
+    descriptions: [
+      "In-wall wiring",
+      "Ceiling solutions",
+      "Device configuration",
+    ],
   },
   {
     image: "/home-theater/integration.svg",
@@ -261,7 +274,7 @@ export const GCHomeTheater = [
       "Enjoy full control over your home theater system with LOXONE’s automated enhancements and remote access. Everything you need to set the perfect mood or fine-tune your entertainment system is at your fingertips.",
     seconddescription:
       "With remote access and monitoring capabilities, you can stay connected to your home from anywhere in the world. No matter if you’re traveling for work or going out, your home will be taken care of by experts.",
-    thirddescription: "Centralized Control",
+    descriptions: ["Centralized Control", "Remote Access and Monitoring"],
   },
 ];
 
@@ -350,7 +363,7 @@ export const GCHomeAudioFirst = [
   },
   {
     image: "/home-audio/streaming.svg",
-    titlehighlightedstart: "Multi-Source",
+    titlehighlightedstart: "Multi Source",
     titleend: "Streaming",
     firstdescription:
       "Enjoy unlimited music, podcasts, and audiobooks from popular platforms like Apple AirPlay 2, Spotify, TuneIn, and Google Play Music. Experience the ease of multi-user functionality, where each family member can stream their own music in separate rooms.",

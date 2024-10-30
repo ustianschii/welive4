@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Separator } from "../../components/shared/gray-separator";
 import { GrayCardsBox } from "../../components/shared/gray-cards";
 import {
   GCHomeAudioFirst,
@@ -18,7 +17,6 @@ import { homeAudioFaq } from "../../components/shared/accordion/data";
 export default function HomeTheater() {
   return (
     <HomeAudioLayout>
-      <Separator />
       <GrayCardsBox data={GCHomeAudioFirst} imgheight={400} imgwidth={388} />
       <GrayCardsBox
         data={GCHomeAudioSecond}

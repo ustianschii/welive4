@@ -5,7 +5,12 @@ import {
   Button as MuiButton,
 } from "@mui/material";
 
-import { GREEN, LIGHT_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import {
+  GREEN,
+  SEPARATOR_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
 
 import { opensans } from "@/app/layout";
 
@@ -13,7 +18,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "30px 0",
   },

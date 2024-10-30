@@ -10,7 +10,7 @@ import { soundSystems } from "./data";
 import { Container, Title } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { Dot, Feature } from "../shared/key-features-card/styles";
-import { BLACK } from "@/styles/constants";
+import { BLACK, MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export const SoundSystemDemo: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,7 +62,10 @@ export const SoundSystemDemo: React.FC = () => {
         </Box>
       ))}
       <Box
-        sx={{ backgroundColor: BLACK }}
+        sx={{
+          backgroundColor: MAIN_SERVICES_BACKGROUND,
+          marginBottom: "-110px",
+        }}
         width="100%"
         display="flex"
         justifyContent="center"

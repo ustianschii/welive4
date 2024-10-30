@@ -16,10 +16,11 @@ import { homeTheaterFaq } from "../../components/shared/accordion/data";
 export default function HomeTheater() {
   return (
     <HomeTheaterLayout>
-      <Separator height="150px" padding="20px 0">
+      <Separator height="80px" padding="20px 0">
         <Title>
-          <Highlighted>WHAT YOU WILL GET</Highlighted>FROM <br />
-          OUR SERVICE
+          <Highlighted>WHAT YOU WILL GET</Highlighted>
+          <br />
+          FROM OUR SERVICE
         </Title>
       </Separator>
       <GrayCardsBox

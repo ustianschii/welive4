@@ -4,18 +4,23 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { DARK_GRAY, LIGHT_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import {
+  MAIN_SERVICES_BACKGROUND,
+  SEPARATOR_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     paddingTop: "30px",
   },
 }));
 
 export const ContentBox = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: DARK_GRAY,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   display: "flex",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",

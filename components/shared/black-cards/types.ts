@@ -6,6 +6,7 @@ export interface BlackCard {
   seconddescription?: string;
   thirdtitle?: string;
   thirddescription?: string;
+  descriptions?: string[];
 }
 
 export interface BlackCardsBoxProps {

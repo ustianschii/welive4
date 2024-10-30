@@ -11,14 +11,14 @@ import {
 import {
   GREEN,
   WHITE,
-  MAIN_BACKGROUND_GRAY,
+  SEPARATOR_BACKGROUND,
   SUBMIT_FORM_BACKGROUND,
   BOLD,
 } from "@/styles/constants";
 import { raleway, opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: MAIN_BACKGROUND_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "20px 10px",
   },

@@ -18,7 +18,7 @@ export const data = [
     ],
   },
   {
-    icon: "/loxone-commercial/roi-productivity-power-up.png",
+    icon: "/loxone-commercial/roi-superior-security.png",
     iconTitle: "SUPERIOR SECURITY",
     description: [
       "Loxone goes beyond traditional security measures by offering advanced alert capabilities. Our system is designed to detect and notify building users of potential damage, such as leaks or malfunctions, in real-time. ",

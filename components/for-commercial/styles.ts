@@ -5,12 +5,17 @@ import {
   Box as MuiBox,
   Button as MuiButton,
 } from "@mui/material";
-import { BRIGHT_GREEN, GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
+import {
+  ARTICLE_BACKGROUND,
+  GREEN,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
-  backgroundColor: BRIGHT_GREEN,
+  backgroundColor: ARTICLE_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
@@ -42,9 +47,11 @@ export const CardTitle = styled(MuiTypography)(({ theme }) => ({
   whiteSpace: "normal",
   overflowWrap: "break-word",
   wordBreak: "break-word",
+  color: WHITE,
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
-    fontSize: "15px",
+    fontSize: "14px",
+    margin: "5px 0",
   },
 }));
 

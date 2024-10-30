@@ -5,14 +5,20 @@ import {
   Typography as MuiTypography,
 } from "@mui/material";
 
-import { BLACK, GREEN, LIGHT_GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import {
+  BLACK,
+  GREEN,
+  SEPARATOR_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "30px 10px 30px 10px",
   },

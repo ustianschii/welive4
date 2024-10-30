@@ -15,7 +15,7 @@ export default function HomeTheater() {
     <GameMediaLayout>
       <Separator />
       <GrayCardsBox data={GCGameMediaTop} imgheight={400} imgwidth={388} />
-      <Separator height="150px" padding="20px 0">
+      <Separator height="80px" padding="20px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>FROM <br />
           OUR SERVICE

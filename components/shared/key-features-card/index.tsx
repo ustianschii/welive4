@@ -19,9 +19,9 @@ export const KeyFeaturesCard: React.FC<KeyFeaturesCardTypes> = ({
         <Image
           alt="feature-card-icon"
           src={icon}
-          width={60}
+          width={80}
           height={75}
-          style={{ marginRight: "30px" }}
+          style={{ marginRight: "10px", objectFit: "contain" }}
         />
         <Title>{title}</Title>
       </Box>

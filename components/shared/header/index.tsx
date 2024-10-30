@@ -17,20 +17,21 @@ import {
   Menu,
 } from "./styles";
 import { HeaderProps } from "./types";
-
-import Image from "next/image";
 import { GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
+import Image from "next/image";
+import Link from "next/link";
+
 const pages = [
-  "HOME",
-  "SYSTEM DESIGN",
-  "NETWORK SYSTEM",
-  "ENTERTAINMENT SYSTEM",
-  "LOXONE AUTOMATION",
-  "ENERGY MANAGEMENT",
-  "TV MOUNTING",
-  "BLOG",
+  { text: "HOME", href: "/" },
+  { text: "SYSTEM DESIGN", href: "/system-design" },
+  { text: "NETWORK SYSTEM", href: "/network" },
+  { text: "ENTERTAINMENT SYSTEM", href: "/audio-visual-systems" },
+  { text: "LOXONE AUTOMATION", href: "/loxone-automation" },
+  { text: "ENERGY MANAGEMENT", href: "/energy-management" },
+  { text: "TV MOUNTING", href: "/outdoor-tv" },
+  { text: "BLOG", href: "/blog" },
 ];
 
 export const Header: React.FC<HeaderProps> = ({
@@ -111,28 +112,34 @@ export const Header: React.FC<HeaderProps> = ({
               onClose={handleCloseNavMenu}
             >
               {pages.map((page, index) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    color={index === 3 || index === 4 ? GREEN : WHITE}
-                    fontFamily={opensans.style.fontFamily}
-                    fontSize="24px"
-                  >
-                    {page}
-                  </Typography>
-                </MenuItem>
+                <Link
+                  key={index}
+                  href={page.href}
+                  style={{ textDecoration: "none" }}
+                >
+                  <MenuItem>
+                    <Typography
+                      textAlign="center"
+                      color={index === 3 || index === 4 ? GREEN : WHITE}
+                      fontFamily={opensans.style.fontFamily}
+                      fontSize="24px"
+                    >
+                      {page.text}
+                    </Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </DropDownMenu>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Button
-                key={page}
+                key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                {page.text}
               </Button>
             ))}
           </Box>

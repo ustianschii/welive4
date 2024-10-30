@@ -1,4 +1,4 @@
-import { LIGHT_GRAY } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
 import { Footer } from "../../components/shared/footer";
 import { Header } from "../../components/shared/header";
@@ -16,7 +16,7 @@ export default function ChecklistLayout({
     <>
       <CssBaseline />
       <Header
-        backcolor={LIGHT_GRAY}
+        backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={
           <Subtitle m="50px 0">
@@ -27,7 +27,7 @@ export default function ChecklistLayout({
         height="350px"
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

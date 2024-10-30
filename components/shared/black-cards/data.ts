@@ -238,80 +238,76 @@ export const BCOutdoorEntertainment = [
 export const BCSystemDesign = [
   {
     title: "OPTIMIZED PERFORMANCE",
-    firstdescription:
+    descriptions: [
       "Ensure your automation system works smoothly and efficiently, saving time and hassle.",
-    seconddescription:
       "Our team will carefully plan the sensor, actuator, and all technical components for optimal communication and reduced energy consumption.",
-    thirddescription:
       "Enjoy a more responsive system with minimized signal interference.",
+    ],
   },
   {
     title: "CUSTOMIZED SOLUTIONS",
-    firstdescription:
+    descriptions: [
       "Tailored to your lifestyle, fitting your specific needs like entertainment control, energy management, or security.",
-    seconddescription:
       "Designed uniquely for your space's layout, usage patterns, and automation goals.",
-    thirddescription:
       "Consideration of factors like room count, desired functionalities, and future expansion plans.",
+    ],
   },
   {
     title: "INTEGRATION & STABILITY",
-    firstdescription:
+    descriptions: [
       "Reliable performance, minimizing downtime and ensuring peace of mind.",
-    seconddescription:
       "Offering detailed blueprint for smooth installation, saving time, money, and frustration.",
-    thirddescription:
       "Identifying cable routes, device locations, and wiring requirements for seamless integration.",
+    ],
   },
   {
     title: "ENERGY MANAGEMENT",
-    firstdescription:
+    descriptions: [
       "Reliable performance, minimizing downtime and ensuring peace of mind.",
-    seconddescription:
       "Offering detailed blueprint for smooth installation, saving time, money, and frustration.",
-    thirddescription:
       "Identifying cable routes, device locations, and wiring requirements for seamless integration.",
+    ],
   },
 ];
 
 export const BCSystemDesignWBorder = [
   {
-    title: "STEP1: REQUEST A SYSTEM DESIGN",
+    title: "STEP 1: REQUEST A SYSTEM DESIGN",
     firstdescription:
       "Fill out this form with as much detail as possible, and our technical team will call you shortly to learn more about your needs and preferences. ",
   },
   {
-    title: "STEP2: ASSESSMENT & PLANNING",
+    title: "STEP 2: ASSESSMENT & PLANNING",
     firstdescription:
       "Our team will conduct a detailed assessment of your home's layout, existing systems, and infrastructure, outlining specific goals and requirements for your system.",
   },
   {
-    title: "STEP3: CUSTOMIZED DESIGN PROPOSAL",
+    title: "STEP 3: CUSTOMIZED DESIGN PROPOSAL",
     firstdescription:
       "After assessment, you will receive a personalized plan for your home, detailing the components, features, and estimated costs of your customized system design.",
   },
   {
-    title: "STEP4 :PROPOSAL APPROVAL & PAYMENT",
+    title: "STEP 4 :PROPOSAL APPROVAL & PAYMENT",
     firstdescription:
       "We'll refine the design proposal based on your feedback. Once approved, payment terms and methods will be clearly outlined for transparency. ",
   },
   {
-    title: "STEP5: INSTALLATION & INTEGRATION",
+    title: "STEP 5: INSTALLATION & INTEGRATION",
     firstdescription:
       "WE LIVE 4 will schedule the installation at a convenient time for you and ensure that all devices, sensors, controllers, and other components are installed and integrated according to the approved design plan. ",
   },
   {
-    title: "STEP6: TESTING & CONFIGURATION",
+    title: "STEP 6: TESTING & CONFIGURATION",
     firstdescription:
       "Once the installation is complete, we'll conduct thorough testing to ensure that every component is functioning correctly. Our team will fine-tune settings and configurations to optimize performance.",
   },
   {
-    title: "STEP7: TRAINING & HANDOVER",
+    title: "STEP 7: TRAINING & HANDOVER",
     firstdescription:
       "Our experts will walk you through the functionalities and features of the system, ensuring that you feel confident in operating it. Additionally, we'll provide you with documentation and user manuals for future reference. ",
   },
   {
-    title: "STEP8: POST-SERVICE SUPPORT",
+    title: "STEP 8: POST-SERVICE SUPPORT",
     firstdescription:
       "Even after the installation is complete, our commitment to your satisfaction doesn't end. Whether you encounter technical issues, require upgrades, or want to expand your system, we're here to help.",
   },

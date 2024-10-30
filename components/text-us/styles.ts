@@ -8,7 +8,7 @@ import {
 import {
   GREEN,
   WHITE,
-  MAIN_BACKGROUND_GRAY,
+  SEPARATOR_BACKGROUND,
   BOLD,
   TEXT_US_BACKGROUND,
   SEMI_BOLD,
@@ -16,7 +16,7 @@ import {
 import { raleway, opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: MAIN_BACKGROUND_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "20px 10px",
   },

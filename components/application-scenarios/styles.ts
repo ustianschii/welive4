@@ -1,12 +1,16 @@
 import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
-import { LIGHT_GRAY, TRANSPARENT_GRAY, WHITE } from "@/styles/constants";
+import {
+  SEPARATOR_BACKGROUND,
+  TRANSPARENT_GRAY,
+  WHITE,
+} from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   height: "content-fit",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",

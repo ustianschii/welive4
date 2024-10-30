@@ -14,7 +14,7 @@ export const ForCommercial = () => {
         alt="loxone-logo"
         src="/loxone-automation/loxone-logo-commercial.png"
         width={300}
-        height={70}
+        height={60}
       />
       <Title>For Commercial</Title>
       <FeaturesBox>

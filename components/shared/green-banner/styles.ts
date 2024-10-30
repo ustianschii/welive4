@@ -3,14 +3,14 @@ import {
   Typography as MuiTypography,
   Container as MuiContainer,
 } from "@mui/material";
-import { BRIGHT_GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { ARTICLE_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: BRIGHT_GREEN,
+  backgroundColor: ARTICLE_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     paddingBottom: "20px",
   },

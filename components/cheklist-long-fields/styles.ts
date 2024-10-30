@@ -11,9 +11,10 @@ import {
 import {
   LIGHT_GRAY,
   WHITE,
-  DARK_GRAY,
+  ARTICLE_BACKGROUND,
   GREEN,
   SEMI_BOLD,
+  SEPARATOR_BACKGROUND,
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
@@ -21,7 +22,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {},
 }));
 
@@ -37,13 +38,13 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 }));
 
 export const FieldsBox = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: DARK_GRAY,
+  backgroundColor: ARTICLE_BACKGROUND,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
 
   [theme.breakpoints.down("sm")]: {
-    borderRadius: "20px",
+    borderRadius: "10px",
     width: "95%",
     padding: "40px 20px",
     marginBottom: "30px",
@@ -59,9 +60,10 @@ export const Card = styled(MuiBox)(({ theme }) => ({
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
+  color: WHITE,
   [theme.breakpoints.down("sm")]: {
     paddingLeft: "25px",
-    fontSize: "18px",
+    fontSize: "17px",
     marginBottom: "10px",
   },
 }));
@@ -83,6 +85,11 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   },
   "& .MuiOutlinedInput-notchedOutline": {
     borderColor: GREEN,
+    borderWidth: "1px",
+  },
+  "& .MuiOutlinedInput-input::placeholder": {
+    color: "gray",
+    opacity: 1,
   },
 
   [theme.breakpoints.down("sm")]: {},
@@ -95,7 +102,7 @@ export const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
     fontSize: "15px",
   },
   [theme.breakpoints.down("sm")]: {
-    marginTop: "10px",
+    marginTop: "5px",
   },
 }));
 
@@ -117,7 +124,6 @@ export const UploadButton = styled(MuiButton)(({ theme }) => ({
   textTransform: "none",
 
   [theme.breakpoints.down("sm")]: {
-    width: "100%",
     borderRadius: "10px",
     fontSize: "16px",
     marginBottom: "20px",

@@ -5,11 +5,11 @@ import {
   Accordion as MuiAccordion,
 } from "@mui/material";
 
-import { BLACK, LIGHT_GRAY, WHITE } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
 
   [theme.breakpoints.down("sm")]: {
     padding: "30px 0",
@@ -17,7 +17,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
 }));
 
 export const Accordion = styled(MuiAccordion)(({ theme }) => ({
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   "&:before": {
     display: "none",
   },
@@ -36,7 +36,7 @@ export const Question = styled(MuiTypography)(({ theme }) => ({
 }));
 
 export const Answer = styled(MuiTypography)(({ theme }) => ({
-  color: BLACK,
+  color: WHITE,
   fontFamily: opensans.style.fontFamily,
   [theme.breakpoints.down("sm")]: {},
 }));

@@ -3,14 +3,14 @@ import {
   Typography as MuiTypography,
   Container as MuiContainer,
 } from "@mui/material";
-import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "35px 0",
   },

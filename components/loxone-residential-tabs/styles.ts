@@ -6,11 +6,11 @@ import {
   Box as MuiBox,
   Typography as MuiTypography,
 } from "@mui/material";
-import { GREEN, LIGHT_GRAY, WHITE } from "@/styles/constants";
+import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: LIGHT_GRAY,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "30px 10px 30px 10px",
   },
@@ -50,7 +50,7 @@ export const ContentBox = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     marginTop: "30px",
     padding: "0 10px",
-    borderRadius: "10px",
+    borderRadius: "15px",
   },
 }));
 

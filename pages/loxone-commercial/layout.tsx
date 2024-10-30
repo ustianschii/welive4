@@ -31,7 +31,7 @@ export default function CommercialLayout({
         }
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

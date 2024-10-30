@@ -1,6 +1,6 @@
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
-import { DARK_GRAY, GREEN, WHITE } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
@@ -8,7 +8,7 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
   border: "2px solid",
   borderColor: GREEN,
   borderRadius: "10px",
-  backgroundColor: DARK_GRAY,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "30px",
     marginBottom: "15px",
@@ -16,10 +16,10 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
-  color: GREEN,
+  color: WHITE,
   fontFamily: opensans.style.fontFamily,
   [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
+    fontSize: "18px",
   },
 }));
 

@@ -17,10 +17,8 @@ export default function ResidentialLayout({
       <Header
         title={
           <Subtitle m="50px 0 0 0">
-            <Highlighted>
-              LOXONE FOR <br />
-            </Highlighted>
-            RESIDENTIAL
+            <Highlighted>LOXONE</Highlighted>
+            FOR <br /> RESIDENTIAL
           </Subtitle>
         }
         background={`url('/loxone-residential/loxone-residential-bg.png')`}

@@ -8,7 +8,7 @@ import {
 import {
   BLACK,
   GREEN,
-  LIGHT_GREEN,
+  BLOG_CARD_BACKGROUND,
   SEMI_BOLD,
   SWAMP_GREEN,
 } from "@/styles/constants";
@@ -16,7 +16,7 @@ import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
-  backgroundColor: LIGHT_GREEN,
+  backgroundColor: BLOG_CARD_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
@@ -48,6 +48,7 @@ export const CardTitle = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
     fontSize: "15px",
+    margin: "5px 0",
   },
 }));
 

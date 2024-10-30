@@ -6,11 +6,11 @@ import {
 } from "@mui/material";
 
 import {
-  BLACK,
+  SEPARATOR_BACKGROUND,
   GREEN,
   SEMI_BOLD,
   WHITE,
-  TRANSPARENT_GRAY,
+  OUR_BRANDS_ICONS_BACKGROUND,
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
@@ -18,7 +18,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: BLACK,
+  backgroundColor: SEPARATOR_BACKGROUND,
 
   [theme.breakpoints.down("sm")]: {
     padding: "20px 10px 30px 10px",
@@ -29,7 +29,7 @@ export const CardBox = styled(MuiBox)<{ border: string; bgcolor?: string }>(
   ({ theme, border, bgcolor }) => ({
     display: "flex",
     flexDirection: "column",
-    backgroundColor: bgcolor ?? TRANSPARENT_GRAY,
+    backgroundColor: bgcolor ?? OUR_BRANDS_ICONS_BACKGROUND,
     border: border ?? "",
 
     [theme.breakpoints.down("sm")]: {
@@ -48,7 +48,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "37px",
+    fontSize: "32px",
     marginBottom: "30px",
   },
 }));

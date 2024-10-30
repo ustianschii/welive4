@@ -19,6 +19,7 @@ import {
 import { TransparentCard } from "../../components/transparent-card";
 import { transparentCardsContent } from "../../components/transparent-card/data";
 import { Button } from "../../components/shared/gray-cards/styles";
+import { Highlighted } from "../../components/hero-title/styles";
 
 export default function EnergyManagement() {
   return (
@@ -82,7 +83,11 @@ export default function EnergyManagement() {
         data={grayCardsDataEnergyManagementFourth}
         imgheight={400}
         imgwidth={388}
-        button={<Button>MORE ABOUT LOXONE &#10230;</Button>}
+        button={
+          <Button>
+            MORE ABOUT <Highlighted>LOXONE</Highlighted> &#10230;
+          </Button>
+        }
       />
       <Separator />
     </EnergyManagementLayout>

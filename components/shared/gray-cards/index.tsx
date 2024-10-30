@@ -1,11 +1,14 @@
 import React from "react";
 
-import { CardBox, Container, Title, Description, Subtitle } from "./styles";
-
 import Image from "next/image";
-import { GrayCardsBoxProps } from "./types";
+
 import { Box } from "@mui/material";
+import DoneIcon from "@mui/icons-material/Done";
+
+import { GrayCardsBoxProps } from "./types";
+import { CardBox, Container, Title, Description, Subtitle } from "./styles";
 import { Highlighted } from "../../hero-title/styles";
+import { GREEN } from "@/styles/constants";
 
 export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
   data,
@@ -39,7 +42,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
               {item.titleend}
             </Title>
           )}
-          <Box m="0 40px">
+          <Box m="0 40px 10px 40px">
             <Description>{item.maindescription}</Description>
             <Subtitle>{item.firsttitle}</Subtitle>
             <Description>{item.firstdescription}</Description>
@@ -47,6 +50,15 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
             <Description>{item.seconddescription}</Description>
             <Subtitle>{item.thirdtitle}</Subtitle>
             <Description>{item.thirddescription}</Description>
+            {item.descriptions?.map((desc, index) => (
+              <Description display="flex" alignItems="center" key={index}>
+                <DoneIcon
+                  fontSize="large"
+                  style={{ marginRight: 8, color: GREEN }}
+                />
+                {desc}
+              </Description>
+            ))}
           </Box>
           {button}
         </CardBox>
