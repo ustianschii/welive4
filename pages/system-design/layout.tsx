@@ -23,7 +23,7 @@ export default function SystemDesignLayout({
             <Highlighted>DESIGN</Highlighted>
           </Subtitle>
         }
-        background={`url('system-design/header-bg.svg')`}
+        background={`url('system-design/header-bg.png')`}
         height="775px"
         divider={<GreenDivider />}
         subtitle={

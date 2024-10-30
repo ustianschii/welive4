@@ -26,7 +26,7 @@ export default function HighPerformanceSoundLayout({
             INSTALLATION
           </Subtitle>
         }
-        background={`url('/high-performance-sound/header-bg.svg')`}
+        background={`url('/high-performance-sound/header-bg.png')`}
         height="775px"
         subtitle={
           <HeaderSubtitle first="FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM" />

@@ -26,7 +26,7 @@ export default function HomeAudioLayout({
             SYSTEMS
           </Subtitle>
         }
-        background={`url('/home-audio/header-bg.svg')`}
+        background={`url('/home-audio/header-bg.png')`}
         height="775px"
         subtitle={
           <HeaderSubtitle first="STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!" />

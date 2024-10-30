@@ -59,7 +59,7 @@ export const grayCardsDataFrameTV = [
 
 export const grayCardsDataEnergyManagement = [
   {
-    image: "/energy-management/car-charger.svg",
+    image: "/energy-management/car-charger.png",
     title: "EV Charging Installation",
     maindescription:
       "Electric vehicles are the future, and WE LIVE 4 provides seamless EV charging installation. Loxone integrates energy management system in electric vehicle, allowing you to:",
@@ -74,7 +74,7 @@ export const grayCardsDataEnergyManagement = [
       "Conveniently track charging progress and energy consumption through our control app.",
   },
   {
-    image: "/energy-management/solar-panels.svg",
+    image: "/energy-management/solar-panels.png",
     title: "Solar Power Systems",
     maindescription:
       "WE LIVE 4 offers expert installation of solar energy management systems. Paired with Loxone, you can maximize solar energy utilization, reduce reliance on the grid, and potentially see significant savings on your electricity bills.",
@@ -92,7 +92,7 @@ export const grayCardsDataEnergyManagement = [
 
 export const grayCardsDataEnergyManagementSecond = [
   {
-    image: "/energy-management/wallbox.svg",
+    image: "/energy-management/wallbox.png",
     title: "Sustainable Wallbox",
     firsttitle: "RIGHT-SIZED POWER FOR YOU",
     firstdescription:
@@ -118,7 +118,7 @@ export const grayCardsDataEnergyManagementSecond = [
 
 export const grayCardsDataEnergyManagementThird = [
   {
-    image: "/energy-management/room.svg",
+    image: "/energy-management/room.png",
     title: "Whole Home Solar System",
     firstdescription:
       "Forget one-size-fits-all—our top-quality solar panels and inverters are handpicked to match your energy requirements, delivering maximum efficiency with minimal waste.",
@@ -126,7 +126,7 @@ export const grayCardsDataEnergyManagementThird = [
       "Our pros leave nothing to chance, taking into consideration every little detail from sun exposure to roof size, so your panels are placed just right, giving your entire home maximum energy production.",
   },
   {
-    image: "/energy-management/solar-panels-multiple.svg",
+    image: "/energy-management/solar-panels-multiple.png",
     title: "Commercial Solar System",
     firstdescription:
       "At WE LIVE 4, we’re not just residential experts–we’re your partners in commercial solar success. Don’t worry about a thing - our team will handle the installations smoothly, and no disruptions are guaranteed.",
@@ -134,7 +134,7 @@ export const grayCardsDataEnergyManagementThird = [
       "And, with our maintenance plans, your solar system will stay efficient for years, bringing long-term benefits to your business.",
   },
   {
-    image: "/energy-management/tesla-battery.svg",
+    image: "/energy-management/tesla-battery.png",
     title: "Tesla Battery Storage",
     firstdescription:
       "No hassle, just grab and store solar energy with our Tesla Powerwall to keep your home bright even after sunset or during unexpected power outages. Take charge of your energy future with WE LIVE 4 and have complete control over your energy usage.",
@@ -142,7 +142,7 @@ export const grayCardsDataEnergyManagementThird = [
       "Our advanced solutions guarantee that your home remains powered and secure, regardless of any situation.",
   },
   {
-    image: "/energy-management/ev-charger.svg",
+    image: "/energy-management/ev-charger.png",
     title: "EV Charger Integration",
     firstdescription:
       "Planning an electric vehicle? Our experts can design a solar power system with an EV charger, allowing you to power your car using solar energy.",
@@ -150,7 +150,7 @@ export const grayCardsDataEnergyManagementThird = [
       "This means not only reducing your carbon footprint but also cutting down on your reliance on the traditional grid. ",
   },
   {
-    image: "/energy-management/integration.svg",
+    image: "/energy-management/integration.png",
     title: "LOXONE Integration",
     firstdescription:
       "No hassle, just grab and store solar energy to keep your home bright even after sunset or during unexpected power outages. Take charge of your energy future with WE LIVE 4 and have complete control over your energy usage.",
@@ -173,7 +173,7 @@ export const grayCardsDataEnergyManagementFourth = [
 
 export const grayCardsAudioVisualSystems = [
   {
-    image: "/audio-visual-systems/home-theater.svg",
+    image: "/audio-visual-systems/home-theater.png",
     title: "Home Theater System",
     firstdescription:
       "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations. ",
@@ -183,7 +183,7 @@ export const grayCardsAudioVisualSystems = [
       "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
   },
   {
-    image: "/audio-visual-systems/gaming-media.svg",
+    image: "/audio-visual-systems/gaming-media.png",
     title: "Gaming & Media Room",
     firstdescription:
       "Looking for a room that can be used for more than just theater purposes? Let’s head to the media room with WE LIVE 4! ",
@@ -193,7 +193,7 @@ export const grayCardsAudioVisualSystems = [
       "We’ll show you how to pick top-notch gear and smoothly integrate smart automated home tech for a hassle-free experience. Our skilled installation ensures optimal performance and continuous support maintains a smooth-running entertainment haven.",
   },
   {
-    image: "/audio-visual-systems/surround-sound.svg",
+    image: "/audio-visual-systems/surround-sound.png",
     title: "Surround Sound System",
     firstdescription:
       "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution. ",
@@ -205,7 +205,7 @@ export const grayCardsAudioVisualSystems = [
     ],
   },
   {
-    image: "/audio-visual-systems/home-audio.svg",
+    image: "/audio-visual-systems/home-audio.png",
     title: "Whole Home Audio System",
     firstdescription:
       "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
@@ -215,7 +215,7 @@ export const grayCardsAudioVisualSystems = [
       "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
   },
   {
-    image: "/audio-visual-systems/outdoor-entertainment.svg",
+    image: "/audio-visual-systems/outdoor-entertainment.png",
     title: "Outdoor Entertainment System",
     firstdescription:
       "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
@@ -237,7 +237,7 @@ export const grayCardsAudioVisualSystemsLatest = [
 
 export const GCHomeTheater = [
   {
-    image: "/home-theater/home-theater.svg",
+    image: "/home-theater/home-theater.png",
     titlestart: "Customized",
     titlehighlightedend: "Home Theatre",
     titleend: "Design",
@@ -253,7 +253,7 @@ export const GCHomeTheater = [
     ],
   },
   {
-    image: "/home-theater/installation.svg",
+    image: "/home-theater/installation.png",
     titlehighlightedstart: "Seamless",
     titleend: "Installation",
     firstdescription:
@@ -267,7 +267,7 @@ export const GCHomeTheater = [
     ],
   },
   {
-    image: "/home-theater/integration.svg",
+    image: "/home-theater/integration.png",
     titlehighlightedstart: "LOXONE",
     titleend: "Integration",
     firstdescription:
@@ -280,7 +280,7 @@ export const GCHomeTheater = [
 
 export const GCGameMediaTop = [
   {
-    image: "/game-media/media-room.svg",
+    image: "/game-media/media-room.png",
     titlestart: "What Is A",
     titlehighlightedend: "Media Room",
     titleend: "?",
@@ -295,7 +295,7 @@ export const GCGameMediaTop = [
 
 export const GCGameMediaBottom = [
   {
-    image: "/game-media/3d-design.svg",
+    image: "/game-media/3d-design.png",
     titlestart: "Customized",
     titlehighlightedend: "3D Design",
     firstdescription:
@@ -306,7 +306,7 @@ export const GCGameMediaBottom = [
       "We carefully plan every detail of your space, including layout, furniture, acoustics, and lighting. Whether you’re into movies, games, or both, WE LIVE 4 customizes each design to fit your style and interests.",
   },
   {
-    image: "/game-media/av-configuration.svg",
+    image: "/game-media/av-configuration.jpg",
     titlehighlightedstart: "AV",
     titleend: "Configuration",
     firstdescription:
@@ -317,7 +317,7 @@ export const GCGameMediaBottom = [
       "Our precise system design enables effortless connectivity and the option to play music in multiple rooms. Plus, we fine-tune every detail through advanced calibration for optimal performance.",
   },
   {
-    image: "/game-media/centralized-control.svg",
+    image: "/game-media/centralized-control.png",
     titlehighlightedstart: "Centralized",
     titleend: "Control",
     firstdescription:
@@ -328,7 +328,7 @@ export const GCGameMediaBottom = [
       "With multi-room audio and smart home integration, Loxone connects your entertainment space with the rest of your home for a truly connected experience. Save energy and enjoy peace of mind with Loxone automated features.",
   },
   {
-    image: "/game-media/rgbw.svg",
+    image: "/game-media/rgbw.jpg",
     titlestart: "Customized",
     titlehighlightedend: "RGBW design",
     firstdescription:
@@ -342,7 +342,7 @@ export const GCGameMediaBottom = [
 
 export const GCHomeAudioFirst = [
   {
-    image: "/home-audio/design.svg",
+    image: "/home-audio/design.png",
     titlehighlightedstart: "Customized",
     titleend: "System Design",
     firstdescription:
@@ -353,7 +353,7 @@ export const GCHomeAudioFirst = [
       "Ready to turn your vision into reality? Contact us today and let’s build your dream media room together!",
   },
   {
-    image: "/home-audio/concealment.svg",
+    image: "/home-audio/concealment.png",
     titlestart: "Speaker",
     titlehighlightedend: "Concealment",
     firstdescription:
@@ -362,7 +362,7 @@ export const GCHomeAudioFirst = [
       "Our skilled techs guarantee precise placement and top-notch performance, creating a customized full home audio system just for you.",
   },
   {
-    image: "/home-audio/streaming.svg",
+    image: "/home-audio/streaming.png",
     titlehighlightedstart: "Multi Source",
     titleend: "Streaming",
     firstdescription:
@@ -374,7 +374,7 @@ export const GCHomeAudioFirst = [
 
 export const GCHomeAudioSecond = [
   {
-    image: "/home-audio/integration.svg",
+    image: "/home-audio/integration.png",
     titlehighlightedstart: "LOXONE",
     titleend: "Integration",
     firstdescription:
@@ -386,7 +386,7 @@ export const GCHomeAudioSecond = [
 
 export const GCMusicStreaming = [
   {
-    image: "/high-performance-sound/tidal-app-demo.svg",
+    image: "/high-performance-sound/tidal-app-demo.png",
     titlehighlightedstart: "High-end",
     titleend: "Music Streaming",
     firsttitle: "AD-FREE LISTENING",
@@ -403,7 +403,7 @@ export const GCMusicStreaming = [
 
 export const GCOutdoorEntertainmentTV = [
   {
-    image: "/outdoor-entertainment/outdoor-tv.svg",
+    image: "/outdoor-entertainment/outdoor-tv.png",
     titlestart: "Premium",
     titlehighlightedend: "Outdoor TV",
     firstdescription:
@@ -414,7 +414,7 @@ export const GCOutdoorEntertainmentTV = [
 ];
 export const GCOutdoorEntertainmentSpeaker = [
   {
-    image: "/outdoor-entertainment/outdoor-speaker.svg",
+    image: "/outdoor-entertainment/outdoor-speaker.png",
     titlehighlightedstart: "Customized Outdoor Speaker System",
     firstdescription:
       "Enjoy personalized, high-quality sound for any occasion - from movie nights to peaceful moments of relaxation. With our best high-end outdoor speakers, you can enjoy high-quality sound even in rainy, sunny, or whether you need an outdoor sound system for pool.",

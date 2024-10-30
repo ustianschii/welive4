@@ -28,7 +28,7 @@ export default function OutdoorEntertainmentLayout({
             DESIGN
           </Subtitle>
         }
-        background={`url('/outdoor-entertainment/header-bg.svg')`}
+        background={`url('/outdoor-entertainment/header-bg.png')`}
         height="775px"
         subtitle={
           <HeaderSubtitle first="YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!" />

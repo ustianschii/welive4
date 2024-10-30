@@ -16,7 +16,7 @@ export default function AudioVisualSystems() {
     <AudioVisualSystemsLayout>
       <AvSolutions />
       <ContentSeparator
-        bg="/audio-visual-systems/cs-room.svg"
+        bg="/audio-visual-systems/cs-room.png"
         titlehighlightedstart="HOME ENTERTAINMENT"
         titleend="SYSTEMS"
         titlepadding="70px 0 0 0"
@@ -30,7 +30,7 @@ export default function AudioVisualSystems() {
         button={<Button>LEARN MORE &#10230;</Button>}
       />
       <ContentSeparator
-        bg="/audio-visual-systems/cs-office.svg"
+        bg="/audio-visual-systems/cs-office.png"
         titlehighlightedstart="COMMERCIAL AV"
         titleend="SYSTEMS"
         titlepadding="70px 0 0 0"

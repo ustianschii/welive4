@@ -27,7 +27,7 @@ export default function ConsultationLayout({
             </Highlighted>
           </Subtitle>
         }
-        background={`url('consultation/header-bg.svg')`}
+        background={`url('consultation/header-bg.png')`}
         height="775px"
         divider={<GreenDivider />}
         button={<CustomButton text={"GET A FREE QUOTE!"} />}

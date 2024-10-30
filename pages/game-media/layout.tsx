@@ -26,7 +26,7 @@ export default function GameMediaLayout({
             INSTALLATION
           </Subtitle>
         }
-        background={`url('/game-media/header-bg.svg')`}
+        background={`url('/game-media/header-bg.png')`}
         height="775px"
         subtitle={
           <HeaderSubtitle first="CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS" />

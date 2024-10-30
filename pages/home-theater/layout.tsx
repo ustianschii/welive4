@@ -26,7 +26,7 @@ export default function HomeTheaterLayout({
             SYSTEMS <br />
           </Subtitle>
         }
-        background={`url('/home-theater/header-bg.svg')`}
+        background={`url('/home-theater/header-bg.png')`}
         height="775px"
         subtitle={
           <HeaderSubtitle first="EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!" />

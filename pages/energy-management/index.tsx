@@ -31,7 +31,7 @@ export default function EnergyManagement() {
       />
       <Separator />
       <ContentSeparator
-        bg="/energy-management/auto-charging-port.svg"
+        bg="/energy-management/auto-charging-port.png"
         titlehighlightedstart="HOME EV CHARGING"
         titleend="INSTALLATION"
         containerpadding="30px 0"
@@ -48,7 +48,7 @@ export default function EnergyManagement() {
         data={blackCardsEnergyManagementData}
       />
       <ContentSeparator
-        bg="energy-management/cs-roof.svg"
+        bg="energy-management/cs-roof.png"
         titlehighlightedstart="SOLAR POWER SYSTEMS"
         titleend="INSTALLATION"
         description="STABLE ENERGY COSTS MONTH AFTER MONTH!"
@@ -69,14 +69,14 @@ export default function EnergyManagement() {
         titleend="Energy Management System"
         data={transparentCardsContent}
         index={0}
-        bg="/energy-management/home-card-bg.svg"
+        bg="/energy-management/home-card-bg.png"
       />
       <TransparentCard
         titlehighlightedstart="Building"
         titleend="Energy Management System"
         data={transparentCardsContent}
         index={1}
-        bg="/energy-management/building-card-bg.svg"
+        bg="/energy-management/building-card-bg.png"
       />
       <Separator />
       <GrayCardsBox

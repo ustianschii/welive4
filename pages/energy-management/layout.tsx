@@ -24,7 +24,7 @@ export default function EnergyManagementLayout({
             </Highlighted>
           </Subtitle>
         }
-        background={`url('/energy-management/header-bg.svg')`}
+        background={`url('/energy-management/header-bg.png')`}
         height="775px"
         divider={<GreenDivider />}
         subtitle={
