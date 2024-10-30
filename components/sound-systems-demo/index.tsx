@@ -10,7 +10,7 @@ import { soundSystems } from "./data";
 import { Container, Title } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { Dot, Feature } from "../shared/key-features-card/styles";
-import { BLACK, MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export const SoundSystemDemo: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
