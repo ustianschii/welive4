@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -5,6 +7,7 @@ import {
   Box as MuiBox,
   Button as MuiButton,
 } from "@mui/material";
+
 import {
   BOLD,
   MAIN_SERVICES_BACKGROUND,

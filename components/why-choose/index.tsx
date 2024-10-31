@@ -8,7 +8,7 @@ export const WhyChoose = () => {
   return (
     <Container disableGutters>
       <Title>
-        WHY CHOOSE <Highlighted>WE LIVE 4</Highlighted>
+        WHY CHOOSE <Highlighted mLeft="0px">WE LIVE 4</Highlighted>
       </Title>
       <CardContainer>
         {content.map((item, index) => (

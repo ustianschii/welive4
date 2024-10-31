@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -66,7 +68,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   [theme.breakpoints.down("sm")]: {
-    width: "95%",
+    width: "90%",
     height: "50px",
     fontFamily: opensans.style.fontFamily,
     fontSize: "16px",

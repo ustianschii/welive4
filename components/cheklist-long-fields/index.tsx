@@ -51,7 +51,7 @@ export const ChecklistLongFields = () => {
         ))}
         <ShareBox>
           <Typography fontSize="18px" mb="5px">
-            <Highlighted>Share up to 20 pictures</Highlighted>
+            <Highlighted mLeft="0px">Share up to 20 pictures</Highlighted>
           </Typography>
           <UploadButton size="small">
             <Image

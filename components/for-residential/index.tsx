@@ -6,6 +6,7 @@ import { data } from "./data";
 import Image from "next/image";
 
 import { Card } from "./card";
+import { ROUTES } from "../../utils/routes-constants";
 
 export const ForResidential = () => {
   return (
@@ -22,7 +23,7 @@ export const ForResidential = () => {
           <Card key={index} icon={card.icon} text={card.text} />
         ))}
       </FeaturesBox>
-      <Button>LEARN MORE</Button>
+      <Button href={ROUTES.LOXONE_RESIDENTIAL}>LEARN MORE</Button>
     </Container>
   );
 };

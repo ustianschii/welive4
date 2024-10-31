@@ -6,10 +6,11 @@ import { ContentSeparator } from "../../components/shared/content-separator";
 import { Separator } from "../../components/shared/gray-separator";
 import { GrayCardsBox } from "../../components/shared/gray-cards";
 import {
-  grayCardsAudioVisualSystems,
+  GCAudioVisualSystems,
   grayCardsAudioVisualSystemsLatest,
 } from "../../components/shared/gray-cards/data";
 import { Button } from "../../components/shared/gray-cards/styles";
+import { ROUTES } from "../../utils/routes-constants";
 
 export default function AudioVisualSystems() {
   return (
@@ -23,12 +24,17 @@ export default function AudioVisualSystems() {
         containerpadding="30px 0"
       />
       <Separator />
-      <GrayCardsBox
-        data={grayCardsAudioVisualSystems}
-        imgheight={400}
-        imgwidth={388}
-        button={<Button>LEARN MORE &#10230;</Button>}
-      />
+      {GCAudioVisualSystems.map((item, index) => {
+        return (
+          <GrayCardsBox
+            key={index}
+            data={item}
+            imgheight={400}
+            imgwidth={388}
+            button={<Button href={item[0].link}>LEARN MORE &#10230;</Button>}
+          />
+        );
+      })}
       <ContentSeparator
         bg="/audio-visual-systems/cs-office.png"
         titlehighlightedstart="COMMERCIAL AV"
@@ -38,7 +44,9 @@ export default function AudioVisualSystems() {
       />
       <GrayCardsBox
         data={grayCardsAudioVisualSystemsLatest}
-        button={<Button>GET A FREE QUOTE &#10230;</Button>}
+        button={
+          <Button href={ROUTES.CONSULTATION}>GET A FREE QUOTE &#10230;</Button>
+        }
       />
       <Separator />
     </AudioVisualSystemsLayout>

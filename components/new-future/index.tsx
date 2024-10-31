@@ -17,7 +17,7 @@ export const NewFuture = () => {
           style={{ borderRadius: "10px" }}
         ></Image>
         <Title>
-          Why Is<Highlighted>LOXONE</Highlighted> The <br />
+          Why Is<Highlighted>LOXONE</Highlighted>The <br />
           <Highlighted>New Future</Highlighted>Of Smart <br />
           Automation?
         </Title>

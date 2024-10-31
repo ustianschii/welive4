@@ -19,6 +19,7 @@ import {
 } from "./styles";
 import { GRAY } from "@/styles/constants";
 import { FooterProps } from "./types";
+import { ROUTES } from "../../../utils/routes-constants";
 
 export const Footer: React.FC<FooterProps> = ({ divider }) => {
   const ABOUT_US_LINKS = ["Privacy policy", "Our brands", "Reviews", "Blog"];
@@ -64,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
             </LinksContainer>
           </LinksColumn>
         </FastLinks>
-        <Button>CONTACT US</Button>
+        <Button href={ROUTES.CONSULTATION}>CONTACT US</Button>
         <AdressBox>
           <Image
             alt="location-icon"

@@ -5,6 +5,8 @@ import { Box } from "@mui/material";
 import { Button, Container, FieldsBox, Label, TextField } from "./styles";
 import { WHITE } from "@/styles/constants";
 
+import { ROUTES } from "../../utils/routes-constants";
+
 export const ChecklistShortFields = () => {
   return (
     <Container disableGutters>
@@ -49,7 +51,7 @@ export const ChecklistShortFields = () => {
           />
         </Box>
       </FieldsBox>
-      <Button variant="outlined" size="small">
+      <Button variant="outlined" size="small" href={ROUTES.CHECKLIST_LONG}>
         CONTINUE TO SMART CHECK LIST
       </Button>
     </Container>

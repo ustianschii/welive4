@@ -24,13 +24,14 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const Highlighted = styled("span")(({ theme }) => ({
-  color: GREEN,
-  [theme.breakpoints.down("sm")]: {
-    marginLeft: "6px",
-    marginRight: "6px",
-  },
-}));
+export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
+  ({ theme, mLeft = "6px", mRight = "6px" }) => ({
+    color: GREEN,
+    marginLeft: mLeft,
+    marginRight: mRight,
+    [theme.breakpoints.down("sm")]: {},
+  })
+);
 
 export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {

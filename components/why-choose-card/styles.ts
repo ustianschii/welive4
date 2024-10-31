@@ -1,5 +1,8 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
+
 import { LIGHT_BLACK, REGULAR, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 

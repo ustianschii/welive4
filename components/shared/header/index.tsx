@@ -22,16 +22,17 @@ import { opensans } from "@/app/layout";
 
 import Image from "next/image";
 import Link from "next/link";
+import { ROUTES } from "../../../utils/routes-constants";
 
 const pages = [
-  { text: "HOME", href: "/" },
-  { text: "SYSTEM DESIGN", href: "/system-design" },
-  { text: "NETWORK SYSTEM", href: "/network" },
-  { text: "ENTERTAINMENT SYSTEM", href: "/audio-visual-systems" },
-  { text: "LOXONE AUTOMATION", href: "/loxone-automation" },
-  { text: "ENERGY MANAGEMENT", href: "/energy-management" },
-  { text: "TV MOUNTING", href: "/outdoor-tv" },
-  { text: "BLOG", href: "/blog" },
+  { text: "HOME", href: ROUTES.HOME },
+  { text: "SYSTEM DESIGN", href: ROUTES.SYSTEM_DESIGN },
+  { text: "NETWORK SYSTEM", href: ROUTES.NETWORK_SYSTEM },
+  { text: "ENTERTAINMENT SYSTEM", href: ROUTES.AUDIO_VISUAL_SYSTEMS },
+  { text: "LOXONE AUTOMATION", href: ROUTES.LOXONE_AUTOMATION },
+  { text: "ENERGY MANAGEMENT", href: ROUTES.ENERGY_MANAGEMENT },
+  { text: "TV MOUNTING", href: ROUTES.OUTDOOR_TV },
+  { text: "BLOG", href: ROUTES.BLOG },
 ];
 
 export const Header: React.FC<HeaderProps> = ({
@@ -78,13 +79,16 @@ export const Header: React.FC<HeaderProps> = ({
           >
             LOGO
           </Typography>
-          <Image
-            alt="logo"
-            src="/header-mobile/logo.svg"
-            width={270}
-            height={150}
-            style={{ marginLeft: "5%" }}
-          />
+          <Link href={ROUTES.HOME}>
+            <Image
+              alt="logo"
+              src="/header-mobile/logo.svg"
+              width={270}
+              height={150}
+              style={{ marginLeft: "5%" }}
+            />
+          </Link>
+
           <DropDownMenu>
             <IconButton
               size="large"
@@ -147,7 +151,7 @@ export const Header: React.FC<HeaderProps> = ({
         {dividerTop}
         {title}
         {subtitle}
-        {button}
+        <Link href={ROUTES.CONSULTATION}>{button}</Link>
       </Container>
       {divider}
       {Boolean(anchorElNav) && (

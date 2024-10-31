@@ -4,7 +4,7 @@ import SystemDesignLayout from "./layout";
 import { Separator } from "../../components/shared/gray-separator";
 import { Title } from "../../components/shared/content-separator/styles";
 import { Highlighted } from "../../components/hero-title/styles";
-import { DesignTypes } from "../../components/system-design-cards";
+import { DesignTypes } from "../../components/system-design/system-design-cards";
 import { BlackCardsBoxShared } from "../../components/shared/black-cards";
 import {
   BCSystemDesign,
@@ -17,7 +17,7 @@ import { TextUs } from "../../components/text-us";
 export default function SystemDesign() {
   return (
     <SystemDesignLayout>
-      <Separator height="120px" padding="20px 0">
+      <Separator height="100px" padding="20px 0">
         <Title>
           Our System
           <Highlighted>
@@ -28,30 +28,21 @@ export default function SystemDesign() {
         </Title>
       </Separator>
       <DesignTypes />
-      <Separator height="10px" padding="20px 0 0 0">
-        <Title>
-          Why
-          <Highlighted>
-            System Design
-            <br />
-            Helps
-          </Highlighted>
-          You
-        </Title>
-      </Separator>
-      <BlackCardsBoxShared data={BCSystemDesign} />
-      <Separator height="10px" padding="0 0 0 0">
-        <Title>
-          HOW <br />
-          <Highlighted>WE WORK</Highlighted>
-        </Title>
-      </Separator>
+
+      <BlackCardsBoxShared
+        data={BCSystemDesign}
+        titlestart="Why"
+        titlehighlightedend="System Design Helps"
+        titleend="You"
+      />
       <BlackCardsBoxShared
         data={BCSystemDesignWBorder}
         border="2px solid #59B202"
         bgcolor={TEXT_US_BACKGROUND}
+        titlestart="HOW"
+        titlehighlightedend="WE WORK"
       />
-      <Separator height="90px" padding="0 0 0 0">
+      <Separator height="90px" padding="20px 0 0 0">
         <Title>
           <Highlighted>
             SYSTEM DESIGN

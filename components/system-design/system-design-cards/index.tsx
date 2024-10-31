@@ -6,7 +6,7 @@ import { designTypes } from "./data";
 
 export const DesignTypes = () => {
   return (
-    <Container disableGutters>
+    <Container>
       <SystemDesignCard data={designTypes} />
     </Container>
   );

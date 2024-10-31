@@ -20,7 +20,7 @@ export default function ChecklistLayout({
         dividerTop={<GreenDivider />}
         title={
           <Subtitle m="50px 0 30px 0">
-            Fill up the<Highlighted> Smart Technology Checklist</Highlighted>
+            Fill up the<Highlighted>Smart Technology Checklist</Highlighted>
             below
           </Subtitle>
         }

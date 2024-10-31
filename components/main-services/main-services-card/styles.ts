@@ -1,6 +1,10 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
-import Image from "next/image";
 import { Button as MuiButton } from "@mui/material";
+
+import Image from "next/image";
+
 import { WHITE, SEMI_BOLD } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 

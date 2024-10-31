@@ -36,9 +36,13 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
 
           {(item.title && <Title>{item.title}</Title>) || (
             <Title>
-              <Highlighted>{item.titlehighlightedstart}</Highlighted>
+              <Highlighted mLeft="0px" mRight="0px">
+                {item.titlehighlightedstart}
+              </Highlighted>
               {item.titlestart}
-              <Highlighted>{item.titlehighlightedend}</Highlighted>
+              <Highlighted mLeft="0px" mRight="0px">
+                {item.titlehighlightedend}
+              </Highlighted>
               {item.titleend}
             </Title>
           )}

@@ -13,6 +13,7 @@ interface GrayCard {
   titlehighlightedend?: string;
   titleend?: string;
   descriptions?: string[];
+  link?: string;
 }
 
 export interface GrayCardsBoxProps {

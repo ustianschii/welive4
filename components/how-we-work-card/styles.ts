@@ -1,5 +1,8 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
+
 import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 

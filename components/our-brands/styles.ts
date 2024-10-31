@@ -1,8 +1,11 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
 } from "@mui/material";
+
 import {
   OUR_BRANDS_ICONS_BACKGROUND,
   BOLD,

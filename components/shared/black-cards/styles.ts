@@ -21,7 +21,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
 
   [theme.breakpoints.down("sm")]: {
-    padding: "20px 10px 30px 10px",
+    padding: "0px 10px 0px 10px",
   },
 }));
 
@@ -49,7 +49,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     fontSize: "32px",
-    marginBottom: "30px",
+    marginBottom: "20px",
   },
 }));
 

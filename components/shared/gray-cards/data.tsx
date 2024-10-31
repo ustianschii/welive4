@@ -1,7 +1,10 @@
+import { ROUTES } from "../../../utils/routes-constants";
+
 export const grayCardsData = [
   {
     image: "/network/gray-cards/networking-for-home.jpg",
-    title: "Networking for Home",
+    titlestart: "Networking ",
+    titlehighlightedend: "for Home",
     firstdescription:
       "Is your internet speed stuck in the slow lane? Slow internet during gaming, constant buffering while streaming and frustrating video calls can be so frustrating!",
     seconddescription:
@@ -9,7 +12,9 @@ export const grayCardsData = [
   },
   {
     image: "/network/gray-cards/networking-for-business.jpg",
-    title: "Networking for Business",
+    titlestart: "Networking ",
+    titlehighlightedend: "for Business",
+
     firstdescription:
       "Boost your business connectivity with our business networking solutions! Don’t let your devices get interrupted or slow down. ",
     seconddescription:
@@ -17,7 +22,8 @@ export const grayCardsData = [
   },
   {
     image: "/network/gray-cards/networking-for-rural-areas.png",
-    title: "Networking for Rural Areas",
+    titlestart: "Networking ",
+    titlehighlightedend: "for Rural Areas",
     firstdescription:
       "Fed up with unreliable internet in rural areas in New Jersey & Pennsylvania? You’re not alone! WE LIVE 4 understands the frustration. ",
     seconddescription:
@@ -25,7 +31,8 @@ export const grayCardsData = [
   },
   {
     image: "/network/gray-cards/on-site-survey.jpg",
-    title: "On-site Survey",
+    titlestart: "On-site ",
+    titlehighlightedend: "Survey",
     firstdescription:
       "At WE LIVE 4, your needs are our priority! We conduct detailed surveys at your place to better understand what you need from your internet connection. ",
     seconddescription:
@@ -36,7 +43,9 @@ export const grayCardsData = [
 export const grayCardsDataOutdoorTV = [
   {
     image: "/outdoor-tv/outdoor-tv-demo.png",
-    title: "Why Should You Need An Outdoor TV For Your Entertainment?",
+    titlestart: "Why Should ",
+    titlehighlightedend: "You Need An Outdoor TV ",
+    titleend: "For Your Entertainment?",
     firstdescription:
       "No need to stare at a little screen or miss out on the gorgeous outdoors. With our service, you can safely install your outdoor TV and start watching movies, sports, and shows outside beneath the stars. ",
     seconddescription:
@@ -47,7 +56,9 @@ export const grayCardsDataOutdoorTV = [
 export const grayCardsDataFrameTV = [
   {
     image: "/outdoor-tv/frame-tv-demo.png",
-    title: "What Is A Frame TV?",
+    titlestart: "What Is A ",
+    titlehighlightedend: "Frame TV",
+    titleend: "?",
     firstdescription:
       "When you're not watching TV, The Frame transforms into a beautiful work of art. The Frame comes preloaded with different types of art from various world-renowned artists.",
     seconddescription:
@@ -60,7 +71,8 @@ export const grayCardsDataFrameTV = [
 export const grayCardsDataEnergyManagement = [
   {
     image: "/energy-management/car-charger.png",
-    title: "EV Charging Installation",
+    titlehighlightedstart: "EV Charging",
+    titleend: " Installation",
     maindescription:
       "Electric vehicles are the future, and WE LIVE 4 provides seamless EV charging installation. Loxone integrates energy management system in electric vehicle, allowing you to:",
     firsttitle: "SCHEDULE CHARGING",
@@ -75,7 +87,8 @@ export const grayCardsDataEnergyManagement = [
   },
   {
     image: "/energy-management/solar-panels.png",
-    title: "Solar Power Systems",
+    titlehighlightedstart: "Solar Power ",
+    titleend: "Systems",
     maindescription:
       "WE LIVE 4 offers expert installation of solar energy management systems. Paired with Loxone, you can maximize solar energy utilization, reduce reliance on the grid, and potentially see significant savings on your electricity bills.",
     firsttitle: "SMARTLY MANAGE ENERGY FLOW",
@@ -93,7 +106,8 @@ export const grayCardsDataEnergyManagement = [
 export const grayCardsDataEnergyManagementSecond = [
   {
     image: "/energy-management/wallbox.png",
-    title: "Sustainable Wallbox",
+    titlestart: "Sustainable ",
+    titlehighlightedend: "Wallbox",
     firsttitle: "RIGHT-SIZED POWER FOR YOU",
     firstdescription:
       "We look at your electrical setup to find the right charger type, either single-phase or three-phase, to make sure the EV home charger installation goes smoothly and you can charge efficiently. WE LIVE 4 helps you cut your carbon footprint and makes charging easy for your busy life.",
@@ -103,7 +117,8 @@ export const grayCardsDataEnergyManagementSecond = [
   },
   {
     image: "/energy-management/app-control.svg",
-    title: "LOXONE Control App",
+    titlehighlightedstart: "LOXONE ",
+    titleend: "Control App",
     firsttitle: "SCHEDULE CHARGING",
     firstdescription:
       "Our app gives you control over when to charge your device, whether it’s overnight or syncing with your solar panels. Don’t stress about juggling schedules or peak hours anymore - easily schedule charging during off-peak hours and save money on energy bills. ",
@@ -119,7 +134,8 @@ export const grayCardsDataEnergyManagementSecond = [
 export const grayCardsDataEnergyManagementThird = [
   {
     image: "/energy-management/room.png",
-    title: "Whole Home Solar System",
+    titlehighlightedstart: "Whole Home Solar ",
+    titleend: "System",
     firstdescription:
       "Forget one-size-fits-all—our top-quality solar panels and inverters are handpicked to match your energy requirements, delivering maximum efficiency with minimal waste.",
     seconddescription:
@@ -127,7 +143,8 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/solar-panels-multiple.png",
-    title: "Commercial Solar System",
+    titlehighlightedstart: "Commercial Solar ",
+    titleend: "System",
     firstdescription:
       "At WE LIVE 4, we’re not just residential experts–we’re your partners in commercial solar success. Don’t worry about a thing - our team will handle the installations smoothly, and no disruptions are guaranteed.",
     seconddescription:
@@ -135,7 +152,8 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/tesla-battery.png",
-    title: "Tesla Battery Storage",
+    titlehighlightedstart: "Tesla Battery ",
+    titleend: "Storage",
     firstdescription:
       "No hassle, just grab and store solar energy with our Tesla Powerwall to keep your home bright even after sunset or during unexpected power outages. Take charge of your energy future with WE LIVE 4 and have complete control over your energy usage.",
     seconddescription:
@@ -143,7 +161,8 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/ev-charger.png",
-    title: "EV Charger Integration",
+    titlehighlightedstart: "EV Charger ",
+    titleend: "Integration",
     firstdescription:
       "Planning an electric vehicle? Our experts can design a solar power system with an EV charger, allowing you to power your car using solar energy.",
     seconddescription:
@@ -151,7 +170,8 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/integration.png",
-    title: "LOXONE Integration",
+    titlehighlightedstart: "LOXONE ",
+    titleend: "Integration",
     firstdescription:
       "No hassle, just grab and store solar energy to keep your home bright even after sunset or during unexpected power outages. Take charge of your energy future with WE LIVE 4 and have complete control over your energy usage.",
     seconddescription:
@@ -162,7 +182,7 @@ export const grayCardsDataEnergyManagementThird = [
 export const grayCardsDataEnergyManagementFourth = [
   {
     image: "/energy-management/app-control-second.svg",
-    title: "LOXONE",
+    titlehighlightedstart: "LOXONE",
     firstdescription:
       "We use Loxone, a powerful and user-friendly smart home system, as the brain behind your energy savings. This powerful tech brain seamlessly connects with all your eco-friendly solutions, transforming your home into a smart energy haven.  ",
     seconddescription:
@@ -171,59 +191,81 @@ export const grayCardsDataEnergyManagementFourth = [
   },
 ];
 
-export const grayCardsAudioVisualSystems = [
-  {
-    image: "/audio-visual-systems/home-theater.png",
-    title: "Home Theater System",
-    firstdescription:
-      "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations. ",
-    seconddescription:
-      "From selecting the perfect audiovisual components to craft the basement home theater design and seating arrangements, every detail is created to ensure an unforgettable viewing experience. ",
-    thirddescription:
-      "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
-  },
-  {
-    image: "/audio-visual-systems/gaming-media.png",
-    title: "Gaming & Media Room",
-    firstdescription:
-      "Looking for a room that can be used for more than just theater purposes? Let’s head to the media room with WE LIVE 4! ",
-    seconddescription:
-      "Experience the pleasure of smooth traffic and customizable furniture arrangements for your space. Get lost in movies and games with rad lighting and mind-blowing audiovisual setups. ",
-    thirddescription:
-      "We’ll show you how to pick top-notch gear and smoothly integrate smart automated home tech for a hassle-free experience. Our skilled installation ensures optimal performance and continuous support maintains a smooth-running entertainment haven.",
-  },
-  {
-    image: "/audio-visual-systems/surround-sound.png",
-    title: "Surround Sound System",
-    firstdescription:
-      "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution. ",
-    descriptions: [
-      "5.1/5.2 surround sound system",
-      "7.1/7.2 surround sound system",
-      "7.1.4/7.1.6 surround sound system",
-      "7.2.4/7.2.6 surround sound system",
-    ],
-  },
-  {
-    image: "/audio-visual-systems/home-audio.png",
-    title: "Whole Home Audio System",
-    firstdescription:
-      "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
-    seconddescription:
-      "Our professional team can create a full home audio system that fills every space with rich, high -fidelity audio. We carefully design every solution to fit into your living area and fill every room with the full sound of your favorite songs.",
-    thirddescription:
-      "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
-  },
-  {
-    image: "/audio-visual-systems/outdoor-entertainment.png",
-    title: "Outdoor Entertainment System",
-    firstdescription:
-      "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
-    seconddescription:
-      "At WE LIVE 4, we plan everything down to the last detail to ensure you have a great time. From optimizing viewing angles to seamlessly integrating technology into your outdoor space, we’re here to make your outdoor entertainment dreams a reality.",
-    thirddescription: "Why choose average when you can have something amazing?",
-  },
+export const GCAudioVisualSystems = [
+  [
+    {
+      image: "/audio-visual-systems/home-theater.png",
+      titlehighlightedstart: "Home Theater ",
+      titleend: "System",
+      firstdescription:
+        "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations.",
+      seconddescription:
+        "From selecting the perfect audiovisual components to craft the basement home theater design and seating arrangements, every detail is created to ensure an unforgettable viewing experience.",
+      thirddescription:
+        "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
+      link: ROUTES.HOME_THEATER,
+    },
+  ],
+  [
+    {
+      image: "/audio-visual-systems/gaming-media.png",
+      titlehighlightedstart: "Gaming & Media ",
+      titleend: "Room",
+      firstdescription:
+        "Looking for a room that can be used for more than just theater purposes? Let’s head to the media room with WE LIVE 4!",
+      seconddescription:
+        "Experience the pleasure of smooth traffic and customizable furniture arrangements for your space. Get lost in movies and games with rad lighting and mind-blowing audiovisual setups.",
+      thirddescription:
+        "We’ll show you how to pick top-notch gear and smoothly integrate smart automated home tech for a hassle-free experience. Our skilled installation ensures optimal performance and continuous support maintains a smooth-running entertainment haven.",
+      link: ROUTES.GAME_MEDIA,
+    },
+  ],
+  [
+    {
+      image: "/audio-visual-systems/surround-sound.png",
+      titlehighlightedstart: "Surround Sound ",
+      titleend: "System",
+      firstdescription:
+        "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution.",
+      descriptions: [
+        "5.1/5.2 surround sound system",
+        "7.1/7.2 surround sound system",
+        "7.1.4/7.1.6 surround sound system",
+        "7.2.4/7.2.6 surround sound system",
+      ],
+      link: ROUTES.HIGH_PERFORMANCE_SOUND,
+    },
+  ],
+  [
+    {
+      image: "/audio-visual-systems/home-audio.png",
+      titlehighlightedstart: "Whole Home Audio ",
+      titleend: "System",
+      firstdescription:
+        "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
+      seconddescription:
+        "Our professional team can create a full home audio system that fills every space with rich, high-fidelity audio. We carefully design every solution to fit into your living area and fill every room with the full sound of your favorite songs.",
+      thirddescription:
+        "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
+      link: ROUTES.HOME_AUDIO,
+    },
+  ],
+  [
+    {
+      image: "/audio-visual-systems/outdoor-entertainment.png",
+      titlehighlightedstart: "Outdoor Entertainment ",
+      titleend: "System",
+      firstdescription:
+        "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
+      seconddescription:
+        "At WE LIVE 4, we plan everything down to the last detail to ensure you have a great time. From optimizing viewing angles to seamlessly integrating technology into your outdoor space, we’re here to make your outdoor entertainment dreams a reality.",
+      thirddescription:
+        "Why choose average when you can have something amazing?",
+      link: ROUTES.OUTDOOR_ENTERTAINMENT,
+    },
+  ],
 ];
+
 export const grayCardsAudioVisualSystemsLatest = [
   {
     firstdescription:
@@ -236,52 +278,61 @@ export const grayCardsAudioVisualSystemsLatest = [
 ];
 
 export const GCHomeTheater = [
-  {
-    image: "/home-theater/home-theater.png",
-    titlestart: "Customized",
-    titlehighlightedend: "Home Theatre",
-    titleend: "Design",
-    firstdescription:
-      "We aim to fulfill your vision by healing your preferences at each stage. Our team handpicks furniture, lighting controls, and seating options, and calibrates the room to create a space that matches your vision.",
-    seconddescription:
-      "Get the ultimate home cinema experience with the latest 4K to 8K HD screens, surround sound, high-end home theater speakers and effortless streaming. Plus, with our acoustic treatments, you can expect crisp and true-to-life sound.",
-    descriptions: [
-      "Furniture selection",
-      "Theater seating",
-      "Acoustic treatments",
-      "Screen & Speaker placement",
-    ],
-  },
-  {
-    image: "/home-theater/installation.png",
-    titlehighlightedstart: "Seamless",
-    titleend: "Installation",
-    firstdescription:
-      "Our technicians are skilled at handling all aspects of your setup. This includes discreetly wiring walls and ceilings, creating a seamless and clutter-free look that enhances your space.",
-    seconddescription:
-      "We take care of all the details, from optimizing device settings to provide the best experience. Sit back, relax, and enjoy unforgettable entertainment with our services.",
-    descriptions: [
-      "In-wall wiring",
-      "Ceiling solutions",
-      "Device configuration",
-    ],
-  },
-  {
-    image: "/home-theater/integration.png",
-    titlehighlightedstart: "LOXONE",
-    titleend: "Integration",
-    firstdescription:
-      "Enjoy full control over your home theater system with LOXONE’s automated enhancements and remote access. Everything you need to set the perfect mood or fine-tune your entertainment system is at your fingertips.",
-    seconddescription:
-      "With remote access and monitoring capabilities, you can stay connected to your home from anywhere in the world. No matter if you’re traveling for work or going out, your home will be taken care of by experts.",
-    descriptions: ["Centralized Control", "Remote Access and Monitoring"],
-  },
+  [
+    {
+      image: "/home-theater/home-theater.png",
+      titlestart: "Customized ",
+      titlehighlightedend: "Home Theatre ",
+      titleend: "Design",
+      firstdescription:
+        "We aim to fulfill your vision by healing your preferences at each stage. Our team handpicks furniture, lighting controls, and seating options, and calibrates the room to create a space that matches your vision.",
+      seconddescription:
+        "Get the ultimate home cinema experience with the latest 4K to 8K HD screens, surround sound, high-end home theater speakers and effortless streaming. Plus, with our acoustic treatments, you can expect crisp and true-to-life sound.",
+      descriptions: [
+        "Furniture selection",
+        "Theater seating",
+        "Acoustic treatments",
+        "Screen & Speaker placement",
+      ],
+      link: ROUTES.HOME_AUDIO,
+    },
+  ],
+  [
+    {
+      image: "/home-theater/installation.png",
+      titlehighlightedstart: "Seamless ",
+      titleend: "Installation",
+      firstdescription:
+        "Our technicians are skilled at handling all aspects of your setup. This includes discreetly wiring walls and ceilings, creating a seamless and clutter-free look that enhances your space.",
+      seconddescription:
+        "We take care of all the details, from optimizing device settings to provide the best experience. Sit back, relax, and enjoy unforgettable entertainment with our services.",
+      descriptions: [
+        "In-wall wiring",
+        "Ceiling solutions",
+        "Device configuration",
+      ],
+      link: ROUTES.HOME_AUDIO,
+    },
+  ],
+  [
+    {
+      image: "/home-theater/integration.png",
+      titlehighlightedstart: "LOXONE ",
+      titleend: "Integration",
+      firstdescription:
+        "Enjoy full control over your home theater system with LOXONE’s automated enhancements and remote access. Everything you need to set the perfect mood or fine-tune your entertainment system is at your fingertips.",
+      seconddescription:
+        "With remote access and monitoring capabilities, you can stay connected to your home from anywhere in the world. No matter if you’re traveling for work or going out, your home will be taken care of by experts.",
+      descriptions: ["Centralized Control", "Remote Access and Monitoring"],
+      link: ROUTES.LOXONE_AUTOMATION,
+    },
+  ],
 ];
 
 export const GCGameMediaTop = [
   {
     image: "/game-media/media-room.png",
-    titlestart: "What Is A",
+    titlestart: "What Is A ",
     titlehighlightedend: "Media Room",
     titleend: "?",
     firstdescription:
@@ -296,7 +347,7 @@ export const GCGameMediaTop = [
 export const GCGameMediaBottom = [
   {
     image: "/game-media/3d-design.png",
-    titlestart: "Customized",
+    titlestart: "Customized ",
     titlehighlightedend: "3D Design",
     firstdescription:
       "WE LIVE 4 offers personalized 3D design service for game and media rooms.",
@@ -307,7 +358,7 @@ export const GCGameMediaBottom = [
   },
   {
     image: "/game-media/av-configuration.jpg",
-    titlehighlightedstart: "AV",
+    titlehighlightedstart: "AV ",
     titleend: "Configuration",
     firstdescription:
       "We start by understanding your preferences, whether it’s immersive movie nights, adrenaline-fueled gaming sessions, or multi TV game room.",
@@ -318,7 +369,7 @@ export const GCGameMediaBottom = [
   },
   {
     image: "/game-media/centralized-control.png",
-    titlehighlightedstart: "Centralized",
+    titlehighlightedstart: "Centralized ",
     titleend: "Control",
     firstdescription:
       "Simplify your entertainment experience with the Loxone app or voice commands. Adjust lighting, volume, temperature, and motorized screens all in one place. ",
@@ -329,7 +380,7 @@ export const GCGameMediaBottom = [
   },
   {
     image: "/game-media/rgbw.jpg",
-    titlestart: "Customized",
+    titlestart: "Customized ",
     titlehighlightedend: "RGBW design",
     firstdescription:
       "Do you need something more than just lighting in your playroom? How about a whole RGBW backlight system to enjoy any color combinations?",
@@ -343,7 +394,7 @@ export const GCGameMediaBottom = [
 export const GCHomeAudioFirst = [
   {
     image: "/home-audio/design.png",
-    titlehighlightedstart: "Customized",
+    titlehighlightedstart: "Customized ",
     titleend: "System Design",
     firstdescription:
       "We don’t offer one-size-fits-all solutions. By considering your needs, preferences, and daily routines, we create a system that seamlessly integrates with your life.",
@@ -354,7 +405,7 @@ export const GCHomeAudioFirst = [
   },
   {
     image: "/home-audio/concealment.png",
-    titlestart: "Speaker",
+    titlestart: "Speaker ",
     titlehighlightedend: "Concealment",
     firstdescription:
       "Our team is experienced in installing speakers on your ceiling and walls, ensuring they seamlessly fit with your home decor for a neat look. Enjoy immersive sound without sacrificing aesthetics.",
@@ -363,7 +414,7 @@ export const GCHomeAudioFirst = [
   },
   {
     image: "/home-audio/streaming.png",
-    titlehighlightedstart: "Multi Source",
+    titlehighlightedstart: "Multi Source ",
     titleend: "Streaming",
     firstdescription:
       "Enjoy unlimited music, podcasts, and audiobooks from popular platforms like Apple AirPlay 2, Spotify, TuneIn, and Google Play Music. Experience the ease of multi-user functionality, where each family member can stream their own music in separate rooms.",
@@ -375,7 +426,7 @@ export const GCHomeAudioFirst = [
 export const GCHomeAudioSecond = [
   {
     image: "/home-audio/integration.png",
-    titlehighlightedstart: "LOXONE",
+    titlehighlightedstart: "LOXONE ",
     titleend: "Integration",
     firstdescription:
       "LOXONE automatically adjusts audio to match occupancy or time of day for the perfect atmosphere, no effort required. Greet guests with custom playlists or create a relaxing ambiance with pre-programmed music and lighting.",
@@ -387,7 +438,7 @@ export const GCHomeAudioSecond = [
 export const GCMusicStreaming = [
   {
     image: "/high-performance-sound/tidal-app-demo.png",
-    titlehighlightedstart: "High-end",
+    titlehighlightedstart: "High-end ",
     titleend: "Music Streaming",
     firsttitle: "AD-FREE LISTENING",
     firstdescription:
@@ -404,7 +455,7 @@ export const GCMusicStreaming = [
 export const GCOutdoorEntertainmentTV = [
   {
     image: "/outdoor-entertainment/outdoor-tv.png",
-    titlestart: "Premium",
+    titlestart: "Premium ",
     titlehighlightedend: "Outdoor TV",
     firstdescription:
       "Our selection provides unbeatable picture quality, using advanced display technologies that deliver stunning visuals even in bright sunlight. Enjoy our outdoor TVs year-round with their weatherproof construction, designed to withstand rain, snow, dust, and UV rays for maximum durability.",
@@ -420,5 +471,16 @@ export const GCOutdoorEntertainmentSpeaker = [
       "Enjoy personalized, high-quality sound for any occasion - from movie nights to peaceful moments of relaxation. With our best high-end outdoor speakers, you can enjoy high-quality sound even in rainy, sunny, or whether you need an outdoor sound system for pool.",
     seconddescription:
       "Our technicians skillfully hide wires and blend your audio system with your outdoor space, so you can enjoy glorious music with no visual distractions. ",
+  },
+];
+
+export const GCHome = [
+  {
+    image: "/home/game-console.png",
+    titlestart: "Customized",
+    titlehighlightedend: " RGBW ",
+    titleend: "design",
+    firstdescription:
+      "In today’s technology-driven world, smart home devices have become an integral part of our daily lives. One such innovation that has gained immense popularity is the RGBW LED strip controller. With the ability to create vibrant and customizable lighting effects, this device has revolutionized home decor and lighting solutions.",
   },
 ];

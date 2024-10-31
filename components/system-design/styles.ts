@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -34,5 +36,6 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     paddingBottom: "20px",
+    fontSize: "15px",
   },
 }));

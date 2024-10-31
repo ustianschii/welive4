@@ -4,7 +4,6 @@ import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
 import { Highlighted, Subtitle } from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
-import { CustomButton } from "../../components/shared/header-button";
 
 export default function ConsultationLayout({
   children,
@@ -30,7 +29,6 @@ export default function ConsultationLayout({
         background={`url('consultation/header-bg.png')`}
         height="775px"
         divider={<GreenDivider />}
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
       />
       {children}
       <Footer divider={<GreenDivider />} />

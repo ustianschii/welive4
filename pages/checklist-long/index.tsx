@@ -4,10 +4,8 @@ import { ChecklistLongFields } from "../../components/cheklist-long-fields";
 
 export default function ChecklistLong() {
   return (
-    <>
-      <ChecklistLayout>
-        <ChecklistLongFields />
-      </ChecklistLayout>
-    </>
+    <ChecklistLayout>
+      <ChecklistLongFields />
+    </ChecklistLayout>
   );
 }

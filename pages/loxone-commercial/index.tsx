@@ -18,7 +18,8 @@ export default function LoxoneCommercial() {
       <ReturnOnInvestments />
       <ApplicationScenarios />
       <GreenBanner
-        title={data[0].title}
+        titlehighlightedstart="LOXONE"
+        titleend="COMMERCIAL SOLUTIONS"
         first_description={data[0].first_description}
         second_description={data[0].second_description}
       />

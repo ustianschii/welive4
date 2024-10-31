@@ -3,6 +3,8 @@ import { Button, Container, Description, Title } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { GreenDivider } from "../shared/green-divider";
 import { Separator } from "../shared/gray-separator";
+import Link from "next/link";
+import { ROUTES } from "../../utils/routes-constants";
 
 export const Statistic = () => {
   return (
@@ -22,7 +24,9 @@ export const Statistic = () => {
           distribution, and other geeky things you could do with one click on
           your remote, smartphone or control panel.
         </Description>
-        <Button>GET A FREE QUOTE!</Button>
+        <Link href={ROUTES.CONSULTATION}>
+          <Button>GET A FREE QUOTE!</Button>
+        </Link>
       </Container>
       <GreenDivider />
       <Separator />

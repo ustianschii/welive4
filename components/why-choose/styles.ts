@@ -1,9 +1,12 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
+
 import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 

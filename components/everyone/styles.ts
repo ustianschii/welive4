@@ -1,9 +1,12 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
+
 import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 

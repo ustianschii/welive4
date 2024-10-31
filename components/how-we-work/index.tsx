@@ -3,6 +3,7 @@ import { Container, Title, Description, CardContainer, Button } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { Card } from "../how-we-work-card";
 import { CardData } from "./data";
+import { ROUTES } from "../../utils/routes-constants";
 
 export const HowWeWork = () => {
   return (
@@ -34,7 +35,7 @@ export const HowWeWork = () => {
           />
         ))}
       </CardContainer>
-      <Button>GET A FREE QUOTE!</Button>
+      <Button href={ROUTES.CONSULTATION}>GET A FREE QUOTE!</Button>
     </Container>
   );
 };

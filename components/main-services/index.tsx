@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styles";
-import { Card } from "../main-services-card";
-import { servicesData } from "../main-services-card/data";
+import { Card } from "./main-services-card";
+import { servicesData } from "./main-services-card/data";
 
 export const MainServices = () => {
   return (

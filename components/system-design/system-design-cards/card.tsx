@@ -23,7 +23,7 @@ export const SystemDesignCard: React.FC<DesignTypesProps> = ({ data }) => {
               <Title>{item.title}</Title>
               <Description>{item.description}</Description>
             </ContentBox>
-            <Button>LEARN MORE</Button>
+            <Button href={item.link}>LEARN MORE</Button>
           </Box>
         </CardBox>
       ))}

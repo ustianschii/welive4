@@ -16,19 +16,25 @@ import { homeTheaterFaq } from "../../components/shared/accordion/data";
 export default function HomeTheater() {
   return (
     <HomeTheaterLayout>
-      <Separator height="80px" padding="20px 0">
+      <Separator height="100px" padding="20px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>
           <br />
           FROM OUR SERVICE
         </Title>
       </Separator>
-      <GrayCardsBox
-        data={GCHomeTheater}
-        imgheight={400}
-        imgwidth={388}
-        button={<Button>LEARN MORE &#10230;</Button>}
-      />
+
+      {GCHomeTheater.map((item, index) => {
+        return (
+          <GrayCardsBox
+            key={index}
+            data={item}
+            imgheight={400}
+            imgwidth={388}
+            button={<Button href={item[0].link}>LEARN MORE &#10230;</Button>}
+          />
+        );
+      })}
       <BlackCardsBoxShared
         titlestart="Why Choose"
         titlehighlightedend="We LIVE 4 for Your Home Theater?"
