@@ -9,7 +9,7 @@ export const servicesData = [
   {
     img: "/services-images-mobile/entertainment-system.jpg",
     text: "ENTERTAINMENT SYSTEM",
-    link: ROUTES.ENTERTAINMENT_SYSTEM,
+    link: ROUTES.AUDIO_VISUAL_SYSTEMS,
   },
   {
     img: "/services-images-mobile/energy-management.jpg",
@@ -19,7 +19,7 @@ export const servicesData = [
   {
     img: "/services-images-mobile/tv-mounting.jpg",
     text: "TV MOUNTING",
-    link: ROUTES.TV_MOUNTING,
+    link: ROUTES.OUTDOOR_TV,
   },
   {
     img: "/services-images-mobile/network-system.jpg",
@@ -29,6 +29,6 @@ export const servicesData = [
   {
     img: "/services-images-mobile/sound-system.jpg",
     text: "SOUND SYSTEM",
-    link: ROUTES.SOUND_SYSTEM,
+    link: ROUTES.HIGH_PERFORMANCE_SOUND,
   },
 ];
