@@ -19,10 +19,10 @@ import {
 import { HeaderProps } from "./types";
 import { GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
+import { ROUTES } from "../../../utils/routes-constants";
 
 import Image from "next/image";
 import Link from "next/link";
-import { ROUTES } from "../../../utils/routes-constants";
 
 const pages = [
   { text: "HOME", href: ROUTES.HOME },
@@ -32,7 +32,7 @@ const pages = [
   { text: "LOXONE AUTOMATION", href: ROUTES.LOXONE_AUTOMATION },
   { text: "ENERGY MANAGEMENT", href: ROUTES.ENERGY_MANAGEMENT },
   { text: "TV MOUNTING", href: ROUTES.OUTDOOR_TV },
-  { text: "BLOG", href: ROUTES.BLOG },
+  { text: "CONTACTS", href: ROUTES.CONSULTATION },
 ];
 
 export const Header: React.FC<HeaderProps> = ({
@@ -79,7 +79,7 @@ export const Header: React.FC<HeaderProps> = ({
           >
             LOGO
           </Typography>
-          <Link href={ROUTES.HOME}>
+          <IconButton href={ROUTES.HOME}>
             <Image
               alt="logo"
               src="/header-mobile/logo.svg"
@@ -87,8 +87,7 @@ export const Header: React.FC<HeaderProps> = ({
               height={150}
               style={{ marginLeft: "5%" }}
             />
-          </Link>
-
+          </IconButton>
           <DropDownMenu>
             <IconButton
               size="large"
@@ -121,7 +120,7 @@ export const Header: React.FC<HeaderProps> = ({
                   href={page.href}
                   style={{ textDecoration: "none" }}
                 >
-                  <MenuItem>
+                  <MenuItem onClick={handleCloseNavMenu}>
                     <Typography
                       textAlign="center"
                       color={index === 3 || index === 4 ? GREEN : WHITE}
@@ -141,7 +140,11 @@ export const Header: React.FC<HeaderProps> = ({
               <Button
                 key={index}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                }}
               >
                 {page.text}
               </Button>

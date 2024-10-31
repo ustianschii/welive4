@@ -19,7 +19,7 @@ interface ContainerProps {
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
   ({ background, backcolor }) => ({
-    backgroundColor: backcolor ?? "none",
+    backgroundColor: background || backcolor ? backcolor ?? "gray" : "gray",
     backgroundImage: background ?? "none",
     backgroundRepeat: background ? "no-repeat" : "",
     backgroundSize: background ? "cover" : "",

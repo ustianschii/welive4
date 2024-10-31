@@ -8,6 +8,7 @@ import { Separator } from "../../components/shared/gray-separator";
 import { ConsultationForm } from "../../components/consultation-form";
 import { CustomerCare } from "../../components/customer-care-banner";
 import { OtherWayToConnect } from "../../components/others-way-to-connect";
+import { TextUs } from "../../components/text-us";
 
 export default function Consultation() {
   return (
@@ -22,6 +23,7 @@ export default function Consultation() {
         <Title>Customer Care</Title>
       </Separator>
       <CustomerCare />
+      <TextUs />
       <OtherWayToConnect />
     </ConsultationLayout>
   );
