@@ -42,6 +42,7 @@ export const FieldsBox = styled(MuiBox)(({ theme }) => ({
 
 export const TextField = styled(MuiTextField)(({ theme }) => ({
   "& .MuiOutlinedInput-root": {
+    color: WHITE,
     borderRadius: "10px",
     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
       borderColor: GREEN,
