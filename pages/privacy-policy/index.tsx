@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 
 import PrivacyPolicyLayout from "./layout";
 import { SEPARATOR_BACKGROUND } from "@/styles/constants";
-import { Paragraph } from "./styles";
+import { Paragraph } from "../../src/styles/privacy-policy-styles";
 
 export default function PrivacyPolicy() {
   return (
