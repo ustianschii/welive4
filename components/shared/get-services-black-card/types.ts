@@ -3,7 +3,7 @@ interface ServiceCard {
   name: string;
   features: string[];
   durationicon: string;
-  priceicon: string;
+  priceicon?: string;
 }
 
 export interface GetServiceCardProps {

@@ -11,18 +11,18 @@ import {
   SEMI_BOLD,
   WHITE,
 } from "@/styles/constants";
-import { homeTheater } from "../../components/shared/get-services-black-card/services";
+import { tvMounting } from "../../components/shared/get-services-black-card/services";
 import { opensans } from "@/app/layout";
-import GetHomeTheaterLayout from "./layout";
+import GetTvMountingLayout from "./layout";
 
-export default function GetHomeTheater() {
+export default function GetTvMounting() {
   return (
-    <GetHomeTheaterLayout>
+    <GetTvMountingLayout>
       <Box
         p="0 10px 20px 10px"
         sx={{ backgroundColor: GET_SERVICES_BACKGROUND }}
       >
-        <GetServiceCard data={homeTheater} />
+        <GetServiceCard data={tvMounting} />
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Button
             style={{
@@ -48,6 +48,6 @@ export default function GetHomeTheater() {
           </IconButton>
         </Box>
       </Box>
-    </GetHomeTheaterLayout>
+    </GetTvMountingLayout>
   );
 }

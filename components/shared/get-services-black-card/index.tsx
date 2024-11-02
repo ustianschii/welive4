@@ -67,7 +67,7 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
               </Box>
             ))}
           </List>
-          <Box display="flex">
+          <Box display="flex" justifyContent="space-between">
             <IconButton>
               <Image
                 src={service.durationicon}
@@ -76,14 +76,27 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
                 height={50}
               />
             </IconButton>
-            <IconButton>
+
+            {service.priceicon && (
+              <IconButton>
+                <Image
+                  src={service.priceicon}
+                  alt="Price icon"
+                  width={100}
+                  height={50}
+                />
+              </IconButton>
+            )}
+
+            {/* <IconButton>
               <Image
                 src={service.priceicon}
                 alt="Price icon"
                 width={100}
                 height={50}
               />
-            </IconButton>
+            </IconButton> */}
+
             <Typography
               color={GRAY}
               fontFamily={raleway.style.fontFamily}

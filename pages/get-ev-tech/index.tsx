@@ -15,7 +15,7 @@ import { evTech } from "../../components/shared/get-services-black-card/services
 import { opensans } from "@/app/layout";
 import GetEvTechLayout from "./layout";
 
-export default function GetEntertainment() {
+export default function GetEvTech() {
   return (
     <GetEvTechLayout>
       <Box
