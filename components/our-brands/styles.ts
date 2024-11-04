@@ -7,7 +7,6 @@ import {
 } from "@mui/material";
 
 import {
-  OUR_BRANDS_ICONS_BACKGROUND,
   BOLD,
   SEPARATOR_BACKGROUND,
   WHITE,
