@@ -7,6 +7,7 @@ import { Box, Typography } from "@mui/material";
 import { Highlighted } from "../hero-title/styles";
 import { selectedServices } from "./services";
 import { Button } from "./styles";
+import { ROUTES } from "../../utils/routes-constants";
 
 export const BookingDetails = () => {
   return (
@@ -38,8 +39,8 @@ export const BookingDetails = () => {
         m="30px 0 0 0"
         pb="30px"
       >
-        <Button>&#10229; BACK</Button>
-        <Button> NEXT &#10230;</Button>
+        <Button href={ROUTES.CART_CHOOSED_SERVICES}>&#10229; BACK</Button>
+        <Button href={ROUTES.CART_CLIENT_DETAILS}> NEXT &#10230;</Button>
       </Box>
     </Box>
   );

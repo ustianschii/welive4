@@ -5,12 +5,19 @@ import {
   AppBar as MuiAppBar,
   Toolbar as MuiToolbar,
   Menu as MuiMenu,
+  Typography as MuiTypography,
+  MenuItem as MuiMenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+
+import Image from "next/image";
+
 import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { opensans } from "@/app/layout";
 
 interface AppBarProps {
   background?: string;
+  tabletbackground?: string;
   backcolor?: string;
 }
 interface ContainerProps {
@@ -18,43 +25,84 @@ interface ContainerProps {
 }
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
-  ({ background, backcolor }) => ({
-    backgroundColor: background || backcolor ? backcolor ?? "gray" : "gray",
-    backgroundImage: background ?? "none",
-    backgroundRepeat: background ? "no-repeat" : "",
-    backgroundSize: background ? "cover" : "",
-    backgroundPosition: background ? "center" : "",
-  })
-);
-
-export const Container = styled(MuiContainer)<ContainerProps>(
-  ({ theme, height }) => ({
+  ({ theme, background, backcolor, tabletbackground }) => ({
+    [theme.breakpoints.down("md")]: {
+      backgroundColor:
+        tabletbackground || backcolor ? backcolor ?? "gray" : "gray",
+      backgroundImage: tabletbackground ?? "none",
+      backgroundRepeat: tabletbackground ? "no-repeat" : "",
+      backgroundSize: tabletbackground ? "cover" : "",
+      backgroundPosition: tabletbackground ? "center" : "",
+    },
     [theme.breakpoints.down("sm")]: {
-      height: height,
-      position: "relative",
+      backgroundColor: background || backcolor ? backcolor ?? "gray" : "gray",
+      backgroundImage: background ?? "none",
+      backgroundRepeat: background ? "no-repeat" : "",
+      backgroundSize: background ? "cover" : "",
+      backgroundPosition: background ? "center" : "",
     },
   })
 );
 
-export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
+export const Container = styled(MuiContainer)<ContainerProps>(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    position: "relative",
+    height: "700px",
+  },
   [theme.breakpoints.down("sm")]: {
-    display: "flex",
-    justifyContent: "space-between",
+    height: "775px",
+    position: "relative",
+  },
+}));
+
+export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  [theme.breakpoints.down("md")]: {
+    height: "100px",
+  },
+  [theme.breakpoints.down("sm")]: {
     height: "150px",
   },
 }));
 
-export const DropDownMenu = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    display: "flex",
+export const Logo = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.up("sm")]: {
+    width: "400px",
+    height: "280px",
+    marginLeft: "10%",
   },
+  [theme.breakpoints.down("sm")]: {
+    width: "250px",
+    height: "150px",
+    marginLeft: "5%",
+  },
+}));
+
+export const DropDownMenu = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     display: "none",
+  },
+  [theme.breakpoints.down("sm")]: {
+    display: "flex",
   },
 }));
 
 export const Menu = styled(MuiMenu)(({ theme }) => ({
   display: "none",
+  [theme.breakpoints.down("md")]: {
+    display: "flex",
+    flexDirection: "column",
+
+    "& .MuiPaper-root": {
+      minWidth: "50%",
+      borderRadius: "10px",
+      height: "450px",
+      backgroundColor: SEPARATOR_BACKGROUND,
+      backgroundImage: `url('dropdown-menu/dropdown-bg.svg')`,
+      padding: "20px 0 0 10px",
+    },
+  },
   [theme.breakpoints.down("sm")]: {
     display: "block",
     "& .MuiPaper-root": {
@@ -68,7 +116,32 @@ export const Menu = styled(MuiMenu)(({ theme }) => ({
   },
 }));
 
+export const MenuItem = styled(MuiMenuItem)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  [theme.breakpoints.down("sm")]: {
+    alignItems: "start",
+  },
+  [theme.breakpoints.down("md")]: {},
+}));
+
+export const MenuItemTypography = styled(MuiTypography)(({ theme }) => ({
+  fontFamily: opensans.style.fontFamily,
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "25px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "24px",
+  },
+}));
+
 export const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    fontSize: "70px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "50px",
   },

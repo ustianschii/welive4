@@ -11,7 +11,7 @@ import {
   FastLinks,
   Title,
   LinksContainer,
-  Link,
+  Label,
   Button,
   Adress,
   AdressBox,
@@ -20,9 +20,15 @@ import {
 import { GRAY } from "@/styles/constants";
 import { FooterProps } from "./types";
 import { ROUTES } from "../../../utils/routes-constants";
+import Link from "next/link";
 
 export const Footer: React.FC<FooterProps> = ({ divider }) => {
-  const ABOUT_US_LINKS = ["Privacy policy", "Our brands", "Reviews", "Blog"];
+  const ABOUT_US_LINKS = [
+    { label: "Privacy policy", href: ROUTES.PRIVACY_POLICY },
+    { label: "Our brands", href: "#our-brands" },
+    { label: "Reviews", href: "#reviews" },
+  ];
+
   const OUR_LOCATION_LINKS = [
     "Pennsylvania",
     "Philadelphia",
@@ -52,7 +58,13 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
             <Title>About us</Title>
             <LinksContainer>
               {ABOUT_US_LINKS.map((item, index) => (
-                <Link key={index}>{item}</Link>
+                <Link
+                  href={item.href}
+                  key={index}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Label key={index}>{item.label}</Label>
+                </Link>
               ))}
             </LinksContainer>
           </LinksColumn>
@@ -60,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
             <Title>Our location</Title>
             <LinksContainer>
               {OUR_LOCATION_LINKS.map((item, index) => (
-                <Link key={index}>{item}</Link>
+                <Label key={index}>{item}</Label>
               ))}
             </LinksContainer>
           </LinksColumn>

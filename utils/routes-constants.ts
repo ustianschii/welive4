@@ -17,4 +17,9 @@ export enum ROUTES {
   HOME_THEATER = "/home-theater",
   HOME_AUDIO = "/home-audio",
   OUTDOOR_ENTERTAINMENT = "/outdoor-entertainment",
+  GET_SERVICES = "/get-services",
+  CART_CHOOSED_SERVICES = "/cart-choosed-services",
+  CART_DATE_TIME = "/cart-date&time",
+  CART_CLIENT_DETAILS = "/cart-client-details",
+  PRIVACY_POLICY = "/privacy-policy",
 }

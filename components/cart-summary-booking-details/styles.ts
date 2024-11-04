@@ -1,12 +1,12 @@
 import { styled } from "@mui/material/styles";
 import { Button as MuiButton } from "@mui/material";
 
-import { WHITE, GREEN_DARK, SEMI_BOLD } from "@/styles/constants";
+import { WHITE, GREEN, SEMI_BOLD } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   border: "2px solid",
-  borderColor: GREEN_DARK,
+  borderColor: GREEN,
   borderRadius: "10px",
   color: WHITE,
   fontFamily: opensans.style.fontFamily,

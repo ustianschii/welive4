@@ -21,32 +21,44 @@ export const StaticDatePicker = styled(MuiStaticDatePicker)({
     margin: "0",
     width: "100%",
   },
-
-  ".MuiPickersCalendarHeader-labelContainer, .MuiDayCalendar-weekDayLabel": {
+  ".MuiPickersCalendarHeader-labelContainer": {
     fontWeight: SEMI_BOLD,
     fontFamily: opensans.style.fontFamily,
   },
-
+  ".MuiDayCalendar-weekDayLabel": {
+    fontWeight: SEMI_BOLD,
+    fontFamily: opensans.style.fontFamily,
+  },
   ".MuiPickersDay-today": {
     backgroundColor: GRAY,
     color: WHITE,
     border: "0px",
   },
-
-  ".MuiPickersDay-root.Mui-selected, .MuiPickersDay-root.Mui-focused": {
+  ".MuiPickersDay-root.Mui-selected": {
     backgroundColor: GREEN,
-    color: WHITE,
+    color: "white",
     fontWeight: BOLD,
   },
-
+  ".MuiPickersDay-root.Mui-focused": {
+    backgroundColor: GREEN,
+    color: "white",
+    fontWeight: BOLD,
+  },
   ".MuiPickersYear-yearButton": {
     backgroundColor: GREEN,
     fontWeight: BOLD,
   },
+  ".MuiPickersYear-today": {
+    backgroundColor: GREEN,
+    fontWeight: BOLD,
+  },
 
-  ".MuiPickersYear-yearButton.Mui-selected, .MuiPickersYear-yearButton.Mui-focused":
-    {
-      backgroundColor: GREEN,
-      fontWeight: BOLD,
-    },
+  ".MuiPickersYear-yearButton.Mui-selected": {
+    backgroundColor: GREEN,
+    fontWeight: BOLD,
+  },
+  ".MuiPickersYear-yearButton.Mui-focused": {
+    backgroundColor: GREEN,
+    fontWeight: BOLD,
+  },
 });

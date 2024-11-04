@@ -11,7 +11,7 @@ export const Reviews = () => {
   const stars = new Array(5).fill(0);
 
   return (
-    <Container disableGutters>
+    <Container disableGutters id="reviews">
       <LogoContainer>
         <Image
           alt="review-provider"

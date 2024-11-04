@@ -4,7 +4,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Button } from "@mui/material";
 
@@ -15,13 +14,14 @@ import {
   DropDownMenu,
   Toolbar,
   Menu,
+  MenuItemTypography,
+  MenuItem,
+  Logo,
 } from "./styles";
 import { HeaderProps } from "./types";
 import { GREEN, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
 import { ROUTES } from "../../../utils/routes-constants";
 
-import Image from "next/image";
 import Link from "next/link";
 
 const pages = [
@@ -40,6 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
   subtitle,
   button,
   background,
+  tabletbackground,
   backcolor,
   divider,
   dividerTop,
@@ -58,7 +59,12 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <AppBar position="static" background={background} backcolor={backcolor}>
+    <AppBar
+      position="static"
+      background={background}
+      tabletbackground={tabletbackground}
+      backcolor={backcolor}
+    >
       <Container maxWidth="xl" disableGutters height={height}>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -80,12 +86,11 @@ export const Header: React.FC<HeaderProps> = ({
             LOGO
           </Typography>
           <IconButton href={ROUTES.HOME}>
-            <Image
+            <Logo
               alt="logo"
               src="/header-mobile/logo.svg"
-              width={270}
-              height={150}
-              style={{ marginLeft: "5%" }}
+              width={0}
+              height={0}
             />
           </IconButton>
           <DropDownMenu>
@@ -121,14 +126,11 @@ export const Header: React.FC<HeaderProps> = ({
                   style={{ textDecoration: "none" }}
                 >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Typography
-                      textAlign="center"
+                    <MenuItemTypography
                       color={index === 3 || index === 4 ? GREEN : WHITE}
-                      fontFamily={opensans.style.fontFamily}
-                      fontSize="24px"
                     >
                       {page.text}
-                    </Typography>
+                    </MenuItemTypography>
                   </MenuItem>
                 </Link>
               ))}

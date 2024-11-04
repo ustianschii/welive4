@@ -1,4 +1,4 @@
-import { GET_SERVICES_BACKGROUND } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
 import { Footer } from "../../components/shared/footer";
 import { Header } from "../../components/shared/header";
@@ -17,7 +17,7 @@ export default function GetTvMountingLayout({
       <CssBaseline />
       <Header
         height="250px"
-        backcolor={GET_SERVICES_BACKGROUND}
+        backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={<Subtitle m="30px 0">TV MOUNTING</Subtitle>}
       />

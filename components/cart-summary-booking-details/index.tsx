@@ -8,6 +8,7 @@ import { Highlighted } from "../hero-title/styles";
 import { selectedServices } from "./services";
 import { Button } from "./styles";
 import { GreenDivider } from "../shared/green-divider";
+import { ROUTES } from "../../utils/routes-constants";
 
 export const SummaryBookingDetails = () => {
   return (
@@ -73,7 +74,7 @@ export const SummaryBookingDetails = () => {
         m="30px 0 0 0"
         pb="30px"
       >
-        <Button>&#10229; BACK</Button>
+        <Button href={ROUTES.CART_DATE_TIME}>&#10229; BACK</Button>
         <Button>BOOK NOW</Button>
       </Box>
     </Box>

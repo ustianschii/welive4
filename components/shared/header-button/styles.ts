@@ -7,17 +7,24 @@ import { opensans } from "@/app/layout";
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: BOLD,
+  border: "2px solid white",
+  transform: "translateX(-50%)",
+  lineHeight: "120%",
+  width: "300px",
+  height: "60px",
+
+  [theme.breakpoints.down("md")]: {
+    position: "absolute",
+    bottom: "100px",
+    left: "50%",
+  },
+
   [theme.breakpoints.down("sm")]: {
-    width: "300px",
-    height: "60px",
-    fontFamily: opensans.style.fontFamily,
     fontSize: "20px",
-    lineHeight: "120%",
-    fontWeight: BOLD,
-    border: "2px solid white",
     position: "absolute",
     bottom: "50px",
     left: "50%",
-    transform: "translateX(-50%)",
   },
 }));

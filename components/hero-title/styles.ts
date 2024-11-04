@@ -9,18 +9,29 @@ export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
     height: "220px",
     marginTop: "150px",
   },
+  [theme.breakpoints.down("md")]: {
+    height: "220px",
+    marginTop: "150px",
+  },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  textAlign: "center",
+  fontWeight: SEMI_BOLD,
+  fontFamily: opensans.style.fontFamily,
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "25px",
+    marginBottom: "25px",
+  },
+
   [theme.breakpoints.down("sm")]: {
-    display: "flex",
-    marginBottom: "15px",
-    justifyContent: "center",
-    textAlign: "center",
-    fontSize: "20px",
     lineHeight: "1.2",
-    fontFamily: opensans.style.fontFamily,
-    fontWeight: SEMI_BOLD,
+    marginBottom: "25px",
+    fontSize: "18px",
+    padding: "0 20px",
   },
 }));
 
@@ -34,13 +45,18 @@ export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
 );
 
 export const Subtitle = styled(MuiTypography)(({ theme }) => ({
+  lineHeight: "1.1",
+  fontWeight: SEMI_BOLD,
+  fontFamily: opensans.style.fontFamily,
+  textAlign: "center",
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "60px",
+    padding: "0 70px",
+  },
+
   [theme.breakpoints.down("sm")]: {
-    justifyContent: "center",
-    textAlign: "center",
-    height: "160px",
-    fontSize: "40px",
-    lineHeight: "1.1",
-    fontFamily: opensans.style.fontFamily,
-    fontWeight: SEMI_BOLD,
+    fontSize: "33px",
+    padding: "0 20px",
   },
 }));

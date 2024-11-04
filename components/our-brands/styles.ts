@@ -11,12 +11,13 @@ import {
   BOLD,
   SEPARATOR_BACKGROUND,
   WHITE,
+  BLOG_CARD_BACKGROUND,
 } from "@/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     backgroundColor: SEPARATOR_BACKGROUND,
-    height: "350px",
+    height: "300px",
   },
 }));
 
@@ -32,10 +33,9 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 }));
 
 export const Box = styled(MuiTypography)(({ theme }) => ({
-  backgroundColor: OUR_BRANDS_ICONS_BACKGROUND,
+  backgroundColor: BLOG_CARD_BACKGROUND,
 
   [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    height: "50%",
+    height: "40%",
   },
 }));

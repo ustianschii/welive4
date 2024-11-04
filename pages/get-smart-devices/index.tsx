@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { GetServiceCard } from "../../components/shared/get-services-black-card";
 import {
-  GET_SERVICES_BACKGROUND,
+  SEPARATOR_BACKGROUND,
   GREEN_DARK,
   SEMI_BOLD,
   WHITE,
@@ -14,17 +14,16 @@ import {
 import { smartDevices } from "../../components/shared/get-services-black-card/services";
 import { opensans } from "@/app/layout";
 import GetSmartDevicesLayout from "./layout";
+import { ROUTES } from "../../utils/routes-constants";
 
 export default function GetSmartDevices() {
   return (
     <GetSmartDevicesLayout>
-      <Box
-        p="0 10px 20px 10px"
-        sx={{ backgroundColor: GET_SERVICES_BACKGROUND }}
-      >
+      <Box p="0 10px 20px 10px" sx={{ backgroundColor: SEPARATOR_BACKGROUND }}>
         <GetServiceCard data={smartDevices} />
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Button
+            href={ROUTES.GET_SERVICES}
             style={{
               border: "2px solid",
               borderColor: GREEN_DARK,
@@ -38,7 +37,7 @@ export default function GetSmartDevices() {
           >
             &#10229; BACK
           </Button>
-          <IconButton>
+          <IconButton href={ROUTES.CART_CHOOSED_SERVICES}>
             <Image
               src="/get-services/cart.svg"
               alt="cart-icon"

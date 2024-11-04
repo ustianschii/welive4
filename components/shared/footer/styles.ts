@@ -61,7 +61,7 @@ export const LinksContainer = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const Link = styled(MuiTypography)(({ theme }) => ({
+export const Label = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   textAlign: "center",
   fontFamily: raleway.style.fontFamily,

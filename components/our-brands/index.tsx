@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import { Container, Title, Box } from "./styles";
@@ -7,9 +9,17 @@ import { GreenDivider } from "../shared/green-divider";
 import Image from "next/image";
 
 export const OurBrands = () => {
+  const partners = [
+    "/our-brands-mobile/aegis.png",
+    "/our-brands-mobile/lorbeam.png",
+    "/our-brands-mobile/mount-it.png",
+    "/our-brands-mobile/next-level.png",
+    "/our-brands-mobile/unify.png",
+  ];
+
   return (
     <>
-      <Container disableGutters>
+      <Container disableGutters id="our-brands">
         <Title>
           OUR<Highlighted>BRANDS</Highlighted>
         </Title>
@@ -18,19 +28,23 @@ export const OurBrands = () => {
           alignItems="center"
           position="relative"
           whiteSpace="nowrap"
-          padding="10px" // Optional padding for better appearance
+          padding="10px"
           sx={{
             "::-webkit-scrollbar": { display: "none" },
             scrollBehavior: "smooth",
             overflowX: "auto",
           }}
         >
-          <Image
-            alt="our-brands"
-            src={"/our-brands-mobile/brands-scrollable.svg"}
-            width={1000}
-            height={90}
-          ></Image>
+          {partners.map((partner, index) => (
+            <Image
+              key={index}
+              alt="our-brands"
+              src={partner}
+              width={1000}
+              height={60}
+              style={{ margin: "0 30px", width: "auto", height: "auto" }}
+            />
+          ))}
         </Box>
       </Container>
       <GreenDivider />

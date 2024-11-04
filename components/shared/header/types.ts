@@ -5,6 +5,7 @@ export interface HeaderProps {
   divider?: React.ReactNode;
   dividerTop?: React.ReactNode;
   background?: string;
+  tabletbackground?: string;
   backcolor?: string;
   height?: string;
 }

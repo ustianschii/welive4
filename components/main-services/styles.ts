@@ -6,6 +6,8 @@ import { Container as MuiContainer } from "@mui/material";
 import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {},
+
   [theme.breakpoints.down("sm")]: {
     display: "flex",
     flexWrap: "wrap",

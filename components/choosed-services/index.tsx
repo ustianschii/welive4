@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Box, Divider, List, MenuItem, Typography } from "@mui/material";
+import { Box, Divider, List, Typography } from "@mui/material";
 
 import { services } from "./services";
 import {
@@ -10,9 +10,11 @@ import {
   Label,
   TextField,
   Button,
+  MenuItem,
 } from "./styles";
-import { GREEN_DARK, WHITE } from "@/styles/constants";
+import { GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
+import { ROUTES } from "../../utils/routes-constants";
 
 export const ChoosedServicesList = () => {
   const [selectedValue, setSelectedValue] = useState("");
@@ -23,7 +25,14 @@ export const ChoosedServicesList = () => {
     setSelectedValue(event.target.value);
   };
 
-  const options = ["Employee1", "Employee2", "Employee3"];
+  const options = [
+    "WE LIVE 4 BETHLEHEM",
+    "WE LIVE 4 CHESTER",
+    "WE LIVE 4 PHILADELPHIA",
+    "WE LIVE 4 SEA GIRT",
+    "WE LIVE 4 SOMERSET",
+    "WE LIVE 4 WILMINGTON",
+  ];
 
   return (
     <ServicesBox>
@@ -35,7 +44,7 @@ export const ChoosedServicesList = () => {
             </ListItem>
             <Divider
               style={{
-                background: GREEN_DARK,
+                background: GREEN,
                 height: "2px",
                 marginBottom: "7px",
               }}
@@ -78,8 +87,8 @@ export const ChoosedServicesList = () => {
         </FieldContainer>
       </Box>
       <Box display="flex" justifyContent="space-between" m="30px 0">
-        <Button>&#10229; BACK</Button>
-        <Button> NEXT &#10230;</Button>
+        <Button href={ROUTES.GET_SERVICES}>&#10229; BACK</Button>
+        <Button href={ROUTES.CART_DATE_TIME}> NEXT &#10230;</Button>
       </Box>
     </ServicesBox>
   );
