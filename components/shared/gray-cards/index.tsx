@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 
 import Image from "next/image";
 
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 
 import { GrayCardsBoxProps } from "./types";
@@ -12,10 +14,18 @@ import { GREEN } from "@/styles/constants";
 
 export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
   data,
-  imgheight,
-  imgwidth,
+  // imgheight,
+  // imgwidth,
   button,
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  // const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
+  const getWidth = () => (isMobile ? 380 : isTablet ? 750 : 900);
+  const getHeight = () => (isMobile ? 380 : isTablet ? 400 : 500);
+
   return (
     <Container disableGutters>
       {data.map((item, index) => (
@@ -23,13 +33,12 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
           {item.image && (
             <Image
               alt="service"
-              src={item.image}
-              height={imgheight}
-              width={imgwidth}
+              src={isTablet && item.imagetablet ? item.imagetablet : item.image}
+              height={getHeight()}
+              width={getWidth()}
               style={{
                 borderRadius: "10px",
                 objectFit: "cover",
-                marginTop: "50px",
               }}
             />
           )}

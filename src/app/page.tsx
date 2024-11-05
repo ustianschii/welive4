@@ -25,8 +25,6 @@ export default function Home() {
       <Statistic />
       <GrayCardsBox
         data={GCHome}
-        imgheight={400}
-        imgwidth={388}
         button={
           <Button href={ROUTES.GAME_MEDIA}>
             GET A<Highlighted>RGBW</Highlighted> DESIGN

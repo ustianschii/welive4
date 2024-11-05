@@ -6,6 +6,9 @@ import {
   Container as MuiContainer,
   Button as MuiButton,
 } from "@mui/material";
+
+import Image from "next/image";
+
 import { BLACK, BOLD, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
@@ -14,28 +17,55 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: BLACK,
+
+  [theme.breakpoints.down("md")]: {
+    paddingBottom: "50px",
+    padding: "0 30px",
+  },
   [theme.breakpoints.down("sm")]: {
     paddingBottom: "50px",
+    padding: "0 20px",
+  },
+}));
+
+export const Logo = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "370px",
+    height: "150px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    width: "270px",
+    height: "150px",
   },
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+  textAlign: "center",
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "18px",
+  },
+
   [theme.breakpoints.down("sm")]: {
-    width: "90%",
     fontSize: "14px",
-    textAlign: "center",
-    marginBottom: "20px",
   },
 }));
 
 export const FastLinks = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
+
+  [theme.breakpoints.down("md")]: {
+    width: "70%",
+    margin: "50px 0",
+  },
+
   [theme.breakpoints.down("sm")]: {
     width: "70%",
-    marginBottom: "100px",
+    margin: "50px 0",
   },
 }));
 
@@ -47,48 +77,60 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
+  marginBottom: "10px",
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "25px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "20px",
-    marginBottom: "10px",
   },
 }));
 
-export const LinksContainer = styled(MuiBox)(({ theme }) => ({
+export const LinksContainer = styled(MuiBox)(({}) => ({
   display: "flex",
   flexDirection: "column",
-  [theme.breakpoints.down("sm")]: {
-    gap: "5px",
-  },
+  gap: "5px",
 }));
 
 export const Label = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   textAlign: "center",
   fontFamily: raleway.style.fontFamily,
-  [theme.breakpoints.down("sm")]: {},
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "18px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "16px",
+  },
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "50%",
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: BOLD,
+  lineHeight: "120%",
+  border: "2px solid white",
+  margin: "0 auto 35px auto",
+
+  [theme.breakpoints.down("md")]: {
+    width: "250px",
     height: "60px",
-    fontFamily: opensans.style.fontFamily,
+    fontSize: "18px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "200px",
+    height: "50px",
     fontSize: "16px",
-    lineHeight: "120%",
-    fontWeight: BOLD,
-    border: "2px solid white",
-    margin: "0 auto 35px auto",
   },
 }));
 
 export const AdressBox = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "95%",
-    marginBottom: "10px",
-  },
+  marginBottom: "10px",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Adress = styled(MuiTypography)(({ theme }) => ({
@@ -96,6 +138,10 @@ export const Adress = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   alignItems: "center",
   fontFamily: raleway.style.fontFamily,
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "11px",
   },
@@ -104,8 +150,12 @@ export const Adress = styled(MuiTypography)(({ theme }) => ({
 export const Copyright = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+  marginTop: "10px",
+
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "11px",
-    marginTop: "10px",
   },
 }));

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Highlighted } from "../hero-title/styles";
 import { Title, Container, CardContainer } from "./styles";
 import { Card } from "../everyone-card";
@@ -11,9 +12,7 @@ export const Everyone = () => {
       <Container disableGutters>
         <Title>
           GET SOME
-          <Highlighted>
-            FUN <br />
-          </Highlighted>
+          <Highlighted>FUN</Highlighted>
           FOR
           <Highlighted>EVERYONE</Highlighted>
         </Title>

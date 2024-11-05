@@ -15,10 +15,14 @@ import {
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    backgroundColor: MAIN_SERVICES_BACKGROUND,
-    height: "550px",
-  },
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+
+  [theme.breakpoints.down("md")]: { padding: "50px 30px" },
+
+  [theme.breakpoints.down("sm")]: { padding: "30px 20px" },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -28,9 +32,12 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "40px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "35px",
-    padding: "35px 0",
   },
 }));
 
@@ -39,20 +46,31 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    margin: "30px 0 50px 0 ",
+    fontSize: "20px",
+  },
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "50px",
+    margin: "30px 0 50px 0 ",
+    fontSize: "15px",
   },
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: BOLD,
+  border: "2px solid white",
+  lineHeight: "120%",
+
+  [theme.breakpoints.down("md")]: {
+    width: "300px",
     height: "60px",
-    fontFamily: opensans.style.fontFamily,
+    fontSize: "20px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "250px",
+    height: "50px",
     fontSize: "16px",
-    lineHeight: "120%",
-    fontWeight: BOLD,
-    border: "2px solid white",
   },
 }));

@@ -9,9 +9,14 @@ import { opensans, raleway } from "@/app/layout";
 export const Container = styled(MuiBox)(({ theme }) => ({
   position: "relative",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
+
+  [theme.breakpoints.down("md")]: {
+    minHeight: "300px",
+    padding: "10px 10px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     minHeight: "300px",
-    borderRadius: "15px",
     padding: "10px 10px",
   },
 }));
@@ -20,16 +25,25 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   lineHeight: "1.1",
+  padding: "15px 0",
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "23px",
+  },
 
   [theme.breakpoints.down("sm")]: {
     fontSize: "21px",
-    padding: "15px 0",
   },
 }));
 
 export const Review = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "17px",
+    marginBottom: "40px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "14px",
     marginBottom: "40px",

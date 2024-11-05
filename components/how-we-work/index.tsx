@@ -9,7 +9,7 @@ export const HowWeWork = () => {
   return (
     <Container disableGutters>
       <Title>
-        HOW WE <br />
+        HOW WE
         <Highlighted>WORK</Highlighted>
       </Title>
       <Description>
@@ -18,8 +18,7 @@ export const HowWeWork = () => {
         initial stage. After the initial stage, our support continues to be
         available as we are fully committed to providing ongoing help throughout
         your entire journey with us, ensuring your satisfaction.
-      </Description>
-      <Description>
+        <br /> <br />
         From the moment you begin your purchase journey to even after it is
         finished, our commitment is to offer you prompt and attentive help,
         ensuring that you are fully satisfied.

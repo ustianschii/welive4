@@ -1,13 +1,18 @@
+"use client";
+
 import React from "react";
 
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 import Link from "next/link";
 import { Background, Button } from "./styles";
 
 import { CardProps } from "./types";
 
-export const Card: React.FC<CardProps> = ({ link, img, text }) => {
+export const Card: React.FC<CardProps> = ({ link, img, imgtablet, text }) => {
+  const theme = useTheme();
+  const isTabletOrBelow = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       display="flex"
@@ -21,10 +26,9 @@ export const Card: React.FC<CardProps> = ({ link, img, text }) => {
       <Box width="100%" height="80%">
         <Background
           alt="service"
-          src={img}
+          src={isTabletOrBelow ? imgtablet : img}
           width={250}
           height={250}
-          style={{ width: "100%", height: "100%", borderRadius: "10px" }}
         />
       </Box>
       <Link href={link}>

@@ -14,14 +14,20 @@ interface ContainerProps {
 export const Container = styled(MuiBox)<ContainerProps>(
   ({ theme, background, size }) => ({
     backgroundColor: SEPARATOR_BACKGROUND,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    borderRadius: "10px",
+
+    [theme.breakpoints.down("md")]: {
+      backgroundImage: `url(${background})`,
+      backgroundSize: "contain",
+      padding: "40px",
+    },
     [theme.breakpoints.down("sm")]: {
       maxHeight: "300px",
       backgroundImage: `url(${background})`,
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundSize: size || "contain",
-      borderRadius: "10px",
-      padding: "0 15px 20px 15px",
+      backgroundSize: size ?? "contain",
+      padding: "20px 15px",
     },
   })
 );
@@ -32,9 +38,12 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "22px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "20px",
-    padding: "25px 0 15px 0",
   },
 }));
 
@@ -42,8 +51,15 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
 
+  [theme.breakpoints.down("md")]: {
+    textAlign: "center",
+    fontSize: "18px",
+    marginTop: "20px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     textAlign: "start",
     fontSize: "13px",
+    marginTop: "10px",
   },
 }));

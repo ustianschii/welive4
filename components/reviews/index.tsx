@@ -1,11 +1,17 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 import Image from "next/image";
 
-import { Container, LogoContainer, CustomLink, CardContainer } from "./styles";
+import {
+  Container,
+  LogoContainer,
+  ReviewsContainer,
+  LinkTypography,
+} from "./styles";
 import { Card } from "../review-card";
 import { data } from "./data";
+import Link from "next/link";
 
 export const Reviews = () => {
   const stars = new Array(5).fill(0);
@@ -31,15 +37,18 @@ export const Reviews = () => {
             />
           ))}
         </Box>
-        <CustomLink href={"https://arrivala.com/heyo-smart-605/reviews/"}>
-          <Typography>5 out of 5 stars based on 32 reviews</Typography>
-        </CustomLink>
+        <Link
+          href={"https://arrivala.com/heyo-smart-605/reviews/"}
+          style={{ textDecorationColor: "white" }}
+        >
+          <LinkTypography>5 out of 5 stars based on 32 reviews</LinkTypography>
+        </Link>
       </LogoContainer>
-      <CardContainer>
+      <ReviewsContainer>
         {data.map((review, index) => (
           <Card key={index} name={review.name} review={review.review} />
         ))}
-      </CardContainer>
+      </ReviewsContainer>
     </Container>
   );
 };

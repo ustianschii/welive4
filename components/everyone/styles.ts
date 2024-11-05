@@ -12,7 +12,13 @@ import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {},
+
+  [theme.breakpoints.down("md")]: {
+    padding: "30px 50px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "30px 10px",
+  },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -20,20 +26,19 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
+  textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "35px",
+  },
   [theme.breakpoints.down("sm")]: {
-    textAlign: "center",
-    fontSize: "30px",
-    padding: "30px 0 20px 0",
+    fontSize: "28px",
   },
 }));
 
 export const CardContainer = styled(MuiBox)(({ theme }) => ({
   display: "flex",
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    gap: "10px",
-    padding: "0 10px",
-    paddingBottom: "35px",
-  },
+  flexDirection: "column",
+  marginTop: "35px",
+  [theme.breakpoints.down("sm")]: {},
 }));

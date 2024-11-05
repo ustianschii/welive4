@@ -8,15 +8,17 @@ import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiBox)<{ background: string }>(
   ({ theme, background }) => ({
+    display: "flex",
     backgroundImage: `url(${background})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    [theme.breakpoints.down("sm")]: {
-      display: "flex",
-      alignItems: "center",
-      height: "300px",
-      borderRadius: "10px",
+    alignItems: "center",
+    height: "350px",
+    borderRadius: "10px",
+    [theme.breakpoints.down("md")]: {
+      marginBottom: "20px",
     },
+    [theme.breakpoints.down("sm")]: {},
   })
 );
 
@@ -27,6 +29,9 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "55px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "45px",
   },

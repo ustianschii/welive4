@@ -1,45 +1,55 @@
 "use client";
 
 import { styled } from "@mui/material/styles";
-import { Container as MuiContainer, Box as MuiBox } from "@mui/material";
-
-import Link from "next/link";
+import {
+  Container as MuiContainer,
+  Box as MuiBox,
+  Typography as MuiTypography,
+} from "@mui/material";
 
 import { MAIN_SERVICES_BACKGROUND, WHITE } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
+  display: "flex",
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+  flexDirection: "column",
+  alignItems: "center",
+  [theme.breakpoints.down("md")]: {
+    padding: "50px 70px",
+  },
   [theme.breakpoints.down("sm")]: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    backgroundColor: MAIN_SERVICES_BACKGROUND,
-    height: "content-fit",
     padding: "35px 10px",
   },
 }));
 
 export const LogoContainer = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    width: "fit-content",
-    marginBottom: "25px",
-  },
-}));
-
-export const CustomLink = styled(Link)(({ theme }) => ({
-  color: WHITE,
-  fontFamily: raleway.style.fontFamily,
-  "&:visited": {
-    color: "white",
-  },
   [theme.breakpoints.down("sm")]: {},
 }));
 
-export const CardContainer = styled(MuiBox)(({ theme }) => ({
-  height: "content-fit",
-  display: "grid",
+export const LinkTypography = styled(MuiTypography)(({ theme }) => ({
+  color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  "&:visited": {
+    color: "white",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "20px",
+  },
   [theme.breakpoints.down("sm")]: {
-    gridTemplateColumns: "repeat(2, 1fr)",
+    fontSize: "16px",
+  },
+}));
+
+export const ReviewsContainer = styled(MuiBox)(({ theme }) => ({
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  [theme.breakpoints.down("md")]: {
+    gap: "100px",
+    marginTop: "30px",
+  },
+  [theme.breakpoints.down("sm")]: {
     gap: "10px",
+    marginTop: "0px",
   },
 }));

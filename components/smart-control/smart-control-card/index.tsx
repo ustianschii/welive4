@@ -7,9 +7,10 @@ import { SmartControlCardTypes } from "./types";
 export const SmartControlCard: React.FC<SmartControlCardTypes> = ({
   image,
   text,
+  imagetablet,
 }) => {
   return (
-    <Card image={image}>
+    <Card image={image} imagetablet={imagetablet}>
       <Typography>{text}</Typography>
     </Card>
   );

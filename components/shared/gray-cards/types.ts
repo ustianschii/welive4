@@ -1,5 +1,6 @@
 interface GrayCard {
   image?: string;
+  imagetablet?: string;
   title?: string;
   maindescription?: string;
   firsttitle?: string;

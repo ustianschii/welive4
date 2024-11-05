@@ -16,6 +16,7 @@ import {
   Adress,
   AdressBox,
   Copyright,
+  Logo,
 } from "./styles";
 import { GRAY } from "@/styles/constants";
 import { FooterProps } from "./types";
@@ -40,12 +41,7 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
     <>
       {divider}
       <Container disableGutters>
-        <Image
-          alt="logo"
-          src="/header-mobile/logo.svg"
-          width={270}
-          height={150}
-        />
+        <Logo alt="logo" src="/header-mobile/logo.svg" width={0} height={0} />
         <Description>
           We are dedicated to our customers, and they benefit from our
           understanding of their individual differences and needs. We have

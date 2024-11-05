@@ -67,9 +67,9 @@ export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
 }));
 
 export const Logo = styled(Image)(({ theme }) => ({
-  [theme.breakpoints.up("sm")]: {
-    width: "400px",
-    height: "280px",
+  [theme.breakpoints.down("md")]: {
+    width: "350px",
+    height: "150px",
     marginLeft: "10%",
   },
   [theme.breakpoints.down("sm")]: {

@@ -11,8 +11,7 @@ export const Statistic = () => {
     <>
       <Container>
         <Title>
-          DON&apos;T BECOME A <br />
-          <Highlighted>STATISTIC</Highlighted>
+          DON&apos;T BECOME A<Highlighted>STATISTIC</Highlighted>
         </Title>
         <Description>
           Smart technology has many cool designs and solutions to make your life

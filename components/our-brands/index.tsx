@@ -2,13 +2,20 @@
 
 import React from "react";
 
-import { Container, Title, Box } from "./styles";
+import { Container, Title, BrandsBox, BrandsImages } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { GreenDivider } from "../shared/green-divider";
-
-import Image from "next/image";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 export const OurBrands = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  // const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
+  const getWidth = () => (isMobile ? 150 : isTablet ? 200 : 250);
+  const getHeight = () => (isMobile ? 60 : isTablet ? 200 : 300);
+
   const partners = [
     "/our-brands-mobile/aegis.png",
     "/our-brands-mobile/lorbeam.png",
@@ -23,29 +30,19 @@ export const OurBrands = () => {
         <Title>
           OUR<Highlighted>BRANDS</Highlighted>
         </Title>
-        <Box
-          display="flex"
-          alignItems="center"
-          position="relative"
-          whiteSpace="nowrap"
-          padding="10px"
-          sx={{
-            "::-webkit-scrollbar": { display: "none" },
-            scrollBehavior: "smooth",
-            overflowX: "auto",
-          }}
-        >
+        <BrandsBox>
           {partners.map((partner, index) => (
-            <Image
+            <BrandsImages
               key={index}
               alt="our-brands"
               src={partner}
-              width={1000}
-              height={60}
-              style={{ margin: "0 30px", width: "auto", height: "auto" }}
+              width={getWidth()}
+              height={getHeight()}
+              // width={1000}
+              // height={60}
             />
           ))}
-        </Box>
+        </BrandsBox>
       </Container>
       <GreenDivider />
     </>
