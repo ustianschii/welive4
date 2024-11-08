@@ -16,10 +16,9 @@ import { homeTheaterFaq } from "../../components/shared/accordion/data";
 export default function HomeTheater() {
   return (
     <HomeTheaterLayout>
-      <Separator height="100px" padding="20px 0">
+      <Separator height="90px" padding="15px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>
-          <br />
           FROM OUR SERVICE
         </Title>
       </Separator>
@@ -42,6 +41,7 @@ export default function HomeTheater() {
       />
       <ContentSeparator
         bg="/outdoor-tv/cs-bg.png"
+        tabletbg="/outdoor-tv/tablet/cs-bg-tablet.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
         titlepadding="10px 0 0 0"

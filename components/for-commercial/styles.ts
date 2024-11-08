@@ -9,74 +9,82 @@ import {
   ARTICLE_BACKGROUND,
   GREEN,
   SEMI_BOLD,
+  SWAMP_GREEN,
   WHITE,
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   backgroundColor: ARTICLE_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "60px 10px",
-  },
+  padding: "50px 10px",
+
+  [theme.breakpoints.down("md")]: {},
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FeaturesBox = styled(MuiBox)(({ theme }) => ({
-  display: "flex",
+  display: "grid",
+  columnGap: "20px",
+  rowGap: "30px",
+  padding: "0 10px",
+
+  [theme.breakpoints.down("md")]: {
+    gridTemplateColumns: "repeat(2, 1fr)",
+    minHeight: "550px",
+  },
 
   [theme.breakpoints.down("sm")]: {
-    flexWrap: "wrap",
-    justifyContent: "space-between",
-    gap: "5px",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    minHeight: "200px",
   },
 }));
 
-export const CardBox = styled(MuiBox)(({ theme }) => ({
+export const CardBox = styled(MuiBox)(() => ({
   display: "flex",
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    alignItems: "center",
-    width: "32%",
-  },
+  flexDirection: "column",
+  alignItems: "center",
 }));
 
 export const CardTitle = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
-  whiteSpace: "normal",
-  overflowWrap: "break-word",
-  wordBreak: "break-word",
+  textAlign: "center",
+  margin: "5px 0",
   color: WHITE,
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "17px",
+  },
   [theme.breakpoints.down("sm")]: {
-    textAlign: "center",
-    fontSize: "14px",
-    margin: "5px 0",
+    fontSize: "15px",
   },
 }));
 
-export const Title = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
+export const Title = styled(MuiTypography)(() => ({
+  color: SWAMP_GREEN,
   fontFamily: opensans.style.fontFamily,
   fontWeight: SEMI_BOLD,
-  [theme.breakpoints.down("sm")]: {
-    marginTop: "10px",
-    fontSize: "25px",
-    marginBottom: "30px",
-  },
+  marginTop: "10px",
+  fontSize: "25px",
+  marginBottom: "30px",
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  width: "100%",
+  fontWeight: SEMI_BOLD,
+  border: "2px solid",
+  borderColor: GREEN,
+  marginTop: "40px",
+  borderRadius: "10px",
+  padding: "5px 15px",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    fontFamily: opensans.style.fontFamily,
     fontSize: "15px",
-    fontWeight: SEMI_BOLD,
-    border: "2px solid",
-    borderColor: GREEN,
-    padding: "5px 15px",
-    marginTop: "40px",
-    borderRadius: "7px",
   },
 }));

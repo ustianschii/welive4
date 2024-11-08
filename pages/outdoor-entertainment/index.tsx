@@ -16,7 +16,7 @@ import { ROUTES } from "../../utils/routes-constants";
 export default function OutdoorEntertainment() {
   return (
     <OutdoorEntertainmentLayout>
-      <Separator height="100px" padding="20px 0">
+      <Separator height="130px" padding="20px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>FROM <br />
           OUR SERVICE

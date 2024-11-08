@@ -27,7 +27,9 @@ export default function GameMediaLayout({
           </Subtitle>
         }
         background={`url('/game-media/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/game-media/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         subtitle={
           <HeaderSubtitle first="CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS" />
         }

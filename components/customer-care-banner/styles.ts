@@ -8,7 +8,7 @@ import {
   GREEN,
   WHITE,
   SEPARATOR_BACKGROUND,
-  TEXT_US_BACKGROUND,
+  SUBMIT_FORM_BACKGROUND,
   BOLD,
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
@@ -24,32 +24,29 @@ export const BannerContainer = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: TEXT_US_BACKGROUND,
+  backgroundColor: SUBMIT_FORM_BACKGROUND,
   border: "2px solid",
   borderColor: GREEN,
-  [theme.breakpoints.down("sm")]: {
-    borderRadius: "10px",
-    padding: "30px 15px",
-  },
+  borderRadius: "10px",
+  padding: "30px 15px",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "15px",
-    margin: "25px 0",
-  },
+  fontSize: "15px",
+  margin: "25px 0",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FeaturesBox = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "space-between",
-  [theme.breakpoints.down("sm")]: {
-    gap: "16px",
-  },
+  gap: "16px",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Feature = styled(MuiBox)(({ theme }) => ({
@@ -59,10 +56,11 @@ export const Feature = styled(MuiBox)(({ theme }) => ({
   border: "2px solid",
   borderColor: WHITE,
   flex: "0 0 calc(50% - 16px)",
+  borderRadius: "5px",
+  height: "50px",
 
-  [theme.breakpoints.down("sm")]: {
-    borderRadius: "5px",
-  },
+  [theme.breakpoints.down("md")]: {},
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FeatureText = styled(MuiTypography)(({ theme }) => ({
@@ -81,15 +79,17 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   fontWeight: BOLD,
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "22px",
-    margin: "20px",
-  },
+  fontSize: "22px",
+  margin: "20px",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Address = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "12px",
   },
@@ -98,6 +98,9 @@ export const Address = styled(MuiTypography)(({ theme }) => ({
 export const WorkingHours = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
   },

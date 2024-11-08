@@ -1,6 +1,13 @@
 import React from "react";
 
-import { CardBox, Container, CardTitle, Description, Title } from "./styles";
+import {
+  CardContent,
+  Container,
+  CardTitle,
+  Description,
+  Title,
+  CardBox,
+} from "./styles";
 import { Highlighted } from "../hero-title/styles";
 
 import Image from "next/image";
@@ -11,29 +18,27 @@ export const BlackCardsBox = () => {
   return (
     <Container disableGutters>
       <Title>
-        BEST-IN-CLASS <br />
-        <Highlighted>
-          OUTDOOR TV <br /> BRANDS
-        </Highlighted>
+        BEST-IN-CLASS
+        <Highlighted>OUTDOOR TV BRANDS</Highlighted>
       </Title>
       {tvBrands.map((item) => (
-        <React.Fragment key={item.id}>
+        <CardBox key={item.id}>
           <Image
             alt="tv-brand"
             src={item.tvbrand}
-            height={35}
-            width={260}
-            style={{ objectFit: "fill" }}
+            height={70}
+            width={230}
+            style={{ marginBottom: "-15px", zIndex: "1" }}
           />
-          <CardBox>
+          <CardContent>
             {item.features.map((feature, index) => (
               <React.Fragment key={index}>
                 <CardTitle>{feature.title}</CardTitle>
                 <Description>{feature.description}</Description>
               </React.Fragment>
             ))}
-          </CardBox>
-        </React.Fragment>
+          </CardContent>
+        </CardBox>
       ))}
     </Container>
   );

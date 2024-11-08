@@ -12,6 +12,8 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   backgroundImage: `url('outdoor-tv/sizes-bg.png')`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
   [theme.breakpoints.down("sm")]: {},
 }));
 
@@ -21,10 +23,13 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   lineHeight: "1",
   textAlign: "center",
+  padding: "30px 0",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "35px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "32px",
-    padding: "30px 0",
   },
 }));
 
@@ -33,9 +38,14 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
   textTransform: "uppercase",
+  marginBottom: "20px",
+  padding: "0 20px",
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
+
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "20px",
     fontSize: "14px",
-    padding: "0 20px",
   },
 }));

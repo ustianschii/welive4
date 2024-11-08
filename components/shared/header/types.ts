@@ -7,5 +7,6 @@ export interface HeaderProps {
   background?: string;
   tabletbackground?: string;
   backcolor?: string;
-  height?: string;
+  mobileheight?: string;
+  tabletheight?: string;
 }

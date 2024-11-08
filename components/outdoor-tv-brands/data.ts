@@ -1,7 +1,7 @@
 export const tvBrands = [
   {
     id: 1,
-    tvbrand: "/outdoor-tv/the-terrace.png",
+    tvbrand: "/outdoor-tv/the-terrace.svg",
     features: [
       {
         title: "STURDY & WEATHERPROOF",
@@ -22,7 +22,7 @@ export const tvBrands = [
   },
   {
     id: 2,
-    tvbrand: "/outdoor-tv/furrion.png",
+    tvbrand: "/outdoor-tv/furrion.svg",
     features: [
       {
         title: "PREMIUM FULL SUN VIEWING",
@@ -43,7 +43,7 @@ export const tvBrands = [
   },
   {
     id: 3,
-    tvbrand: "/outdoor-tv/sunbritetv.png",
+    tvbrand: "/outdoor-tv/sunbrite-tv.svg",
     features: [
       {
         title: "VIVID VIEWING",
@@ -64,7 +64,7 @@ export const tvBrands = [
   },
   {
     id: 4,
-    tvbrand: "/outdoor-tv/seura.png",
+    tvbrand: "/outdoor-tv/seura.svg",
     features: [
       {
         title: "EXCELLENT DAYTIME PERFORMANCE",

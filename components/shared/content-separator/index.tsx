@@ -12,13 +12,19 @@ export const ContentSeparator: React.FC<ContentSeparatorProps> = ({
   titlehighlightedend,
   description,
   bg,
+  tabletbg,
   containerpadding,
   titlepadding,
 }) => {
   return (
     <>
       <GreenDivider />
-      <Container disableGutters bg={bg} containerpadding={containerpadding}>
+      <Container
+        disableGutters
+        bg={bg}
+        tabletbg={tabletbg}
+        containerpadding={containerpadding}
+      >
         <Title titlepadding={titlepadding}>
           <Highlighted>{titlehighlightedstart}</Highlighted> <br />
           {titlestart}

@@ -24,7 +24,9 @@ export default function SystemDesignLayout({
           </Subtitle>
         }
         background={`url('system-design/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('system-design/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

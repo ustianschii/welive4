@@ -35,6 +35,7 @@ export default function HomeTheater() {
       />
       <ContentSeparator
         bg="/outdoor-tv/cs-bg.png"
+        tabletbg="/outdoor-tv/tablet/cs-bg-tablet.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
         titlepadding="10px 0 0 0"

@@ -29,7 +29,9 @@ export default function AudioVisualSystemsLayout({
           </Subtitle>
         }
         background={`url('/audio-visual-systems/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/audio-visual-systems/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         subtitle={
           <HeaderSubtitle first="EXPERIENCE UNMATCHED AUDIO VISUAL EXCELLENCE ACROSS NEW JERSEY, PENNSYLVANIA AND DELAWARE" />
         }

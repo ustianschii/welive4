@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box } from "@mui/material";
+import { Box, useTheme, useMediaQuery } from "@mui/material";
 
 import Image from "next/image";
 
@@ -9,6 +9,13 @@ import { Description, Title, Container } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 
 export const AvSolutions = () => {
+  const theme = useTheme();
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isPhone = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const width = isPhone ? 30 : isTablet ? 45 : 40;
+  const height = isPhone ? 30 : isTablet ? 45 : 40;
+
   return (
     <Container>
       <Title>
@@ -20,13 +27,13 @@ export const AvSolutions = () => {
         <Description key={index}>{item}</Description>
       ))}
       {avsolutions.map((item, index) => (
-        <Box key={index} display="flex" alignItems="flex-start">
+        <Box key={index} display="flex" alignItems="flex-start" mt="5px">
           <Image
             alt="solution-logo"
             src={item.icon}
-            height={30}
-            width={30}
-            style={{ marginRight: "15px" }}
+            height={height}
+            width={width}
+            style={{ margin: "15px 15px 0 0" }}
           />
           <Description>{item.content}</Description>
         </Box>

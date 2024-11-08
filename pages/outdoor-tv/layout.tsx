@@ -25,8 +25,10 @@ export default function OutdoorLayout({
             MOUNTING
           </Subtitle>
         }
-        background={`url('/outdoor-tv/outdoor-tv-bg.png')`}
-        height="775px"
+        background={`url('/outdoor-tv/header-bg.png')`}
+        tabletbackground={`url('/outdoor-tv/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE" />

@@ -26,8 +26,10 @@ export default function NetworkLayout({
             INSTALLATION
           </Subtitle>
         }
-        background={`url('/network/network-header-bg.png')`}
-        height="775px"
+        background={`url('/network/header-bg.png')`}
+        tabletbackground={`url('/network/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK" />

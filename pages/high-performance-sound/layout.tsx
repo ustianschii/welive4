@@ -27,7 +27,9 @@ export default function HighPerformanceSoundLayout({
           </Subtitle>
         }
         background={`url('/high-performance-sound/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/high-performance-sound/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         subtitle={
           <HeaderSubtitle first="FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM" />
         }

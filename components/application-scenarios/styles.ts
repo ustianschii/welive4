@@ -9,12 +9,17 @@ import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   display: "flex",
-  alignItems: "center",
   backgroundColor: SEPARATOR_BACKGROUND,
-  height: "content-fit",
+  justifyContent: "space-around",
+  flexWrap: "wrap",
+
+  [theme.breakpoints.down("md")]: {
+    padding: "50px 0",
+  },
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     padding: "30px 10px",
+    alignItems: "center",
   },
 }));
 
@@ -25,10 +30,13 @@ export const Card = styled(MuiBox)<{ background: string }>(
     alignItems: "center",
     backgroundImage: `url(${background})`,
     backgroundSize: "cover",
-    width: "100%",
-    [theme.breakpoints.down("sm")]: {
-      minHeight: "400px",
+    [theme.breakpoints.down("md")]: {
       padding: "20px",
+      width: "50%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "20px",
+      width: "100%",
     },
   })
 );
@@ -37,27 +45,36 @@ export const InnerCard = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  justifyContent: "center",
   backgroundColor: TRANSPARENT_GRAY,
-  width: "100%",
+  borderRadius: "10px",
+  height: "100%",
+
+  [theme.breakpoints.down("md")]: {
+    padding: "50px 10px",
+  },
   [theme.breakpoints.down("sm")]: {
-    minHeight: "400px",
-    borderRadius: "10px",
+    padding: "100px 10px",
   },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
+  fontSize: "18px",
 
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "18px",
-  },
+  [theme.breakpoints.down("md")]: {},
+
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   textAlign: "center",
   fontFamily: raleway.style.fontFamily,
+  [theme.breakpoints.down("md")]: {
+    padding: "0 15px",
+    marginTop: "10px",
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
     padding: "0 15px",
     marginTop: "10px",

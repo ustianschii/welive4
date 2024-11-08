@@ -6,16 +6,13 @@ import {
 } from "@mui/material";
 
 import { SEMI_BOLD, WHITE } from "@/styles/constants";
-
 import { opensans, raleway } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiContainer)(() => ({
   backgroundImage: `url(${"/action-banner/action-banner-bg.png"})`,
   backgroundPosition: "center",
-  [theme.breakpoints.down("sm")]: {
-    minHeight: "280px",
-    paddingTop: "30px",
-  },
+  padding: "30px 10px",
+  minHeight: "280px",
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -24,19 +21,20 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
   color: WHITE,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "32px",
+  },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "29px",
+    fontSize: "28px",
   },
 }));
 
-export const Button = styled(MuiButton)(({ theme }) => ({
+export const Button = styled(MuiButton)(() => ({
   color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    fontFamily: opensans.style.fontFamily,
-    fontSize: "15px",
-    fontWeight: SEMI_BOLD,
-    border: "2px solid white",
-    padding: "5px 15px",
-  },
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: SEMI_BOLD,
+  border: "2px solid white",
+  width: "100%",
+  fontSize: "15px",
+  padding: "5px 15px",
 }));

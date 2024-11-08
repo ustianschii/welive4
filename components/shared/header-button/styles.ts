@@ -12,17 +12,19 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   border: "2px solid white",
   transform: "translateX(-50%)",
   lineHeight: "120%",
-  width: "300px",
-  height: "60px",
+  fontSize: "16px",
 
   [theme.breakpoints.down("md")]: {
+    height: "60px",
+    width: "300px",
     position: "absolute",
     bottom: "100px",
     left: "50%",
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
+    height: "50px",
+    width: "250px",
     position: "absolute",
     bottom: "50px",
     left: "50%",

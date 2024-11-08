@@ -20,15 +20,11 @@ export default function SystemDesign() {
       <Separator height="100px" padding="20px 0">
         <Title>
           Our System
-          <Highlighted>
-            Design <br />
-            Supports
-          </Highlighted>
+          <Highlighted>Design Supports</Highlighted>
           For:
         </Title>
       </Separator>
       <DesignTypes />
-
       <BlackCardsBoxShared
         data={BCSystemDesign}
         titlestart="Why"
@@ -44,10 +40,7 @@ export default function SystemDesign() {
       />
       <Separator height="90px" padding="20px 0 0 0">
         <Title>
-          <Highlighted>
-            SYSTEM DESIGN
-            <br />
-          </Highlighted>
+          <Highlighted>SYSTEM DESIGN</Highlighted>
           REQUEST
         </Title>
       </Separator>

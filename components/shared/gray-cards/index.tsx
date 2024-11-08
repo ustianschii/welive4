@@ -8,16 +8,18 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 
 import { GrayCardsBoxProps } from "./types";
-import { CardBox, Container, Title, Description, Subtitle } from "./styles";
+import {
+  CardBox,
+  Container,
+  Title,
+  Description,
+  Subtitle,
+  CardContent,
+} from "./styles";
 import { Highlighted } from "../../hero-title/styles";
 import { GREEN } from "@/styles/constants";
 
-export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
-  data,
-  // imgheight,
-  // imgwidth,
-  button,
-}) => {
+export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
@@ -55,7 +57,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
               {item.titleend}
             </Title>
           )}
-          <Box m="0 40px 10px 40px">
+          <CardContent>
             <Description>{item.maindescription}</Description>
             <Subtitle>{item.firsttitle}</Subtitle>
             <Description>{item.firstdescription}</Description>
@@ -72,7 +74,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({
                 {desc}
               </Description>
             ))}
-          </Box>
+          </CardContent>
           {button}
         </CardBox>
       ))}

@@ -17,23 +17,21 @@ import {
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiContainer)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  [theme.breakpoints.down("md")]: {
-    padding: "50px 0 0 0 ",
-  },
-  [theme.breakpoints.down("sm")]: {
-    padding: "30px 0 0 0 ",
-  },
+  padding: "30px 0",
 }));
 
-export const CardBox = styled(MuiBox)(({ theme }) => ({
+export const CardBox = styled(MuiBox)(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
+  marginTop: "20px",
+}));
 
-  [theme.breakpoints.down("sm")]: {},
+export const CardContent = styled(MuiBox)(() => ({
+  margin: "0 40px 10px 40px",
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -42,38 +40,34 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
   textAlign: "center",
-  padding: "0px 30px",
   margin: "20px 0",
 
   [theme.breakpoints.down("md")]: {
+    padding: "0px 50px",
     fontSize: "33px",
   },
 
   [theme.breakpoints.down("sm")]: {
+    padding: "0px 30px",
     fontSize: "30px",
   },
 }));
 
-export const Subtitle = styled(MuiTypography)(({ theme }) => ({
+export const Subtitle = styled(MuiTypography)(() => ({
   color: GREEN,
   fontFamily: opensans.style.fontFamily,
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
-    marginBottom: "10px",
-  },
+  fontSize: "20px",
+  margin: "10px 0",
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
-  textAlign: "center",
   [theme.breakpoints.down("md")]: {
-    marginBottom: "10px",
     fontSize: "18px",
   },
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "10px",
-    fontSize: "14px",
+    fontSize: "16px",
   },
 }));
 
@@ -83,15 +77,16 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   fontWeight: BOLD,
   border: "2px solid white",
   lineHeight: "120%",
-  width: "300px",
   margin: "20px 0",
 
   [theme.breakpoints.down("md")]: {
+    width: "300px",
     height: "60px",
     fontSize: "20px",
   },
 
   [theme.breakpoints.down("sm")]: {
+    width: "250px",
     height: "50px",
     fontSize: "16px",
   },

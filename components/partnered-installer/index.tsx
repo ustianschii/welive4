@@ -12,14 +12,13 @@ export const PartneredInstaller = () => {
         src="/loxone-commercial/loxone-big-logo.png"
         width={300}
         height={60}
-        style={{ marginBottom: "20px" }}
       />
       <Image
         alt="welive4-logo"
         src="/header-mobile/logo.svg"
-        width={330}
+        width={300}
         height={70}
-        style={{ marginBottom: "40px" }}
+        style={{ marginTop: "20px" }}
       />
       <Title>WE LIVE 4: LOXONE Partnered Installer</Title>
       <Description>

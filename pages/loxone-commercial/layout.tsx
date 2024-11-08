@@ -16,12 +16,14 @@ export default function CommercialLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="50px 0 0 0">
+          <Subtitle>
             <Highlighted> LOXONE</Highlighted>FOR <br /> COMMERCIAL
           </Subtitle>
         }
-        background={`url('/loxone-commercial/loxone-commercial-header-background-mobile.png')`}
-        height="775px"
+        background={`url('/loxone-commercial/header-bg-mobile.png')`}
+        tabletbackground={`url('/loxone-commercial/tablet/header-bg-tablet.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

@@ -14,9 +14,7 @@ export const Container = styled(MuiContainer)<{ bg: string }>(
     alignItems: "center",
     backgroundImage: `url(${bg})`,
     backgroundSize: "cover",
-    [theme.breakpoints.down("sm")]: {
-      padding: "45px 25px",
-    },
+    padding: "45px 25px",
   })
 );
 
@@ -27,9 +25,12 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "25px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "23px",
-    marginBottom: "30px",
   },
 }));
 
@@ -37,8 +38,11 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
+  marginTop: "10px",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "10px",
     fontSize: "13px",
   },
 }));

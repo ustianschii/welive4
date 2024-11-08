@@ -32,6 +32,7 @@ export default function EnergyManagement() {
       <Separator />
       <ContentSeparator
         bg="/energy-management/auto-charging-port.png"
+        tabletbg="/energy-management/tablet/auto-charging-port.png"
         titlehighlightedstart="HOME EV CHARGING"
         titleend="INSTALLATION"
         containerpadding="30px 0"
@@ -49,6 +50,7 @@ export default function EnergyManagement() {
       />
       <ContentSeparator
         bg="energy-management/cs-roof.png"
+        tabletbg="energy-management/cs-roof.png"
         titlehighlightedstart="SOLAR POWER SYSTEMS"
         titleend="INSTALLATION"
         description="STABLE ENERGY COSTS MONTH AFTER MONTH!"

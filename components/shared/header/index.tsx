@@ -44,7 +44,8 @@ export const Header: React.FC<HeaderProps> = ({
   backcolor,
   divider,
   dividerTop,
-  height,
+  mobileheight,
+  tabletheight,
 }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -65,7 +66,12 @@ export const Header: React.FC<HeaderProps> = ({
       tabletbackground={tabletbackground}
       backcolor={backcolor}
     >
-      <Container maxWidth="xl" disableGutters height={height}>
+      <Container
+        maxWidth="xl"
+        disableGutters
+        mobileheight={mobileheight}
+        tabletheight={tabletheight}
+      >
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography

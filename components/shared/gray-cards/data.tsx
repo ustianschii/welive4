@@ -43,6 +43,7 @@ export const grayCardsData = [
 export const grayCardsDataOutdoorTV = [
   {
     image: "/outdoor-tv/outdoor-tv-demo.png",
+    imagetablet: "/outdoor-tv/tablet/outdoor-tv-demo.webp",
     titlestart: "Why Should ",
     titlehighlightedend: "You Need An Outdoor TV ",
     titleend: "For Your Entertainment?",
@@ -71,6 +72,7 @@ export const grayCardsDataFrameTV = [
 export const grayCardsDataEnergyManagement = [
   {
     image: "/energy-management/car-charger.png",
+    imagetablet: "/energy-management/tablet/car-charger.png",
     titlehighlightedstart: "EV Charging",
     titleend: " Installation",
     maindescription:
@@ -87,6 +89,7 @@ export const grayCardsDataEnergyManagement = [
   },
   {
     image: "/energy-management/solar-panels.png",
+    imagetablet: "/energy-management/tablet/solar-panels.png",
     titlehighlightedstart: "Solar Power ",
     titleend: "Systems",
     maindescription:
@@ -106,6 +109,7 @@ export const grayCardsDataEnergyManagement = [
 export const grayCardsDataEnergyManagementSecond = [
   {
     image: "/energy-management/wallbox.png",
+    imagetablet: "/energy-management/tablet/wallbox.png",
     titlestart: "Sustainable ",
     titlehighlightedend: "Wallbox",
     firsttitle: "RIGHT-SIZED POWER FOR YOU",
@@ -134,6 +138,7 @@ export const grayCardsDataEnergyManagementSecond = [
 export const grayCardsDataEnergyManagementThird = [
   {
     image: "/energy-management/room.png",
+    imagetablet: "/energy-management/tablet/room.png",
     titlehighlightedstart: "Whole Home Solar ",
     titleend: "System",
     firstdescription:
@@ -143,6 +148,7 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/solar-panels-multiple.png",
+    imagetablet: "/energy-management/tablet/solar-panels-multiple.png",
     titlehighlightedstart: "Commercial Solar ",
     titleend: "System",
     firstdescription:
@@ -152,6 +158,7 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/tesla-battery.png",
+    imagetablet: "/energy-management/tablet/tesla-battery.png",
     titlehighlightedstart: "Tesla Battery ",
     titleend: "Storage",
     firstdescription:
@@ -161,6 +168,7 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/ev-charger.png",
+    imagetablet: "/energy-management/tablet/ev-charger.png",
     titlehighlightedstart: "EV Charger ",
     titleend: "Integration",
     firstdescription:
@@ -170,6 +178,7 @@ export const grayCardsDataEnergyManagementThird = [
   },
   {
     image: "/energy-management/integration.png",
+    imagetablet: "/energy-management/tablet/integration.png",
     titlehighlightedstart: "LOXONE ",
     titleend: "Integration",
     firstdescription:
@@ -195,6 +204,7 @@ export const GCAudioVisualSystems = [
   [
     {
       image: "/audio-visual-systems/home-theater.png",
+      imagetablet: "/audio-visual-systems/tablet/home-theater.png",
       titlehighlightedstart: "Home Theater ",
       titleend: "System",
       firstdescription:
@@ -209,6 +219,7 @@ export const GCAudioVisualSystems = [
   [
     {
       image: "/audio-visual-systems/gaming-media.png",
+      imagetablet: "/audio-visual-systems/tablet/gaming-media.png",
       titlehighlightedstart: "Gaming & Media ",
       titleend: "Room",
       firstdescription:
@@ -223,6 +234,7 @@ export const GCAudioVisualSystems = [
   [
     {
       image: "/audio-visual-systems/surround-sound.png",
+      imagetablet: "/audio-visual-systems/tablet/surround-sound.png",
       titlehighlightedstart: "Surround Sound ",
       titleend: "System",
       firstdescription:
@@ -239,6 +251,7 @@ export const GCAudioVisualSystems = [
   [
     {
       image: "/audio-visual-systems/home-audio.png",
+      imagetablet: "/audio-visual-systems/tablet/home-audio.png",
       titlehighlightedstart: "Whole Home Audio ",
       titleend: "System",
       firstdescription:
@@ -253,6 +266,7 @@ export const GCAudioVisualSystems = [
   [
     {
       image: "/audio-visual-systems/outdoor-entertainment.png",
+      imagetablet: "/audio-visual-systems/tablet/outdoor-entertainment.png",
       titlehighlightedstart: "Outdoor Entertainment ",
       titleend: "System",
       firstdescription:
@@ -281,6 +295,7 @@ export const GCHomeTheater = [
   [
     {
       image: "/home-theater/home-theater.png",
+      imagetablet: "/home-theater/tablet/home-theater.png",
       titlestart: "Customized ",
       titlehighlightedend: "Home Theatre ",
       titleend: "Design",
@@ -300,6 +315,7 @@ export const GCHomeTheater = [
   [
     {
       image: "/home-theater/installation.png",
+      imagetablet: "/home-theater/tablet/installation.png",
       titlehighlightedstart: "Seamless ",
       titleend: "Installation",
       firstdescription:
@@ -317,6 +333,7 @@ export const GCHomeTheater = [
   [
     {
       image: "/home-theater/integration.png",
+      imagetablet: "/home-theater/tablet/integration.png",
       titlehighlightedstart: "LOXONE ",
       titleend: "Integration",
       firstdescription:
@@ -332,6 +349,7 @@ export const GCHomeTheater = [
 export const GCGameMediaTop = [
   {
     image: "/game-media/media-room.png",
+    imagetablet: "/game-media/tablet/media-room.png",
     titlestart: "What Is A ",
     titlehighlightedend: "Media Room",
     titleend: "?",
@@ -347,6 +365,7 @@ export const GCGameMediaTop = [
 export const GCGameMediaBottom = [
   {
     image: "/game-media/3d-design.png",
+    imagetablet: "/game-media/tablet/3d-design.png",
     titlestart: "Customized ",
     titlehighlightedend: "3D Design",
     firstdescription:
@@ -358,6 +377,7 @@ export const GCGameMediaBottom = [
   },
   {
     image: "/game-media/av-configuration.jpg",
+    imagetablet: "/game-media/tablet/av-configuration.png",
     titlehighlightedstart: "AV ",
     titleend: "Configuration",
     firstdescription:
@@ -369,6 +389,7 @@ export const GCGameMediaBottom = [
   },
   {
     image: "/game-media/centralized-control.png",
+    imagetablet: "/game-media/tablet/centralized-control.png",
     titlehighlightedstart: "Centralized ",
     titleend: "Control",
     firstdescription:
@@ -380,6 +401,7 @@ export const GCGameMediaBottom = [
   },
   {
     image: "/game-media/rgbw.jpg",
+    imagetablet: "/game-media/tablet/rgbw.png",
     titlestart: "Customized ",
     titlehighlightedend: "RGBW design",
     firstdescription:
@@ -394,6 +416,7 @@ export const GCGameMediaBottom = [
 export const GCHomeAudioFirst = [
   {
     image: "/home-audio/design.png",
+    imagetablet: "/home-audio/tablet/design.png",
     titlehighlightedstart: "Customized ",
     titleend: "System Design",
     firstdescription:
@@ -405,6 +428,7 @@ export const GCHomeAudioFirst = [
   },
   {
     image: "/home-audio/concealment.png",
+    imagetablet: "/home-audio/tablet/concealment.png",
     titlestart: "Speaker ",
     titlehighlightedend: "Concealment",
     firstdescription:
@@ -414,6 +438,7 @@ export const GCHomeAudioFirst = [
   },
   {
     image: "/home-audio/streaming.png",
+    imagetablet: "/home-audio/tablet/streaming.png",
     titlehighlightedstart: "Multi Source ",
     titleend: "Streaming",
     firstdescription:
@@ -426,6 +451,7 @@ export const GCHomeAudioFirst = [
 export const GCHomeAudioSecond = [
   {
     image: "/home-audio/integration.png",
+    imagetablet: "/home-audio/tablet/integration.png",
     titlehighlightedstart: "LOXONE ",
     titleend: "Integration",
     firstdescription:
@@ -438,6 +464,7 @@ export const GCHomeAudioSecond = [
 export const GCMusicStreaming = [
   {
     image: "/high-performance-sound/tidal-app-demo.png",
+    imagetablet: "/high-performance-sound/tablet/tidal-app-demo.png",
     titlehighlightedstart: "High-end ",
     titleend: "Music Streaming",
     firsttitle: "AD-FREE LISTENING",
@@ -455,6 +482,7 @@ export const GCMusicStreaming = [
 export const GCOutdoorEntertainmentTV = [
   {
     image: "/outdoor-entertainment/outdoor-tv.png",
+    imagetablet: "/outdoor-entertainment/tablet/outdoor-tv.png",
     titlestart: "Premium ",
     titlehighlightedend: "Outdoor TV",
     firstdescription:
@@ -466,6 +494,7 @@ export const GCOutdoorEntertainmentTV = [
 export const GCOutdoorEntertainmentSpeaker = [
   {
     image: "/outdoor-entertainment/outdoor-speaker.png",
+    imagetablet: "/outdoor-entertainment/tablet/outdoor-speaker.png",
     titlehighlightedstart: "Customized Outdoor Speaker System",
     firstdescription:
       "Enjoy personalized, high-quality sound for any occasion - from movie nights to peaceful moments of relaxation. With our best high-end outdoor speakers, you can enjoy high-quality sound even in rainy, sunny, or whether you need an outdoor sound system for pool.",

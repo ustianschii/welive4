@@ -27,7 +27,9 @@ export default function HomeAudioLayout({
           </Subtitle>
         }
         background={`url('/home-audio/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/home-audio/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         subtitle={
           <HeaderSubtitle first="STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!" />
         }

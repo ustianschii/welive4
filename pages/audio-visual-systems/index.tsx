@@ -18,6 +18,7 @@ export default function AudioVisualSystems() {
       <AvSolutions />
       <ContentSeparator
         bg="/audio-visual-systems/cs-room.png"
+        tabletbg="/audio-visual-systems/cs-room.png"
         titlehighlightedstart="HOME ENTERTAINMENT"
         titleend="SYSTEMS"
         titlepadding="70px 0 0 0"
@@ -37,6 +38,7 @@ export default function AudioVisualSystems() {
       })}
       <ContentSeparator
         bg="/audio-visual-systems/cs-office.png"
+        tabletbg="/audio-visual-systems/cs-office.png"
         titlehighlightedstart="COMMERCIAL AV"
         titleend="SYSTEMS"
         titlepadding="70px 0 0 0"

@@ -1,5 +1,6 @@
 export interface ContentSeparatorProps {
   bg: string;
+  tabletbg?: string;
   containerpadding?: string;
   titlepadding?: string;
   titlestart?: string;

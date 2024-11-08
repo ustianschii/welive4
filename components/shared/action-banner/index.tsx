@@ -18,13 +18,9 @@ export const ActionBanner = () => {
           SPACE!
         </Title>
         <Box mt="50px">
-          <Box display="flex" marginBottom="10px">
-            <Button sx={{ mr: "5px" }} href={ROUTES.CHECKLIST_SHORT}>
-              SMART CHECK LIST
-            </Button>
-            <Button sx={{ ml: "5px" }} href={ROUTES.CONSULTATION}>
-              CONTACT LOXONE
-            </Button>
+          <Box display="flex" gap="5px" mb="5px">
+            <Button href={ROUTES.CHECKLIST_SHORT}>SMART CHECK LIST</Button>
+            <Button href={ROUTES.CONSULTATION}>CONTACT LOXONE</Button>
           </Box>
           <Button href={ROUTES.CONSULTATION}>ON-SITE CONSULTATION</Button>
         </Box>

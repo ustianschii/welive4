@@ -1,25 +1,33 @@
 import React from "react";
 
 import { Container, ContentBox, Description, Title } from "./styles";
-
-import Image from "next/image";
 import { Highlighted } from "../hero-title/styles";
 
+import Image from "next/image";
+
+import { useTheme, useMediaQuery } from "@mui/material";
+
 export const NewFuture = () => {
+  const theme = useTheme();
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isPhone = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const imageWidth = isPhone ? 380 : isTablet ? 450 : 380;
+  const imageHeight = isPhone ? 230 : isTablet ? 280 : 230;
+
   return (
     <Container disableGutters>
       <ContentBox>
         <Image
           alt="smart-home-progress"
           src="/loxone-residential/new-future.png"
-          width={380}
-          height={230}
+          width={imageWidth}
+          height={imageHeight}
           style={{ borderRadius: "10px" }}
         ></Image>
         <Title>
-          Why Is<Highlighted>LOXONE</Highlighted>The <br />
-          <Highlighted>New Future</Highlighted>Of Smart <br />
-          Automation?
+          Why is<Highlighted>LOXONE</Highlighted>The
+          <Highlighted>New Future</Highlighted>Of Smart Automation?
         </Title>
         <Description>
           Today, we&apos;re all too familiar with the concept of smart homes

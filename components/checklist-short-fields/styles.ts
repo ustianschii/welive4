@@ -17,13 +17,12 @@ import {
 import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
+  backgroundColor: SEPARATOR_BACKGROUND,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  [theme.breakpoints.down("sm")]: {
-    backgroundColor: SEPARATOR_BACKGROUND,
-    height: "content-fit",
-  },
+
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FieldsBox = styled(MuiBox)(({ theme }) => ({
@@ -31,16 +30,21 @@ export const FieldsBox = styled(MuiBox)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
   backgroundColor: ARTICLE_BACKGROUND,
+  borderRadius: "10px",
+
+  [theme.breakpoints.down("md")]: {
+    width: "85%",
+    height: "300px",
+    padding: "30px",
+  },
   [theme.breakpoints.down("sm")]: {
-    width: "95%",
+    width: "90%",
     height: "250px",
-    marginBottom: "50px",
-    borderRadius: "10px",
     padding: "20px",
   },
 }));
 
-export const TextField = styled(MuiTextField)(({ theme }) => ({
+export const TextField = styled(MuiTextField)(({}) => ({
   "& .MuiOutlinedInput-root": {
     color: WHITE,
     borderRadius: "10px",
@@ -56,13 +60,16 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
     color: "gray",
     opacity: 1,
   },
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Label = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
+
+  [theme.breakpoints.down("md")]: {
+    marginBottom: "10px",
+    fontSize: "17px",
+  },
   [theme.breakpoints.down("sm")]: {
     marginBottom: "5px",
     fontSize: "15px",
@@ -73,12 +80,18 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   fontWeight: BOLD,
   fontFamily: opensans.style.fontFamily,
+  border: "2px solid",
+  borderColor: GREEN,
+  borderRadius: "10px",
+
+  [theme.breakpoints.down("md")]: {
+    width: "50%",
+    fontSize: "17px",
+    margin: "50px 0",
+  },
   [theme.breakpoints.down("sm")]: {
-    width: "95%",
-    borderRadius: "10px",
-    border: "2px solid",
-    borderColor: GREEN,
+    width: "90%",
     fontSize: "14px",
-    marginBottom: "50px",
+    margin: "50px 0",
   },
 }));

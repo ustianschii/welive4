@@ -47,15 +47,10 @@ export const SystemDesignForm = () => {
           Please provide as much detail about your project to our systems design
           group below to get started.
         </Description>
-        <Pair mt="30px">
+        <Pair>
           <FieldContainer>
             <Label>Full name*</Label>
-            <TextField
-              variant="standard"
-              sx={{
-                width: "90%",
-              }}
-            />
+            <TextField variant="standard" fullWidth />
           </FieldContainer>
           <FieldContainer>
             <Label>Mr/Mrs/Ms*</Label>
@@ -64,7 +59,7 @@ export const SystemDesignForm = () => {
               select
               value={selectedValue}
               onChange={handleChange}
-              sx={{ width: "180px" }}
+              style={{ width: "150px" }}
             >
               {options.map((option) => (
                 <MenuItem key={option} value={option}>
@@ -89,17 +84,17 @@ export const SystemDesignForm = () => {
         <Pair>
           <FieldContainer>
             <Label>State*</Label>
-            <TextField variant="standard" sx={{ width: "90%" }} />
+            <TextField variant="standard" />
           </FieldContainer>
           <FieldContainer>
             <Label>ZIP Code*</Label>
-            <TextField variant="standard" />
+            <TextField variant="standard" style={{ width: "150px" }} />
           </FieldContainer>
         </Pair>
-        <Label m="30px 0 30px 0">
+        <Label sx={{ mt: "20px" }}>
           Which service(s) are you interested in?*
         </Label>
-        <FormGroup>
+        <FormGroup sx={{ mt: "20px" }}>
           {labels.map((label) => (
             <FormControlLabel
               key={label}

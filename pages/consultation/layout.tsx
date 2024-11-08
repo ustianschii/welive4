@@ -27,7 +27,9 @@ export default function ConsultationLayout({
           </Subtitle>
         }
         background={`url('consultation/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('consultation/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
       />
       {children}

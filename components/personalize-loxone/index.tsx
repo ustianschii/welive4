@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Container, Description, Subtitle, Title } from "./styles";
+// import { Container, Description, Subtitle, Title } from "./styles";
+import {
+  Container,
+  Description,
+  Subtitle,
+  Title,
+} from "../../components/partnered-installer/styles";
 
 export const Personalize = () => {
   return (

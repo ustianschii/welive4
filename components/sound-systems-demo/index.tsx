@@ -53,7 +53,10 @@ export const SoundSystemDemo: React.FC = () => {
           {item.features.map((feature, index) => (
             <ListItem
               key={index}
-              sx={{ alignItems: "flex-start", padding: "4px 10px" }}
+              sx={{
+                alignItems: "flex-start",
+                padding: "4px 10px",
+              }}
             >
               <Dot />
               <Feature>{feature}</Feature>
@@ -69,14 +72,7 @@ export const SoundSystemDemo: React.FC = () => {
         width="100%"
         display="flex"
         justifyContent="center"
-      >
-        <Image
-          alt="tidal-icon"
-          src="high-performance-sound/tidal.svg"
-          width={200}
-          height={100}
-        />
-      </Box>
+      ></Box>
     </Container>
   );
 };

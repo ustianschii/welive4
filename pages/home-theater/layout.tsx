@@ -27,7 +27,9 @@ export default function HomeTheaterLayout({
           </Subtitle>
         }
         background={`url('/home-theater/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/home-theater/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         subtitle={
           <HeaderSubtitle first="EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!" />
         }

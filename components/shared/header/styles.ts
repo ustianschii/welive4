@@ -21,7 +21,8 @@ interface AppBarProps {
   backcolor?: string;
 }
 interface ContainerProps {
-  height?: string;
+  mobileheight?: string;
+  tabletheight?: string;
 }
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
@@ -44,16 +45,18 @@ export const AppBar = styled(MuiAppBar)<AppBarProps>(
   })
 );
 
-export const Container = styled(MuiContainer)<ContainerProps>(({ theme }) => ({
-  [theme.breakpoints.down("md")]: {
-    position: "relative",
-    height: "700px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    height: "775px",
-    position: "relative",
-  },
-}));
+export const Container = styled(MuiContainer)<ContainerProps>(
+  ({ theme, mobileheight, tabletheight }) => ({
+    [theme.breakpoints.down("md")]: {
+      height: tabletheight || "700px",
+      position: "relative",
+    },
+    [theme.breakpoints.down("sm")]: {
+      height: mobileheight || "700px",
+      position: "relative",
+    },
+  })
+);
 
 export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
   display: "flex",

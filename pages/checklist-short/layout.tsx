@@ -24,6 +24,8 @@ export default function ChecklistLayout({
             below
           </Subtitle>
         }
+        mobileheight="350px"
+        tabletheight="350px"
       />
       {children}
       <Footer divider={<GreenDivider />} />

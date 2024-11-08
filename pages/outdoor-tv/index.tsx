@@ -31,6 +31,7 @@ export default function Outdoor() {
       <BlackCardsBox />
       <ContentSeparator
         bg="/outdoor-tv/cs-bg.png"
+        tabletbg="/outdoor-tv/tablet/cs-bg-tablet.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
         titlepadding="10px 0 0 0"
@@ -38,6 +39,7 @@ export default function Outdoor() {
       <CustomAccordion data={outdoorFirstFaq} />
       <ContentSeparator
         bg="/outdoor-tv/cs-second.png"
+        tabletbg="/outdoor-tv/tablet/cs-second-tablet.png"
         titlehighlightedstart="FRAME TV"
         titleend="INSTALLATION"
         containerpadding="30px 0px"
@@ -63,6 +65,7 @@ export default function Outdoor() {
       />
       <ContentSeparator
         bg="/outdoor-tv/cs-bg.png"
+        tabletbg="/outdoor-tv/tablet/cs-bg-tablet.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
         titlepadding="10px 0 0 0"

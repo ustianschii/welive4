@@ -25,7 +25,9 @@ export default function EnergyManagementLayout({
           </Subtitle>
         }
         background={`url('/energy-management/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/energy-management/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!" />

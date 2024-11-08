@@ -16,23 +16,17 @@ import { raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
   backgroundColor: SEPARATOR_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {
-    padding: "30px 10px 30px 10px",
+  padding: "30px 10px 30px 10px",
+  justifyContent: "center",
+
+  [theme.breakpoints.down("md")]: {
+    flexWrap: "wrap",
+    gap: "10px",
   },
-}));
-
-export const CardBox = styled(MuiBox)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  backgroundColor: BLACK,
-
   [theme.breakpoints.down("sm")]: {
-    borderRadius: "10px",
-    padding: "30px",
-    marginBottom: "30px",
+    flexDirection: "column",
+    gap: "20px",
   },
 }));
 
@@ -43,30 +37,64 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.down("md")]: {
+    fontSize: "35px",
+  },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "40px",
-    padding: "35px 30px",
+    fontSize: "28px",
+    padding: "0 5px",
   },
 }));
 
-export const CardTitle = styled(MuiTypography)(({ theme }) => ({
+export const CardBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  marginTop: "30px",
+  [theme.breakpoints.down("md")]: {
+    width: "49%",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    gap: "0",
+  },
+}));
+
+export const CardContent = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  backgroundColor: BLACK,
+  borderRadius: "10px",
+  padding: "30px",
+  marginBottom: "30px",
+
+  [theme.breakpoints.down("md")]: {
+    minHeight: "600px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    minHeight: "450px",
+  },
+}));
+
+export const CardTitle = styled(MuiTypography)(() => ({
   color: GREEN,
   fontFamily: raleway.style.fontFamily,
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
-
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
-    paddingBottom: "20px",
-  },
+  fontSize: "20px",
+  margin: "10px 0",
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "start",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "10px",
     fontSize: "14px",
   },
 }));

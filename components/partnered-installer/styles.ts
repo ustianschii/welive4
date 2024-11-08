@@ -17,20 +17,34 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   alignItems: "center",
   backgroundColor: ARTICLE_BACKGROUND,
 
+  [theme.breakpoints.down("md")]: {
+    padding: "30px 15px",
+  },
   [theme.breakpoints.down("sm")]: {
     padding: "30px 15px",
   },
 }));
 
-export const Title = styled(MuiTypography)(({ theme }) => ({
+export const Title = styled(MuiTypography)(() => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   fontWeight: SEMI_BOLD,
   textAlign: "center",
+  fontSize: "30px",
+  lineHeight: "1.2",
+}));
+
+export const Description = styled(MuiTypography)(({ theme }) => ({
+  color: WHITE,
+  fontFamily: raleway.style.fontFamily,
+  textAlign: "center",
+  marginTop: "10px",
+
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "30px",
-    lineHeight: "1.2",
-    marginBottom: "20px",
+    fontSize: "14px",
   },
 }));
 
@@ -40,19 +54,14 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
   backgroundColor: WHITE,
   textTransform: "uppercase",
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-    margin: "30px 0",
-    fontSize: "14px",
-  },
-}));
+  width: "100%",
+  margin: "30px 0",
 
-export const Description = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
-  fontFamily: raleway.style.fontFamily,
-  textAlign: "center",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "14px",
-    marginBottom: "10px",
   },
 }));

@@ -1,4 +1,5 @@
 import { styled } from "@mui/material/styles";
+
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
@@ -14,36 +15,41 @@ import {
 
 import { opensans } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiContainer)(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: SEPARATOR_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {
-    padding: "30px 0",
-  },
+  padding: "30px 0",
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
+  marginBottom: "20px",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "20px",
+  },
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "30px",
     fontSize: "18px",
   },
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
-  [theme.breakpoints.down("sm")]: {
-    width: "95%",
-    fontFamily: opensans.style.fontFamily,
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: SEMI_BOLD,
+  border: "2px solid",
+  borderColor: GREEN,
+  padding: "5px 15px",
+  marginTop: "40px",
+  borderRadius: "10px",
+  [theme.breakpoints.down("md")]: {
+    width: "60%",
     fontSize: "15px",
-    fontWeight: SEMI_BOLD,
-    border: "2px solid",
-    borderColor: GREEN,
-    padding: "5px 15px",
-    marginTop: "40px",
-    borderRadius: "7px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "80%",
+    fontSize: "15px",
   },
 }));

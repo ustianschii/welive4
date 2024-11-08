@@ -21,8 +21,10 @@ export default function ResidentialLayout({
             FOR <br /> RESIDENTIAL
           </Subtitle>
         }
-        background={`url('/loxone-residential/loxone-residential-bg.png')`}
-        height="775px"
+        background={`url('/loxone-residential/header-bg.png')`}
+        tabletbackground={`url('/loxone-residential/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

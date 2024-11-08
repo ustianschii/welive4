@@ -9,15 +9,22 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
   borderColor: GREEN,
   borderRadius: "10px",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
+    width: "49%",
     padding: "30px",
-    marginBottom: "15px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    padding: "30px",
   },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "18px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "18px",
   },
@@ -26,16 +33,23 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 export const Feature = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
+  lineHeight: "1.2",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "17px",
+  },
   [theme.breakpoints.down("sm")]: {
-    lineHeight: "1.2",
+    fontSize: "16px",
   },
 }));
 
 export const Dot = styled(FiberManualRecordIcon)(({ theme }) => ({
   color: "white",
+  marginRight: "10px",
+  marginTop: "6px",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "7px",
+  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "6px",
-    marginRight: "10px",
-    marginTop: "6px",
   },
 }));

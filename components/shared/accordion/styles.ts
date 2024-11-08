@@ -10,10 +10,9 @@ import { opensans } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
+  padding: "30px 0",
 
-  [theme.breakpoints.down("sm")]: {
-    padding: "30px 0",
-  },
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Accordion = styled(MuiAccordion)(({ theme }) => ({
@@ -30,8 +29,11 @@ export const Accordion = styled(MuiAccordion)(({ theme }) => ({
 export const Question = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "18px",
+  },
   [theme.breakpoints.down("sm")]: {
-    paddingRight: "10px",
+    fontSize: "16px",
   },
 }));
 

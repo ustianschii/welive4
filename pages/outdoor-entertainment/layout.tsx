@@ -29,7 +29,9 @@ export default function OutdoorEntertainmentLayout({
           </Subtitle>
         }
         background={`url('/outdoor-entertainment/header-bg.png')`}
-        height="775px"
+        tabletbackground={`url('/outdoor-entertainment/tablet/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
         subtitle={
           <HeaderSubtitle first="YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!" />
         }
