@@ -4,7 +4,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 
 import { GrayCardsBoxProps } from "./types";

@@ -7,16 +7,14 @@ import {
 import { SEMI_BOLD, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
-export const Container = styled(MuiContainer)<{ bg: string }>(
-  ({ theme, bg }) => ({
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    backgroundImage: `url(${bg})`,
-    backgroundSize: "cover",
-    padding: "45px 25px",
-  })
-);
+export const Container = styled(MuiContainer)<{ bg: string }>(({ bg }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundImage: `url(${bg})`,
+  backgroundSize: "cover",
+  padding: "45px 25px",
+}));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
