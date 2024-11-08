@@ -15,7 +15,7 @@ export default function PrivacyPolicyLayout({
     <>
       <CssBaseline />
       <Header
-        height="250px"
+        mobileheight="250px"
         backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={<Subtitle m="30px 0">Privacy Policy</Subtitle>}

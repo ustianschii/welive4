@@ -16,7 +16,7 @@ export default function GetServicesLayout({
     <>
       <CssBaseline />
       <Header
-        height="250px"
+        mobileheight="250px"
         backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={

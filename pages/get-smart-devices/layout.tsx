@@ -16,7 +16,7 @@ export default function GetSmartDevicesLayout({
     <>
       <CssBaseline />
       <Header
-        height="250px"
+        mobileheight="250px"
         backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={<Subtitle m="30px 0">SMART DEVICES</Subtitle>}
