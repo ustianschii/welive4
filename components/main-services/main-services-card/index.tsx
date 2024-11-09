@@ -9,13 +9,7 @@ import Link from "next/link";
 import { Background, Button } from "./styles";
 import { CardProps } from "./types";
 
-export const Card: React.FC<CardProps> = ({
-  link,
-  img,
-  imgtablet,
-  imgdesktop,
-  text,
-}) => {
+export const Card: React.FC<CardProps> = ({ link, img, imgdesktop, text }) => {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
