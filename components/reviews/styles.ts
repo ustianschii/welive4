@@ -15,9 +15,16 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
   flexDirection: "column",
   alignItems: "center",
+
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+    padding: "100px 20px",
+  },
+
   [theme.breakpoints.down("md")]: {
     padding: "50px 70px",
   },
+
   [theme.breakpoints.down("sm")]: {
     padding: "35px 10px",
   },
@@ -44,10 +51,17 @@ export const LinkTypography = styled(MuiTypography)(({ theme }) => ({
 export const ReviewsContainer = styled(MuiBox)(({ theme }) => ({
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
+
+  [theme.breakpoints.up("md")]: {
+    gap: "100px",
+    marginLeft: "100px",
+  },
+
   [theme.breakpoints.down("md")]: {
     gap: "100px",
     marginTop: "30px",
   },
+
   [theme.breakpoints.down("sm")]: {
     gap: "10px",
     marginTop: "0px",

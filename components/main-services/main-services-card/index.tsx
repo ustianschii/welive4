@@ -5,34 +5,38 @@ import React from "react";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 import Link from "next/link";
-import { Background, Button } from "./styles";
 
+import { Background, Button } from "./styles";
 import { CardProps } from "./types";
 
-export const Card: React.FC<CardProps> = ({ link, img, imgtablet, text }) => {
+export const Card: React.FC<CardProps> = ({
+  link,
+  img,
+  imgtablet,
+  imgdesktop,
+  text,
+}) => {
   const theme = useTheme();
-  const isTabletOrBelow = useMediaQuery(theme.breakpoints.down("md"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
+  const imageSrc = isDesktop ? imgdesktop : isTablet ? imgdesktop : img;
 
   return (
-    <Box
-      display="flex"
-      position="relative"
-      flexDirection="column"
-      width="fit-content"
-      height="fit-content"
-      maxWidth="50%"
-      flexShrink={0}
-    >
+    <Box display="flex" position="relative" flexDirection="column">
       <Box width="100%" height="80%">
         <Background
           alt="service"
-          src={isTabletOrBelow ? imgtablet : img}
-          width={250}
-          height={250}
+          src={imageSrc}
+          width={400}
+          height={350}
+          quality={100}
         />
       </Box>
       <Link href={link}>
-        <Button variant="outlined">{text}</Button>
+        <Button variant="outlined" sx={{ marginTop: "10px" }}>
+          {text}
+        </Button>
       </Link>
     </Box>
   );

@@ -11,10 +11,14 @@ export const Container = styled(MuiBox)(({ theme }) => ({
   backgroundColor: LIGHT_BLACK,
   justifyContent: "center",
   alignItems: "center",
-  minWidth: "50%",
   borderRadius: "10px",
 
+  [theme.breakpoints.up("md")]: {
+    minHeight: "200px",
+  },
+
   [theme.breakpoints.down("md")]: {
+    minWidth: "50%",
     minHeight: "200px",
   },
 
@@ -26,10 +30,15 @@ export const Container = styled(MuiBox)(({ theme }) => ({
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
-  lineHeight: "1.1",
+  lineHeight: "1.3",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "20px",
+    padding: "50px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "20px",
+    padding: "0 100px",
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",

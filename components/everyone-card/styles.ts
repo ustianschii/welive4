@@ -13,10 +13,12 @@ export const Container = styled(MuiBox)<{ background: string }>(
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     alignItems: "center",
-    height: "350px",
     borderRadius: "10px",
+    [theme.breakpoints.up("md")]: {
+      height: "250px",
+    },
     [theme.breakpoints.down("md")]: {
-      marginBottom: "20px",
+      height: "250px",
     },
     [theme.breakpoints.down("sm")]: {},
   })
@@ -29,10 +31,13 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "40px",
+  },
   [theme.breakpoints.down("md")]: {
-    fontSize: "55px",
+    fontSize: "45px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "45px",
+    fontSize: "40px",
   },
 }));

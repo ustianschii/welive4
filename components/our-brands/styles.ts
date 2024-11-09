@@ -1,10 +1,7 @@
 "use client";
 
 import { styled } from "@mui/material/styles";
-import {
-  Container as MuiContainer,
-  Typography as MuiTypography,
-} from "@mui/material";
+import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
 import Image from "next/image";
 
@@ -15,9 +12,13 @@ import {
   BLOG_CARD_BACKGROUND,
 } from "@/styles/constants";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
 
+  [theme.breakpoints.up("md")]: {
+    width: "100%",
+    height: "350px",
+  },
   [theme.breakpoints.down("md")]: {
     height: "400px",
   },
@@ -31,6 +32,10 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: BOLD,
   textAlign: "center",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "50px",
+    padding: "40px 0",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "50px",
     padding: "40px 0",
@@ -52,6 +57,9 @@ export const BrandsBox = styled(MuiTypography)(({ theme }) => ({
   scrollBehavior: "smooth",
   overflowX: "auto",
 
+  [theme.breakpoints.up("md")]: {
+    height: "150px",
+  },
   [theme.breakpoints.down("md")]: {
     height: "200px",
   },
@@ -63,6 +71,9 @@ export const BrandsBox = styled(MuiTypography)(({ theme }) => ({
 export const BrandsImages = styled(Image)(({ theme }) => ({
   width: "auto",
   height: "auto",
+  [theme.breakpoints.up("md")]: {
+    margin: "0 auto",
+  },
   [theme.breakpoints.down("md")]: {
     margin: "0 30px",
   },

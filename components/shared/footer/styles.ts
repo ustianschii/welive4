@@ -19,16 +19,32 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: BLACK,
 
   [theme.breakpoints.down("md")]: {
-    paddingBottom: "50px",
     padding: "0 30px",
   },
   [theme.breakpoints.down("sm")]: {
-    paddingBottom: "50px",
     padding: "0 20px",
   },
 }));
 
+export const GroupBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  [theme.breakpoints.up("md")]: {
+    alignItems: "center",
+    gap: "30px",
+  },
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    alignItems: "center",
+  },
+
+  [theme.breakpoints.down("sm")]: {},
+}));
+
 export const Logo = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    width: "270px",
+    height: "150px",
+  },
   [theme.breakpoints.down("md")]: {
     width: "370px",
     height: "150px",
@@ -45,6 +61,10 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "15px",
+    textAlign: "start",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "18px",
   },
@@ -57,6 +77,10 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 export const FastLinks = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
+
+  [theme.breakpoints.up("md")]: {
+    width: "70%",
+  },
 
   [theme.breakpoints.down("md")]: {
     width: "70%",
@@ -79,9 +103,14 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
   marginBottom: "10px",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "25px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "25px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "20px",
   },
@@ -113,15 +142,21 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   lineHeight: "120%",
   border: "2px solid white",
   margin: "0 auto 35px auto",
+  height: "50px",
+
+  [theme.breakpoints.up("md")]: {
+    width: "250px",
+    fontSize: "18px",
+    marginTop: "50px",
+  },
 
   [theme.breakpoints.down("md")]: {
     width: "250px",
-    height: "60px",
     fontSize: "18px",
   },
+
   [theme.breakpoints.down("sm")]: {
     width: "200px",
-    height: "50px",
     fontSize: "16px",
   },
 }));
@@ -150,7 +185,7 @@ export const Adress = styled(MuiTypography)(({ theme }) => ({
 export const Copyright = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
-  marginTop: "10px",
+  margin: "10px 0 30px 0",
 
   [theme.breakpoints.down("sm")]: {
     fontSize: "16px",

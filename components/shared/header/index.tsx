@@ -3,8 +3,6 @@ import * as React from "react";
 
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Button } from "@mui/material";
 
 import {
@@ -17,6 +15,8 @@ import {
   MenuItemTypography,
   MenuItem,
   Logo,
+  DesktopHeaderLinks,
+  LinkLabel,
 } from "./styles";
 import { HeaderProps } from "./types";
 import { GREEN, WHITE } from "@/styles/constants";
@@ -35,17 +35,26 @@ const pages = [
   { text: "CONTACTS", href: ROUTES.CONSULTATION },
 ];
 
+const desktopPages = [
+  { text: "HOME", href: ROUTES.HOME },
+  { text: "SERVICES", href: ROUTES.GET_SERVICES },
+  { text: "SYSTEM DESIGN", href: ROUTES.SYSTEM_DESIGN },
+  { text: "CONTACTS", href: ROUTES.CONSULTATION },
+];
+
 export const Header: React.FC<HeaderProps> = ({
+  mobileheight,
+  tabletheight,
+  desktopheight,
   title,
   subtitle,
   button,
   background,
   tabletbackground,
+  desktopbackground,
   backcolor,
   divider,
   dividerTop,
-  mobileheight,
-  tabletheight,
 }) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -64,33 +73,17 @@ export const Header: React.FC<HeaderProps> = ({
       position="static"
       background={background}
       tabletbackground={tabletbackground}
+      desktopbackground={desktopbackground}
       backcolor={backcolor}
     >
       <Container
-        maxWidth="xl"
+        maxWidth="lg"
         disableGutters
         mobileheight={mobileheight}
         tabletheight={tabletheight}
+        desktopheight={desktopheight}
       >
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
           <IconButton href={ROUTES.HOME}>
             <Logo
               alt="logo"
@@ -142,22 +135,13 @@ export const Header: React.FC<HeaderProps> = ({
               ))}
             </Menu>
           </DropDownMenu>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page, index) => (
-              <Button
-                key={index}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                }}
-              >
-                {page.text}
+          <DesktopHeaderLinks>
+            {desktopPages.map((page, index) => (
+              <Button key={index} onClick={handleCloseNavMenu} href={page.href}>
+                <LinkLabel>{page.text}</LinkLabel>
               </Button>
             ))}
-          </Box>
+          </DesktopHeaderLinks>
         </Toolbar>
         {dividerTop}
         {title}

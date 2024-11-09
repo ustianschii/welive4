@@ -6,7 +6,7 @@ import { content } from "./data";
 
 export const WhyChoose = () => {
   return (
-    <Container disableGutters>
+    <Container>
       <Title>
         WHY CHOOSE <Highlighted mLeft="0px">WE LIVE 4</Highlighted>
       </Title>

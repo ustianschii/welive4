@@ -3,8 +3,8 @@
 import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
-import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
+import { opensans } from "@/app/layout";
 
 interface ContainerProps {
   background: string;
@@ -17,15 +17,18 @@ export const Container = styled(MuiBox)<ContainerProps>(
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     borderRadius: "10px",
+    backgroundImage: `url(${background})`,
 
+    [theme.breakpoints.up("md")]: {
+      backgroundSize: "contain",
+      padding: "40px",
+    },
     [theme.breakpoints.down("md")]: {
-      backgroundImage: `url(${background})`,
       backgroundSize: "contain",
       padding: "40px",
     },
     [theme.breakpoints.down("sm")]: {
       maxHeight: "300px",
-      backgroundImage: `url(${background})`,
       backgroundSize: size ?? "contain",
       padding: "20px 15px",
     },
@@ -33,10 +36,14 @@ export const Container = styled(MuiBox)<ContainerProps>(
 );
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
+  color: GREEN,
   fontFamily: opensans.style.fontFamily,
   lineHeight: "1.1",
   textAlign: "center",
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "22px",
+  },
 
   [theme.breakpoints.down("md")]: {
     fontSize: "22px",
@@ -49,7 +56,13 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
-  fontFamily: raleway.style.fontFamily,
+  fontFamily: opensans.style.fontFamily,
+
+  [theme.breakpoints.up("md")]: {
+    textAlign: "center",
+    fontSize: "17px",
+    marginTop: "20px",
+  },
 
   [theme.breakpoints.down("md")]: {
     textAlign: "center",

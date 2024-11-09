@@ -11,7 +11,14 @@ export const Card = styled(MuiBox)<{ image: string; imagetablet: string }>(
     position: "relative",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    backgroundPosition: "center",
     borderRadius: "10px",
+
+    [theme.breakpoints.up("md")]: {
+      backgroundImage: `url(${imagetablet})`,
+      minHeight: "350px",
+      boxShadow: "8px 8px 15px rgba(0, 0, 0, 0.2)",
+    },
 
     [theme.breakpoints.down("md")]: {
       backgroundImage: `url(${imagetablet})`,
@@ -33,10 +40,17 @@ export const Typography = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
 
-  [theme.breakpoints.down("md")]: {
-    padding: "0 10px 20px 10px",
-    fontSize: "20px",
+  [theme.breakpoints.up("md")]: {
+    padding: "0 5px 20px 5px",
+    fontSize: "15px",
+    lineHeight: "1.3",
   },
+
+  [theme.breakpoints.down("md")]: {
+    padding: "0 20px 20px 20px",
+    fontSize: "18px",
+  },
+
   [theme.breakpoints.down("sm")]: {
     padding: "0 5px 20px 5px",
     fontSize: "14px",

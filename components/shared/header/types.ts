@@ -4,9 +4,11 @@ export interface HeaderProps {
   button?: React.ReactNode;
   divider?: React.ReactNode;
   dividerTop?: React.ReactNode;
-  background?: string;
-  tabletbackground?: string;
   backcolor?: string;
   mobileheight?: string;
   tabletheight?: string;
+  desktopheight?: string;
+  background?: string;
+  tabletbackground?: string;
+  desktopbackground?: string;
 }

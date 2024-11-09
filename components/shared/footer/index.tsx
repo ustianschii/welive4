@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Divider } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 
 import Image from "next/image";
 
@@ -17,10 +17,12 @@ import {
   AdressBox,
   Copyright,
   Logo,
+  GroupBox,
 } from "./styles";
-import { GRAY } from "@/styles/constants";
+import { BLACK, GRAY } from "@/styles/constants";
 import { FooterProps } from "./types";
 import { ROUTES } from "../../../utils/routes-constants";
+
 import Link from "next/link";
 
 export const Footer: React.FC<FooterProps> = ({ divider }) => {
@@ -38,17 +40,21 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
   ];
 
   return (
-    <>
+    <Box sx={{ backgroundColor: BLACK }}>
       {divider}
-      <Container disableGutters>
-        <Logo alt="logo" src="/header-mobile/logo.svg" width={0} height={0} />
-        <Description>
-          We are dedicated to our customers, and they benefit from our
-          understanding of their individual differences and needs. We have
-          strong technical know-how around your electronics. We uncover possible
-          pitfalls, price estimates, and expectations of quality before starting
-          a job and focus on your dream with the best possible solution. 
-        </Description>
+      <Container disableGutters maxWidth="lg">
+        <GroupBox>
+          <Logo alt="logo" src="/header-mobile/logo.svg" width={0} height={0} />
+          <Description>
+            We are dedicated to our customers, and they benefit from our
+            understanding of their individual differences and needs. We have
+            strong technical know-how around your electronics. We uncover
+            possible pitfalls, price estimates, and expectations of quality
+            before starting a job and focus on your dream with the best possible
+            solution. 
+          </Description>
+        </GroupBox>
+
         <FastLinks>
           <LinksColumn>
             <Title>About us</Title>
@@ -90,6 +96,6 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
           © 2024 WE LIVE 4  PA HIC# PA180918 | NJ HIC# 13VH11384300
         </Copyright>
       </Container>
-    </>
+    </Box>
   );
 };

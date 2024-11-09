@@ -23,7 +23,6 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  // const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const getWidth = () => (isMobile ? 380 : isTablet ? 750 : 900);
   const getHeight = () => (isMobile ? 380 : isTablet ? 400 : 500);
@@ -38,6 +37,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
               src={isTablet && item.imagetablet ? item.imagetablet : item.image}
               height={getHeight()}
               width={getWidth()}
+              quality={100}
               style={{
                 borderRadius: "10px",
                 objectFit: "cover",
@@ -45,19 +45,19 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
             />
           )}
 
-          {(item.title && <Title>{item.title}</Title>) || (
-            <Title>
-              <Highlighted mLeft="0px" mRight="0px">
-                {item.titlehighlightedstart}
-              </Highlighted>
-              {item.titlestart}
-              <Highlighted mLeft="0px" mRight="0px">
-                {item.titlehighlightedend}
-              </Highlighted>
-              {item.titleend}
-            </Title>
-          )}
           <CardContent>
+            {(item.title && <Title>{item.title}</Title>) || (
+              <Title>
+                <Highlighted mLeft="0px" mRight="0px">
+                  {item.titlehighlightedstart}
+                </Highlighted>
+                {item.titlestart}
+                <Highlighted mLeft="0px" mRight="0px">
+                  {item.titlehighlightedend}
+                </Highlighted>
+                {item.titleend}
+              </Title>
+            )}
             <Description>{item.maindescription}</Description>
             <Subtitle>{item.firsttitle}</Subtitle>
             <Description>{item.firstdescription}</Description>
@@ -74,8 +74,8 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
                 {desc}
               </Description>
             ))}
+            {button}
           </CardContent>
-          {button}
         </CardBox>
       ))}
     </Container>

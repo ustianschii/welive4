@@ -57,6 +57,7 @@ export const grayCardsDataOutdoorTV = [
 export const grayCardsDataFrameTV = [
   {
     image: "/outdoor-tv/frame-tv-demo.png",
+    imagetablet: "/outdoor-tv/tablet/frame-tv-demo.gif",
     titlestart: "What Is A ",
     titlehighlightedend: "Frame TV",
     titleend: "?",

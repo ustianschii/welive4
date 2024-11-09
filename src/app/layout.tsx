@@ -57,8 +57,10 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Header
+              desktopheight="800px"
               tabletbackground={`url('/header-mobile/tablet/header-bg.png')`}
               background={`url('/header-mobile/header-bg.png')`}
+              desktopbackground={`url('/header-mobile/desktop/header-bg.png')`}
               title={<HeroTitle />}
               button={<CustomButton text={"GET A FREE QUOTE!"} />}
               divider={<GreenDivider />}

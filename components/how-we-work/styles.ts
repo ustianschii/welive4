@@ -10,6 +10,7 @@ import {
 
 import {
   BOLD,
+  GREEN,
   MAIN_SERVICES_BACKGROUND,
   SEMI_BOLD,
   WHITE,
@@ -20,8 +21,27 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
   display: "flex",
   flexDirection: "column",
+  position: "relative",
 
-  [theme.breakpoints.down("md")]: {},
+  [theme.breakpoints.up("md")]: {
+    padding: "10px 0",
+    "&::before, &::after": {
+      content: '""',
+      position: "absolute",
+      left: "10%",
+      width: "80%",
+      borderColor: GREEN,
+      borderStyle: "solid",
+    },
+    "&::before": {
+      top: 0,
+      borderTopWidth: "0px",
+    },
+    "&::after": {
+      bottom: 0,
+      borderBottomWidth: "0px",
+    },
+  },
 
   [theme.breakpoints.down("sm")]: {},
 }));
@@ -32,6 +52,11 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
   textAlign: "center",
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "37px",
+    padding: "20px 0",
+  },
 
   [theme.breakpoints.down("md")]: {
     fontSize: "37px",
@@ -48,6 +73,12 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
+
+  [theme.breakpoints.up("md")]: {
+    marginBottom: "10px",
+    padding: "0 100px",
+    fontSize: "18px",
+  },
 
   [theme.breakpoints.down("md")]: {
     marginBottom: "25px",
@@ -66,6 +97,11 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
 
+  [theme.breakpoints.up("md")]: {
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "20px",
+    padding: "30px 20px",
+  },
   [theme.breakpoints.down("md")]: {
     gap: "20px",
     padding: "30px 20px",
@@ -83,16 +119,19 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   lineHeight: "120%",
   border: "2px solid white",
   margin: "0 auto 35px auto",
+  height: "50px",
 
+  [theme.breakpoints.up("md")]: {
+    width: "300px",
+    fontSize: "18px",
+  },
   [theme.breakpoints.down("md")]: {
     width: "300px",
-    height: "60px",
     fontSize: "18px",
   },
 
   [theme.breakpoints.down("sm")]: {
     width: "250px",
-    height: "50px",
     fontSize: "16px",
   },
 }));

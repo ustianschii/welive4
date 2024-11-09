@@ -12,21 +12,31 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import Image from "next/image";
 
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { SEMI_BOLD, SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 interface AppBarProps {
   background?: string;
   tabletbackground?: string;
+  desktopbackground?: string;
   backcolor?: string;
 }
 interface ContainerProps {
   mobileheight?: string;
   tabletheight?: string;
+  desktopheight?: string;
 }
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
-  ({ theme, background, backcolor, tabletbackground }) => ({
+  ({ theme, background, backcolor, tabletbackground, desktopbackground }) => ({
+    [theme.breakpoints.up("md")]: {
+      backgroundColor:
+        desktopbackground || backcolor ? backcolor ?? "gray" : "gray",
+      backgroundImage: desktopbackground ?? "none",
+      backgroundRepeat: desktopbackground ? "no-repeat" : "",
+      backgroundSize: desktopbackground ? "cover" : "",
+      backgroundPosition: desktopbackground ? "center" : "",
+    },
     [theme.breakpoints.down("md")]: {
       backgroundColor:
         tabletbackground || backcolor ? backcolor ?? "gray" : "gray",
@@ -46,7 +56,11 @@ export const AppBar = styled(MuiAppBar)<AppBarProps>(
 );
 
 export const Container = styled(MuiContainer)<ContainerProps>(
-  ({ theme, mobileheight, tabletheight }) => ({
+  ({ theme, mobileheight, tabletheight, desktopheight }) => ({
+    [theme.breakpoints.up("md")]: {
+      height: desktopheight || "1000px",
+      position: "relative",
+    },
     [theme.breakpoints.down("md")]: {
       height: tabletheight || "700px",
       position: "relative",
@@ -61,15 +75,20 @@ export const Container = styled(MuiContainer)<ContainerProps>(
 export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
+
+  [theme.breakpoints.up("md")]: {
+    padding: "0 20px",
+  },
   [theme.breakpoints.down("md")]: {
     height: "100px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    height: "150px",
   },
 }));
 
 export const Logo = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    width: "350px",
+    height: "100px",
+  },
   [theme.breakpoints.down("md")]: {
     width: "350px",
     height: "150px",
@@ -80,6 +99,26 @@ export const Logo = styled(Image)(({ theme }) => ({
     height: "150px",
     marginLeft: "5%",
   },
+}));
+
+export const DesktopHeaderLinks = styled(MuiBox)(({ theme }) => ({
+  width: "100%",
+  justifyContent: "end",
+  gap: "40px",
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+  },
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+}));
+
+export const LinkLabel = styled(MuiTypography)(() => ({
+  color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: SEMI_BOLD,
+  fontSize: "18px",
+  whiteSpace: "nowrap",
 }));
 
 export const DropDownMenu = styled(MuiBox)(({ theme }) => ({
@@ -125,7 +164,6 @@ export const MenuItem = styled(MuiMenuItem)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     alignItems: "start",
   },
-  [theme.breakpoints.down("md")]: {},
 }));
 
 export const MenuItemTypography = styled(MuiTypography)(({ theme }) => ({

@@ -1,8 +1,6 @@
-// "use client";
 import { MainServices } from "../../components/main-services/index";
 import { OurBrands } from "../../components/our-brands";
 import { Statistic } from "../../components/statistic";
-// import { Rgbw } from "../../components/rgbw";
 import { SystemDesign } from "../../components/system-design";
 import { SmartControl } from "../../components/smart-control";
 import { Everyone } from "../../components/everyone";
@@ -16,10 +14,13 @@ import { GCHome } from "../../components/shared/gray-cards/data";
 import { Separator } from "../../components/shared/gray-separator";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { ROUTES } from "../../utils/routes-constants";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+
+import { Box } from "@mui/material";
 
 export default function Home() {
   return (
-    <>
+    <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
       <MainServices />
       <OurBrands />
       <Statistic />
@@ -39,6 +40,6 @@ export default function Home() {
       <HowWeWork />
       <WhyChoose />
       <Reviews />
-    </>
+    </Box>
   );
 }

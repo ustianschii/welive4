@@ -12,9 +12,8 @@ export const Background = styled(Image)(({ theme }) => ({
   width: "100%",
   height: "100%",
   borderRadius: "10px",
+  [theme.breakpoints.up("md")]: {},
   [theme.breakpoints.down("md")]: {},
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
@@ -26,16 +25,19 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   textOverflow: "ellipsis",
   overflow: "hidden",
   minWidth: 0,
+  width: "100%",
 
-  [theme.breakpoints.down("md")]: {
-    width: "100%",
-    padding: "10px 0",
+  [theme.breakpoints.up("md")]: {
+    padding: "10px 10px",
     fontSize: "20px",
   },
 
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
+  [theme.breakpoints.down("md")]: {
     padding: "10px 0",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    padding: "5px 0",
     fontSize: "13px",
   },
 }));
