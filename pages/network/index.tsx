@@ -16,7 +16,7 @@ export default function Network() {
         <GrayCardsBox data={grayCardsData} imgheight={260} imgwidth={388} />
       </Box>
       <BlackCardsBoxShared
-        upMdWidth="24%"
+        upmdwidth="24%"
         data={blackCardsData}
         titlestart="OUR"
         titlehighlightedend="SOLUTIONS"
