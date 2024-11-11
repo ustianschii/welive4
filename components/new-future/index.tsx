@@ -5,7 +5,7 @@ import { Highlighted } from "../hero-title/styles";
 
 import Image from "next/image";
 
-import { useTheme, useMediaQuery, Box } from "@mui/material";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 export const NewFuture = () => {
   const theme = useTheme();
