@@ -28,7 +28,6 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     padding: "50px 10px",
-    "& > *": {},
     gap: "10px",
   },
 }));

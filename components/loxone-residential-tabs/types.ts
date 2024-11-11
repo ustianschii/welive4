@@ -7,8 +7,6 @@ export interface TabPanelProps {
 export interface TabContentProps {
   image: string;
   title: string;
-  firstdesc: string;
-  seconddesc: string;
-  thirddesc?: string;
+  descriptions: string[];
   quote: string;
 }

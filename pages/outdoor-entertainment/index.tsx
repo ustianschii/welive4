@@ -12,6 +12,8 @@ import {
 import { BlackCardsBoxShared } from "../../components/shared/black-cards";
 import { BCOutdoorEntertainment } from "../../components/shared/black-cards/data";
 import { ROUTES } from "../../utils/routes-constants";
+import { Box } from "@mui/material";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export default function OutdoorEntertainment() {
   return (
@@ -22,18 +24,21 @@ export default function OutdoorEntertainment() {
           OUR SERVICE
         </Title>
       </Separator>
-      <GrayCardsBox
-        data={GCOutdoorEntertainmentTV}
-        imgheight={400}
-        imgwidth={388}
-        button={<Button href={ROUTES.OUTDOOR_TV}>LEARN MORE &#10230;</Button>}
-      />
-      <GrayCardsBox
-        data={GCOutdoorEntertainmentSpeaker}
-        imgheight={400}
-        imgwidth={388}
-      />
+      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+        <GrayCardsBox
+          data={GCOutdoorEntertainmentTV}
+          imgheight={400}
+          imgwidth={388}
+          button={<Button href={ROUTES.OUTDOOR_TV}>LEARN MORE &#10230;</Button>}
+        />
+        <GrayCardsBox
+          data={GCOutdoorEntertainmentSpeaker}
+          imgheight={400}
+          imgwidth={388}
+        />
+      </Box>
       <BlackCardsBoxShared
+        upmdwidth="49%"
         titlestart="Why Choose"
         titlehighlightedend="WE LIVE 4 for Your Outdoor Entertainment?"
         data={BCOutdoorEntertainment}

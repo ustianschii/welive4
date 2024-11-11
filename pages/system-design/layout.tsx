@@ -18,15 +18,17 @@ export default function SystemDesignLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="70px 0 -80px 0">
+          <Subtitle>
             SYSTEM
             <Highlighted>DESIGN</Highlighted>
           </Subtitle>
         }
         background={`url('system-design/header-bg.png')`}
         tabletbackground={`url('system-design/tablet/header-bg.png')`}
+        desktopbackground={`url('system-design/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

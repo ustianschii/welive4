@@ -27,6 +27,9 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   marginBottom: "20px",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "20px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "20px",
   },
@@ -44,12 +47,14 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   padding: "5px 15px",
   marginTop: "40px",
   borderRadius: "10px",
+  [theme.breakpoints.up("md")]: {
+    width: "40%",
+  },
   [theme.breakpoints.down("md")]: {
     width: "60%",
     fontSize: "15px",
   },
   [theme.breakpoints.down("sm")]: {
     width: "80%",
-    fontSize: "15px",
   },
 }));

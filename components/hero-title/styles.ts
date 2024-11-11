@@ -53,15 +53,17 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
   textAlign: "center",
-  margin: "20px 0 0 0",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "50px",
+    fontSize: "40px",
+    margin: "50px 0 0 0",
     padding: "0 70px",
+    marginTop: "100px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "45px",
+    fontSize: "40px",
     padding: "0 70px",
+    marginTop: "100px",
   },
 
   [theme.breakpoints.down("sm")]: {

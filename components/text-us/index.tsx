@@ -1,14 +1,14 @@
 import React from "react";
-import { BannerContainer, Button, Container, Subtitle, Title } from "./styles";
+import { BannerContainer, Button, Wrapper, Subtitle, Title } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 
 export const TextUs = () => {
   return (
-    <Container disableGutters>
+    <Wrapper>
       <BannerContainer>
         <Title>TEXT US</Title>
         <Subtitle>
-          Have questions or need assistance?
+          Have questions or need assistance? <br />
           <Highlighted>Text us now!</Highlighted>
         </Subtitle>
         <Button fullWidth>
@@ -16,6 +16,6 @@ export const TextUs = () => {
           <Highlighted>4</Highlighted>
         </Button>
       </BannerContainer>
-    </Container>
+    </Wrapper>
   );
 };

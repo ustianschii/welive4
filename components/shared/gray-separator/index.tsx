@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 import { Box } from "@mui/material";
 
@@ -13,7 +13,7 @@ export const Separator: React.FC<{
     <Box
       height={height ?? "35px"}
       p={padding ?? ""}
-      sx={{ backgroundColor: SEPARATOR_BACKGROUND }}
+      sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}
     >
       {children}
     </Box>

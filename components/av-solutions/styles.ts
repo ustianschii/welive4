@@ -2,19 +2,36 @@ import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
+  Box as MuiBox,
 } from "@mui/material";
 
 import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
+
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+
+  [theme.breakpoints.down("md")]: {
+    padding: "30px 40px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "30px 20px",
+  },
+}));
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
 
+  [theme.breakpoints.up("md")]: {
+    padding: "30px 50px",
+  },
+
   [theme.breakpoints.down("md")]: {
     padding: "30px 40px",
   },
+
   [theme.breakpoints.down("sm")]: {
     padding: "30px 20px",
   },
@@ -27,9 +44,14 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "27px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "27px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "25px",
   },

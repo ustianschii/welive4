@@ -16,15 +16,17 @@ export default function ResidentialLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="50px 0 0 0">
+          <Subtitle>
             <Highlighted>LOXONE</Highlighted>
-            FOR <br /> RESIDENTIAL
+            FOR RESIDENTIAL
           </Subtitle>
         }
         background={`url('/loxone-residential/header-bg.png')`}
         tabletbackground={`url('/loxone-residential/tablet/header-bg.png')`}
+        desktopbackground={`url('/loxone-residential/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

@@ -7,10 +7,9 @@ import { GrayCardsBox } from "../../components/shared/gray-cards";
 import { GCMusicStreaming } from "../../components/shared/gray-cards/data";
 import { BlackCardsBoxShared } from "../../components/shared/black-cards";
 import { BCHighPerformanceAudio } from "../../components/shared/black-cards/data";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 import { Box } from "@mui/material";
-
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export default function HighPerformanceSound() {
   return (
@@ -31,8 +30,11 @@ export default function HighPerformanceSound() {
           height={100}
         />
       </Box>
-      <GrayCardsBox data={GCMusicStreaming} imgheight={400} imgwidth={388} />
+      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+        <GrayCardsBox data={GCMusicStreaming} imgheight={400} imgwidth={388} />
+      </Box>
       <BlackCardsBoxShared
+        upmdwidth="49%"
         titlestart="WHY CHOOSE"
         titlehighlightedend="WE LIVE 4"
         data={BCHighPerformanceAudio}

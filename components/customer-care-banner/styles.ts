@@ -7,14 +7,18 @@ import {
 import {
   GREEN,
   WHITE,
-  SEPARATOR_BACKGROUND,
   SUBMIT_FORM_BACKGROUND,
   BOLD,
+  MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
+export const Wrapper = styled(MuiBox)(() => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+}));
+
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: SEPARATOR_BACKGROUND,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   [theme.breakpoints.down("sm")]: {
     padding: "20px 10px",
   },

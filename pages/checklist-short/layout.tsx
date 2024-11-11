@@ -19,13 +19,14 @@ export default function ChecklistLayout({
         backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={
-          <Subtitle m="50px 0 30px 0">
+          <Subtitle>
             Fill up the<Highlighted>Smart Technology Checklist</Highlighted>
             below
           </Subtitle>
         }
         mobileheight="350px"
         tabletheight="350px"
+        desktopheight="300px"
       />
       {children}
       <Footer divider={<GreenDivider />} />

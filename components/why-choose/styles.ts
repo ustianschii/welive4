@@ -44,7 +44,7 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
   marginTop: "20px",
   [theme.breakpoints.up("md")]: {
     gridTemplateColumns: "repeat(4, 1fr)",
-    width: "1250px",
+    maxWidth: "1250px",
     gap: "30px",
     marginTop: "50px",
   },
@@ -52,8 +52,5 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
     padding: "15px",
     gap: "30px",
   },
-  [theme.breakpoints.down("sm")]: {
-    padding: "15px",
-    gap: "30px",
-  },
+  [theme.breakpoints.down("sm")]: {},
 }));

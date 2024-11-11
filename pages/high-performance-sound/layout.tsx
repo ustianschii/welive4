@@ -17,19 +17,17 @@ export default function HighPerformanceSoundLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="120px 0 30px 0">
-            <Highlighted>
-              HIGH PERFORMANCE <br />
-              SOUND
-            </Highlighted>
-            SYSTEM <br />
-            INSTALLATION
+          <Subtitle>
+            <Highlighted>HIGH PERFORMANCE SOUND</Highlighted>
+            SYSTEM INSTALLATION
           </Subtitle>
         }
         background={`url('/high-performance-sound/header-bg.png')`}
         tabletbackground={`url('/high-performance-sound/tablet/header-bg.png')`}
+        desktopbackground={`url('/high-performance-sound/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM" />
         }

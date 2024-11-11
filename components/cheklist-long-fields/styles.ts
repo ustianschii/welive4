@@ -1,6 +1,5 @@
 import { styled } from "@mui/material/styles";
 import {
-  Container as MuiContainer,
   Typography as MuiTypography,
   Box as MuiBox,
   TextField as MuiTextField,
@@ -11,48 +10,60 @@ import {
 import {
   LIGHT_GRAY,
   WHITE,
-  ARTICLE_BACKGROUND,
+  MAIN_SERVICES_BACKGROUND,
   GREEN,
   SEMI_BOLD,
   SEPARATOR_BACKGROUND,
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiBox)(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: SEPARATOR_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {},
+}));
+
+export const FieldsBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+
+  borderRadius: "10px",
+  marginBottom: "30px",
+
+  [theme.breakpoints.up("md")]: {
+    width: "40%",
+    padding: "40px",
+    marginTop: "40px",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "85%",
+    padding: "30px",
+    marginTop: "30px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "90%",
+    padding: "20px",
+  },
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
-  width: "70%",
+  fontSize: "16px",
 
+  [theme.breakpoints.up("md")]: {
+    width: "50%",
+  },
   [theme.breakpoints.down("md")]: {
-    marginBottom: "30px",
+    width: "70%",
     fontSize: "16px",
   },
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "50px",
     fontSize: "16px",
   },
-}));
-
-export const FieldsBox = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: ARTICLE_BACKGROUND,
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  borderRadius: "10px",
-  width: "95%",
-  padding: "40px 20px",
-  marginBottom: "30px",
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Card = styled(MuiBox)(({ theme }) => ({
@@ -83,11 +94,14 @@ export const Checkbox = styled(MuiCheckbox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {},
 }));
 
-export const TextField = styled(MuiTextField)(({ theme }) => ({
+export const TextField = styled(MuiTextField)(() => ({
   "& .MuiOutlinedInput-root": {
     color: WHITE,
     borderRadius: "10px",
     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+      borderColor: GREEN,
+    },
+    "&:hover .MuiOutlinedInput-notchedOutline": {
       borderColor: GREEN,
     },
   },
@@ -99,17 +113,13 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
     color: "gray",
     opacity: 1,
   },
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
-export const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
+export const FormControlLabel = styled(MuiFormControlLabel)(() => ({
   "& .MuiFormControlLabel-label": {
     color: WHITE,
     fontFamily: raleway.style.fontFamily,
     fontSize: "15px",
-  },
-  [theme.breakpoints.down("sm")]: {
     marginTop: "5px",
   },
 }));
@@ -117,6 +127,7 @@ export const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
 export const ShareBox = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
   width: "100%",
   [theme.breakpoints.down("sm")]: {
     marginBottom: "10px",
@@ -132,8 +143,20 @@ export const UploadButton = styled(MuiButton)(({ theme }) => ({
   textTransform: "none",
   borderRadius: "10px",
   fontSize: "16px",
+  marginTop: "10px",
 
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.up("md")]: {
+    width: "50%",
+    fontSize: "17px",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "50%",
+    fontSize: "17px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "90%",
+    fontSize: "14px",
+  },
 }));
 
 export const SubmitButton = styled(MuiButton)(({ theme }) => ({
@@ -146,5 +169,16 @@ export const SubmitButton = styled(MuiButton)(({ theme }) => ({
   borderRadius: "10px",
   fontSize: "16px",
 
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.up("md")]: {
+    width: "50%",
+    fontSize: "17px",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "50%",
+    fontSize: "17px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "90%",
+    fontSize: "14px",
+  },
 }));

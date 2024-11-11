@@ -20,7 +20,12 @@ export default function LoxoneCommercial() {
         title={data[1].title}
         first_description={data[1].first_description}
       />
-      <KeyFeatures data={dataLoxoneCommercial} />
+      <KeyFeatures
+        data={dataLoxoneCommercial}
+        flex="1 1 calc(25% )"
+        gap="10px"
+        maxW="calc(24% )"
+      />
       <Personalize />
       <ActionBanner />
     </ResidentialLayout>

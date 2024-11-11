@@ -1,10 +1,11 @@
-import { CssBaseline } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
 
 import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
 import { Highlighted, Subtitle } from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
+import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
 export default function CommercialLayout({
   children,
@@ -17,13 +18,15 @@ export default function CommercialLayout({
       <Header
         title={
           <Subtitle>
-            <Highlighted> LOXONE</Highlighted>FOR <br /> COMMERCIAL
+            <Highlighted>LOXONE</Highlighted>FOR COMMERCIAL
           </Subtitle>
         }
         background={`url('/loxone-commercial/header-bg-mobile.png')`}
         tabletbackground={`url('/loxone-commercial/tablet/header-bg-tablet.png')`}
+        desktopbackground={`url('/loxone-commercial/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
@@ -32,7 +35,7 @@ export default function CommercialLayout({
           />
         }
       />
-      {children}
+      <Box sx={{ backgroundColor: SEPARATOR_BACKGROUND }}>{children}</Box>
       <Footer divider={<GreenDivider />} />
     </>
   );

@@ -8,6 +8,8 @@ import {
   Button as MuiButton,
 } from "@mui/material";
 
+import Image from "next/image";
+
 import {
   BOLD,
   MAIN_SERVICES_BACKGROUND,
@@ -17,19 +19,26 @@ import {
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(() => ({
+export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
   padding: "30px 0",
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "30px",
+  },
 }));
 
-export const CardBox = styled(MuiBox)(({ theme }) => ({
+export const CardBox = styled(MuiBox, {
+  shouldForwardProp: (prop) => prop !== "index",
+})<{ index: number }>(({ theme, index }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
   marginTop: "20px",
   [theme.breakpoints.up("md")]: {
-    flexDirection: "row",
+    flexDirection: index % 2 === 0 ? "row" : "row-reverse",
   },
 }));
 
@@ -58,6 +67,8 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
     borderLeft: "5px solid",
     borderColor: GREEN,
     borderRadius: "5px",
+    minWidth: "50%",
+    maxWidth: "100%",
   },
 
   [theme.breakpoints.down("md")]: {
@@ -70,6 +81,15 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+  },
+}));
+
+export const CustomImage = styled(Image)(({ theme }) => ({
+  borderRadius: "10px",
+  objectFit: "cover",
+  [theme.breakpoints.up("md")]: {
+    maxWidth: "50%",
+    minWidth: "50%",
   },
 }));
 
@@ -107,7 +127,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   [theme.breakpoints.up("md")]: {
-    fontSize: "18px",
+    fontSize: "16px",
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "18px",
@@ -126,21 +146,19 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   border: "2px solid white",
   lineHeight: "120%",
   margin: "20px 0",
+  height: "40px",
 
   [theme.breakpoints.up("md")]: {
     width: "300px",
-    height: "60px",
-    fontSize: "20px",
+    fontSize: "16px",
   },
   [theme.breakpoints.down("md")]: {
     width: "300px",
-    height: "60px",
     fontSize: "20px",
   },
 
   [theme.breakpoints.down("sm")]: {
     width: "250px",
-    height: "50px",
     fontSize: "16px",
   },
 }));

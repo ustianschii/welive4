@@ -16,17 +16,17 @@ export default function AutomationLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="30px 5px 0 5px">
-            <Highlighted sx={{ fontSize: "35px" }}>
-              Loxone Automation: <br /> The New Future Of <br /> Smart
-              Automation
-            </Highlighted>
+          <Subtitle>
+            Loxone Automation:
+            <Highlighted>The New Future Of Smart Automation</Highlighted>
           </Subtitle>
         }
         background={`url('loxone-automation/header-bg.png')`}
         tabletbackground={`url('loxone-automation/tablet/header-bg.png')`}
-        mobileheight="700px"
+        desktopbackground={`url('loxone-automation/desktop/header-bg.png')`}
+        mobileheight="750px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

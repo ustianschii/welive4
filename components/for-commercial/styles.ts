@@ -14,15 +14,12 @@ import {
 } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiContainer)(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: ARTICLE_BACKGROUND,
   padding: "50px 10px",
-
-  [theme.breakpoints.down("md")]: {},
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FeaturesBox = styled(MuiBox)(({ theme }) => ({
@@ -30,6 +27,12 @@ export const FeaturesBox = styled(MuiBox)(({ theme }) => ({
   columnGap: "20px",
   rowGap: "30px",
   padding: "0 10px",
+
+  [theme.breakpoints.up("md")]: {
+    gridTemplateColumns: "repeat(3, 1fr)",
+    minHeight: "450px",
+    marginTop: "20px",
+  },
 
   [theme.breakpoints.down("md")]: {
     gridTemplateColumns: "repeat(2, 1fr)",
@@ -54,9 +57,14 @@ export const CardTitle = styled(MuiTypography)(({ theme }) => ({
   margin: "5px 0",
   color: WHITE,
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "17px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "17px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
   },
@@ -81,7 +89,16 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   marginTop: "40px",
   borderRadius: "10px",
   padding: "5px 15px",
+
+  [theme.breakpoints.up("md")]: {
+    marginTop: "20px",
+    width: "40%",
+    fontSize: "16px",
+  },
+
   [theme.breakpoints.down("md")]: {
+    marginTop: "40px",
+    width: "100%",
     fontSize: "16px",
   },
   [theme.breakpoints.down("sm")]: {

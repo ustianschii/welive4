@@ -16,8 +16,10 @@ export const Container = styled(MuiContainer)<{
   flexDirection: "column",
   alignItems: "center",
   backgroundRepeat: "no-repeat",
+  backgroundPostion: "center",
   backgroundSize: "cover",
   padding: containerpadding,
+  [theme.breakpoints.up("md")]: {},
   [theme.breakpoints.down("md")]: {
     backgroundImage: `url(${tabletbg})`,
   },
@@ -35,6 +37,9 @@ export const Title = styled(MuiTypography)<{
   lineHeight: "1.1",
   textAlign: "center",
   padding: titlepadding,
+  [theme.breakpoints.up("md")]: {
+    fontSize: "32px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "32px",
   },

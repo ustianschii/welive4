@@ -1,8 +1,10 @@
 import React from "react";
 
-import { Container, Description, Title } from "./styles";
+import { Container, Description, Title, Wrapper } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { TransparentCardProps } from "./types";
+import { Box } from "@mui/material";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export const TransparentCard: React.FC<TransparentCardProps> = ({
   data,
@@ -14,16 +16,18 @@ export const TransparentCard: React.FC<TransparentCardProps> = ({
   bg,
 }) => {
   return (
-    <Container disableGutters bg={bg}>
-      <Title>
-        <Highlighted>{titlehighlightedstart}</Highlighted> <br />
-        {titlestart}
-        <Highlighted>{titlehighlightedend}</Highlighted>
-        {titleend}
-      </Title>
-      {data[index].map((item, index) => (
-        <Description key={index}>{item}</Description>
-      ))}
-    </Container>
+    <Wrapper>
+      <Container disableGutters bg={bg}>
+        <Title>
+          <Highlighted>{titlehighlightedstart}</Highlighted> <br />
+          {titlestart}
+          <Highlighted>{titlehighlightedend}</Highlighted>
+          {titleend}
+        </Title>
+        {data[index].map((item, index) => (
+          <Description key={index}>{item}</Description>
+        ))}
+      </Container>
+    </Wrapper>
   );
 };

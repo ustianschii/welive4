@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Box } from "@mui/material";
+
 import HomeTheaterLayout from "./layout";
 import { Separator } from "../../components/shared/gray-separator";
 import { Title } from "../../components/shared/content-separator/styles";
@@ -12,29 +14,30 @@ import { BCHomeTheater } from "../../components/shared/black-cards/data";
 import { ContentSeparator } from "../../components/shared/content-separator";
 import { CustomAccordion } from "../../components/shared/accordion";
 import { homeTheaterFaq } from "../../components/shared/accordion/data";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export default function HomeTheater() {
   return (
     <HomeTheaterLayout>
-      <Separator height="90px" padding="15px 0">
+      <Separator height="90px" padding="25px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>
           FROM OUR SERVICE
         </Title>
       </Separator>
+      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+        <GrayCardsBox
+          data={GCHomeTheater}
+          imgheight={400}
+          imgwidth={388}
+          button={
+            <Button href={GCHomeTheater[0].link}>LEARN MORE &#10230;</Button>
+          }
+        />
+      </Box>
 
-      {GCHomeTheater.map((item, index) => {
-        return (
-          <GrayCardsBox
-            key={index}
-            data={item}
-            imgheight={400}
-            imgwidth={388}
-            button={<Button href={item[0].link}>LEARN MORE &#10230;</Button>}
-          />
-        );
-      })}
       <BlackCardsBoxShared
+        upmdwidth="32%"
         titlestart="Why Choose"
         titlehighlightedend="We LIVE 4 for Your Home Theater?"
         data={BCHomeTheater}

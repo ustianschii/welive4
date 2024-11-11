@@ -19,19 +19,23 @@ import {
 } from "../../components/shared/black-cards/data";
 import { BlackCardsBoxShared } from "../../components/shared/black-cards";
 import { TvSizes } from "../../components/tv-sizes";
+import { Box } from "@mui/material";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export default function Outdoor() {
   return (
     <OutdoorLayout>
-      <GrayCardsBox
-        data={grayCardsDataOutdoorTV}
-        imgheight={400}
-        imgwidth={388}
-      />
+      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+        <GrayCardsBox
+          data={grayCardsDataOutdoorTV}
+          imgheight={400}
+          imgwidth={388}
+        />
+      </Box>
       <BlackCardsBox />
       <ContentSeparator
         bg="/outdoor-tv/cs-bg.png"
-        tabletbg="/outdoor-tv/tablet/cs-bg-tablet.png"
+        tabletbg="/outdoor-tv/desktop/cs-bg.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
         titlepadding="10px 0 0 0"
@@ -39,18 +43,21 @@ export default function Outdoor() {
       <CustomAccordion data={outdoorFirstFaq} />
       <ContentSeparator
         bg="/outdoor-tv/cs-second.png"
-        tabletbg="/outdoor-tv/tablet/cs-second-tablet.png"
+        tabletbg="/outdoor-tv/desktop/cs-second.png"
         titlehighlightedstart="FRAME TV"
         titleend="INSTALLATION"
         containerpadding="30px 0px"
         description="EFORTLESS LUXURY FOR YOUR HOME ENTERTAINMENT 100% RISK-FREE ASSURANCE"
       />
-      <GrayCardsBox
-        data={grayCardsDataFrameTV}
-        imgheight={400}
-        imgwidth={388}
-      />
+      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+        <GrayCardsBox
+          data={grayCardsDataFrameTV}
+          imgheight={400}
+          imgwidth={388}
+        />
+      </Box>
       <BlackCardsBoxShared
+        upmdwidth="49%"
         titlestart="Why Should"
         titlehighlightedend="You Need A Frame TV Mount"
         titleend="?"
@@ -58,6 +65,7 @@ export default function Outdoor() {
       />
       <TvSizes />
       <BlackCardsBoxShared
+        upmdwidth="49%"
         titlestart="What's Inside Our"
         titlehighlightedend="Frame TV Installation"
         titleend="Package?"
@@ -65,7 +73,7 @@ export default function Outdoor() {
       />
       <ContentSeparator
         bg="/outdoor-tv/cs-bg.png"
-        tabletbg="/outdoor-tv/tablet/cs-bg-tablet.png"
+        tabletbg="/outdoor-tv/desktop/cs-bg.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
         titlepadding="10px 0 0 0"

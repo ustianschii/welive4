@@ -17,18 +17,17 @@ export default function OutdoorLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="120px 0 0 0">
-            <Highlighted>
-              PREMIUM <br /> OUTDOOR
-            </Highlighted>
-            TV <br />
-            MOUNTING
+          <Subtitle>
+            <Highlighted>PREMIUM OUTDOOR</Highlighted>
+            TV MOUNTING
           </Subtitle>
         }
         background={`url('/outdoor-tv/header-bg.png')`}
         tabletbackground={`url('/outdoor-tv/tablet/header-bg.png')`}
+        desktopbackground={`url('/outdoor-tv/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE" />

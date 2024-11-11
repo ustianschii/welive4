@@ -17,19 +17,19 @@ export default function NetworkLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="120px 0 0 0">
+          <Subtitle>
             <Highlighted>
-              PROFESSIONAL
-              <br />
+              PROFESSIONAL <br />
             </Highlighted>
-            NETWORK <br />
-            INSTALLATION
+            NETWORK INSTALLATION
           </Subtitle>
         }
         background={`url('/network/header-bg.png')`}
         tabletbackground={`url('/network/tablet/header-bg.png')`}
+        desktopbackground={`url('/network/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK" />

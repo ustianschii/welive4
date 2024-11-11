@@ -2,10 +2,19 @@ import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
+  Box as MuiBox,
 } from "@mui/material";
 
-import { SEMI_BOLD, WHITE } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { raleway } from "@/app/layout";
+
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
+  backgroundColor: SEPARATOR_BACKGROUND,
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+  },
+  [theme.breakpoints.down("md")]: {},
+}));
 
 export const Container = styled(MuiContainer)<{ bg: string }>(({ bg }) => ({
   display: "flex",
@@ -23,6 +32,10 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "25px",
+    marginBottom: "20px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "25px",
   },
@@ -36,11 +49,17 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
-  marginTop: "10px",
+  marginTop: "5px",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "15px",
+    padding: "0 50px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
+    padding: "0 50px",
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "13px",
+    padding: "0",
   },
 }));

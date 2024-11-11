@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import { KeyFeaturesCardTypes } from "./types";
 
-import { CardBox, Title, Feature, Dot } from "./styles";
+import { CardBox, Title, Feature, Dot, CustomList, Wrapper } from "./styles";
 
-import { Box, List, ListItem } from "@mui/material";
+import { ListItem } from "@mui/material";
 
 export const KeyFeaturesCard: React.FC<KeyFeaturesCardTypes> = ({
   icon,
@@ -15,7 +15,7 @@ export const KeyFeaturesCard: React.FC<KeyFeaturesCardTypes> = ({
 }) => {
   return (
     <CardBox>
-      <Box display="flex" alignItems="center" pb="30px">
+      <Wrapper>
         <Image
           alt="feature-card-icon"
           src={icon}
@@ -24,15 +24,15 @@ export const KeyFeaturesCard: React.FC<KeyFeaturesCardTypes> = ({
           style={{ marginRight: "10px", objectFit: "contain" }}
         />
         <Title>{title}</Title>
-      </Box>
-      <List>
+      </Wrapper>
+      <CustomList>
         {features.map((feature, index) => (
           <ListItem key={index} sx={{ alignItems: "flex-start" }}>
             <Dot />
             <Feature>{feature}</Feature>
           </ListItem>
         ))}
-      </List>
+      </CustomList>
     </CardBox>
   );
 };

@@ -2,8 +2,6 @@
 
 import React from "react";
 
-import Image from "next/image";
-
 import { useMediaQuery, useTheme } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 
@@ -15,6 +13,7 @@ import {
   Description,
   Subtitle,
   CardContent,
+  CustomImage,
 } from "./styles";
 import { Highlighted } from "../../hero-title/styles";
 import { GREEN } from "@/styles/constants";
@@ -23,6 +22,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const getWidth = () => (isMobile ? 380 : isTablet ? 750 : 900);
   const getHeight = () => (isMobile ? 380 : isTablet ? 400 : 500);
@@ -30,18 +30,18 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   return (
     <Container disableGutters>
       {data.map((item, index) => (
-        <CardBox key={index}>
+        <CardBox key={index} index={index}>
           {item.image && (
-            <Image
+            <CustomImage
               alt="service"
-              src={isTablet && item.imagetablet ? item.imagetablet : item.image}
+              src={
+                isDesktop && isTablet && item.imagetablet
+                  ? item.imagetablet
+                  : item.image
+              }
               height={getHeight()}
               width={getWidth()}
               quality={100}
-              style={{
-                borderRadius: "10px",
-                objectFit: "cover",
-              }}
             />
           )}
 

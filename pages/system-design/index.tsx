@@ -26,12 +26,14 @@ export default function SystemDesign() {
       </Separator>
       <DesignTypes />
       <BlackCardsBoxShared
+        upmdwidth="49%"
         data={BCSystemDesign}
         titlestart="Why"
         titlehighlightedend="System Design Helps"
         titleend="You"
       />
       <BlackCardsBoxShared
+        upmdwidth="24%"
         data={BCSystemDesignWBorder}
         border="2px solid #59B202"
         bgcolor={TEXT_US_BACKGROUND}

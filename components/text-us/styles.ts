@@ -8,24 +8,29 @@ import {
 import {
   GREEN,
   WHITE,
-  SEPARATOR_BACKGROUND,
   BOLD,
   SUBMIT_FORM_BACKGROUND,
   SEMI_BOLD,
+  MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
 import { raleway, opensans } from "@/app/layout";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: SEPARATOR_BACKGROUND,
-  [theme.breakpoints.down("md")]: {
-    padding: "20px 25px",
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+
+  [theme.breakpoints.up("md")]: {
+    padding: "20px",
   },
+  [theme.breakpoints.down("md")]: {
+    padding: "20px 20px",
+  },
+
   [theme.breakpoints.down("sm")]: {
-    padding: "20px 10px",
+    padding: "20px 15px",
   },
 }));
 
-export const BannerContainer = styled(MuiBox)(() => ({
+export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -34,15 +39,25 @@ export const BannerContainer = styled(MuiBox)(() => ({
   borderColor: GREEN,
   padding: "100px 15px",
   borderRadius: "10px",
+  [theme.breakpoints.up("md")]: {
+    maxWidth: "1150px",
+    padding: "50px 15px",
+  },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: GREEN,
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "35px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "35px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "30px",
   },
@@ -52,9 +67,16 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   margin: "20px 0",
+  textAlign: "center",
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "16px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "17px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
   },
@@ -68,12 +90,18 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   fontWeight: BOLD,
   border: "2px solid white",
 
+  [theme.breakpoints.up("md")]: {
+    width: "40%",
+    height: "50px",
+  },
+
   [theme.breakpoints.down("md")]: {
     width: "70%",
     height: "60px",
   },
+
   [theme.breakpoints.down("sm")]: {
-    width: "100%",
+    width: "80%",
     height: "50px",
   },
 }));

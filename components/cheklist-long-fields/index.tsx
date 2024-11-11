@@ -23,8 +23,8 @@ import Image from "next/image";
 
 export const ChecklistLongFields = () => {
   return (
-    <Container disableGutters>
-      <Description>
+    <Container>
+      <Description sx={{ marginTop: "60px" }}>
         To make sure you think of every step during the construction phase of
         your smart home, we compiled a short checklist with the most important
         areas of application.
@@ -34,9 +34,9 @@ export const ChecklistLongFields = () => {
           <Card key={index}>
             <Title>{item.title}</Title>
             <FormGroup sx={{ mb: "15px" }}>
-              {item.variants.map((variant, idx) => (
+              {item.variants.map((variant, index) => (
                 <FormControlLabel
-                  key={idx}
+                  key={index}
                   control={<Checkbox />}
                   label={variant}
                 />
@@ -50,7 +50,7 @@ export const ChecklistLongFields = () => {
           </Card>
         ))}
         <ShareBox>
-          <Typography fontSize="18px" mb="5px">
+          <Typography fontSize="18px">
             <Highlighted mLeft="0px">Share up to 20 pictures</Highlighted>
           </Typography>
           <UploadButton size="small">

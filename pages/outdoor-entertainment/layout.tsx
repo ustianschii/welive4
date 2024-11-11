@@ -17,21 +17,17 @@ export default function OutdoorEntertainmentLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="80px 0 80px 0">
-            <Highlighted>
-              OUTDOOR
-              <br />
-              ENTERTAINMENT <br />
-            </Highlighted>
-            SYSTEM <br />
-            INSTALLATION & <br />
-            DESIGN
+          <Subtitle>
+            <Highlighted>OUTDOOR ENTERTAINMENT</Highlighted> <br />
+            SYSTEM INSTALLATION & DESIGN
           </Subtitle>
         }
         background={`url('/outdoor-entertainment/header-bg.png')`}
         tabletbackground={`url('/outdoor-entertainment/tablet/header-bg.png')`}
+        desktopbackground={`url('/outdoor-entertainment/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!" />
         }

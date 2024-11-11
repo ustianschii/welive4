@@ -4,10 +4,12 @@ import { useMediaQuery, useTheme } from "@mui/material";
 
 import {
   Card,
+  CardsBox,
   Container,
   Descriptions,
   Icon,
   IconTitle,
+  IconWrapper,
   Subtitle,
   TabletBox,
   Title,
@@ -24,37 +26,42 @@ export const ReturnOnInvestments = () => {
   const getSize = () => {
     if (isMobile) return { width: 190, height: 190 };
     if (isTablet) return { width: 220, height: 220 };
-    return { width: 190, height: 190 }; // default size for desktop
+    return { width: 190, height: 190 };
   };
 
   const imageSize = getSize();
 
   return (
-    <Container disableGutters>
+    <Container maxWidth="lg" disableGutters>
       <Title>
         <Highlighted>LOXONE</Highlighted>
       </Title>
       <Subtitle>
         <Highlighted>Your Smartest Return on Investment (ROI)</Highlighted>
       </Subtitle>
-      {data.map((item, index) => (
-        <Card key={index} index={index}>
-          <Icon
-            alt="icon"
-            src={item.icon}
-            width={imageSize.width}
-            height={imageSize.height}
-          />
-          <TabletBox>
-            <IconTitle>{item.iconTitle}</IconTitle>
-            <Descriptions>
-              {item.description.map((desc, i) => (
-                <Typography key={i}>{desc}</Typography>
-              ))}
-            </Descriptions>
-          </TabletBox>
-        </Card>
-      ))}
+      <CardsBox>
+        {data.map((item, index) => (
+          <Card key={index} index={index}>
+            <IconWrapper>
+              <Icon
+                alt="icon"
+                src={item.icon}
+                width={imageSize.width}
+                height={imageSize.height}
+              />
+            </IconWrapper>
+
+            <TabletBox>
+              <IconTitle>{item.iconTitle}</IconTitle>
+              <Descriptions>
+                {item.description.map((desc, i) => (
+                  <Typography key={i}>{desc}</Typography>
+                ))}
+              </Descriptions>
+            </TabletBox>
+          </Card>
+        ))}
+      </CardsBox>
     </Container>
   );
 };

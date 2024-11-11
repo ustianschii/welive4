@@ -2,6 +2,7 @@ import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
+  Box as MuiBox,
 } from "@mui/material";
 import {
   ARTICLE_BACKGROUND,
@@ -17,6 +18,9 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   alignItems: "center",
   backgroundColor: ARTICLE_BACKGROUND,
 
+  [theme.breakpoints.up("md")]: {
+    padding: "30px 15px",
+  },
   [theme.breakpoints.down("md")]: {
     padding: "30px 15px",
   },
@@ -25,13 +29,31 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   },
 }));
 
-export const Title = styled(MuiTypography)(() => ({
+export const LogoWrapper = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row-reverse",
+    gap: "20px",
+  },
+  [theme.breakpoints.down("md")]: {},
+  [theme.breakpoints.down("sm")]: {},
+}));
+
+export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   fontWeight: SEMI_BOLD,
   textAlign: "center",
   fontSize: "30px",
   lineHeight: "1.2",
+  [theme.breakpoints.up("md")]: {
+    marginTop: "30px",
+  },
+  [theme.breakpoints.down("md")]: {},
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
@@ -40,6 +62,10 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
   marginTop: "10px",
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "15px",
+    padding: "0 100px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
   },

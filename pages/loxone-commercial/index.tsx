@@ -11,11 +11,13 @@ import { PartneredInstaller } from "../../components/partnered-installer";
 import { ActionBanner } from "../../components/shared/action-banner";
 
 import { data as keyfeaturesdata } from "../../components/key-features/data";
+import { GreenDivider } from "../../components/shared/green-divider";
 
 export default function LoxoneCommercial() {
   return (
     <CommercialLayout>
       <ReturnOnInvestments />
+      <GreenDivider />
       <ApplicationScenarios />
       <GreenBanner
         titlehighlightedstart="LOXONE"
@@ -23,7 +25,12 @@ export default function LoxoneCommercial() {
         first_description={data[0].first_description}
         second_description={data[0].second_description}
       />
-      <KeyFeatures data={keyfeaturesdata} />
+      <KeyFeatures
+        data={keyfeaturesdata}
+        flex="1 1 calc(33.33% )"
+        maxW="calc(32% )"
+        gap="20px"
+      />
       <PartneredInstaller />
       <ActionBanner />
     </CommercialLayout>

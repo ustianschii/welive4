@@ -95,7 +95,6 @@ export const Header: React.FC<HeaderProps> = ({
           <DropDownMenu>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -106,17 +105,17 @@ export const Header: React.FC<HeaderProps> = ({
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "right",
-              }}
               keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              anchorOrigin={{
+                vertical: "center",
+                horizontal: "center",
+              }}
+              transformOrigin={{
+                vertical: "center",
+                horizontal: "center",
+              }}
             >
               {pages.map((page, index) => (
                 <Link

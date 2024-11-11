@@ -35,7 +35,7 @@ export const AppBar = styled(MuiAppBar)<AppBarProps>(
       backgroundImage: desktopbackground ?? "none",
       backgroundRepeat: desktopbackground ? "no-repeat" : "",
       backgroundSize: desktopbackground ? "cover" : "",
-      backgroundPosition: desktopbackground ? "center" : "",
+      backgroundPosition: "center",
     },
     [theme.breakpoints.down("md")]: {
       backgroundColor:
@@ -43,14 +43,12 @@ export const AppBar = styled(MuiAppBar)<AppBarProps>(
       backgroundImage: tabletbackground ?? "none",
       backgroundRepeat: tabletbackground ? "no-repeat" : "",
       backgroundSize: tabletbackground ? "cover" : "",
-      backgroundPosition: tabletbackground ? "center" : "",
     },
     [theme.breakpoints.down("sm")]: {
       backgroundColor: background || backcolor ? backcolor ?? "gray" : "gray",
       backgroundImage: background ?? "none",
       backgroundRepeat: background ? "no-repeat" : "",
       backgroundSize: background ? "cover" : "",
-      backgroundPosition: background ? "center" : "",
     },
   })
 );
@@ -58,15 +56,15 @@ export const AppBar = styled(MuiAppBar)<AppBarProps>(
 export const Container = styled(MuiContainer)<ContainerProps>(
   ({ theme, mobileheight, tabletheight, desktopheight }) => ({
     [theme.breakpoints.up("md")]: {
-      height: desktopheight || "1000px",
+      height: desktopheight ?? "1000px",
       position: "relative",
     },
     [theme.breakpoints.down("md")]: {
-      height: tabletheight || "700px",
+      height: tabletheight ?? "700px",
       position: "relative",
     },
     [theme.breakpoints.down("sm")]: {
-      height: mobileheight || "700px",
+      height: mobileheight ?? "700px",
       position: "relative",
     },
   })
@@ -116,7 +114,6 @@ export const DesktopHeaderLinks = styled(MuiBox)(({ theme }) => ({
 export const LinkLabel = styled(MuiTypography)(() => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  fontWeight: SEMI_BOLD,
   fontSize: "18px",
   whiteSpace: "nowrap",
 }));
@@ -125,34 +122,23 @@ export const DropDownMenu = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     display: "none",
   },
-  [theme.breakpoints.down("sm")]: {
-    display: "flex",
-  },
 }));
 
 export const Menu = styled(MuiMenu)(({ theme }) => ({
   display: "none",
   [theme.breakpoints.down("md")]: {
     display: "flex",
-    flexDirection: "column",
-
     "& .MuiPaper-root": {
-      minWidth: "50%",
+      backgroundColor: SEPARATOR_BACKGROUND,
       borderRadius: "10px",
       height: "450px",
-      backgroundColor: SEPARATOR_BACKGROUND,
       backgroundImage: `url('dropdown-menu/dropdown-bg.svg')`,
       padding: "20px 0 0 10px",
     },
   },
   [theme.breakpoints.down("sm")]: {
-    display: "block",
     "& .MuiPaper-root": {
-      minWidth: "100%",
-      borderRadius: "10px",
       height: "500px",
-      backgroundColor: SEPARATOR_BACKGROUND,
-      backgroundImage: `url('dropdown-menu/dropdown-bg.svg')`,
       padding: "10% 0 10% 10%",
     },
   },

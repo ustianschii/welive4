@@ -1,21 +1,30 @@
 import React from "react";
 
-import { KeyFeaturesCard } from "../shared/key-features-card";
+import { Box } from "@mui/material";
 
+import { KeyFeaturesCard } from "../shared/key-features-card";
 import { Container } from "./styles";
 import { KeyFeaturesProps } from "./types";
+import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
-export const KeyFeatures: React.FC<KeyFeaturesProps> = ({ data }) => {
+export const KeyFeatures: React.FC<KeyFeaturesProps> = ({
+  data,
+  maxW,
+  gap,
+  flex,
+}) => {
   return (
-    <Container disableGutters>
-      {data.map((item, index) => (
-        <KeyFeaturesCard
-          key={index}
-          icon={item.icon}
-          title={item.title}
-          features={item.features}
-        />
-      ))}
-    </Container>
+    <Box sx={{ backgroundColor: SEPARATOR_BACKGROUND }}>
+      <Container maxWidth="lg" disableGutters flex={flex} gap={gap} maxW={maxW}>
+        {data.map((item, index) => (
+          <KeyFeaturesCard
+            key={index}
+            icon={item.icon}
+            title={item.title}
+            features={item.features}
+          />
+        ))}
+      </Container>
+    </Box>
   );
 };

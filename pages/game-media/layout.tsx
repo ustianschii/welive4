@@ -17,19 +17,18 @@ export default function GameMediaLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="120px 0 30px 0">
-            CUSTOMIZED <br />
-            <Highlighted>
-              GAME & MEDIA <br />
-            </Highlighted>
-            ROOM <br />
-            INSTALLATION
+          <Subtitle>
+            CUSTOMIZED
+            <Highlighted>GAME & MEDIA</Highlighted>
+            ROOM INSTALLATION
           </Subtitle>
         }
         background={`url('/game-media/header-bg.png')`}
         tabletbackground={`url('/game-media/tablet/header-bg.png')`}
+        desktopbackground={`url('/game-media/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS" />
         }

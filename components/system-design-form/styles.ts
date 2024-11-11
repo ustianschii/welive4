@@ -11,15 +11,20 @@ import {
 import {
   GREEN,
   WHITE,
-  SEPARATOR_BACKGROUND,
   SUBMIT_FORM_BACKGROUND,
   BOLD,
+  MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
 import { raleway, opensans } from "@/app/layout";
 
+export const Wrapper = styled(MuiBox)(() => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+}));
+
 export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: SEPARATOR_BACKGROUND,
-  padding: "20px 10px",
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+  display: "flex",
+  flexDirection: "column",
   [theme.breakpoints.down("sm")]: {},
 }));
 
@@ -27,9 +32,16 @@ export const FormContainer = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SUBMIT_FORM_BACKGROUND,
   border: "2px solid",
   borderColor: GREEN,
-  padding: "20px 15px",
   borderRadius: "10px",
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.up("md")]: {
+    padding: "50px 100px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "40px 80px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "20px 15px",
+  },
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
@@ -37,6 +49,9 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
   marginTop: "10px",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "14px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
   },
@@ -57,10 +72,8 @@ export const Label = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const FieldContainer = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    marginBottom: "15px",
-  },
+export const FieldContainer = styled(MuiBox)(() => ({
+  marginBottom: "15px",
 }));
 
 export const Pair = styled(MuiBox)(({ theme }) => ({
@@ -77,6 +90,10 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   },
   "& .MuiInput-underline:before": {
     borderBottomColor: WHITE,
+    transition: "border-bottom-color 0.3s ease",
+  },
+  "& .MuiInput-underline:hover:before": {
+    borderBottomColor: GREEN,
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: GREEN,
@@ -84,7 +101,17 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   ".MuiSelect-icon": {
     color: GREEN,
   },
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.up("md")]: {
+    width: "400px",
+  },
+
+  [theme.breakpoints.down("md")]: {
+    width: "400px",
+  },
+
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
 }));
 
 export const Checkbox = styled(MuiCheckbox)(({ theme }) => ({
@@ -105,15 +132,20 @@ export const FormControlLabel = styled(MuiFormControlLabel)(({ theme }) => ({
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  fontSize: "18px",
+  fontSize: "16px",
   lineHeight: "120%",
   fontWeight: BOLD,
   border: "2px solid white",
-  marginTop: "20px",
+  height: "40px",
+  margin: "20px auto 0 auto",
+  display: "block",
+  [theme.breakpoints.up("md")]: {
+    width: "50%",
+  },
   [theme.breakpoints.down("md")]: {
-    height: "60px",
+    width: "70%",
   },
   [theme.breakpoints.down("sm")]: {
-    height: "50px",
+    width: "100%",
   },
 }));

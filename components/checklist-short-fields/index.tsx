@@ -9,7 +9,7 @@ import { ROUTES } from "../../utils/routes-constants";
 
 export const ChecklistShortFields = () => {
   return (
-    <Container disableGutters>
+    <Container>
       <FieldsBox>
         <Box>
           <Label color={WHITE} mb="5px">

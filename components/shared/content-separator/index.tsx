@@ -4,6 +4,7 @@ import { GreenDivider } from "../green-divider";
 import { Highlighted } from "../../hero-title/styles";
 import { ContentSeparatorProps } from "./types";
 import { Container, Description, Title } from "./styles";
+import { Box } from "@mui/material";
 
 export const ContentSeparator: React.FC<ContentSeparatorProps> = ({
   titlestart,
@@ -17,7 +18,14 @@ export const ContentSeparator: React.FC<ContentSeparatorProps> = ({
   titlepadding,
 }) => {
   return (
-    <>
+    <Box
+      sx={{
+        backgroundImage: `url(${tabletbg})`,
+        backgroundPostion: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <GreenDivider />
       <Container
         disableGutters
@@ -34,6 +42,6 @@ export const ContentSeparator: React.FC<ContentSeparatorProps> = ({
         <Description>{description}</Description>
       </Container>
       <GreenDivider />
-    </>
+    </Box>
   );
 };

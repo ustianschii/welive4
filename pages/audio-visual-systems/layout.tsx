@@ -17,21 +17,18 @@ export default function AudioVisualSystemsLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="120px 0 0 0">
+          <Subtitle>
             PREMIUM
-            <Highlighted>
-              AUDIO
-              <br />
-              VISUAL
-            </Highlighted>
-            SYSTEMS <br />
-            INSTALLATION
+            <Highlighted>AUDIO VISUAL</Highlighted>
+            SYSTEMS INSTALLATION
           </Subtitle>
         }
         background={`url('/audio-visual-systems/header-bg.png')`}
         tabletbackground={`url('/audio-visual-systems/tablet/header-bg.png')`}
+        desktopbackground={`url('/audio-visual-systems/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="EXPERIENCE UNMATCHED AUDIO VISUAL EXCELLENCE ACROSS NEW JERSEY, PENNSYLVANIA AND DELAWARE" />
         }

@@ -17,17 +17,17 @@ export default function EnergyManagementLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="120px 0 30px 0">
-            HOME & BUILDING <br />
-            <Highlighted>
-              ENERGY <br /> MANAGEMENT <br /> SYSTEMS
-            </Highlighted>
+          <Subtitle>
+            HOME & BUILDING
+            <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
           </Subtitle>
         }
         background={`url('/energy-management/header-bg.png')`}
-        tabletbackground={`url('/energy-management/header-bg.png')`}
+        tabletbackground={`url('/energy-management/tablet/header-bg.png')`}
+        desktopbackground={`url('/energy-management/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!" />

@@ -15,21 +15,18 @@ export default function ConsultationLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle m="130px 0 0 0 ">
-            GET A
-            <Highlighted>
-              FREE <br /> CONSULTATION <br />
-            </Highlighted>
+          <Subtitle>
+            GET A<Highlighted>FREE CONSULTATION</Highlighted>
             FOR YOUR
-            <Highlighted>
-              DREAM <br /> HOME!
-            </Highlighted>
+            <Highlighted>DREAM HOME!</Highlighted>
           </Subtitle>
         }
         background={`url('consultation/header-bg.png')`}
         tabletbackground={`url('consultation/tablet/header-bg.png')`}
+        desktopbackground={`url('consultation/desktop/header-bg.png')`}
         mobileheight="700px"
         tabletheight="700px"
+        desktopheight="700px"
         divider={<GreenDivider />}
       />
       {children}

@@ -7,18 +7,22 @@ import {
 import {
   GREEN,
   WHITE,
-  SEPARATOR_BACKGROUND,
   SUBMIT_FORM_BACKGROUND,
   BOLD,
+  MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
 import { raleway } from "@/app/layout";
 
+export const Wrapper = styled(MuiBox)(() => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+}));
+
 export const Container = styled(MuiContainer)(() => ({
-  backgroundColor: SEPARATOR_BACKGROUND,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   padding: "20px 10px",
 }));
 
-export const BannerContainer = styled(MuiBox)(() => ({
+export const BannerContainer = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -26,16 +30,34 @@ export const BannerContainer = styled(MuiBox)(() => ({
   border: "2px solid",
   borderColor: GREEN,
   borderRadius: "10px",
-  padding: "30px 15px",
+
+  [theme.breakpoints.up("md")]: {
+    padding: "40px 150px",
+  },
+
+  [theme.breakpoints.down("md")]: {
+    padding: "40px 100px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    padding: "30px",
+  },
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "16px",
+    margin: "10px 0 0 20px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
     margin: "10px 0 0 20px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "14px",
     margin: "0 0 0 20px",

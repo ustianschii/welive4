@@ -4,7 +4,7 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "@/app/layout";
 
 import Image from "next/image";
@@ -13,7 +13,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: MAIN_SERVICES_BACKGROUND,
+  backgroundColor: SEPARATOR_BACKGROUND,
   [theme.breakpoints.down("sm")]: {},
 }));
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -21,6 +21,9 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   marginTop: "30px",
   lineHeight: "110%",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "40px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "40px",
   },
@@ -31,6 +34,9 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
   marginTop: "10px",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "20px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "20px",
   },
@@ -39,15 +45,29 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
+export const CardsBox = styled(MuiBox)(({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    display: "flex",
+    flexDirection: "row",
+  },
+}));
+
 export const Card = styled(MuiBox)<{ index: number }>(({ theme, index }) => ({
   marginBottom: "30px",
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
+
+  [theme.breakpoints.up("md")]: {
+    marginTop: "30px",
+    flexDirection: "column",
+  },
+
   [theme.breakpoints.down("md")]: {
+    justifyContent: "center",
     marginTop: "30px",
     flexDirection: index % 2 !== 0 ? "row-reverse" : "row",
   },
+
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
@@ -76,19 +96,37 @@ export const TabletBox = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
+export const IconWrapper = styled(MuiBox)(({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    minHeight: "200px",
+  },
+}));
+
 export const IconTitle = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
   color: WHITE,
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "20px",
+    marginTop: "30px",
+  },
+
   [theme.breakpoints.down("md")]: {
     fontSize: "25px",
   },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "18px",
   },
 }));
 
-export const Descriptions = styled(MuiContainer)(() => ({
+export const Descriptions = styled(MuiContainer)(({ theme }) => ({
   marginTop: "15px",
+
+  [theme.breakpoints.up("md")]: {
+    marginTop: "30px",
+    padding: "0 30px",
+  },
 }));
 
 export const Typography = styled(MuiTypography)(({ theme }) => ({
