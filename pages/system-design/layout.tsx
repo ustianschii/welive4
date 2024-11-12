@@ -9,7 +9,6 @@ import {
 } from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
-import { WorkingHours } from "../../components/working-hours";
 import { CustomButton } from "../../components/shared/header-button";
 
 export default function SystemDesignLayout({

@@ -1,6 +1,6 @@
 "use client";
 import { styled } from "@mui/material/styles";
-import { GREEN, REGULAR, SEMI_BOLD } from "../../src/styles/constants";
+import { GREEN, SEMI_BOLD } from "../../src/styles/constants";
 import { opensans } from "@/app/layout";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
