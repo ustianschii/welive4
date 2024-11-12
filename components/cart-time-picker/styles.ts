@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Button as MuiButton } from "@mui/material";
 
-import { GRAY, GREEN, GREEN_DARK, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { GRAY, GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 export const TimePickerBox = styled(MuiBox)(() => ({
