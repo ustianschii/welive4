@@ -21,7 +21,7 @@ export default function GetTvMountingLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle m="30px 0">TV MOUNTING</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>TV MOUNTING</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

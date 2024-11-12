@@ -5,12 +5,13 @@ import { opensans } from "@/app/layout";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
 export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("xl")]: {
-    height: "220px",
+  [theme.breakpoints.up("md")]: {
     marginTop: "150px",
   },
   [theme.breakpoints.down("md")]: {
-    height: "220px",
+    marginTop: "200px",
+  },
+  [theme.breakpoints.down("sm")]: {
     marginTop: "150px",
   },
 }));
@@ -22,21 +23,17 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.2",
 
   [theme.breakpoints.up("md")]: {
-    fontWeight: REGULAR,
-    fontSize: "27px",
+    fontSize: "25px",
     marginBottom: "25px",
-    marginTop: "150px",
   },
 
   [theme.breakpoints.down("md")]: {
-    fontWeight: SEMI_BOLD,
     fontSize: "23px",
     marginBottom: "25px",
   },
 
   [theme.breakpoints.down("sm")]: {
     fontSize: "16px",
-    padding: "0 20px",
   },
 }));
 
@@ -56,14 +53,11 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     fontSize: "40px",
-    margin: "50px 0 0 0",
     padding: "0 70px",
-    marginTop: "100px",
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "40px",
     padding: "0 70px",
-    marginTop: "100px",
   },
 
   [theme.breakpoints.down("sm")]: {

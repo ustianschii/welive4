@@ -21,7 +21,7 @@ export default function GetEvTechLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>EV TECH</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>EV TECH</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

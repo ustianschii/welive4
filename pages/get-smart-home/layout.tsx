@@ -20,7 +20,7 @@ export default function GetSmartHomeLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>SMART HOME</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>SMART HOME</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

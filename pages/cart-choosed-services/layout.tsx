@@ -22,7 +22,7 @@ export default function CartLayout({
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={
-          <Subtitle>
+          <Subtitle sx={{ marginTop: "100px" }}>
             <Highlighted>YOUR</Highlighted>CHOICE
           </Subtitle>
         }

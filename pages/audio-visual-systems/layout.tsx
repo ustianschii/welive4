@@ -2,7 +2,11 @@ import { CssBaseline } from "@mui/material";
 
 import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
-import { Highlighted, Subtitle } from "../../components/hero-title/styles";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "../../components/hero-title/styles";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
 import { CustomButton } from "../../components/shared/header-button";
 import { GreenDivider } from "../../components/shared/green-divider";
@@ -17,11 +21,13 @@ export default function AudioVisualSystemsLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle>
-            PREMIUM
-            <Highlighted>AUDIO VISUAL</Highlighted>
-            SYSTEMS INSTALLATION
-          </Subtitle>
+          <HeaderTextBox>
+            <Subtitle>
+              PREMIUM
+              <Highlighted>AUDIO VISUAL</Highlighted>
+              SYSTEMS INSTALLATION
+            </Subtitle>
+          </HeaderTextBox>
         }
         background={`url('/audio-visual-systems/header-bg.png')`}
         tabletbackground={`url('/audio-visual-systems/tablet/header-bg.png')`}

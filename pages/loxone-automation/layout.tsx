@@ -2,7 +2,11 @@ import { CssBaseline } from "@mui/material";
 
 import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
-import { Highlighted, Subtitle } from "../../components/hero-title/styles";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
 
@@ -16,10 +20,12 @@ export default function AutomationLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle>
-            Loxone Automation:
-            <Highlighted>The New Future Of Smart Automation</Highlighted>
-          </Subtitle>
+          <HeaderTextBox>
+            <Subtitle>
+              Loxone Automation:
+              <Highlighted>The New Future Of Smart Automation</Highlighted>
+            </Subtitle>
+          </HeaderTextBox>
         }
         background={`url('loxone-automation/header-bg.png')`}
         tabletbackground={`url('loxone-automation/tablet/header-bg.png')`}

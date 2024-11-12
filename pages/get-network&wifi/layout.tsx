@@ -20,7 +20,7 @@ export default function GetNetworkWifiLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>NETWORK & WIFI</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>NETWORK & WIFI</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

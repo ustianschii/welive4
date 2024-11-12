@@ -2,7 +2,11 @@ import { CssBaseline } from "@mui/material";
 
 import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
-import { Highlighted, Subtitle } from "../../components/hero-title/styles";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
 import { CustomButton } from "../../components/shared/header-button";
@@ -17,10 +21,12 @@ export default function EnergyManagementLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle>
-            HOME & BUILDING
-            <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
-          </Subtitle>
+          <HeaderTextBox>
+            <Subtitle>
+              HOME & BUILDING
+              <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
+            </Subtitle>
+          </HeaderTextBox>
         }
         background={`url('/energy-management/header-bg.png')`}
         tabletbackground={`url('/energy-management/tablet/header-bg.png')`}

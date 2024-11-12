@@ -2,7 +2,11 @@ import { CssBaseline } from "@mui/material";
 
 import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
-import { Highlighted, Subtitle } from "../../components/hero-title/styles";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "../../components/hero-title/styles";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
 import { CustomButton } from "../../components/shared/header-button";
 import { GreenDivider } from "../../components/shared/green-divider";
@@ -17,10 +21,12 @@ export default function HighPerformanceSoundLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle>
-            <Highlighted>HIGH PERFORMANCE SOUND</Highlighted>
-            SYSTEM INSTALLATION
-          </Subtitle>
+          <HeaderTextBox>
+            <Subtitle>
+              <Highlighted>HIGH PERFORMANCE SOUND</Highlighted>
+              SYSTEM INSTALLATION
+            </Subtitle>
+          </HeaderTextBox>
         }
         background={`url('/high-performance-sound/header-bg.png')`}
         tabletbackground={`url('/high-performance-sound/tablet/header-bg.png')`}

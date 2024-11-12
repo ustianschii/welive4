@@ -21,7 +21,7 @@ export default function GetSupportLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>SUPPORT</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>SUPPORT</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

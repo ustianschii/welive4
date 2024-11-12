@@ -19,7 +19,7 @@ export default function ChecklistLayout({
         backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}
         title={
-          <Subtitle>
+          <Subtitle sx={{ marginTop: "50px" }}>
             Fill up the<Highlighted>Smart Technology Checklist</Highlighted>
             below
           </Subtitle>

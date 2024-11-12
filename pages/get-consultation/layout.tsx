@@ -21,7 +21,7 @@ export default function GetConsultationLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>CONSULTATION</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>CONSULTATION</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

@@ -21,7 +21,7 @@ export default function GetEntertainmentLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>ENTERTAINMENT</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>ENTERTAINMENT</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />

@@ -2,7 +2,11 @@ import { CssBaseline } from "@mui/material";
 
 import { Header } from "../../components/shared/header";
 import { Footer } from "../../components/shared/footer";
-import { Highlighted, Subtitle } from "../../components/hero-title/styles";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
 import { CustomButton } from "../../components/shared/header-button";
@@ -17,10 +21,12 @@ export default function OutdoorLayout({
       <CssBaseline />
       <Header
         title={
-          <Subtitle>
-            <Highlighted>PREMIUM OUTDOOR</Highlighted>
-            TV MOUNTING
-          </Subtitle>
+          <HeaderTextBox>
+            <Subtitle>
+              <Highlighted>PREMIUM OUTDOOR</Highlighted>
+              TV MOUNTING
+            </Subtitle>
+          </HeaderTextBox>
         }
         background={`url('/outdoor-tv/header-bg.png')`}
         tabletbackground={`url('/outdoor-tv/tablet/header-bg.png')`}

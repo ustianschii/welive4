@@ -22,7 +22,7 @@ export default function GetServicesLayout({
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={
-          <Subtitle>
+          <Subtitle sx={{ marginTop: "50px" }}>
             GET OUR<Highlighted>SERVICES</Highlighted>
           </Subtitle>
         }

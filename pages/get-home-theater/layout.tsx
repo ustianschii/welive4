@@ -21,7 +21,7 @@ export default function GetHomeTheaterLayout({
         desktopheight="300px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle m="30px 0">HOME THEATER</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "50px" }}>HOME THEATER</Subtitle>}
       />
       {children}
       <Footer divider={<GreenDivider />} />
