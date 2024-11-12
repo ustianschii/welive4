@@ -11,6 +11,7 @@ import {
   TextField,
   Button,
   MenuItem,
+  Wrapper,
 } from "./styles";
 import { GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "@/app/layout";
@@ -35,61 +36,63 @@ export const ChoosedServicesList = () => {
   ];
 
   return (
-    <ServicesBox>
-      <List>
-        {services.map((service, index) => (
-          <>
-            <ListItem key={index} disableGutters>
-              {service.name}
-            </ListItem>
-            <Divider
-              style={{
-                background: GREEN,
-                height: "2px",
-                marginBottom: "7px",
-              }}
-            />
-            <Box display="flex" justifyContent="space-between">
-              <Typography
-                color={WHITE}
-                fontFamily={opensans.style.fontFamily}
-                fontSize="22px"
-              >
-                {service.duration}
-              </Typography>
-              <Typography
-                color={WHITE}
-                fontFamily={opensans.style.fontFamily}
-                fontSize="22px"
-              >
-                {service.price}
-              </Typography>
-            </Box>
-          </>
-        ))}
-      </List>
-      <Box mt="30px">
-        <FieldContainer>
-          <Label>STAFF</Label>
-          <TextField
-            variant="outlined"
-            fullWidth
-            select
-            value={selectedValue}
-            onChange={handleChange}
-          >
-            {options.map((option) => (
-              <MenuItem key={option} value={option}>
-                {option}
-              </MenuItem>
-            ))}
-          </TextField>
-        </FieldContainer>
-      </Box>
-      <Box display="flex" justifyContent="space-between" m="30px 0">
-        <Button href={ROUTES.GET_SERVICES}>&#10229; BACK</Button>
-        <Button href={ROUTES.CART_DATE_TIME}> NEXT &#10230;</Button>
-      </Box>
-    </ServicesBox>
+    <Wrapper>
+      <ServicesBox>
+        <List>
+          {services.map((service, index) => (
+            <>
+              <ListItem key={index} disableGutters>
+                {service.name}
+              </ListItem>
+              <Divider
+                style={{
+                  background: GREEN,
+                  height: "1px",
+                  marginBottom: "7px",
+                }}
+              />
+              <Box display="flex" justifyContent="space-between">
+                <Typography
+                  color={WHITE}
+                  fontFamily={opensans.style.fontFamily}
+                  fontSize="22px"
+                >
+                  {service.duration}
+                </Typography>
+                <Typography
+                  color={WHITE}
+                  fontFamily={opensans.style.fontFamily}
+                  fontSize="22px"
+                >
+                  {service.price}
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </List>
+        <Box mt="30px">
+          <FieldContainer>
+            <Label>STAFF</Label>
+            <TextField
+              variant="outlined"
+              fullWidth
+              select
+              value={selectedValue}
+              onChange={handleChange}
+            >
+              {options.map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </TextField>
+          </FieldContainer>
+        </Box>
+        <Box display="flex" justifyContent="space-between" m="30px 0">
+          <Button href={ROUTES.GET_SERVICES}>&#10229; BACK</Button>
+          <Button href={ROUTES.CART_DATE_TIME}> NEXT &#10230;</Button>
+        </Box>
+      </ServicesBox>
+    </Wrapper>
   );
 };

@@ -2,19 +2,34 @@ import { styled } from "@mui/material/styles";
 import { StaticDatePicker as MuiStaticDatePicker } from "@mui/x-date-pickers";
 
 import {
+  BLACK,
   BOLD,
   DATE_PICKER_GRAY,
   GRAY,
   GREEN,
   SEMI_BOLD,
-  WHITE,
 } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
-export const StaticDatePicker = styled(MuiStaticDatePicker)({
+export const StaticDatePicker = styled(MuiStaticDatePicker)(({ theme }) => ({
   backgroundColor: DATE_PICKER_GRAY,
   borderRadius: "10px",
-  padding: "0",
+
+  [theme.breakpoints.up("md")]: {
+    padding: "0 200px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "0 200px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "0",
+  },
+
+  ".MuiPickersDay-root.Mui-selected, .MuiPickersDay-root.Mui-selected:hover": {
+    backgroundColor: GREEN,
+    color: "white",
+    fontWeight: BOLD,
+  },
 
   ".MuiDateCalendar-root": {
     backgroundColor: DATE_PICKER_GRAY,
@@ -31,7 +46,7 @@ export const StaticDatePicker = styled(MuiStaticDatePicker)({
   },
   ".MuiPickersDay-today": {
     backgroundColor: GRAY,
-    color: WHITE,
+    color: BLACK,
     border: "0px",
   },
   ".MuiPickersDay-root.Mui-selected": {
@@ -61,4 +76,4 @@ export const StaticDatePicker = styled(MuiStaticDatePicker)({
     backgroundColor: GREEN,
     fontWeight: BOLD,
   },
-});
+}));

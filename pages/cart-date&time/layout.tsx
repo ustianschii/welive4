@@ -1,4 +1,4 @@
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { BLACK } from "@/styles/constants";
 
 import { Footer } from "../../components/shared/footer";
 import { Header } from "../../components/shared/header";
@@ -17,27 +17,29 @@ export default function CartLayout({
     <>
       <CssBaseline />
       <Header
-        mobileheight="250px"
-        backcolor={SEPARATOR_BACKGROUND}
+        mobileheight="200px"
+        tabletheight="200px"
+        desktopheight="250px"
+        backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={
           <Box
             display="flex"
             m="30px 0"
             justifyContent="space-between"
-            p="0 10px"
+            p="0 20px"
           >
-            <Typography fontFamily={opensans.style.fontFamily} fontSize="15px">
+            <Typography fontFamily={opensans.style.fontFamily} fontSize="14px">
               SELECT DATE AND TIME
             </Typography>
-            <Typography fontFamily={opensans.style.fontFamily} fontSize="15px">
-              Standart Time (GMT +0)
+            <Typography fontFamily={opensans.style.fontFamily} fontSize="14px">
+              STANDART TIME (GMT +0)
             </Typography>
           </Box>
         }
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

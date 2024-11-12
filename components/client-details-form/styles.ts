@@ -4,17 +4,23 @@ import {
   Box as MuiBox,
   TextField as MuiTextField,
 } from "@mui/material";
-import { GREEN, WHITE, TEXT_US_BACKGROUND } from "@/styles/constants";
+import { GREEN, WHITE, BLACK } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
 export const FormContainer = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: TEXT_US_BACKGROUND,
+  backgroundColor: BLACK,
   border: "2px solid",
   borderColor: GREEN,
   margin: "20px 0 20px 0",
+  borderRadius: "10px",
+  [theme.breakpoints.up("md")]: {
+    padding: "30px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "30px",
+  },
   [theme.breakpoints.down("sm")]: {
     padding: "20px 15px",
-    borderRadius: "10px",
   },
 }));
 
@@ -24,10 +30,8 @@ export const Label = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {},
 }));
 
-export const FieldContainer = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    marginBottom: "15px",
-  },
+export const FieldContainer = styled(MuiBox)(() => ({
+  marginBottom: "10px",
 }));
 
 export const TextField = styled(MuiTextField)(({ theme }) => ({

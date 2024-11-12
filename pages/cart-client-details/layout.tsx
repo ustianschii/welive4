@@ -1,4 +1,4 @@
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { BLACK } from "@/styles/constants";
 
 import { Footer } from "../../components/shared/footer";
 import { Header } from "../../components/shared/header";
@@ -18,11 +18,13 @@ export default function CartLayout({
     <>
       <CssBaseline />
       <Header
-        mobileheight="250px"
-        backcolor={SEPARATOR_BACKGROUND}
+        mobileheight="200px"
+        tabletheight="200px"
+        desktopheight="200px"
+        backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={
-          <Box display="flex" m="30px 0" justifyContent="space-between">
+          <Box display="flex" m="30px 10px" justifyContent="space-between">
             <Typography fontFamily={opensans.style.fontFamily} fontSize="20px">
               <Highlighted mRight="0px">CLIENT</Highlighted> DETAILS
             </Typography>
@@ -30,7 +32,7 @@ export default function CartLayout({
         }
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

@@ -123,6 +123,7 @@ export const entertainment = [
     priceicon: "/get-services/entertainment/home-theater-price.svg",
   },
   {
+    image: "/get-services/entertainment/media-room.svg",
     name: "Media Room Design",
     features: [
       "On-Site consultation with trained design and tech consultants",
@@ -137,6 +138,7 @@ export const entertainment = [
     priceicon: "/get-services/entertainment/media-room-price.svg",
   },
   {
+    image: "/get-services/entertainment/entertainment-room.svg",
     name: "Entertainment Room Design",
     features: [
       "On-Site consultation with trained design and tech consultants",
@@ -151,6 +153,7 @@ export const entertainment = [
     priceicon: "/get-services/entertainment/entertainment-room-price.svg",
   },
   {
+    image: "/get-services/entertainment/whole-home.svg",
     name: "Whole Home Audio System Design",
     features: [
       "On-Site consultation with trained design and tech consultants",
@@ -165,6 +168,7 @@ export const entertainment = [
     priceicon: "/get-services/entertainment/whole-home-price.svg",
   },
   {
+    image: "/get-services/entertainment/remodeling-design.svg",
     name: "Remodeling Design with built-in tech",
     features: [
       "On-Site consultation with trained design and tech consultants",
@@ -179,6 +183,7 @@ export const entertainment = [
     priceicon: "/get-services/entertainment/remodeling-price.svg",
   },
   {
+    image: "/get-services/entertainment/rgbw.svg",
     name: "RGBW design",
     features: [
       "On-Site consultation with trained design and tech consultants",
@@ -196,6 +201,7 @@ export const entertainment = [
 
 export const homeTheater = [
   {
+    image: "/get-services/home-theater/home-theater.svg",
     name: "Home Theater and Sound System Setup",
     features: [
       "Connect Video and Audio components in one location",
@@ -208,6 +214,7 @@ export const homeTheater = [
     priceicon: "/get-services/home-theater/home-theater-price.svg",
   },
   {
+    image: "/get-services/home-theater/on-wall.svg",
     name: "On-wall 5 surround speakers mounting",
     features: [
       "Determine speakers' locations",
@@ -220,6 +227,7 @@ export const homeTheater = [
     priceicon: "/get-services/home-theater/on-wall-price.svg",
   },
   {
+    image: "/get-services/home-theater/on-wall-7.svg",
     name: "On-wall 7 surround speakers mounting",
     features: [
       "Determine speakers' locations",
@@ -235,6 +243,7 @@ export const homeTheater = [
 
 export const evTech = [
   {
+    image: "/get-services/ev-tech/home-ev.svg",
     name: "Home EV Charger Installation",
     features: [
       "Consultation and Estimation",
@@ -248,6 +257,7 @@ export const evTech = [
     priceicon: "/get-services/ev-tech/home-ev-price.svg",
   },
   {
+    image: "/get-services/ev-tech/smart-home.svg",
     name: "Smart Home Ecosystem Design",
     features: [
       "Consultation",
@@ -265,6 +275,7 @@ export const evTech = [
 
 export const smartDevices = [
   {
+    image: "/get-services/smart-devices/video-doorbell.svg",
     name: "Video Doorbell Installation",
     features: [
       "Video doorbell installation with existing functional doorbell or battery powered ",
@@ -278,6 +289,7 @@ export const smartDevices = [
     priceicon: "/get-services/smart-devices/video-doorbell-price.svg",
   },
   {
+    image: "/get-services/smart-devices/smart-outdoor.svg",
     name: "Smart Outdoor Camera Installation",
     features: [
       "Helping decide a camera location",
@@ -292,6 +304,7 @@ export const smartDevices = [
     priceicon: "/get-services/smart-devices/smart-outdoor-price.svg",
   },
   {
+    image: "/get-services/smart-devices/smart-door.svg",
     name: "Smart Door Lock Installation",
     features: [
       "Installation of a smart lock with an existing door lock",
@@ -302,6 +315,7 @@ export const smartDevices = [
     priceicon: "/get-services/smart-devices/smart-door-price.svg",
   },
   {
+    image: "/get-services/smart-devices/smart-thermostat.svg",
     name: "Smart Thermostat Installation",
     features: [
       "Installation of smart thermostat with existing thermostat",
@@ -314,6 +328,8 @@ export const smartDevices = [
     priceicon: "/get-services/smart-devices/smart-thermostat-price.svg",
   },
   {
+    image: "/get-services/smart-devices/smart-garage.svg",
+
     name: "Smart Garage Door Opener",
     features: [
       "Replacement with existing garage door opener or new installation (see options while booking) ",
@@ -327,6 +343,8 @@ export const smartDevices = [
     priceicon: "/get-services/smart-devices/smart-garage-price.svg",
   },
   {
+    image: "/get-services/smart-devices/other-smart.svg",
+
     name: "Other Smart Devices Installation",
     features: [
       "Replacement with existing one",
@@ -340,6 +358,7 @@ export const smartDevices = [
 
 export const tvMounting = [
   {
+    image: "/get-services/tv-mounting/floating-tv.svg",
     name: "Floating TV Entertainment Center/Stand",
     features: [
       "Assemble and install of one provided floating TV stand or Floating TV entertainment center ",
@@ -350,6 +369,7 @@ export const tvMounting = [
     priceicon: "/get-services/tv-mounting/tv-mounting-price.svg",
   },
   {
+    image: "/get-services/tv-mounting/frame-tv.svg",
     name: "Frame TV Wall Mounting",
     features: [
       "Assemble and install of one provided floating TV stand or Floating TV entertainment center ",
@@ -360,6 +380,7 @@ export const tvMounting = [
     priceicon: "/get-services/tv-mounting/frame-tv-price.svg",
   },
   {
+    image: "/get-services/tv-mounting/outdoor-tv.svg",
     name: "Outdoor TV Mounting",
     features: [
       "Basic installation of one provided TV wall mount and mount of one TV (custom installation is available and additional cost will be determined after work scope evaluation) ",
@@ -370,6 +391,7 @@ export const tvMounting = [
     priceicon: "/get-services/tv-mounting/outdoor-tv-price.svg",
   },
   {
+    image: "/get-services/tv-mounting/32.svg",
     name: 'Up to 32" TV Wall Mounting',
     features: [
       "Drywall basic TV Mounting of 1 customer-supplied TV and TV wall mount",
@@ -381,7 +403,8 @@ export const tvMounting = [
     priceicon: "/get-services/tv-mounting/32-inch-price.svg",
   },
   {
-    name: 'Up to 33"-36" TV Wall Mounting',
+    image: "/get-services/tv-mounting/33-66.svg",
+    name: 'Up to 33"-66" TV Wall Mounting',
     features: [
       "Drywall basic TV wall Mounting",
       "Install provided one TV wall mount and mount one TV ",
@@ -395,6 +418,7 @@ export const tvMounting = [
     priceicon: "/get-services/tv-mounting/33-66inch-price.svg",
   },
   {
+    image: "/get-services/tv-mounting/70.svg",
     name: '70"+ TV Wall Mounting',
     features: [
       "Drywall basic TV wall Mounting",
@@ -413,6 +437,7 @@ export const tvMounting = [
 
 export const consultation = [
   {
+    image: "/get-services/consultation/smart-home.svg",
     name: "Smart Home Automation Consultation",
     features: [
       "On-Site consultation with a trained technician/consultant ",
@@ -424,6 +449,7 @@ export const consultation = [
     durationicon: "/get-services/consultation/smart-home-duration.svg",
   },
   {
+    image: "/get-services/consultation/real-renovation.svg",
     name: "Real Renovation with Built-in Technology",
     features: [
       "On-Site consultation with a trained technician/consultant ",
@@ -435,6 +461,7 @@ export const consultation = [
     durationicon: "/get-services/consultation/real-renovation-duration.svg",
   },
   {
+    image: "/get-services/consultation/audio-video.svg",
     name: "Audio/Video Integration Consultation",
     features: [
       "On-Site consultation with a trained technician/consultant ",
@@ -446,6 +473,7 @@ export const consultation = [
     durationicon: "/get-services/consultation/audio-video-duration.svg",
   },
   {
+    image: "/get-services/consultation/basement-finish.svg",
     name: "Basement Finish-Remodel Consultation",
     features: [
       "On-Site consultation with a trained technician/consultant ",
@@ -458,6 +486,7 @@ export const consultation = [
     durationicon: "/get-services/consultation/basement-finish-duration.svg",
   },
   {
+    image: "/get-services/consultation/smart-ev.svg",
     name: "Smart EV Charging Consultation",
     features: [
       "On-Site consultation with a trained technician/consultant ",
@@ -470,6 +499,7 @@ export const consultation = [
     durationicon: "/get-services/consultation/smart-ev-duration.svg",
   },
   {
+    image: "/get-services/consultation/home-improvement.svg",
     name: "Home Improvement Consultation",
     features: [
       "On-Site consultation with a trained technician/consultant ",
@@ -484,6 +514,7 @@ export const consultation = [
 
 export const support = [
   {
+    image: "/get-services/support/warranty-claim.svg",
     name: "Warranty Claim",
     features: [
       "Provide details of your claim ",
@@ -494,6 +525,7 @@ export const support = [
     durationicon: "/get-services/support/support-duration.svg",
   },
   {
+    image: "/get-services/support/troubleshooting.svg",
     name: "Troubleshooting Service",
     features: [
       "Understanding the problem ",
@@ -507,6 +539,7 @@ export const support = [
     priceicon: "/get-services/support/troubleshooting-price.svg",
   },
   {
+    image: "/get-services/support/electronics.svg",
     name: "Electronics Recycling",
     features: ["Take away electronic devices for recycling"],
     durationicon: "/get-services/support/recycling-duration.svg",

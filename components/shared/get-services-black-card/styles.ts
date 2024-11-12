@@ -1,25 +1,89 @@
 import { styled } from "@mui/material/styles";
-import { Box as MuiBox } from "@mui/material";
+import {
+  Box as MuiBox,
+  Button as MuiButton,
+  Container as MuiContainer,
+} from "@mui/material";
 
-import { WHITE, GET_SERVICES_BACKGROUND, BLACK } from "@/styles/constants";
+import {
+  WHITE,
+  BLACK,
+  GREEN,
+  SEMI_BOLD,
+  MAIN_SERVICES_BACKGROUND,
+} from "@/styles/constants";
+import { opensans } from "@/app/layout";
+
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
+  backgroundColor: BLACK,
+
+  [theme.breakpoints.down("md")]: {
+    padding: "0 20px",
+  },
+}));
+
+export const Container = styled(MuiContainer)(({ theme }) => ({
+  display: "flex",
+  flexWrap: "wrap",
+
+  [theme.breakpoints.up("md")]: {
+    gap: "20px",
+    justifyContent: "space-between",
+  },
+
+  [theme.breakpoints.down("md")]: {
+    gap: "10px",
+    justifyContent: "space-between",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    gap: "0",
+  },
+}));
 
 export const CardBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   backgroundColor: BLACK,
   padding: "30px 20px",
+  border: "2px solid",
+  borderColor: GREEN,
   borderRadius: "10px",
-  marginBottom: "10px",
-  [theme.breakpoints.down("sm")]: {},
+
+  position: "relative",
+
+  [theme.breakpoints.up("md")]: {
+    width: "49%",
+    padding: "30px",
+    minHeight: "700px",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "49%",
+    minHeight: "710px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    marginBottom: "20px",
+    minHeight: "710px",
+  },
 }));
 
 export const Board = styled(MuiBox)(({ theme }) => ({
   display: "flex",
-  backgroundColor: GET_SERVICES_BACKGROUND,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   borderRadius: "10px",
   padding: "20px",
   justifyContent: "flex-end",
 
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.up("md")]: {
     minHeight: "140px",
+    minWidth: "100%",
+  },
+  [theme.breakpoints.down("md")]: {
+    minHeight: "140px",
+    minWidth: "100%",
   },
 }));
 
@@ -39,4 +103,49 @@ export const TextContainer = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     padding: "0 5px",
   },
+}));
+
+export const CardButtonsBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  position: "absolute",
+  bottom: "20px",
+
+  [theme.breakpoints.up("md")]: {
+    padding: "0 20px",
+    width: "100%",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "0 10px",
+  },
+}));
+
+export const ButtonsBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  width: "100%",
+
+  [theme.breakpoints.up("md")]: {
+    padding: "20px 10px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "10px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "10px",
+  },
+}));
+
+export const BackButton = styled(MuiButton)(({ theme }) => ({
+  border: "2px solid",
+  borderColor: GREEN,
+  borderRadius: "10px",
+  color: WHITE,
+  fontFamily: opensans.style.fontFamily,
+  fontWeight: SEMI_BOLD,
+  fontSize: "18px",
+  padding: "5px 30px",
+
+  [theme.breakpoints.down("sm")]: {},
 }));

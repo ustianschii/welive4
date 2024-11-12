@@ -1,19 +1,18 @@
 import React from "react";
 
-import {
-  Box,
-  List,
-  ListItem,
-  Typography,
-  IconButton,
-  SvgIcon,
-} from "@mui/material";
+import { Box, List, Typography, IconButton, SvgIcon } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 
 import Image from "next/image";
 
 import { GetServiceCardProps } from "./types";
-import { Board, CardBox, ImageContainer, TextContainer } from "./styles";
+import {
+  Board,
+  CardBox,
+  ImageContainer,
+  TextContainer,
+  CardButtonsBox,
+} from "./styles";
 import { raleway } from "@/app/layout";
 import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
 
@@ -43,32 +42,34 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
               </Typography>
             </TextContainer>
           </Board>
-          <List style={{ margin: "10px 0" }}>
-            {service.features.map((feature, index) => (
-              <Box key={index} display="flex">
-                <SvgIcon
-                  style={{
-                    color: WHITE,
-                    fontSize: "5px",
-                    margin: "13px 10px 0 0 ",
-                  }}
-                >
-                  <CircleIcon />
-                </SvgIcon>
-                <ListItem style={{ paddingLeft: "0px" }}>
+          <Box display="flex" flexDirection="column" width="100%">
+            <List style={{ margin: "10px 0" }}>
+              {service.features.map((feature, index) => (
+                <Box key={index} display="flex">
+                  <SvgIcon
+                    style={{
+                      color: WHITE,
+                      fontSize: "5px",
+                      margin: "13px 10px 0 0 ",
+                    }}
+                  >
+                    <CircleIcon />
+                  </SvgIcon>
                   <Typography
                     color={WHITE}
                     fontFamily={raleway.style.fontFamily}
                     fontSize="14px"
+                    m="5px 0"
                   >
                     {feature}
                   </Typography>
-                </ListItem>
-              </Box>
-            ))}
-          </List>
-          <Box display="flex" justifyContent="space-between">
-            <IconButton>
+                </Box>
+              ))}
+            </List>
+          </Box>
+
+          <CardButtonsBox display="flex" justifyContent="space-between">
+            <IconButton disabled>
               <Image
                 src={service.durationicon}
                 alt="Duration icon"
@@ -78,7 +79,7 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
             </IconButton>
 
             {service.priceicon && (
-              <IconButton>
+              <IconButton disabled>
                 <Image
                   src={service.priceicon}
                   alt="Price icon"
@@ -87,16 +88,6 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
                 />
               </IconButton>
             )}
-
-            {/* <IconButton>
-              <Image
-                src={service.priceicon}
-                alt="Price icon"
-                width={100}
-                height={50}
-              />
-            </IconButton> */}
-
             <Typography
               color={GRAY}
               fontFamily={raleway.style.fontFamily}
@@ -115,7 +106,7 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
                 height={50}
               />
             </IconButton>
-          </Box>
+          </CardButtonsBox>
         </CardBox>
       ))}
     </>

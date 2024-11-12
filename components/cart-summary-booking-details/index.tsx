@@ -33,10 +33,9 @@ export const SummaryBookingDetails = () => {
         </Typography>
         <GreenDivider />
       </Box>
-
       <Box>
         {selectedServices.map((service, index) => (
-          <Box key={index} p="10px 0 0 0" color={WHITE}>
+          <Box key={index} p="10px 0" color={WHITE}>
             <Typography
               fontFamily={opensans.style.fontFamily}
               fontWeight={SEMI_BOLD}

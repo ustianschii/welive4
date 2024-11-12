@@ -11,7 +11,7 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   fontWeight: SEMI_BOLD,
-  fontSize: "18px",
+  fontSize: "16px",
   padding: "5px 30px",
   [theme.breakpoints.down("sm")]: {},
 }));

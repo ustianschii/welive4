@@ -1,4 +1,4 @@
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { BLACK } from "@/styles/constants";
 
 import { Footer } from "../../components/shared/footer";
 import { Header } from "../../components/shared/header";
@@ -17,12 +17,14 @@ export default function GetSupportLayout({
       <CssBaseline />
       <Header
         mobileheight="250px"
-        backcolor={SEPARATOR_BACKGROUND}
+        tabletheight="300px"
+        desktopheight="300px"
+        backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle m="30px 0">SUPPORT</Subtitle>}
+        title={<Subtitle>SUPPORT</Subtitle>}
       />
       {children}
-      <Footer />
+      <Footer divider={<GreenDivider />} />
     </>
   );
 }

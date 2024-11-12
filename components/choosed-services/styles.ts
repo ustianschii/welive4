@@ -6,21 +6,29 @@ import {
   TextField as MuiTextField,
   Button as MuiButton,
   MenuItem as MuiMenuItem,
+  Container as MuiContainer,
 } from "@mui/material";
 
-import {
-  WHITE,
-  SEPARATOR_BACKGROUND,
-  BLACK,
-  SEMI_BOLD,
-  GREEN,
-} from "@/styles/constants";
+import { WHITE, BLACK, SEMI_BOLD, GREEN } from "@/styles/constants";
 import { opensans } from "@/app/layout";
 
-export const ServicesBox = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: SEPARATOR_BACKGROUND,
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
+  backgroundColor: BLACK,
   [theme.breakpoints.down("sm")]: {
     padding: "0 30px 20px 30px",
+  },
+}));
+
+export const ServicesBox = styled(MuiContainer)(({ theme }) => ({
+  backgroundColor: BLACK,
+  [theme.breakpoints.up("md")]: {
+    padding: "0 30px 20px 30px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "0 30px 20px 30px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "0 10px",
   },
 }));
 
@@ -49,7 +57,7 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   marginTop: "10px",
   "& .MuiInputBase-root": {
     "& .MuiOutlinedInput-notchedOutline": {
-      border: "2px solid",
+      border: "1px solid",
       borderColor: GREEN,
       borderRadius: "10px",
     },
@@ -62,7 +70,7 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   },
 
   ".MuiSelect-icon": {
-    color: BLACK,
+    color: WHITE,
   },
 
   [theme.breakpoints.down("sm")]: {},

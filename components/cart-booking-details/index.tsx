@@ -17,9 +17,9 @@ export const BookingDetails = () => {
         fontSize="20px"
         color={WHITE}
       >
-        <Highlighted mRight="0px" mLeft="0px">
+        <Highlighted mRight="4px" mLeft="0px">
           BOOKING
-        </Highlighted>{" "}
+        </Highlighted>
         DETAILS
       </Typography>
       {selectedServices.map((service, index) => (
