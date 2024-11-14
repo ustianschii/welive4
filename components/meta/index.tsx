@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Analytics } from "../analytics/analytics";
 
 interface MetaProps {

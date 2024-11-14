@@ -9,7 +9,6 @@ import {
 } from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
-import { Meta } from "../../components/meta";
 
 export default function AutomationLayout({
   children,
