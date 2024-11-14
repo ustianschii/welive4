@@ -7,7 +7,6 @@ import Image from "next/image";
 import {
   Container,
   Description,
-  LinksColumn,
   FastLinks,
   Title,
   LinksContainer,
@@ -32,6 +31,18 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
     { label: "Reviews", href: "#reviews" },
   ];
 
+  const OUR_SERVICES_LINKS = [
+    {
+      label: "Home theater & entertainment",
+      href: ROUTES.AUDIO_VISUAL_SYSTEMS,
+    },
+    { label: "Smart home automation", href: ROUTES.LOXONE_AUTOMATION },
+    { label: "Smart EV charger", href: ROUTES.ENERGY_MANAGEMENT },
+    { label: "Solar installation", href: ROUTES.ENERGY_MANAGEMENT },
+    { label: "TV mounting", href: ROUTES.OUTDOOR_TV },
+    { label: "Network", href: ROUTES.NETWORK_SYSTEM },
+  ];
+
   const OUR_LOCATION_LINKS = [
     "Pennsylvania",
     "Philadelphia",
@@ -54,30 +65,39 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
             solution. 
           </Description>
         </GroupBox>
-
         <FastLinks>
-          <LinksColumn>
+          <LinksContainer>
             <Title>About us</Title>
-            <LinksContainer>
-              {ABOUT_US_LINKS.map((item, index) => (
-                <Link
-                  href={item.href}
-                  key={index}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Label key={index}>{item.label}</Label>
-                </Link>
-              ))}
-            </LinksContainer>
-          </LinksColumn>
-          <LinksColumn>
+            {ABOUT_US_LINKS.map((item, index) => (
+              <Link
+                href={item.href}
+                key={index}
+                style={{ textDecoration: "none" }}
+              >
+                <Label key={index}>{item.label}</Label>
+              </Link>
+            ))}
+          </LinksContainer>
+
+          <LinksContainer className="second">
+            <Title>Our services</Title>
+            {OUR_SERVICES_LINKS.map((item, index) => (
+              <Link
+                href={item.href}
+                key={index}
+                style={{ textDecoration: "none" }}
+              >
+                <Label key={index}>{item.label}</Label>
+              </Link>
+            ))}
+          </LinksContainer>
+
+          <LinksContainer>
             <Title>Our location</Title>
-            <LinksContainer>
-              {OUR_LOCATION_LINKS.map((item, index) => (
-                <Label key={index}>{item}</Label>
-              ))}
-            </LinksContainer>
-          </LinksColumn>
+            {OUR_LOCATION_LINKS.map((item, index) => (
+              <Label key={index}>{item}</Label>
+            ))}
+          </LinksContainer>
         </FastLinks>
         <Button href={ROUTES.CONSULTATION}>CONTACT US</Button>
         <AdressBox>

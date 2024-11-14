@@ -9,6 +9,7 @@ import {
 } from "../../components/hero-title/styles";
 import { GreenDivider } from "../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../components/shared/header-subtitle";
+import { Meta } from "../../components/meta";
 
 export default function AutomationLayout({
   children,
@@ -30,8 +31,8 @@ export default function AutomationLayout({
         background={`url('loxone-automation/header-bg.png')`}
         tabletbackground={`url('loxone-automation/tablet/header-bg.png')`}
         desktopbackground={`url('loxone-automation/desktop/header-bg.png')`}
-        mobileheight="750px"
-        tabletheight="700px"
+        mobileheight="800px"
+        tabletheight="800px"
         desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={

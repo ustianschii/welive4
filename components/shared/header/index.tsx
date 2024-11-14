@@ -5,6 +5,8 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import { Button } from "@mui/material";
 
+import Link from "next/link";
+
 import {
   Container,
   AppBar,
@@ -21,8 +23,6 @@ import {
 import { HeaderProps } from "./types";
 import { GREEN, WHITE } from "@/styles/constants";
 import { ROUTES } from "../../../utils/routes-constants";
-
-import Link from "next/link";
 
 const pages = [
   { text: "HOME", href: ROUTES.HOME },
@@ -84,14 +84,14 @@ export const Header: React.FC<HeaderProps> = ({
         desktopheight={desktopheight}
       >
         <Toolbar disableGutters>
-          <IconButton href={ROUTES.HOME}>
+          <Link href={ROUTES.HOME}>
             <Logo
               alt="logo"
               src="/header-mobile/logo.svg"
               width={0}
               height={0}
             />
-          </IconButton>
+          </Link>
           <DropDownMenu>
             <IconButton
               size="large"

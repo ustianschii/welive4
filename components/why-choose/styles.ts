@@ -26,10 +26,10 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "35px",
+    fontSize: "30px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "35px",
+    fontSize: "30px",
   },
 
   [theme.breakpoints.down("sm")]: {

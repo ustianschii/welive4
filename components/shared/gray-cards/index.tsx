@@ -25,7 +25,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const getWidth = () => (isMobile ? 380 : isTablet ? 750 : 900);
-  const getHeight = () => (isMobile ? 380 : isTablet ? 400 : 500);
+  const getHeight = () => (isMobile ? 380 : isTablet ? 400 : 400);
 
   return (
     <Container disableGutters>

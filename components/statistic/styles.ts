@@ -59,13 +59,13 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "40px",
+    fontSize: "35px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "40px",
+    fontSize: "30px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "35px",
+    fontSize: "30px",
   },
 }));
 
@@ -76,11 +76,11 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     margin: "30px 70px 50px 70px ",
-    fontSize: "18px",
+    fontSize: "15px",
   },
   [theme.breakpoints.down("md")]: {
-    margin: "30px 0 50px 0 ",
-    fontSize: "20px",
+    margin: "30px 10px 50px 10px ",
+    fontSize: "15px",
   },
   [theme.breakpoints.down("sm")]: {
     margin: "30px 0 50px 0 ",
@@ -94,20 +94,19 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   fontWeight: BOLD,
   border: "2px solid white",
   lineHeight: "120%",
+  height: "50px",
 
   [theme.breakpoints.up("md")]: {
     width: "300px",
-    height: "60px",
-    fontSize: "20px",
+    fontSize: "16px",
   },
   [theme.breakpoints.down("md")]: {
     width: "300px",
-    height: "60px",
-    fontSize: "20px",
+    fontSize: "16px",
+    height: "40px",
   },
   [theme.breakpoints.down("sm")]: {
     width: "250px",
-    height: "50px",
     fontSize: "16px",
   },
 }));

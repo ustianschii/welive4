@@ -132,7 +132,7 @@ export const Menu = styled(MuiMenu)(({ theme }) => ({
       backgroundColor: SEPARATOR_BACKGROUND,
       borderRadius: "10px",
       height: "450px",
-      backgroundImage: `url('dropdown-menu/dropdown-bg.svg')`,
+      backgroundImage: `url('dropdown-menu/dropdown-bg.png')`,
       padding: "20px 0 0 10px",
     },
   },

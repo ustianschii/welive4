@@ -36,14 +36,14 @@ export const CardBox = styled(MuiBox, {
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  marginTop: "20px",
+  marginTop: "30px",
   [theme.breakpoints.up("md")]: {
     flexDirection: index % 2 === 0 ? "row" : "row-reverse",
   },
 }));
 
 export const CardContent = styled(MuiBox)(({ theme }) => ({
-  margin: "0 40px 10px 40px",
+  margin: "0 20px 10px 20px",
 
   [theme.breakpoints.up("md")]: {
     "&::before, &::after": {
@@ -63,7 +63,7 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
       borderBottomWidth: "2px",
     },
     position: "relative",
-    padding: "30px 0 30px 30px",
+    padding: "20px 0 20px 30px",
     borderLeft: "5px solid",
     borderColor: GREEN,
     borderRadius: "5px",
@@ -134,7 +134,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
     textAlign: "center",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "16px",
+    fontSize: "15px",
     textAlign: "start",
   },
 }));

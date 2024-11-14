@@ -10,10 +10,10 @@ import { raleway } from "@/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
+  paddingBottom: "20px",
   [theme.breakpoints.up("md")]: {
     display: "flex",
   },
-  [theme.breakpoints.down("md")]: {},
 }));
 
 export const Container = styled(MuiContainer)<{ bg: string }>(({ bg }) => ({

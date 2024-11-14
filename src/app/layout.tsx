@@ -12,6 +12,8 @@ import { GreenDivider } from "../../components/shared/green-divider";
 import { Analytics } from "../../components/analytics/analytics";
 
 import theme from "../styles/theme";
+import { Meta } from "../../components/meta";
+import Head from "next/head";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -32,26 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Analytics />
-        <title>We Live 4</title>
-        <meta name="description" content="Experience smart technology" />
-        <meta name="WeLive4" content="WeLive4" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-96x96.png"
-          sizes="96x96"
-        />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
+      <Meta />
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

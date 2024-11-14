@@ -29,15 +29,16 @@ export const Button = styled(MuiButton)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     padding: "10px 10px",
-    fontSize: "20px",
+    fontSize: "16px",
   },
 
   [theme.breakpoints.down("md")]: {
-    padding: "10px 0",
+    padding: "5px 0",
+    fontSize: "14px",
   },
 
   [theme.breakpoints.down("sm")]: {
     padding: "5px 0",
-    fontSize: "13px",
+    fontSize: "12px",
   },
 }));

@@ -20,26 +20,28 @@ import { Box } from "@mui/material";
 
 export default function Home() {
   return (
-    <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
-      <MainServices />
-      <OurBrands />
-      <Statistic />
-      <GrayCardsBox
-        data={GCHome}
-        button={
-          <Button href={ROUTES.GAME_MEDIA}>
-            GET A<Highlighted>RGBW</Highlighted> DESIGN
-          </Button>
-        }
-      />
-      <Separator />
-      <GreenDivider />
-      <SystemDesign />
-      <SmartControl />
-      <Everyone />
-      <HowWeWork />
-      <WhyChoose />
-      <Reviews />
-    </Box>
+    <>
+      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+        <MainServices />
+        <OurBrands />
+        <Statistic />
+        <GrayCardsBox
+          data={GCHome}
+          button={
+            <Button href={ROUTES.GAME_MEDIA}>
+              GET A<Highlighted>RGBW</Highlighted> DESIGN
+            </Button>
+          }
+        />
+        <Separator />
+        <GreenDivider />
+        <SystemDesign />
+        <SmartControl />
+        <Everyone />
+        <HowWeWork />
+        <WhyChoose />
+        <Reviews />
+      </Box>
+    </>
   );
 }

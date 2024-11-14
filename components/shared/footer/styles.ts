@@ -83,7 +83,7 @@ export const FastLinks = styled(MuiBox)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
-    width: "70%",
+    width: "80%",
     margin: "50px 0",
   },
 
@@ -93,15 +93,12 @@ export const FastLinks = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const LinksColumn = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {},
-}));
-
 export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
   marginBottom: "10px",
+  textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
     fontSize: "25px",
@@ -116,10 +113,16 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const LinksContainer = styled(MuiBox)(({}) => ({
+export const LinksContainer = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   gap: "5px",
+
+  "&.second": {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
 }));
 
 export const Label = styled(MuiTypography)(({ theme }) => ({
