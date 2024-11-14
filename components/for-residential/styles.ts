@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -12,7 +14,7 @@ import {
   SEMI_BOLD,
   SWAMP_GREEN,
 } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../src/app/layout";
 
 export const Container = styled(MuiContainer)(() => ({
   display: "flex",

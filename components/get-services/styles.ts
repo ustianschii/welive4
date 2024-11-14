@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 
 import { WHITE, BLACK } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: BLACK,

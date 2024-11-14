@@ -1,8 +1,10 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { Button as MuiButton } from "@mui/material";
 
 import { WHITE, GREEN, SEMI_BOLD } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   border: "2px solid",

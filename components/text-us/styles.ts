@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -13,7 +15,7 @@ import {
   SEMI_BOLD,
   MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
-import { raleway, opensans } from "@/app/layout";
+import { raleway, opensans } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

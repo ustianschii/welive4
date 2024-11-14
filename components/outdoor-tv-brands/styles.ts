@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -12,7 +14,7 @@ import {
   SEMI_BOLD,
   WHITE,
 } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

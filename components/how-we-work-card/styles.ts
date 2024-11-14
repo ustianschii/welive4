@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
 import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 interface ContainerProps {
   background: string;

@@ -7,7 +7,7 @@ import {
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: SEPARATOR_BACKGROUND,

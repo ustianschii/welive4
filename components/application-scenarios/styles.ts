@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Typography as MuiTypography,
@@ -9,7 +11,7 @@ import {
   TRANSPARENT_GRAY,
   WHITE,
 } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   display: "flex",

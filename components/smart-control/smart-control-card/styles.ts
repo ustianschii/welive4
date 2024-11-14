@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
 import { WHITE } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../../src/app/layout";
 
 export const Card = styled(MuiBox)<{ image: string; imagetablet: string }>(
   ({ theme, image, imagetablet }) => ({

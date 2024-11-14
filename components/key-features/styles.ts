@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { Container as MuiContainer } from "@mui/material";
 
@@ -5,9 +7,9 @@ import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
 export const Container = styled(MuiContainer)<{
   flex: string;
-  maxW: string;
+  maxw: string;
   gap: string;
-}>(({ theme, flex, gap, maxW }) => ({
+}>(({ theme, flex, gap, maxw }) => ({
   display: "flex",
   backgroundColor: SEPARATOR_BACKGROUND,
   flexWrap: "wrap",
@@ -16,7 +18,7 @@ export const Container = styled(MuiContainer)<{
     padding: "40px 0",
     "& > *": {
       flex: flex,
-      maxWidth: maxW,
+      maxWidth: maxw,
     },
     justifyContent: "space-between",
     gap: gap,

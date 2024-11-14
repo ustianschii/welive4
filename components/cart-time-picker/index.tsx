@@ -1,10 +1,12 @@
+"use client";
+
 import React, { useState } from "react";
 
-import { Typography } from "@mui/material";
+import { Typography, Button } from "@mui/material";
 
-import { TimePickerBox, Button, ButtonBox } from "./styles";
-import { WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { TimePickerBox, ButtonBox } from "./styles";
+import { GRAY, GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { opensans } from "../../src/app/layout";
 
 export const TimePicker = () => {
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
@@ -31,7 +33,15 @@ export const TimePicker = () => {
             key={time}
             variant="outlined"
             onClick={() => handleButtonClick(time)}
-            isSelected={selectedTime === time}
+            sx={{
+              flex: "0 1 49%",
+              border: "2px solid",
+              borderColor: selectedTime === time ? GREEN : GRAY,
+              borderRadius: "10px",
+              color: WHITE,
+              fontFamily: opensans.style.fontFamily,
+              fontWeight: SEMI_BOLD,
+            }}
           >
             {time}
           </Button>

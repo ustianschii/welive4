@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 
 import { MAIN_SERVICES_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

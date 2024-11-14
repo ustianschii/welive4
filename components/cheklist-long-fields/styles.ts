@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Typography as MuiTypography,
@@ -15,7 +17,7 @@ import {
   SEMI_BOLD,
   SEPARATOR_BACKGROUND,
 } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../src/app/layout";
 
 export const Container = styled(MuiBox)(() => ({
   display: "flex",

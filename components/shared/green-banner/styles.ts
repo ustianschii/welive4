@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Typography as MuiTypography,
@@ -5,7 +7,7 @@ import {
   Box as MuiBox,
 } from "@mui/material";
 import { ARTICLE_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

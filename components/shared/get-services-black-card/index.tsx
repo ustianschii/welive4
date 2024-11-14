@@ -13,7 +13,7 @@ import {
   TextContainer,
   CardButtonsBox,
 } from "./styles";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../../src/app/layout";
 import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
 
 export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {

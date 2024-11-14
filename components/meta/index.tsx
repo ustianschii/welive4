@@ -1,4 +1,5 @@
-import { Analytics } from "../analytics/analytics";
+import Head from "next/head";
+// import { Analytics } from "../analytics/analytics";
 
 interface MetaProps {
   title: string;
@@ -15,7 +16,7 @@ export const Meta = ({
 }: Partial<MetaProps>) => {
   return (
     <head>
-      <Analytics />
+      {/* <Analytics /> */}
       {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
       {/* <meta charSet="utf-8" /> */}
       <meta name="keywords" content={keywords.join(", ")} />

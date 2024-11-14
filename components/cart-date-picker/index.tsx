@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { StaticDatePicker } from "./styles";
 import { LocalizationProvider } from "@mui/x-date-pickers";

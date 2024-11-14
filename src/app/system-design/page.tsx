@@ -1,0 +1,84 @@
+import React from "react";
+
+import { Separator } from "../../../components/shared/gray-separator";
+import { Title } from "../../../components/shared/content-separator/styles";
+import { DesignTypes } from "../../../components/system-design/system-design-cards";
+import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
+import {
+  BCSystemDesign,
+  BCSystemDesignWBorder,
+} from "../../../components/shared/black-cards/data";
+import { TEXT_US_BACKGROUND } from "@/styles/constants";
+import { SystemDesignForm } from "../../../components/system-design-form";
+import { TextUs } from "../../../components/text-us";
+import { Header } from "../../../components/shared/header";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "../../../components/hero-title/styles";
+import { GreenDivider } from "../../../components/shared/green-divider";
+import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
+import { CustomButton } from "../../../components/shared/header-button";
+
+export default function SystemDesign() {
+  return (
+    <>
+      <Header
+        title={
+          <HeaderTextBox>
+            <Subtitle>
+              SYSTEM
+              <Highlighted>DESIGN</Highlighted>
+            </Subtitle>
+          </HeaderTextBox>
+        }
+        background={`url('system-design/header-bg.png')`}
+        tabletbackground={`url('system-design/tablet/header-bg.png')`}
+        desktopbackground={`url('system-design/desktop/header-bg.png')`}
+        mobileheight="700px"
+        tabletheight="700px"
+        desktopheight="700px"
+        divider={<GreenDivider />}
+        subtitle={
+          <HeaderSubtitle
+            first="At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money."
+            second="We believe in optimizing system performance to its fullest potential.  Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!"
+          />
+        }
+        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+      />
+      <Separator height="100px" padding="20px 0">
+        <Title>
+          Our System
+          <Highlighted>Design Supports</Highlighted>
+          For:
+        </Title>
+      </Separator>
+      <DesignTypes />
+      <BlackCardsBoxShared
+        upmdwidth="49%"
+        data={BCSystemDesign}
+        titlestart="Why"
+        titlehighlightedend="System Design Helps"
+        titleend="You"
+      />
+      <BlackCardsBoxShared
+        upmdwidth="24%"
+        data={BCSystemDesignWBorder}
+        border="2px solid #59B202"
+        bgcolor={TEXT_US_BACKGROUND}
+        titlestart="HOW"
+        titlehighlightedend="WE WORK"
+      />
+      <Separator height="90px" padding="20px 0 0 0">
+        <Title>
+          <Highlighted>SYSTEM DESIGN</Highlighted>
+          REQUEST
+        </Title>
+      </Separator>
+      <SystemDesignForm />
+      <TextUs />
+    </>
+  );
+}

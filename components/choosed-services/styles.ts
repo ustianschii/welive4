@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 
 import { WHITE, BLACK, SEMI_BOLD, GREEN } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: BLACK,
@@ -53,7 +53,7 @@ export const Label = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {},
 }));
 
-export const TextField = styled(MuiTextField)(({ theme }) => ({
+export const TextField = styled(MuiTextField)(() => ({
   marginTop: "10px",
   "& .MuiInputBase-root": {
     "& .MuiOutlinedInput-notchedOutline": {
@@ -72,13 +72,9 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   ".MuiSelect-icon": {
     color: WHITE,
   },
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
-export const MenuItem = styled(MuiMenuItem)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {},
-}));
+export const MenuItem = styled(MuiMenuItem)(() => ({}));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   border: "2px solid",

@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Box as MuiBox,
@@ -5,7 +7,7 @@ import {
   List as MuiList,
 } from "@mui/material";
 import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../../src/app/layout";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 export const CardBox = styled(MuiBox)(({ theme }) => ({

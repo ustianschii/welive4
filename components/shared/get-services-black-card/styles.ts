@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Box as MuiBox,
@@ -12,7 +14,7 @@ import {
   SEMI_BOLD,
   MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: BLACK,
@@ -61,12 +63,12 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     width: "49%",
-    minHeight: "710px",
+    minHeight: "720px",
   },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
     marginBottom: "20px",
-    minHeight: "710px",
+    minHeight: "740px",
   },
 }));
 

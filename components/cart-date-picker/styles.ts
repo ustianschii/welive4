@@ -1,5 +1,8 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { StaticDatePicker as MuiStaticDatePicker } from "@mui/x-date-pickers";
+import { Container as MuiContainer } from "@mui/material";
 
 import {
   BLACK,
@@ -9,7 +12,19 @@ import {
   GREEN,
   SEMI_BOLD,
 } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
+
+export const DateTimePickerContainer = styled(MuiContainer)(({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    padding: "0 100px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "0 70px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "0 20px",
+  },
+}));
 
 export const StaticDatePicker = styled(MuiStaticDatePicker)(({ theme }) => ({
   backgroundColor: DATE_PICKER_GRAY,

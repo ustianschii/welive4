@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   TextField as MuiTextField,
@@ -13,7 +15,7 @@ import {
   SEPARATOR_BACKGROUND,
   WHITE,
 } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Container = styled(MuiBox)(() => ({
   backgroundColor: SEPARATOR_BACKGROUND,

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 import { Box, Divider, List, Typography } from "@mui/material";
@@ -14,7 +16,7 @@ import {
   Wrapper,
 } from "./styles";
 import { GREEN, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 import { ROUTES } from "../../utils/routes-constants";
 
 export const ChoosedServicesList = () => {
@@ -40,10 +42,8 @@ export const ChoosedServicesList = () => {
       <ServicesBox>
         <List>
           {services.map((service, index) => (
-            <>
-              <ListItem key={index} disableGutters>
-                {service.name}
-              </ListItem>
+            <Box key={index}>
+              <ListItem disableGutters>{service.name}</ListItem>
               <Divider
                 style={{
                   background: GREEN,
@@ -67,7 +67,7 @@ export const ChoosedServicesList = () => {
                   {service.price}
                 </Typography>
               </Box>
-            </>
+            </Box>
           ))}
         </List>
         <Box mt="30px">

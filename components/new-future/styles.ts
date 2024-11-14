@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -12,7 +14,7 @@ import {
   WHITE,
   GREEN,
 } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: SEPARATOR_BACKGROUND,

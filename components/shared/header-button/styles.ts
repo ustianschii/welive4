@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import { Button as MuiButton } from "@mui/material";
 
 import { BOLD, WHITE } from "../../../src/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../../src/app/layout";
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,

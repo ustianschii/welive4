@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 
 import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../../src/app/layout";
 
 interface AppBarProps {
   background?: string;

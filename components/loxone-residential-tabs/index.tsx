@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 import { Container, Tab, Tabs, Wrapper } from "./styles";

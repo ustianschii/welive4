@@ -9,7 +9,7 @@ import {
 } from "../../../src/styles/blog-styles";
 import { Box, Typography } from "@mui/material";
 import { GREEN, WHITE } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../../src/app/layout";
 
 export default function RegularTvOutside() {
   return (

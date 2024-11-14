@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -7,21 +9,18 @@ import {
 } from "@mui/material";
 
 import { SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   padding: "30px 10px",
   minHeight: "280px",
 
-  [theme.breakpoints.up("md")]: {},
   [theme.breakpoints.down("md")]: {
     backgroundImage: `url(${"/action-banner/action-banner-bg.png"})`,
     backgroundPosition: "center",
     backgroundRepeate: "no-repeat",
     backgroundSize: "cover",
   },
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({

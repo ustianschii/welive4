@@ -1,3 +1,4 @@
+"use client";
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -5,7 +6,7 @@ import {
 } from "@mui/material";
 
 import { SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)<{
   bg?: string;

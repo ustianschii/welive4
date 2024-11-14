@@ -1,6 +1,6 @@
 import React from "react";
 
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 import { SEMI_BOLD, WHITE } from "@/styles/constants";
 
 import { Box, Typography } from "@mui/material";

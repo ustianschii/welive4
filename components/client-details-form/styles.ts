@@ -1,3 +1,5 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Typography as MuiTypography,
@@ -5,7 +7,7 @@ import {
   TextField as MuiTextField,
 } from "@mui/material";
 import { GREEN, WHITE, BLACK } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const FormContainer = styled(MuiBox)(({ theme }) => ({
   backgroundColor: BLACK,

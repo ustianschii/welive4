@@ -1,8 +1,5 @@
 import { styled } from "@mui/material/styles";
-import { Box as MuiBox, Button as MuiButton } from "@mui/material";
-
-import { GRAY, GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { Box as MuiBox } from "@mui/material";
 
 export const TimePickerBox = styled(MuiBox)(() => ({
   display: "flex",
@@ -27,17 +24,3 @@ export const ButtonBox = styled(MuiBox)(({ theme }) => ({
     gap: "5px",
   },
 }));
-
-export const Button = styled(MuiButton)<{ isSelected: boolean }>(
-  ({ theme, isSelected }) => ({
-    flex: "0 1 49%",
-    border: "2px solid",
-    borderColor: isSelected ? GREEN : GRAY,
-    borderRadius: "10px",
-    color: WHITE,
-    fontFamily: opensans.style.fontFamily,
-    fontWeight: SEMI_BOLD,
-
-    [theme.breakpoints.down("sm")]: {},
-  })
-);

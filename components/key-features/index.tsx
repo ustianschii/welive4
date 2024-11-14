@@ -9,13 +9,13 @@ import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 
 export const KeyFeatures: React.FC<KeyFeaturesProps> = ({
   data,
-  maxW,
+  maxw,
   gap,
   flex,
 }) => {
   return (
     <Box sx={{ backgroundColor: SEPARATOR_BACKGROUND }}>
-      <Container maxWidth="lg" disableGutters flex={flex} gap={gap} maxW={maxW}>
+      <Container maxWidth="lg" disableGutters flex={flex} gap={gap} maxw={maxw}>
         {data.map((item, index) => (
           <KeyFeaturesCard
             key={index}

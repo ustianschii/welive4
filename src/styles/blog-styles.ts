@@ -11,7 +11,7 @@ import {
   ARTICLE_BACKGROUND,
   SEMI_BOLD,
 } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,

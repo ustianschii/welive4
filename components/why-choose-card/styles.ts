@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
 import { LIGHT_BLACK, WHITE } from "@/styles/constants";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../src/app/layout";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   display: "flex",

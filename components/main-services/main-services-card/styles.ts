@@ -6,7 +6,7 @@ import { Button as MuiButton } from "@mui/material";
 import Image from "next/image";
 
 import { WHITE, SEMI_BOLD } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../../src/app/layout";
 
 export const Background = styled(Image)(({ theme }) => ({
   width: "100%",

@@ -1,6 +1,8 @@
+"use client";
+
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
-import { raleway } from "@/app/layout";
+import { raleway } from "../../../src/app/layout";
 
 export const Box = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

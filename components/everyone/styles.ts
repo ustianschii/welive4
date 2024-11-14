@@ -13,7 +13,7 @@ import {
   SEMI_BOLD,
   WHITE,
 } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+import { opensans } from "../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

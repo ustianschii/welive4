@@ -7,6 +7,6 @@ export interface FeatureItem {
 export interface KeyFeaturesProps {
   data: FeatureItem[];
   flex: string;
-  maxW: string;
+  maxw: string;
   gap: string;
 }

@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 
 import { BLACK, BOLD, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

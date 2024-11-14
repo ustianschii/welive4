@@ -15,7 +15,7 @@ import {
   BOLD,
   MAIN_SERVICES_BACKGROUND,
 } from "@/styles/constants";
-import { raleway, opensans } from "@/app/layout";
+import { raleway, opensans } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
