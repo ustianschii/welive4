@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { GetServiceCard } from "../../../components/shared/get-services-black-card";
 import { smartHome } from "../../../components/shared/get-services-black-card/services";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../utils/routes-constants";
 import {
   BackButton,
   Wrapper,
@@ -17,10 +17,12 @@ import { BLACK } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { Subtitle } from "../../../components/hero-title/styles";
+import { Meta } from "../../../components/meta";
 
 export default function GetSmartHome() {
   return (
     <>
+      <Meta title="Get Smart Home" />
       <Header
         mobileheight="250px"
         tabletheight="300px"

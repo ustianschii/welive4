@@ -6,10 +6,12 @@ import { Header } from "../../../components/shared/header";
 import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
+import { Meta } from "../../../components/meta";
 
 export default function ChecklistShort() {
   return (
     <>
+      <Meta title="Checklist" />
       <Header
         backcolor={SEPARATOR_BACKGROUND}
         dividerTop={<GreenDivider />}

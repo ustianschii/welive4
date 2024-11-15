@@ -18,10 +18,27 @@ import {
 } from "../../../components/hero-title/styles";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
+import { Meta } from "../../../components/meta";
 
-export default function LoxoneCommercial() {
+export default function LoxoneResidential() {
   return (
     <>
+      <Meta
+        title="Loxone Residential"
+        description="The New Future Of Smart Automation"
+        keywords={[
+          "loxone",
+          "smart home",
+          "automation",
+          "access control",
+          "lighting control",
+          "climate control",
+          "security",
+          "energy management",
+          "ambient assisted living",
+          "zero-energy home",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

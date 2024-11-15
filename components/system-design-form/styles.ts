@@ -17,18 +17,21 @@ import {
 } from "@/styles/constants";
 import { raleway, opensans } from "../../src/app/layout";
 
-export const Wrapper = styled(MuiBox)(() => ({
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
+
+  [theme.breakpoints.up("md")]: {},
+  [theme.breakpoints.down("md")]: {
+    padding: "0 30px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "0 10px",
+  },
 }));
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: MAIN_SERVICES_BACKGROUND,
+export const FormContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  [theme.breakpoints.down("sm")]: {},
-}));
-
-export const FormContainer = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SUBMIT_FORM_BACKGROUND,
   border: "2px solid",
   borderColor: GREEN,
@@ -140,7 +143,7 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   margin: "20px auto 0 auto",
   display: "block",
   [theme.breakpoints.up("md")]: {
-    width: "50%",
+    width: "40%",
   },
   [theme.breakpoints.down("md")]: {
     width: "70%",

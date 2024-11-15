@@ -8,7 +8,6 @@ import { Footer } from "../../components/shared/footer";
 import { GreenDivider } from "../../components/shared/green-divider";
 
 import theme from "../styles/theme";
-import { Meta } from "../../components/meta";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -29,7 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Meta />
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

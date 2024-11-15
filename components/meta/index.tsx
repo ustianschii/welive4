@@ -1,3 +1,5 @@
+import { Analytics } from "../analytics/analytics";
+
 interface MetaProps {
   title: string;
   keywords: string[];
@@ -5,17 +7,15 @@ interface MetaProps {
 }
 
 export const Meta = ({
-  title = "We Live 4",
+  title = "WeLive4",
   keywords = [
     "welive4, smart home, ev charging, network, energy management, game room, home theater, wifi, tv mounting, home audio, loxone, outdoor tv",
   ],
-  description = "Experience smart technology",
+  description = "Experience smart technology with WeLive4",
 }: Partial<MetaProps>) => {
   return (
-    <head>
-      {/* <Analytics /> */}
-      {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-      {/* <meta charSet="utf-8" /> */}
+    <>
+      <Analytics />
       <meta name="keywords" content={keywords.join(", ")} />
       <meta name="description" content={description} />
       <link
@@ -33,6 +33,6 @@ export const Meta = ({
       />
       <link rel="manifest" href="/site.webmanifest" />
       <title>{title}</title>
-    </head>
+    </>
   );
 };

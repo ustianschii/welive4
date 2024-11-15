@@ -9,10 +9,12 @@ import { Header } from "../../../components/shared/header";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { Highlighted } from "../../../components/hero-title/styles";
 import { Container } from "../../../components/cart-summary-booking-details/styles";
+import { Meta } from "../../../components/meta";
 
 export default function Cart() {
   return (
     <>
+      <Meta title="Details" />
       <Header
         mobileheight="200px"
         tabletheight="200px"

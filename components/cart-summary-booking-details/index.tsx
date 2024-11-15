@@ -8,7 +8,7 @@ import { Highlighted } from "../hero-title/styles";
 import { selectedServices } from "./services";
 import { Button } from "./styles";
 import { GreenDivider } from "../shared/green-divider";
-import { ROUTES } from "../../utils/routes-constants";
+import { ROUTES } from "../../src/app/utils/routes-constants";
 
 export const SummaryBookingDetails = () => {
   return (

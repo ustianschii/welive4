@@ -1,5 +1,7 @@
 import { MainServices } from "../../components/main-services/index";
+
 import { OurBrands } from "../../components/our-brands";
+
 import { Statistic } from "../../components/statistic";
 import { SystemDesign } from "../../components/system-design";
 import { SmartControl } from "../../components/smart-control";
@@ -12,29 +14,24 @@ import { Button } from "../../components/shared/gray-cards/styles";
 import { Highlighted } from "../../components/hero-title/styles";
 import { GCHome } from "../../components/shared/gray-cards/data";
 import { Separator } from "../../components/shared/gray-separator";
-import { ROUTES } from "../../utils/routes-constants";
+import { ROUTES } from "./utils/routes-constants";
 import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
-
-// import { Open_Sans, Raleway } from "next/font/google";
-
-// import { ThemeProvider } from "@mui/material";
-// import CssBaseline from "@mui/material/CssBaseline";
-// import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 
 import { Header } from "../../components/shared/header";
 import { HeroTitle } from "../../components/hero-title";
 import { CustomButton } from "../../components/shared/header-button";
 import { GreenDivider } from "../../components/shared/green-divider";
 
-// import theme from "../styles/theme";
-// import { Meta } from "../../components/meta";
-// import Head from "next/head";
-
 import { Box } from "@mui/material";
+import { Meta } from "../../components/meta";
 
 export default function Home() {
   return (
     <>
+      <Meta
+        title="WeLive4 | Home"
+        description="Smart technology has many cool designs and solutions to make your life more comfortable and bring additional passive income to your household - not to mention more fun!"
+      />
       <Header
         background={`url('/header-mobile/header-bg.png')`}
         tabletbackground={`url('/header-mobile/tablet/header-bg.png')`}

@@ -1,4 +1,4 @@
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../../../src/app/utils/routes-constants";
 
 export const grayCardsData = [
   {

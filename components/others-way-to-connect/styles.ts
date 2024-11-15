@@ -15,16 +15,20 @@ import {
 } from "@/styles/constants";
 import { raleway } from "../../src/app/layout";
 
-export const Wrapper = styled(MuiBox)(() => ({
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
+  [theme.breakpoints.up("md")]: {
+    padding: "30px 0",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "20px 30px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    padding: "20px 10px",
+  },
 }));
 
-export const Container = styled(MuiContainer)(() => ({
-  backgroundColor: MAIN_SERVICES_BACKGROUND,
-  padding: "20px 10px",
-}));
-
-export const BannerContainer = styled(MuiBox)(({ theme }) => ({
+export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",

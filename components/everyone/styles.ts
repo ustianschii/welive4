@@ -42,8 +42,6 @@ export const TitleBox = styled(MuiBox)(({ theme }) => ({
     alignItems: "center",
     height: "700px",
   },
-  [theme.breakpoints.down("md")]: {},
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const BorderBox = styled(MuiBox)(({ theme }) => ({
@@ -111,7 +109,7 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
     marginTop: "0",
     width: "40%",
   },
-  [theme.breakpoints.down("md")]: {},
+
   [theme.breakpoints.down("sm")]: {
     gap: "10px",
   },

@@ -23,10 +23,27 @@ import {
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
+import { Meta } from "../../../components/meta";
 
 export default function HomeTheater() {
   return (
     <>
+      <Meta
+        title="Home Theater"
+        description="Home Theater Sound System Tailored Just For You"
+        keywords={[
+          "home audio",
+          "home theater",
+          "5.1",
+          "5.2",
+          "7.1",
+          "7.2",
+          "subwoofer",
+          "speakers",
+          "high-end",
+          "streaming",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

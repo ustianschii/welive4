@@ -17,7 +17,7 @@ import {
 } from "./styles";
 import { GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "../../src/app/layout";
-import { ROUTES } from "../../utils/routes-constants";
+import { ROUTES } from "../../src/app/utils/routes-constants";
 
 export const ChoosedServicesList = () => {
   const [selectedValue, setSelectedValue] = useState("");

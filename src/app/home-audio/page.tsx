@@ -23,10 +23,26 @@ import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Box } from "@mui/material";
+import { Meta } from "../../../components/meta";
 
 export default function HomeTheater() {
   return (
     <>
+      <Meta
+        title="Home Audio"
+        description="Your Favorite Songs In Every Corner Of Your Home"
+        keywords={[
+          "home audio",
+          "5.1",
+          "5.2",
+          "7.1",
+          "7.2",
+          "subwoofer",
+          "speakers",
+          "high-end",
+          "streaming",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

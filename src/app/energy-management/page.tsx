@@ -29,10 +29,24 @@ import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
 
 import { Box } from "@mui/material";
+import { Meta } from "../../../components/meta";
 
 export default function EnergyManagement() {
   return (
     <>
+      <Meta
+        title="Home & Building Energy Management"
+        description="Maximize Savings While Minimizing Environmental Impact"
+        keywords={[
+          "energy management",
+          "home ev charging",
+          "solar power systems",
+          "wallbox",
+          "loxone",
+          "commercial solar system",
+          "tesla battery",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

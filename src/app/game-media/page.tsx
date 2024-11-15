@@ -20,10 +20,16 @@ import {
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
+import { Meta } from "../../../components/meta";
 
 export default function HomeTheater() {
   return (
     <>
+      <Meta
+        title="Game & Media Room"
+        description="Your Perfect Custom Gaming and Media Zone"
+        keywords={["media room", "gaming room", "rgbw"]}
+      />
       <Header
         title={
           <HeaderTextBox>

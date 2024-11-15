@@ -17,10 +17,29 @@ import {
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
+import { Meta } from "../../../components/meta";
 
 export default function Network() {
   return (
     <>
+      <Meta
+        title="Network"
+        description="Lightning-fast Network Installation"
+        keywords={[
+          "network",
+          "wifi",
+          "network for business",
+          "network for rural areas",
+          "on-site survey",
+          "ethernet wired network",
+          "wirless",
+          "sattelite internet",
+          "cellular booster",
+          "lte 5g",
+          "multi-gps",
+          "ptp wireless bridge",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

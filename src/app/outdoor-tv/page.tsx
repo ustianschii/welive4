@@ -29,10 +29,29 @@ import {
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
+import { Meta } from "../../../components/meta";
 
 export default function Outdoor() {
   return (
     <>
+      <Meta
+        title="Outdoor TV"
+        description=" Outdoor TV Mounting"
+        keywords={[
+          "outdoor entertainment",
+          "outdoor tv",
+          "outdoor speakers",
+          "audio video calibration",
+          "weather proof tv",
+          "smart tv",
+          "the terrace",
+          "furrion",
+          "sunbrite tv",
+          "seura",
+          "frame tv",
+          "tv setup",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

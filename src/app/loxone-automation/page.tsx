@@ -2,7 +2,6 @@
 
 import React from "react";
 
-// import AutomationLayout from "./layout";
 import { ActionBanner } from "../../../components/shared/action-banner";
 import { ForResidential } from "../../../components/for-residential";
 import { ForCommercial } from "../../../components/for-commercial";
@@ -20,12 +19,29 @@ import {
 } from "../../../components/hero-title/styles";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
+import { Meta } from "../../../components/meta";
 
 export default function LoxoneAutomation() {
   const theme = useTheme();
 
   return (
     <>
+      <Meta
+        title="Loxone Automation"
+        description="The New Future Of Smart Automation"
+        keywords={[
+          "loxone",
+          "smart home",
+          "automation",
+          "access control",
+          "lighting control",
+          "climate control",
+          "security",
+          "energy management",
+          "ambient assisted living",
+          "conference board room",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

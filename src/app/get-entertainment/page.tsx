@@ -6,7 +6,7 @@ import { IconButton } from "@mui/material";
 
 import { GetServiceCard } from "../../../components/shared/get-services-black-card";
 import { entertainment } from "../../../components/shared/get-services-black-card/services";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../utils/routes-constants";
 import {
   BackButton,
   Wrapper,
@@ -19,10 +19,12 @@ import { Header } from "../../../components/shared/header";
 import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Subtitle } from "../../../components/hero-title/styles";
+import { Meta } from "../../../components/meta";
 
 export default function GetEntertainment() {
   return (
     <>
+      <Meta title="Get Entertainment" />
       <Header
         mobileheight="250px"
         tabletheight="300px"

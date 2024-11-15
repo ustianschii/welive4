@@ -22,7 +22,7 @@ import {
 } from "./styles";
 import { HeaderProps } from "./types";
 import { GREEN, WHITE } from "@/styles/constants";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../../../src/app/utils/routes-constants";
 
 const pages = [
   { text: "HOME", href: ROUTES.HOME },

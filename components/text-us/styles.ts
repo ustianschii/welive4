@@ -19,16 +19,14 @@ import { raleway, opensans } from "../../src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
+  padding: "30px 0",
 
-  [theme.breakpoints.up("md")]: {
-    padding: "20px",
-  },
+  [theme.breakpoints.up("md")]: {},
   [theme.breakpoints.down("md")]: {
-    padding: "20px 20px",
+    padding: "20px 30px",
   },
-
   [theme.breakpoints.down("sm")]: {
-    padding: "20px 15px",
+    padding: "20px 10px",
   },
 }));
 
@@ -42,8 +40,7 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   padding: "100px 15px",
   borderRadius: "10px",
   [theme.breakpoints.up("md")]: {
-    maxWidth: "1150px",
-    padding: "50px 15px",
+    padding: "20px",
   },
 }));
 
@@ -91,19 +88,17 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   lineHeight: "120%",
   fontWeight: BOLD,
   border: "2px solid white",
+  height: "40px",
 
   [theme.breakpoints.up("md")]: {
     width: "40%",
-    height: "50px",
   },
 
   [theme.breakpoints.down("md")]: {
-    width: "70%",
-    height: "60px",
+    width: "60%",
   },
 
   [theme.breakpoints.down("sm")]: {
-    width: "80%",
-    height: "50px",
+    width: "100%",
   },
 }));

@@ -7,10 +7,12 @@ import { Header } from "../../../components/shared/header";
 import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
+import { Meta } from "../../../components/meta";
 
 export default function Cart() {
   return (
     <>
+      <Meta title="Choosed services" />
       <Header
         mobileheight="250px"
         tabletheight="300px"

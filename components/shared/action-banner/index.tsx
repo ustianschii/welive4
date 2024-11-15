@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 import { Button, ButtonsWrapper, Container, Title } from "./styles";
 import { Highlighted } from "../../hero-title/styles";
 import { GreenDivider } from "../green-divider";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../../../src/app/utils/routes-constants";
 
 export const ActionBanner = () => {
   return (

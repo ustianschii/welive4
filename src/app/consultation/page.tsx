@@ -15,10 +15,12 @@ import {
   Subtitle,
 } from "../../../components/hero-title/styles";
 import { GreenDivider } from "../../../components/shared/green-divider";
+import { Meta } from "../../../components/meta";
 
 export default function Consultation() {
   return (
     <>
+      <Meta title="Free Consultation" description="Get A Free Consultation" />
       <Header
         title={
           <HeaderTextBox>

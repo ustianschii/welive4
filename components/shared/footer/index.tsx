@@ -20,7 +20,7 @@ import {
 } from "./styles";
 import { BLACK, GRAY } from "@/styles/constants";
 import { FooterProps } from "./types";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../../../src/app/utils/routes-constants";
 
 import Link from "next/link";
 

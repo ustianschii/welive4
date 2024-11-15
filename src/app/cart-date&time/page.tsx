@@ -12,10 +12,12 @@ import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { opensans } from "../layout";
 import { DateTimePickerContainer } from "../../../components/cart-date-picker/styles";
+import { Meta } from "../../../components/meta";
 
 export default function Cart() {
   return (
     <>
+      <Meta title="Select date and time" />
       <Header
         mobileheight="200px"
         tabletheight="200px"

@@ -20,10 +20,29 @@ import {
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
+import { Meta } from "../../../components/meta";
 
 export default function SystemDesign() {
   return (
     <>
+      <Meta
+        title="System Design"
+        description="Seamless design process ensures that you unique need are met"
+        keywords={[
+          "system design",
+          "home automation",
+          "commercial automation",
+          "network system",
+          "entertainment system",
+          "ev charging",
+          "solar energy",
+          "av integration",
+          "energy management",
+          "seura",
+          "frame tv",
+          "tv setup",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

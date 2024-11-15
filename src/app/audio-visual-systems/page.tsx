@@ -10,7 +10,7 @@ import {
   grayCardsAudioVisualSystemsLatest,
 } from "../../../components/shared/gray-cards/data";
 import { Button } from "../../../components/shared/gray-cards/styles";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../utils/routes-constants";
 import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 import { Header } from "../../../components/shared/header";
@@ -22,10 +22,28 @@ import {
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
+import { Meta } from "../../../components/meta";
 
 export default function AudioVisualSystems() {
   return (
     <>
+      <Meta
+        title="Premium Audio Visual Systems"
+        description="Unmatched Audio & Visual Excellence"
+        keywords={[
+          "audio",
+          "video",
+          "home audio",
+          "4k",
+          "5.1",
+          "7.1",
+          "home entertainment",
+          "home theater",
+          "gaming",
+          "surround system",
+          "outdoor entertainment",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

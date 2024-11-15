@@ -6,7 +6,7 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
 import { opensans, raleway } from "../../src/app/layout";
 
 import Image from "next/image";
@@ -15,7 +15,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: SEPARATOR_BACKGROUND,
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   [theme.breakpoints.down("sm")]: {},
 }));
 export const Title = styled(MuiTypography)(({ theme }) => ({

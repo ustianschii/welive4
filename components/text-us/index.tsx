@@ -5,7 +5,7 @@ import { Highlighted } from "../hero-title/styles";
 export const TextUs = () => {
   return (
     <Wrapper>
-      <BannerContainer>
+      <BannerContainer maxWidth="lg">
         <Title>TEXT US</Title>
         <Subtitle>
           Have questions or need assistance? <br />

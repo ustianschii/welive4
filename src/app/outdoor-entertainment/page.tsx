@@ -9,7 +9,7 @@ import {
 } from "../../../components/shared/gray-cards/data";
 import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
 import { BCOutdoorEntertainment } from "../../../components/shared/black-cards/data";
-import { ROUTES } from "../../../utils/routes-constants";
+import { ROUTES } from "../utils/routes-constants";
 import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
 import {
@@ -22,10 +22,22 @@ import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Box } from "@mui/material";
+import { Meta } from "../../../components/meta";
 
 export default function OutdoorEntertainment() {
   return (
     <>
+      <Meta
+        title="Outdoor Entertainment"
+        description="Professional Outdoor Entertainment Installation"
+        keywords={[
+          "outdoor entertainment",
+          "outdoor tv",
+          "outdoor speakers",
+          "audio video calibration",
+          "weather proof speakers",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

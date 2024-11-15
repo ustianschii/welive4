@@ -4,7 +4,7 @@ import { Highlighted } from "../hero-title/styles";
 import { GreenDivider } from "../shared/green-divider";
 import { Separator } from "../shared/gray-separator";
 import Link from "next/link";
-import { ROUTES } from "../../utils/routes-constants";
+import { ROUTES } from "../../src/app/utils/routes-constants";
 
 export const Statistic = () => {
   return (

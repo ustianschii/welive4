@@ -6,7 +6,7 @@ import { data } from "./data";
 import Image from "next/image";
 
 import { Card } from "./card";
-import { ROUTES } from "../../utils/routes-constants";
+import { ROUTES } from "../../src/app/utils/routes-constants";
 
 export const ForCommercial = () => {
   return (

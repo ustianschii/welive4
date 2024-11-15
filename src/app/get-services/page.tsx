@@ -5,10 +5,12 @@ import { BLACK } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
+import { Meta } from "../../../components/meta";
 
 export default function GetServices() {
   return (
     <>
+      <Meta title="Get Services" />
       <Header
         mobileheight="250px"
         tabletheight="300px"

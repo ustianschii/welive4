@@ -15,18 +15,20 @@ import {
 } from "@/styles/constants";
 import { opensans, raleway } from "../../src/app/layout";
 
-export const Wrapper = styled(MuiBox)(() => ({
+export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-}));
-
-export const Container = styled(MuiContainer)(({ theme }) => ({
-  backgroundColor: MAIN_SERVICES_BACKGROUND,
+  [theme.breakpoints.up("md")]: {
+    padding: "30px 0",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "20px 30px",
+  },
   [theme.breakpoints.down("sm")]: {
     padding: "20px 10px",
   },
 }));
 
-export const BannerContainer = styled(MuiBox)(({ theme }) => ({
+export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -35,7 +37,17 @@ export const BannerContainer = styled(MuiBox)(({ theme }) => ({
   borderColor: GREEN,
   borderRadius: "10px",
   padding: "30px 15px",
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.up("md")]: {
+    padding: "40px 150px",
+  },
+
+  [theme.breakpoints.down("md")]: {
+    padding: "40px 100px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    padding: "30px",
+  },
 }));
 
 export const Subtitle = styled(MuiTypography)(({ theme }) => ({

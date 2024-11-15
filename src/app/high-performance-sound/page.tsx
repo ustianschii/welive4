@@ -18,10 +18,26 @@ import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Box } from "@mui/material";
+import { Meta } from "../../../components/meta";
 
 export default function HighPerformanceSound() {
   return (
     <>
+      <Meta
+        title="High Performance Sound System"
+        description="Feel every note, every rumble"
+        keywords={[
+          "high performance sound system",
+          "5.1",
+          "5.2",
+          "7.1",
+          "7.2",
+          "subwoofer",
+          "speakers",
+          "high-end",
+          "streaming",
+        ]}
+      />
       <Header
         title={
           <HeaderTextBox>

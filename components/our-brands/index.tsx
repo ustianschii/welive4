@@ -5,6 +5,7 @@ import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 
 import { Container, Title, BrandsBox, BrandsImages } from "./styles";
+
 import { Highlighted } from "../hero-title/styles";
 import { GreenDivider } from "../shared/green-divider";
 

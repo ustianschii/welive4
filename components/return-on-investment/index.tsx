@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 import {
   Card,
@@ -19,6 +19,7 @@ import {
 } from "./styles";
 import { data } from "./data";
 import { Highlighted } from "../hero-title/styles";
+import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 export const ReturnOnInvestments = () => {
   const theme = useTheme();
@@ -34,36 +35,38 @@ export const ReturnOnInvestments = () => {
   const imageSize = getSize();
 
   return (
-    <Container maxWidth="lg" disableGutters>
-      <Title>
-        <Highlighted>LOXONE</Highlighted>
-      </Title>
-      <Subtitle>
-        <Highlighted>Your Smartest Return on Investment (ROI)</Highlighted>
-      </Subtitle>
-      <CardsBox>
-        {data.map((item, index) => (
-          <Card key={index} index={index}>
-            <IconWrapper>
-              <Icon
-                alt="icon"
-                src={item.icon}
-                width={imageSize.width}
-                height={imageSize.height}
-              />
-            </IconWrapper>
+    <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Container maxWidth="lg" disableGutters>
+        <Title>
+          <Highlighted>LOXONE</Highlighted>
+        </Title>
+        <Subtitle>
+          <Highlighted>Your Smartest Return on Investment (ROI)</Highlighted>
+        </Subtitle>
+        <CardsBox>
+          {data.map((item, index) => (
+            <Card key={index} index={index}>
+              <IconWrapper>
+                <Icon
+                  alt="icon"
+                  src={item.icon}
+                  width={imageSize.width}
+                  height={imageSize.height}
+                />
+              </IconWrapper>
 
-            <TabletBox>
-              <IconTitle>{item.iconTitle}</IconTitle>
-              <Descriptions>
-                {item.description.map((desc, i) => (
-                  <Typography key={i}>{desc}</Typography>
-                ))}
-              </Descriptions>
-            </TabletBox>
-          </Card>
-        ))}
-      </CardsBox>
-    </Container>
+              <TabletBox>
+                <IconTitle>{item.iconTitle}</IconTitle>
+                <Descriptions>
+                  {item.description.map((desc, i) => (
+                    <Typography key={i}>{desc}</Typography>
+                  ))}
+                </Descriptions>
+              </TabletBox>
+            </Card>
+          ))}
+        </CardsBox>
+      </Container>
+    </Box>
   );
 };

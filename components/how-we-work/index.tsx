@@ -3,7 +3,7 @@ import { Container, Title, Description, CardContainer, Button } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 import { Card } from "../how-we-work-card";
 import { CardData } from "./data";
-import { ROUTES } from "../../utils/routes-constants";
+import { ROUTES } from "../../src/app/utils/routes-constants";
 
 export const HowWeWork = () => {
   return (
