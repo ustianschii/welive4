@@ -27,7 +27,7 @@ jobs:
           host: ${{ secrets.HOST }} # Your server's IP addres
           username: ${{ secrets.USERNAME }} # Your server's username
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
-          port: p6543
+          port: 6543
           script: |
             cd /home/welive4com/welive4 # Specify the path to your app directory on the server
             git pull
