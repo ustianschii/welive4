@@ -20,11 +20,11 @@ jobs:
       - name: Build Next.js app
         run: npm run build
 
-      - name: SSH Deploy
+      - name: SSH Deploying
         # Use the 'appleboy/ssh-action' action for SSH deployment
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }} # Your server's IP address
+          host: ${{ secrets.HOST }} # Your server's IP addres
           username: ${{ secrets.USERNAME }} # Your server's username
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
           port: 3000
