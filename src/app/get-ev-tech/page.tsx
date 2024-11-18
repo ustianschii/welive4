@@ -26,9 +26,9 @@ export default function GetEvTech() {
     <>
       <Meta title="Get EV Tech" />
       <Header
-        mobileheight="250px"
-        tabletheight="300px"
-        desktopheight="300px"
+        mobileheight="150px"
+        tabletheight="150px"
+        desktopheight="150px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={<Subtitle sx={{ marginTop: "50px" }}>EV TECH</Subtitle>}

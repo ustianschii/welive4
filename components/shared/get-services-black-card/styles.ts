@@ -30,7 +30,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     gap: "20px",
-    justifyContent: "space-between",
+    justifyContent: "center",
   },
 
   [theme.breakpoints.down("md")]: {
@@ -57,8 +57,7 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
   position: "relative",
 
   [theme.breakpoints.up("md")]: {
-    width: "49%",
-    padding: "30px",
+    width: "32%",
     minHeight: "700px",
   },
   [theme.breakpoints.down("md")]: {

@@ -21,9 +21,9 @@ export default function ChecklistLong() {
             below
           </Subtitle>
         }
-        mobileheight="250px"
-        tabletheight="250px"
-        desktopheight="250px"
+        mobileheight="150px"
+        tabletheight="150px"
+        desktopheight="100px"
       />
       <ChecklistLongFields />
     </>

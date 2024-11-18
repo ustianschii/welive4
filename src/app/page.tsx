@@ -36,7 +36,9 @@ export default function Home() {
         background={`url('/header-mobile/header-bg.png')`}
         tabletbackground={`url('/header-mobile/tablet/header-bg.png')`}
         desktopbackground={`url('/header-mobile/desktop/header-bg.png')`}
-        desktopheight="700px"
+        mobileheight="600px"
+        tabletheight="600px"
+        desktopheight="600px"
         title={<HeroTitle />}
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
         divider={<GreenDivider />}

@@ -43,9 +43,6 @@ export default function HomeTheater() {
         background={`url('/game-media/header-bg.png')`}
         tabletbackground={`url('/game-media/tablet/header-bg.png')`}
         desktopbackground={`url('/game-media/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS" />
         }

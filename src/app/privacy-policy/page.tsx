@@ -12,12 +12,12 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Header
-        mobileheight="200px"
-        tabletheight="200px"
-        desktopheight="250px"
+        mobileheight="100px"
+        tabletheight="100px"
+        desktopheight="150px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
-        title={<Subtitle>Privacy Policy</Subtitle>}
+        title={<Subtitle sx={{ marginTop: "30px" }}>Privacy Policy</Subtitle>}
       />
       <Box bgcolor={BLACK}>
         <Container maxWidth="lg">

@@ -31,7 +31,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
     flexDirection: "column",
   },
   [theme.breakpoints.down("sm")]: {
-    padding: "30px 10px",
+    padding: "30px 20px",
   },
 }));
 
@@ -86,7 +86,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "50px",
+    fontSize: "45px",
     transform: "rotate(90deg)",
     marginLeft: "10px",
   },

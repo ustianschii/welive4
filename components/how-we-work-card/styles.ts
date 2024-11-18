@@ -5,11 +5,7 @@ import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
 import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
 import { opensans } from "../../src/app/layout";
-
-interface ContainerProps {
-  background: string;
-  size?: string;
-}
+import { ContainerProps } from "./types";
 
 export const Container = styled(MuiBox)<ContainerProps>(
   ({ theme, background, size }) => ({
@@ -21,11 +17,11 @@ export const Container = styled(MuiBox)<ContainerProps>(
 
     [theme.breakpoints.up("md")]: {
       backgroundSize: "contain",
-      padding: "40px",
+      padding: "30px",
     },
     [theme.breakpoints.down("md")]: {
       backgroundSize: "contain",
-      padding: "40px",
+      padding: "30px",
     },
     [theme.breakpoints.down("sm")]: {
       maxHeight: "300px",
@@ -50,7 +46,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
+    fontSize: "18px",
   },
 }));
 
@@ -60,19 +56,18 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     textAlign: "center",
-    fontSize: "17px",
+    fontSize: "16px",
     marginTop: "20px",
   },
 
   [theme.breakpoints.down("md")]: {
     textAlign: "center",
-    fontSize: "18px",
+    fontSize: "16px",
     marginTop: "20px",
   },
 
   [theme.breakpoints.down("sm")]: {
-    textAlign: "start",
-    fontSize: "13px",
+    fontSize: "12px",
     marginTop: "10px",
   },
 }));

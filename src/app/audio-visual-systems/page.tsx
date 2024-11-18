@@ -57,9 +57,9 @@ export default function AudioVisualSystems() {
         background={`url('/audio-visual-systems/header-bg.png')`}
         tabletbackground={`url('/audio-visual-systems/tablet/header-bg.png')`}
         desktopbackground={`url('/audio-visual-systems/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
+        mobileheight="600px"
+        tabletheight="600px"
+        desktopheight="600px"
         subtitle={
           <HeaderSubtitle first="EXPERIENCE UNMATCHED AUDIO VISUAL EXCELLENCE ACROSS NEW JERSEY, PENNSYLVANIA AND DELAWARE" />
         }
@@ -72,7 +72,7 @@ export default function AudioVisualSystems() {
         tabletbg="/audio-visual-systems/desktop/cs-room.png"
         titlehighlightedstart="HOME ENTERTAINMENT"
         titleend="SYSTEMS"
-        titlepadding="70px 0 0 0"
+        titlepadding="50px 0 0 0"
         containerpadding="30px 0"
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>

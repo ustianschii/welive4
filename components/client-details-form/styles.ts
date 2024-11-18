@@ -26,17 +26,16 @@ export const FormContainer = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const Label = styled(MuiTypography)(({ theme }) => ({
+export const Label = styled(MuiTypography)(() => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FieldContainer = styled(MuiBox)(() => ({
   marginBottom: "10px",
 }));
 
-export const TextField = styled(MuiTextField)(({ theme }) => ({
+export const TextField = styled(MuiTextField)(() => ({
   "& .MuiInputBase-input": {
     color: WHITE,
   },
@@ -46,8 +45,11 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
   "& .MuiInput-underline:after": {
     borderBottomColor: GREEN,
   },
+  "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
+    borderBottomColor: GREEN,
+  },
+
   ".MuiSelect-icon": {
     color: GREEN,
   },
-  [theme.breakpoints.down("sm")]: {},
 }));

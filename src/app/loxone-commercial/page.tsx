@@ -51,9 +51,6 @@ export default function LoxoneCommercial() {
         background={`url('/loxone-commercial/header-bg-mobile.png')`}
         tabletbackground={`url('/loxone-commercial/tablet/header-bg-tablet.png')`}
         desktopbackground={`url('/loxone-commercial/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
