@@ -55,9 +55,7 @@ export default function SystemDesign() {
         background={`url('system-design/header-bg.png')`}
         tabletbackground={`url('system-design/tablet/header-bg.png')`}
         desktopbackground={`url('system-design/desktop/header-bg.png')`}
-        mobileheight="700px"
         tabletheight="700px"
-        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

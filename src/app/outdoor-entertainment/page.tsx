@@ -50,9 +50,6 @@ export default function OutdoorEntertainment() {
         background={`url('/outdoor-entertainment/header-bg.png')`}
         tabletbackground={`url('/outdoor-entertainment/tablet/header-bg.png')`}
         desktopbackground={`url('/outdoor-entertainment/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!" />
         }

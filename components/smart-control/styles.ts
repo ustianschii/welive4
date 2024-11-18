@@ -128,10 +128,10 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     gridTemplateColumns: "repeat(2, 1fr)",
-    padding: "30px 10px",
-    gap: "25px",
+    padding: "30px 20px",
+    gap: "20px",
   },
   [theme.breakpoints.down("sm")]: {
-    gap: "10px",
+    gap: "20px",
   },
 }));

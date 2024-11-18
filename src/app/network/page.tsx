@@ -54,9 +54,6 @@ export default function Network() {
         background={`url('/network/header-bg.png')`}
         tabletbackground={`url('/network/tablet/header-bg.png')`}
         desktopbackground={`url('/network/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK" />

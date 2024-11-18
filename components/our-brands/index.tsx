@@ -15,7 +15,7 @@ export const OurBrands = () => {
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
   const getWidth = () => (isMobile ? 150 : isTablet ? 200 : 250);
-  const getHeight = () => (isMobile ? 60 : isTablet ? 200 : 300);
+  const getHeight = () => (isMobile ? 60 : isTablet ? 100 : 300);
 
   const partners = [
     "/our-brands-mobile/aegis.png",

@@ -16,9 +16,9 @@ export default function Cart() {
     <>
       <Meta title="Details" />
       <Header
-        mobileheight="200px"
-        tabletheight="200px"
-        desktopheight="200px"
+        mobileheight="100px"
+        tabletheight="100px"
+        desktopheight="100px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={

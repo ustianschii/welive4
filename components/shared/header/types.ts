@@ -12,3 +12,18 @@ export interface HeaderProps {
   tabletbackground?: string;
   desktopbackground?: string;
 }
+
+export interface AppBarProps {
+  background?: string;
+  tabletbackground?: string;
+  desktopbackground?: string;
+  backcolor?: string;
+}
+export interface ContainerProps {
+  mobileheight?: string;
+  tabletheight?: string;
+  desktopheight?: string;
+}
+export interface ToolbarProps {
+  backcolor: string;
+}

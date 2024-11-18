@@ -34,9 +34,9 @@ export default function Consultation() {
         background={`url('consultation/header-bg.png')`}
         tabletbackground={`url('consultation/tablet/header-bg.png')`}
         desktopbackground={`url('consultation/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
+        mobileheight="600px"
+        tabletheight="600px"
+        desktopheight="600px"
         divider={<GreenDivider />}
       />
       <Separator height="80px" padding="20px 0">

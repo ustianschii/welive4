@@ -40,7 +40,13 @@ export const StaticDatePicker = styled(MuiStaticDatePicker)(({ theme }) => ({
     padding: "0",
   },
 
-  ".MuiPickersDay-root.Mui-selected, .MuiPickersDay-root.Mui-selected:hover": {
+  ".MuiPickersDay-root.Mui-selected": {
+    backgroundColor: GREEN,
+    color: "white",
+    fontWeight: BOLD,
+  },
+
+  ".MuiPickersDay-root.Mui-selected:hover": {
     backgroundColor: GREEN,
     color: "white",
     fontWeight: BOLD,
@@ -60,15 +66,12 @@ export const StaticDatePicker = styled(MuiStaticDatePicker)(({ theme }) => ({
     fontFamily: opensans.style.fontFamily,
   },
   ".MuiPickersDay-today": {
+    fontWeight: SEMI_BOLD,
     backgroundColor: GRAY,
     color: BLACK,
     border: "0px",
   },
-  ".MuiPickersDay-root.Mui-selected": {
-    backgroundColor: GREEN,
-    color: "white",
-    fontWeight: BOLD,
-  },
+
   ".MuiPickersDay-root.Mui-focused": {
     backgroundColor: GREEN,
     color: "white",

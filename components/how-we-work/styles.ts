@@ -54,7 +54,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "37px",
+    fontSize: "35px",
     padding: "20px 0",
   },
 
@@ -64,7 +64,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "35px",
+    fontSize: "30px",
     padding: "35px 0",
   },
 }));
@@ -76,8 +76,8 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     marginBottom: "10px",
-    padding: "0 100px",
-    fontSize: "18px",
+    padding: "0 150px",
+    fontSize: "16px",
   },
 
   [theme.breakpoints.down("md")]: {
@@ -87,9 +87,9 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    marginBottom: "25px",
-    padding: "0 10px",
-    fontSize: "14px",
+    marginBottom: "10px",
+    padding: "0 20px",
+    fontSize: "12px",
   },
 }));
 
@@ -104,11 +104,11 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     gap: "20px",
-    padding: "30px 20px",
+    padding: "30px 30px",
   },
   [theme.breakpoints.down("sm")]: {
     gap: "10px",
-    padding: "30px 10px",
+    padding: "30px 20px",
   },
 }));
 
@@ -119,15 +119,15 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   lineHeight: "120%",
   border: "2px solid white",
   margin: "0 auto 35px auto",
-  height: "50px",
+  height: "40px",
 
   [theme.breakpoints.up("md")]: {
     width: "300px",
-    fontSize: "18px",
+    fontSize: "16px",
   },
   [theme.breakpoints.down("md")]: {
     width: "300px",
-    fontSize: "18px",
+    fontSize: "16px",
   },
 
   [theme.breakpoints.down("sm")]: {

@@ -55,6 +55,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
 
   [theme.breakpoints.up("md")]: {
+    textAlign: "center",
     fontSize: "16px",
     margin: "10px 0 0 20px",
   },
