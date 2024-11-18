@@ -56,9 +56,6 @@ export default function HomeTheater() {
         background={`url('/home-theater/header-bg.png')`}
         tabletbackground={`url('/home-theater/tablet/header-bg.png')`}
         desktopbackground={`url('/home-theater/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         subtitle={
           <HeaderSubtitle first="EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!" />
         }

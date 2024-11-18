@@ -54,9 +54,9 @@ export default function LoxoneAutomation() {
         background={`url('loxone-automation/header-bg.png')`}
         tabletbackground={`url('loxone-automation/tablet/header-bg.png')`}
         desktopbackground={`url('loxone-automation/desktop/header-bg.png')`}
-        mobileheight="800px"
-        tabletheight="800px"
-        desktopheight="700px"
+        mobileheight="700px"
+        tabletheight="700px"
+        desktopheight="600px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

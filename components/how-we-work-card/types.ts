@@ -4,3 +4,8 @@ export interface CardTypes {
   description: string;
   size?: string;
 }
+
+export interface ContainerProps {
+  background: string;
+  size?: string;
+}

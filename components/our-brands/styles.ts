@@ -20,10 +20,10 @@ export const Container = styled(MuiBox)(({ theme }) => ({
     height: "350px",
   },
   [theme.breakpoints.down("md")]: {
-    height: "400px",
+    height: "350px",
   },
   [theme.breakpoints.down("sm")]: {
-    height: "300px",
+    height: "250px",
   },
 }));
 
@@ -33,20 +33,20 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "50px",
+    fontSize: "40px",
     padding: "40px 0",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "50px",
-    padding: "40px 0",
+    fontSize: "40px",
+    padding: "20px 0",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "40px",
-    padding: "35px 0",
+    fontSize: "30px",
+    padding: "25px 0",
   },
 }));
 
-export const BrandsBox = styled(MuiTypography)(({ theme }) => ({
+export const BrandsBox = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   position: "relative",

@@ -21,7 +21,7 @@ import {
   LinkLabel,
 } from "./styles";
 import { HeaderProps } from "./types";
-import { GREEN, WHITE } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/styles/constants";
 import { ROUTES } from "../../../src/app/utils/routes-constants";
 
 const pages = [
@@ -56,6 +56,23 @@ export const Header: React.FC<HeaderProps> = ({
   divider,
   dividerTop,
 }) => {
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -83,7 +100,10 @@ export const Header: React.FC<HeaderProps> = ({
         tabletheight={tabletheight}
         desktopheight={desktopheight}
       >
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          backcolor={scrolled ? MAIN_SERVICES_BACKGROUND : ""}
+        >
           <Link href={ROUTES.HOME}>
             <Logo
               alt="logo"

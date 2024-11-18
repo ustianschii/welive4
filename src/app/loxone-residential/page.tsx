@@ -51,9 +51,6 @@ export default function LoxoneResidential() {
         background={`url('/loxone-residential/header-bg.png')`}
         tabletbackground={`url('/loxone-residential/tablet/header-bg.png')`}
         desktopbackground={`url('/loxone-residential/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle

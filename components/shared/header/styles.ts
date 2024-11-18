@@ -14,18 +14,7 @@ import Image from "next/image";
 
 import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
 import { opensans } from "../../../src/app/layout";
-
-interface AppBarProps {
-  background?: string;
-  tabletbackground?: string;
-  desktopbackground?: string;
-  backcolor?: string;
-}
-interface ContainerProps {
-  mobileheight?: string;
-  tabletheight?: string;
-  desktopheight?: string;
-}
+import { AppBarProps, ContainerProps, ToolbarProps } from "./types";
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
   ({ theme, background, backcolor, tabletbackground, desktopbackground }) => ({
@@ -56,31 +45,44 @@ export const AppBar = styled(MuiAppBar)<AppBarProps>(
 export const Container = styled(MuiContainer)<ContainerProps>(
   ({ theme, mobileheight, tabletheight, desktopheight }) => ({
     [theme.breakpoints.up("md")]: {
-      height: desktopheight ?? "1000px",
+      height: desktopheight ?? "600px",
       position: "relative",
+      marginTop: "80px",
     },
     [theme.breakpoints.down("md")]: {
-      height: tabletheight ?? "700px",
+      height: tabletheight ?? "600px",
       position: "relative",
+      marginTop: "100px",
     },
     [theme.breakpoints.down("sm")]: {
-      height: mobileheight ?? "700px",
+      height: mobileheight ?? "600px",
       position: "relative",
+      marginTop: "80px",
     },
   })
 );
 
-export const Toolbar = styled(MuiToolbar)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "space-between",
+export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
+  ({ theme, backcolor }) => ({
+    display: "flex",
+    height: "80px",
+    justifyContent: "space-between",
+    zIndex: "3",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: backcolor,
 
-  [theme.breakpoints.up("md")]: {
-    padding: "0 20px",
-  },
-  [theme.breakpoints.down("md")]: {
-    height: "100px",
-  },
-}));
+    [theme.breakpoints.up("md")]: {
+      padding: "0 20%",
+    },
+
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
+  })
+);
 
 export const Logo = styled(Image)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

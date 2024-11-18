@@ -19,9 +19,9 @@ export default function Cart() {
     <>
       <Meta title="Select date and time" />
       <Header
-        mobileheight="200px"
-        tabletheight="200px"
-        desktopheight="250px"
+        mobileheight="100px"
+        tabletheight="100px"
+        desktopheight="100px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={

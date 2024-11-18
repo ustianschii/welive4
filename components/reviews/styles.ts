@@ -30,8 +30,10 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   },
 }));
 
-export const LogoContainer = styled(MuiBox)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {},
+export const LogoContainer = styled(MuiBox)(() => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 }));
 
 export const LinkTypography = styled(MuiTypography)(({ theme }) => ({
@@ -65,5 +67,6 @@ export const ReviewsContainer = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     gap: "10px",
     marginTop: "0px",
+    padding: "0 10px",
   },
 }));

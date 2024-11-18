@@ -11,7 +11,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   flexWrap: "wrap",
 
   [theme.breakpoints.up("md")]: {
-    padding: "50px 10px",
+    padding: "50px 30px",
     "& > *": {
       flex: "1 1 calc(25% - 10px)",
     },
@@ -19,7 +19,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
-    padding: "50px 10px",
+    padding: "40px 20px",
     "& > *": {
       flex: "1 1 calc(50% - 10px)",
     },
@@ -27,7 +27,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    padding: "50px 10px",
-    gap: "10px",
+    padding: "30px 20px",
+    gap: "20px",
   },
 }));

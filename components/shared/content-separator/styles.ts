@@ -20,12 +20,16 @@ export const Container = styled(MuiContainer)<{
   backgroundPostion: "center",
   backgroundSize: "cover",
   padding: containerpadding,
-  [theme.breakpoints.up("md")]: {},
+  [theme.breakpoints.up("md")]: {
+    maxHeight: "250px",
+  },
   [theme.breakpoints.down("md")]: {
     backgroundImage: `url(${tabletbg})`,
+    maxHeight: "200px",
   },
   [theme.breakpoints.down("sm")]: {
     backgroundImage: `url(${bg})`,
+    maxHeight: "120px",
   },
 }));
 
@@ -39,13 +43,13 @@ export const Title = styled(MuiTypography)<{
   textAlign: "center",
   padding: titlepadding,
   [theme.breakpoints.up("md")]: {
-    fontSize: "32px",
+    fontSize: "30px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "32px",
+    fontSize: "26px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "30px",
+    fontSize: "23px",
     padding: "0 10px",
   },
 }));

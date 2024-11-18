@@ -24,9 +24,9 @@ export default function GetTvMounting() {
     <>
       <Meta title="Get TV Mounting" />
       <Header
-        mobileheight="250px"
-        tabletheight="300px"
-        desktopheight="300px"
+        mobileheight="150px"
+        tabletheight="150px"
+        desktopheight="150px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={<Subtitle sx={{ marginTop: "50px" }}>TV MOUNTING</Subtitle>}

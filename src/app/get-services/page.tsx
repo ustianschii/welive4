@@ -12,9 +12,9 @@ export default function GetServices() {
     <>
       <Meta title="Get Services" />
       <Header
-        mobileheight="250px"
-        tabletheight="300px"
-        desktopheight="300px"
+        mobileheight="150px"
+        tabletheight="150px"
+        desktopheight="150px"
         backcolor={BLACK}
         dividerTop={<GreenDivider />}
         title={

@@ -11,7 +11,6 @@ import {
 import Image from "next/image";
 
 import {
-  BOLD,
   MAIN_SERVICES_BACKGROUND,
   GREEN,
   SEMI_BOLD,
@@ -21,8 +20,8 @@ import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  padding: "30px 0",
   [theme.breakpoints.up("md")]: {
+    padding: "30px 0",
     display: "flex",
     flexDirection: "column",
     gap: "30px",
@@ -36,7 +35,7 @@ export const CardBox = styled(MuiBox, {
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  marginTop: "30px",
+  paddingTop: "30px",
   [theme.breakpoints.up("md")]: {
     flexDirection: index % 2 === 0 ? "row" : "row-reverse",
   },
@@ -89,7 +88,14 @@ export const CustomImage = styled(Image)(({ theme }) => ({
   objectFit: "cover",
   [theme.breakpoints.up("md")]: {
     maxWidth: "50%",
-    minWidth: "50%",
+    minWidth: "30%",
+  },
+  [theme.breakpoints.down("md")]: {
+    maxWidth: "50%",
+    minWidth: "30%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    minWidth: "90%",
   },
 }));
 
@@ -103,16 +109,16 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     textAlign: "start",
-    fontSize: "40px",
+    fontSize: "30px",
   },
   [theme.breakpoints.down("md")]: {
     padding: "0px 50px",
-    fontSize: "33px",
+    fontSize: "30px",
   },
 
   [theme.breakpoints.down("sm")]: {
     padding: "0px 30px",
-    fontSize: "30px",
+    fontSize: "28px",
   },
 }));
 
@@ -127,38 +133,32 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   [theme.breakpoints.up("md")]: {
-    fontSize: "16px",
+    fontSize: "14px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "18px",
+    fontSize: "15px",
     textAlign: "center",
+    padding: "0 100px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "15px",
-    textAlign: "start",
+    fontSize: "14px",
+    padding: "0",
   },
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  fontWeight: BOLD,
   border: "2px solid white",
   lineHeight: "120%",
   margin: "20px 0",
   height: "40px",
+  fontSize: "15px",
 
   [theme.breakpoints.up("md")]: {
-    width: "300px",
-    fontSize: "16px",
+    width: "250px",
   },
   [theme.breakpoints.down("md")]: {
-    width: "300px",
-    fontSize: "20px",
-  },
-
-  [theme.breakpoints.down("sm")]: {
     width: "250px",
-    fontSize: "16px",
   },
 }));

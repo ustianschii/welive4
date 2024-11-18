@@ -59,9 +59,9 @@ export default function EnergyManagement() {
         background={`url('/energy-management/header-bg.png')`}
         tabletbackground={`url('/energy-management/tablet/header-bg.png')`}
         desktopbackground={`url('/energy-management/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
+        mobileheight="600px"
+        tabletheight="600px"
+        desktopheight="600px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!" />

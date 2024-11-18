@@ -27,8 +27,8 @@ import Link from "next/link";
 export const Footer: React.FC<FooterProps> = ({ divider }) => {
   const ABOUT_US_LINKS = [
     { label: "Privacy policy", href: ROUTES.PRIVACY_POLICY },
-    { label: "Our brands", href: "#our-brands" },
-    { label: "Reviews", href: "#reviews" },
+    { label: "Our brands", href: "/#our-brands" },
+    { label: "Reviews", href: "/#reviews" },
   ];
 
   const OUR_SERVICES_LINKS = [

@@ -21,9 +21,9 @@ export default function ChecklistShort() {
             below
           </Subtitle>
         }
-        mobileheight="350px"
-        tabletheight="350px"
-        desktopheight="300px"
+        mobileheight="200px"
+        tabletheight="170px"
+        desktopheight="150px"
       />
       <ChecklistShortFields />
     </>

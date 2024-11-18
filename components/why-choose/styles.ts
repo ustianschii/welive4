@@ -33,7 +33,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "30px",
+    fontSize: "25px",
   },
 }));
 
@@ -49,8 +49,10 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
     marginTop: "50px",
   },
   [theme.breakpoints.down("md")]: {
-    padding: "15px",
-    gap: "30px",
+    padding: "10px 20px",
+    gap: "20px",
   },
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.down("sm")]: {
+    gap: "10px",
+  },
 }));

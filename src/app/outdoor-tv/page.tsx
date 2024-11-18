@@ -64,9 +64,6 @@ export default function Outdoor() {
         background={`url('/outdoor-tv/header-bg.png')`}
         tabletbackground={`url('/outdoor-tv/tablet/header-bg.png')`}
         desktopbackground={`url('/outdoor-tv/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE" />

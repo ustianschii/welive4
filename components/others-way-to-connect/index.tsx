@@ -10,7 +10,7 @@ export const OtherWayToConnect = () => {
   return (
     <Wrapper>
       <BannerContainer>
-        <Title>Others way to connect</Title>
+        <Title>Other ways to connect</Title>
         <Box>
           <Box display="flex" m="20px 0">
             <Image
