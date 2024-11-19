@@ -24,7 +24,7 @@ export const Container = styled(MuiBox)<ContainerProps>(
       padding: "30px",
     },
     [theme.breakpoints.down("sm")]: {
-      maxHeight: "300px",
+      minHeight: "260px",
       backgroundSize: size ?? "contain",
       padding: "20px 15px",
     },

@@ -20,11 +20,17 @@ import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  [theme.breakpoints.up("md")]: {
+
+  [theme.breakpoints.up("lg")]: {
     padding: "30px 0",
     display: "flex",
     flexDirection: "column",
-    gap: "30px",
+  },
+
+  [theme.breakpoints.up("md")]: {
+    padding: "30px",
+    display: "flex",
+    flexDirection: "column",
   },
 }));
 
@@ -88,7 +94,7 @@ export const CustomImage = styled(Image)(({ theme }) => ({
   objectFit: "cover",
   [theme.breakpoints.up("md")]: {
     maxWidth: "50%",
-    minWidth: "30%",
+    minWidth: "40%",
   },
   [theme.breakpoints.down("md")]: {
     maxWidth: "50%",

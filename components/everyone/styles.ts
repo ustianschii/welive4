@@ -85,6 +85,10 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
 
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "center",
+
   [theme.breakpoints.up("md")]: {
     fontSize: "45px",
     transform: "rotate(90deg)",
@@ -96,7 +100,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "28px",
+    fontSize: "35px",
   },
 }));
 

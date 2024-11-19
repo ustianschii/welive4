@@ -103,7 +103,7 @@ export default function EnergyManagement() {
         titlehighlightedstart="SOLAR POWER SYSTEMS"
         titleend="INSTALLATION"
         description="STABLE ENERGY COSTS MONTH AFTER MONTH!"
-        containerpadding="60px 0"
+        containerpadding="40px 0"
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox

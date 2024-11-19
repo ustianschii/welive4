@@ -1,7 +1,9 @@
 import React from "react";
+
 import { Box } from "@mui/material";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   Container,
@@ -11,7 +13,6 @@ import {
 } from "./styles";
 import { Card } from "../review-card";
 import { data } from "./data";
-import Link from "next/link";
 
 export const Reviews = () => {
   const stars = new Array(5).fill(0);
@@ -21,7 +22,7 @@ export const Reviews = () => {
       <LogoContainer>
         <Image
           alt="review-provider"
-          src="/reviews-mobile/arrivala.png"
+          src="/reviews-mobile/arrivala.svg"
           width={200}
           height={45}
           style={{ marginBottom: "5px" }}
@@ -31,7 +32,7 @@ export const Reviews = () => {
             <Image
               key={index}
               alt="review-provider"
-              src="/reviews-mobile/star-outlined.png"
+              src="/reviews-mobile/star_outlined.svg"
               width={47}
               height={46}
             />

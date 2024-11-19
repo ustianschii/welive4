@@ -95,8 +95,6 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
 export const CardContainer = styled(MuiBox)(({ theme }) => ({
   display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)",
-
   [theme.breakpoints.up("md")]: {
     gridTemplateColumns: "repeat(3, 1fr)",
     gap: "20px",
@@ -105,6 +103,7 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     gap: "20px",
     padding: "30px 30px",
+    gridTemplateColumns: "repeat(2, 1fr)",
   },
   [theme.breakpoints.down("sm")]: {
     gap: "10px",

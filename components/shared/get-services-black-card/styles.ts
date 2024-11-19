@@ -16,12 +16,8 @@ import {
 } from "@/styles/constants";
 import { opensans } from "../../../src/app/layout";
 
-export const Wrapper = styled(MuiBox)(({ theme }) => ({
+export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: BLACK,
-
-  [theme.breakpoints.down("md")]: {
-    padding: "0 20px",
-  },
 }));
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
@@ -29,11 +25,13 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   flexWrap: "wrap",
 
   [theme.breakpoints.up("md")]: {
+    width: "95%",
     gap: "20px",
     justifyContent: "center",
   },
 
   [theme.breakpoints.down("md")]: {
+    width: "90%",
     gap: "10px",
     justifyContent: "space-between",
   },
@@ -79,7 +77,7 @@ export const Board = styled(MuiBox)(({ theme }) => ({
   justifyContent: "flex-end",
 
   [theme.breakpoints.up("md")]: {
-    minHeight: "140px",
+    minHeight: "180px",
     minWidth: "100%",
   },
   [theme.breakpoints.down("md")]: {

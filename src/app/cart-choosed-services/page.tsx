@@ -4,7 +4,6 @@ import { ChoosedServicesList } from "../../../components/choosed-services";
 import { BLACK } from "@/styles/constants";
 
 import { Header } from "../../../components/shared/header";
-import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
 import { Meta } from "../../../components/meta";
@@ -15,10 +14,9 @@ export default function Cart() {
       <Meta title="Choosed services" />
       <Header
         mobileheight="200px"
-        tabletheight="250px"
+        tabletheight="250px" //de schimbat
         desktopheight="250px"
         backcolor={BLACK}
-        dividerTop={<GreenDivider />}
         title={
           <Subtitle sx={{ marginTop: "100px" }}>
             <Highlighted>YOUR</Highlighted>CHOICE

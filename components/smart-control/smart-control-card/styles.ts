@@ -27,7 +27,7 @@ export const Card = styled(MuiBox)<{ image: string; imagetablet: string }>(
 
     [theme.breakpoints.down("sm")]: {
       backgroundImage: `url(${image})`,
-      minHeight: "330px",
+      minHeight: "310px",
     },
   })
 );

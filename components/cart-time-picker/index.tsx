@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 
-import { Typography, Button } from "@mui/material";
+import { Typography } from "@mui/material";
 
-import { TimePickerBox, ButtonBox } from "./styles";
-import { GRAY, GREEN, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { TimePickerBox, ButtonBox, SelectionButton } from "./styles";
+import { GRAY, GREEN, WHITE } from "@/styles/constants";
 import { opensans } from "../../src/app/layout";
 
 export const TimePicker = () => {
@@ -29,22 +29,16 @@ export const TimePicker = () => {
 
       <ButtonBox>
         {shifts.map((time) => (
-          <Button
+          <SelectionButton
             key={time}
             variant="outlined"
             onClick={() => handleButtonClick(time)}
             sx={{
-              flex: "0 1 49%",
-              border: "2px solid",
               borderColor: selectedTime === time ? GREEN : GRAY,
-              borderRadius: "10px",
-              color: WHITE,
-              fontFamily: opensans.style.fontFamily,
-              fontWeight: SEMI_BOLD,
             }}
           >
             {time}
-          </Button>
+          </SelectionButton>
         ))}
       </ButtonBox>
     </TimePickerBox>

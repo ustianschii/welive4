@@ -19,7 +19,7 @@ export const Card: React.FC<CardTypes> = ({ name, review }) => {
           <Image
             key={index}
             alt="review-provider"
-            src="/reviews-mobile/star-contained.png"
+            src="/reviews-mobile/star_contained.svg"
             width={28}
             height={28}
           />

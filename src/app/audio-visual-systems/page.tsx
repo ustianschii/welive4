@@ -93,7 +93,7 @@ export default function AudioVisualSystems() {
         tabletbg="/audio-visual-systems/desktop/cs-office.png"
         titlehighlightedstart="COMMERCIAL AV"
         titleend="SYSTEMS"
-        titlepadding="70px 0 0 0"
+        titlepadding="50px 0 0 0"
         containerpadding="30px 0"
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>

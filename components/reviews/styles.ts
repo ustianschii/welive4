@@ -16,9 +16,14 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
 
-  [theme.breakpoints.up("md")]: {
+  [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
     padding: "100px 20px",
+  },
+
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+    padding: "100px 40px",
   },
 
   [theme.breakpoints.down("md")]: {

@@ -17,17 +17,9 @@ import {
 } from "@/styles/constants";
 import { raleway, opensans } from "../../src/app/layout";
 
-export const Wrapper = styled(MuiBox)(({ theme }) => ({
+export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
   padding: "30px 0",
-
-  [theme.breakpoints.up("md")]: {},
-  [theme.breakpoints.down("md")]: {
-    padding: "20px 30px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    padding: "20px 10px",
-  },
 }));
 
 export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
@@ -37,9 +29,22 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SUBMIT_FORM_BACKGROUND,
   border: "2px solid",
   borderColor: GREEN,
-  padding: "100px 15px",
   borderRadius: "10px",
-  [theme.breakpoints.up("md")]: {
+
+  [theme.breakpoints.only("md")]: {
+    width: "80%",
+    padding: "30px",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "50%",
+    padding: "30px",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "90%",
+    padding: "30px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "90%",
     padding: "20px",
   },
 }));

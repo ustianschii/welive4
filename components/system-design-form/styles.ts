@@ -17,16 +17,8 @@ import {
 } from "@/styles/constants";
 import { raleway, opensans } from "../../src/app/layout";
 
-export const Wrapper = styled(MuiBox)(({ theme }) => ({
+export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-
-  [theme.breakpoints.up("md")]: {},
-  [theme.breakpoints.down("md")]: {
-    padding: "0 30px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    padding: "0 10px",
-  },
 }));
 
 export const FormContainer = styled(MuiContainer)(({ theme }) => ({
@@ -36,14 +28,21 @@ export const FormContainer = styled(MuiContainer)(({ theme }) => ({
   border: "2px solid",
   borderColor: GREEN,
   borderRadius: "10px",
-  [theme.breakpoints.up("md")]: {
-    padding: "50px 100px",
+  [theme.breakpoints.only("md")]: {
+    width: "80%",
+    padding: "30px",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "50%",
+    padding: "30px",
   },
   [theme.breakpoints.down("md")]: {
-    padding: "40px 80px",
+    width: "90%",
+    padding: "30px",
   },
   [theme.breakpoints.down("sm")]: {
-    padding: "20px 15px",
+    width: "90%",
+    padding: "20px",
   },
 }));
 
@@ -53,7 +52,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
   marginTop: "10px",
   [theme.breakpoints.up("md")]: {
-    fontSize: "14px",
+    fontSize: "16px",
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
@@ -79,25 +78,26 @@ export const FieldContainer = styled(MuiBox)(() => ({
   marginBottom: "15px",
 }));
 
-export const Pair = styled(MuiBox)(({ theme }) => ({
+export const Pair = styled(MuiBox)(() => ({
   display: "flex",
   marginTop: "30px",
   justifyContent: "flex-start",
   gap: "20px",
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const TextField = styled(MuiTextField)(({ theme }) => ({
   "& .MuiInputBase-input": {
     color: WHITE,
   },
+  "& .MuiInput-underline:hover:before": {
+    borderBottomColor: GREEN,
+  },
+
   "& .MuiInput-underline:before": {
     borderBottomColor: WHITE,
     transition: "border-bottom-color 0.3s ease",
   },
-  "& .MuiInput-underline:hover:before": {
-    borderBottomColor: GREEN,
-  },
+
   "& .MuiInput-underline:after": {
     borderBottomColor: GREEN,
   },
@@ -105,7 +105,7 @@ export const TextField = styled(MuiTextField)(({ theme }) => ({
     color: GREEN,
   },
   [theme.breakpoints.up("md")]: {
-    width: "400px",
+    maxWidth: "100%",
   },
 
   [theme.breakpoints.down("md")]: {

@@ -5,10 +5,8 @@ import { Box, Typography } from "@mui/material";
 import { DatePicker } from "../../../components/cart-date-picker";
 import { TimePicker } from "../../../components/cart-time-picker";
 import { BookingDetails } from "../../../components/cart-booking-details";
-import { BLACK } from "@/styles/constants";
-
 import { Header } from "../../../components/shared/header";
-import { GreenDivider } from "../../../components/shared/green-divider";
+import { BLACK } from "@/styles/constants";
 
 import { opensans } from "../layout";
 import { DateTimePickerContainer } from "../../../components/cart-date-picker/styles";
@@ -23,7 +21,6 @@ export default function Cart() {
         tabletheight="100px"
         desktopheight="100px"
         backcolor={BLACK}
-        dividerTop={<GreenDivider />}
         title={
           <Box
             display="flex"

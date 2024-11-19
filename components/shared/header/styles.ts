@@ -75,6 +75,9 @@ export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
     backgroundColor: backcolor,
 
     [theme.breakpoints.up("md")]: {
+      padding: "0 2%",
+    },
+    [theme.breakpoints.up("lg")]: {
       padding: "0 20%",
     },
 
@@ -95,7 +98,7 @@ export const Logo = styled(Image)(({ theme }) => ({
     marginLeft: "10%",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "250px",
+    width: "220px",
     height: "150px",
     marginLeft: "5%",
   },

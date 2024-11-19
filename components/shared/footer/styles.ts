@@ -18,9 +18,14 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   alignItems: "center",
   backgroundColor: BLACK,
 
+  [theme.breakpoints.only("md")]: {
+    padding: "0 30px",
+  },
+
   [theme.breakpoints.down("md")]: {
     padding: "0 30px",
   },
+
   [theme.breakpoints.down("sm")]: {
     padding: "0 20px",
   },
@@ -88,8 +93,8 @@ export const FastLinks = styled(MuiBox)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    width: "70%",
-    margin: "50px 0",
+    width: "80%",
+    margin: "40px 0",
   },
 }));
 

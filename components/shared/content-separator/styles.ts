@@ -20,8 +20,11 @@ export const Container = styled(MuiContainer)<{
   backgroundPostion: "center",
   backgroundSize: "cover",
   padding: containerpadding,
-  [theme.breakpoints.up("md")]: {
+  [theme.breakpoints.up("lg")]: {
     maxHeight: "250px",
+  },
+  [theme.breakpoints.up("md")]: {
+    maxHeight: "200px",
   },
   [theme.breakpoints.down("md")]: {
     backgroundImage: `url(${tabletbg})`,

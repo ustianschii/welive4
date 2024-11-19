@@ -9,6 +9,7 @@ import {
   FormControlLabel as MuiFormControlLabel,
   Button as MuiButton,
 } from "@mui/material";
+
 import {
   LIGHT_GRAY,
   WHITE,
@@ -34,6 +35,11 @@ export const FieldsBox = styled(MuiBox)(({ theme }) => ({
   borderRadius: "10px",
   marginBottom: "30px",
 
+  // [theme.breakpoints.up("lg")]: {
+  //   width: "60%",
+  //   padding: "40px",
+  //   marginTop: "40px",
+  // },
   [theme.breakpoints.up("md")]: {
     width: "40%",
     padding: "40px",

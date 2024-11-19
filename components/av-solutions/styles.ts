@@ -26,8 +26,11 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   flexDirection: "column",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
 
-  [theme.breakpoints.up("md")]: {
+  [theme.breakpoints.up("lg")]: {
     padding: "30px 50px",
+  },
+  [theme.breakpoints.up("md")]: {
+    padding: "30px 70px",
   },
 
   [theme.breakpoints.down("md")]: {

@@ -1,13 +1,21 @@
 "use client";
 
 import { styled } from "@mui/material/styles";
-import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
+import {
+  Typography as MuiTypography,
+  Box as MuiBox,
+  Container as MuiContainer,
+} from "@mui/material";
 
-import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { SEMI_BOLD, WHITE, MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 import { opensans } from "../../src/app/layout";
 
-export const Container = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: SEPARATOR_BACKGROUND,
+export const Wrapper = styled(MuiContainer)(() => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
+}));
+
+export const Container = styled(MuiContainer)(({ theme }) => ({
+  backgroundColor: MAIN_SERVICES_BACKGROUND,
   textAlign: "center",
   padding: "35px 0",
   [theme.breakpoints.up("md")]: {
@@ -15,8 +23,6 @@ export const Container = styled(MuiBox)(({ theme }) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  [theme.breakpoints.down("md")]: {},
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -42,12 +48,18 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
   gridTemplateColumns: "repeat(2, 1fr)",
   width: "100%",
   marginTop: "20px",
-  [theme.breakpoints.up("md")]: {
+
+  [theme.breakpoints.up("lg")]: {
     gridTemplateColumns: "repeat(4, 1fr)",
-    maxWidth: "1250px",
     gap: "30px",
     marginTop: "50px",
   },
+  [theme.breakpoints.up("md")]: {
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "30px",
+    marginTop: "50px",
+  },
+
   [theme.breakpoints.down("md")]: {
     padding: "10px 20px",
     gap: "20px",
