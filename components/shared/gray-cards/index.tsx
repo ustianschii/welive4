@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { useMediaQuery, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 
 import { GrayCardsBoxProps } from "./types";
@@ -65,15 +65,17 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
             <Description>{item.seconddescription}</Description>
             <Subtitle>{item.thirdtitle}</Subtitle>
             <Description>{item.thirddescription}</Description>
-            {item.descriptions?.map((desc, index) => (
-              <Description display="flex" alignItems="center" key={index}>
-                <DoneIcon
-                  fontSize="large"
-                  style={{ marginRight: 8, color: GREEN }}
-                />
-                {desc}
-              </Description>
-            ))}
+            <Box>
+              {item.descriptions?.map((desc, index) => (
+                <Description display="flex" alignItems="center" key={index}>
+                  <DoneIcon
+                    fontSize="large"
+                    style={{ marginRight: 8, color: GREEN }}
+                  />
+                  {desc}
+                </Description>
+              ))}
+            </Box>
             {button}
           </CardContent>
         </CardBox>

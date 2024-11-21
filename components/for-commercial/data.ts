@@ -5,7 +5,7 @@ export const data = [
   },
   {
     icon: "/loxone-automation/f-b-hospitality-fitness.png",
-    text: "F&B/Hospitality/Fitness",
+    text: "F&B, Hospitality, Fitness",
   },
   {
     icon: "/loxone-automation/conference-board-room.png",

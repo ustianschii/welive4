@@ -91,7 +91,7 @@ export const InnerCard = styled(MuiBox)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    padding: "100px 10px",
+    padding: "50px 10px",
   },
 }));
 

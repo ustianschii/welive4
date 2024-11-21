@@ -15,8 +15,8 @@ export const PartneredInstaller = () => {
           <Image
             alt="loxone-logo"
             src="/loxone-commercial/loxone-logo.svg"
-            width={270}
-            height={60}
+            width={260}
+            height={50}
             quality={100}
           />
           <Image

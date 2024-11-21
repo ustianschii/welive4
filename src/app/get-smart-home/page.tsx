@@ -15,7 +15,6 @@ import {
 } from "../../../components/shared/get-services-black-card/styles";
 import { BLACK } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
-import { GreenDivider } from "../../../components/shared/green-divider";
 import { Subtitle } from "../../../components/hero-title/styles";
 import { Meta } from "../../../components/meta";
 
@@ -28,7 +27,6 @@ export default function GetSmartHome() {
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        dividerTop={<GreenDivider />}
         title={<Subtitle sx={{ marginTop: "50px" }}>SMART HOME</Subtitle>}
       />
       <Wrapper>

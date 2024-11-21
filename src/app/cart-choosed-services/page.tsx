@@ -14,7 +14,7 @@ export default function Cart() {
       <Meta title="Choosed services" />
       <Header
         mobileheight="200px"
-        tabletheight="250px" //de schimbat
+        tabletheight="250px"
         desktopheight="250px"
         backcolor={BLACK}
         title={

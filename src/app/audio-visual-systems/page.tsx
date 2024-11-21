@@ -76,16 +76,15 @@ export default function AudioVisualSystems() {
         containerpadding="30px 0"
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
-        <GrayCardsBox
-          data={GCAudioVisualSystems}
-          imgheight={400}
-          imgwidth={388}
-          button={
-            <Button href={GCAudioVisualSystems[0].link}>
-              LEARN MORE &#10230;
-            </Button>
-          }
-        />
+        {GCAudioVisualSystems.map((item, index) => (
+          <GrayCardsBox
+            key={index}
+            data={item}
+            imgheight={400}
+            imgwidth={388}
+            button={<Button href={item[0].link}>LEARN MORE &#10230;</Button>}
+          />
+        ))}
       </Box>
 
       <ContentSeparator

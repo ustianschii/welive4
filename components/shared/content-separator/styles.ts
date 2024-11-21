@@ -32,7 +32,7 @@ export const Container = styled(MuiContainer)<{
   },
   [theme.breakpoints.down("sm")]: {
     backgroundImage: `url(${bg})`,
-    maxHeight: "120px",
+    maxHeight: "250px",
   },
 }));
 
@@ -64,12 +64,12 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
   margin: "10px 0 20px 0",
   maxWidth: "75%",
-  marginTop: "50px",
+  marginTop: "20px",
 
   [theme.breakpoints.down("md")]: {
     fontSize: "18px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "16px",
+    fontSize: "14px",
   },
 }));

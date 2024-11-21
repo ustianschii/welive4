@@ -68,12 +68,9 @@ export const CustomList = styled(MuiList)(({ theme }) => ({
 export const Feature = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  lineHeight: "1.2",
+  lineHeight: "1.3",
   [theme.breakpoints.down("md")]: {
-    fontSize: "17px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "16px",
+    fontSize: "14px",
   },
 }));
 

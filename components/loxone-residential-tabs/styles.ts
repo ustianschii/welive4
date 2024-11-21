@@ -62,7 +62,7 @@ export const Tab = styled(MuiTab)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     fontSize: "10px",
     borderRadius: "10px",
-    margin: "0 10px",
+    wordBreak: "break-word",
   },
 }));
 
@@ -77,7 +77,7 @@ export const ContentBox = styled(MuiBox)(({ theme }) => ({
     borderColor: GREEN,
     borderRadius: "10px",
     padding: "30px",
-    minHeight: "400px",
+    minHeight: "420px",
   },
 
   [theme.breakpoints.down("md")]: {
@@ -113,7 +113,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "16px",
+    fontSize: "15px",
     margin: "5px 0",
     padding: "0 100px",
   },
@@ -129,9 +129,12 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const QuoteBox = styled(MuiBox)(() => ({
+export const QuoteBox = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   marginTop: "20px",
   padding: "15px",
+  [theme.breakpoints.up("md")]: {
+    display: "none",
+  },
 }));

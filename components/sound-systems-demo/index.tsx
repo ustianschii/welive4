@@ -2,7 +2,13 @@
 
 import React, { useState } from "react";
 
-import { Box, IconButton, ListItem } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  ListItem,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -27,6 +33,14 @@ export const SoundSystemDemo: React.FC = () => {
     );
   };
 
+  const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
+
+  const height = isSmall ? 220 : isMedium ? 250 : 300;
+  const width = isSmall ? 220 : isMedium ? 250 : 300;
+
   return (
     <Wrapper>
       <Container maxWidth="lg" disableGutters>
@@ -37,34 +51,41 @@ export const SoundSystemDemo: React.FC = () => {
           <Image
             src={soundSystems[currentIndex].imagePath}
             alt="carousel"
-            height={300}
-            width={300}
+            height={height}
+            width={width}
             style={{ objectFit: "cover", marginBottom: "30px" }}
           />
           <IconButton onClick={handleNext}>
             <ArrowForwardIosIcon fontSize="large" />
           </IconButton>
         </Box>
-        {soundSystems[currentIndex].types.map((item, index) => (
-          <Box key={index} mb="20px" minHeight="200px">
-            <Title>
-              <Highlighted>{item.highlighted}</Highlighted>
-              {item.title}
-            </Title>
-            {item.features.map((feature, index) => (
-              <ListItem
-                key={index}
-                sx={{
-                  alignItems: "flex-start",
-                  padding: "4px 10px",
-                }}
-              >
-                <Dot />
-                <Feature>{feature}</Feature>
-              </ListItem>
-            ))}
-          </Box>
-        ))}
+        <Box
+          display="flex"
+          flexDirection={isLarge ? "row" : "column"}
+          gap={isLarge ? "30px" : ""}
+          marginLeft={isLarge ? "30px" : ""}
+        >
+          {soundSystems[currentIndex].types.map((item, index) => (
+            <Box key={index} mb="20px" minHeight="200px">
+              <Title>
+                <Highlighted>{item.highlighted}</Highlighted>
+                {item.title}
+              </Title>
+              {item.features.map((feature, index) => (
+                <ListItem
+                  key={index}
+                  sx={{
+                    alignItems: "flex-start",
+                    padding: "4px 10px",
+                  }}
+                >
+                  <Dot />
+                  <Feature>{feature}</Feature>
+                </ListItem>
+              ))}
+            </Box>
+          ))}
+        </Box>
       </Container>
     </Wrapper>
   );

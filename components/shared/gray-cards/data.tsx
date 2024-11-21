@@ -202,76 +202,87 @@ export const grayCardsDataEnergyManagementFourth = [
 ];
 
 export const GCAudioVisualSystems = [
-  {
-    image: "/audio-visual-systems/home-theater.png",
-    imagetablet: "/audio-visual-systems/tablet/home-theater.png",
-    titlehighlightedstart: "Home Theater ",
-    titleend: "System",
-    firstdescription:
-      "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations.",
-    seconddescription:
-      "From selecting the perfect audiovisual components to craft the basement home theater design and seating arrangements, every detail is created to ensure an unforgettable viewing experience.",
-    thirddescription:
-      "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
-    link: ROUTES.HOME_THEATER,
-  },
+  [
+    {
+      image: "/audio-visual-systems/home-theater.png",
+      imagetablet: "/audio-visual-systems/tablet/home-theater.png",
+      titlehighlightedstart: "Home Theater ",
+      titleend: "System",
+      firstdescription:
+        "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations.",
+      seconddescription:
+        "From selecting the perfect audiovisual components to craft the basement home theater design and seating arrangements, every detail is created to ensure an unforgettable viewing experience.",
+      thirddescription:
+        "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
+      link: ROUTES.HOME_THEATER,
+    },
+  ],
 
-  {
-    image: "/audio-visual-systems/gaming-media.png",
-    imagetablet: "/audio-visual-systems/tablet/gaming-media.png",
-    titlehighlightedstart: "Gaming & Media ",
-    titleend: "Room",
-    firstdescription:
-      "Looking for a room that can be used for more than just theater purposes? Let’s head to the media room with WE LIVE 4!",
-    seconddescription:
-      "Experience the pleasure of smooth traffic and customizable furniture arrangements for your space. Get lost in movies and games with rad lighting and mind-blowing audiovisual setups.",
-    thirddescription:
-      "We’ll show you how to pick top-notch gear and smoothly integrate smart automated home tech for a hassle-free experience. Our skilled installation ensures optimal performance and continuous support maintains a smooth-running entertainment haven.",
-    link: ROUTES.GAME_MEDIA,
-  },
+  [
+    {
+      image: "/audio-visual-systems/gaming-media.png",
+      imagetablet: "/audio-visual-systems/tablet/gaming-media.png",
+      titlehighlightedstart: "Gaming & Media ",
+      titleend: "Room",
+      firstdescription:
+        "Looking for a room that can be used for more than just theater purposes? Let’s head to the media room with WE LIVE 4!",
+      seconddescription:
+        "Experience the pleasure of smooth traffic and customizable furniture arrangements for your space. Get lost in movies and games with rad lighting and mind-blowing audiovisual setups.",
+      thirddescription:
+        "We’ll show you how to pick top-notch gear and smoothly integrate smart automated home tech for a hassle-free experience. Our skilled installation ensures optimal performance and continuous support maintains a smooth-running entertainment haven.",
+      link: ROUTES.GAME_MEDIA,
+    },
+  ],
 
-  {
-    image: "/audio-visual-systems/surround-sound.png",
-    imagetablet: "/audio-visual-systems/tablet/surround-sound.png",
-    titlehighlightedstart: "Surround Sound ",
-    titleend: "System",
-    firstdescription:
-      "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution.",
-    descriptions: [
-      "5.1/5.2 surround sound system",
-      "7.1/7.2 surround sound system",
-      "7.1.4/7.1.6 surround sound system",
-      "7.2.4/7.2.6 surround sound system",
-    ],
-    link: ROUTES.HIGH_PERFORMANCE_SOUND,
-  },
+  [
+    {
+      image: "/audio-visual-systems/surround-sound.png",
+      imagetablet: "/audio-visual-systems/tablet/surround-sound.png",
+      titlehighlightedstart: "Surround Sound ",
+      titleend: "System",
+      firstdescription:
+        "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution.",
+      descriptions: [
+        "5.1/5.2 surround sound system",
+        "7.1/7.2 surround sound system",
+        "7.1.4/7.1.6 surround sound system",
+        "7.2.4/7.2.6 surround sound system",
+      ],
+      link: ROUTES.HIGH_PERFORMANCE_SOUND,
+    },
+  ],
 
-  {
-    image: "/audio-visual-systems/home-audio.png",
-    imagetablet: "/audio-visual-systems/tablet/home-audio.png",
-    titlehighlightedstart: "Whole Home Audio ",
-    titleend: "System",
-    firstdescription:
-      "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
-    seconddescription:
-      "Our professional team can create a full home audio system that fills every space with rich, high-fidelity audio. We carefully design every solution to fit into your living area and fill every room with the full sound of your favorite songs.",
-    thirddescription:
-      "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
-    link: ROUTES.HOME_AUDIO,
-  },
+  [
+    {
+      image: "/audio-visual-systems/home-audio.png",
+      imagetablet: "/audio-visual-systems/tablet/home-audio.png",
+      titlehighlightedstart: "Whole Home Audio ",
+      titleend: "System",
+      firstdescription:
+        "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
+      seconddescription:
+        "Our professional team can create a full home audio system that fills every space with rich, high-fidelity audio. We carefully design every solution to fit into your living area and fill every room with the full sound of your favorite songs.",
+      thirddescription:
+        "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
+      link: ROUTES.HOME_AUDIO,
+    },
+  ],
 
-  {
-    image: "/audio-visual-systems/outdoor-entertainment.png",
-    imagetablet: "/audio-visual-systems/tablet/outdoor-entertainment.png",
-    titlehighlightedstart: "Outdoor Entertainment ",
-    titleend: "System",
-    firstdescription:
-      "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
-    seconddescription:
-      "At WE LIVE 4, we plan everything down to the last detail to ensure you have a great time. From optimizing viewing angles to seamlessly integrating technology into your outdoor space, we’re here to make your outdoor entertainment dreams a reality.",
-    thirddescription: "Why choose average when you can have something amazing?",
-    link: ROUTES.OUTDOOR_ENTERTAINMENT,
-  },
+  [
+    {
+      image: "/audio-visual-systems/outdoor-entertainment.png",
+      imagetablet: "/audio-visual-systems/tablet/outdoor-entertainment.png",
+      titlehighlightedstart: "Outdoor Entertainment ",
+      titleend: "System",
+      firstdescription:
+        "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
+      seconddescription:
+        "At WE LIVE 4, we plan everything down to the last detail to ensure you have a great time. From optimizing viewing angles to seamlessly integrating technology into your outdoor space, we’re here to make your outdoor entertainment dreams a reality.",
+      thirddescription:
+        "Why choose average when you can have something amazing?",
+      link: ROUTES.OUTDOOR_ENTERTAINMENT,
+    },
+  ],
 ];
 
 export const grayCardsAudioVisualSystemsLatest = [

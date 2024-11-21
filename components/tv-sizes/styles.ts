@@ -44,7 +44,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
     fontSize: "35px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "32px",
+    fontSize: "28px",
   },
 }));
 

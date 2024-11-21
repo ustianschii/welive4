@@ -83,7 +83,7 @@ export const CardBox = styled(MuiBox)(({ theme }) => ({
   marginTop: "30px",
 
   [theme.breakpoints.up("md")]: {
-    width: "49%",
+    width: "48%",
   },
 
   [theme.breakpoints.down("md")]: {
@@ -103,15 +103,15 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
   padding: "30px",
 
   [theme.breakpoints.up("md")]: {
-    minHeight: "380px",
+    minHeight: "420px",
   },
 
   [theme.breakpoints.down("md")]: {
-    minHeight: "600px",
+    minHeight: "500px",
   },
 
   [theme.breakpoints.down("sm")]: {
-    minHeight: "450px",
+    minHeight: "400px",
   },
 }));
 
@@ -134,10 +134,10 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
-    fontSize: "16px",
+    fontSize: "14px",
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "14px",
+    fontSize: "13px",
   },
 }));

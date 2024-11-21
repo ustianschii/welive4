@@ -14,7 +14,7 @@ export const NewFuture = () => {
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
   const isPhone = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const imageWidth = isPhone ? 380 : isTablet ? 450 : 400;
+  const imageWidth = isPhone ? 350 : isTablet ? 450 : 400;
   const imageHeight = isPhone ? 230 : isTablet ? 280 : 250;
 
   return (

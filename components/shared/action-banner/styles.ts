@@ -13,7 +13,7 @@ import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   padding: "30px 10px",
-  minHeight: "280px",
+  minHeight: "200px",
 
   [theme.breakpoints.down("md")]: {
     backgroundImage: `url(${"/action-banner/action-banner-bg.png"})`,
@@ -31,20 +31,16 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "32px",
+    fontSize: "30px",
   },
 
   [theme.breakpoints.down("md")]: {
-    fontSize: "32px",
-  },
-
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "28px",
+    fontSize: "25px",
   },
 }));
 
 export const ButtonsWrapper = styled(MuiBox)(({ theme }) => ({
-  marginTop: "50px",
+  marginTop: "20px",
   [theme.breakpoints.up("md")]: {
     padding: "0 100px",
   },
@@ -63,6 +59,6 @@ export const Button = styled(MuiButton)(() => ({
   fontWeight: SEMI_BOLD,
   border: "2px solid white",
   width: "100%",
-  fontSize: "15px",
+  fontSize: "14px",
   padding: "5px 15px",
 }));

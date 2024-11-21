@@ -5,7 +5,6 @@ import { Box } from "@mui/material";
 import { BLACK } from "@/styles/constants";
 import { Paragraph, Container } from "../../styles/privacy-policy-styles";
 import { Header } from "../../../components/shared/header";
-import { GreenDivider } from "../../../components/shared/green-divider";
 import { Subtitle } from "../../../components/hero-title/styles";
 
 export default function PrivacyPolicy() {
@@ -16,11 +15,10 @@ export default function PrivacyPolicy() {
         tabletheight="100px"
         desktopheight="150px"
         backcolor={BLACK}
-        dividerTop={<GreenDivider />}
         title={<Subtitle sx={{ marginTop: "30px" }}>Privacy Policy</Subtitle>}
       />
       <Box bgcolor={BLACK}>
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
           <Paragraph>
             Protecting your private information is our priority. This Statement
             of Privacy applies to https://www.heyosmart.com/, and WE LIVE 4 and

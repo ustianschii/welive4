@@ -9,19 +9,19 @@ export const Container = styled(MuiContainer)<{
   flex: string;
   maxw: string;
   gap: string;
-}>(({ theme, flex, gap, maxw }) => ({
+}>(({ theme, flex, maxw }) => ({
   display: "flex",
   backgroundColor: SEPARATOR_BACKGROUND,
   flexWrap: "wrap",
 
   [theme.breakpoints.up("md")]: {
-    padding: "40px 0",
+    padding: "40px 20px",
     "& > *": {
       flex: flex,
       maxWidth: maxw,
     },
     justifyContent: "space-between",
-    gap: gap,
+    gap: "10px",
   },
   [theme.breakpoints.down("md")]: {
     gap: "10px",

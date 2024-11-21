@@ -21,13 +21,13 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   padding: "35px 0",
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
-    minHeight: "500px",
+    minHeight: "550px",
   },
   [theme.breakpoints.down("md")]: {
     minHeight: "850px",
   },
   [theme.breakpoints.down("sm")]: {
-    minHeight: "850px",
+    minHeight: "800px",
   },
 }));
 

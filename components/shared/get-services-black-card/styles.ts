@@ -86,11 +86,10 @@ export const Board = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const ImageContainer = styled(MuiBox)(({ theme }) => ({
+export const ImageContainer = styled(MuiBox)(() => ({
   flexBasis: "50%",
   display: "flex",
   alignItems: "center",
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const TextContainer = styled(MuiBox)(({ theme }) => ({
@@ -131,12 +130,9 @@ export const ButtonsBox = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     padding: "10px",
   },
-  [theme.breakpoints.down("sm")]: {
-    padding: "10px",
-  },
 }));
 
-export const BackButton = styled(MuiButton)(({ theme }) => ({
+export const BackButton = styled(MuiButton)(() => ({
   border: "2px solid",
   borderColor: GREEN,
   borderRadius: "10px",
@@ -145,6 +141,4 @@ export const BackButton = styled(MuiButton)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   fontSize: "18px",
   padding: "5px 30px",
-
-  [theme.breakpoints.down("sm")]: {},
 }));

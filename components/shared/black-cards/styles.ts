@@ -34,15 +34,11 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "34px",
+    fontSize: "32px",
   },
 
   [theme.breakpoints.down("md")]: {
-    fontSize: "34px",
-  },
-
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "32px",
+    fontSize: "28px",
   },
 }));
 

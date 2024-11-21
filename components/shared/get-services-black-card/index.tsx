@@ -14,7 +14,8 @@ import {
   CardButtonsBox,
 } from "./styles";
 import { raleway } from "../../../src/app/layout";
-import { GRAY, SEMI_BOLD, WHITE } from "@/styles/constants";
+import { SEMI_BOLD, WHITE } from "@/styles/constants";
+import { ROUTES } from "@/app/utils/routes-constants";
 
 export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
   return (
@@ -69,36 +70,7 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
           </Box>
 
           <CardButtonsBox display="flex" justifyContent="space-between">
-            <IconButton disabled>
-              <Image
-                src={service.durationicon}
-                alt="Duration icon"
-                width={50}
-                height={50}
-              />
-            </IconButton>
-
-            {service.priceicon && (
-              <IconButton disabled>
-                <Image
-                  src={service.priceicon}
-                  alt="Price icon"
-                  width={100}
-                  height={50}
-                />
-              </IconButton>
-            )}
-            <Typography
-              color={GRAY}
-              fontFamily={raleway.style.fontFamily}
-              fontSize="9px"
-              display="flex"
-              alignItems="center"
-              p="0 5px"
-            >
-              * Sales tax is subject to additional charges
-            </Typography>
-            <IconButton>
+            <IconButton href={ROUTES.CHECKLIST_SHORT}>
               <Image
                 src="/get-services/add-to-cart.svg"
                 alt="cart-icon"

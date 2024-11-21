@@ -68,6 +68,9 @@ export const ContentBox = styled(MuiBox)(({ theme }) => ({
     borderColor: GREEN,
     borderRadius: "5px",
   },
+  [theme.breakpoints.down("sm")]: {
+    padding: "30px",
+  },
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({
@@ -88,6 +91,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "25px",
+    padding: "0",
   },
 }));
 
@@ -106,10 +110,12 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
     fontSize: "16px",
     textAlign: "center",
     marginTop: "5px",
+    padding: "0 100px",
   },
 
   [theme.breakpoints.down("sm")]: {
     textAlign: "start",
-    fontSize: "15px",
+    fontSize: "14px",
+    padding: "0 10px",
   },
 }));

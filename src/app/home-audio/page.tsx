@@ -88,7 +88,7 @@ export default function HomeTheater() {
         tabletbg="/outdoor-tv/desktop/cs-bg.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
-        titlepadding="10px 0 0 0"
+        containerpadding="20px 0 0 0"
       />
       <CustomAccordion data={homeAudioFaq} />
     </>

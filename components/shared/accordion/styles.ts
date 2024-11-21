@@ -12,9 +12,17 @@ import { opensans } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
-  padding: "30px 0",
+  padding: "30px 50px",
+  [theme.breakpoints.down("lg")]: {
+    padding: "30px 100px",
+  },
+  [theme.breakpoints.down("md")]: {
+    padding: "30px 50px",
+  },
 
-  [theme.breakpoints.down("sm")]: {},
+  [theme.breakpoints.down("sm")]: {
+    padding: "10px",
+  },
 }));
 
 export const Accordion = styled(MuiAccordion)(({ theme }) => ({

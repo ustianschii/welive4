@@ -39,14 +39,14 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   lineHeight: "1.1",
   textAlign: "center",
   color: WHITE,
-  fontSize: "32px",
   [theme.breakpoints.up("md")]: {
-    marginBottom: "20px",
+    fontSize: "28px",
+    marginBottom: "10px",
   },
   [theme.breakpoints.down("md")]: {
     marginBottom: "10px",
+    fontSize: "25px",
   },
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
@@ -62,7 +62,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.down("md")]: {
     margin: "5px",
-    fontSize: "16px",
+    fontSize: "15px",
     padding: "0 50px",
   },
 

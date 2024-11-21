@@ -83,7 +83,7 @@ export default function Outdoor() {
         tabletbg="/outdoor-tv/desktop/cs-bg.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
-        titlepadding="10px 0 0 0"
+        containerpadding="20px 0 0 0"
       />
       <CustomAccordion data={outdoorFirstFaq} />
       <ContentSeparator
@@ -91,8 +91,8 @@ export default function Outdoor() {
         tabletbg="/outdoor-tv/desktop/cs-second.png"
         titlehighlightedstart="FRAME TV"
         titleend="INSTALLATION"
-        containerpadding="30px 0px"
         description="EFORTLESS LUXURY FOR YOUR HOME ENTERTAINMENT 100% RISK-FREE ASSURANCE"
+        containerpadding="20px 0 0 0"
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
@@ -121,7 +121,7 @@ export default function Outdoor() {
         tabletbg="/outdoor-tv/desktop/cs-bg.png"
         titlestart="Frequently"
         titlehighlightedend="Asked Questions"
-        titlepadding="10px 0 0 0"
+        containerpadding="20px 0 0 0"
       />
       <CustomAccordion data={outdoorSecondFaq} />
     </>
