@@ -78,7 +78,7 @@ export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
       padding: "0 2%",
     },
     [theme.breakpoints.up("lg")]: {
-      padding: "0 20%",
+      padding: "0 10%",
     },
 
     [theme.breakpoints.down("md")]: {
@@ -107,20 +107,27 @@ export const Logo = styled(Image)(({ theme }) => ({
 export const DesktopHeaderLinks = styled(MuiBox)(({ theme }) => ({
   width: "100%",
   justifyContent: "end",
-  gap: "40px",
   [theme.breakpoints.up("md")]: {
     display: "flex",
+    gap: "20px",
+  },
+  [theme.breakpoints.up("lg")]: {
+    display: "flex",
+    gap: "40px",
   },
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
 }));
 
-export const LinkLabel = styled(MuiTypography)(() => ({
+export const LinkLabel = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   fontSize: "18px",
   whiteSpace: "nowrap",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "16px",
+  },
 }));
 
 export const DropDownMenu = styled(MuiBox)(({ theme }) => ({

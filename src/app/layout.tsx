@@ -36,6 +36,13 @@ export default function RootLayout({
             <Footer divider={<GreenDivider />} />
           </ThemeProvider>
         </AppRouterCacheProvider>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-na1.hs-scripts.com/48166700.js"
+        ></script>
       </body>
     </html>
   );

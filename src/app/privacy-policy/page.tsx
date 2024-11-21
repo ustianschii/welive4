@@ -6,10 +6,16 @@ import { BLACK } from "@/styles/constants";
 import { Paragraph, Container } from "../../styles/privacy-policy-styles";
 import { Header } from "../../../components/shared/header";
 import { Subtitle } from "../../../components/hero-title/styles";
+import { Meta } from "../../../components/meta";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <Meta
+        title="Privacy Policy"
+        description="WeLive4 | Privacy Policy"
+        keywords={["privacy policy welive4"]}
+      />
       <Header
         mobileheight="100px"
         tabletheight="100px"
