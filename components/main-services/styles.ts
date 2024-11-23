@@ -21,13 +21,16 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     padding: "40px 20px",
     "& > *": {
-      flex: "1 1 calc(50% - 10px)",
+      flex: "1 1 calc(25% - 10px)",
     },
     gap: "20px",
   },
 
   [theme.breakpoints.down("sm")]: {
     padding: "30px 20px",
+    "& > *": {
+      flex: "1 1 calc(50% - 10px)",
+    },
     gap: "10px",
   },
 }));

@@ -16,16 +16,14 @@ export const SystemDesign = () => {
           SYSTEM<Highlighted>DESIGN</Highlighted>
         </Title>
         <Description>
-          At WE LIVE 4, we&apos;re dedicated to your satisfaction, right from
-          the beginning to the end. Our seamless design process ensures that
-          your unique needs are met while also saving your valuable time and
-          money. <br /> <br />
-          We believe in optimizing system performance to its fullest potential.
-           Trust us for expert advice and enjoy free consultations — we&apos;re
-          here to turn your vision into reality!
+          At WE LIVE 4, your satisfaction is our priority. From start to finish,
+          we focus on your needs. Our smooth design process saves you time and
+          money. We are committed to optimizing your system&apos;s performance.
+          Trust our expert advice for the best results. Enjoy free consultations
+          with us. Let&apos;s turn your vision into reality!
         </Description>
         <Link href={ROUTES.CONSULTATION}>
-          <Button>GET A FREE QUOTE!</Button>
+          <Button>ORDER YOUR DESIGN TODAY!</Button>
         </Link>
       </Container>
       <GreenDivider />

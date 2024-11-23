@@ -11,10 +11,8 @@ import { CardProps } from "./types";
 
 export const Card: React.FC<CardProps> = ({ link, img, imgdesktop, text }) => {
   const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
-
-  const imageSrc = isDesktop ? imgdesktop : isTablet ? imgdesktop : img;
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
+  const imageSrc = isDesktop ? imgdesktop : img;
 
   return (
     <Box display="flex" position="relative" flexDirection="column">

@@ -11,7 +11,6 @@ export const MainServices = () => {
           key={index}
           link={service.link}
           img={service.img}
-          imgtablet={service.imgtablet}
           imgdesktop={service.imgdesktop}
           text={service.text}
         />

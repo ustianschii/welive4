@@ -56,13 +56,13 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     textAlign: "center",
-    fontSize: "16px",
+    fontSize: "15px",
     marginTop: "20px",
   },
 
   [theme.breakpoints.down("md")]: {
     textAlign: "center",
-    fontSize: "16px",
+    fontSize: "14px",
     marginTop: "20px",
   },
 

@@ -6,7 +6,7 @@ import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
 export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
-    marginTop: "150px",
+    marginTop: "200px",
   },
   [theme.breakpoints.down("md")]: {
     marginTop: "200px",

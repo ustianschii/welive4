@@ -1,9 +1,11 @@
 import React from "react";
-import { ChecklistShortFields } from "../../../components/checklist-short-fields";
 import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
 import { Meta } from "../../../components/meta";
+// import { HSFormChecklistShort } from "@/../components/hs-form-checklist-short/index";
+import { Container, Wrapper } from "@/styles/checklist-short-styles";
+import { ChecklistShortFields } from "../../../components/checklist-short-fields";
 
 export default function ChecklistShort() {
   return (
@@ -21,7 +23,12 @@ export default function ChecklistShort() {
         tabletheight="170px"
         desktopheight="150px"
       />
-      <ChecklistShortFields />
+      <Wrapper>
+        <Container>
+          <ChecklistShortFields />
+          {/* <HSFormChecklistShort /> */}
+        </Container>
+      </Wrapper>
     </>
   );
 }

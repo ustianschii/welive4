@@ -14,6 +14,7 @@ import {
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
+  overflow: "hidden",
 
   [theme.breakpoints.up("md")]: {
     width: "100%",
@@ -50,18 +51,27 @@ export const BrandsBox = styled(MuiBox)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   position: "relative",
-  whiteSpace: "no-wrap",
-  backgroundColor: BLOG_CARD_BACKGROUND,
+  whiteSpace: "nowrap",
   padding: "10px",
   "::-webkit-scrollbar": { display: "none" },
   scrollBehavior: "smooth",
-  overflowX: "auto",
+
+  "@keyframes scroll-infinite": {
+    "0%": { transform: "translateX(0)" },
+    "100%": { transform: "translateX(-100%)" },
+  },
 
   [theme.breakpoints.up("md")]: {
+    animation: "scroll-infinite 20s linear infinite",
+    display: "flex",
+    justifyContent: "space-between",
     height: "150px",
   },
+
   [theme.breakpoints.down("md")]: {
+    backgroundColor: BLOG_CARD_BACKGROUND,
     height: "200px",
+    overflowX: "auto",
   },
   [theme.breakpoints.down("sm")]: {
     height: "120px",
@@ -71,14 +81,11 @@ export const BrandsBox = styled(MuiBox)(({ theme }) => ({
 export const BrandsImages = styled(Image)(({ theme }) => ({
   width: "auto",
   height: "auto",
+
   [theme.breakpoints.up("md")]: {
-    margin: "0 auto",
-  },
-  [theme.breakpoints.down("md")]: {
     margin: "0 30px",
   },
-
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     margin: "0 30px",
   },
 }));

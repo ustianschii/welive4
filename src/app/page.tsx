@@ -33,14 +33,14 @@ export default function Home() {
         description="Smart technology has many cool designs and solutions to make your life more comfortable and bring additional passive income to your household - not to mention more fun!"
       />
       <Header
-        background={`url('/header-mobile/header-bg.png')`}
-        tabletbackground={`url('/header-mobile/tablet/header-bg.png')`}
-        desktopbackground={`url('/header-mobile/desktop/header-bg.png')`}
+        background={`url('/header-mobile/header-bg.jpg')`}
+        tabletbackground={`url('/header-mobile/desktop/header-bg.jpg')`}
+        desktopbackground={`url('/header-mobile/desktop/header-bg.jpg')`}
         mobileheight="600px"
         tabletheight="600px"
         desktopheight="600px"
         title={<HeroTitle />}
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        button={<CustomButton text={"DESIGN YOUR SPACE"} />}
         divider={<GreenDivider />}
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
@@ -51,7 +51,7 @@ export default function Home() {
           data={GCHome}
           button={
             <Button href={ROUTES.GAME_MEDIA}>
-              GET A<Highlighted>RGBW</Highlighted> DESIGN
+              Get Your<Highlighted>Lights</Highlighted> Design Today!
             </Button>
           }
         />

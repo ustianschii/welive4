@@ -4,6 +4,7 @@ import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
 import { Meta } from "../../../components/meta";
+// import { HSFormChecklistLong } from "../../../components/hs-form-checklist-long";
 
 export default function ChecklistLong() {
   return (
@@ -22,6 +23,7 @@ export default function ChecklistLong() {
         desktopheight="100px"
       />
       <ChecklistLongFields />
+      {/* <HSFormChecklistLong /> */}
     </>
   );
 }

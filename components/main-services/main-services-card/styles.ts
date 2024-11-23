@@ -11,9 +11,10 @@ import { opensans } from "../../../src/app/layout";
 export const Background = styled(Image)(({ theme }) => ({
   width: "100%",
   height: "100%",
-  borderRadius: "10px",
-  [theme.breakpoints.up("md")]: {},
-  [theme.breakpoints.down("md")]: {},
+  borderRadius: "16px",
+  [theme.breakpoints.down("md")]: {
+    borderRadius: "10px",
+  },
 }));
 
 export const Button = styled(MuiButton)(({ theme }) => ({

@@ -21,10 +21,11 @@ export const Statistic = () => {
           whole-house audio, home entry control, turning lights on and off,
           thermostats, power sockets, doorbells, vacuum cleaners, smart energy
           distribution, and other geeky things you could do with one click on
-          your remote, smartphone or control panel.
+          your remote, smartphone, control panel, OR....do nothing, LOXONE will
+          do everything for you!
         </Description>
         <Link href={ROUTES.CONSULTATION}>
-          <Button>GET A FREE QUOTE!</Button>
+          <Button>CALCULATE YOUR BUDGET</Button>
         </Link>
       </Container>
       <GreenDivider />

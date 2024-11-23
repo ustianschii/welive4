@@ -1,16 +1,16 @@
 "use client";
+
 import { styled } from "@mui/material/styles";
 import {
   Typography as MuiTypography,
   Box as MuiBox,
   Container as MuiContainer,
-  Button as MuiButton,
 } from "@mui/material";
 
 import Image from "next/image";
 
-import { BLACK, BOLD, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "../../../src/app/layout";
+import { BLACK, WHITE } from "@/styles/constants";
+import { opensans, raleway } from "@/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
@@ -51,13 +51,13 @@ export const Logo = styled(Image)(({ theme }) => ({
     height: "150px",
   },
   [theme.breakpoints.down("md")]: {
-    width: "370px",
-    height: "150px",
+    width: "300px",
+    height: "100px",
   },
 
   [theme.breakpoints.down("sm")]: {
-    width: "270px",
-    height: "150px",
+    width: "200px",
+    height: "100px",
   },
 }));
 
@@ -67,74 +67,47 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "15px",
+    fontSize: "14px",
     textAlign: "start",
+    margin: " 30px 0 30px 30px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "18px",
+    fontSize: "13px",
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "14px",
+    fontSize: "12px",
   },
 }));
 
 export const FastLinks = styled(MuiBox)(({ theme }) => ({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "space-around",
 
   [theme.breakpoints.up("md")]: {
-    width: "70%",
+    width: "100%",
+    margin: "30px 0",
   },
 
   [theme.breakpoints.down("md")]: {
-    width: "80%",
+    width: "100%",
     margin: "50px 0",
   },
 
   [theme.breakpoints.down("sm")]: {
-    width: "80%",
+    width: "100%",
     margin: "40px 0",
-  },
-}));
-
-export const Title = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
-  fontWeight: SEMI_BOLD,
-  fontFamily: opensans.style.fontFamily,
-  marginBottom: "10px",
-  textAlign: "center",
-
-  [theme.breakpoints.up("md")]: {
-    fontSize: "25px",
-  },
-
-  [theme.breakpoints.down("md")]: {
-    fontSize: "25px",
-  },
-
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "20px",
-  },
-}));
-
-export const LinksContainer = styled(MuiBox)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  gap: "5px",
-
-  "&.second": {
-    [theme.breakpoints.down("sm")]: {
-      display: "none",
-    },
   },
 }));
 
 export const Label = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   textAlign: "center",
-  fontFamily: raleway.style.fontFamily,
+  fontFamily: opensans.style.fontFamily,
 
+  [theme.breakpoints.up("md")]: {
+    fontSize: "18px",
+  },
   [theme.breakpoints.down("md")]: {
     fontSize: "18px",
   },
@@ -143,29 +116,51 @@ export const Label = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const Button = styled(MuiButton)(({ theme }) => ({
+export const ContactLabel = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
+  textAlign: "center",
   fontFamily: opensans.style.fontFamily,
-  fontWeight: BOLD,
-  lineHeight: "120%",
-  border: "2px solid white",
-  margin: "0 auto 35px auto",
-  height: "50px",
 
   [theme.breakpoints.up("md")]: {
-    width: "250px",
-    fontSize: "18px",
-    marginTop: "50px",
+    fontSize: "15px",
+    marginBottom: "10px",
   },
-
   [theme.breakpoints.down("md")]: {
-    width: "250px",
     fontSize: "18px",
   },
-
   [theme.breakpoints.down("sm")]: {
-    width: "200px",
     fontSize: "16px",
+  },
+}));
+
+export const ContactsBox = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  marginTop: "20px",
+
+  [theme.breakpoints.up("md")]: {
+    gap: "30px",
+  },
+  [theme.breakpoints.down("md")]: {
+    flexWrap: "wrap",
+    gap: "20px",
+    justifyContent: "space-between",
+    flexBasis: "calc(33.33% - 20px)",
+  },
+  [theme.breakpoints.down("sm")]: {},
+}));
+
+export const Contact = styled(MuiBox)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "center",
+
+  [theme.breakpoints.up("md")]: {},
+  [theme.breakpoints.down("md")]: {
+    width: "31%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "47%",
   },
 }));
 

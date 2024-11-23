@@ -1,12 +1,12 @@
 export const content = [
   {
-    title: "ON-SITE CONSULTATIONS",
+    title: "EASTERN EUROPEAN STYLE, GLOBALLY INSPIRED TECH",
   },
   {
     title: "24/7 POST-INSTALLATION TECH SUPPORT",
   },
   {
-    title: "PROFESSIONAL EXPERTS",
+    title: "WE MAKE HOMES SMARTER, FROM ALASKA TO FLORIDA",
   },
   {
     title: "TIMELY SERVICE",

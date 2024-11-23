@@ -8,6 +8,7 @@ import { Footer } from "../../components/shared/footer";
 import { GreenDivider } from "../../components/shared/green-divider";
 
 import theme from "../styles/theme";
+import { HubSpotScript } from "../../components/hs-chatbot";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -36,13 +37,7 @@ export default function RootLayout({
             <Footer divider={<GreenDivider />} />
           </ThemeProvider>
         </AppRouterCacheProvider>
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="//js-na1.hs-scripts.com/48166700.js"
-        ></script>
+        <HubSpotScript />
       </body>
     </html>
   );

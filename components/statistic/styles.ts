@@ -11,7 +11,6 @@ import {
   MAIN_SERVICES_BACKGROUND,
   SEMI_BOLD,
   WHITE,
-  BOLD,
   GREEN,
 } from "@/styles/constants";
 import { opensans, raleway } from "../../src/app/layout";
@@ -91,22 +90,18 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  fontWeight: BOLD,
   border: "2px solid white",
   lineHeight: "120%",
-  height: "50px",
+  height: "40px",
+  fontSize: "14px",
 
   [theme.breakpoints.up("md")]: {
     width: "300px",
-    fontSize: "16px",
   },
   [theme.breakpoints.down("md")]: {
     width: "300px",
-    fontSize: "16px",
-    height: "40px",
   },
   [theme.breakpoints.down("sm")]: {
     width: "250px",
-    fontSize: "16px",
   },
 }));

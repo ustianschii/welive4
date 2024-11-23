@@ -509,9 +509,8 @@ export const GCHome = [
     image: "/home/game-console.png",
     imagetablet: "/home/tablet/game-console.jpg",
     titlestart: "Customized",
-    titlehighlightedend: " RGBW ",
-    titleend: "design",
+    titlehighlightedend: " Lighting Design ",
     firstdescription:
-      "In today’s technology-driven world, smart home devices have become an integral part of our daily lives. One such innovation that has gained immense popularity is the RGBW LED strip controller. With the ability to create vibrant and customizable lighting effects, this device has revolutionized home decor and lighting solutions.",
+      "Smart home devices are a vital part of our daily lives in today's tech-driven world. One standout innovation is the RGBW LED lights control. These devices have revolutionized lighting options and home decor. It creates vibrant and adjustable lighting effects. Whether it's day or night, or even during security events, and it adapts to your mood!",
   },
 ];

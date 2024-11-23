@@ -13,15 +13,13 @@ export const HowWeWork = () => {
         <Highlighted>WORK</Highlighted>
       </Title>
       <Description>
-        Providing exceptional customer care is a core value at WE LIVE 4, and we
-        go above and beyond to ensure that support continues long after the
-        initial stage. After the initial stage, our support continues to be
-        available as we are fully committed to providing ongoing help throughout
-        your entire journey with us, ensuring your satisfaction.
-        <br /> <br />
-        From the moment you begin your purchase journey to even after it is
-        finished, our commitment is to offer you prompt and attentive help,
-        ensuring that you are fully satisfied.
+        Exceptional customer care is a core value at WE LIVE 4. We go above and
+        beyond to support you long after your initial stage. We are fully
+        committed to providing ongoing help throughout your entire journey with
+        us. Your satisfaction is our top priority. From the moment you start
+        your design journey, we are here for you. Even after your home build or
+        renovation is complete, we offer prompt and attentive support. We ensure
+        that you feel fully satisfied every step of the way.
       </Description>
       <CardContainer>
         {CardData.map((card, index) => (
@@ -34,7 +32,7 @@ export const HowWeWork = () => {
           />
         ))}
       </CardContainer>
-      <Button href={ROUTES.CONSULTATION}>GET A FREE QUOTE!</Button>
+      <Button href={ROUTES.CONSULTATION}>REQUEST A CONSULTATION</Button>
     </Container>
   );
 };

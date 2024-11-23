@@ -17,7 +17,7 @@ export const CardContent = [
   {
     image: "/smart-control-mobile/simple.png",
     imagetablet: "/smart-control-mobile/tablet/simple.png",
-    text: "A quick tap on your softphone will get all your smart devices to deliver the information you need.",
+    text: "Your smart home remains functional even if your internet connection is down. You can still control lighting, heating, and other automated functions.",
   },
   {
     image: "/smart-control-mobile/design.png",

@@ -18,12 +18,15 @@ export const OurBrands = () => {
   const getHeight = () => (isMobile ? 60 : isTablet ? 100 : 300);
 
   const partners = [
+    "/our-brands-mobile/loxone.png",
     "/our-brands-mobile/aegis.png",
     "/our-brands-mobile/lorbeam.png",
     "/our-brands-mobile/mount-it.png",
     "/our-brands-mobile/next-level.png",
     "/our-brands-mobile/unify.png",
   ];
+
+  const infinitePartners = [...partners, ...partners];
 
   return (
     <>
@@ -32,7 +35,7 @@ export const OurBrands = () => {
           OUR<Highlighted>BRANDS</Highlighted>
         </Title>
         <BrandsBox>
-          {partners.map((partner, index) => (
+          {infinitePartners.map((partner, index) => (
             <BrandsImages
               key={index}
               alt="our-brands"

@@ -159,10 +159,14 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   lineHeight: "120%",
   margin: "20px 0",
   height: "40px",
-  fontSize: "15px",
+  fontSize: "14px",
+
+  [theme.breakpoints.up("lg")]: {
+    padding: "0 20px",
+  },
 
   [theme.breakpoints.up("md")]: {
-    width: "250px",
+    minWidth: "250px",
   },
   [theme.breakpoints.down("md")]: {
     width: "250px",
