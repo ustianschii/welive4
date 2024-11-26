@@ -1,4 +1,5 @@
 import React from "react";
+
 import { BannerContainer, Button, Wrapper, Subtitle, Title } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 
@@ -11,7 +12,7 @@ export const TextUs = () => {
           Have questions or need assistance? <br />
           <Highlighted>Text us now!</Highlighted>
         </Subtitle>
-        <Button fullWidth>
+        <Button fullWidth href="tel:8339354834">
           833 -<Highlighted>WE</Highlighted>-<Highlighted>LIVE</Highlighted>-
           <Highlighted>4</Highlighted>
         </Button>

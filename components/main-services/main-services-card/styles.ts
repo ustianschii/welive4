@@ -1,19 +1,26 @@
 "use client";
 
 import { styled } from "@mui/material/styles";
-import { Button as MuiButton } from "@mui/material";
-
-import Image from "next/image";
+import { Button as MuiButton, Box as MuiBox } from "@mui/material";
 
 import { WHITE } from "@/styles/constants";
 import { opensans } from "../../../src/app/layout";
 
-export const Background = styled(Image)(({ theme }) => ({
+export const ImageBox = styled(MuiBox)(({ theme }) => ({
   width: "100%",
-  height: "100%",
-  borderRadius: "16px",
+  position: "relative",
+  [theme.breakpoints.up("lg")]: {
+    minHeight: "300px",
+  },
+  [theme.breakpoints.down("lg")]: {
+    minHeight: "280px",
+  },
   [theme.breakpoints.down("md")]: {
+    minHeight: "230px",
     borderRadius: "10px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    minHeight: "180px",
   },
 }));
 
@@ -28,7 +35,7 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   width: "100%",
 
   [theme.breakpoints.up("md")]: {
-    padding: "10px 10px",
+    padding: "5px 10px",
     fontSize: "15px",
   },
 

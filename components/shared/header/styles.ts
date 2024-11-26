@@ -18,7 +18,7 @@ import { AppBarProps, ContainerProps, ToolbarProps } from "./types";
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
   ({ theme, background, backcolor, tabletbackground, desktopbackground }) => ({
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("sm")]: {
       backgroundColor:
         desktopbackground || backcolor ? backcolor ?? "gray" : "gray",
       backgroundImage: desktopbackground ?? "none",

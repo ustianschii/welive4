@@ -9,7 +9,6 @@ import {
   BCSystemDesignWBorder,
 } from "../../../components/shared/black-cards/data";
 import { TEXT_US_BACKGROUND } from "@/styles/constants";
-import { SystemDesignForm } from "../../../components/system-design-form";
 import { TextUs } from "../../../components/text-us";
 import { Header } from "../../../components/shared/header";
 import {
@@ -21,6 +20,8 @@ import { GreenDivider } from "../../../components/shared/green-divider";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
 import { Meta } from "../../../components/meta";
+import { CCChecklistSystemDesign } from "../../../components/cc-checklist-system-design";
+import { Container, Wrapper } from "@/styles/checklist-system-design-styles";
 
 export default function SystemDesign() {
   return (
@@ -94,7 +95,11 @@ export default function SystemDesign() {
           REQUEST
         </Title>
       </Separator>
-      <SystemDesignForm />
+      <Wrapper>
+        <Container>
+          <CCChecklistSystemDesign />
+        </Container>
+      </Wrapper>
       <TextUs />
     </>
   );

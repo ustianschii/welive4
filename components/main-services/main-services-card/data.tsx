@@ -3,19 +3,19 @@ import { ROUTES } from "../../../src/app/utils/routes-constants";
 export const servicesData = [
   {
     img: "/services-images-mobile/loxone-automation.jpg",
-    imgdesktop: "/services-images-mobile/desktop/loxone-automation.png",
+    imgdesktop: "/services-images-mobile/desktop/loxone-automation.jpg",
     text: "LOXONE AUTOMATION",
     link: ROUTES.LOXONE_AUTOMATION,
   },
   {
     img: "/services-images-mobile/entertainment-system.jpg",
-    imgdesktop: "/services-images-mobile/desktop/entertainment-system.png",
+    imgdesktop: "/services-images-mobile/desktop/entertainment-system.jpg",
     text: "ENTERTAINMENT SPACE",
     link: ROUTES.AUDIO_VISUAL_SYSTEMS,
   },
   {
-    img: "/services-images-mobile/app-control-second.svg",
-    imgdesktop: "/services-images-mobile/app-control-second.svg",
+    img: "/services-images-mobile/energy-management.jpg",
+    imgdesktop: "/services-images-mobile/desktop/energy-management.jpg",
     text: "ENERGY MANAGEMENT",
     link: ROUTES.ENERGY_MANAGEMENT,
   },
@@ -33,7 +33,7 @@ export const servicesData = [
   },
   {
     img: "/services-images-mobile/sound-system.jpg",
-    imgdesktop: "/services-images-mobile/desktop/sound-system.png",
+    imgdesktop: "/services-images-mobile/desktop/sound-system.jpg",
     text: "SOUND SYSTEM",
     link: ROUTES.HIGH_PERFORMANCE_SOUND,
   },

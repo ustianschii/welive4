@@ -76,8 +76,8 @@ export const Label = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
 
   [theme.breakpoints.down("md")]: {
-    marginBottom: "10px",
     fontSize: "17px",
+    marginBottom: "10px",
   },
   [theme.breakpoints.down("sm")]: {
     marginBottom: "5px",

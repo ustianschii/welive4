@@ -1,10 +1,10 @@
 import React from "react";
-import { ChecklistLongFields } from "../../../components/cheklist-long-fields";
 import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 import { Header } from "../../../components/shared/header";
 import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
 import { Meta } from "../../../components/meta";
-// import { HSFormChecklistLong } from "../../../components/hs-form-checklist-long";
+import { CCChecklistLong } from "../../../components/cc-checklist-long";
+import { Container, Wrapper } from "@/styles/checklist-long-styles";
 
 export default function ChecklistLong() {
   return (
@@ -18,12 +18,15 @@ export default function ChecklistLong() {
             below
           </Subtitle>
         }
-        mobileheight="150px"
+        mobileheight="200px"
         tabletheight="150px"
-        desktopheight="100px"
+        desktopheight="150px"
       />
-      <ChecklistLongFields />
-      {/* <HSFormChecklistLong /> */}
+      <Wrapper>
+        <Container>
+          <CCChecklistLong />
+        </Container>
+      </Wrapper>
     </>
   );
 }

@@ -52,16 +52,16 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
 
   [theme.breakpoints.up("md")]: {
-    fontSize: "40px",
-    padding: "0 70px",
+    fontSize: "35px",
+    padding: "0 150px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "40px",
+    fontSize: "35px",
     padding: "0 70px",
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "33px",
-    padding: "0 20px",
+    fontSize: "30px",
+    padding: "0 10px",
   },
 }));
