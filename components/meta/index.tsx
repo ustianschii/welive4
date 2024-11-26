@@ -18,6 +18,10 @@ export const Meta = ({
       <Analytics />
       <meta name="keywords" content={keywords.join(", ")} />
       <meta name="description" content={description} />
+      <meta
+        name="google-site-verification"
+        content="rl1QvSKCp91lAgUm-bTeIj6dx3SxMLW564MWF1Zlngk"
+      />
       <link
         rel="icon"
         type="image/png"
