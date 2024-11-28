@@ -11,22 +11,22 @@ export const FormBox = styled(MuiBox)(({ theme }) => ({
   borderColor: GREEN,
 
   [theme.breakpoints.up("lg")]: {
-    width: "600px",
-    maxHeight: "1250px",
+    width: "900px",
+    maxHeight: "2080px",
   },
 
   [theme.breakpoints.down("lg")]: {
     width: "600px",
-    maxHeight: "1250px",
+    maxHeight: "2150px",
   },
 
   [theme.breakpoints.down("md")]: {
     width: "600px",
-    maxHeight: "1250px",
+    maxHeight: "2150px",
   },
 
   [theme.breakpoints.down("sm")]: {
     minWidth: "100%",
-    maxHeight: "1420px",
+    maxHeight: "2350px",
   },
 }));

@@ -11,7 +11,7 @@ export const Meta = ({
   keywords = [
     "welive4, smart home, ev charging, network, energy management, game room, home theater, wifi, tv mounting, home audio, loxone, outdoor tv",
   ],
-  description = "Experience smart technology with WeLive4",
+  description = "We integrate advanced systems technology for smart home, office, and building automation, allowing users to easily manage their environments.",
 }: Partial<MetaProps>) => {
   return (
     <>

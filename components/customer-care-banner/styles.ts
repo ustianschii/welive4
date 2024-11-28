@@ -26,7 +26,7 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SUBMIT_FORM_BACKGROUND,
   border: "2px solid",
   borderColor: GREEN,
-  borderRadius: "10px",
+  borderRadius: "20px",
 
   [theme.breakpoints.only("md")]: {
     width: "80%",
@@ -34,12 +34,11 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   },
 
   [theme.breakpoints.up("lg")]: {
-    width: "50%",
+    width: "900px",
     padding: "30px",
   },
 
   [theme.breakpoints.down("md")]: {
-    width: "90%",
     padding: "30px",
   },
   [theme.breakpoints.down("sm")]: {

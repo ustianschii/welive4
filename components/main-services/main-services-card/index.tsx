@@ -25,8 +25,8 @@ export const Card: React.FC<CardProps> = ({ link, img, imgdesktop, text }) => {
           src={imageSrc}
           quality={50}
           fill
-          objectFit="cover"
-          style={{ borderRadius: "10px" }}
+          sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ borderRadius: "10px", objectFit: "cover" }}
         />
       </ImageBox>
       <Link href={link}>

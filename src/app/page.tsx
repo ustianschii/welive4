@@ -28,10 +28,7 @@ import { Meta } from "../../components/meta";
 export default function Home() {
   return (
     <>
-      <Meta
-        title="WeLive4 | Home"
-        description="Smart technology has many cool designs and solutions to make your life more comfortable and bring additional passive income to your household - not to mention more fun!"
-      />
+      <Meta title="WeLive4 | Home" />
       <Header
         background={`url('/header-mobile/header-bg.jpg')`}
         tabletbackground={`url('/header-mobile/desktop/header-bg.jpg')`}

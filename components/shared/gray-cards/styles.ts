@@ -8,8 +8,6 @@ import {
   Button as MuiButton,
 } from "@mui/material";
 
-import Image from "next/image";
-
 import {
   MAIN_SERVICES_BACKGROUND,
   GREEN,
@@ -25,6 +23,7 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
     padding: "30px 0",
     display: "flex",
     flexDirection: "column",
+    gap: "40px",
   },
 
   [theme.breakpoints.up("md")]: {
@@ -89,19 +88,24 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const CustomImage = styled(Image)(({ theme }) => ({
-  borderRadius: "10px",
-  objectFit: "cover",
-  [theme.breakpoints.up("md")]: {
-    maxWidth: "50%",
-    minWidth: "40%",
+export const ImageBox = styled(MuiBox)(({ theme }) => ({
+  // borderRadius: "10px",
+  // objectFit: "cover",
+  position: "relative",
+  width: "100%",
+  [theme.breakpoints.up("lg")]: {
+    minHeight: "400px",
+  },
+  [theme.breakpoints.down("lg")]: {
+    minHeight: "400px",
   },
   [theme.breakpoints.down("md")]: {
-    maxWidth: "50%",
-    minWidth: "30%",
+    minHeight: "400px",
+    width: "70%",
   },
   [theme.breakpoints.down("sm")]: {
-    minWidth: "90%",
+    minHeight: "300px",
+    width: "80%",
   },
 }));
 

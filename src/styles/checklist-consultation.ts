@@ -6,7 +6,7 @@ import { Container as MuiContainer, Box as MuiBox } from "@mui/material";
 import { MAIN_SERVICES_BACKGROUND } from "./constants";
 
 export const Wrapper = styled(MuiBox)(() => ({
-  minHeight: "1350px",
+  minHeight: "2150px",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
 }));
 export const Container = styled(MuiContainer)(({ theme }) => ({

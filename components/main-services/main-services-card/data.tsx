@@ -27,7 +27,7 @@ export const servicesData = [
   },
   {
     img: "/services-images-mobile/network-system.jpg",
-    imgdesktop: "/services-images-mobile/desktop/network-system.png",
+    imgdesktop: "/services-images-mobile/desktop/network-system.jpg",
     text: "NETWORK SYSTEM",
     link: ROUTES.NETWORK_SYSTEM,
   },
