@@ -110,6 +110,7 @@ export const Header: React.FC<HeaderProps> = ({
               src="/header-mobile/logo.svg"
               width={0}
               height={0}
+              priority
             />
           </Link>
           <DropDownMenu>

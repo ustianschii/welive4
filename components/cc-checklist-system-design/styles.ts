@@ -11,8 +11,8 @@ export const FormBox = styled(MuiBox)(({ theme }) => ({
   borderColor: GREEN,
 
   [theme.breakpoints.up("lg")]: {
-    width: "600px",
-    maxHeight: "1250px",
+    width: "900px",
+    maxHeight: "1200px",
   },
 
   [theme.breakpoints.down("lg")]: {

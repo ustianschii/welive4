@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://localhost:3000/sitemap.ts
+Sitemap: http://welive4.com/sitemap.ts
