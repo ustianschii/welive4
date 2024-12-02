@@ -100,10 +100,10 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("md")]: {
-    width: "60%",
+    width: "50%",
   },
 
   [theme.breakpoints.down("sm")]: {
-    width: "100%",
+    width: "70%",
   },
 }));

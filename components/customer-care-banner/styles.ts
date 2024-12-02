@@ -28,13 +28,13 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   borderColor: GREEN,
   borderRadius: "20px",
 
-  [theme.breakpoints.only("md")]: {
-    width: "80%",
+  [theme.breakpoints.up("lg")]: {
+    width: "900px",
     padding: "30px",
   },
 
-  [theme.breakpoints.up("lg")]: {
-    width: "900px",
+  [theme.breakpoints.down("lg")]: {
+    width: "600px",
     padding: "30px",
   },
 
@@ -42,29 +42,27 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
     padding: "30px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "90%",
-    padding: "20px",
+    width: "95%",
+    padding: "20px 20px 40px 20px",
   },
 }));
 
-export const Subtitle = styled(MuiTypography)(({ theme }) => ({
+export const Subtitle = styled(MuiTypography)(() => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
   fontSize: "15px",
   margin: "25px 0",
-  [theme.breakpoints.down("sm")]: {},
 }));
 
-export const FeaturesBox = styled(MuiBox)(({ theme }) => ({
+export const FeaturesBox = styled(MuiBox)(() => ({
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "space-between",
   gap: "16px",
-  [theme.breakpoints.down("sm")]: {},
 }));
 
-export const Feature = styled(MuiBox)(({ theme }) => ({
+export const Feature = styled(MuiBox)(() => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -73,9 +71,6 @@ export const Feature = styled(MuiBox)(({ theme }) => ({
   flex: "0 0 calc(50% - 16px)",
   borderRadius: "5px",
   height: "50px",
-
-  [theme.breakpoints.down("md")]: {},
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const FeatureText = styled(MuiTypography)(({ theme }) => ({
@@ -102,6 +97,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
 export const Address = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+  textAlign: "center",
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
   },

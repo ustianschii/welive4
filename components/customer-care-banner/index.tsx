@@ -17,7 +17,7 @@ export const CustomerCare = () => {
     "ON-SITE ASSESSMENT",
     "EXPERT ADVICE",
     "REMOTE CONSULTATION",
-    "ALL-FREE QUOTING",
+    "PERSONALIZED EXPERIENCE",
   ];
 
   return (
@@ -35,31 +35,30 @@ export const CustomerCare = () => {
             </Feature>
           ))}
         </FeaturesBox>
-        <Title>Locations</Title>
+        <Title>COUNTRYWIDE</Title>
         <Box display="flex" flexDirection="row" gap="30px">
           <Address>
-            WE LIVE 4 HQ <br />
-            300 Delaware Ave <br />
-            Suite 210-515 <br />
-            Wilmington, DE 19801
-          </Address>
-          <Address>
-            WE LIVE 4 Bethlehem <br />
-            1 E Broad St <br />
-            Ste 130-1115 <br />
-            Bethlehem, PA 18018
-          </Address>
-          <Address>
-            WE LIVE 4 Somerset <br />
-            900 Easton Ave <br />
-            Ste 26 PMB 1036 <br />
-            Somerset, NJ 08873
+            We Live 4 is based in Delaware. We specialize in technology design
+            and integration services for Eastern European-Americans and anyone
+            who emphasizes durability with a focus on functionality and
+            practicality. Our tailored solutions cater to commercial buildings,
+            offices, and homes all across the United States, from Alaska to
+            Miami. We focus on systems and custom devices integration, software
+            development, networking, green tech, and Audio & Video solutions. We
+            adapt our services to meet the unique challenges of each region.{" "}
+            <br /> <br />
+            Our team uses advanced communication tools for continuous
+            collaboration with clients. We are committed to innovation and
+            incorporate the latest technologies. This forward-thinking approach
+            prepares you for future challenges and supports your business and
+            personal goals and experience. Contact us today to discover how we
+            can help you thrive!
           </Address>
         </Box>
-        <Title>Working hours</Title>
+        <Title>WORKING HOURS</Title>
         <WorkingHours>
-          Monday - Friday: 8 am - 6 pm <br />
-          Saturday: 9 am - 3 pm
+          Monday - Thursday: 9 AM - 6 PM <br /> <br />
+          Friday: 9 AM - 5 PM Eastern Standard Time
         </WorkingHours>
       </BannerContainer>
     </Wrapper>

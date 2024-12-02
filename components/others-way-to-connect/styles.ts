@@ -29,13 +29,12 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
   borderColor: GREEN,
   borderRadius: "20px",
 
-  [theme.breakpoints.only("md")]: {
-    width: "80%",
-    padding: "30px",
-  },
-
   [theme.breakpoints.up("lg")]: {
     width: "900px",
+    padding: "30px",
+  },
+  [theme.breakpoints.down("lg")]: {
+    width: "600px",
     padding: "30px",
   },
 
@@ -43,7 +42,7 @@ export const BannerContainer = styled(MuiContainer)(({ theme }) => ({
     padding: "30px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "90%",
+    width: "95%",
     padding: "20px",
   },
 }));
@@ -53,7 +52,6 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
 
   [theme.breakpoints.up("md")]: {
-    textAlign: "center",
     fontSize: "16px",
     margin: "10px 0 0 20px",
   },
@@ -64,7 +62,7 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "14px",
+    fontSize: "12px",
     margin: "0 0 0 20px",
   },
 }));

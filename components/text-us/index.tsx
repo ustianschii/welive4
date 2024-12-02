@@ -12,9 +12,8 @@ export const TextUs = () => {
           Have questions or need assistance? <br />
           <Highlighted>Text us now!</Highlighted>
         </Subtitle>
-        <Button fullWidth href="tel:8339354834">
-          833 -<Highlighted>WE</Highlighted>-<Highlighted>LIVE</Highlighted>-
-          <Highlighted>4</Highlighted>
+        <Button fullWidth href="tel:8332428899">
+          833 - 242 - 8899
         </Button>
       </BannerContainer>
     </Wrapper>
