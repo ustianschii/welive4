@@ -58,7 +58,7 @@ export const CustomerCare = () => {
         <Title>WORKING HOURS</Title>
         <WorkingHours>
           Monday - Thursday: 9 AM - 6 PM <br /> <br />
-          Friday: 9 AM - 5 PM Eastern Standard Time
+          Friday: 9 AM - 5 PM <br /> <br /> Eastern Standard Time
         </WorkingHours>
       </BannerContainer>
     </Wrapper>

@@ -1,10 +1,13 @@
 "use client";
 
 import React from "react";
-import { StaticDatePicker } from "./styles";
+
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+
 import dayjs, { Dayjs } from "dayjs";
+
+import { StaticDatePicker } from "./styles";
 
 export const DatePicker = () => {
   const [value, setValue] = React.useState<Dayjs | null>(dayjs());

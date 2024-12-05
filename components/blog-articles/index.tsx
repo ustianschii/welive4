@@ -20,7 +20,7 @@ export const BlogArticles = () => {
       {articles.map((article, index) => (
         <CardContainer key={index}>
           <Image
-            alt="article-image"
+            alt={article.alt}
             src={article.image}
             height={0}
             width={0}

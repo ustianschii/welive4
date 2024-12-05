@@ -32,7 +32,7 @@ export const AvSolutions = () => {
         {avsolutions.map((item, index) => (
           <Box key={index} display="flex" alignItems="flex-start" mt="5px">
             <Image
-              alt="solution-logo"
+              alt={item.alt}
               src={item.icon}
               height={height}
               width={width}

@@ -7,7 +7,7 @@ interface MetaProps {
 }
 
 export const Meta = ({
-  title = "WeLive4",
+  title = "",
   keywords = [
     "welive4, smart home, ev charging, network, energy management, game room, home theater, wifi, tv mounting, home audio, loxone, outdoor tv",
   ],

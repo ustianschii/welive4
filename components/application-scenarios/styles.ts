@@ -46,10 +46,6 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
       boxSizing: "border-box",
     },
   },
-
-  [theme.breakpoints.down("md")]: {},
-
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Card = styled(MuiBox)<{ background: string }>(

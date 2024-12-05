@@ -28,12 +28,12 @@ export const CustomTabs = () => {
     <Wrapper>
       <Container maxWidth="lg" disableGutters>
         <Tabs variant="fullWidth" value={activeTab} onChange={handleChange}>
-          {data.map((tab, index) => (
-            <Tab key={index} label={tab.title} wrapped />
+          {data.map((tab) => (
+            <Tab key={tab.title} label={tab.title} wrapped />
           ))}
         </Tabs>
         {data.map((tab, index) => (
-          <TabPanel key={index} value={activeTab} index={index}>
+          <TabPanel key={tab.title} value={activeTab} index={index}>
             <TabContent
               image={tab.image}
               title={tab.title}

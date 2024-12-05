@@ -19,8 +19,12 @@ export const Everyone = () => {
           </BorderBox>
         </TitleBox>
         <CardContainer>
-          {CardData.map((data, index) => (
-            <Card key={index} background={data.background} title={data.title} />
+          {CardData.map((data) => (
+            <Card
+              key={data.title}
+              background={data.background}
+              title={data.title}
+            />
           ))}
         </CardContainer>
       </Container>

@@ -16,9 +16,9 @@ export const KeyFeatures: React.FC<KeyFeaturesProps> = ({
   return (
     <Box sx={{ backgroundColor: SEPARATOR_BACKGROUND }}>
       <Container maxWidth="lg" disableGutters flex={flex} gap={gap} maxw={maxw}>
-        {data.map((item, index) => (
+        {data.map((item) => (
           <KeyFeaturesCard
-            key={index}
+            key={item.title}
             icon={item.icon}
             title={item.title}
             features={item.features}

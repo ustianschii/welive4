@@ -7,20 +7,55 @@ import { Box } from "@mui/material";
 import { Container, Description, LogoWrapper, Subtitle, Title } from "./styles";
 import { ARTICLE_BACKGROUND } from "@/styles/constants";
 
+const sections = [
+  {
+    id: 1,
+    subtitle: "Design system to every custom application",
+    descriptions: [
+      {
+        id: 1,
+        text: "No two spaces are the same, which is why we specialize in tailoring Loxone systems to fit every custom application.",
+      },
+      {
+        id: 2,
+        text: "Whether you’re looking to automate your home, office, or commercial property, our experts will work closely with you to understand your requirements and design a solution that perfectly aligns with your vision.",
+      },
+      {
+        id: 3,
+        text: "With our personalized approach, you can rest assured that your Loxone system will be optimized to enhance efficiency, comfort, and convenience.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    subtitle: "Integrate with leading brands in the business",
+    descriptions: [
+      {
+        id: 1,
+        text: "We believe in offering you the best of the best. That’s why we partner with leading brands in the industry to provide you with a comprehensive range of options for your automation needs.",
+      },
+      {
+        id: 2,
+        text: "From lighting and shading elements to security and audio-visual systems, we integrate top-quality products seamlessly into your Loxone setup, ensuring a smooth and efficient operation every step of the way.",
+      },
+    ],
+  },
+];
+
 export const PartneredInstaller = () => {
   return (
     <Box sx={{ backgroundColor: ARTICLE_BACKGROUND }}>
       <Container maxWidth="lg" disableGutters>
         <LogoWrapper>
           <Image
-            alt="loxone-logo"
+            alt="loxone"
             src="/loxone-commercial/loxone-logo.svg"
             width={260}
             height={50}
             quality={100}
           />
           <Image
-            alt="welive4-logo"
+            alt="welive4"
             src="/header-mobile/logo.svg"
             width={300}
             height={70}
@@ -40,34 +75,14 @@ export const PartneredInstaller = () => {
           to guide you every step of the way, ensuring a seamless experience and
           maximum satisfaction.
         </Description>
-        <Subtitle>Design system to every custom application</Subtitle>
-        <Description>
-          No two spaces are the same, which is why we specialize in tailoring
-          Loxone systems to fit every custom application.
-        </Description>
-        <Description>
-          Whether you&apos;re looking to automate your home, office, or
-          commercial property, our experts will work closely with you to
-          understand your requirements and design a solution that perfectly
-          aligns with your vision.
-        </Description>
-        <Description>
-          With our personalized approach, you can rest assured that your Loxone
-          system will be optimized to enhance efficiency, comfort, and
-          convenience.
-        </Description>
-        <Subtitle>Integrate with leading brands in the business</Subtitle>
-        <Description>
-          We believe in offering you the best of the best. That&apos;s why
-          we partner with leading brands in the industry to provide you with a
-          comprehensive range of options for your automation needs.
-        </Description>
-        <Description>
-          From lighting and shading elements to security and audio-visual
-          systems, we integrate top-quality products seamlessly into your Loxone
-          setup, ensuring a smooth and efficient operation every step of the
-          way.
-        </Description>
+        {sections.map((section) => (
+          <Box key={section.id}>
+            <Subtitle>{section.subtitle}</Subtitle>
+            {section.descriptions.map((desc) => (
+              <Description key={desc.id}>{desc.text}</Description>
+            ))}
+          </Box>
+        ))}
       </Container>
     </Box>
   );

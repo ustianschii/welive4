@@ -6,9 +6,9 @@ import { servicesData } from "./main-services-card/data";
 export const MainServices = () => {
   return (
     <Container>
-      {servicesData.map((service, index) => (
+      {servicesData.map((service) => (
         <Card
-          key={index}
+          key={service.text}
           link={service.link}
           img={service.img}
           imgdesktop={service.imgdesktop}

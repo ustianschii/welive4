@@ -22,9 +22,9 @@ export const HowWeWork = () => {
         that you feel fully satisfied every step of the way.
       </Description>
       <CardContainer>
-        {CardData.map((card, index) => (
+        {CardData.map((card) => (
           <Card
-            key={index}
+            key={card.title}
             background={card.background}
             size={card.size}
             description={card.description}

@@ -13,9 +13,9 @@ export const ServicesList = () => {
     <Wrapper>
       <ServicesBox>
         <List>
-          {services.map((service, index) => (
+          {services.map((service) => (
             <Link
-              key={index}
+              key={service.label}
               href={service.link}
               style={{ textDecoration: "none" }}
             >

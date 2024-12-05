@@ -87,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <AppBar
-      id="#top"
+      id="home"
       position="static"
       background={background}
       tabletbackground={tabletbackground}

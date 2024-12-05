@@ -109,9 +109,7 @@ export const Address = styled(MuiTypography)(({ theme }) => ({
 export const WorkingHours = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
-  [theme.breakpoints.down("md")]: {
-    fontSize: "16px",
-  },
+  textAlign: "center",
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
   },

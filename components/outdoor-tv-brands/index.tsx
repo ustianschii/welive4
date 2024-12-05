@@ -36,8 +36,8 @@ export const BlackCardsBox = () => {
                 style={{ marginBottom: "-15px", zIndex: "1" }}
               />
               <CardContent>
-                {item.features.map((feature, index) => (
-                  <React.Fragment key={index}>
+                {item.features.map((feature) => (
+                  <React.Fragment key={feature.title}>
                     <CardTitle>{feature.title}</CardTitle>
                     <Description>{feature.description}</Description>
                   </React.Fragment>

@@ -19,8 +19,8 @@ export const ForResidential = () => {
       />
       <Title>For Residential</Title>
       <FeaturesBox>
-        {data.map((card, index) => (
-          <Card key={index} icon={card.icon} text={card.text} />
+        {data.map((card) => (
+          <Card key={card.id} icon={card.icon} text={card.text} />
         ))}
       </FeaturesBox>
       <Button href={ROUTES.LOXONE_RESIDENTIAL}>LEARN MORE</Button>

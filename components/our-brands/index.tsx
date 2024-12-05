@@ -37,7 +37,7 @@ export const OurBrands = () => {
         <BrandsBox>
           {infinitePartners.map((partner, index) => (
             <BrandsImages
-              key={index}
+              key={index + 1}
               alt="our-brands"
               src={partner}
               width={getWidth()}

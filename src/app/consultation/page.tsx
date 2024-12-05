@@ -41,8 +41,13 @@ export default function Consultation() {
         divider={<GreenDivider />}
       />
       <Separator height="80px" padding="20px 0">
+        <Title>Customer Care</Title>
+      </Separator>
+      <CustomerCare />
+      <TextUs />
+      <Separator height="80px" padding="20px 0">
         <Title>
-          <Highlighted>Reach Out To Us!</Highlighted>
+          <Highlighted>Fill Out Your Request!</Highlighted>
         </Title>
       </Separator>
       <Wrapper>
@@ -50,11 +55,6 @@ export default function Consultation() {
           <CCChecklistConsultation />
         </Container>
       </Wrapper>
-      <TextUs />
-      <Separator height="80px" padding="20px 0">
-        <Title>Customer Care</Title>
-      </Separator>
-      <CustomerCare />
       <OtherWayToConnect />
     </>
   );

@@ -42,7 +42,6 @@ export const FeaturesBox = styled(MuiBox)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     gridTemplateColumns: "repeat(3, 1fr)",
-
     minHeight: "200px",
   },
 }));
