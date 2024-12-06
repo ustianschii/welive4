@@ -506,8 +506,8 @@ export const GCOutdoorEntertainmentSpeaker = [
 
 export const GCHome = [
   {
-    image: "/home/game-console.png",
-    imagetablet: "/home/tablet/game-console.jpg",
+    image: "/home/lighting-design.jpg",
+    imagetablet: "/home/tablet/lighting-design.jpg",
     titlestart: "Customized",
     titlehighlightedend: " Lighting Design ",
     firstdescription:

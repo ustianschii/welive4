@@ -1,12 +1,12 @@
 import React from "react";
 
+import Link from "next/link";
+
 import { Container, Description, Title, Button } from "../statistic/styles";
 import { Highlighted } from "../hero-title/styles";
 import { Separator } from "../shared/gray-separator";
 import { ROUTES } from "../../src/app/utils/routes-constants";
 import { GreenDivider } from "../shared/green-divider";
-
-import Link from "next/link";
 
 export const SystemDesign = () => {
   return (

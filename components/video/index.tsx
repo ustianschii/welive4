@@ -4,6 +4,7 @@ import { Box, Card, CardMedia, useTheme } from "@mui/material";
 
 import { Container, Title, Button } from "./styles";
 import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { ROUTES } from "@/app/utils/routes-constants";
 
 export const Video = () => {
   const theme = useTheme();
@@ -33,7 +34,9 @@ export const Video = () => {
             }}
           />
         </Card>
-        <Button>LEARN MORE ABOUT LOXONE</Button>
+        <Button href={ROUTES.LOXONE_PRESENTATION_REQUEST}>
+          LEARN MORE ABOUT LOXONE
+        </Button>
       </Container>
     </Box>
   );

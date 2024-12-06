@@ -11,7 +11,6 @@ import { Box, Container } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 import { Header } from "../../../components/shared/header";
-import { Footer } from "../../../components/shared/footer";
 import {
   HeaderTextBox,
   Highlighted,
@@ -47,22 +46,22 @@ export default function LoxoneAutomation() {
           <HeaderTextBox>
             <Subtitle>
               Loxone Automation:
-              <Highlighted>The New Future Of Smart Automation</Highlighted>
+              <Highlighted>The Future-proof Of Smart Automation</Highlighted>
             </Subtitle>
           </HeaderTextBox>
         }
         background={`url('loxone-automation/header-bg.png')`}
         tabletbackground={`url('loxone-automation/tablet/header-bg.png')`}
         desktopbackground={`url('loxone-automation/desktop/header-bg.png')`}
-        mobileheight="700px"
-        tabletheight="700px"
-        desktopheight="600px"
+        mobileheight="750px"
+        tabletheight="750px"
+        desktopheight="750px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
-            first="Loxone, founded in 2009 and headquartered in Austria, is a prominent manufacturer of smart home automation solutions. Their commitment to innovation and excellence has positioned them as industry leaders in building smart home automation. "
-            second="According to Keinberger, a key figure within the company, Loxone's vision revolves around making buildings not just smart, but intelligently responsive to occupants' needs. Because of this, Loxone is successful with over 200,000 projects in 100+ countries."
-            third="Entering North America, Loxone US is believed to be one of the top market leaders delivering the finest smart home automation experience for customers."
+            first="Imagine walking into your home, office, warehouse, restaurant or whatever place that brings you good memories that intuitively knows your needs, enhancing comfort and convenience at every turn."
+            second="With LOXONE’s cutting-edge smart automation solutions, that vision becomes a reality. Founded in Austria in 2009 and backed by its successful implementation of over 200,000 projects globally, WeLive4 as part of LOXONE committed to transforming how people interact with their spaces. Our technology adapts to your lifestyle, ensuring your environment is not just smart, but intelligently responsive. LOXONE makes a mark in North America since 2019, Loxone US is swiftly becoming known as an industry leader in delivering exceptional smart automation experiences. Picture your properties—whether residential or commercial—being equipped with state-of-the-art automation that elevates the living and working environment, improves energy efficiency, and enhances security."
+            third="We would love the opportunity to discuss how LOXONE can revolutionize your properties and provide a scenario tailored to your specific needs. Learn more and schedule a call with us today. Looking forward to connecting!"
           />
         }
       />
@@ -91,7 +90,6 @@ export default function LoxoneAutomation() {
       </Box>
       <Video />
       <ActionBanner />
-      <Footer divider={<GreenDivider />} />
     </>
   );
 }

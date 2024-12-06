@@ -7,15 +7,15 @@ import { raleway } from "../../../src/app/layout";
 export const Box = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     margin: "20px",
-    padding: "0 200px",
+    padding: "0 100px",
   },
   [theme.breakpoints.down("md")]: {
     margin: "20px ",
-    padding: "0 100px",
+    padding: "0 20px",
   },
   [theme.breakpoints.down("sm")]: {
-    margin: "20px ",
-    padding: "0",
+    margin: "20px 0",
+    padding: "0 10px",
   },
 }));
 
@@ -31,6 +31,6 @@ export const Typography = styled(MuiTypography)(({ theme }) => ({
     fontSize: "16px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "14px",
+    fontSize: "12px",
   },
 }));
