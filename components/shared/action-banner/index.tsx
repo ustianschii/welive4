@@ -8,6 +8,7 @@ import { Button, ButtonsWrapper, Container, Title } from "./styles";
 import { Highlighted } from "../../hero-title/styles";
 import { GreenDivider } from "../green-divider";
 import { ROUTES } from "../../../src/app/utils/routes-constants";
+import Link from "next/link";
 
 export const ActionBanner = () => {
   return (
@@ -25,9 +26,16 @@ export const ActionBanner = () => {
           <ButtonsWrapper>
             <Box display="flex" gap="10px" mb="10px">
               <Button href={ROUTES.CHECKLIST_SHORT}>SMART CHECK LIST</Button>
-              <Button href={ROUTES.CONSULTATION}>CONTACT LOXONE</Button>
+              <Link
+                href="https://www.loxone.com/enus/about-us/contact/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ width: "100%" }}
+              >
+                <Button>CONTACT LOXONE</Button>
+              </Link>
             </Box>
-            <Button href={ROUTES.CONSULTATION}>ON-SITE CONSULTATION</Button>
+            <Button href={ROUTES.CONSULTATION}>REMOTE CONSULTATION</Button>
           </ButtonsWrapper>
         </Container>
       </Box>

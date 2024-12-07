@@ -18,8 +18,8 @@ export const avsolutions = [
   },
   {
     icon: "audio-visual-systems/wifi-icon.svg",
-    content: "Wireless speakers ensuring clutter-free and polished appearances",
-    alt: "Wireless speakers for clutter-free and polished appearance",
+    content: "Remote and/or automated control of your room audio system",
+    alt: "Remote and/or automated control of your room audio system",
   },
   {
     icon: "audio-visual-systems/tv-icon.svg",
@@ -30,7 +30,7 @@ export const avsolutions = [
   {
     icon: "audio-visual-systems/phone-icon.svg",
     content:
-      "Centralized smart hubs offering easy access to your entire entertainment system.",
+      "Centralized smart control hubs offering easy access to your entire entertainment system",
     alt: "Centralized smart hubs for easy access to entertainment system",
   },
 ];

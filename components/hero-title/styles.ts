@@ -5,6 +5,7 @@ import { opensans } from "../../src/app/layout";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
 export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
+  overflow: "hidden",
   [theme.breakpoints.up("md")]: {
     marginTop: "200px",
   },
@@ -42,6 +43,9 @@ export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
     color: GREEN,
     marginLeft: mLeft,
     marginRight: mRight,
+    display: "inline",
+    wordWrap: "break-word",
+    whiteSpace: "normal",
   })
 );
 
@@ -50,6 +54,7 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
   textAlign: "center",
+  whiteSpace: "normal",
 
   [theme.breakpoints.up("md")]: {
     fontSize: "35px",
@@ -61,7 +66,7 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "30px",
+    fontSize: "28px",
     padding: "0 10px",
   },
 }));

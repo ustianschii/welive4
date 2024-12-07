@@ -10,7 +10,6 @@ import {
   grayCardsAudioVisualSystemsLatest,
 } from "../../../components/shared/gray-cards/data";
 import { Button } from "../../../components/shared/gray-cards/styles";
-import { ROUTES } from "../utils/routes-constants";
 import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
 
 import { Header } from "../../../components/shared/header";
@@ -20,7 +19,6 @@ import {
   Subtitle,
 } from "../../../components/hero-title/styles";
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
 import { Meta } from "../../../components/meta";
 
@@ -49,8 +47,8 @@ export default function AudioVisualSystems() {
           <HeaderTextBox>
             <Subtitle>
               PREMIUM
-              <Highlighted>AUDIO VISUAL</Highlighted>
-              SYSTEMS INSTALLATION
+              <Highlighted>ENTERTAINMENT SPACES</Highlighted>DESIGN AND
+              INSTALLATION
             </Subtitle>
           </HeaderTextBox>
         }
@@ -61,9 +59,12 @@ export default function AudioVisualSystems() {
         tabletheight="600px"
         desktopheight="600px"
         subtitle={
-          <HeaderSubtitle first="EXPERIENCE UNMATCHED AUDIO VISUAL EXCELLENCE ACROSS NEW JERSEY, PENNSYLVANIA AND DELAWARE" />
+          <HeaderSubtitle
+            first="Where every occasion becomes a cherished memory"
+            second="Your entertainment space should reflect the joy of shared moments and successful milestones. We believe in creating an environment where families come together to celebrate, businesses thrive during achievements, and customers feel valued."
+            third="Every event, whether personal or professional, deserves an unmatched experience"
+          />
         }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
         divider={<GreenDivider />}
       />
       <AvSolutions />
@@ -98,11 +99,7 @@ export default function AudioVisualSystems() {
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
           data={grayCardsAudioVisualSystemsLatest}
-          button={
-            <Button href={ROUTES.CONSULTATION}>
-              GET A FREE QUOTE &#10230;
-            </Button>
-          }
+          button={<Button>GET YOUR BOOST &#10230;</Button>}
         />
       </Box>
     </>

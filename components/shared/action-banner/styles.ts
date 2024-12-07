@@ -6,6 +6,7 @@ import {
   Typography as MuiTypography,
   Button as MuiButton,
   Box as MuiBox,
+  ButtonProps,
 } from "@mui/material";
 
 import { SEMI_BOLD, WHITE } from "@/styles/constants";
@@ -53,7 +54,7 @@ export const ButtonsWrapper = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const Button = styled(MuiButton)(() => ({
+export const Button = styled(MuiButton)<ButtonProps>(() => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   fontWeight: SEMI_BOLD,

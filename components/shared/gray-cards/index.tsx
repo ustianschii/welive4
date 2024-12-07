@@ -22,14 +22,16 @@ import { GREEN } from "@/styles/constants";
 
 export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const theme = useTheme();
-  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("md", "lg"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
     <Container disableGutters>
       {data.map((item, index) => (
         <CardBox key={index} index={index}>
-          <ImageBox>
+          <ImageBox
+            hasImage={Boolean(item.image || (isTablet && item.imagetablet))}
+          >
             {item.image && (
               <Image
                 alt="service"
@@ -39,7 +41,10 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
                     : item.image
                 }
                 fill
-                style={{ borderRadius: "10px", objectFit: "cover" }}
+                style={{
+                  borderRadius: "10px",
+                  objectFit: "cover",
+                }}
               />
             )}
           </ImageBox>

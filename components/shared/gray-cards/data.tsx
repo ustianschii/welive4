@@ -209,11 +209,9 @@ export const GCAudioVisualSystems = [
       titlehighlightedstart: "Home Theater ",
       titleend: "System",
       firstdescription:
-        "With WE LIVE 4, the design process is an immersive experience in itself. We work closely with you, combining your ideas with our expertise to create a bespoke home theater solution that reflects your style and exceeds your expectations.",
+        "At WE LIVE 4, we believe that a home theater should be more than just a room; it’s a sanctuary for shared experiences and memories. We are dedicated to transforming your space into a cinematic escape that reflects your unique style and ensures every viewing moment is exceptional.",
       seconddescription:
-        "From selecting the perfect audiovisual components to craft the basement home theater design and seating arrangements, every detail is created to ensure an unforgettable viewing experience.",
-      thirddescription:
-        "Ready to turn your basement into a cinematic escape? Contact us now for a personalized home theater consultation that brings Hollywood home!",
+        " Your vision, our expertise – experience cinema like never before!",
       link: ROUTES.HOME_THEATER,
     },
   ],
@@ -241,13 +239,9 @@ export const GCAudioVisualSystems = [
       titlehighlightedstart: "Surround Sound ",
       titleend: "System",
       firstdescription:
-        "With years of experience in audio engineering, our expert team designs a system that seamlessly integrates into your home. We handpick speakers and optimize their placement to ensure optimal sound distribution.",
-      descriptions: [
-        "5.1/5.2 surround sound system",
-        "7.1/7.2 surround sound system",
-        "7.1.4/7.1.6 surround sound system",
-        "7.2.4/7.2.6 surround sound system",
-      ],
+        "Creating a Tidal surround audio listening experience involves immersing the listener in a multi-dimensional sound environment that replicates the sensation of being at a live performance or in a rich auditory landscape. This innovative approach utilizes advanced audio technologies and techniques enveloping the listener from all angles. ",
+      seconddescription:
+        "By leveraging Hi-Fi (high-fidelity) sound systems and platforms that support surround sound formats listeners can ensure that each sound element is precisely placed and moved within the 3D space, leading to a more engaging and captivating listening experience. Ultimately, a Tidal surround audio experience elevates music and soundscapes, allowing you to feel fully immersed and emotionally connected to your favorite audio content.",
       link: ROUTES.HIGH_PERFORMANCE_SOUND,
     },
   ],
@@ -259,11 +253,9 @@ export const GCAudioVisualSystems = [
       titlehighlightedstart: "Whole Home Audio ",
       titleend: "System",
       firstdescription:
-        "Looking for more than just sound in one room? How about a whole home audio system to enjoy your favorite playlists in every corner?",
+        "Want great sound throughout your home? We’ve got you covered with a whole home audio system that lets you enjoy your favorite playlists everywhere that allows you to play the same or different audio sources to various rooms or have  flexibility to move sound anywhere at any time. Our team of pros will set up a system that fills every room with rich, high-quality sound. We make sure to design everything so it fits right into your space and sounds amazing.",
       seconddescription:
-        "Our professional team can create a full home audio system that fills every space with rich, high-fidelity audio. We carefully design every solution to fit into your living area and fill every room with the full sound of your favorite songs.",
-      thirddescription:
-        "Our process begins with a comprehensive assessment of your home’s layout and your unique preferences. From there, our expert team designs a customized system that optimizes audio coverage while maintaining aesthetic appeal.",
+        "First, we’ll check out your home layout and learn what you like. Then, we’ll create a custom setup that delivers awesome audio without messing with the look of your home.",
       link: ROUTES.HOME_AUDIO,
     },
   ],
@@ -275,11 +267,9 @@ export const GCAudioVisualSystems = [
       titlehighlightedstart: "Outdoor Entertainment ",
       titleend: "System",
       firstdescription:
-        "We know your outdoor space is more than just an extension of your home. Our team of experts carefully installs landscape speakers, blending them into your greenery for an immersive audio experience.",
+        "Your outdoor space is more than just an addition to your home. It should be a place of joy! Our team knows how to create that vibe. We install landscape speakers and lights that blend right into your greenery. You’ll get an immersive audio and video experience that feels natural.",
       seconddescription:
-        "At WE LIVE 4, we plan everything down to the last detail to ensure you have a great time. From optimizing viewing angles to seamlessly integrating technology into your outdoor space, we’re here to make your outdoor entertainment dreams a reality.",
-      thirddescription:
-        "Why choose average when you can have something amazing?",
+        "At WE LIVE 4, we plan every little detail. We want you to have an awesome time! From perfecting viewing angles to seamlessly adding tech to your outdoor area, we’re all about making your entertainment dreams come true. Why settle for average when you can have something truly amazing? Let's make it happen!",
       link: ROUTES.OUTDOOR_ENTERTAINMENT,
     },
   ],
@@ -288,11 +278,11 @@ export const GCAudioVisualSystems = [
 export const grayCardsAudioVisualSystemsLatest = [
   {
     firstdescription:
-      "At WE LIVE 4, we know your time is valuable. That’s why we prioritize simplicity and efficiency in every aspect of our commercial AV installation.",
+      "At WE LIVE 4, we get it—your time is precious. That’s why we keep things simple and efficient in our AV installations.",
     seconddescription:
-      "When you choose WE LIVE 4, we’ll design a system process tailored to your specific industry needs and space layout.  Our streamlined approach ensures that we will complete your project on time and within budget. Plus, with our commitment to ongoing support and maintenance, you can trust that your AV system will continue to perform at its best long after installation. ",
+      "When you pick WE LIVE 4, we’ll craft a system just for you. We’ll consider your industry and the layout of your space to create the perfect fit. Our straightforward process means we’ll finish your project on time and within budget. And don’t worry! We’re here for ongoing support and maintenance. Your AV system will keep shining long after we leave.",
     thirddescription:
-      "Contact us today to learn more about how WE LIVE 4 can elevate your space and enhance your brand with our commercial AV systems.",
+      "So, why wait? Reach out today! Let us show you how WE LIVE 4 can boost your space and energize your brand with our commercial AV systems.",
   },
 ];
 

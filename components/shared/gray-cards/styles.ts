@@ -48,6 +48,7 @@ export const CardBox = styled(MuiBox, {
 
 export const CardContent = styled(MuiBox)(({ theme }) => ({
   margin: "0 20px 10px 20px",
+  width: "100%",
 
   [theme.breakpoints.up("md")]: {
     "&::before, &::after": {
@@ -71,7 +72,7 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
     borderLeft: "5px solid",
     borderColor: GREEN,
     borderRadius: "5px",
-    minWidth: "50%",
+    minWidth: "60%",
     maxWidth: "100%",
   },
 
@@ -85,19 +86,22 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    padding: "0 20px",
   },
 }));
 
-export const ImageBox = styled(MuiBox)(({ theme }) => ({
-  // borderRadius: "10px",
-  // objectFit: "cover",
+export const ImageBox = styled(MuiBox, {
+  shouldForwardProp: (prop) => prop !== "hasImage",
+})<{ hasImage: boolean }>(({ theme, hasImage }) => ({
   position: "relative",
   width: "100%",
+  display: hasImage ? "block" : "none",
   [theme.breakpoints.up("lg")]: {
     minHeight: "400px",
   },
   [theme.breakpoints.down("lg")]: {
     minHeight: "400px",
+    minWidth: "350px",
   },
   [theme.breakpoints.down("md")]: {
     minHeight: "400px",
