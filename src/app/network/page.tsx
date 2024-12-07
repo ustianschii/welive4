@@ -44,9 +44,7 @@ export default function Network() {
         title={
           <HeaderTextBox>
             <Subtitle>
-              <Highlighted>
-                PROFESSIONAL <br />
-              </Highlighted>
+              <Highlighted>PROFESSIONAL</Highlighted>
               NETWORK INSTALLATION
             </Subtitle>
           </HeaderTextBox>

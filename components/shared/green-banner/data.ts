@@ -1,5 +1,4 @@
 export const data = [
-  // /loxone-commercial
   {
     title: "LOXONE COMMERCIAL SOLUTIONS",
     first_description:
@@ -8,7 +7,6 @@ export const data = [
       "Whether it's a small office or a large commercial complex, Loxone adapts effortlessly to different building types and sizes, catering to diverse business requirements with unparalleled flexibility.",
   },
 
-  // /loxone-residential
   {
     title: "LOXONE RESIDENTIAL SOLUTIONS",
     first_description:
