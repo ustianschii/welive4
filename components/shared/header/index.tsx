@@ -1,9 +1,8 @@
 "use client";
+
 import * as React from "react";
 
-import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import { Button } from "@mui/material";
 
 import Link from "next/link";
 
@@ -18,11 +17,12 @@ import {
   MenuItem,
   Logo,
   DesktopHeaderLinks,
-  LinkLabel,
+  ShadowBox,
 } from "./styles";
 import { HeaderProps } from "./types";
 import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/styles/constants";
 import { ROUTES } from "../../../src/app/utils/routes-constants";
+import { HeaderDesktopButton } from "../../header-desktop-button";
 
 const pages = [
   { text: "HOME", href: ROUTES.HOME },
@@ -59,14 +59,8 @@ export const Header: React.FC<HeaderProps> = ({
   const [scrolled, setScrolled] = React.useState(false);
 
   React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 80);
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -87,7 +81,6 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <AppBar
-      id="home"
       position="static"
       background={background}
       tabletbackground={tabletbackground}
@@ -158,9 +151,11 @@ export const Header: React.FC<HeaderProps> = ({
           </DropDownMenu>
           <DesktopHeaderLinks>
             {desktopPages.map((page, index) => (
-              <Button key={index} onClick={handleCloseNavMenu} href={page.href}>
-                <LinkLabel>{page.text}</LinkLabel>
-              </Button>
+              <HeaderDesktopButton
+                key={index}
+                href={page.href}
+                label={page.text}
+              />
             ))}
           </DesktopHeaderLinks>
         </Toolbar>
@@ -170,21 +165,7 @@ export const Header: React.FC<HeaderProps> = ({
         <Link href={ROUTES.CONSULTATION}>{button}</Link>
       </Container>
       {divider}
-      {Boolean(anchorElNav) && (
-        <Box
-          sx={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "rgba(0, 0, 0, 0.3)",
-            backdropFilter: "blur(5px)",
-            zIndex: 10,
-          }}
-          onClick={handleCloseNavMenu}
-        />
-      )}
+      {Boolean(anchorElNav) && <ShadowBox onClick={handleCloseNavMenu} />}
     </AppBar>
   );
 };

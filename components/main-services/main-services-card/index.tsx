@@ -19,17 +19,17 @@ export const Card: React.FC<CardProps> = ({ link, img, imgdesktop, text }) => {
 
   return (
     <Box display="flex" position="relative" flexDirection="column">
-      <ImageBox>
-        <Image
-          alt="service"
-          src={imageSrc}
-          quality={50}
-          fill
-          sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          style={{ borderRadius: "10px", objectFit: "cover" }}
-        />
-      </ImageBox>
       <Link href={link}>
+        <ImageBox>
+          <Image
+            alt="service"
+            src={imageSrc}
+            quality={50}
+            fill
+            sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ borderRadius: "10px", objectFit: "cover" }}
+          />
+        </ImageBox>
         <Button variant="outlined" sx={{ marginTop: "10px" }}>
           {text}
         </Button>

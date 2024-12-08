@@ -24,6 +24,7 @@ import { GreenDivider } from "../../../components/shared/green-divider";
 
 import { Box } from "@mui/material";
 import { Meta } from "../../../components/meta";
+import { ROUTES } from "../utils/routes-constants";
 
 export default function HomeTheater() {
   return (
@@ -71,7 +72,7 @@ export default function HomeTheater() {
           imgheight={400}
           imgwidth={388}
           button={
-            <Button>
+            <Button href={ROUTES.LOXONE_PRESENTATION_REQUEST}>
               MORE ABOUT<Highlighted>LOXONE</Highlighted> &#10230;
             </Button>
           }

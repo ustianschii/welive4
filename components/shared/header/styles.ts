@@ -12,7 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import Image from "next/image";
 
-import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/styles/constants";
 import { opensans } from "../../../src/app/layout";
 import { AppBarProps, ContainerProps, ToolbarProps } from "./types";
 
@@ -73,16 +73,14 @@ export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
     left: 0,
     right: 0,
     backgroundColor: backcolor,
+    transition: "background-color 0.3s ease-in-out",
+    boxShadow: backcolor ? "0px 4px 6px rgba(0, 0, 0, 0.3)" : "none",
 
     [theme.breakpoints.up("md")]: {
       padding: "0 2%",
     },
     [theme.breakpoints.up("lg")]: {
       padding: "0 10%",
-    },
-
-    [theme.breakpoints.down("md")]: {
-      width: "100%",
     },
   })
 );
@@ -117,16 +115,6 @@ export const DesktopHeaderLinks = styled(MuiBox)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     display: "none",
-  },
-}));
-
-export const LinkLabel = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
-  fontFamily: opensans.style.fontFamily,
-  fontSize: "18px",
-  whiteSpace: "nowrap",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "16px",
   },
 }));
 
@@ -183,5 +171,19 @@ export const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     fontSize: "50px",
+  },
+}));
+
+export const ShadowBox = styled(MuiBox)(({ theme }) => ({
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100vw",
+  height: "100vh",
+  backgroundColor: "rgba(0, 0, 0, 0.3)",
+  backdropFilter: "blur(5px)",
+  zIndex: 10,
+  [theme.breakpoints.up("md")]: {
+    display: "none",
   },
 }));

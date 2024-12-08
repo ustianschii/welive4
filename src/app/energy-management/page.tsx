@@ -30,6 +30,7 @@ import { CustomButton } from "../../../components/shared/header-button";
 
 import { Box } from "@mui/material";
 import { Meta } from "../../../components/meta";
+import { ROUTES } from "../utils/routes-constants";
 
 export default function EnergyManagement() {
   return (
@@ -139,7 +140,7 @@ export default function EnergyManagement() {
           imgheight={400}
           imgwidth={388}
           button={
-            <Button>
+            <Button href={ROUTES.LOXONE_PRESENTATION_REQUEST}>
               MORE ABOUT <Highlighted>LOXONE</Highlighted> &#10230;
             </Button>
           }

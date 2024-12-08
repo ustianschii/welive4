@@ -1,5 +1,5 @@
 export enum ROUTES {
-  HOME = "/#home",
+  HOME = "/",
   SYSTEM_DESIGN = "/system-design",
   NETWORK_SYSTEM = "/network",
   AUDIO_VISUAL_SYSTEMS = "/audio-visual-systems",
