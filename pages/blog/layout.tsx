@@ -1,9 +1,9 @@
 import { CssBaseline } from "@mui/material";
 
-import { Header } from "../../components/shared/header";
-import { Footer } from "../../components/shared/footer";
-import { GreenDivider } from "../../components/shared/green-divider";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { Header } from "@/components/shared/header";
+import { Footer } from "@/components/shared/footer";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 export default function BlogLayout({
   children,

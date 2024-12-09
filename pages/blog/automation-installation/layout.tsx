@@ -1,13 +1,13 @@
 import { CssBaseline } from "@mui/material";
 
-import { Title } from "../../../components/shared/content-separator/styles";
-import { Highlighted } from "../../../components/hero-title/styles";
-import { Header } from "../../../components/shared/header";
-import { Footer } from "../../../components/shared/footer";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
-import { Separator } from "../../../components/shared/gray-separator";
-import { ArticleContainer, Container } from "../../../src/styles/blog-styles";
+import { Title } from "@/components/shared/content-separator/styles";
+import { Highlighted } from "@/components/hero-title/styles";
+import { Header } from "@/components/shared/header";
+import { Footer } from "@/components/shared/footer";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
+import { Separator } from "@/components/shared/gray-separator";
+import { ArticleContainer, Container } from "@/src/styles/blog-styles";
 
 export default function ArticleLayout({
   children,
