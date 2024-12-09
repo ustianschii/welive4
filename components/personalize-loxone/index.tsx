@@ -7,8 +7,8 @@ import {
   Description,
   Subtitle,
   Title,
-} from "../../components/partnered-installer/styles";
-import { ARTICLE_BACKGROUND } from "@/styles/constants";
+} from "@/components/partnered-installer/styles";
+import { ARTICLE_BACKGROUND } from "@/src/styles/constants";
 import { data } from "./data";
 
 export const Personalize = () => {

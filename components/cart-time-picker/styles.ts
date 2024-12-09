@@ -1,7 +1,8 @@
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Button as MuiButton } from "@mui/material";
-import { SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans } from "@/app/layout";
+
+import { opensans } from "@/src/app/layout";
+import { SEMI_BOLD, WHITE } from "@/src/styles/constants";
 
 export const TimePickerBox = styled(MuiBox)(() => ({
   display: "flex",

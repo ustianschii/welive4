@@ -1,36 +1,36 @@
 import React from "react";
 
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
+import { Box } from "@mui/material";
+
+import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
   grayCardsDataEnergyManagement,
   grayCardsDataEnergyManagementFourth,
   grayCardsDataEnergyManagementSecond,
   grayCardsDataEnergyManagementThird,
-} from "../../../components/shared/gray-cards/data";
+} from "@/components/shared/gray-cards/data";
 
-import { ContentSeparator } from "../../../components/shared/content-separator";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
+import { ContentSeparator } from "@/components/shared/content-separator";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import {
   blackCardsEnergyManagementData,
   blackCardsEnergyManagementSecondData,
-} from "../../../components/shared/black-cards/data";
-import { TransparentCard } from "../../../components/transparent-card";
-import { transparentCardsContent } from "../../../components/transparent-card/data";
-import { Button } from "../../../components/shared/gray-cards/styles";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
-import { Header } from "../../../components/shared/header";
+} from "@/components/shared/black-cards/data";
+import { TransparentCard } from "@/components/transparent-card";
+import { transparentCardsContent } from "@/components/transparent-card/data";
+import { Button } from "@/components/shared/gray-cards/styles";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-
-import { Box } from "@mui/material";
-import { Meta } from "../../../components/meta";
-import { ROUTES } from "../utils/routes-constants";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { Meta } from "@/components/meta";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export default function EnergyManagement() {
   return (

@@ -2,22 +2,21 @@ import React from "react";
 
 import { Box } from "@mui/material";
 
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
-import { blackCardsData } from "../../../components/shared/black-cards/data";
-import { grayCardsData } from "../../../components/shared/gray-cards/data";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
-
-import { Header } from "../../../components/shared/header";
+import { GrayCardsBox } from "@/components/shared/gray-cards";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
+import { blackCardsData } from "@/components/shared/black-cards/data";
+import { grayCardsData } from "@/components/shared/gray-cards/data";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { Meta } from "../../../components/meta";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { Meta } from "@/components/meta";
 
 export default function Network() {
   return (

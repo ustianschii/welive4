@@ -7,8 +7,8 @@ import {
   Box as MuiBox,
 } from "@mui/material";
 
-import { WHITE, BLACK } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { opensans } from "@/src/app/layout";
+import { WHITE, BLACK } from "@/src/styles/constants";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: BLACK,
@@ -30,17 +30,9 @@ export const ServicesBox = styled(MuiContainer)(({ theme }) => ({
   },
 }));
 
-export const ListItem = styled(MuiListItem)(({ theme }) => ({
+export const ListItem = styled(MuiListItem)(() => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
   paddingBottom: "2px",
-  [theme.breakpoints.up("md")]: {
-    fontSize: "17px",
-  },
-  [theme.breakpoints.down("md")]: {
-    fontSize: "17px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "17px",
-  },
+  fontSize: "17px",
 }));

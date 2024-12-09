@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
         backcolor={BLACK}
         title={<Subtitle sx={{ marginTop: "30px" }}>Privacy Policy</Subtitle>}
       />
-      <Box bgcolor={BLACK}>
+      <Box bgcolor={BLACK} id="top">
         <Container maxWidth="md">
           <Paragraph>
             Protecting your private information is our priority. This Statement

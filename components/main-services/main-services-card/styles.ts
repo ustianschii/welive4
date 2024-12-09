@@ -3,8 +3,8 @@
 import { styled } from "@mui/material/styles";
 import { Button as MuiButton, Box as MuiBox } from "@mui/material";
 
-import { WHITE } from "@/styles/constants";
-import { opensans } from "../../../src/app/layout";
+import { opensans } from "@/src/app/layout";
+import { WHITE } from "@/src/styles/constants";
 
 export const ImageBox = styled(MuiBox)(({ theme }) => ({
   width: "100%",

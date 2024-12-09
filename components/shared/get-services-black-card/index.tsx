@@ -13,9 +13,9 @@ import {
   TextContainer,
   CardButtonsBox,
 } from "./styles";
-import { raleway } from "../../../src/app/layout";
-import { SEMI_BOLD, WHITE } from "@/styles/constants";
-import { ROUTES } from "@/app/utils/routes-constants";
+import { raleway } from "@/src/app/layout";
+import { SEMI_BOLD, WHITE } from "@/src/styles/constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
   return (

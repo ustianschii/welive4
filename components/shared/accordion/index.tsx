@@ -5,7 +5,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import { CustomAccordionProps } from "./types";
 import { Container, Accordion, Question, Answer } from "./styles";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 export const CustomAccordion: React.FC<CustomAccordionProps> = ({ data }) => {
   return (

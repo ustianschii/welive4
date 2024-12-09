@@ -1,4 +1,5 @@
 import React from "react";
+
 import { HeaderTextBox, Title, Highlighted, Subtitle } from "./styles";
 
 export const HeroTitle = () => {

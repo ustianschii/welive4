@@ -1,12 +1,11 @@
 import React from "react";
 
-import { Button, Container, FeaturesBox, Title } from "./styles";
-import { data } from "./data";
-
 import Image from "next/image";
 
+import { Button, Container, FeaturesBox, Title } from "./styles";
+import { data } from "./data";
 import { Card } from "./card";
-import { ROUTES } from "../../src/app/utils/routes-constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const ForCommercial = () => {
   return (

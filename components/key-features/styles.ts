@@ -3,7 +3,7 @@
 import { styled } from "@mui/material/styles";
 import { Container as MuiContainer } from "@mui/material";
 
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)<{
   flex: string;

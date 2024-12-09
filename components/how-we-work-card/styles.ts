@@ -3,8 +3,8 @@
 import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
-import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { opensans } from "@/src/app/layout";
+import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/src/styles/constants";
 import { ContainerProps } from "./types";
 
 export const Container = styled(MuiBox)<ContainerProps>(

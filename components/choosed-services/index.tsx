@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import { Box, Divider, List, Typography } from "@mui/material";
+import { Box, Divider, List, Typography, MenuItem } from "@mui/material";
 
 import { services } from "./services";
 import {
@@ -12,12 +12,11 @@ import {
   Label,
   TextField,
   Button,
-  MenuItem,
   Wrapper,
 } from "./styles";
-import { GREEN, WHITE } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
-import { ROUTES } from "../../src/app/utils/routes-constants";
+import { GREEN, WHITE } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const ChoosedServicesList = () => {
   const [selectedValue, setSelectedValue] = useState("");

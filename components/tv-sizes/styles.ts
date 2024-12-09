@@ -7,8 +7,8 @@ import {
   Box as MuiBox,
 } from "@mui/material";
 
-import { SEMI_BOLD, WHITE } from "@/styles/constants";
-import { raleway } from "../../src/app/layout";
+import { raleway } from "@/src/app/layout";
+import { SEMI_BOLD, WHITE } from "@/src/styles/constants";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundImage: `url('outdoor-tv/desktop/sizes-bg.png')`,

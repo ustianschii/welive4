@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 
 import { Box } from "@mui/material";
 

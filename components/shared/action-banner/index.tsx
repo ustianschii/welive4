@@ -2,13 +2,14 @@
 
 import React from "react";
 
+import Link from "next/link";
+
 import { Box } from "@mui/material";
 
 import { Button, ButtonsWrapper, Container, Title } from "./styles";
 import { Highlighted } from "../../hero-title/styles";
 import { GreenDivider } from "../green-divider";
 import { ROUTES } from "../../../src/app/utils/routes-constants";
-import Link from "next/link";
 
 export const ActionBanner = () => {
   return (

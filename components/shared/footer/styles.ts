@@ -9,8 +9,8 @@ import {
 
 import Image from "next/image";
 
-import { BLACK, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "@/app/layout";
+import { BLACK, WHITE } from "@/src/styles/constants";
+import { opensans, raleway } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

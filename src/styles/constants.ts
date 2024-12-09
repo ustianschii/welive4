@@ -18,6 +18,7 @@ export const SEPARATOR_BACKGROUND = "#616264";
 export const BLOG_CARD_BACKGROUND = "#787878";
 export const ARTICLE_BACKGROUND = "#373840";
 export const MAIN_SERVICES_BACKGROUND = "#333740";
+export const HEADER_TOOLBAR = "rgba(51, 55, 64, 0.99)";
 export const OUR_BRANDS_ICONS_BACKGROUND = "#212123";
 export const GET_SERVICES_BACKGROUND = "rgb(138,138,138)";
 export const DATE_PICKER_GRAY = "#d9d8d7";

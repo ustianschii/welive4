@@ -6,12 +6,13 @@ import {
   Box as MuiBox,
   Container as MuiContainer,
 } from "@mui/material";
+
 import {
   MAIN_SERVICES_BACKGROUND,
   TRANSPARENT_GRAY,
   WHITE,
-} from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
+import { opensans, raleway } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   display: "flex",

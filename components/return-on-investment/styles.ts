@@ -1,23 +1,29 @@
 "use client";
 
+import Image from "next/image";
+
 import { styled } from "@mui/material/styles";
+
 import {
   Container as MuiContainer,
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
-import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
 
-import Image from "next/image";
+import { opensans, raleway } from "@/src/app/layout";
+import {
+  MAIN_SERVICES_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/src/styles/constants";
 
-export const Container = styled(MuiContainer)(({ theme }) => ({
+export const Container = styled(MuiContainer)(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: MAIN_SERVICES_BACKGROUND,
-  [theme.breakpoints.down("sm")]: {},
 }));
+
 export const Title = styled(MuiTypography)(({ theme }) => ({
   fontFamily: raleway.style.fontFamily,
   fontWeight: SEMI_BOLD,

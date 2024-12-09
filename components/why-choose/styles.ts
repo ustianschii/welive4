@@ -7,8 +7,12 @@ import {
   Container as MuiContainer,
 } from "@mui/material";
 
-import { SEMI_BOLD, WHITE, MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { opensans } from "@/src/app/layout";
+import {
+  SEMI_BOLD,
+  WHITE,
+  MAIN_SERVICES_BACKGROUND,
+} from "@/src/styles/constants";
 
 export const Wrapper = styled(MuiContainer)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

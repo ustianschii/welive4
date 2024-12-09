@@ -1,10 +1,4 @@
-import { Analytics } from "../analytics/analytics";
-
-interface MetaProps {
-  title: string;
-  keywords: string[];
-  description: string;
-}
+import { MetaProps } from "./types";
 
 export const Meta = ({
   title = "",
@@ -15,7 +9,6 @@ export const Meta = ({
 }: Partial<MetaProps>) => {
   return (
     <>
-      <Analytics />
       <meta name="keywords" content={keywords.join(", ")} />
       <meta name="description" content={description} />
       <meta

@@ -2,11 +2,10 @@ import React from "react";
 
 import Image from "next/image";
 
-import { KeyFeaturesCardTypes } from "./types";
-
-import { CardBox, Title, Feature, Dot, CustomList, Wrapper } from "./styles";
-
 import { ListItem } from "@mui/material";
+
+import { KeyFeaturesCardTypes } from "./types";
+import { CardBox, Title, Feature, Dot, CustomList, Wrapper } from "./styles";
 
 export const KeyFeaturesCard: React.FC<KeyFeaturesCardTypes> = ({
   icon,

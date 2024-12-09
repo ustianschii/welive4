@@ -17,8 +17,8 @@ import {
   CardContent,
   ImageBox,
 } from "./styles";
-import { Highlighted } from "../../hero-title/styles";
-import { GREEN } from "@/styles/constants";
+import { Highlighted } from "@/components/hero-title/styles";
+import { GREEN } from "@/src/styles/constants";
 
 export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const theme = useTheme();
@@ -41,6 +41,12 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
                     : item.image
                 }
                 fill
+                sizes={`
+    (max-width: 600px) 80vw,
+    (max-width: 900px) 70vw,
+    (max-width: 1200px) 350px,
+    400px
+  `}
                 style={{
                   borderRadius: "10px",
                   objectFit: "cover",

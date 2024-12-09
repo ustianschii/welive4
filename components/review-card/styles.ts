@@ -3,8 +3,8 @@
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
-import { GRAY, MAIN_SERVICES_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
+import { opensans, raleway } from "@/src/app/layout";
+import { GRAY, MAIN_SERVICES_BACKGROUND, WHITE } from "@/src/styles/constants";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   position: "relative",

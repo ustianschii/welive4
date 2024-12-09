@@ -5,8 +5,8 @@ import React, { useState } from "react";
 import { Typography } from "@mui/material";
 
 import { TimePickerBox, ButtonBox, SelectionButton } from "./styles";
-import { GRAY, GREEN, WHITE } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { GRAY, GREEN, WHITE } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 export const TimePicker = () => {
   const [selectedTime, setSelectedTime] = useState<string | null>(null);

@@ -21,6 +21,8 @@ export enum ROUTES {
   CART_CHOOSED_SERVICES = "/cart-choosed-services",
   CART_DATE_TIME = "/cart-date&time",
   CART_CLIENT_DETAILS = "/cart-client-details",
-  PRIVACY_POLICY = "/privacy-policy",
+  PRIVACY_POLICY = "/privacy-policy/#top",
   LOXONE_PRESENTATION_REQUEST = "/presentation",
+  OUR_BRANDS = "/#our-brands",
+  REVIEWS = "/#reviews",
 }

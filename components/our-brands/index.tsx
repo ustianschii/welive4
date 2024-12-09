@@ -8,6 +8,7 @@ import { Container, Title, BrandsBox, BrandsImages } from "./styles";
 
 import { Highlighted } from "../hero-title/styles";
 import { GreenDivider } from "../shared/green-divider";
+import { partners } from "./data";
 
 export const OurBrands = () => {
   const theme = useTheme();
@@ -16,15 +17,6 @@ export const OurBrands = () => {
 
   const getWidth = () => (isMobile ? 150 : isTablet ? 200 : 250);
   const getHeight = () => (isMobile ? 60 : isTablet ? 100 : 300);
-
-  const partners = [
-    "/our-brands-mobile/loxone.png",
-    "/our-brands-mobile/aegis.png",
-    "/our-brands-mobile/lorbeam.png",
-    "/our-brands-mobile/mount-it.png",
-    "/our-brands-mobile/next-level.png",
-    "/our-brands-mobile/unify.png",
-  ];
 
   const infinitePartners = [...partners, ...partners];
 

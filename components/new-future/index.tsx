@@ -7,7 +7,8 @@ import Image from "next/image";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 import { Container, ContentBox, Description, Title, Wrapper } from "./styles";
-import { Highlighted } from "../hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
+import { descriptions } from "./data";
 
 export const NewFuture = () => {
   const theme = useTheme();
@@ -16,21 +17,6 @@ export const NewFuture = () => {
 
   const imageWidth = isPhone ? 350 : isTablet ? 450 : 400;
   const imageHeight = isPhone ? 230 : isTablet ? 280 : 250;
-
-  const descriptions = [
-    {
-      id: 1,
-      text: "Today, we’re all too familiar with the concept of smart homes (also known as Smart Home 2.0). We control lighting systems, thermostats, and more using voice-controlled assistants like Amazon Alexa.",
-    },
-    {
-      id: 2,
-      text: "But in a world where time and convenience matter most, just using voice commands might not be enough for you!",
-    },
-    {
-      id: 3,
-      text: "That’s where Loxone home automation comes in. It’s changing how we do things at home, making everyday tasks easier, cozier, and safer.",
-    },
-  ];
 
   return (
     <Wrapper>

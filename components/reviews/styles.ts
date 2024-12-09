@@ -7,8 +7,8 @@ import {
   Typography as MuiTypography,
 } from "@mui/material";
 
-import { MAIN_SERVICES_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { opensans } from "@/src/app/layout";
+import { MAIN_SERVICES_BACKGROUND, WHITE } from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

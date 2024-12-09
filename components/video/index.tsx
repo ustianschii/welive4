@@ -3,8 +3,8 @@ import React from "react";
 import { Box, Card, CardMedia, useTheme } from "@mui/material";
 
 import { Container, Title, Button } from "./styles";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
-import { ROUTES } from "@/app/utils/routes-constants";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const Video = () => {
   const theme = useTheme();

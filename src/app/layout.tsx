@@ -1,14 +1,14 @@
 import { Open_Sans, Raleway } from "next/font/google";
 
-import { ThemeProvider } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 
-import { Footer } from "../../components/shared/footer";
-import { GreenDivider } from "../../components/shared/green-divider";
-
-import theme from "../styles/theme";
-import { HubSpotScript } from "../../components/hs-chatbot";
+import theme from "@/src/styles/theme";
+import { HubSpotScript } from "@/components/hs-chatbot";
+import { Footer } from "@/components/shared/footer";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { Analytics } from "@/components/analytics/analytics";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />

@@ -3,8 +3,8 @@
 import { styled } from "@mui/material/styles";
 import { Button as MuiButton, Container as MuiContainer } from "@mui/material";
 
-import { WHITE, GREEN, SEMI_BOLD } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { WHITE, GREEN, SEMI_BOLD } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {

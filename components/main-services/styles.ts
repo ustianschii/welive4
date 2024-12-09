@@ -3,7 +3,7 @@
 import { styled } from "@mui/material/styles";
 import { Container as MuiContainer } from "@mui/material";
 
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

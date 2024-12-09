@@ -1,5 +1,9 @@
 import React from "react";
 
+import Image from "next/image";
+
+import { Box } from "@mui/material";
+
 import {
   CardContent,
   Container,
@@ -9,13 +13,9 @@ import {
   CardBox,
   CardsBox,
 } from "./styles";
-import { Highlighted } from "../hero-title/styles";
-
-import Image from "next/image";
-
+import { Highlighted } from "@/components/hero-title/styles";
 import { tvBrands } from "./data";
-import { Box } from "@mui/material";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 export const BlackCardsBox = () => {
   return (

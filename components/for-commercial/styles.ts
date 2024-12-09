@@ -7,14 +7,15 @@ import {
   Box as MuiBox,
   Button as MuiButton,
 } from "@mui/material";
+
 import {
   ARTICLE_BACKGROUND,
   GREEN,
   SEMI_BOLD,
   SWAMP_GREEN,
   WHITE,
-} from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
+import { opensans, raleway } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)(() => ({
   display: "flex",

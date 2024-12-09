@@ -1,10 +1,10 @@
 import React from "react";
 
-import { ServicesList } from "../../../components/get-services";
-import { BLACK } from "@/styles/constants";
-import { Header } from "../../../components/shared/header";
-import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
-import { Meta } from "../../../components/meta";
+import { ServicesList } from "@/components/get-services";
+import { BLACK } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
+import { Highlighted, Subtitle } from "@/components/hero-title/styles";
+import { Meta } from "@/components/meta";
 
 export default function GetServices() {
   return (

@@ -1,30 +1,30 @@
 import React from "react";
 
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
+import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
   GCHomeAudioFirst,
   GCHomeAudioSecond,
-} from "../../../components/shared/gray-cards/data";
-import { Button } from "../../../components/shared/gray-cards/styles";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
-import { BCHomeAudio } from "../../../components/shared/black-cards/data";
-import { ContentSeparator } from "../../../components/shared/content-separator";
-import { CustomAccordion } from "../../../components/shared/accordion";
-import { homeAudioFaq } from "../../../components/shared/accordion/data";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
-import { Header } from "../../../components/shared/header";
+} from "@/components/shared/gray-cards/data";
+import { Button } from "@/components/shared/gray-cards/styles";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
+import { BCHomeAudio } from "@/components/shared/black-cards/data";
+import { ContentSeparator } from "@/components/shared/content-separator";
+import { CustomAccordion } from "@/components/shared/accordion";
+import { homeAudioFaq } from "@/components/shared/accordion/data";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { GreenDivider } from "../../../components/shared/green-divider";
+} from "@/components/hero-title/styles";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { GreenDivider } from "@/components/shared/green-divider";
 
 import { Box } from "@mui/material";
-import { Meta } from "../../../components/meta";
-import { ROUTES } from "../utils/routes-constants";
+import { Meta } from "@/components/meta";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export default function HomeTheater() {
   return (

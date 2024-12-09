@@ -5,14 +5,15 @@ import {
   Box as MuiBox,
   Button as MuiButton,
 } from "@mui/material";
+
+import { opensans, raleway } from "@/src/app/layout";
 import {
   GREEN,
   WHITE,
   SEPARATOR_BACKGROUND,
   BOLD,
   BLOG_CARD_BACKGROUND,
-} from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,

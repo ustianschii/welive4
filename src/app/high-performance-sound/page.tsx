@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
+import { Box } from "@mui/material";
+
 import { SoundSystemDemo } from "../../../components/sound-systems-demo";
 import { GrayCardsBox } from "../../../components/shared/gray-cards";
 import { GCMusicStreaming } from "../../../components/shared/gray-cards/data";
 import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
 import { BCHighPerformanceAudio } from "../../../components/shared/black-cards/data";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "../../../components/shared/header";
 import {
   HeaderTextBox,
@@ -16,8 +18,6 @@ import {
 import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
 import { CustomButton } from "../../../components/shared/header-button";
 import { GreenDivider } from "../../../components/shared/green-divider";
-
-import { Box } from "@mui/material";
 import { Meta } from "../../../components/meta";
 
 export default function HighPerformanceSound() {

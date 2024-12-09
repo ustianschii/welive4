@@ -2,25 +2,25 @@ import React from "react";
 
 import { Box } from "@mui/material";
 
-import { Separator } from "../../../components/shared/gray-separator";
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
+import { Separator } from "@/components/shared/gray-separator";
+import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
   GCGameMediaBottom,
   GCGameMediaTop,
-} from "../../../components/shared/gray-cards/data";
-import { Title } from "../../../components/shared/content-separator/styles";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+} from "@/components/shared/gray-cards/data";
+import { Title } from "@/components/shared/content-separator/styles";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 
-import { Header } from "../../../components/shared/header";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { Meta } from "../../../components/meta";
+} from "@/components/hero-title/styles";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { Meta } from "@/components/meta";
 
 export default function HomeTheater() {
   return (

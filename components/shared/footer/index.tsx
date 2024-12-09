@@ -3,6 +3,7 @@ import React from "react";
 import { Box, Divider, Typography } from "@mui/material";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   Container,
@@ -18,34 +19,11 @@ import {
   Contact,
   ContactLabel,
 } from "./styles";
-import { BLACK, GRAY } from "@/styles/constants";
+import { BLACK, GRAY } from "@/src/styles/constants";
 import { FooterProps } from "./types";
-import { ROUTES } from "../../../src/app/utils/routes-constants";
-
-import Link from "next/link";
+import { emails, FOOTER_LINKS } from "./data";
 
 export const Footer: React.FC<FooterProps> = ({ divider }) => {
-  const FOOTER_LINKS = [
-    { label: "Privacy Policy", href: ROUTES.PRIVACY_POLICY },
-    {
-      label: "Our Brands",
-      href: "/#our-brands",
-    },
-    {
-      label: "Reviews",
-      href: "/#reviews",
-    },
-  ];
-
-  const emails = [
-    { label: "General Questions", email: "info@welive4.com" },
-    { label: "Partnership Question", email: "partner@welive4.com" },
-    { label: "Billing Questions", email: "billing@welive4.com" },
-    { label: "Technology and Design Questions", email: "design@welive4.com" },
-    { label: "User and Warranty Questions", email: "support@welive4.com" },
-    { label: "Investor Question", email: "investor@welive4.com" },
-  ];
-
   return (
     <Box sx={{ backgroundColor: BLACK }}>
       {divider}

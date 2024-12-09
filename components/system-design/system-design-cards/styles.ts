@@ -7,13 +7,14 @@ import {
   Button as MuiButton,
   Container as MuiContainer,
 } from "@mui/material";
+
+import { opensans, raleway } from "@/src/app/layout";
 import {
   BOLD,
   GREEN,
   WHITE,
   MAIN_SERVICES_BACKGROUND,
-} from "@/styles/constants";
-import { opensans, raleway } from "../../../src/app/layout";
+} from "@/src/styles/constants";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

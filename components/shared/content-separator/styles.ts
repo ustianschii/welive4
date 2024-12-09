@@ -5,8 +5,8 @@ import {
   Typography as MuiTypography,
 } from "@mui/material";
 
-import { SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "../../../src/app/layout";
+import { SEMI_BOLD, WHITE } from "@/src/styles/constants";
+import { opensans, raleway } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)<{
   bg?: string;

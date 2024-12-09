@@ -2,28 +2,28 @@ import React from "react";
 
 import { Box } from "@mui/material";
 
-import { Separator } from "../../../components/shared/gray-separator";
-import { Title } from "../../../components/shared/content-separator/styles";
-import { Button } from "../../../components/shared/gray-cards/styles";
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
-import { GCHomeTheater } from "../../../components/shared/gray-cards/data";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
-import { BCHomeTheater } from "../../../components/shared/black-cards/data";
-import { ContentSeparator } from "../../../components/shared/content-separator";
-import { CustomAccordion } from "../../../components/shared/accordion";
-import { homeTheaterFaq } from "../../../components/shared/accordion/data";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+import { Separator } from "@/components/shared/gray-separator";
+import { Title } from "@/components/shared/content-separator/styles";
+import { Button } from "@/components/shared/gray-cards/styles";
+import { GrayCardsBox } from "@/components/shared/gray-cards";
+import { GCHomeTheater } from "@/components/shared/gray-cards/data";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
+import { BCHomeTheater } from "@/components/shared/black-cards/data";
+import { ContentSeparator } from "@/components/shared/content-separator";
+import { CustomAccordion } from "@/components/shared/accordion";
+import { homeTheaterFaq } from "@/components/shared/accordion/data";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 
-import { Header } from "../../../components/shared/header";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { Meta } from "../../../components/meta";
+} from "@/components/hero-title/styles";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { Meta } from "@/components/meta";
 
 export default function HomeTheater() {
   return (

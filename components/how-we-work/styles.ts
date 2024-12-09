@@ -8,14 +8,14 @@ import {
   Button as MuiButton,
 } from "@mui/material";
 
+import { opensans, raleway } from "../../src/app/layout";
 import {
   BOLD,
   GREEN,
   MAIN_SERVICES_BACKGROUND,
   SEMI_BOLD,
   WHITE,
-} from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

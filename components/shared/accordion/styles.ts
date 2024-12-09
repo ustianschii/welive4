@@ -7,8 +7,8 @@ import {
   Accordion as MuiAccordion,
 } from "@mui/material";
 
-import { SEPARATOR_BACKGROUND, WHITE } from "@/styles/constants";
-import { opensans } from "../../../src/app/layout";
+import { SEPARATOR_BACKGROUND, WHITE } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,

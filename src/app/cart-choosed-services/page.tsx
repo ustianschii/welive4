@@ -1,12 +1,10 @@
 import React from "react";
 
-import { ChoosedServicesList } from "../../../components/choosed-services";
-import { BLACK } from "@/styles/constants";
-
-import { Header } from "../../../components/shared/header";
-
-import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
-import { Meta } from "../../../components/meta";
+import { ChoosedServicesList } from "@/components/choosed-services";
+import { BLACK } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
+import { Highlighted, Subtitle } from "@/components/hero-title/styles";
+import { Meta } from "@/components/meta";
 
 export default function Cart() {
   return (

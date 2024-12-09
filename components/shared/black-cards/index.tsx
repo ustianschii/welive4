@@ -1,5 +1,8 @@
 import React from "react";
 
+import CircleIcon from "@mui/icons-material/Circle";
+import { Box } from "@mui/material";
+
 import {
   Card,
   Container,
@@ -8,12 +11,9 @@ import {
   Title,
   CardsBox,
 } from "./styles";
-import { Highlighted } from "../../hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { BlackCardsBoxProps } from "./types";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
-
-import CircleIcon from "@mui/icons-material/Circle";
-import { Box } from "@mui/material";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
   data,

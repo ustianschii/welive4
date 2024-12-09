@@ -6,8 +6,9 @@ import {
   Box as MuiBox,
   TextField as MuiTextField,
 } from "@mui/material";
-import { GREEN, WHITE, BLACK } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+
+import { opensans } from "@/src/app/layout";
+import { GREEN, WHITE, BLACK } from "@/src/styles/constants";
 
 export const FormContainer = styled(MuiBox)(({ theme }) => ({
   backgroundColor: BLACK,

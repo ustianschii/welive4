@@ -7,14 +7,14 @@ import {
   Typography as MuiTypography,
 } from "@mui/material";
 
+import { raleway } from "@/src/app/layout";
 import {
   BLACK,
   GREEN,
   SEPARATOR_BACKGROUND,
   SEMI_BOLD,
   WHITE,
-} from "@/styles/constants";
-import { raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   display: "flex",

@@ -1,22 +1,22 @@
 import React from "react";
 
-import { Title } from "../../../components/shared/content-separator/styles";
+import { Title } from "@/components/shared/content-separator/styles";
 
-import { Separator } from "../../../components/shared/gray-separator";
-import { CustomerCare } from "../../../components/customer-care-banner";
-import { OtherWayToConnect } from "../../../components/others-way-to-connect";
-import { TextUs } from "../../../components/text-us";
+import { Separator } from "@/components/shared/gray-separator";
+import { CustomerCare } from "@/components/customer-care-banner";
+import { OtherWayToConnect } from "@/components/others-way-to-connect";
+import { TextUs } from "@/components/text-us";
 
-import { Header } from "../../../components/shared/header";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { Meta } from "../../../components/meta";
-import { Container, Wrapper } from "@/styles/checklist-consultation";
-import { CCChecklistConsultation } from "../../../components/cc-checklist-consultation";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { Meta } from "@/components/meta";
+import { Container, Wrapper } from "@/src/styles/checklist-consultation";
+import { CCChecklistConsultation } from "@/components/cc-checklist-consultation";
 
 export default function Consultation() {
   return (

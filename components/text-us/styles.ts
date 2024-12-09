@@ -7,6 +7,7 @@ import {
   Box as MuiBox,
   Button as MuiButton,
 } from "@mui/material";
+
 import {
   GREEN,
   WHITE,
@@ -14,8 +15,8 @@ import {
   SUBMIT_FORM_BACKGROUND,
   SEMI_BOLD,
   MAIN_SERVICES_BACKGROUND,
-} from "@/styles/constants";
-import { raleway, opensans } from "../../src/app/layout";
+} from "@/src/styles/constants";
+import { raleway, opensans } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

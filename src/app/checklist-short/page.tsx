@@ -1,10 +1,10 @@
 import React from "react";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
-import { Header } from "../../../components/shared/header";
-import { Highlighted, Subtitle } from "../../../components/hero-title/styles";
-import { Meta } from "../../../components/meta";
-import { Container, Wrapper } from "@/styles/checklist-short-styles";
-import { CCChecklistShort } from "../../../components/cc-checklist-short";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
+import { Highlighted, Subtitle } from "@/components/hero-title/styles";
+import { Meta } from "@/components/meta";
+import { Container, Wrapper } from "@/src/styles/checklist-short-styles";
+import { CCChecklistShort } from "@/components/cc-checklist-short";
 
 export default function ChecklistShort() {
   return (

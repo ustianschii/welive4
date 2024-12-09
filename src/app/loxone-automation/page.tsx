@@ -2,23 +2,22 @@
 
 import React from "react";
 
-import { ActionBanner } from "../../../components/shared/action-banner";
-import { ForResidential } from "../../../components/for-residential";
-import { ForCommercial } from "../../../components/for-commercial";
-import { Video } from "../../../components/video";
-
 import { Box, Container } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-import { Header } from "../../../components/shared/header";
+import { ActionBanner } from "@/components/shared/action-banner";
+import { ForResidential } from "@/components/for-residential";
+import { ForCommercial } from "@/components/for-commercial";
+import { Video } from "@/components/video";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { Meta } from "../../../components/meta";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { Meta } from "@/components/meta";
 
 export default function LoxoneAutomation() {
   const theme = useTheme();

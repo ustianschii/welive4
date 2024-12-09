@@ -18,8 +18,8 @@ import {
   Typography,
 } from "./styles";
 import { data } from "./data";
-import { Highlighted } from "../hero-title/styles";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
+import { Highlighted } from "@/components/hero-title/styles";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 
 export const ReturnOnInvestments = () => {
   const theme = useTheme();

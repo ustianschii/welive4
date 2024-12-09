@@ -6,14 +6,15 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
+
 import {
   GREEN,
   WHITE,
   SUBMIT_FORM_BACKGROUND,
   BOLD,
   MAIN_SERVICES_BACKGROUND,
-} from "@/styles/constants";
-import { raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
+import { raleway } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

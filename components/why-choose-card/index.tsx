@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Container, Title } from "./styles";
 import { CardTypes } from "./types";
 

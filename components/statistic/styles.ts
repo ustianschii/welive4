@@ -7,13 +7,14 @@ import {
   Typography as MuiTypography,
   Button as MuiButton,
 } from "@mui/material";
+
+import { opensans, raleway } from "@/src/app/layout";
 import {
   MAIN_SERVICES_BACKGROUND,
   SEMI_BOLD,
   WHITE,
   GREEN,
-} from "@/styles/constants";
-import { opensans, raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

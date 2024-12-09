@@ -1,8 +1,7 @@
-import { CardBox, CardTitle } from "./styles";
-
-import { CardTypes } from "./types";
-
 import Image from "next/image";
+
+import { CardBox, CardTitle } from "./styles";
+import { CardTypes } from "./types";
 
 export const Card: React.FC<CardTypes> = ({ icon, text }) => {
   return (

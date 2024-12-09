@@ -4,19 +4,19 @@ import Image from "next/image";
 
 import { IconButton } from "@mui/material";
 
-import { GetServiceCard } from "../../../components/shared/get-services-black-card";
-import { support } from "../../../components/shared/get-services-black-card/services";
-import { ROUTES } from "../utils/routes-constants";
+import { GetServiceCard } from "@/components/shared/get-services-black-card";
+import { support } from "@/components/shared/get-services-black-card/services";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 import {
   BackButton,
   Wrapper,
   Container,
   ButtonsBox,
-} from "../../../components/shared/get-services-black-card/styles";
-import { BLACK } from "@/styles/constants";
-import { Header } from "../../../components/shared/header";
-import { Subtitle } from "../../../components/hero-title/styles";
-import { Meta } from "../../../components/meta";
+} from "@/components/shared/get-services-black-card/styles";
+import { BLACK } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
+import { Subtitle } from "@/components/hero-title/styles";
+import { Meta } from "@/components/meta";
 
 export default function GetSupport() {
   return (

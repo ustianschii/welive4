@@ -7,8 +7,12 @@ import {
   Box as MuiBox,
 } from "@mui/material";
 
-import { MAIN_SERVICES_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { raleway } from "../../src/app/layout";
+import {
+  MAIN_SERVICES_BACKGROUND,
+  SEMI_BOLD,
+  WHITE,
+} from "@/src/styles/constants";
+import { raleway } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: MAIN_SERVICES_BACKGROUND,

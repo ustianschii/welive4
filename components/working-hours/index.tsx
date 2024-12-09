@@ -2,7 +2,7 @@ import React from "react";
 
 import { Box, Typography } from "@mui/material";
 
-import { opensans, raleway } from "../../src/app/layout";
+import { opensans, raleway } from "@/src/app/layout";
 
 export const WorkingHours = () => {
   return (

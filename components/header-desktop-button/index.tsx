@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 import { Button } from "@mui/material";
 
 import { LinkLabel } from "./styles";
-
 import { HeaderDesktopButtonProps } from "./types";
 
 export const HeaderDesktopButton: FC<HeaderDesktopButtonProps> = ({

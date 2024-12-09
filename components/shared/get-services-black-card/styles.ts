@@ -13,8 +13,8 @@ import {
   GREEN,
   SEMI_BOLD,
   MAIN_SERVICES_BACKGROUND,
-} from "@/styles/constants";
-import { opensans } from "../../../src/app/layout";
+} from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: BLACK,

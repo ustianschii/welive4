@@ -20,27 +20,10 @@ import {
   ShadowBox,
 } from "./styles";
 import { HeaderProps } from "./types";
-import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/styles/constants";
-import { ROUTES } from "../../../src/app/utils/routes-constants";
-import { HeaderDesktopButton } from "../../header-desktop-button";
-
-const pages = [
-  { text: "HOME", href: ROUTES.HOME },
-  { text: "SYSTEM DESIGN", href: ROUTES.SYSTEM_DESIGN },
-  { text: "NETWORK SYSTEM", href: ROUTES.NETWORK_SYSTEM },
-  { text: "ENTERTAINMENT SYSTEM", href: ROUTES.AUDIO_VISUAL_SYSTEMS },
-  { text: "LOXONE AUTOMATION", href: ROUTES.LOXONE_AUTOMATION },
-  { text: "ENERGY MANAGEMENT", href: ROUTES.ENERGY_MANAGEMENT },
-  { text: "TV MOUNTING", href: ROUTES.OUTDOOR_TV },
-  { text: "CONTACTS", href: ROUTES.CONSULTATION },
-];
-
-const desktopPages = [
-  { text: "HOME", href: ROUTES.HOME },
-  { text: "SERVICES", href: ROUTES.GET_SERVICES },
-  { text: "SYSTEM DESIGN", href: ROUTES.SYSTEM_DESIGN },
-  { text: "CONTACTS", href: ROUTES.CONSULTATION },
-];
+import { HEADER_TOOLBAR, GREEN, WHITE } from "@/src/styles/constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
+import { HeaderDesktopButton } from "@/components/header-desktop-button";
+import { desktopPages, pages } from "./data";
 
 export const Header: React.FC<HeaderProps> = ({
   mobileheight,
@@ -94,10 +77,7 @@ export const Header: React.FC<HeaderProps> = ({
         tabletheight={tabletheight}
         desktopheight={desktopheight}
       >
-        <Toolbar
-          disableGutters
-          backcolor={scrolled ? MAIN_SERVICES_BACKGROUND : ""}
-        >
+        <Toolbar disableGutters backcolor={scrolled ? HEADER_TOOLBAR : ""}>
           <Link href={ROUTES.HOME}>
             <Logo
               alt="logo"

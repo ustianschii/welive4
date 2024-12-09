@@ -6,9 +6,10 @@ import {
   Typography as MuiTypography,
   List as MuiList,
 } from "@mui/material";
-import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/styles/constants";
-import { opensans } from "../../../src/app/layout";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+
+import { opensans } from "@/src/app/layout";
+import { MAIN_SERVICES_BACKGROUND, GREEN, WHITE } from "@/src/styles/constants";
 
 export const CardBox = styled(MuiBox)(({ theme }) => ({
   border: "2px solid",
@@ -37,8 +38,6 @@ export const Wrapper = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     flexDirection: "column",
   },
-  [theme.breakpoints.down("md")]: {},
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const Title = styled(MuiTypography)(({ theme }) => ({

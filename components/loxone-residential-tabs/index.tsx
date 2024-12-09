@@ -2,12 +2,12 @@
 
 import React, { useState } from "react";
 
+import { Box } from "@mui/material";
+
 import { Container, Tab, Tabs, Wrapper } from "./styles";
 import { TabPanelProps } from "./types";
 import { TabContent } from "./tab";
 import { data } from "./data";
-
-import { Box } from "@mui/material";
 
 const TabPanel: React.FC<TabPanelProps> = ({ children, value, index }) => {
   return (

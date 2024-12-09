@@ -1,14 +1,14 @@
 import React from "react";
 
-import { opensans, raleway } from "../../src/app/layout";
-import { SEMI_BOLD, WHITE } from "@/styles/constants";
-
 import { Box, Typography } from "@mui/material";
-import { Highlighted } from "../hero-title/styles";
+
+import { opensans, raleway } from "@/src/app/layout";
+import { SEMI_BOLD, WHITE } from "@/src/styles/constants";
+import { Highlighted } from "@/components/hero-title/styles";
 import { selectedServices } from "./services";
 import { Button } from "./styles";
-import { GreenDivider } from "../shared/green-divider";
-import { ROUTES } from "../../src/app/utils/routes-constants";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const SummaryBookingDetails = () => {
   return (

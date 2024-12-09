@@ -1,27 +1,30 @@
 import React from "react";
 
-import { Separator } from "../../../components/shared/gray-separator";
-import { Title } from "../../../components/shared/content-separator/styles";
-import { DesignTypes } from "../../../components/system-design/system-design-cards";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
+import { Separator } from "@/components/shared/gray-separator";
+import { Title } from "@/components/shared/content-separator/styles";
+import { DesignTypes } from "@/components/system-design/system-design-cards";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import {
   BCSystemDesign,
   BCSystemDesignWBorder,
-} from "../../../components/shared/black-cards/data";
-import { TEXT_US_BACKGROUND } from "@/styles/constants";
-import { TextUs } from "../../../components/text-us";
-import { Header } from "../../../components/shared/header";
+} from "@/components/shared/black-cards/data";
+import { TEXT_US_BACKGROUND } from "@/src/styles/constants";
+import { TextUs } from "@/components/text-us";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { Meta } from "../../../components/meta";
-import { CCChecklistSystemDesign } from "../../../components/cc-checklist-system-design";
-import { Container, Wrapper } from "@/styles/checklist-system-design-styles";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { Meta } from "@/components/meta";
+import { CCChecklistSystemDesign } from "@/components/cc-checklist-system-design";
+import {
+  Container,
+  Wrapper,
+} from "@/src/styles/checklist-system-design-styles";
 
 export default function SystemDesign() {
   return (

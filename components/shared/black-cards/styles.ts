@@ -13,7 +13,7 @@ import {
   SEMI_BOLD,
   WHITE,
   OUR_BRANDS_ICONS_BACKGROUND,
-} from "@/styles/constants";
+} from "@/src/styles/constants";
 import { opensans, raleway } from "../../../src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({

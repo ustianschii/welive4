@@ -1,35 +1,36 @@
 import React from "react";
 
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
+import { Box } from "@mui/material";
+
+import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
   grayCardsDataOutdoorTV,
   grayCardsDataFrameTV,
-} from "../../../components/shared/gray-cards/data";
-import { BlackCardsBox } from "../../../components/outdoor-tv-brands/index";
-import { ContentSeparator } from "../../../components/shared/content-separator";
-import { CustomAccordion } from "../../../components/shared/accordion";
+} from "@/components/shared/gray-cards/data";
+import { BlackCardsBox } from "@/components/outdoor-tv-brands/index";
+import { ContentSeparator } from "@/components/shared/content-separator";
+import { CustomAccordion } from "@/components/shared/accordion";
 import {
   outdoorFirstFaq,
   outdoorSecondFaq,
-} from "../../../components/shared/accordion/data";
+} from "@/components/shared/accordion/data";
 import {
   blackCardsOutdoorTvData,
   blackCardsOutdoorTvSecondData,
-} from "../../../components/shared/black-cards/data";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
-import { TvSizes } from "../../../components/tv-sizes";
-import { Box } from "@mui/material";
-import { MAIN_SERVICES_BACKGROUND } from "@/styles/constants";
-import { Header } from "../../../components/shared/header";
+} from "@/components/shared/black-cards/data";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
+import { TvSizes } from "@/components/tv-sizes";
+import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { Meta } from "../../../components/meta";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { CustomButton } from "@/components/shared/header-button";
+import { Meta } from "@/components/meta";
 
 export default function Outdoor() {
   return (

@@ -1,16 +1,16 @@
 "use client";
 
+import Image from "next/image";
+
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
-
-import Image from "next/image";
 
 import {
   BOLD,
   SEPARATOR_BACKGROUND,
   WHITE,
   BLOG_CARD_BACKGROUND,
-} from "@/styles/constants";
+} from "@/src/styles/constants";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,

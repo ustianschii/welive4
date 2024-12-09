@@ -11,8 +11,8 @@ import {
   GRAY,
   GREEN,
   SEMI_BOLD,
-} from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+} from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 export const DateTimePickerContainer = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

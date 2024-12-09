@@ -6,8 +6,9 @@ import {
   Container as MuiContainer,
   Box as MuiBox,
 } from "@mui/material";
-import { ARTICLE_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { opensans, raleway } from "../../../src/app/layout";
+
+import { opensans, raleway } from "@/src/app/layout";
+import { ARTICLE_BACKGROUND, SEMI_BOLD, WHITE } from "@/src/styles/constants";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

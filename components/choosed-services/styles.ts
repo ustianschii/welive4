@@ -5,12 +5,11 @@ import {
   Typography as MuiTypography,
   TextField as MuiTextField,
   Button as MuiButton,
-  MenuItem as MuiMenuItem,
   Container as MuiContainer,
 } from "@mui/material";
 
-import { WHITE, BLACK, SEMI_BOLD, GREEN } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { opensans } from "@/src/app/layout";
+import { WHITE, BLACK, SEMI_BOLD, GREEN } from "@/src/styles/constants";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: BLACK,
@@ -47,10 +46,9 @@ export const FieldContainer = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const Label = styled(MuiTypography)(({ theme }) => ({
+export const Label = styled(MuiTypography)(() => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const TextField = styled(MuiTextField)(() => ({
@@ -74,9 +72,7 @@ export const TextField = styled(MuiTextField)(() => ({
   },
 }));
 
-export const MenuItem = styled(MuiMenuItem)(() => ({}));
-
-export const Button = styled(MuiButton)(({ theme }) => ({
+export const Button = styled(MuiButton)(() => ({
   border: "2px solid",
   borderColor: GREEN,
   borderRadius: "10px",
@@ -85,5 +81,4 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   fontSize: "18px",
   padding: "5px 30px",
-  [theme.breakpoints.down("sm")]: {},
 }));

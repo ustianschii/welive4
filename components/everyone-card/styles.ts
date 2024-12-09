@@ -3,8 +3,8 @@
 import { styled } from "@mui/material/styles";
 import { Typography as MuiTypography, Box as MuiBox } from "@mui/material";
 
-import { BLACK, SEMI_BOLD } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { BLACK, SEMI_BOLD } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 export const Container = styled(MuiBox)<{ background: string }>(
   ({ theme, background }) => ({

@@ -13,9 +13,9 @@ import {
   SEPARATOR_BACKGROUND,
   SEMI_BOLD,
   WHITE,
-} from "@/styles/constants";
+} from "@/src/styles/constants";
 
-import { opensans } from "../../src/app/layout";
+import { opensans } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)(() => ({
   display: "flex",

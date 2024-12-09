@@ -1,25 +1,22 @@
 import React from "react";
 
-import { ReturnOnInvestments } from "../../../components/return-on-investment";
-import { ApplicationScenarios } from "../../../components/application-scenarios";
-import { GreenBanner } from "../../../components/shared/green-banner";
-
-import { data } from "../../../components/shared/green-banner/data";
-import { KeyFeatures } from "../../../components/key-features";
-import { PartneredInstaller } from "../../../components/partnered-installer";
-import { ActionBanner } from "../../../components/shared/action-banner";
-
-import { data as keyfeaturesdata } from "../../../components/key-features/data";
-
-import { Header } from "../../../components/shared/header";
+import { ReturnOnInvestments } from "@/components/return-on-investment";
+import { ApplicationScenarios } from "@/components/application-scenarios";
+import { GreenBanner } from "@/components/shared/green-banner";
+import { data } from "@/components/shared/green-banner/data";
+import { KeyFeatures } from "@/components/key-features";
+import { PartneredInstaller } from "@/components/partnered-installer";
+import { ActionBanner } from "@/components/shared/action-banner";
+import { data as keyfeaturesdata } from "@/components/key-features/data";
+import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
-} from "../../../components/hero-title/styles";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { Meta } from "../../../components/meta";
+} from "@/components/hero-title/styles";
+import { GreenDivider } from "@/components/shared/green-divider";
+import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { Meta } from "@/components/meta";
 
 export default function LoxoneCommercial() {
   return (

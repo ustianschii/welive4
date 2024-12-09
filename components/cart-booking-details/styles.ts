@@ -3,10 +3,10 @@
 import { styled } from "@mui/material/styles";
 import { Button as MuiButton } from "@mui/material";
 
-import { WHITE, GREEN, SEMI_BOLD } from "@/styles/constants";
-import { opensans } from "../../src/app/layout";
+import { WHITE, GREEN, SEMI_BOLD } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
-export const Button = styled(MuiButton)(({ theme }) => ({
+export const Button = styled(MuiButton)(() => ({
   border: "2px solid",
   borderColor: GREEN,
   borderRadius: "10px",
@@ -15,5 +15,4 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   fontSize: "18px",
   padding: "5px 30px",
-  [theme.breakpoints.down("sm")]: {},
 }));

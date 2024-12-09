@@ -1,7 +1,8 @@
 "use client";
 import { styled } from "@mui/material/styles";
-import { GREEN, SEMI_BOLD } from "../../src/styles/constants";
 import { opensans } from "../../src/app/layout";
+import { GREEN, SEMI_BOLD } from "../../src/styles/constants";
+
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
 export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({

@@ -2,10 +2,10 @@ import React from "react";
 
 import { Box } from "@mui/material";
 
-import { KeyFeaturesCard } from "../shared/key-features-card";
+import { KeyFeaturesCard } from "@/components/shared/key-features-card";
 import { Container } from "./styles";
 import { KeyFeaturesProps } from "./types";
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 export const KeyFeatures: React.FC<KeyFeaturesProps> = ({
   data,

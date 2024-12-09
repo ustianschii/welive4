@@ -1,14 +1,15 @@
 import React from "react";
 
 import { Box, Typography } from "@mui/material";
-import { BLACK, BOLD, WHITE } from "@/styles/constants";
-import { raleway, opensans } from "../layout";
-import { ClientDetailsForm } from "../../../components/client-details-form";
-import { SummaryBookingDetails } from "../../../components/cart-summary-booking-details";
-import { Header } from "../../../components/shared/header";
-import { Highlighted } from "../../../components/hero-title/styles";
-import { Container } from "../../../components/cart-summary-booking-details/styles";
-import { Meta } from "../../../components/meta";
+
+import { BLACK, BOLD, WHITE } from "@/src/styles/constants";
+import { raleway, opensans } from "@/src/app/layout";
+import { ClientDetailsForm } from "@/components/client-details-form";
+import { SummaryBookingDetails } from "@/components/cart-summary-booking-details";
+import { Header } from "@/components/shared/header";
+import { Highlighted } from "@/components/hero-title/styles";
+import { Container } from "@/components/cart-summary-booking-details/styles";
+import { Meta } from "@/components/meta";
 
 export default function Cart() {
   return (

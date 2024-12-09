@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Box } from "@mui/material";
+
 import {
   Address,
   BannerContainer,
@@ -10,7 +13,6 @@ import {
   WorkingHours,
   Wrapper,
 } from "./styles";
-import { Box } from "@mui/material";
 
 export const CustomerCare = () => {
   const features = [

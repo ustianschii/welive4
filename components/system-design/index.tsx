@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Container, Description, Title, Button } from "../statistic/styles";
 import { Highlighted } from "../hero-title/styles";
 import { Separator } from "../shared/gray-separator";
-import { ROUTES } from "../../src/app/utils/routes-constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 import { GreenDivider } from "../shared/green-divider";
 
 export const SystemDesign = () => {

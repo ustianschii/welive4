@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { services } from "./services";
 import { ServicesBox, ListItem, Wrapper } from "./styles";
-import { GREEN_DARK } from "@/styles/constants";
+import { GREEN_DARK } from "@/src/styles/constants";
 
 export const ServicesList = () => {
   return (

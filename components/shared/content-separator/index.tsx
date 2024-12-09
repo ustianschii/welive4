@@ -1,10 +1,11 @@
 import React from "react";
 
+import { Box } from "@mui/material";
+
 import { GreenDivider } from "../green-divider";
-import { Highlighted } from "../../hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { ContentSeparatorProps } from "./types";
 import { Container, Description, Title } from "./styles";
-import { Box } from "@mui/material";
 
 export const ContentSeparator: React.FC<ContentSeparatorProps> = ({
   titlestart,

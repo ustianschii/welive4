@@ -2,7 +2,8 @@
 
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox } from "@mui/material";
-import { GREEN } from "@/styles/constants";
+
+import { GREEN } from "@/src/styles/constants";
 
 export const FormBox = styled(MuiBox)(({ theme }) => ({
   overflow: "hidden",

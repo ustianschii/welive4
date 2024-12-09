@@ -1,5 +1,9 @@
 import React from "react";
 
+import Image from "next/image";
+
+import { Box } from "@mui/material";
+
 import {
   Button,
   CardContainer,
@@ -9,10 +13,6 @@ import {
   Title,
 } from "./styles";
 import { articles } from "./data";
-
-import { Box } from "@mui/material";
-
-import Image from "next/image";
 
 export const BlogArticles = () => {
   return (

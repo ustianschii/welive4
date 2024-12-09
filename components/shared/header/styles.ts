@@ -10,10 +10,11 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import { opensans } from "@/src/app/layout";
+
 import Image from "next/image";
 
-import { SEPARATOR_BACKGROUND } from "@/styles/constants";
-import { opensans } from "../../../src/app/layout";
+import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 import { AppBarProps, ContainerProps, ToolbarProps } from "./types";
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(

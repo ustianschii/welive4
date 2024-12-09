@@ -7,8 +7,8 @@ import {
   Box as MuiBox,
 } from "@mui/material";
 
-import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/styles/constants";
-import { raleway } from "../../src/app/layout";
+import { SEPARATOR_BACKGROUND, SEMI_BOLD, WHITE } from "@/src/styles/constants";
+import { raleway } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,

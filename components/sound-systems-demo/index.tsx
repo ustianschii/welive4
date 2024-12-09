@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-
 import {
   Box,
   IconButton,
@@ -20,17 +19,30 @@ import { Highlighted } from "../hero-title/styles";
 
 export const SoundSystemDemo: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === soundSystems.length - 1 ? 0 : prevIndex + 1
-    );
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === soundSystems.length - 1 ? 0 : prevIndex + 1
+        );
+        setIsAnimating(false);
+      }, 300);
+    }
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? soundSystems.length - 1 : prevIndex - 1
-    );
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? soundSystems.length - 1 : prevIndex - 1
+        );
+        setIsAnimating(false);
+      }, 300);
+    }
   };
 
   const theme = useTheme();
@@ -44,17 +56,32 @@ export const SoundSystemDemo: React.FC = () => {
   return (
     <Wrapper>
       <Container maxWidth="lg" disableGutters>
-        <Box display="flex" alignItems="center">
+        <Box display="flex" alignItems="center" position="relative">
           <IconButton onClick={handlePrev}>
             <ArrowBackIosIcon fontSize="large" />
           </IconButton>
-          <Image
-            src={soundSystems[currentIndex].imagePath}
-            alt="carousel"
-            height={height}
-            width={width}
-            style={{ objectFit: "cover", marginBottom: "30px" }}
-          />
+          <Box
+            sx={{
+              position: "relative",
+              height: `${height}px`,
+              width: `${width}px`,
+              overflow: "hidden",
+            }}
+          >
+            <Image
+              key={currentIndex}
+              src={soundSystems[currentIndex].imagePath}
+              alt="carousel"
+              height={height}
+              width={width}
+              style={{
+                objectFit: "cover",
+                marginBottom: "30px",
+                opacity: isAnimating ? 0 : 1,
+                transition: "opacity 0.3s ease-in-out",
+              }}
+            />
+          </Box>
           <IconButton onClick={handleNext}>
             <ArrowForwardIosIcon fontSize="large" />
           </IconButton>
@@ -66,7 +93,7 @@ export const SoundSystemDemo: React.FC = () => {
           marginLeft={isLarge ? "30px" : ""}
         >
           {soundSystems[currentIndex].types.map((item, index) => (
-            <Box key={index} mb="20px" minHeight="200px">
+            <Box key={index} mb="20px" minHeight="200px" minWidth="50%">
               <Title>
                 <Highlighted>{item.highlighted}</Highlighted>
                 {item.title}

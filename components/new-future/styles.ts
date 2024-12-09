@@ -13,8 +13,8 @@ import {
   SEMI_BOLD,
   WHITE,
   GREEN,
-} from "@/styles/constants";
-import { raleway } from "../../src/app/layout";
+} from "@/src/styles/constants";
+import { raleway } from "@/src/app/layout";
 
 export const Wrapper = styled(MuiBox)(() => ({
   backgroundColor: SEPARATOR_BACKGROUND,

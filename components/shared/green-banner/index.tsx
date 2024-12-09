@@ -2,7 +2,7 @@ import React from "react";
 
 import { GreenBannerProps } from "./types";
 import { Container, Description, Title, Wrapper } from "./styles";
-import { Highlighted } from "../../hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 
 export const GreenBanner: React.FC<GreenBannerProps> = ({
   title,
