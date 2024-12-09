@@ -5,7 +5,8 @@ import {
   Typography as MuiTypography,
   Container as MuiContainer,
 } from "@mui/material";
-import { WHITE } from "@/styles/constants";
+
+import { WHITE } from "@/src/styles/constants";
 import { opensans } from "../app/layout";
 
 export const Paragraph = styled(MuiTypography)(({ theme }) => ({

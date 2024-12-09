@@ -7,8 +7,8 @@ import {
   ReadMore,
   Subtitle,
   Title,
-} from "../../../src/styles/blog-styles";
-import { Highlighted } from "../../../components/hero-title/styles";
+} from "@/src/styles/blog-styles";
+import { Highlighted } from "@/components/hero-title/styles";
 
 export default function AutomationInstallation() {
   return (

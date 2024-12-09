@@ -2,11 +2,11 @@ import React from "react";
 
 import { Box } from "@mui/material";
 
-import { BLACK } from "@/styles/constants";
-import { Paragraph, Container } from "../../styles/privacy-policy-styles";
-import { Header } from "../../../components/shared/header";
-import { Subtitle } from "../../../components/hero-title/styles";
-import { Meta } from "../../../components/meta";
+import { BLACK } from "@/src/styles/constants";
+import { Paragraph, Container } from "@/src/styles/privacy-policy-styles";
+import { Header } from "@/components/shared/header";
+import { Subtitle } from "@/components/hero-title/styles";
+import { Meta } from "@/components/meta";
 
 export default function PrivacyPolicy() {
   return (

@@ -4,13 +4,14 @@ import {
   Typography as MuiTypography,
   Box as MuiBox,
 } from "@mui/material";
+
 import {
   GREEN,
   WHITE,
   SEPARATOR_BACKGROUND,
   ARTICLE_BACKGROUND,
   SEMI_BOLD,
-} from "@/styles/constants";
+} from "@/src/styles/constants";
 import { opensans, raleway } from "../app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
