@@ -1,4 +1,7 @@
+"use client";
+
 import { Open_Sans, Raleway } from "next/font/google";
+import { usePathname } from "next/navigation";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material";
@@ -10,6 +13,7 @@ import { Footer } from "@/components/shared/footer";
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Analytics } from "@/components/analytics/analytics";
 import { HSAnalytics } from "@/components/hs-analytics/analytics";
+import PageTransition from "@/components/page-transition";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -28,6 +32,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+
   return (
     <html lang="en">
       <body>
@@ -36,8 +42,10 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            {children}
-            <Footer divider={<GreenDivider />} />
+            <PageTransition pathname={pathname}>
+              {children}
+              <Footer divider={<GreenDivider />} />
+            </PageTransition>
           </ThemeProvider>
         </AppRouterCacheProvider>
         <HubSpotScript />
