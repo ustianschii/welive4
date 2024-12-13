@@ -33,7 +33,7 @@ export default function HomeTheater() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               CUSTOMIZED
               <Highlighted>GAME & MEDIA</Highlighted>
               ROOM INSTALLATION

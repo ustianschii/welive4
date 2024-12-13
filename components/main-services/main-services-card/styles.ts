@@ -27,6 +27,7 @@ export const ImageBox = styled(MuiBox)(({ theme }) => ({
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
   border: "2px solid white",
+  borderRadius: "10px",
   fontFamily: opensans.style.fontFamily,
   whiteSpace: "nowrap",
   textOverflow: "ellipsis",

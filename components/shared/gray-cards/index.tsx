@@ -50,6 +50,8 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
                 style={{
                   borderRadius: "10px",
                   objectFit: "cover",
+                  boxShadow:
+                    "5px 5px 30px rgba(0, 0, 0, 0.2), -5px -5px 30px rgba(0, 0, 0, 0.2)",
                 }}
               />
             )}

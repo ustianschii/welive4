@@ -101,6 +101,7 @@ export const CardContent = styled(MuiBox)(({ theme }) => ({
   backgroundColor: BLACK,
   borderRadius: "10px",
   padding: "30px",
+  boxShadow: "5px 5px 30px rgba(0, 0, 0, 0.2), -5px 0 30px rgba(0, 0, 0, 0.2)",
 
   [theme.breakpoints.up("md")]: {
     minHeight: "420px",

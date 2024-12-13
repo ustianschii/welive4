@@ -11,13 +11,17 @@ import { WhyChoose } from "@/components/why-choose";
 import { Reviews } from "@/components/reviews";
 import { GrayCardsBox } from "@/components/shared/gray-cards";
 import { Button } from "@/components/shared/gray-cards/styles";
-import { Highlighted } from "@/components/hero-title/styles";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+  Title,
+} from "@/components/hero-title/styles";
 import { GCHome } from "@/components/shared/gray-cards/data";
 import { Separator } from "@/components/shared/gray-separator";
 import { ROUTES } from "./utils/routes-constants";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { HeroTitle } from "@/components/hero-title";
 import { CustomButton } from "@/components/shared/header-button";
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
@@ -36,7 +40,16 @@ export default function Home() {
         mobileheight="600px"
         tabletheight="600px"
         desktopheight="600px"
-        title={<HeroTitle />}
+        title={
+          <HeaderTextBox>
+            <Title component="h1">EXPERIENCE SMART TECHNOLOGY TODAY</Title>
+            <Subtitle>
+              WE
+              <Highlighted>LIVE</Highlighted>4 THE
+              <Highlighted>FUTURE</Highlighted>OF LIVING
+            </Subtitle>
+          </HeaderTextBox>
+        }
         button={<CustomButton text={"DESIGN YOUR SPACE"} />}
         divider={<GreenDivider />}
       />

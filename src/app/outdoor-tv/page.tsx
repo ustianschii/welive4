@@ -56,7 +56,7 @@ export default function Outdoor() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               <Highlighted>PREMIUM OUTDOOR</Highlighted>
               TV MOUNTING
             </Subtitle>

@@ -45,7 +45,7 @@ export default function AudioVisualSystems() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               PREMIUM
               <Highlighted>ENTERTAINMENT SPACES</Highlighted>DESIGN AND
               INSTALLATION

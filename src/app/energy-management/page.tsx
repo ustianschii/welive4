@@ -51,7 +51,7 @@ export default function EnergyManagement() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               HOME & BUILDING
               <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
             </Subtitle>

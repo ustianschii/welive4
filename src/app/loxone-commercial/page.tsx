@@ -40,7 +40,7 @@ export default function LoxoneCommercial() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               <Highlighted>LOXONE</Highlighted>FOR COMMERCIAL
             </Subtitle>
           </HeaderTextBox>

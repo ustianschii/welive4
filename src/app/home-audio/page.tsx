@@ -47,7 +47,7 @@ export default function HomeTheater() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               WHOLE
               <Highlighted>HOME AUDIO</Highlighted>
               SYSTEMS

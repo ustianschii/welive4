@@ -42,7 +42,7 @@ export default function Network() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               <Highlighted>PROFESSIONAL</Highlighted>
               NETWORK INSTALLATION
             </Subtitle>

@@ -50,7 +50,7 @@ export default function SystemDesign() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               SYSTEM
               <Highlighted>DESIGN</Highlighted>
             </Subtitle>

@@ -43,7 +43,7 @@ export default function LoxoneAutomation() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               Loxone Automation:
               <Highlighted>The Future-proof Of Smart Automation</Highlighted>
             </Subtitle>

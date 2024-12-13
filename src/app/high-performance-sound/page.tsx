@@ -41,7 +41,7 @@ export default function HighPerformanceSound() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               <Highlighted>HIGH PERFORMANCE SOUND</Highlighted>
               SYSTEM INSTALLATION
             </Subtitle>

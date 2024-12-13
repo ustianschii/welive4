@@ -307,8 +307,8 @@ export const GCHomeTheater = [
   },
 
   {
-    image: "/home-theater/installation.png",
-    imagetablet: "/home-theater/tablet/installation.png",
+    image: "/home-theater/installation.jpg",
+    imagetablet: "/home-theater/tablet/installation.jpg",
     titlehighlightedstart: "Seamless ",
     titleend: "Installation",
     firstdescription:
@@ -473,7 +473,7 @@ export const GCMusicStreaming = [
 export const GCOutdoorEntertainmentTV = [
   {
     image: "/outdoor-entertainment/outdoor-tv.png",
-    imagetablet: "/outdoor-entertainment/tablet/outdoor-tv.png",
+    imagetablet: "/outdoor-entertainment/tablet/outdoor-tv.jpg",
     titlestart: "Premium ",
     titlehighlightedend: "Outdoor TV",
     firstdescription:
@@ -485,8 +485,9 @@ export const GCOutdoorEntertainmentTV = [
 export const GCOutdoorEntertainmentSpeaker = [
   {
     image: "/outdoor-entertainment/outdoor-speaker.png",
-    imagetablet: "/outdoor-entertainment/tablet/outdoor-speaker.png",
-    titlehighlightedstart: "Customized Outdoor Speaker System",
+    imagetablet: "/outdoor-entertainment/tablet/outdoor-speaker.jpg",
+    titlestart: "Customized ",
+    titlehighlightedend: "Outdoor Speaker System",
     firstdescription:
       "Enjoy personalized, high-quality sound for any occasion - from movie nights to peaceful moments of relaxation. With our best high-end outdoor speakers, you can enjoy high-quality sound even in rainy, sunny, or whether you need an outdoor sound system for pool.",
     seconddescription:

@@ -40,7 +40,7 @@ export default function LoxoneResidential() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               <Highlighted>LOXONE</Highlighted>
               FOR RESIDENTIAL
             </Subtitle>

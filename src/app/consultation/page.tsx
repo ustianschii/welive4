@@ -25,7 +25,7 @@ export default function Consultation() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               GET A<Highlighted>FREE CONSULTATION</Highlighted>
               FOR YOUR
               <Highlighted>DREAM HOME!</Highlighted>
@@ -35,7 +35,7 @@ export default function Consultation() {
         background={`url('consultation/header-bg.png')`}
         tabletbackground={`url('consultation/tablet/header-bg.png')`}
         desktopbackground={`url('consultation/desktop/header-bg.png')`}
-        mobileheight="600px"
+        mobileheight="500px"
         tabletheight="600px"
         desktopheight="600px"
         divider={<GreenDivider />}

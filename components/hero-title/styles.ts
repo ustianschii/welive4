@@ -3,7 +3,11 @@ import { styled } from "@mui/material/styles";
 import { opensans } from "../../src/app/layout";
 import { GREEN, SEMI_BOLD } from "../../src/styles/constants";
 
-import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
+import {
+  Box as MuiBox,
+  Typography as MuiTypography,
+  TypographyProps,
+} from "@mui/material";
 
 export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
   overflow: "hidden",
@@ -18,7 +22,7 @@ export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
   },
 }));
 
-export const Title = styled(MuiTypography)(({ theme }) => ({
+export const Title = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   fontFamily: opensans.style.fontFamily,
@@ -50,7 +54,7 @@ export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
   })
 );
 
-export const Subtitle = styled(MuiTypography)(({ theme }) => ({
+export const Subtitle = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
   lineHeight: "1.1",
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
@@ -67,7 +71,7 @@ export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   },
 
   [theme.breakpoints.down("sm")]: {
-    fontSize: "28px",
+    fontSize: "25px",
     padding: "0 10px",
   },
 }));

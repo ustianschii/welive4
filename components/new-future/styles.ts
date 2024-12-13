@@ -30,7 +30,8 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
     borderRadius: "10px",
-    boxShadow: "4px 4px 10px rgba(0, 0, 0, 0.3)",
+    boxShadow:
+      "5px 5px 30px rgba(0, 0, 0, 0.2), -5px -5px 30px rgba(0, 0, 0, 0.2)",
     justifyContent: "center",
     padding: "50px 0",
   },

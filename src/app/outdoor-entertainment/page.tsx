@@ -42,7 +42,7 @@ export default function OutdoorEntertainment() {
       <Header
         title={
           <HeaderTextBox>
-            <Subtitle>
+            <Subtitle component="h1">
               <Highlighted>OUTDOOR ENTERTAINMENT</Highlighted> <br />
               SYSTEM INSTALLATION & DESIGN
             </Subtitle>
