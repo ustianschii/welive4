@@ -9,6 +9,7 @@ import { HubSpotScript } from "@/components/hs-chatbot";
 import { Footer } from "@/components/shared/footer";
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Analytics } from "@/components/analytics/analytics";
+import { HSAnalytics } from "@/components/hs-analytics/analytics";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Analytics />
+        <HSAnalytics />
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />

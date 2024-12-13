@@ -132,6 +132,6 @@ export const CardContainer = styled(MuiBox)(({ theme }) => ({
     gap: "20px",
   },
   [theme.breakpoints.down("sm")]: {
-    gap: "20px",
+    gap: "10px",
   },
 }));

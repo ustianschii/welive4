@@ -39,20 +39,32 @@ export const Typography = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   textAlign: "center",
+  alignItems: "center",
+  backgroundColor: "rgba(0, 0, 0, 0.3)",
 
-  [theme.breakpoints.up("md")]: {
-    padding: "0 5px 20px 5px",
+  [theme.breakpoints.up("lg")]: {
+    padding: "10px",
     fontSize: "15px",
     lineHeight: "1.3",
+    minHeight: "35%",
+  },
+  [theme.breakpoints.down("lg")]: {
+    padding: "10px",
+    fontSize: "12px",
+    lineHeight: "1.3",
+    minHeight: "20%",
   },
 
   [theme.breakpoints.down("md")]: {
-    padding: "0 20px 20px 20px",
-    fontSize: "18px",
+    padding: "10px",
+    fontSize: "15px",
+    lineHeight: "1.3",
+    minHeight: "20%",
   },
 
   [theme.breakpoints.down("sm")]: {
-    padding: "0 5px 20px 5px",
-    fontSize: "14px",
+    padding: "5px",
+    fontSize: "12px",
+    minHeight: "40%",
   },
 }));

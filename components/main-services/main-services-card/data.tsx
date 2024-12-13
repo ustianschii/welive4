@@ -1,4 +1,4 @@
-import { ROUTES } from "../../../src/app/utils/routes-constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const servicesData = [
   {
@@ -21,7 +21,7 @@ export const servicesData = [
   },
   {
     img: "/services-images-mobile/tv-mounting.jpg",
-    imgdesktop: "/services-images-mobile/desktop/tv-mounting.png",
+    imgdesktop: "/services-images-mobile/desktop/tv-mounting.jpg",
     text: "TV MOUNTING",
     link: ROUTES.OUTDOOR_TV,
   },

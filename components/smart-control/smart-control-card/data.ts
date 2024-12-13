@@ -10,18 +10,18 @@ export const CardContent = [
     text: "Control of electricity consumption, heating and cooling, and more to avoid wasting energy.",
   },
   {
-    image: "/smart-control-mobile/easy.jpg",
-    imagetablet: "/smart-control-mobile/tablet/easy.jpg",
+    image: "/smart-control-mobile/easy.webp",
+    imagetablet: "/smart-control-mobile/tablet/easy.webp",
     text: "Ability to get insights about your surroundings to watch and control what’s going on around the house.",
   },
   {
-    image: "/smart-control-mobile/simple.jpg",
-    imagetablet: "/smart-control-mobile/tablet/simple.jpg",
+    image: "/smart-control-mobile/simple.webp",
+    imagetablet: "/smart-control-mobile/tablet/simple.webp",
     text: "Your smart home remains functional even if your internet connection is down. You can still control lighting, heating, and other automated functions.",
   },
   {
-    image: "/smart-control-mobile/design.jpg",
-    imagetablet: "/smart-control-mobile/tablet/design.jpg",
+    image: "/smart-control-mobile/design.webp",
+    imagetablet: "/smart-control-mobile/tablet/design.webp",
     text: "We deliver creative and cost-effective smart technology that will quickly fit into your lifestyle.",
   },
   {

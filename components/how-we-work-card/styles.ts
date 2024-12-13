@@ -8,24 +8,22 @@ import { GREEN, SEPARATOR_BACKGROUND, WHITE } from "@/src/styles/constants";
 import { ContainerProps } from "./types";
 
 export const Container = styled(MuiBox)<ContainerProps>(
-  ({ theme, background, size }) => ({
+  ({ theme, background }) => ({
     backgroundColor: SEPARATOR_BACKGROUND,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
+    backgroundSize: "contain",
     borderRadius: "10px",
     backgroundImage: `url(${background})`,
 
     [theme.breakpoints.up("md")]: {
-      backgroundSize: "contain",
       padding: "30px",
     },
     [theme.breakpoints.down("md")]: {
-      backgroundSize: "contain",
       padding: "30px",
     },
     [theme.breakpoints.down("sm")]: {
       minHeight: "260px",
-      backgroundSize: size ?? "contain",
       padding: "20px 15px",
     },
   })

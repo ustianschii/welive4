@@ -7,5 +7,4 @@ export interface CardTypes {
 
 export interface ContainerProps {
   background: string;
-  size?: string;
 }

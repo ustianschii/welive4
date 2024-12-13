@@ -7,10 +7,9 @@ export const Card: React.FC<CardTypes> = ({
   background,
   title,
   description,
-  size,
 }) => {
   return (
-    <Container background={background} size={size}>
+    <Container background={background}>
       <Title>{title}</Title>
       <Description>{description}</Description>
     </Container>
