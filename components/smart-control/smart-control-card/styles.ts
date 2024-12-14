@@ -41,30 +41,25 @@ export const Typography = styled(MuiTypography)(({ theme }) => ({
   textAlign: "center",
   alignItems: "center",
   backgroundColor: "rgba(0, 0, 0, 0.3)",
+  padding: "5px",
+  lineHeight: "1.3",
 
   [theme.breakpoints.up("lg")]: {
-    padding: "10px",
-    fontSize: "15px",
-    lineHeight: "1.3",
-    minHeight: "35%",
+    fontSize: "14px",
+    minHeight: "22%",
   },
   [theme.breakpoints.down("lg")]: {
-    padding: "10px",
     fontSize: "12px",
-    lineHeight: "1.3",
-    minHeight: "20%",
+    minHeight: "22%",
   },
 
   [theme.breakpoints.down("md")]: {
-    padding: "10px",
     fontSize: "15px",
-    lineHeight: "1.3",
     minHeight: "20%",
   },
 
   [theme.breakpoints.down("sm")]: {
-    padding: "5px",
-    fontSize: "12px",
-    minHeight: "40%",
+    fontSize: "11px",
+    minHeight: "30%",
   },
 }));

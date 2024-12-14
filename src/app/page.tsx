@@ -30,8 +30,8 @@ export default function Home() {
   return (
     <>
       <Meta
-        title="WeLive4"
-        description="We integrate advanced systems technology for smart home, office, and building automation, allowing users to easily manage their environments. Our solutions enhance convenience, efficiency, and comfort by integrating innovative automation technology and user-friendly control interface, ultimately creating intelligent ecosystems that adapt to individual needs and improve modern living."
+        title="Integrate technology for smart home, office, and building automation"
+        description="We integrate advanced systems technology for smart home, office, and building automation, allowing users to easily manage their environments."
       />
       <Header
         background={`url('/header-mobile/header-bg.jpg')`}

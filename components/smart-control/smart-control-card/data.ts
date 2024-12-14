@@ -17,7 +17,7 @@ export const CardContent = [
   {
     image: "/smart-control-mobile/simple.webp",
     imagetablet: "/smart-control-mobile/tablet/simple.webp",
-    text: "Your smart home remains functional even if your internet connection is down. You can still control lighting, heating, and other automated functions.",
+    text: "Local mini-server allows you to control lighting, heating, and other automated features offline.",
   },
   {
     image: "/smart-control-mobile/design.webp",
