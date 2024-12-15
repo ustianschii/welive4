@@ -16,7 +16,7 @@ export default function GetServices() {
         desktopheight="150px"
         backcolor={BLACK}
         title={
-          <Subtitle sx={{ marginTop: "50px" }}>
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
             GET OUR<Highlighted>SERVICES</Highlighted>
           </Subtitle>
         }

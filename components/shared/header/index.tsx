@@ -114,7 +114,7 @@ export const Header: React.FC<HeaderProps> = ({
             >
               {pages.map((page, index) => (
                 <Link
-                  key={index}
+                  key={index + 1}
                   href={page.href}
                   style={{ textDecoration: "none" }}
                 >
@@ -132,7 +132,7 @@ export const Header: React.FC<HeaderProps> = ({
           <DesktopHeaderLinks>
             {desktopPages.map((page, index) => (
               <HeaderDesktopButton
-                key={index}
+                key={index + 1}
                 href={page.href}
                 label={page.text}
               />
@@ -142,7 +142,7 @@ export const Header: React.FC<HeaderProps> = ({
         {dividerTop}
         {title}
         {subtitle}
-        <Link href={ROUTES.CONSULTATION}>{button}</Link>
+        {button}
       </Container>
       {divider}
       {Boolean(anchorElNav) && <ShadowBox onClick={handleCloseNavMenu} />}

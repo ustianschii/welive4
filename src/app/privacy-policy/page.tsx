@@ -21,7 +21,11 @@ export default function PrivacyPolicy() {
         tabletheight="100px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "30px" }}>Privacy Policy</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "30px" }}>
+            Privacy Policy
+          </Subtitle>
+        }
       />
       <Box bgcolor={BLACK} id="top">
         <Container maxWidth="md">
