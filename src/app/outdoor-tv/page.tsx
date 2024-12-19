@@ -36,8 +36,8 @@ export default function Outdoor() {
   return (
     <>
       <Meta
-        title="Outdoor TV"
-        description=" Outdoor TV Mounting"
+        title="Premium Outdoor TV Mounting Services"
+        description="Transform your outdoor space with weatherproof, high-quality TVs for seamless viewing in any condition. Offering flexible installation and top brands for an exceptional entertainment experience."
         keywords={[
           "outdoor entertainment",
           "outdoor tv",

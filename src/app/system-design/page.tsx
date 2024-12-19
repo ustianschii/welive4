@@ -30,8 +30,8 @@ export default function SystemDesign() {
   return (
     <>
       <Meta
-        title="System Design"
-        description="Seamless design process ensures that you unique need are met"
+        title="Expert System Design Services"
+        description="Optimize your home or business with tailored automation, network, entertainment, and energy solutions. Our seamless design process ensures performance, efficiency, and satisfaction from start to finish."
         keywords={[
           "system design",
           "home automation",

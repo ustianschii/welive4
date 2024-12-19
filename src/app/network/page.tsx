@@ -22,8 +22,8 @@ export default function Network() {
   return (
     <>
       <Meta
-        title="Network"
-        description="Lightning-fast Network Installation"
+        title="Professional Network Installation Services"
+        description="Get fast, reliable internet with tailored solutions for home, business, and rural areas. From wired networks to next-gen WiFi and satellite internet, we’ve got you covered."
         keywords={[
           "network",
           "wifi",

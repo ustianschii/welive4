@@ -30,8 +30,8 @@ export default function HomeTheater() {
   return (
     <>
       <Meta
-        title="Home Audio"
-        description="Your Favorite Songs In Every Corner Of Your Home"
+        title="Whole Home Audio Systems - Customized Sound Solutions for Every Room"
+        description="Discover premium whole-home audio systems with expert design and seamless speaker concealment. Enhance your lifestyle with personalized sound solutions for every space."
         keywords={[
           "home audio",
           "5.1",

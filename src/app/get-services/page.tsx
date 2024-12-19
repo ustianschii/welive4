@@ -9,7 +9,10 @@ import { Meta } from "@/components/meta";
 export default function GetServices() {
   return (
     <>
-      <Meta title="Get Services" />
+      <Meta
+        title="Comprehensive Smart Automation Services"
+        description="Explore our range of services, from smart home design to entertainment systems, EV tech, and more, tailored to enhance your lifestyle."
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

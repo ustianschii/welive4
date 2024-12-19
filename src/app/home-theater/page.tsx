@@ -29,8 +29,8 @@ export default function HomeTheater() {
   return (
     <>
       <Meta
-        title="Home Theater"
-        description="Home Theater Sound System Tailored Just For You"
+        title="Custom High-End Home Theater Systems"
+        description="Experience superior audio, personalized design, seamless installation, and full control with LOXONE integration for the ultimate home cinema experience."
         keywords={[
           "home audio",
           "home theater",
