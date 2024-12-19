@@ -21,7 +21,10 @@ import { CCChecklistConsultation } from "@/components/cc-checklist-consultation"
 export default function Consultation() {
   return (
     <>
-      <Meta title="Free Consultation" description="Get A Free Consultation" />
+      <Meta
+        title="Automation Consulting"
+        description="Consulting for smart automation systems, helping homeowners and builders integrate innovative tech with customized solutions and seamless connectivity."
+      />
       <Header
         title={
           <HeaderTextBox>

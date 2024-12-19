@@ -27,7 +27,7 @@ export default function AudioVisualSystems() {
     <>
       <Meta
         title="Premium Audio Visual Systems"
-        description="Unmatched Audio & Visual Excellence"
+        description="Receivers and speakers for entertainment room and space designs, including TIDAL integration."
         keywords={[
           "audio",
           "video",

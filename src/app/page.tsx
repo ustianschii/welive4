@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Meta
         title="Integrate technology for smart home, office, and building automation"
-        description="We integrate advanced systems technology for smart home, office, and building automation, allowing users to easily manage their environments."
+        description="We integrate advanced automation systems for smart homes, offices, and buildings, enhancing convenience, efficiency, and comfort with user-friendly solutions."
       />
       <Header
         background={`url('/header-mobile/header-bg.jpg')`}
