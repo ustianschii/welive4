@@ -22,8 +22,8 @@ export default function LoxoneResidential() {
   return (
     <>
       <Meta
-        title="Loxone Residential"
-        description="The New Future Of Smart Automation"
+        title="Loxone Residential Solutions: Redefining Luxury Living"
+        description="Transform your home with Loxone. Enjoy personalized automation for lighting, climate, security, and entertainment for a smarter, cozier lifestyle."
         keywords={[
           "loxone",
           "smart home",

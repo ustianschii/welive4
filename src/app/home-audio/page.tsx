@@ -21,10 +21,10 @@ import {
 import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
 import { GreenDivider } from "@/components/shared/green-divider";
-
-import { Box } from "@mui/material";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
+
+import { Box } from "@mui/material";
 
 export default function HomeTheater() {
   return (

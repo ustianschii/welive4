@@ -22,8 +22,8 @@ export default function LoxoneCommercial() {
   return (
     <>
       <Meta
-        title="Loxone Commercial"
-        description="The New Future Of Smart Automation"
+        title="Loxone Commercial Solutions: Smart Automation for Your Business"
+        description="Transform your building with Loxone automation. Save energy, boost productivity, and enhance security with tailored solutions for every commercial need."
         keywords={[
           "loxone",
           "smart home",

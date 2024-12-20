@@ -24,8 +24,8 @@ export default function HighPerformanceSound() {
   return (
     <>
       <Meta
-        title="High Performance Sound System"
-        description="Feel every note, every rumble"
+        title="High-Performance Surround Sound System Installation"
+        description="Experience immersive surround sound with 5.1 or 7.1 systems, high-end music streaming, wire concealment, and crystal-clear audio for every space."
         keywords={[
           "high performance sound system",
           "5.1",

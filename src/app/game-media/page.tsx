@@ -26,8 +26,8 @@ export default function HomeTheater() {
   return (
     <>
       <Meta
-        title="Game & Media Room"
-        description="Your Perfect Custom Gaming and Media Zone"
+        title="Customized Game & Media Room Installation Services"
+        description="Create your dream gaming and media space with personalized designs, AV setup, RGBW lighting, and smart control for an immersive experience."
         keywords={["media room", "gaming room", "rgbw"]}
       />
       <Header

@@ -29,8 +29,8 @@ export default function OutdoorEntertainment() {
   return (
     <>
       <Meta
-        title="Outdoor Entertainment"
-        description="Professional Outdoor Entertainment Installation"
+        title="Outdoor Entertainment System Installation & Design"
+        description="Elevate your outdoor experience with WE LIVE 4’s premium entertainment systems. From weatherproof TVs to custom speaker setups, enjoy stunning visuals and immersive sound tailored to your space."
         keywords={[
           "outdoor entertainment",
           "outdoor tv",
