@@ -9,6 +9,9 @@ declare global {
         }) => void;
       };
     };
+    chatwootSDK?: {
+      run: (config: { websiteToken: string; baseUrl: string }) => void;
+    };
   }
 }
 

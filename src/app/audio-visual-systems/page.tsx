@@ -79,7 +79,7 @@ export default function AudioVisualSystems() {
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         {GCAudioVisualSystems.map((item, index) => (
           <GrayCardsBox
-            key={index}
+            key={index + 1}
             data={item}
             imgheight={400}
             imgwidth={388}

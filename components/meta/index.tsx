@@ -15,6 +15,7 @@ export const Meta = ({
         name="google-site-verification"
         content="rl1QvSKCp91lAgUm-bTeIj6dx3SxMLW564MWF1Zlngk"
       />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <link
         rel="icon"
         type="image/png"
@@ -22,7 +23,6 @@ export const Meta = ({
         sizes="96x96"
       />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="shortcut icon" href="/favicon.ico" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"

@@ -5,11 +5,10 @@ import { ThemeProvider } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 
 import theme from "@/src/styles/theme";
-import { HubSpotScript } from "@/components/hs-chatbot";
+import ChatWidget from "@/components/hiver";
 import { Footer } from "@/components/shared/footer";
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Analytics } from "@/components/analytics/analytics";
-import { HSAnalytics } from "@/components/hs-analytics/analytics";
 import ClientWrapper from "@/components/client-wrapper";
 
 export const opensans = Open_Sans({
@@ -33,7 +32,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Analytics />
-        <HSAnalytics />
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
@@ -43,7 +41,7 @@ export default function RootLayout({
             </ClientWrapper>
           </ThemeProvider>
         </AppRouterCacheProvider>
-        <HubSpotScript />
+        <ChatWidget />
       </body>
     </html>
   );
