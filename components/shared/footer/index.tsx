@@ -48,8 +48,8 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
         <Box m="30px 0">
           <Label>CONTACT US</Label>
           <ContactsBox>
-            {emails.map((item, index) => (
-              <Contact key={index}>
+            {emails.map((item) => (
+              <Contact key={item.id}>
                 <ContactLabel>{item.label}</ContactLabel>
                 <Link
                   href={`mailto:${item.email}`}
