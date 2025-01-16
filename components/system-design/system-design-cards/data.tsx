@@ -2,8 +2,8 @@ import { ROUTES } from "../../../src/app/utils/routes-constants";
 
 export const designTypes = [
   {
-    image: "system-design/home-automation.png",
-    imagetablet: "system-design/tablet/home-automation.png",
+    image: "system-design/home-automation.jpg",
+    imagetablet: "system-design/tablet/home-automation.jpg",
     title: "HOME AUTOMATION",
     description:
       "Control your home with ease, from adjusting lights to managing security, all at your fingertips. Our personalized home automation design ensures your comfort and convenience every step of the way.",
