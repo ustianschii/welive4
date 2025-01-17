@@ -21,7 +21,7 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
   return (
     <>
       {data.map((service, index) => (
-        <CardBox key={index}>
+        <CardBox key={index + 1}>
           <Board>
             {service.image && (
               <ImageContainer>
@@ -46,7 +46,7 @@ export const GetServiceCard: React.FC<GetServiceCardProps> = ({ data }) => {
           <Box display="flex" flexDirection="column" width="100%">
             <List style={{ margin: "10px 0" }}>
               {service.features.map((feature, index) => (
-                <Box key={index} display="flex">
+                <Box key={index + 1} display="flex">
                   <SvgIcon
                     style={{
                       color: WHITE,
