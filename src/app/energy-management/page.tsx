@@ -37,7 +37,7 @@ export default function EnergyManagement() {
     <>
       <Meta
         title="Home & Building Energy Management"
-        description="Maximize Savings While Minimizing Environmental Impact"
+        description="Expert solar, EV charging, and energy management solutions powered by Loxone. Save energy, reduce costs, and go green seamlessly."
         keywords={[
           "energy management",
           "home ev charging",
