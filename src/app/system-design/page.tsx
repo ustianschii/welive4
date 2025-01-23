@@ -56,15 +56,15 @@ export default function SystemDesign() {
             </Subtitle>
           </HeaderTextBox>
         }
-        background={`url('system-design/header-bg.png')`}
-        tabletbackground={`url('system-design/tablet/header-bg.png')`}
-        desktopbackground={`url('system-design/desktop/header-bg.png')`}
+        background={`url('system-design/header-bg.jpg')`}
+        tabletbackground={`url('system-design/desktop/header-bg.jpg')`}
+        desktopbackground={`url('system-design/desktop/header-bg.jpg')`}
         tabletheight="700px"
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
             first="At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money."
-            second="We believe in optimizing system performance to its fullest potential.  Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!"
+            second="We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!"
           />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}

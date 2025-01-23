@@ -10,7 +10,7 @@ export const SystemDesignCard: React.FC<DesignTypesProps> = ({ data }) => {
     <>
       {data.map((item, index) => (
         <CardBox
-          key={index}
+          key={index + 1}
           image={item.image}
           imagetablet={item.imagetablet}
           position="relative"

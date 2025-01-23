@@ -58,7 +58,7 @@ export const CardBox = styled(MuiBox)<{ image: string; imagetablet: string }>(
 );
 
 export const ContentBox = styled(MuiBox)(({ theme }) => ({
-  backgroundColor: "#00000099",
+  backgroundColor: "#000000A6",
 
   [theme.breakpoints.up("md")]: {
     padding: "20px 30px",
