@@ -1,4 +1,4 @@
-import { ROUTES } from "../../../src/app/utils/routes-constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const grayCardsData = [
   {
@@ -8,7 +8,7 @@ export const grayCardsData = [
     firstdescription:
       "Is your internet speed stuck in the slow lane? Slow internet during gaming, constant buffering while streaming and frustrating video calls can be so frustrating!",
     seconddescription:
-      "Get lightning-fast internet with WE LIVE 4 home networking installation services, no matter where you live. Forget the limitations of traditional providers. Heyo Smart gives you a faster connection, so you can stream, game, and work from home without any interruptions. ",
+      "Get lightning-fast internet with WE LIVE 4 home networking installation services, no matter where you live. Forget the limitations of traditional providers. We provide design and installation services to give you a faster connection, so you can stream, game, and work from home without any interruptions. ",
   },
   {
     image: "/network/gray-cards/networking-for-business.jpg",
