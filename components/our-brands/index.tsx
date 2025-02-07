@@ -15,8 +15,16 @@ export const OurBrands = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
-  const getWidth = () => (isMobile ? 150 : isTablet ? 200 : 250);
-  const getHeight = () => (isMobile ? 60 : isTablet ? 100 : 300);
+  const getWidth = () => {
+    if (isMobile) return 150;
+    if (isTablet) return 200;
+    return 250;
+  };
+  const getHeight = () => {
+    if (isMobile) return 60;
+    if (isTablet) return 100;
+    return 300;
+  };
 
   const infinitePartners = [...partners, ...partners];
 
@@ -24,7 +32,7 @@ export const OurBrands = () => {
     <>
       <Container id="our-brands">
         <Title>
-          OUR<Highlighted>BRANDS</Highlighted>
+          OUR<Highlighted>PARTNERS</Highlighted>
         </Title>
         <BrandsBox>
           {infinitePartners.map((partner, index) => (
