@@ -25,7 +25,7 @@ export default function LoxoneAutomation() {
   return (
     <>
       <Meta
-        title="Unbeatable CRESTRON LUTRON or CONTROL4 alternative"
+        title="Loxone Smart Automation | Future-Proof Solutions for Homes & Businesses. Unbeatable CRESTRON LUTRON or CONTROL4 alternative"
         description="Loxone Automation integrates lighting, heating, security, and energy management, offering convenience, efficiency, and sustainability for smart homes and buildings."
         keywords={[
           "loxone",
