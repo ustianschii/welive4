@@ -21,7 +21,10 @@ import { Meta } from "@/components/meta";
 export default function GetConsultation() {
   return (
     <>
-      <Meta title="Get Consultation" />
+      <Meta
+        title="Expert Smart Home & Renovation Consultation – Technology Advisory & Integration"
+        description="Get expert consultation for smart home automation, AV integration, EV charging, and home renovations. Our trained technicians evaluate your tech needs, provide tailored advice, and define the next steps for your project. Book your on-site consultation today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

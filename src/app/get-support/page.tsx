@@ -21,7 +21,10 @@ import { Meta } from "@/components/meta";
 export default function GetSupport() {
   return (
     <>
-      <Meta title="Get Support" />
+      <Meta
+        title="Warranty Claims, Troubleshooting & Electronics Recycling Services"
+        description="Easily file a warranty claim, get expert troubleshooting services, and recycle old electronics responsibly. We diagnose and resolve tech issues, provide repair estimates, and ensure eco-friendly disposal. Schedule your service today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

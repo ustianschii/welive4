@@ -17,7 +17,10 @@ import { Meta } from "@/components/meta";
 export default function GetNetworkWifi() {
   return (
     <>
-      <Meta title="Get Network & WiFi" />
+      <Meta
+        title="Ethernet, WiFi, & Cell Signal Boosting – Network Installation & Support"
+        description="Expert Ethernet & WiFi network setup, cell signal boosting, and large-area WiFi design. Services include troubleshooting, speed optimization, smart WiFi installation, and wiring/prewiring. Get reliable connectivity with professional support today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

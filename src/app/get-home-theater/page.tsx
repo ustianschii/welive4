@@ -14,16 +14,17 @@ import {
   ButtonsBox,
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 
 export default function GetHomeTheater() {
   return (
     <>
-      <Meta title="Get Home Theater" />
+      <Meta
+        title="Home Theater & Surround Sound System Installation – AV & Speaker Setup"
+        description="Professional home theater and sound system setup, including AV connections, WiFi integration, and remote configuration. Expert 5.1 & 7.1 surround speaker mounting, with optional pre-wiring for a seamless audio experience. Book your installation today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

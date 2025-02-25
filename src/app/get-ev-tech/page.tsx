@@ -14,16 +14,17 @@ import {
   ButtonsBox,
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 
 export default function GetEvTech() {
   return (
     <>
-      <Meta title="Get EV Tech" />
+      <Meta
+        title="Home EV Charger Installation & Smart Home Ecosystem Design"
+        description="Expert EV charger installation with full permitting, power optimization, and setup. Design a seamless smart home ecosystem integrating automation, solar, HVAC, security, and more. Get a consultation and tailored project plan today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

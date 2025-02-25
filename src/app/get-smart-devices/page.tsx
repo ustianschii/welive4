@@ -14,16 +14,17 @@ import {
   ButtonsBox,
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 
 export default function GetSmartDevices() {
   return (
     <>
-      <Meta title="Get Smart Devices" />
+      <Meta
+        title="Smart Home Device Installation – Video Doorbells, Cameras, Locks & More"
+        description="Professional video doorbell, smart camera, smart lock, thermostat, and garage door opener installation. Includes mobile app setup, device configuration, and expert support. Upgrade your home with smart technology today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

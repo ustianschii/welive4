@@ -10,8 +10,8 @@ export default function GetServices() {
   return (
     <>
       <Meta
-        title="Comprehensive Smart Automation Services"
-        description="Explore our range of services, from smart home design to entertainment systems, EV tech, and more, tailored to enhance your lifestyle."
+        title="Comprehensive Tech Services – Smart Home, WiFi, Home Theater, EV & More"
+        description="Explore expert network & WiFi setup, smart home automation, home theater design, EV tech, TV mounting, and device support. Get professional consultation and seamless tech integration for your home or business. Contact us today!"
       />
       <Header
         mobileheight="150px"

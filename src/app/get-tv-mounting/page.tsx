@@ -21,7 +21,10 @@ import { Meta } from "@/components/meta";
 export default function GetTvMounting() {
   return (
     <>
-      <Meta title="Get TV Mounting" />
+      <Meta
+        title="TV Mounting & Entertainment Center Installation – Floating, Outdoor & Wall Mounts"
+        description="Expert TV mounting services, including floating entertainment center installation, outdoor TV mounting, and wall mounts for TVs up to 70 inches and more. Get personalized setup recommendations, AV device connections, and in-wall cable concealment. Contact us for professional installation today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

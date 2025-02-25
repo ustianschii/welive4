@@ -21,7 +21,10 @@ import { Meta } from "@/components/meta";
 export default function GetSmartHome() {
   return (
     <>
-      <Meta title="Get Smart Home" />
+      <Meta
+        title="Complete Smart Home Technology Design & LOXONE Automation"
+        description="Custom smart home automation design tailored to your needs. Integrate HVAC, lighting, security, and internet systems with advanced LOXONE automation. Get expert consultation and a fully optimized smart home solution today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"

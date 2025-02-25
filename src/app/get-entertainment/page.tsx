@@ -23,7 +23,10 @@ import { Meta } from "@/components/meta";
 export default function GetEntertainment() {
   return (
     <>
-      <Meta title="Get Entertainment" />
+      <Meta
+        title="Home Theater & Entertainment Room Design – Smart AV & Lighting Solutions"
+        description="Transform your space with expert home theater, media room, and whole-home audio design. Our consultants evaluate your needs, define your vision, and integrate smart technology for the ultimate entertainment experience. Book a consultation today!"
+      />
       <Header
         mobileheight="150px"
         tabletheight="150px"
