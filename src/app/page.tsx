@@ -30,8 +30,8 @@ export default function Home() {
   return (
     <>
       <Meta
-        title="Integrate technology for smart home, office, and building automation"
-        description="We integrate advanced automation systems for smart homes, offices, and buildings, enhancing convenience, efficiency, and comfort with user-friendly solutions."
+        title="Integrate Technology for Smart Homes, Offices, and Premium Entertainment Systems"
+        description="We integrate advanced automation systems, including Loxone Smart Home solutions and expert insights on Crestron vs Control4, to enhance convenience, efficiency, and comfort. Our services also include outdoor TV installation in NJ and outdoor TV mounting services, ensuring a seamless experience for your premium entertainment systems."
       />
       <Header
         background={`url('/header-mobile/header-bg.jpg')`}

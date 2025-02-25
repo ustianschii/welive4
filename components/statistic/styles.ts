@@ -6,6 +6,7 @@ import {
   Container as MuiContainer,
   Typography as MuiTypography,
   Button as MuiButton,
+  TypographyProps,
 } from "@mui/material";
 
 import { opensans, raleway } from "@/src/app/layout";
@@ -69,24 +70,26 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const Description = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
-  fontFamily: raleway.style.fontFamily,
-  textAlign: "center",
+export const Description = styled(MuiTypography)<TypographyProps>(
+  ({ theme }) => ({
+    color: WHITE,
+    fontFamily: raleway.style.fontFamily,
+    textAlign: "center",
 
-  [theme.breakpoints.up("md")]: {
-    margin: "30px 70px 50px 70px ",
-    fontSize: "15px",
-  },
-  [theme.breakpoints.down("md")]: {
-    margin: "30px 10px 50px 10px ",
-    fontSize: "15px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    margin: "30px 0 50px 0 ",
-    fontSize: "14px",
-  },
-}));
+    [theme.breakpoints.up("md")]: {
+      margin: "30px 70px 50px 70px ",
+      fontSize: "15px",
+    },
+    [theme.breakpoints.down("md")]: {
+      margin: "30px 10px 50px 10px ",
+      fontSize: "15px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      margin: "30px 0 50px 0 ",
+      fontSize: "14px",
+    },
+  })
+);
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
