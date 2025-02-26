@@ -96,7 +96,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://welive4.com/get-network&wifi</loc>
+    <loc>https://welive4.com/get-network&amp;wifi</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
