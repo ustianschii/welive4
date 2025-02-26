@@ -23,14 +23,18 @@ export default function GetConsultation() {
     <>
       <Meta
         title="Expert Smart Home & Renovation Consultation – Technology Advisory & Integration"
-        description="Get expert consultation for smart home automation, AV integration, EV charging, and home renovations. Our trained technicians evaluate your tech needs, provide tailored advice, and define the next steps for your project. Book your on-site consultation today!"
+        description="Get expert consultation for smart home automation, AV, EV charging & home renovations. Our techs assess your needs & guide your project. Book today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>CONSULTATION</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            CONSULTATION
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

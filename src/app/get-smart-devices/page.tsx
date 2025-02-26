@@ -23,14 +23,18 @@ export default function GetSmartDevices() {
     <>
       <Meta
         title="Smart Home Device Installation – Video Doorbells, Cameras, Locks & More"
-        description="Professional video doorbell, smart camera, smart lock, thermostat, and garage door opener installation. Includes mobile app setup, device configuration, and expert support. Upgrade your home with smart technology today!"
+        description="Pro installation of video doorbells, smart cameras, locks, thermostats & garage openers. Includes app setup & expert support. Upgrade your home today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>SMART DEVICES</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            SMART DEVICES
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

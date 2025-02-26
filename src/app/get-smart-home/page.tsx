@@ -23,14 +23,18 @@ export default function GetSmartHome() {
     <>
       <Meta
         title="Complete Smart Home Technology Design & LOXONE Automation"
-        description="Custom smart home automation design tailored to your needs. Integrate HVAC, lighting, security, and internet systems with advanced LOXONE automation. Get expert consultation and a fully optimized smart home solution today!"
+        description="Custom smart home automation with LOXONE. Integrate HVAC, lighting, security & internet for a seamless experience. Get expert consultation today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>SMART HOME</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            SMART HOME
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

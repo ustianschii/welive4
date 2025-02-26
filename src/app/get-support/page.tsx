@@ -23,14 +23,18 @@ export default function GetSupport() {
     <>
       <Meta
         title="Warranty Claims, Troubleshooting & Electronics Recycling Services"
-        description="Easily file a warranty claim, get expert troubleshooting services, and recycle old electronics responsibly. We diagnose and resolve tech issues, provide repair estimates, and ensure eco-friendly disposal. Schedule your service today!"
+        description="File warranty claims, get expert troubleshooting, and recycle electronics responsibly. We diagnose, estimate repairs, and ensure eco-friendly disposal. Schedule today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>SUPPORT</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            SUPPORT
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

@@ -11,7 +11,7 @@ export default function GetServices() {
     <>
       <Meta
         title="Comprehensive Tech Services – Smart Home, WiFi, Home Theater, EV & More"
-        description="Explore expert network & WiFi setup, smart home automation, home theater design, EV tech, TV mounting, and device support. Get professional consultation and seamless tech integration for your home or business. Contact us today!"
+        description="Expert network & WiFi setup, smart automation, home theater, EV tech, TV mounting & device support. Get pro consultation & seamless integration today!"
       />
       <Header
         mobileheight="150px"

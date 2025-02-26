@@ -23,14 +23,18 @@ export default function GetEvTech() {
     <>
       <Meta
         title="Home EV Charger Installation & Smart Home Ecosystem Design"
-        description="Expert EV charger installation with full permitting, power optimization, and setup. Design a seamless smart home ecosystem integrating automation, solar, HVAC, security, and more. Get a consultation and tailored project plan today!"
+        description="Expert EV charger installation with permitting, power optimization & setup. Integrate automation, solar, HVAC & security. Get a consultation today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>EV TECH</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            EV TECH
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

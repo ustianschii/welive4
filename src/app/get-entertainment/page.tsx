@@ -14,9 +14,7 @@ import {
   ButtonsBox,
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 
@@ -25,14 +23,18 @@ export default function GetEntertainment() {
     <>
       <Meta
         title="Home Theater & Entertainment Room Design – Smart AV & Lighting Solutions"
-        description="Transform your space with expert home theater, media room, and whole-home audio design. Our consultants evaluate your needs, define your vision, and integrate smart technology for the ultimate entertainment experience. Book a consultation today!"
+        description="Transform your space with expert home theater, media room & whole-home audio design. We assess your needs & integrate smart tech. Book a consultation today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>ENTERTAINMENT</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            ENTERTAINMENT
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

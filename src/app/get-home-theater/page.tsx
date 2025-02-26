@@ -23,14 +23,18 @@ export default function GetHomeTheater() {
     <>
       <Meta
         title="Home Theater & Surround Sound System Installation – AV & Speaker Setup"
-        description="Professional home theater and sound system setup, including AV connections, WiFi integration, and remote configuration. Expert 5.1 & 7.1 surround speaker mounting, with optional pre-wiring for a seamless audio experience. Book your installation today!"
+        description="Pro home theater & sound setup with AV, WiFi & remote config. Expert 5.1 & 7.1 speaker mounting plus optional pre-wiring. Book your installation today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>HOME THEATER</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            HOME THEATER
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

@@ -23,14 +23,18 @@ export default function GetTvMounting() {
     <>
       <Meta
         title="TV Mounting & Entertainment Center Installation – Floating, Outdoor & Wall Mounts"
-        description="Expert TV mounting services, including floating entertainment center installation, outdoor TV mounting, and wall mounts for TVs up to 70 inches and more. Get personalized setup recommendations, AV device connections, and in-wall cable concealment. Contact us for professional installation today!"
+        description="Expert TV mounting, including floating centers, outdoor installs & mounts for TVs up to 70 inches. Get setup recommendations, AV connections & in-wall concealment. Contact us today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>TV MOUNTING</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            TV MOUNTING
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>

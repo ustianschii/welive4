@@ -19,14 +19,18 @@ export default function GetNetworkWifi() {
     <>
       <Meta
         title="Ethernet, WiFi, & Cell Signal Boosting – Network Installation & Support"
-        description="Expert Ethernet & WiFi network setup, cell signal boosting, and large-area WiFi design. Services include troubleshooting, speed optimization, smart WiFi installation, and wiring/prewiring. Get reliable connectivity with professional support today!"
+        description="Expert Ethernet & WiFi setup, signal boosting & large-area design. We optimize speed, install smart WiFi & handle wiring. Get reliable connectivity today!"
       />
       <Header
         mobileheight="150px"
         tabletheight="150px"
         desktopheight="150px"
         backcolor={BLACK}
-        title={<Subtitle sx={{ marginTop: "50px" }}>NETWORK & WIFI</Subtitle>}
+        title={
+          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+            NETWORK & WIFI
+          </Subtitle>
+        }
       />
       <Wrapper>
         <Container disableGutters>
