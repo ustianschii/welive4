@@ -47,8 +47,8 @@ const Watchguard = () => {
             </Subtitle>
           </HeaderTextBox>
         }
-        background={`url('system-design/header-bg.jpg')`}
-        tabletbackground={`url('system-design/desktop/header-bg.jpg')`}
+        background={`url('watchguard/phone/header-bg.jpg')`}
+        tabletbackground={`url('watchguard/desktop/header-bg.jpg')`}
         desktopbackground={`url('watchguard/desktop/header-bg.jpg')`}
         tabletheight="700px"
         desktopheight="620px"
