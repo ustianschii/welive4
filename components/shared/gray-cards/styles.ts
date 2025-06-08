@@ -106,11 +106,11 @@ export const ImageBox = styled(MuiBox, {
   },
   [theme.breakpoints.down("md")]: {
     minHeight: "400px",
-    width: "70%",
+    width: "80%",
   },
   [theme.breakpoints.down("sm")]: {
-    minHeight: "300px",
-    width: "80%",
+    minHeight: "250px",
+    width: "95%",
   },
 }));
 
