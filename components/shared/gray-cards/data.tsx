@@ -505,3 +505,17 @@ export const GCHome = [
       "Smart home devices are a vital part of our daily lives in today's tech-driven world. One standout innovation is the RGBW LED lights control. These devices have revolutionized lighting options and home decor. It creates vibrant and adjustable lighting effects. Whether it's day or night, or even during security events, and it adapts to your mood!",
   },
 ];
+
+export const watchGuardData = [
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Automated",
+    titlehighlightedend: " Watchguard",
+    firstdescription:
+      "The Automated Watchguard, powered by Loxone technology, is your digital security guard. It's always active and surpasses traditional alarms. This smart tool uses various sensors, cameras, and access controls. It monitors water leaks, manages pool maintenance, and controls irrigation. It detects trespassers and alerts them, activates lights, and contacts you and emergency services when it matters most. It even sends notifications via Telegram and operates seamlessly if your internet is down.",
+    seconddescription:
+      "Imagine a system spotting threats before they escalate. It intelligently detects intrusions, hazards, and unauthorized access. Real-time alerts reach you instantly, wherever you are. This system doesn't just alert you—it responds. It triggers alarms and activates deterrents like lights and shutters. It contacts emergency services when necessary.",
+    thirddescription:
+      "Control it remotely via smartphone or tablet. Arm or disarm it, watch live feeds, and manage access anytime, anywhere. Enjoy peace of mind with presence simulation, making it seem like you're home even when you’re not. Plus, it integrates seamlessly with other smart home functions, creating a responsive and secure environment. Automated Watchguard goes beyond security. It intelligently responds to potential issues, tailored to your needs. It feels like you’re always home, always watching, ready to protect. Elevate your property's security and enjoy worry-free travel with our Automated Watchguard. Bring your property's monitoring and security to the next level today!",
+  },
+];

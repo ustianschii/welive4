@@ -98,6 +98,7 @@ export const ImageBox = styled(MuiBox, {
   display: hasImage ? "block" : "none",
   [theme.breakpoints.up("lg")]: {
     minHeight: "400px",
+    minWidth: "600px",
   },
   [theme.breakpoints.down("lg")]: {
     minHeight: "400px",
