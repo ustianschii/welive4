@@ -68,14 +68,14 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
           </ContactsBox>
           <Box mt="30px">
             <Link
-              href="tel:+18332428899"
+              href="tel:+18779354834"
               style={{
                 textDecoration: "underline",
                 textDecorationColor: "white",
               }}
               passHref
             >
-              <Label>Text/Call/Fax: +1-833-242-8899</Label>
+              <Label>Text/Call/Fax: +1-877-935-4834</Label>
             </Link>
           </Box>
         </Box>
