@@ -75,7 +75,7 @@ export const Footer: React.FC<FooterProps> = ({ divider }) => {
               }}
               passHref
             >
-              <Label>Text/Call/Fax: +1-877-935-4834</Label>
+              <Label>Call +1-877-935-4834</Label>
             </Link>
           </Box>
         </Box>

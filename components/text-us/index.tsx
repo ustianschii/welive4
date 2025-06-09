@@ -7,13 +7,13 @@ export const TextUs = () => {
   return (
     <Wrapper>
       <BannerContainer maxWidth="lg">
-        <Title>TEXT US</Title>
+        <Title>CALL US</Title>
         <Subtitle>
           Have questions or need assistance? <br />
-          <Highlighted>Text us now!</Highlighted>
+          <Highlighted>Call us now!</Highlighted>
         </Subtitle>
-        <Button fullWidth href="tel:8332428899">
-          833 - 242 - 8899
+        <Button fullWidth href="tel:8779354834">
+          877 - 935 - 4834
         </Button>
       </BannerContainer>
     </Wrapper>
