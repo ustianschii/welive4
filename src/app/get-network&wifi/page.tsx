@@ -22,16 +22,23 @@ export default function GetNetworkWifi() {
         description="Expert Ethernet & WiFi setup, signal boosting & large-area design. We optimize speed, install smart WiFi & handle wiring. Get reliable connectivity today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            NETWORK & WIFI
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              NETWORK & WIFI
+            </Subtitle>
+          ),
+        }}
       />
+
       <Wrapper>
         <Container disableGutters>
           <GetServiceCard data={networkWifi} />

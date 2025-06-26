@@ -26,16 +26,23 @@ export default function GetEntertainment() {
         description="Transform your space with expert home theater, media room & whole-home audio design. We assess your needs & integrate smart tech. Book a consultation today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            ENTERTAINMENT
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              ENTERTAINMENT
+            </Subtitle>
+          ),
+        }}
       />
+
       <Wrapper>
         <Container disableGutters>
           <GetServiceCard data={entertainment} />

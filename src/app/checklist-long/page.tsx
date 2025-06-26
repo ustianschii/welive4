@@ -12,16 +12,22 @@ export default function ChecklistLong() {
     <>
       <Meta title="Last step" />
       <Header
-        backcolor={SEPARATOR_BACKGROUND}
-        title={
-          <Subtitle sx={{ marginTop: "50px" }}>
-            Fill up the<Highlighted>Smart Technology Checklist</Highlighted>
-            below
-          </Subtitle>
-        }
-        mobileheight="200px"
-        tabletheight="150px"
-        desktopheight="150px"
+        background={{
+          backColor: SEPARATOR_BACKGROUND,
+        }}
+        layout={{
+          mobileHeight: "200px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        content={{
+          title: (
+            <Subtitle sx={{ marginTop: "50px" }}>
+              Fill up the <Highlighted>Smart Technology Checklist</Highlighted>{" "}
+              below
+            </Subtitle>
+          ),
+        }}
       />
       <Wrapper>
         <Container>

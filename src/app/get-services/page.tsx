@@ -14,16 +14,23 @@ export default function GetServices() {
         description="Expert network & WiFi setup, smart automation, home theater, EV tech, TV mounting & device support. Get pro consultation & seamless integration today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            GET OUR<Highlighted>SERVICES</Highlighted>
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              GET OUR <Highlighted>SERVICES</Highlighted>
+            </Subtitle>
+          ),
+        }}
       />
+
       <ServicesList />
     </>
   );

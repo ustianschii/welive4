@@ -26,16 +26,23 @@ export default function GetSmartHome() {
         description="Custom smart home automation with LOXONE. Integrate HVAC, lighting, security & internet for a seamless experience. Get expert consultation today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            SMART HOME
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              SMART HOME
+            </Subtitle>
+          ),
+        }}
       />
+
       <Wrapper>
         <Container disableGutters>
           <GetServiceCard data={smartHome} />

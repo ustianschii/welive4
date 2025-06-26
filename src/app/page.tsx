@@ -34,24 +34,30 @@ export default function Home() {
         description="We integrate advanced automation systems, including Loxone Smart Home solutions and expert insights on Crestron vs Control4, to enhance convenience, efficiency, and comfort. Our services also include outdoor TV installation in NJ and outdoor TV mounting services, ensuring a seamless experience for your premium entertainment systems."
       />
       <Header
-        background={`url('/header-mobile/header-bg.jpg')`}
-        tabletbackground={`url('/header-mobile/desktop/header-bg.jpg')`}
-        desktopbackground={`url('/header-mobile/desktop/header-bg.jpg')`}
-        mobileheight="600px"
-        tabletheight="600px"
-        desktopheight="600px"
-        title={
-          <HeaderTextBox>
-            <Title component="h1">EXPERIENCE SMART TECHNOLOGY TODAY</Title>
-            <Subtitle>
-              WE
-              <Highlighted>LIVE</Highlighted>4 THE
-              <Highlighted>FUTURE</Highlighted>OF LIVING
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        button={<CustomButton text={"DESIGN YOUR SPACE"} />}
-        divider={<GreenDivider />}
+        layout={{
+          mobileHeight: "600px",
+          tabletHeight: "600px",
+          desktopHeight: "600px",
+        }}
+        background={{
+          background: `url('/header-mobile/header-bg.jpg')`,
+          tabletBackground: `url('/header-mobile/desktop/header-bg.jpg')`,
+          desktopBackground: `url('/header-mobile/desktop/header-bg.jpg')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Title component="h1">EXPERIENCE SMART TECHNOLOGY TODAY</Title>
+              <Subtitle>
+                WE
+                <Highlighted>LIVE</Highlighted>4 THE
+                <Highlighted>FUTURE</Highlighted>OF LIVING
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          button: <CustomButton text="DESIGN YOUR SPACE" />,
+          divider: true,
+        }}
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <MainServices />

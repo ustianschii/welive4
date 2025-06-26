@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { AvSolutions } from "@/components/av-solutions";
@@ -18,8 +16,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 
 export default function AudioVisualSystems() {
@@ -43,31 +39,33 @@ export default function AudioVisualSystems() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              PREMIUM
-              <Highlighted>ENTERTAINMENT SPACES</Highlighted>DESIGN AND
-              INSTALLATION
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/audio-visual-systems/header-bg.png')`}
-        tabletbackground={`url('/audio-visual-systems/tablet/header-bg.png')`}
-        desktopbackground={`url('/audio-visual-systems/desktop/header-bg.png')`}
-        mobileheight="600px"
-        tabletheight="600px"
-        desktopheight="600px"
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "Where every occasion becomes a cherished memory",
-              "Your entertainment space should reflect the joy of shared moments and successful milestones. We believe in creating an environment where families come together to celebrate, businesses thrive during achievements, and customers feel valued.",
-              "Every event, whether personal or professional, deserves an unmatched experience",
-            ]}
-          />
-        }
-        divider={<GreenDivider />}
+        layout={{
+          mobileHeight: "600px",
+          tabletHeight: "600px",
+          desktopHeight: "600px",
+        }}
+        background={{
+          background: `url('/audio-visual-systems/header-bg.png')`,
+          tabletBackground: `url('/audio-visual-systems/tablet/header-bg.png')`,
+          desktopBackground: `url('/audio-visual-systems/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                PREMIUM
+                <Highlighted>ENTERTAINMENT SPACES</Highlighted>
+                DESIGN AND INSTALLATION
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "Where every occasion becomes a cherished memory",
+            "Your entertainment space should reflect the joy of shared moments and successful milestones. We believe in creating an environment where families come together to celebrate, businesses thrive during achievements, and customers feel valued.",
+            "Every event, whether personal or professional, deserves an unmatched experience",
+          ],
+          divider: true,
+        }}
       />
       <AvSolutions />
       <ContentSeparator

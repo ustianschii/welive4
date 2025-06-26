@@ -11,8 +11,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 
@@ -38,25 +36,25 @@ export default function Network() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>PROFESSIONAL</Highlighted>
-              NETWORK INSTALLATION
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/network/header-bg.png')`}
-        tabletbackground={`url('/network/tablet/header-bg.png')`}
-        desktopbackground={`url('/network/desktop/header-bg.png')`}
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={["YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK"]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        background={{
+          background: `url('/network/header-bg.png')`,
+          tabletBackground: `url('/network/tablet/header-bg.png')`,
+          desktopBackground: `url('/network/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                <Highlighted>PROFESSIONAL</Highlighted> NETWORK INSTALLATION
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: ["YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK"],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox data={grayCardsData} imgheight={260} imgwidth={388} />
       </Box>

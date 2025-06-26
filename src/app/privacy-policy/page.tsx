@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { BLACK } from "@/src/styles/constants";
@@ -17,16 +15,23 @@ export default function PrivacyPolicy() {
         keywords={["privacy policy welive4"]}
       />
       <Header
-        mobileheight="100px"
-        tabletheight="100px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "30px" }}>
-            Privacy Policy
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "100px",
+          tabletHeight: "100px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "30px" }}>
+              Privacy Policy
+            </Subtitle>
+          ),
+        }}
       />
+
       <Box bgcolor={BLACK} id="top">
         <Container maxWidth="md">
           <Paragraph>

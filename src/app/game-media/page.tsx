@@ -17,9 +17,7 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 
 export default function HomeTheater() {
@@ -31,27 +29,26 @@ export default function HomeTheater() {
         keywords={["media room", "gaming room", "rgbw"]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              CUSTOMIZED
-              <Highlighted>GAME & MEDIA</Highlighted>
-              ROOM INSTALLATION
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/game-media/header-bg.png')`}
-        tabletbackground={`url('/game-media/tablet/header-bg.png')`}
-        desktopbackground={`url('/game-media/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS",
-            ]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/game-media/header-bg.png')`,
+          tabletBackground: `url('/game-media/tablet/header-bg.png')`,
+          desktopBackground: `url('/game-media/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                CUSTOMIZED <Highlighted>GAME & MEDIA</Highlighted> ROOM
+                INSTALLATION
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox data={GCGameMediaTop} imgheight={400} imgwidth={388} />

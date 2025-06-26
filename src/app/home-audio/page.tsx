@@ -1,5 +1,3 @@
-import React from "react";
-
 import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
   GCHomeAudioFirst,
@@ -18,9 +16,7 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
 
@@ -45,27 +41,25 @@ export default function HomeTheater() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              WHOLE
-              <Highlighted>HOME AUDIO</Highlighted>
-              SYSTEMS
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/home-audio/header-bg.png')`}
-        tabletbackground={`url('/home-audio/tablet/header-bg.png')`}
-        desktopbackground={`url('/home-audio/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!",
-            ]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/home-audio/header-bg.png')`,
+          tabletBackground: `url('/home-audio/tablet/header-bg.png')`,
+          desktopBackground: `url('/home-audio/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                WHOLE <Highlighted>HOME AUDIO</Highlighted> SYSTEMS
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox data={GCHomeAudioFirst} imgheight={400} imgwidth={388} />

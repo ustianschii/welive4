@@ -13,7 +13,6 @@ import {
   Subtitle,
 } from "@/components/hero-title/styles";
 import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { Meta } from "@/components/meta";
 
 export default function LoxoneCommercial() {
@@ -36,26 +35,27 @@ export default function LoxoneCommercial() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>LOXONE</Highlighted>FOR COMMERCIAL
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/loxone-commercial/header-bg-mobile.png')`}
-        tabletbackground={`url('/loxone-commercial/tablet/header-bg-tablet.png')`}
-        desktopbackground={`url('/loxone-commercial/desktop/header-bg.png')`}
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users.",
-              "With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before.",
-            ]}
-          />
-        }
+        background={{
+          background: `url('/loxone-commercial/header-bg-mobile.png')`,
+          tabletBackground: `url('/loxone-commercial/tablet/header-bg-tablet.png')`,
+          desktopBackground: `url('/loxone-commercial/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                <Highlighted>LOXONE</Highlighted> FOR COMMERCIAL
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users.",
+            "With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before.",
+          ],
+          divider: true,
+        }}
       />
+
       <ReturnOnInvestments />
       <GreenDivider />
       <ApplicationScenarios />

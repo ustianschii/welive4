@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { Separator } from "@/components/shared/gray-separator";
@@ -13,16 +11,13 @@ import { ContentSeparator } from "@/components/shared/content-separator";
 import { CustomAccordion } from "@/components/shared/accordion";
 import { homeTheaterFaq } from "@/components/shared/accordion/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
 import {
   HeaderTextBox,
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 
 export default function HomeTheater() {
@@ -45,27 +40,27 @@ export default function HomeTheater() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>HIGH-END HOME THEATER</Highlighted>
-              SYSTEMS
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/home-theater/header-bg.png')`}
-        tabletbackground={`url('/home-theater/tablet/header-bg.png')`}
-        desktopbackground={`url('/home-theater/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!",
-            ]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/home-theater/header-bg.png')`,
+          tabletBackground: `url('/home-theater/tablet/header-bg.png')`,
+          desktopBackground: `url('/home-theater/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                <Highlighted>HIGH-END HOME THEATER</Highlighted> SYSTEMS
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Separator height="90px" padding="25px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>

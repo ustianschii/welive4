@@ -12,8 +12,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { Meta } from "@/components/meta";
 
 export default function LoxoneResidential() {
@@ -36,28 +34,28 @@ export default function LoxoneResidential() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>LOXONE</Highlighted>
-              FOR RESIDENTIAL
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/loxone-residential/header-bg.png')`}
-        tabletbackground={`url('/loxone-residential/tablet/header-bg.png')`}
-        desktopbackground={`url('/loxone-residential/desktop/header-bg.png')`}
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "Make your house a stylish and comfortable retreat. Everything can be controlled with a single touch or voice command, including the lights, music, and temperature",
-              "Experience the stars like never before with safe outdoor TV mounts. With automated security, you can relax and always feel at ease.",
-              "With Loxone, luxury living is redefined, enabling you to create the ideal atmosphere at all times.",
-            ]}
-          />
-        }
+        background={{
+          background: `url('/loxone-residential/header-bg.png')`,
+          tabletBackground: `url('/loxone-residential/tablet/header-bg.png')`,
+          desktopBackground: `url('/loxone-residential/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                <Highlighted>LOXONE</Highlighted> FOR RESIDENTIAL
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "Make your house a stylish and comfortable retreat. Everything can be controlled with a single touch or voice command, including the lights, music, and temperature",
+            "Experience the stars like never before with safe outdoor TV mounts. With automated security, you can relax and always feel at ease.",
+            "With Loxone, luxury living is redefined, enabling you to create the ideal atmosphere at all times.",
+          ],
+          divider: true,
+        }}
       />
+
       <NewFuture />
       <CustomTabs />
       <GreenBanner

@@ -26,8 +26,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
@@ -49,30 +47,33 @@ export default function EnergyManagement() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              HOME & BUILDING
-              <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/energy-management/header-bg.png')`}
-        tabletbackground={`url('/energy-management/tablet/header-bg.png')`}
-        desktopbackground={`url('/energy-management/desktop/header-bg.png')`}
-        mobileheight="600px"
-        tabletheight="600px"
-        desktopheight="600px"
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!",
-            ]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        layout={{
+          mobileHeight: "600px",
+          tabletHeight: "600px",
+          desktopHeight: "600px",
+        }}
+        background={{
+          background: `url('/energy-management/header-bg.png')`,
+          tabletBackground: `url('/energy-management/tablet/header-bg.png')`,
+          desktopBackground: `url('/energy-management/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                HOME & BUILDING{" "}
+                <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
           data={grayCardsDataEnergyManagement}

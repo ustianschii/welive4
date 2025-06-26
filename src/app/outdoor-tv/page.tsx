@@ -25,8 +25,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 
@@ -52,25 +50,25 @@ export default function Outdoor() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>PREMIUM OUTDOOR</Highlighted>
-              TV MOUNTING
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/outdoor-tv/header-bg.png')`}
-        tabletbackground={`url('/outdoor-tv/tablet/header-bg.png')`}
-        desktopbackground={`url('/outdoor-tv/desktop/header-bg.png')`}
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={["AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE"]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        background={{
+          background: `url('/outdoor-tv/header-bg.png')`,
+          tabletBackground: `url('/outdoor-tv/tablet/header-bg.png')`,
+          desktopBackground: `url('/outdoor-tv/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                <Highlighted>PREMIUM OUTDOOR</Highlighted> TV MOUNTING
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: ["AVAILABLE IN NEW JERSEY, PENNSYLVANIA & DELAWARE"],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
           data={grayCardsDataOutdoorTV}

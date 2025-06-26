@@ -18,9 +18,7 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 
 export default function OutdoorEntertainment() {
@@ -38,27 +36,28 @@ export default function OutdoorEntertainment() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>OUTDOOR ENTERTAINMENT</Highlighted> <br />
-              SYSTEM INSTALLATION & DESIGN
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/outdoor-entertainment/header-bg.png')`}
-        tabletbackground={`url('/outdoor-entertainment/tablet/header-bg.png')`}
-        desktopbackground={`url('/outdoor-entertainment/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!",
-            ]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/outdoor-entertainment/header-bg.png')`,
+          tabletBackground: `url('/outdoor-entertainment/tablet/header-bg.png')`,
+          desktopBackground: `url('/outdoor-entertainment/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                <Highlighted>OUTDOOR ENTERTAINMENT</Highlighted> <br />
+                SYSTEM INSTALLATION & DESIGN
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Separator height="130px" padding="20px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>FROM <br />

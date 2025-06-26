@@ -26,16 +26,23 @@ export default function GetSupport() {
         description="File warranty claims, get expert troubleshooting, and recycle electronics responsibly. We diagnose, estimate repairs, and ensure eco-friendly disposal. Schedule today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            SUPPORT
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              SUPPORT
+            </Subtitle>
+          ),
+        }}
       />
+
       <Wrapper>
         <Container disableGutters>
           <GetServiceCard data={support} />

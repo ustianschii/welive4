@@ -11,16 +11,22 @@ export default function ChecklistShort() {
     <>
       <Meta title="Checklist" />
       <Header
-        backcolor={SEPARATOR_BACKGROUND}
-        title={
-          <Subtitle sx={{ marginTop: "50px" }}>
-            Fill up the<Highlighted>Smart Technology Checklist</Highlighted>
-            below
-          </Subtitle>
-        }
-        mobileheight="200px"
-        tabletheight="170px"
-        desktopheight="150px"
+        background={{
+          backColor: SEPARATOR_BACKGROUND,
+        }}
+        layout={{
+          mobileHeight: "200px",
+          tabletHeight: "170px",
+          desktopHeight: "150px",
+        }}
+        content={{
+          title: (
+            <Subtitle sx={{ marginTop: "50px" }}>
+              Fill up the <Highlighted>Smart Technology Checklist</Highlighted>{" "}
+              below
+            </Subtitle>
+          ),
+        }}
       />
       <Wrapper>
         <Container>

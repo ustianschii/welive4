@@ -26,16 +26,23 @@ export default function GetSmartDevices() {
         description="Pro installation of video doorbells, smart cameras, locks, thermostats & garage openers. Includes app setup & expert support. Upgrade your home today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            SMART DEVICES
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              SMART DEVICES
+            </Subtitle>
+          ),
+        }}
       />
+
       <Wrapper>
         <Container disableGutters>
           <GetServiceCard data={smartDevices} />

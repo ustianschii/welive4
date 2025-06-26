@@ -14,8 +14,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { CCChecklistSystemDesign } from "@/components/cc-checklist-system-design";
@@ -46,29 +44,31 @@ export default function SystemDesign() {
         ]}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              SYSTEM
-              <Highlighted>DESIGN</Highlighted>
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('system-design/header-bg.jpg')`}
-        tabletbackground={`url('system-design/desktop/header-bg.jpg')`}
-        desktopbackground={`url('system-design/desktop/header-bg.jpg')`}
-        tabletheight="700px"
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            subtitles={[
-              "At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money.",
-              "We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!",
-            ]}
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        layout={{
+          tabletHeight: "700px",
+        }}
+        background={{
+          background: `url('system-design/header-bg.jpg')`,
+          tabletBackground: `url('system-design/desktop/header-bg.jpg')`,
+          desktopBackground: `url('system-design/desktop/header-bg.jpg')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                SYSTEM <Highlighted>DESIGN</Highlighted>
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          subtitle: [
+            "At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money.",
+            "We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Separator height="100px" padding="20px 0">
         <Title>
           Our System

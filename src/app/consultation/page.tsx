@@ -13,7 +13,6 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 import { Container, Wrapper } from "@/src/styles/checklist-consultation";
 import { CCChecklistConsultation } from "@/components/cc-checklist-consultation";
@@ -26,22 +25,27 @@ export default function Consultation() {
         description="Consulting for smart automation systems, helping homeowners and builders integrate innovative tech with customized solutions and seamless connectivity."
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              GET A<Highlighted>FREE CONSULTATION</Highlighted>
-              FOR YOUR
-              <Highlighted>DREAM HOME!</Highlighted>
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('consultation/header-bg.png')`}
-        tabletbackground={`url('consultation/tablet/header-bg.png')`}
-        desktopbackground={`url('consultation/desktop/header-bg.png')`}
-        mobileheight="500px"
-        tabletheight="600px"
-        desktopheight="600px"
-        divider={<GreenDivider />}
+        layout={{
+          mobileHeight: "500px",
+          tabletHeight: "600px",
+          desktopHeight: "600px",
+        }}
+        background={{
+          background: `url('consultation/header-bg.png')`,
+          tabletBackground: `url('consultation/tablet/header-bg.png')`,
+          desktopBackground: `url('consultation/desktop/header-bg.png')`,
+        }}
+        content={{
+          title: (
+            <HeaderTextBox>
+              <Subtitle component="h1">
+                GET A <Highlighted>FREE CONSULTATION</Highlighted> FOR YOUR{" "}
+                <Highlighted>DREAM HOME!</Highlighted>
+              </Subtitle>
+            </HeaderTextBox>
+          ),
+          divider: true,
+        }}
       />
       <Separator height="80px" padding="20px 0">
         <Title>Customer Care</Title>

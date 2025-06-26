@@ -26,15 +26,21 @@ export default function GetConsultation() {
         description="Get expert consultation for smart home automation, AV, EV charging & home renovations. Our techs assess your needs & guide your project. Book today!"
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            CONSULTATION
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          title: (
+            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
+              CONSULTATION
+            </Subtitle>
+          ),
+        }}
       />
       <Wrapper>
         <Container disableGutters>
