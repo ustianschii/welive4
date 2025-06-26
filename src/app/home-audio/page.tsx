@@ -58,7 +58,11 @@ export default function HomeTheater() {
         tabletbackground={`url('/home-audio/tablet/header-bg.png')`}
         desktopbackground={`url('/home-audio/desktop/header-bg.png')`}
         subtitle={
-          <HeaderSubtitle first="STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!" />
+          <HeaderSubtitle
+            subtitles={[
+              "STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!",
+            ]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
         divider={<GreenDivider />}

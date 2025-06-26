@@ -1,5 +1,3 @@
-import React from "react";
-
 import { NewFuture } from "@/components/new-future";
 import { CustomTabs } from "@/components/loxone-residential-tabs";
 import { GreenBanner } from "@/components/shared/green-banner";
@@ -52,9 +50,11 @@ export default function LoxoneResidential() {
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
-            first="Make your house a stylish and comfortable retreat. Everything can be controlled with a single touch or voice command, including the lights, music, and temperature"
-            second="Experience the stars like never before with safe outdoor TV mounts. With automated security, you can relax and always feel at ease."
-            third="With Loxone,  luxury living is redefined, enabling you to create the ideal atmosphere at all times. "
+            subtitles={[
+              "Make your house a stylish and comfortable retreat. Everything can be controlled with a single touch or voice command, including the lights, music, and temperature",
+              "Experience the stars like never before with safe outdoor TV mounts. With automated security, you can relax and always feel at ease.",
+              "With Loxone, luxury living is redefined, enabling you to create the ideal atmosphere at all times.",
+            ]}
           />
         }
       />

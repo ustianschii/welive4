@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { Separator } from "@/components/shared/gray-separator";
@@ -52,7 +50,11 @@ export default function OutdoorEntertainment() {
         tabletbackground={`url('/outdoor-entertainment/tablet/header-bg.png')`}
         desktopbackground={`url('/outdoor-entertainment/desktop/header-bg.png')`}
         subtitle={
-          <HeaderSubtitle first="YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!" />
+          <HeaderSubtitle
+            subtitles={[
+              "YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!",
+            ]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
         divider={<GreenDivider />}

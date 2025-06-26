@@ -12,7 +12,6 @@ import { CustomButton } from "@/components/shared/header-button";
 import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Box } from "@mui/material";
-import React from "react";
 
 const Watchguard = () => {
   return (
@@ -55,8 +54,10 @@ const Watchguard = () => {
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
-            first="At WE LIVE 4, your safety is always on. Powered by Loxone, the Automated Watchguard monitors intrusions, hazards, leaks, and access — reacting instantly with alerts, lights, and emergency contact."
-            second="Stay protected with smart, seamless integration. Control everything remotely, simulate presence, and enjoy real-time updates — no internet required. Trust us to guard what matters most."
+            subtitles={[
+              "At WE LIVE 4, your safety is always on. Powered by Loxone, the Automated Watchguard monitors intrusions, hazards, leaks, and access — reacting instantly with alerts, lights, and emergency contact.",
+              "Stay protected with smart, seamless integration. Control everything remotely, simulate presence, and enjoy real-time updates — no internet required. Trust us to guard what matters most.",
+            ]}
           />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}

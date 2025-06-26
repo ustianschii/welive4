@@ -60,9 +60,11 @@ export default function AudioVisualSystems() {
         desktopheight="600px"
         subtitle={
           <HeaderSubtitle
-            first="Where every occasion becomes a cherished memory"
-            second="Your entertainment space should reflect the joy of shared moments and successful milestones. We believe in creating an environment where families come together to celebrate, businesses thrive during achievements, and customers feel valued."
-            third="Every event, whether personal or professional, deserves an unmatched experience"
+            subtitles={[
+              "Where every occasion becomes a cherished memory",
+              "Your entertainment space should reflect the joy of shared moments and successful milestones. We believe in creating an environment where families come together to celebrate, businesses thrive during achievements, and customers feel valued.",
+              "Every event, whether personal or professional, deserves an unmatched experience",
+            ]}
           />
         }
         divider={<GreenDivider />}

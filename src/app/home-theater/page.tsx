@@ -57,7 +57,11 @@ export default function HomeTheater() {
         tabletbackground={`url('/home-theater/tablet/header-bg.png')`}
         desktopbackground={`url('/home-theater/desktop/header-bg.png')`}
         subtitle={
-          <HeaderSubtitle first="EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!" />
+          <HeaderSubtitle
+            subtitles={[
+              "EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!",
+            ]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
         divider={<GreenDivider />}

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { GrayCardsBox } from "@/components/shared/gray-cards";
@@ -53,7 +51,9 @@ export default function Network() {
         desktopbackground={`url('/network/desktop/header-bg.png')`}
         divider={<GreenDivider />}
         subtitle={
-          <HeaderSubtitle first="YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK" />
+          <HeaderSubtitle
+            subtitles={["YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK"]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
       />

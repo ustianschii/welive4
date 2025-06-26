@@ -1,5 +1,3 @@
-import React from "react";
-
 import { ReturnOnInvestments } from "@/components/return-on-investment";
 import { ApplicationScenarios } from "@/components/application-scenarios";
 import { GreenBanner } from "@/components/shared/green-banner";
@@ -51,8 +49,10 @@ export default function LoxoneCommercial() {
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
-            first="Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users."
-            second="With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before."
+            subtitles={[
+              "Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users.",
+              "With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before.",
+            ]}
           />
         }
       />

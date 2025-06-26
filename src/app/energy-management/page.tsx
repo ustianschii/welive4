@@ -65,7 +65,11 @@ export default function EnergyManagement() {
         desktopheight="600px"
         divider={<GreenDivider />}
         subtitle={
-          <HeaderSubtitle first="MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!" />
+          <HeaderSubtitle
+            subtitles={[
+              "MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!",
+            ]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
       />

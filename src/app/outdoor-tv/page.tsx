@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { GrayCardsBox } from "@/components/shared/gray-cards";
@@ -67,7 +65,9 @@ export default function Outdoor() {
         desktopbackground={`url('/outdoor-tv/desktop/header-bg.png')`}
         divider={<GreenDivider />}
         subtitle={
-          <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE" />
+          <HeaderSubtitle
+            subtitles={["AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE"]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
       />

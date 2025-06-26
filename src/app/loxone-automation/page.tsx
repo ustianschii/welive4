@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { Box, Container } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
@@ -58,9 +56,11 @@ export default function LoxoneAutomation() {
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
-            first="Imagine walking into your home, office, warehouse, restaurant or whatever place that brings you good memories that intuitively knows your needs, enhancing comfort and convenience at every turn."
-            second="With LOXONE’s cutting-edge smart automation solutions, that vision becomes a reality. Founded in Austria in 2009 and backed by its successful implementation of over 200,000 projects globally, WeLive4 as part of LOXONE committed to transforming how people interact with their spaces. Our technology adapts to your lifestyle, ensuring your environment is not just smart, but intelligently responsive. LOXONE makes a mark in North America since 2019, Loxone US is swiftly becoming known as an industry leader in delivering exceptional smart automation experiences. Picture your properties—whether residential or commercial—being equipped with state-of-the-art automation that elevates the living and working environment, improves energy efficiency, and enhances security."
-            third="We would love the opportunity to discuss how LOXONE can revolutionize your properties and provide a scenario tailored to your specific needs. Learn more and schedule a call with us today. Looking forward to connecting!"
+            subtitles={[
+              "Imagine walking into your home, office, warehouse, restaurant or whatever place that brings you good memories that intuitively knows your needs, enhancing comfort and convenience at every turn.",
+              "With LOXONE’s cutting-edge smart automation solutions, that vision becomes a reality. Founded in Austria in 2009 and backed by its successful implementation of over 200,000 projects globally, WeLive4 as part of LOXONE committed to transforming how people interact with their spaces. Our technology adapts to your lifestyle, ensuring your environment is not just smart, but intelligently responsive. LOXONE makes a mark in North America since 2019, Loxone US is swiftly becoming known as an industry leader in delivering exceptional smart automation experiences. Picture your properties—whether residential or commercial—being equipped with state-of-the-art automation that elevates the living and working environment, improves energy efficiency, and enhances security.",
+              "We would love the opportunity to discuss how LOXONE can revolutionize your properties and provide a scenario tailored to your specific needs. Learn more and schedule a call with us today. Looking forward to connecting!",
+            ]}
           />
         }
       />

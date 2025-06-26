@@ -44,7 +44,11 @@ export default function HomeTheater() {
         tabletbackground={`url('/game-media/tablet/header-bg.png')`}
         desktopbackground={`url('/game-media/desktop/header-bg.png')`}
         subtitle={
-          <HeaderSubtitle first="CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS" />
+          <HeaderSubtitle
+            subtitles={[
+              "CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS",
+            ]}
+          />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
         divider={<GreenDivider />}

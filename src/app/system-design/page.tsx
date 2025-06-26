@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Separator } from "@/components/shared/gray-separator";
 import { Title } from "@/components/shared/content-separator/styles";
 import { DesignTypes } from "@/components/system-design/system-design-cards";
@@ -63,8 +61,10 @@ export default function SystemDesign() {
         divider={<GreenDivider />}
         subtitle={
           <HeaderSubtitle
-            first="At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money."
-            second="We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!"
+            subtitles={[
+              "At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money.",
+              "We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!",
+            ]}
           />
         }
         button={<CustomButton text={"GET A FREE QUOTE!"} />}
