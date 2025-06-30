@@ -1,5 +1,5 @@
 import { NewFuture } from "@/components/new-future";
-import { CustomTabs } from "@/components/loxone-residential-tabs";
+import { FeaturesTabs } from "@/components/loxone-residential-tabs";
 import { GreenBanner } from "@/components/shared/green-banner";
 import { data } from "@/components/shared/green-banner/data";
 import { KeyFeatures } from "@/components/key-features";
@@ -57,7 +57,7 @@ export default function LoxoneResidential() {
       />
 
       <NewFuture />
-      <CustomTabs />
+      <FeaturesTabs />
       <GreenBanner
         title={data[1].title}
         first_description={data[1].first_description}
