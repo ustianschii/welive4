@@ -52,7 +52,7 @@ export default function HighPerformanceSound() {
           subtitle: [
             "FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM",
           ],
-          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          button: <CustomButton text="GET A FREE QUOTE!" />,
           divider: true,
         }}
       />

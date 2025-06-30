@@ -53,6 +53,11 @@ export const SoundSystemDemo: React.FC = () => {
   const height = isSmall ? 220 : isMedium ? 250 : 300;
   const width = isSmall ? 220 : isMedium ? 250 : 300;
 
+  const animationStyles = {
+    transform: `translateX(-${currentIndex * 100}%)`,
+    transition: isAnimating ? "transform 0.5s ease-in-out" : "none",
+  };
+
   return (
     <Wrapper>
       <Container maxWidth="lg" disableGutters>
@@ -68,19 +73,26 @@ export const SoundSystemDemo: React.FC = () => {
               overflow: "hidden",
             }}
           >
-            <Image
-              key={currentIndex}
-              src={soundSystems[currentIndex].imagePath}
-              alt="carousel"
-              height={height}
-              width={width}
-              style={{
-                objectFit: "cover",
-                marginBottom: "30px",
-                opacity: isAnimating ? 0 : 1,
-                transition: "opacity 0.3s ease-in-out",
+            <Box
+              sx={{
+                display: "flex",
+                ...animationStyles,
               }}
-            />
+            >
+              {soundSystems.map((system, index) => (
+                <Image
+                  key={index}
+                  src={system.imagePath}
+                  alt="carousel"
+                  height={height}
+                  width={width}
+                  style={{
+                    objectFit: "cover",
+                    marginBottom: "30px",
+                  }}
+                />
+              ))}
+            </Box>
           </Box>
           <IconButton onClick={handleNext}>
             <ArrowForwardIosIcon fontSize="large" />
