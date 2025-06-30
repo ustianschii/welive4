@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { GrayCardsBox } from "@/components/shared/gray-cards";
@@ -9,7 +7,6 @@ import {
   grayCardsDataEnergyManagementSecond,
   grayCardsDataEnergyManagementThird,
 } from "@/components/shared/gray-cards/data";
-
 import { ContentSeparator } from "@/components/shared/content-separator";
 import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import {
@@ -29,22 +26,15 @@ import {
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
+import { metadata } from "@/src/app/metadata";
 
 export default function EnergyManagement() {
   return (
     <>
       <Meta
-        title="Home & Building Energy Management"
-        description="Expert solar, EV charging, and energy management solutions powered by Loxone. Save energy, reduce costs, and go green seamlessly."
-        keywords={[
-          "energy management",
-          "home ev charging",
-          "solar power systems",
-          "wallbox",
-          "loxone",
-          "commercial solar system",
-          "tesla battery",
-        ]}
+        title={metadata.EnergyManagement.title}
+        description={metadata.EnergyManagement.description}
+        keywords={metadata.EnergyManagement.keywords}
       />
       <Header
         layout={{
@@ -69,7 +59,7 @@ export default function EnergyManagement() {
           subtitle: [
             "MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!",
           ],
-          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          button: <CustomButton text="GET A FREE QUOTE!" />,
           divider: true,
         }}
       />

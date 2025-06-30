@@ -14,6 +14,7 @@ import {
   Subtitle,
 } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function LoxoneAutomation() {
   const theme = useTheme();
@@ -21,20 +22,9 @@ export default function LoxoneAutomation() {
   return (
     <>
       <Meta
-        title="Loxone Smart Automation | Future-Proof Solutions for Homes & Businesses. Unbeatable CRESTRON LUTRON or CONTROL4 alternative"
-        description="Loxone Automation integrates lighting, heating, security, and energy management, offering convenience, efficiency, and sustainability for smart homes and buildings."
-        keywords={[
-          "loxone",
-          "smart home",
-          "automation",
-          "access control",
-          "lighting control",
-          "climate control",
-          "security",
-          "energy management",
-          "ambient assisted living",
-          "conference board room",
-        ]}
+        title={metadata.LoxoneAutomation.title}
+        description={metadata.LoxoneAutomation.description}
+        keywords={metadata.LoxoneAutomation.keywords}
       />
       <Header
         layout={{

@@ -27,27 +27,15 @@ import {
 } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
-export default function Outdoor() {
+export default function OutdoorTv() {
   return (
     <>
       <Meta
-        title="Premium Outdoor TV Mounting Services"
-        description="Transform your outdoor space with weatherproof, high-quality TVs for seamless viewing in any condition. Offering flexible installation and top brands for an exceptional entertainment experience."
-        keywords={[
-          "outdoor entertainment",
-          "outdoor tv",
-          "outdoor speakers",
-          "audio video calibration",
-          "weather proof tv",
-          "smart tv",
-          "the terrace",
-          "furrion",
-          "sunbrite tv",
-          "seura",
-          "frame tv",
-          "tv setup",
-        ]}
+        title={metadata.OutdoorTv.title}
+        description={metadata.OutdoorTv.description}
+        keywords={metadata.OutdoorTv.keywords}
       />
       <Header
         background={{

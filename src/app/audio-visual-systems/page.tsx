@@ -17,26 +17,15 @@ import {
   Subtitle,
 } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function AudioVisualSystems() {
   return (
     <>
       <Meta
-        title="Premium Audio Visual Systems"
-        description="Receivers and speakers for entertainment room and space designs, including TIDAL integration."
-        keywords={[
-          "audio",
-          "video",
-          "home audio",
-          "4k",
-          "5.1",
-          "7.1",
-          "home entertainment",
-          "home theater",
-          "gaming",
-          "surround system",
-          "outdoor entertainment",
-        ]}
+        title={metadata.AudioVisualSystems.title}
+        description={metadata.AudioVisualSystems.description}
+        keywords={metadata.AudioVisualSystems.keywords}
       />
       <Header
         layout={{

@@ -19,25 +19,15 @@ import {
 } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function HomeTheater() {
   return (
     <>
       <Meta
-        title="Custom High-End Home Theater Systems"
-        description="Experience superior audio, personalized design, seamless installation, and full control with LOXONE integration for the ultimate home cinema experience."
-        keywords={[
-          "home audio",
-          "home theater",
-          "5.1",
-          "5.2",
-          "7.1",
-          "7.2",
-          "subwoofer",
-          "speakers",
-          "high-end",
-          "streaming",
-        ]}
+        title={metadata.HomeTheater.title}
+        description={metadata.HomeTheater.description}
+        keywords={metadata.HomeTheater.keywords}
       />
       <Header
         background={{

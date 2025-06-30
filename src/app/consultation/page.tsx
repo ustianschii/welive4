@@ -16,13 +16,14 @@ import {
 import { Meta } from "@/components/meta";
 import { Container, Wrapper } from "@/src/styles/checklist-consultation";
 import { CCChecklistConsultation } from "@/components/cc-checklist-consultation";
+import { metadata } from "@/src/app/metadata";
 
 export default function Consultation() {
   return (
     <>
       <Meta
-        title="Automation Consulting"
-        description="Consulting for smart automation systems, helping homeowners and builders integrate innovative tech with customized solutions and seamless connectivity."
+        title={metadata.Consultation.title}
+        description={metadata.Consultation.description}
       />
       <Header
         layout={{

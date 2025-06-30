@@ -20,20 +20,15 @@ import {
 } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function OutdoorEntertainment() {
   return (
     <>
       <Meta
-        title="Outdoor Entertainment System Installation & Design"
-        description="Elevate your outdoor experience with WE LIVE 4’s premium entertainment systems. From weatherproof TVs to custom speaker setups, enjoy stunning visuals and immersive sound tailored to your space."
-        keywords={[
-          "outdoor entertainment",
-          "outdoor tv",
-          "outdoor speakers",
-          "audio video calibration",
-          "weather proof speakers",
-        ]}
+        title={metadata.OutdoorEntertainment.title}
+        description={metadata.OutdoorEntertainment.description}
+        keywords={metadata.OutdoorEntertainment.keywords}
       />
       <Header
         background={{

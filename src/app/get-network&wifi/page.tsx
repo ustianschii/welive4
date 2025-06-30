@@ -13,13 +13,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetNetworkWifi() {
   return (
     <>
       <Meta
-        title="Ethernet, WiFi, & Cell Signal Boosting – Network Installation & Support"
-        description="Expert Ethernet & WiFi setup, signal boosting & large-area design. We optimize speed, install smart WiFi & handle wiring. Get reliable connectivity today!"
+        title={metadata.GetNetworkWifi.title}
+        description={metadata.GetNetworkWifi.description}
       />
       <Header
         layout={{

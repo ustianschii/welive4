@@ -6,11 +6,12 @@ import { Highlighted, Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { CCChecklistLong } from "@/components/cc-checklist-long";
 import { Container, Wrapper } from "@/src/styles/checklist-long-styles";
+import { metadata } from "@/src/app/metadata";
 
 export default function ChecklistLong() {
   return (
     <>
-      <Meta title="Last step" />
+      <Meta title={metadata.ChecklistLong.title} />
       <Header
         background={{
           backColor: SEPARATOR_BACKGROUND,

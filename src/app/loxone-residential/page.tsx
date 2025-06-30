@@ -13,25 +13,15 @@ import {
   Subtitle,
 } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function LoxoneResidential() {
   return (
     <>
       <Meta
-        title="Loxone Residential Solutions: Redefining Luxury Living"
-        description="Transform your home with Loxone. Enjoy personalized automation for lighting, climate, security, and entertainment for a smarter, cozier lifestyle."
-        keywords={[
-          "loxone",
-          "smart home",
-          "automation",
-          "access control",
-          "lighting control",
-          "climate control",
-          "security",
-          "energy management",
-          "ambient assisted living",
-          "zero-energy home",
-        ]}
+        title={metadata.LoxoneResidential.title}
+        description={metadata.LoxoneResidential.description}
+        keywords={metadata.LoxoneResidential.keywords}
       />
       <Header
         background={{

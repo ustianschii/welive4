@@ -13,27 +13,15 @@ import {
 } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function Network() {
   return (
     <>
       <Meta
-        title="Professional Network Installation Services"
-        description="Get fast, reliable internet with tailored solutions for home, business, and rural areas. From wired networks to next-gen WiFi and satellite internet, we’ve got you covered."
-        keywords={[
-          "network",
-          "wifi",
-          "network for business",
-          "network for rural areas",
-          "on-site survey",
-          "ethernet wired network",
-          "wirless",
-          "sattelite internet",
-          "cellular booster",
-          "lte 5g",
-          "multi-gps",
-          "ptp wireless bridge",
-        ]}
+        title={metadata.Network.title}
+        description={metadata.Network.description}
+        keywords={metadata.Network.keywords}
       />
       <Header
         background={{

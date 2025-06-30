@@ -5,11 +5,12 @@ import { Highlighted, Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { Container, Wrapper } from "@/src/styles/checklist-short-styles";
 import { CCChecklistShort } from "@/components/cc-checklist-short";
+import { metadata } from "@/src/app/metadata";
 
 export default function ChecklistShort() {
   return (
     <>
-      <Meta title="Checklist" />
+      <Meta title={metadata.ChecklistShort.title} />
       <Header
         background={{
           backColor: SEPARATOR_BACKGROUND,

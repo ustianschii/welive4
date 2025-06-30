@@ -17,13 +17,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetHomeTheater() {
   return (
     <>
       <Meta
-        title="Home Theater & Surround Sound System Installation – AV & Speaker Setup"
-        description="Pro home theater & sound setup with AV, WiFi & remote config. Expert 5.1 & 7.1 speaker mounting plus optional pre-wiring. Book your installation today!"
+        title={metadata.GetHomeTheater.title}
+        description={metadata.GetHomeTheater.description}
       />
       <Header
         layout={{

@@ -1,7 +1,4 @@
-import React from "react";
-
 import { IconButton } from "@mui/material";
-
 import Image from "next/image";
 
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
@@ -17,13 +14,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetSmartHome() {
   return (
     <>
       <Meta
-        title="Complete Smart Home Technology Design & LOXONE Automation"
-        description="Custom smart home automation with LOXONE. Integrate HVAC, lighting, security & internet for a seamless experience. Get expert consultation today!"
+        title={metadata.GetSmartHome.title}
+        description={metadata.GetSmartHome.description}
       />
       <Header
         layout={{

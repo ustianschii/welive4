@@ -14,25 +14,15 @@ import {
 } from "@/components/hero-title/styles";
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function LoxoneCommercial() {
   return (
     <>
       <Meta
-        title="Loxone Commercial Solutions: Smart Automation for Your Business"
-        description="Transform your building with Loxone automation. Save energy, boost productivity, and enhance security with tailored solutions for every commercial need."
-        keywords={[
-          "loxone",
-          "smart home",
-          "automation",
-          "access control",
-          "lighting control",
-          "climate control",
-          "security",
-          "energy management",
-          "ambient assisted living",
-          "conference board room",
-        ]}
+        title={metadata.LoxoneCommercial.title}
+        description={metadata.LoxoneCommercial.description}
+        keywords={metadata.LoxoneCommercial.keywords}
       />
       <Header
         background={{

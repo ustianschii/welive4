@@ -11,30 +11,15 @@ import { watchGuardData } from "@/components/shared/gray-cards/data";
 import { Header } from "@/components/shared/header";
 import { CustomButton } from "@/components/shared/header-button";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
+import { metadata } from "@/src/app/metadata";
 
-const Watchguard = () => {
+export default function Watchguard() {
   return (
     <>
       <Meta
-        title="Automated Watchguard: Smart Security System Powered by Loxone"
-        description="Experience 24/7 intelligent protection with the Automated Watchguard. Powered by Loxone, it detects threats, alerts you in real time, and responds instantly—all while integrating seamlessly with your smart home."
-        keywords={[
-          "smart home security",
-          "automated security system",
-          "Loxone security",
-          "intelligent home monitoring",
-          "remote security control",
-          "real-time intrusion alerts",
-          "smart alarm system",
-          "home surveillance with Loxone",
-          "automated threat detection",
-          "presence simulation security",
-          "smart home integration",
-          "Telegram security alerts",
-          "leak detection system",
-          "pool maintenance automation",
-          "automated irrigation control",
-        ]}
+        title={metadata.Watchguard.title}
+        description={metadata.Watchguard.description}
+        keywords={metadata.Watchguard.keywords}
       />
       <Header
         layout={{
@@ -68,6 +53,4 @@ const Watchguard = () => {
       </Box>
     </>
   );
-};
-
-export default Watchguard;
+}

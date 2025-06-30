@@ -19,14 +19,15 @@ import {
 } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
-export default function HomeTheater() {
+export default function GameMedia() {
   return (
     <>
       <Meta
-        title="Customized Game & Media Room Installation Services"
-        description="Create your dream gaming and media space with personalized designs, AV setup, RGBW lighting, and smart control for an immersive experience."
-        keywords={["media room", "gaming room", "rgbw"]}
+        title={metadata.GameMedia.title}
+        description={metadata.GameMedia.description}
+        keywords={metadata.GameMedia.keywords}
       />
       <Header
         background={{

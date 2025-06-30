@@ -21,27 +21,15 @@ import {
   Container,
   Wrapper,
 } from "@/src/styles/checklist-system-design-styles";
+import { metadata } from "@/src/app/metadata";
 
 export default function SystemDesign() {
   return (
     <>
       <Meta
-        title="Comprehensive System Design Solutions | Smart Automation, Networking & AV"
-        description="Optimize your home or business with tailored automation, network, entertainment, and energy solutions. Our seamless design process ensures performance, efficiency, and satisfaction from start to finish."
-        keywords={[
-          "system design",
-          "home automation",
-          "commercial automation",
-          "network system",
-          "entertainment system",
-          "ev charging",
-          "solar energy",
-          "av integration",
-          "energy management",
-          "seura",
-          "frame tv",
-          "tv setup",
-        ]}
+        title={metadata.SystemDesign.title}
+        description={metadata.SystemDesign.description}
+        keywords={metadata.SystemDesign.keywords}
       />
       <Header
         layout={{

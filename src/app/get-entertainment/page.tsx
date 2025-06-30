@@ -1,7 +1,5 @@
 import React from "react";
-
 import Image from "next/image";
-
 import { IconButton } from "@mui/material";
 
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
@@ -17,13 +15,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetEntertainment() {
   return (
     <>
       <Meta
-        title="Home Theater & Entertainment Room Design – Smart AV & Lighting Solutions"
-        description="Transform your space with expert home theater, media room & whole-home audio design. We assess your needs & integrate smart tech. Book a consultation today!"
+        title={metadata.GetEntertainment.title}
+        description={metadata.GetEntertainment.description}
       />
       <Header
         layout={{

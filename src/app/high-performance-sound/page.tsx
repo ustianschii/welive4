@@ -15,24 +15,15 @@ import {
 } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function HighPerformanceSound() {
   return (
     <>
       <Meta
-        title="High-Performance Surround Sound System Installation"
-        description="Experience immersive surround sound with 5.1 or 7.1 systems, high-end music streaming, wire concealment, and crystal-clear audio for every space."
-        keywords={[
-          "high performance sound system",
-          "5.1",
-          "5.2",
-          "7.1",
-          "7.2",
-          "subwoofer",
-          "speakers",
-          "high-end",
-          "streaming",
-        ]}
+        title={metadata.HighPerformanceSound.title}
+        description={metadata.HighPerformanceSound.description}
+        keywords={metadata.HighPerformanceSound.keywords}
       />
       <Header
         background={{

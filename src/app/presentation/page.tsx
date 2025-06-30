@@ -3,11 +3,12 @@ import { Container, Wrapper } from "@/src/styles/checklist-presentation-styles";
 import { Header } from "@/components/shared/header";
 import { Meta } from "@/components/meta";
 import { CCChecklistPresentation } from "@/components/cc-checklist-presentation";
+import { metadata } from "@/src/app/metadata";
 
 export default function Presentation() {
   return (
     <>
-      <Meta title="Loxone Presentation" />
+      <Meta title={metadata.Presentation.title} />
       <Header
         layout={{
           mobileHeight: "200px",

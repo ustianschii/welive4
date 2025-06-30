@@ -5,14 +5,15 @@ import { Paragraph, Container } from "@/src/styles/privacy-policy-styles";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function PrivacyPolicy() {
   return (
     <>
       <Meta
-        title="Privacy Policy"
-        description="WeLive4 | Privacy Policy"
-        keywords={["privacy policy welive4"]}
+        title={metadata.PrivacyPolicy.title}
+        description={metadata.PrivacyPolicy.description}
+        keywords={metadata.PrivacyPolicy.keywords}
       />
       <Header
         layout={{

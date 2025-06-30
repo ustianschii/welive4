@@ -5,13 +5,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Highlighted, Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetServices() {
   return (
     <>
       <Meta
-        title="Comprehensive Tech Services – Smart Home, WiFi, Home Theater, EV & More"
-        description="Expert network & WiFi setup, smart automation, home theater, EV tech, TV mounting & device support. Get pro consultation & seamless integration today!"
+        title={metadata.GetServices.title}
+        description={metadata.GetServices.description}
       />
       <Header
         layout={{

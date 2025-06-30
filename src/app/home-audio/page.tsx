@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
   GCHomeAudioFirst,
@@ -19,26 +21,15 @@ import {
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
+import { metadata } from "@/src/app/metadata";
 
-import { Box } from "@mui/material";
-
-export default function HomeTheater() {
+export default function HomeAudio() {
   return (
     <>
       <Meta
-        title="Whole Home Audio Systems - Customized Sound Solutions for Every Room"
-        description="Discover premium whole-home audio systems with expert design and seamless speaker concealment. Enhance your lifestyle with personalized sound solutions for every space."
-        keywords={[
-          "home audio",
-          "5.1",
-          "5.2",
-          "7.1",
-          "7.2",
-          "subwoofer",
-          "speakers",
-          "high-end",
-          "streaming",
-        ]}
+        title={metadata.HomeAudio.title}
+        description={metadata.HomeAudio.description}
+        keywords={metadata.HomeAudio.keywords}
       />
       <Header
         background={{

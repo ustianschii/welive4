@@ -17,13 +17,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetEvTech() {
   return (
     <>
       <Meta
-        title="Home EV Charger Installation & Smart Home Ecosystem Design"
-        description="Expert EV charger installation with permitting, power optimization & setup. Integrate automation, solar, HVAC & security. Get a consultation today!"
+        title={metadata.GetEvTech.title}
+        description={metadata.GetEvTech.description}
       />
       <Header
         layout={{

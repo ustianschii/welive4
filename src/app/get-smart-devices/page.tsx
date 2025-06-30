@@ -1,7 +1,5 @@
 import React from "react";
-
 import Image from "next/image";
-
 import { IconButton } from "@mui/material";
 
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
@@ -17,13 +15,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetSmartDevices() {
   return (
     <>
       <Meta
-        title="Smart Home Device Installation – Video Doorbells, Cameras, Locks & More"
-        description="Pro installation of video doorbells, smart cameras, locks, thermostats & garage openers. Includes app setup & expert support. Upgrade your home today!"
+        title={metadata.GetSmartDevices.title}
+        description={metadata.GetSmartDevices.description}
       />
       <Header
         layout={{

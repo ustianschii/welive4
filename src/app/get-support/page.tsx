@@ -1,7 +1,4 @@
-import React from "react";
-
 import Image from "next/image";
-
 import { IconButton } from "@mui/material";
 
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
@@ -17,13 +14,14 @@ import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetSupport() {
   return (
     <>
       <Meta
-        title="Warranty Claims, Troubleshooting & Electronics Recycling Services"
-        description="File warranty claims, get expert troubleshooting, and recycle electronics responsibly. We diagnose, estimate repairs, and ensure eco-friendly disposal. Schedule today!"
+        title={metadata.GetSupport.title}
+        description={metadata.GetSupport.description}
       />
       <Header
         layout={{
