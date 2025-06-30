@@ -101,7 +101,7 @@ export const CardTitle = styled(MuiTypography)(({ theme }) => ({
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
-  textAlign: "center",
+  textAlign: "start",
   marginTop: "10px",
 
   [theme.breakpoints.up("md")]: {
