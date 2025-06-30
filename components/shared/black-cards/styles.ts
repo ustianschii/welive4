@@ -32,11 +32,9 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   fontWeight: SEMI_BOLD,
   lineHeight: "1.1",
   textAlign: "center",
-
   [theme.breakpoints.up("md")]: {
     fontSize: "32px",
   },
-
   [theme.breakpoints.down("md")]: {
     fontSize: "28px",
   },
@@ -50,7 +48,6 @@ export const CardsBox = styled(MuiBox)(({ theme }) => ({
     flexWrap: "wrap",
     gap: "10px",
   },
-
   [theme.breakpoints.down("md")]: {
     flexWrap: "wrap",
     gap: "10px",
@@ -58,6 +55,10 @@ export const CardsBox = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     gap: "10px",
+  },
+  "& > :nth-last-child(1):nth-child(odd)": {
+    marginLeft: "auto",
+    marginRight: "auto",
   },
 }));
 
@@ -70,22 +71,18 @@ export const Card = styled(MuiBox)<{
   backgroundColor: bgcolor ?? OUR_BRANDS_ICONS_BACKGROUND,
   border: border ?? "",
   flexDirection: "column",
-
   [theme.breakpoints.up("md")]: {
     borderRadius: "10px",
     padding: "20px",
     width: upmdwidth,
   },
-
   [theme.breakpoints.down("md")]: {
     borderRadius: "10px",
     padding: "25px",
     width: "49%",
   },
-
   [theme.breakpoints.down("sm")]: {
     borderRadius: "10px",
-    padding: "25px",
     width: "100%",
   },
 }));
@@ -94,15 +91,8 @@ export const CardTitle = styled(MuiTypography)(({ theme }) => ({
   color: GREEN,
   fontFamily: opensans.style.fontFamily,
   lineHeight: "1.1",
-
-  [theme.breakpoints.up("md")]: {
-    fontSize: "18px",
-  },
-
-  [theme.breakpoints.down("md")]: {
-    fontSize: "18px",
-  },
-
+  fontSize: "18px",
+  textAlign: "center",
   [theme.breakpoints.down("sm")]: {
     fontSize: "16px",
   },
@@ -111,19 +101,16 @@ export const CardTitle = styled(MuiTypography)(({ theme }) => ({
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
-  textAlign: "start",
+  textAlign: "center",
+  marginTop: "10px",
 
   [theme.breakpoints.up("md")]: {
-    marginTop: "10px",
     fontSize: "14px",
   },
-
   [theme.breakpoints.down("md")]: {
-    marginTop: "10px",
     fontSize: "16px",
   },
   [theme.breakpoints.down("sm")]: {
-    marginTop: "10px",
     fontSize: "14px",
   },
 }));

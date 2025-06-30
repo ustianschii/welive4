@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 import { Container, Title, Description, Wrapper } from "./styles";
 import { GreenDivider } from "../shared/green-divider";
-
-import Image from "next/image";
-
-import { useTheme, useMediaQuery } from "@mui/material";
 
 export const TvSizes = () => {
   const theme = useTheme();
@@ -40,7 +38,6 @@ export const TvSizes = () => {
           width={width}
           style={{ margin: "40px 0" }}
         />
-        <GreenDivider />
       </Container>
     </Wrapper>
   );
