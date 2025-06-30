@@ -13,21 +13,21 @@ export const FormBox = styled(MuiBox)(({ theme }) => ({
 
   [theme.breakpoints.up("lg")]: {
     width: "900px",
-    maxHeight: "2080px",
+    maxHeight: "1950px",
   },
 
   [theme.breakpoints.down("lg")]: {
     width: "600px",
-    maxHeight: "2150px",
+    maxHeight: "2020px",
   },
 
   [theme.breakpoints.down("md")]: {
     width: "600px",
-    maxHeight: "2150px",
+    maxHeight: "2020px",
   },
 
   [theme.breakpoints.down("sm")]: {
     minWidth: "100%",
-    maxHeight: "2350px",
+    maxHeight: "2220px",
   },
 }));
