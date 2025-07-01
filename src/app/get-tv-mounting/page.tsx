@@ -12,7 +12,6 @@ import {
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 
@@ -28,16 +27,13 @@ export default function GetTvMounting() {
           mobileHeight: "150px",
           tabletHeight: "150px",
           desktopHeight: "150px",
+          isHeaderTop: true,
         }}
         background={{
           backColor: BLACK,
         }}
         content={{
-          title: (
-            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-              TV MOUNTING
-            </Subtitle>
-          ),
+          titleStart: "TV MOUNTING",
         }}
       />
 

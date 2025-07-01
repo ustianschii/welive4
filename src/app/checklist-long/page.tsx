@@ -2,7 +2,6 @@ import React from "react";
 
 import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { Highlighted, Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { CCChecklistLong } from "@/components/cc-checklist-long";
 import { Container, Wrapper } from "@/src/styles/checklist-long-styles";
@@ -20,14 +19,12 @@ export default function ChecklistLong() {
           mobileHeight: "200px",
           tabletHeight: "150px",
           desktopHeight: "150px",
+          isHeaderTop: true,
         }}
         content={{
-          title: (
-            <Subtitle sx={{ marginTop: "50px" }}>
-              Fill up the <Highlighted>Smart Technology Checklist</Highlighted>{" "}
-              below
-            </Subtitle>
-          ),
+          titleStart: "Fill up the",
+          titleHighStart: "Smart Technology Checklist",
+          titleEnd: "Below",
         }}
       />
       <Wrapper>

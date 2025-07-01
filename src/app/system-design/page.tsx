@@ -9,11 +9,7 @@ import {
 import { TEXT_US_BACKGROUND } from "@/src/styles/constants";
 import { TextUs } from "@/components/text-us";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { CCChecklistSystemDesign } from "@/components/cc-checklist-system-design";
@@ -41,18 +37,13 @@ export default function SystemDesign() {
           desktopBackground: `url('system-design/desktop/header-bg.jpg')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                SYSTEM <Highlighted>DESIGN</Highlighted>
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "SYSTEM",
+          titleEnd: "DESIGN",
           subtitle: [
             "At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money.",
             "We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!",
           ],
-          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          button: <CustomButton text="GET A FREE QUOTE!" />,
           divider: true,
         }}
       />
@@ -60,7 +51,9 @@ export default function SystemDesign() {
       <Separator height="100px" padding="20px 0">
         <Title>
           Our System
-          <Highlighted>Design Supports</Highlighted>
+          <Highlighted mLeft="5px" mRight="5px">
+            Design Supports
+          </Highlighted>
           For:
         </Title>
       </Separator>

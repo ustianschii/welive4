@@ -1,10 +1,5 @@
 import { Box } from "@mui/material";
 
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { GrayCardsBox } from "@/components/shared/gray-cards";
 import { watchGuardData } from "@/components/shared/gray-cards/data";
@@ -32,13 +27,8 @@ export default function Watchguard() {
           desktopBackground: `url('watchguard/desktop/header-bg.jpg')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                AUTOMATED <Highlighted>WATCHGUARD</Highlighted>
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "AUTOMATED",
+          titleEnd: "WATCHGUARD",
           subtitle: [
             "At WE LIVE 4, your safety is always on. Powered by Loxone, the Automated Watchguard monitors intrusions, hazards, leaks, and access — reacting instantly with alerts, lights, and emergency contact.",
             "Stay protected with smart, seamless integration. Control everything remotely, simulate presence, and enjoy real-time updates — no internet required. Trust us to guard what matters most.",
@@ -48,7 +38,7 @@ export default function Watchguard() {
         }}
       />
 
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         <GrayCardsBox data={watchGuardData} imgheight={300} imgwidth={450} />
       </Box>
     </>

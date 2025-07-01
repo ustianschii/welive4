@@ -8,11 +8,6 @@ import { ForResidential } from "@/components/for-residential";
 import { ForCommercial } from "@/components/for-commercial";
 import { Video } from "@/components/video";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 
@@ -38,14 +33,8 @@ export default function LoxoneAutomation() {
           desktopBackground: `url('loxone-automation/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                Loxone Automation:{" "}
-                <Highlighted>The Future-proof Of Smart Automation</Highlighted>
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleStart: "LOXONE AUTOMATION: ",
+          titleHighEnd: "THE FUTURE-PROOF OF SMART AUTOMATION",
           subtitle: [
             "Imagine walking into your home, office, warehouse, restaurant or whatever place that brings you good memories that intuitively knows your needs, enhancing comfort and convenience at every turn.",
             "With LOXONE’s cutting-edge smart automation solutions, that vision becomes a reality. Founded in Austria in 2009 and backed by its successful implementation of over 200,000 projects globally, WeLive4 as part of LOXONE committed to transforming how people interact with their spaces. Our technology adapts to your lifestyle, ensuring your environment is not just smart, but intelligently responsive. LOXONE makes a mark in North America since 2019, Loxone US is swiftly becoming known as an industry leader in delivering exceptional smart automation experiences. Picture your properties—whether residential or commercial—being equipped with state-of-the-art automation that elevates the living and working environment, improves energy efficiency, and enhances security.",
@@ -68,7 +57,6 @@ export default function LoxoneAutomation() {
             [theme.breakpoints.up("md")]: {
               flexDirection: "row",
             },
-            [theme.breakpoints.down("md")]: {},
             [theme.breakpoints.down("sm")]: {
               flexDirection: "column",
             },

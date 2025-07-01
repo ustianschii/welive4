@@ -8,11 +8,6 @@ import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import { BCHighPerformanceAudio } from "@/components/shared/black-cards/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -32,14 +27,8 @@ export default function HighPerformanceSound() {
           desktopBackground: `url('/high-performance-sound/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>HIGH PERFORMANCE SOUND</Highlighted> SYSTEM
-                INSTALLATION
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "HIGH PERFORMANCE SOUND",
+          titleEnd: "SYSTEM INSTALLATION",
           subtitle: [
             "FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM",
           ],

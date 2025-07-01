@@ -6,11 +6,6 @@ import { blackCardsData } from "@/components/shared/black-cards/data";
 import { grayCardsData } from "@/components/shared/gray-cards/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -30,15 +25,10 @@ export default function Network() {
           desktopBackground: `url('/network/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>PROFESSIONAL</Highlighted> NETWORK INSTALLATION
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "PROFESSIONAL",
+          titleEnd: "NETWORK INSTALLATION",
           subtitle: ["YOUR DEVICES. YOUR NEEDS. YOUR PERFECT NETWORK"],
-          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          button: <CustomButton text="GET A FREE QUOTE!" />,
           divider: true,
         }}
       />

@@ -13,11 +13,7 @@ import { BCOutdoorEntertainment } from "@/components/shared/black-cards/data";
 import { ROUTES } from "@/src/app/utils/routes-constants";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -37,14 +33,8 @@ export default function OutdoorEntertainment() {
           desktopBackground: `url('/outdoor-entertainment/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>OUTDOOR ENTERTAINMENT</Highlighted> <br />
-                SYSTEM INSTALLATION & DESIGN
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "OUTDOOR ENTERTAINMENT",
+          titleEnd: "SYSTEM INSTALLATION & DESIGN",
           subtitle: [
             "YOUR ONE-STOP SHOP FOR A PROFESSIONAL OUTDOOR ENTERTAINMENT SYSTEM INSTALLATION!",
           ],
@@ -59,7 +49,7 @@ export default function OutdoorEntertainment() {
           OUR SERVICE
         </Title>
       </Separator>
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         <GrayCardsBox
           data={GCOutdoorEntertainmentTV}
           imgheight={400}

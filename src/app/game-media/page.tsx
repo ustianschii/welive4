@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { Separator } from "@/components/shared/gray-separator";
@@ -10,13 +8,8 @@ import {
 } from "@/components/shared/gray-cards/data";
 import { Title } from "@/components/shared/content-separator/styles";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -36,18 +29,12 @@ export default function GameMedia() {
           desktopBackground: `url('/game-media/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                CUSTOMIZED <Highlighted>GAME & MEDIA</Highlighted> ROOM
-                INSTALLATION
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "CUSTOMIZED GAME & MEDIA",
+          titleEnd: "ROOM INSTALLATION",
           subtitle: [
             "CREATE YOUR PERFECT GAMING AND MEDIA ZONE WITH OUR CUSTOM-DESIGNED SYSTEMS",
           ],
-          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          button: <CustomButton text="GET A FREE QUOTE!" />,
           divider: true,
         }}
       />

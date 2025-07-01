@@ -9,16 +9,19 @@ import {
   TypographyProps,
 } from "@mui/material";
 
-export const HeaderTextBox = styled(MuiBox)(({ theme }) => ({
+export const HeaderTextBox = styled(MuiBox, {
+  shouldForwardProp: (prop) => prop !== "isHeaderTop",
+})<{ isHeaderTop?: boolean }>(({ theme, isHeaderTop }) => ({
   overflow: "hidden",
+  marginTop: isHeaderTop ? "50px" : "200px",
   [theme.breakpoints.up("md")]: {
-    marginTop: "200px",
+    marginTop: isHeaderTop ? "50px" : "200px",
   },
   [theme.breakpoints.down("md")]: {
-    marginTop: "200px",
+    marginTop: isHeaderTop ? "50px" : "200px",
   },
   [theme.breakpoints.down("sm")]: {
-    marginTop: "150px",
+    marginTop: isHeaderTop ? "50px" : "150px",
   },
 }));
 
@@ -44,7 +47,7 @@ export const Title = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
 }));
 
 export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
-  ({ mLeft = "6px", mRight = "6px" }) => ({
+  ({ mLeft, mRight }) => ({
     color: GREEN,
     marginLeft: mLeft,
     marginRight: mRight,

@@ -7,11 +7,7 @@ import { PartneredInstaller } from "@/components/partnered-installer";
 import { ActionBanner } from "@/components/shared/action-banner";
 import { data as keyfeaturesdata } from "@/components/key-features/data";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -31,13 +27,8 @@ export default function LoxoneCommercial() {
           desktopBackground: `url('/loxone-commercial/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>LOXONE</Highlighted> FOR COMMERCIAL
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "LOXONE",
+          titleEnd: "FOR COMMERCIAL",
           subtitle: [
             "Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users.",
             "With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before.",

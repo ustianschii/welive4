@@ -23,15 +23,25 @@ import { HeaderDesktopButton } from "@/components/header-desktop-button";
 import { desktopPages, pages } from "./data";
 import { HeaderSubtitle } from "../header-subtitle";
 import { GreenDivider } from "../green-divider";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "@/components/hero-title/styles";
 
 interface HeaderLayoutProps {
   mobileHeight?: string;
   tabletHeight?: string;
   desktopHeight?: string;
+  isHeaderTop?: boolean;
 }
 
 interface HeaderContentProps {
-  title?: ReactNode;
+  titleStart?: string;
+  titleEnd?: string;
+  titleHighStart?: string;
+  titleHighEnd?: string;
+  title?: ReactNode; // should be deleted after refactoring
   subtitle?: string[];
   button?: ReactNode;
   divider?: boolean;
@@ -149,7 +159,15 @@ export const Header = ({ layout, content, background }: HeaderProps) => {
           </DesktopHeaderLinks>
         </Toolbar>
         {content?.dividerTop}
-        {content?.title}
+        {content?.title} {/* to be deleted after refactoring */}
+        <HeaderTextBox isHeaderTop={layout?.isHeaderTop}>
+          <Subtitle component="h1">
+            {content?.titleStart}
+            <Highlighted mLeft="5px">{content?.titleHighEnd}</Highlighted>
+            <Highlighted mRight="5px">{content?.titleHighStart}</Highlighted>
+            {content?.titleEnd}
+          </Subtitle>
+        </HeaderTextBox>
         <HeaderSubtitle subtitles={content?.subtitle} />
         {content?.button}
       </Container>

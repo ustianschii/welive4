@@ -9,13 +9,7 @@ import {
 } from "@/components/shared/gray-cards/data";
 import { Button } from "@/components/shared/gray-cards/styles";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 
@@ -39,15 +33,9 @@ export default function AudioVisualSystems() {
           desktopBackground: `url('/audio-visual-systems/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                PREMIUM
-                <Highlighted>ENTERTAINMENT SPACES</Highlighted>
-                DESIGN AND INSTALLATION
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleStart: "PREMIUM",
+          titleHighStart: "ENTERTAINMENT SPACES",
+          titleEnd: "DESIGN AND INSTALLATION",
           subtitle: [
             "Where every occasion becomes a cherished memory",
             "Your entertainment space should reflect the joy of shared moments and successful milestones. We believe in creating an environment where families come together to celebrate, businesses thrive during achievements, and customers feel valued.",

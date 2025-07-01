@@ -18,11 +18,7 @@ import { transparentCardsContent } from "@/components/transparent-card/data";
 import { Button } from "@/components/shared/gray-cards/styles";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
@@ -48,14 +44,8 @@ export default function EnergyManagement() {
           desktopBackground: `url('/energy-management/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                HOME & BUILDING{" "}
-                <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleStart: "HOME & BUILDING",
+          titleHighEnd: "ENERGY MANAGEMENT SYSTEMS",
           subtitle: [
             "MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!",
           ],

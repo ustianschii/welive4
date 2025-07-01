@@ -1,5 +1,3 @@
-import React from "react";
-
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
 import { networkWifi } from "@/components/shared/get-services-black-card/services";
 import { ROUTES } from "@/src/app/utils/routes-constants";
@@ -11,7 +9,6 @@ import {
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 
@@ -27,16 +24,13 @@ export default function GetNetworkWifi() {
           mobileHeight: "150px",
           tabletHeight: "150px",
           desktopHeight: "150px",
+          isHeaderTop: true,
         }}
         background={{
           backColor: BLACK,
         }}
         content={{
-          title: (
-            <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-              NETWORK & WIFI
-            </Subtitle>
-          ),
+          titleStart: "NETWORK & WIFI",
         }}
       />
 

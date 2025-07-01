@@ -7,11 +7,6 @@ import { dataLoxoneCommercial } from "@/components/key-features/data";
 import { Personalize } from "@/components/personalize-loxone";
 import { ActionBanner } from "@/components/shared/action-banner";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 
@@ -30,13 +25,8 @@ export default function LoxoneResidential() {
           desktopBackground: `url('/loxone-residential/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>LOXONE</Highlighted> FOR RESIDENTIAL
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "LOXONE",
+          titleEnd: "FOR RESIDENTIAL",
           subtitle: [
             "Make your house a stylish and comfortable retreat. Everything can be controlled with a single touch or voice command, including the lights, music, and temperature",
             "Experience the stars like never before with safe outdoor TV mounts. With automated security, you can relax and always feel at ease.",

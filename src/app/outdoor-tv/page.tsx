@@ -20,11 +20,6 @@ import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import { TvSizes } from "@/components/tv-sizes";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -44,13 +39,8 @@ export default function OutdoorTv() {
           desktopBackground: `url('/outdoor-tv/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>PREMIUM OUTDOOR</Highlighted> TV MOUNTING
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "PREMIUM OUTDOOR",
+          titleEnd: "TV MOUNTING",
           subtitle: ["AVAILABLE IN NEW JERSEY, PENNSYLVANIA & DELAWARE"],
           button: <CustomButton text={"GET A FREE QUOTE!"} />,
           divider: true,

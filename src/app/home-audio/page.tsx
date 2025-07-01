@@ -13,11 +13,7 @@ import { CustomAccordion } from "@/components/shared/accordion";
 import { homeAudioFaq } from "@/components/shared/accordion/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
@@ -38,24 +34,19 @@ export default function HomeAudio() {
           desktopBackground: `url('/home-audio/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                WHOLE <Highlighted>HOME AUDIO</Highlighted> SYSTEMS
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleStart: "WHOLE",
+          titleHighEnd: "HOME AUDIO SYSTEMS",
           subtitle: [
             "STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!",
           ],
-          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          button: <CustomButton text="GET A FREE QUOTE!" />,
           divider: true,
         }}
       />
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         <GrayCardsBox data={GCHomeAudioFirst} imgheight={400} imgwidth={388} />
       </Box>
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         <GrayCardsBox
           data={GCHomeAudioSecond}
           imgheight={400}

@@ -3,7 +3,6 @@ import { Box } from "@mui/material";
 import { BLACK } from "@/src/styles/constants";
 import { Paragraph, Container } from "@/src/styles/privacy-policy-styles";
 import { Header } from "@/components/shared/header";
-import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 
@@ -20,16 +19,13 @@ export default function PrivacyPolicy() {
           mobileHeight: "100px",
           tabletHeight: "100px",
           desktopHeight: "150px",
+          isHeaderTop: true,
         }}
         background={{
           backColor: BLACK,
         }}
         content={{
-          title: (
-            <Subtitle component="h1" sx={{ marginTop: "30px" }}>
-              Privacy Policy
-            </Subtitle>
-          ),
+          titleStart: "Privacy Policy",
         }}
       />
 

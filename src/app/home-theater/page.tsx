@@ -12,11 +12,7 @@ import { CustomAccordion } from "@/components/shared/accordion";
 import { homeTheaterFaq } from "@/components/shared/accordion/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
@@ -36,13 +32,8 @@ export default function HomeTheater() {
           desktopBackground: `url('/home-theater/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                <Highlighted>HIGH-END HOME THEATER</Highlighted> SYSTEMS
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleHighStart: "HIGH-END HOME THEATER",
+          titleEnd: "SYSTEMS",
           subtitle: [
             "EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!",
           ],

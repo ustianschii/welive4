@@ -1,18 +1,10 @@
-import React from "react";
-
 import { Title } from "@/components/shared/content-separator/styles";
-
 import { Separator } from "@/components/shared/gray-separator";
 import { CustomerCare } from "@/components/customer-care-banner";
 import { OtherWayToConnect } from "@/components/others-way-to-connect";
 import { TextUs } from "@/components/text-us";
-
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+import { Highlighted } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { Container, Wrapper } from "@/src/styles/checklist-consultation";
 import { CCChecklistConsultation } from "@/components/cc-checklist-consultation";
@@ -37,14 +29,9 @@ export default function Consultation() {
           desktopBackground: `url('consultation/desktop/header-bg.png')`,
         }}
         content={{
-          title: (
-            <HeaderTextBox>
-              <Subtitle component="h1">
-                GET A <Highlighted>FREE CONSULTATION</Highlighted> FOR YOUR{" "}
-                <Highlighted>DREAM HOME!</Highlighted>
-              </Subtitle>
-            </HeaderTextBox>
-          ),
+          titleStart: "GET A ",
+          titleHighStart: "FREE CONSULTATION",
+          titleEnd: " FOR YOUR DREAM HOME!",
           divider: true,
         }}
       />
