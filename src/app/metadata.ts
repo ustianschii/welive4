@@ -1,4 +1,29 @@
 export const metadata = {
+  Home: {
+    title:
+      "Integrate Technology for Smart Homes, Offices, and Premium Entertainment Systems",
+    description:
+      "We integrate advanced automation systems, including Loxone Smart Home solutions and expert insights on Crestron vs Control4, to enhance convenience, efficiency, and comfort. Our services also include outdoor TV installation in NJ and outdoor TV mounting services, ensuring a seamless experience for your premium entertainment systems.",
+    keywords: [
+      "welive4",
+      "live4site",
+      "premium entertainment systems",
+      "outdoor tv installation",
+      "outdoor tv installation NJ",
+      "outdoor tv installation Delaware",
+      "outdoor tv installation Howell NJ",
+      "outdoor tv installation deal NJ",
+      "outdoor tv mounting service",
+      "outdoor tv installation company",
+      "av sound system",
+      "loxone automation",
+      "loxone smart home",
+      "smart home automation NJ",
+      "home entertainment installation",
+      "custom outdoor tv setup",
+      "home audio video integration",
+    ],
+  },
   AudioVisualSystems: {
     title: "Premium Audio Visual Systems",
     description:

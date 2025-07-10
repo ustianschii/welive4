@@ -13,9 +13,9 @@ export const Statistic = () => {
     <>
       <Container>
         <Title>
-          DON&apos;T BECOME A<Highlighted>STATISTIC</Highlighted>
+          DON&apos;T BECOME A<Highlighted mLeft="5px">STATISTIC</Highlighted>
         </Title>
-        <Description component={"h2"}>
+        <Description component="h2">
           Smart technology offers many innovative designs and solutions to
           enhance your lifestyle, increase comfort, and even generate additional
           passive income for your household — not to mention making life more
