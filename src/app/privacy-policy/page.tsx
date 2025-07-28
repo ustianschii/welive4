@@ -28,7 +28,6 @@ export default function PrivacyPolicy() {
           titleStart: "Privacy Policy",
         }}
       />
-
       <Box bgcolor={BLACK} id="top">
         <Container maxWidth="md">
           <Paragraph>

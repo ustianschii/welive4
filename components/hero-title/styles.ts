@@ -1,13 +1,13 @@
 "use client";
 import { styled } from "@mui/material/styles";
-import { opensans } from "../../src/app/layout";
-import { GREEN, SEMI_BOLD } from "../../src/styles/constants";
-
 import {
   Box as MuiBox,
   Typography as MuiTypography,
   TypographyProps,
 } from "@mui/material";
+
+import { opensans } from "@/src/app/layout";
+import { GREEN, SEMI_BOLD } from "@/src/styles/constants";
 
 export const HeaderTextBox = styled(MuiBox, {
   shouldForwardProp: (prop) => prop !== "isHeaderTop",
@@ -30,17 +30,14 @@ export const Title = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
   justifyContent: "center",
   fontFamily: opensans.style.fontFamily,
   lineHeight: "1.2",
-
   [theme.breakpoints.up("md")]: {
     fontSize: "25px",
     marginBottom: "25px",
   },
-
   [theme.breakpoints.down("md")]: {
     fontSize: "23px",
     marginBottom: "25px",
   },
-
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
   },
@@ -58,12 +55,11 @@ export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
 );
 
 export const Subtitle = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
-  lineHeight: "1.1",
+  lineHeight: "1.3",
   fontWeight: SEMI_BOLD,
   fontFamily: opensans.style.fontFamily,
   textAlign: "center",
   whiteSpace: "normal",
-
   [theme.breakpoints.up("md")]: {
     fontSize: "35px",
     padding: "0 150px",
@@ -72,7 +68,6 @@ export const Subtitle = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
     fontSize: "35px",
     padding: "0 70px",
   },
-
   [theme.breakpoints.down("sm")]: {
     fontSize: "25px",
     padding: "0 10px",

@@ -20,10 +20,13 @@ import {
   ContactLabel,
 } from "./styles";
 import { BLACK, GRAY } from "@/src/styles/constants";
-import { FooterProps } from "./types";
 import { emails, FOOTER_LINKS } from "./data";
 
-export const Footer: React.FC<FooterProps> = ({ divider }) => {
+interface FooterProps {
+  divider?: React.ReactNode;
+}
+
+export const Footer = ({ divider }: FooterProps) => {
   return (
     <Box sx={{ backgroundColor: BLACK }}>
       {divider}
