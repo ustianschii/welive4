@@ -1,20 +1,15 @@
 import React from "react";
+import { Box } from "@mui/material";
 
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
-
-import { Box } from "@mui/material";
 
 export const Separator: React.FC<{
   children?: React.ReactNode;
   height?: string;
   padding?: string;
-}> = ({ children, height, padding }) => {
+}> = ({ children, height = "35px", padding = "" }) => {
   return (
-    <Box
-      height={height ?? "35px"}
-      p={padding ?? ""}
-      sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}
-    >
+    <Box height={height} p={padding} bgcolor={MAIN_SERVICES_BACKGROUND}>
       {children}
     </Box>
   );

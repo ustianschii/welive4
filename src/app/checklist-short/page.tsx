@@ -1,26 +1,29 @@
-import React from "react";
 import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { Highlighted, Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
 import { Container, Wrapper } from "@/src/styles/checklist-short-styles";
 import { CCChecklistShort } from "@/components/cc-checklist-short";
+import { metadata } from "@/src/app/metadata";
 
 export default function ChecklistShort() {
   return (
     <>
-      <Meta title="Checklist" />
+      <Meta title={metadata.ChecklistShort.title} />
       <Header
-        backcolor={SEPARATOR_BACKGROUND}
-        title={
-          <Subtitle sx={{ marginTop: "50px" }}>
-            Fill up the<Highlighted>Smart Technology Checklist</Highlighted>
-            below
-          </Subtitle>
-        }
-        mobileheight="200px"
-        tabletheight="170px"
-        desktopheight="150px"
+        background={{
+          backColor: SEPARATOR_BACKGROUND,
+        }}
+        layout={{
+          mobileHeight: "200px",
+          tabletHeight: "170px",
+          desktopHeight: "150px",
+          isHeaderTop: true,
+        }}
+        content={{
+          titleStart: "Fill up the ",
+          titleHighStart: "Smart Technology Checklist",
+          titleEnd: "below",
+        }}
       />
       <Wrapper>
         <Container>

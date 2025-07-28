@@ -5,11 +5,16 @@ import React, { useState } from "react";
 import { Box } from "@mui/material";
 
 import { Container, Tab, Tabs, Wrapper } from "./styles";
-import { TabPanelProps } from "./types";
 import { TabContent } from "./tab";
 import { data } from "./data";
 
-const TabPanel: React.FC<TabPanelProps> = ({ children, value, index }) => {
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+
+const TabPanel = ({ children, value, index }: TabPanelProps) => {
   return (
     <div role="tabpanel" hidden={value !== index} style={{ marginTop: "20px" }}>
       {value === index && <Box>{children}</Box>}
@@ -17,7 +22,7 @@ const TabPanel: React.FC<TabPanelProps> = ({ children, value, index }) => {
   );
 };
 
-export const CustomTabs = () => {
+export const FeaturesTabs = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {

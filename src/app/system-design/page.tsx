@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Separator } from "@/components/shared/gray-separator";
 import { Title } from "@/components/shared/content-separator/styles";
 import { DesignTypes } from "@/components/system-design/system-design-cards";
@@ -11,13 +9,7 @@ import {
 import { TEXT_US_BACKGROUND } from "@/src/styles/constants";
 import { TextUs } from "@/components/text-us";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { CCChecklistSystemDesign } from "@/components/cc-checklist-system-design";
@@ -25,54 +17,43 @@ import {
   Container,
   Wrapper,
 } from "@/src/styles/checklist-system-design-styles";
+import { metadata } from "@/src/app/metadata";
 
 export default function SystemDesign() {
   return (
     <>
       <Meta
-        title="Comprehensive System Design Solutions | Smart Automation, Networking & AV"
-        description="Optimize your home or business with tailored automation, network, entertainment, and energy solutions. Our seamless design process ensures performance, efficiency, and satisfaction from start to finish."
-        keywords={[
-          "system design",
-          "home automation",
-          "commercial automation",
-          "network system",
-          "entertainment system",
-          "ev charging",
-          "solar energy",
-          "av integration",
-          "energy management",
-          "seura",
-          "frame tv",
-          "tv setup",
-        ]}
+        title={metadata.SystemDesign.title}
+        description={metadata.SystemDesign.description}
+        keywords={metadata.SystemDesign.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              SYSTEM
-              <Highlighted>DESIGN</Highlighted>
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('system-design/header-bg.jpg')`}
-        tabletbackground={`url('system-design/desktop/header-bg.jpg')`}
-        desktopbackground={`url('system-design/desktop/header-bg.jpg')`}
-        tabletheight="700px"
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            first="At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money."
-            second="We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!"
-          />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        layout={{
+          tabletHeight: "700px",
+        }}
+        background={{
+          background: `url('system-design/header-bg.jpg')`,
+          tabletBackground: `url('system-design/desktop/header-bg.jpg')`,
+          desktopBackground: `url('system-design/desktop/header-bg.jpg')`,
+        }}
+        content={{
+          titleHighStart: "SYSTEM",
+          titleEnd: "DESIGN",
+          subtitle: [
+            "At WE LIVE 4, we're dedicated to your satisfaction, right from the beginning to the end. Our seamless design process ensures that your unique needs are met while also saving your valuable time and money.",
+            "We believe in optimizing system performance to its fullest potential. Trust us for expert advice and enjoy free consultations—we're here to turn your vision into reality!",
+          ],
+          button: <CustomButton text="GET A FREE QUOTE!" />,
+          divider: true,
+        }}
       />
+
       <Separator height="100px" padding="20px 0">
         <Title>
           Our System
-          <Highlighted>Design Supports</Highlighted>
+          <Highlighted mLeft="5px" mRight="5px">
+            Design Supports
+          </Highlighted>
           For:
         </Title>
       </Separator>

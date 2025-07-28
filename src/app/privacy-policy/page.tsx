@@ -1,31 +1,32 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { BLACK } from "@/src/styles/constants";
 import { Paragraph, Container } from "@/src/styles/privacy-policy-styles";
 import { Header } from "@/components/shared/header";
-import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function PrivacyPolicy() {
   return (
     <>
       <Meta
-        title="Privacy Policy"
-        description="WeLive4 | Privacy Policy"
-        keywords={["privacy policy welive4"]}
+        title={metadata.PrivacyPolicy.title}
+        description={metadata.PrivacyPolicy.description}
+        keywords={metadata.PrivacyPolicy.keywords}
       />
       <Header
-        mobileheight="100px"
-        tabletheight="100px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "30px" }}>
-            Privacy Policy
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "100px",
+          tabletHeight: "100px",
+          desktopHeight: "150px",
+          isHeaderTop: true,
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          titleStart: "Privacy Policy",
+        }}
       />
       <Box bgcolor={BLACK} id="top">
         <Container maxWidth="md">

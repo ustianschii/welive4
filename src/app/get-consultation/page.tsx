@@ -1,7 +1,4 @@
-import React from "react";
-
 import Image from "next/image";
-
 import { IconButton } from "@mui/material";
 
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
@@ -15,26 +12,29 @@ import {
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetConsultation() {
   return (
     <>
       <Meta
-        title="Expert Smart Home & Renovation Consultation – Technology Advisory & Integration"
-        description="Get expert consultation for smart home automation, AV, EV charging & home renovations. Our techs assess your needs & guide your project. Book today!"
+        title={metadata.GetConsultation.title}
+        description={metadata.GetConsultation.description}
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            CONSULTATION
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+          isHeaderTop: true,
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          titleStart: "CONSULTATION",
+        }}
       />
       <Wrapper>
         <Container disableGutters>

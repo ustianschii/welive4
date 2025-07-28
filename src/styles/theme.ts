@@ -3,14 +3,14 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-  spacing: 8, // Default spacing unit
+  spacing: 8,
   breakpoints: {
     values: {
-      xs: 0, // Extra small devices (phones)
-      sm: 600, // Small devices (tablets)
-      md: 960, // Medium devices (small laptops)
-      lg: 1280, // Large devices (desktops)
-      xl: 1920, // Extra large devices (large desktops)
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
     },
   },
   palette: {

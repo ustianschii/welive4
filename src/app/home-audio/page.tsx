@@ -1,4 +1,4 @@
-import React from "react";
+import { Box } from "@mui/material";
 
 import { GrayCardsBox } from "@/components/shared/gray-cards";
 import {
@@ -13,60 +13,40 @@ import { CustomAccordion } from "@/components/shared/accordion";
 import { homeAudioFaq } from "@/components/shared/accordion/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
+import { metadata } from "@/src/app/metadata";
 
-import { Box } from "@mui/material";
-
-export default function HomeTheater() {
+export default function HomeAudio() {
   return (
     <>
       <Meta
-        title="Whole Home Audio Systems - Customized Sound Solutions for Every Room"
-        description="Discover premium whole-home audio systems with expert design and seamless speaker concealment. Enhance your lifestyle with personalized sound solutions for every space."
-        keywords={[
-          "home audio",
-          "5.1",
-          "5.2",
-          "7.1",
-          "7.2",
-          "subwoofer",
-          "speakers",
-          "high-end",
-          "streaming",
-        ]}
+        title={metadata.HomeAudio.title}
+        description={metadata.HomeAudio.description}
+        keywords={metadata.HomeAudio.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              WHOLE
-              <Highlighted>HOME AUDIO</Highlighted>
-              SYSTEMS
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/home-audio/header-bg.png')`}
-        tabletbackground={`url('/home-audio/tablet/header-bg.png')`}
-        desktopbackground={`url('/home-audio/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle first="STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!" />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/home-audio/header-bg.png')`,
+          tabletBackground: `url('/home-audio/tablet/header-bg.png')`,
+          desktopBackground: `url('/home-audio/desktop/header-bg.png')`,
+        }}
+        content={{
+          titleStart: "WHOLE",
+          titleHighEnd: "HOME AUDIO SYSTEMS",
+          subtitle: [
+            "STREAMING YOUR FAVORITE SONGS IN EVERY CORNER OF YOUR HOME!",
+          ],
+          button: <CustomButton text="GET A FREE QUOTE!" />,
+          divider: true,
+        }}
       />
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         <GrayCardsBox data={GCHomeAudioFirst} imgheight={400} imgwidth={388} />
       </Box>
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         <GrayCardsBox
           data={GCHomeAudioSecond}
           imgheight={400}

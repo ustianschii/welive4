@@ -11,7 +11,7 @@ export const HowWeWork = () => {
     <Container disableGutters>
       <Title>
         HOW WE
-        <Highlighted>WORK</Highlighted>
+        <Highlighted mLeft="5px">WORK</Highlighted>
       </Title>
       <Description>
         Exceptional customer care is a core value at WE LIVE 4. We go above and

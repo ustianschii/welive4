@@ -13,7 +13,7 @@ export const Everyone = () => {
         <TitleBox>
           <BorderBox>
             <Title>
-              GET SOME<Highlighted>FUN</Highlighted>FOR
+              GET SOME<Highlighted mRight="5px">FUN</Highlighted>FOR
               <Highlighted>EVERYONE</Highlighted>
             </Title>
           </BorderBox>

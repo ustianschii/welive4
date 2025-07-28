@@ -1,5 +1,3 @@
-import React from "react";
-
 import { ReturnOnInvestments } from "@/components/return-on-investment";
 import { ApplicationScenarios } from "@/components/application-scenarios";
 import { GreenBanner } from "@/components/shared/green-banner";
@@ -9,53 +7,36 @@ import { PartneredInstaller } from "@/components/partnered-installer";
 import { ActionBanner } from "@/components/shared/action-banner";
 import { data as keyfeaturesdata } from "@/components/key-features/data";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
+
 import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function LoxoneCommercial() {
   return (
     <>
       <Meta
-        title="Loxone Commercial Solutions: Smart Automation for Your Business"
-        description="Transform your building with Loxone automation. Save energy, boost productivity, and enhance security with tailored solutions for every commercial need."
-        keywords={[
-          "loxone",
-          "smart home",
-          "automation",
-          "access control",
-          "lighting control",
-          "climate control",
-          "security",
-          "energy management",
-          "ambient assisted living",
-          "conference board room",
-        ]}
+        title={metadata.LoxoneCommercial.title}
+        description={metadata.LoxoneCommercial.description}
+        keywords={metadata.LoxoneCommercial.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>LOXONE</Highlighted>FOR COMMERCIAL
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/loxone-commercial/header-bg-mobile.png')`}
-        tabletbackground={`url('/loxone-commercial/tablet/header-bg-tablet.png')`}
-        desktopbackground={`url('/loxone-commercial/desktop/header-bg.png')`}
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle
-            first="Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users."
-            second="With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before."
-          />
-        }
+        background={{
+          background: `url('/loxone-commercial/header-bg-mobile.png')`,
+          tabletBackground: `url('/loxone-commercial/tablet/header-bg-tablet.png')`,
+          desktopBackground: `url('/loxone-commercial/desktop/header-bg.png')`,
+        }}
+        content={{
+          titleHighStart: "LOXONE",
+          titleEnd: "FOR COMMERCIAL",
+          subtitle: [
+            "Loxone links everything in your building, giving you flexibility and big energy savings. It's a game-changer for investors, operators, and users.",
+            "With Loxone, enjoy rapid ROI as seen in a global franchise restaurant saving 14,000 kWh monthly – paying off the investment in less than a month. Transform your space with Loxone and experience intelligent building automation like never before.",
+          ],
+          divider: true,
+        }}
       />
+
       <ReturnOnInvestments />
       <GreenDivider />
       <ApplicationScenarios />

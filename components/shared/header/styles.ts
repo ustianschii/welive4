@@ -15,7 +15,21 @@ import { opensans } from "@/src/app/layout";
 import Image from "next/image";
 
 import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
-import { AppBarProps, ContainerProps, ToolbarProps } from "./types";
+
+interface AppBarProps {
+  background?: string;
+  tabletbackground?: string;
+  desktopbackground?: string;
+  backcolor?: string;
+}
+interface ContainerProps {
+  mobileheight?: string;
+  tabletheight?: string;
+  desktopheight?: string;
+}
+interface ToolbarProps {
+  backcolor: string;
+}
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
   ({ theme, background, backcolor, tabletbackground, desktopbackground }) => ({

@@ -52,7 +52,6 @@ export const CardBox = styled(MuiBox)<{ image: string; imagetablet: string }>(
     },
     [theme.breakpoints.down("sm")]: {
       backgroundImage: `url(${image})`,
-      minHeight: "500px",
     },
   })
 );
@@ -109,16 +108,14 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const Button = styled(MuiButton)(({ theme }) => ({
+export const Button = styled(MuiButton)(() => ({
   color: WHITE,
+  backgroundColor: "#000000A6",
   width: "220px",
   height: "40px",
   fontFamily: opensans.style.fontFamily,
   lineHeight: "120%",
   fontWeight: BOLD,
-  border: "2px solid white",
+  border: "1px solid white",
   margin: "10px 0 0 0",
-  [theme.breakpoints.up("md")]: {},
-  [theme.breakpoints.down("md")]: {},
-  [theme.breakpoints.down("sm")]: {},
 }));

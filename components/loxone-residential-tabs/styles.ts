@@ -74,8 +74,6 @@ export const ContentBox = styled(MuiBox)(({ theme }) => ({
 
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
-    border: "2px solid",
-    borderColor: GREEN,
     borderRadius: "10px",
     padding: "30px",
     minHeight: "420px",

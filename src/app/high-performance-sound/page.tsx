@@ -1,61 +1,42 @@
-import React from "react";
 import Image from "next/image";
-
 import { Box } from "@mui/material";
 
-import { SoundSystemDemo } from "../../../components/sound-systems-demo";
-import { GrayCardsBox } from "../../../components/shared/gray-cards";
-import { GCMusicStreaming } from "../../../components/shared/gray-cards/data";
-import { BlackCardsBoxShared } from "../../../components/shared/black-cards";
-import { BCHighPerformanceAudio } from "../../../components/shared/black-cards/data";
+import { SoundSystemDemo } from "@/components/sound-systems-demo";
+import { GrayCardsBox } from "@/components/shared/gray-cards";
+import { GCMusicStreaming } from "@/components/shared/gray-cards/data";
+import { BlackCardsBoxShared } from "@/components/shared/black-cards";
+import { BCHighPerformanceAudio } from "@/components/shared/black-cards/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
-import { Header } from "../../../components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "../../../components/hero-title/styles";
-import { HeaderSubtitle } from "../../../components/shared/header-subtitle";
-import { CustomButton } from "../../../components/shared/header-button";
-import { GreenDivider } from "../../../components/shared/green-divider";
-import { Meta } from "../../../components/meta";
+import { Header } from "@/components/shared/header";
+import { CustomButton } from "@/components/shared/header-button";
+import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function HighPerformanceSound() {
   return (
     <>
       <Meta
-        title="High-Performance Surround Sound System Installation"
-        description="Experience immersive surround sound with 5.1 or 7.1 systems, high-end music streaming, wire concealment, and crystal-clear audio for every space."
-        keywords={[
-          "high performance sound system",
-          "5.1",
-          "5.2",
-          "7.1",
-          "7.2",
-          "subwoofer",
-          "speakers",
-          "high-end",
-          "streaming",
-        ]}
+        title={metadata.HighPerformanceSound.title}
+        description={metadata.HighPerformanceSound.description}
+        keywords={metadata.HighPerformanceSound.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>HIGH PERFORMANCE SOUND</Highlighted>
-              SYSTEM INSTALLATION
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/high-performance-sound/header-bg.png')`}
-        tabletbackground={`url('/high-performance-sound/tablet/header-bg.png')`}
-        desktopbackground={`url('/high-performance-sound/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle first="FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM" />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/high-performance-sound/header-bg.png')`,
+          tabletBackground: `url('/high-performance-sound/tablet/header-bg.png')`,
+          desktopBackground: `url('/high-performance-sound/desktop/header-bg.png')`,
+        }}
+        content={{
+          titleHighStart: "HIGH PERFORMANCE SOUND",
+          titleEnd: "SYSTEM INSTALLATION",
+          subtitle: [
+            "FEEL EVERY NOTE, EVERY RUMBLE WITH WE LIVE 4 HIGH-FIDELITY SURROUNDSOUND SYSTEM",
+          ],
+          button: <CustomButton text="GET A FREE QUOTE!" />,
+          divider: true,
+        }}
       />
+
       <SoundSystemDemo />
       <Box
         sx={{

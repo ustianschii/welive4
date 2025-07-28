@@ -23,7 +23,9 @@ export const AvSolutions = () => {
       <Container maxWidth="lg">
         <Title>
           Residential & Commercial
-          <Highlighted>AV</Highlighted>
+          <Highlighted mLeft="5px" mRight="5px">
+            AV
+          </Highlighted>
           Solutions
         </Title>
         {features.map((item, index) => (

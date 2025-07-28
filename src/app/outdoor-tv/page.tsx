@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { GrayCardsBox } from "@/components/shared/gray-cards";
@@ -22,55 +20,33 @@ import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import { TvSizes } from "@/components/tv-sizes";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
-export default function Outdoor() {
+export default function OutdoorTv() {
   return (
     <>
       <Meta
-        title="Premium Outdoor TV Mounting Services"
-        description="Transform your outdoor space with weatherproof, high-quality TVs for seamless viewing in any condition. Offering flexible installation and top brands for an exceptional entertainment experience."
-        keywords={[
-          "outdoor entertainment",
-          "outdoor tv",
-          "outdoor speakers",
-          "audio video calibration",
-          "weather proof tv",
-          "smart tv",
-          "the terrace",
-          "furrion",
-          "sunbrite tv",
-          "seura",
-          "frame tv",
-          "tv setup",
-        ]}
+        title={metadata.OutdoorTv.title}
+        description={metadata.OutdoorTv.description}
+        keywords={metadata.OutdoorTv.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>PREMIUM OUTDOOR</Highlighted>
-              TV MOUNTING
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/outdoor-tv/header-bg.png')`}
-        tabletbackground={`url('/outdoor-tv/tablet/header-bg.png')`}
-        desktopbackground={`url('/outdoor-tv/desktop/header-bg.png')`}
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle first="AVAILABLE IN NEW JERSEY, PENNSILVANIA & DELAWARE" />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        background={{
+          background: `url('/outdoor-tv/header-bg.png')`,
+          tabletBackground: `url('/outdoor-tv/tablet/header-bg.png')`,
+          desktopBackground: `url('/outdoor-tv/desktop/header-bg.png')`,
+        }}
+        content={{
+          titleHighStart: "PREMIUM OUTDOOR",
+          titleEnd: "TV MOUNTING",
+          subtitle: ["AVAILABLE IN NEW JERSEY, PENNSYLVANIA & DELAWARE"],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
           data={grayCardsDataOutdoorTV}

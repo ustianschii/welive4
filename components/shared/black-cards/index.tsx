@@ -35,31 +35,39 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
           {titleend}
         </Title>
         <CardsBox>
-          {data.map((item, index) => (
-            <Card
-              key={index}
-              border={border ?? ""}
-              bgcolor={bgcolor}
-              upmdwidth={upmdwidth}
-            >
-              <CardTitle>{item.title}</CardTitle>
-              <Description>{item.firstdescription}</Description>
-              <Description>{item.seconddescription}</Description>
-              <Description>{item.thirddescription}</Description>
-              {item.descriptions?.map((desc, index) => (
-                <Description display="flex" alignItems="top" key={index}>
-                  <CircleIcon
-                    style={{
-                      marginRight: "15px",
-                      fontSize: "8px",
-                      marginTop: "7px",
-                    }}
-                  />
-                  {desc}
-                </Description>
-              ))}
-            </Card>
-          ))}
+          {data.map(
+            ({
+              title,
+              firstdescription,
+              seconddescription,
+              thirddescription,
+              descriptions,
+            }) => (
+              <Card
+                key={title}
+                border={border ?? ""}
+                bgcolor={bgcolor}
+                upmdwidth={upmdwidth}
+              >
+                <CardTitle>{title}</CardTitle>
+                <Description>{firstdescription}</Description>
+                <Description>{seconddescription}</Description>
+                <Description>{thirddescription}</Description>
+                {descriptions?.map((desc) => (
+                  <Description display="flex" alignItems="top" key={desc}>
+                    <CircleIcon
+                      style={{
+                        marginRight: "15px",
+                        fontSize: "8px",
+                        marginTop: "7px",
+                      }}
+                    />
+                    {desc}
+                  </Description>
+                ))}
+              </Card>
+            )
+          )}
         </CardsBox>
       </Container>
     </Box>

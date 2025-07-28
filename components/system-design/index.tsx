@@ -13,7 +13,7 @@ export const SystemDesign = () => {
     <>
       <Container>
         <Title>
-          SYSTEM<Highlighted>DESIGN</Highlighted>
+          SYSTEM<Highlighted mLeft="5px">DESIGN</Highlighted>
         </Title>
         <Description>
           At WE LIVE 4, your satisfaction is our priority. From start to finish,

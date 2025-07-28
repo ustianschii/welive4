@@ -1,22 +1,14 @@
-import React from "react";
-
-import { HeaderSubtitleTypes } from "./types";
 import { Box, Typography } from "./styles";
+interface HeaderSubtitleTypes {
+  subtitles?: string[];
+}
 
-export const HeaderSubtitle: React.FC<HeaderSubtitleTypes> = ({
-  first,
-  second,
-  third,
-  other,
-}) => {
-  const descriptions = [first, second, third].filter(Boolean);
-
+export const HeaderSubtitle = ({ subtitles }: HeaderSubtitleTypes) => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
-      {descriptions.map((desc, index) => (
-        <Typography key={index + 1}>{desc}</Typography>
+      {subtitles?.map((subtitle) => (
+        <Typography key={subtitle}>{subtitle}</Typography>
       ))}
-      {other}
     </Box>
   );
 };

@@ -1,18 +1,22 @@
 import React from "react";
-
 import Image from "next/image";
-
 import { Box } from "@mui/material";
 
-import { TabContentProps } from "./types";
 import { ContentBox, Description, QuoteBox, Title } from "./styles";
 
-export const TabContent: React.FC<TabContentProps> = ({
+interface TabContentProps {
+  image: string;
+  title: string;
+  descriptions: string[];
+  quote: string;
+}
+
+export const TabContent = ({
   image,
   title,
   descriptions,
   quote,
-}) => {
+}: TabContentProps) => {
   return (
     <ContentBox>
       <Image

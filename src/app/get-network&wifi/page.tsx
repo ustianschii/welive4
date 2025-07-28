@@ -1,5 +1,3 @@
-import React from "react";
-
 import { GetServiceCard } from "@/components/shared/get-services-black-card";
 import { networkWifi } from "@/components/shared/get-services-black-card/services";
 import { ROUTES } from "@/src/app/utils/routes-constants";
@@ -11,27 +9,31 @@ import {
 } from "@/components/shared/get-services-black-card/styles";
 import { BLACK } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import { Subtitle } from "@/components/hero-title/styles";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function GetNetworkWifi() {
   return (
     <>
       <Meta
-        title="Ethernet, WiFi, & Cell Signal Boosting – Network Installation & Support"
-        description="Expert Ethernet & WiFi setup, signal boosting & large-area design. We optimize speed, install smart WiFi & handle wiring. Get reliable connectivity today!"
+        title={metadata.GetNetworkWifi.title}
+        description={metadata.GetNetworkWifi.description}
       />
       <Header
-        mobileheight="150px"
-        tabletheight="150px"
-        desktopheight="150px"
-        backcolor={BLACK}
-        title={
-          <Subtitle component="h1" sx={{ marginTop: "50px" }}>
-            NETWORK & WIFI
-          </Subtitle>
-        }
+        layout={{
+          mobileHeight: "150px",
+          tabletHeight: "150px",
+          desktopHeight: "150px",
+          isHeaderTop: true,
+        }}
+        background={{
+          backColor: BLACK,
+        }}
+        content={{
+          titleStart: "NETWORK & WIFI",
+        }}
       />
+
       <Wrapper>
         <Container disableGutters>
           <GetServiceCard data={networkWifi} />

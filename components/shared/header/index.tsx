@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect, ReactNode } from "react";
 import IconButton from "@mui/material/IconButton";
-
 import Link from "next/link";
 
 import {
@@ -19,27 +17,60 @@ import {
   DesktopHeaderLinks,
   ShadowBox,
 } from "./styles";
-import { HeaderProps } from "./types";
 import { HEADER_TOOLBAR, GREEN, WHITE } from "@/src/styles/constants";
 import { ROUTES } from "@/src/app/utils/routes-constants";
 import { HeaderDesktopButton } from "@/components/header-desktop-button";
 import { desktopPages, pages } from "./data";
+import { HeaderSubtitle } from "../header-subtitle";
+import { GreenDivider } from "../green-divider";
+import {
+  HeaderTextBox,
+  Highlighted,
+  Subtitle,
+} from "@/components/hero-title/styles";
 
-export const Header: React.FC<HeaderProps> = ({
-  mobileheight,
-  tabletheight,
-  desktopheight,
-  title,
-  subtitle,
-  button,
-  background,
-  tabletbackground,
-  desktopbackground,
-  backcolor,
-  divider,
-  dividerTop,
-}) => {
+interface HeaderLayoutProps {
+  mobileHeight?: string;
+  tabletHeight?: string;
+  desktopHeight?: string;
+  isHeaderTop?: boolean;
+}
+
+interface HeaderContentProps {
+  titleStart?: string;
+  titleEnd?: string;
+  titleHighStart?: string;
+  titleHighEnd?: string;
+  title?: ReactNode; // should be deleted after refactoring
+  subtitle?: string[];
+  button?: ReactNode;
+  divider?: boolean;
+  dividerTop?: ReactNode;
+}
+
+interface HeaderBackgroundProps {
+  background?: string;
+  tabletBackground?: string;
+  desktopBackground?: string;
+  backColor?: string;
+}
+
+interface HeaderProps {
+  layout?: HeaderLayoutProps;
+  content?: HeaderContentProps;
+  background?: HeaderBackgroundProps;
+}
+
+export const Header = ({ layout, content, background }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80);
@@ -50,30 +81,20 @@ export const Header: React.FC<HeaderProps> = ({
     };
   }, []);
 
-  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   return (
     <AppBar
       position="static"
-      background={background}
-      tabletbackground={tabletbackground}
-      desktopbackground={desktopbackground}
-      backcolor={backcolor}
+      background={background?.background}
+      tabletbackground={background?.tabletBackground}
+      desktopbackground={background?.desktopBackground}
+      backcolor={background?.backColor}
     >
       <Container
         maxWidth="lg"
         disableGutters
-        mobileheight={mobileheight}
-        tabletheight={tabletheight}
-        desktopheight={desktopheight}
+        mobileheight={layout?.mobileHeight}
+        tabletheight={layout?.tabletHeight}
+        desktopheight={layout?.desktopHeight}
       >
         <Toolbar disableGutters backcolor={scrolled ? HEADER_TOOLBAR : ""}>
           <Link href={ROUTES.HOME}>
@@ -112,7 +133,7 @@ export const Header: React.FC<HeaderProps> = ({
             >
               {pages.map((page, index) => (
                 <Link
-                  key={index + 1}
+                  key={page.text}
                   href={page.href}
                   style={{ textDecoration: "none" }}
                 >
@@ -128,21 +149,29 @@ export const Header: React.FC<HeaderProps> = ({
             </Menu>
           </DropDownMenu>
           <DesktopHeaderLinks>
-            {desktopPages.map((page, index) => (
+            {desktopPages.map((page) => (
               <HeaderDesktopButton
-                key={index + 1}
+                key={page.text}
                 href={page.href}
                 label={page.text}
               />
             ))}
           </DesktopHeaderLinks>
         </Toolbar>
-        {dividerTop}
-        {title}
-        {subtitle}
-        {button}
+        {content?.dividerTop}
+        {content?.title} {/* to be deleted after refactoring */}
+        <HeaderTextBox isHeaderTop={layout?.isHeaderTop}>
+          <Subtitle component="h1">
+            {content?.titleStart}
+            <Highlighted mLeft="5px">{content?.titleHighEnd}</Highlighted>
+            <Highlighted mRight="5px">{content?.titleHighStart}</Highlighted>
+            {content?.titleEnd}
+          </Subtitle>
+        </HeaderTextBox>
+        <HeaderSubtitle subtitles={content?.subtitle} />
+        {content?.button}
       </Container>
-      {divider}
+      {content?.divider && <GreenDivider />}
       {Boolean(anchorElNav) && <ShadowBox onClick={handleCloseNavMenu} />}
     </AppBar>
   );

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { Separator } from "@/components/shared/gray-separator";
@@ -13,55 +11,37 @@ import { ContentSeparator } from "@/components/shared/content-separator";
 import { CustomAccordion } from "@/components/shared/accordion";
 import { homeTheaterFaq } from "@/components/shared/accordion/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
-
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
-import { GreenDivider } from "@/components/shared/green-divider";
 import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 export default function HomeTheater() {
   return (
     <>
       <Meta
-        title="Custom High-End Home Theater Systems"
-        description="Experience superior audio, personalized design, seamless installation, and full control with LOXONE integration for the ultimate home cinema experience."
-        keywords={[
-          "home audio",
-          "home theater",
-          "5.1",
-          "5.2",
-          "7.1",
-          "7.2",
-          "subwoofer",
-          "speakers",
-          "high-end",
-          "streaming",
-        ]}
+        title={metadata.HomeTheater.title}
+        description={metadata.HomeTheater.description}
+        keywords={metadata.HomeTheater.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              <Highlighted>HIGH-END HOME THEATER</Highlighted>
-              SYSTEMS
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/home-theater/header-bg.png')`}
-        tabletbackground={`url('/home-theater/tablet/header-bg.png')`}
-        desktopbackground={`url('/home-theater/desktop/header-bg.png')`}
-        subtitle={
-          <HeaderSubtitle first="EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!" />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
-        divider={<GreenDivider />}
+        background={{
+          background: `url('/home-theater/header-bg.png')`,
+          tabletBackground: `url('/home-theater/tablet/header-bg.png')`,
+          desktopBackground: `url('/home-theater/desktop/header-bg.png')`,
+        }}
+        content={{
+          titleHighStart: "HIGH-END HOME THEATER",
+          titleEnd: "SYSTEMS",
+          subtitle: [
+            "EXPERIENCE SUPERIOR AUDIO QUALITY WITH OUR HOME THEATER SOUND SYSTEM TAILORED JUST FOR YOU!",
+          ],
+          button: <CustomButton text={"GET A FREE QUOTE!"} />,
+          divider: true,
+        }}
       />
+
       <Separator height="90px" padding="25px 0">
         <Title>
           <Highlighted>WHAT YOU WILL GET</Highlighted>

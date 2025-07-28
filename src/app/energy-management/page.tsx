@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Box } from "@mui/material";
 
 import { GrayCardsBox } from "@/components/shared/gray-cards";
@@ -9,7 +7,6 @@ import {
   grayCardsDataEnergyManagementSecond,
   grayCardsDataEnergyManagementThird,
 } from "@/components/shared/gray-cards/data";
-
 import { ContentSeparator } from "@/components/shared/content-separator";
 import { BlackCardsBoxShared } from "@/components/shared/black-cards";
 import {
@@ -21,54 +18,42 @@ import { transparentCardsContent } from "@/components/transparent-card/data";
 import { Button } from "@/components/shared/gray-cards/styles";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
-import {
-  HeaderTextBox,
-  Highlighted,
-  Subtitle,
-} from "@/components/hero-title/styles";
-import { GreenDivider } from "@/components/shared/green-divider";
-import { HeaderSubtitle } from "@/components/shared/header-subtitle";
+import { Highlighted } from "@/components/hero-title/styles";
 import { CustomButton } from "@/components/shared/header-button";
 import { Meta } from "@/components/meta";
 import { ROUTES } from "@/src/app/utils/routes-constants";
+import { metadata } from "@/src/app/metadata";
 
 export default function EnergyManagement() {
   return (
     <>
       <Meta
-        title="Home & Building Energy Management"
-        description="Expert solar, EV charging, and energy management solutions powered by Loxone. Save energy, reduce costs, and go green seamlessly."
-        keywords={[
-          "energy management",
-          "home ev charging",
-          "solar power systems",
-          "wallbox",
-          "loxone",
-          "commercial solar system",
-          "tesla battery",
-        ]}
+        title={metadata.EnergyManagement.title}
+        description={metadata.EnergyManagement.description}
+        keywords={metadata.EnergyManagement.keywords}
       />
       <Header
-        title={
-          <HeaderTextBox>
-            <Subtitle component="h1">
-              HOME & BUILDING
-              <Highlighted>ENERGY MANAGEMENT SYSTEMS</Highlighted>
-            </Subtitle>
-          </HeaderTextBox>
-        }
-        background={`url('/energy-management/header-bg.png')`}
-        tabletbackground={`url('/energy-management/tablet/header-bg.png')`}
-        desktopbackground={`url('/energy-management/desktop/header-bg.png')`}
-        mobileheight="600px"
-        tabletheight="600px"
-        desktopheight="600px"
-        divider={<GreenDivider />}
-        subtitle={
-          <HeaderSubtitle first="MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!" />
-        }
-        button={<CustomButton text={"GET A FREE QUOTE!"} />}
+        layout={{
+          mobileHeight: "600px",
+          tabletHeight: "600px",
+          desktopHeight: "600px",
+        }}
+        background={{
+          background: `url('/energy-management/header-bg.png')`,
+          tabletBackground: `url('/energy-management/tablet/header-bg.png')`,
+          desktopBackground: `url('/energy-management/desktop/header-bg.png')`,
+        }}
+        content={{
+          titleStart: "HOME & BUILDING",
+          titleHighEnd: "ENERGY MANAGEMENT SYSTEMS",
+          subtitle: [
+            "MAXIMIZE SAVINGS WHILE MINIMIZING ENVIRONMENTAL IMPACT - IT'S WE LIVE 4 WAY!",
+          ],
+          button: <CustomButton text="GET A FREE QUOTE!" />,
+          divider: true,
+        }}
       />
+
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
           data={grayCardsDataEnergyManagement}
