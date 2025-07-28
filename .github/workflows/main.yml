@@ -35,7 +35,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 6543
           script: |
-            cd /home/welive4com/welive4 
+            cd /home/welive4com/welive4
+
+            # Create .env.local with values from GitHub Secrets
+            echo "NOTION_TOKEN=${{ secrets.NOTION_TOKEN }}" > .env.local
+            echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .env.local
+
             git pull
             npm install
             npm run build
