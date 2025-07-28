@@ -39,7 +39,7 @@ jobs:
 
             # Create .env.local with values from GitHub Secrets
             echo "NOTION_TOKEN=${{ secrets.NOTION_TOKEN }}" > .env.local
-            echo "NOTION_DATABASE_ID=${{ secrets.NOTION_DATABASE_ID }}" >> .env.local
+            echo "HOME_AUTOMATION_SYSTEM_DATABASE_ID=${{ secrets.HOME_AUTOMATION_SYSTEM_DATABASE_ID }}" >> .env.local
 
             git pull
             npm install
