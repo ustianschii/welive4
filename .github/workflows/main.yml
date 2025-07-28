@@ -24,9 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js app
-        run: npm run build
-
       - name: SSH Deploying
         uses: appleboy/ssh-action@master
         with:
@@ -37,11 +34,12 @@ jobs:
           script: |
             cd /home/welive4com/welive4
 
+            git pull
+
             # Create .env.local with values from GitHub Secrets
             echo "NOTION_TOKEN=${{ secrets.NOTION_TOKEN }}" > .env.local
             echo "HOME_AUTOMATION_SYSTEM_DATABASE_ID=${{ secrets.HOME_AUTOMATION_SYSTEM_DATABASE_ID }}" >> .env.local
 
-            git pull
             npm install
             npm run build
             pm2 restart welive4
