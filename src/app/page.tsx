@@ -42,8 +42,8 @@ export default function Home() {
           desktopBackground: `url('/header-mobile/desktop/header-bg.jpg')`,
         }}
         content={{
-          titleHighStart: "WE LIVE 4 ",
-          titleEnd: "THE FUTURE OF LIVING ",
+          titleHighStart: "WE LIVE 4",
+          titleEnd: "THE FUTURE OF LIVING",
           subtitle: ["EXPERIENCE SMART TECHNOLOGY TODAY"],
           button: <CustomButton text="DESIGN YOUR SPACE" />,
           divider: true,
