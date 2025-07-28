@@ -5,11 +5,11 @@ import { Header } from "@/components/shared/header";
 import { BLACK, GREEN } from "@/src/styles/constants";
 import { getPublishedPosts } from "@/utils/notionApi";
 
-interface Props {
+interface BlogPostPageProps {
   params: { slug: string };
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const posts = await getPublishedPosts("All posts");
   const post = posts.find((p) => p.slug === params.slug);
 

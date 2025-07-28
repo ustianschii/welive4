@@ -15,12 +15,15 @@ type Post = {
   coverUrl: string | null;
 };
 
-type Props = {
+type BlogClientProps = {
   initialPosts: Post[];
   categories: string[];
 };
 
-export default function BlogClient({ initialPosts, categories }: Props) {
+export default function BlogClient({
+  initialPosts,
+  categories,
+}: BlogClientProps) {
   const MAIN_CATEGORIES_COUNT = 5;
 
   const mainCategories = categories.slice(0, MAIN_CATEGORIES_COUNT);
@@ -49,6 +52,7 @@ export default function BlogClient({ initialPosts, categories }: Props) {
 
   const isCategorySelected = (category: string) =>
     selectedCategory === category;
+
   const isFromMoreMenu = moreCategories.includes(selectedCategory);
 
   const handleMenuHoverOpen = (event: MouseEvent<HTMLElement>) => {
@@ -80,7 +84,6 @@ export default function BlogClient({ initialPosts, categories }: Props) {
             <Box
               onMouseEnter={handleMenuHoverOpen}
               onMouseLeave={handleMenuHoverClose}
-              sx={{ cursor: "pointer" }}
             >
               <Button
                 sx={{
@@ -170,13 +173,13 @@ export default function BlogClient({ initialPosts, categories }: Props) {
             <CircularProgress sx={{ color: GREEN }} />
           </Box>
         ) : (
-          posts.map((post) => (
+          posts.map(({ id, title, slug, coverUrl }) => (
             <PostCard
-              key={post.id}
-              id={post.id}
-              title={post.title}
-              slug={post.slug}
-              coverUrl={post.coverUrl}
+              key={id}
+              id={id}
+              title={title}
+              slug={slug}
+              coverUrl={coverUrl}
             />
           ))
         )}

@@ -71,8 +71,5 @@ export async function getPublishedPosts(category: string) {
       };
     });
 
-  console.log("Fetched posts:", posts);
-  console.log("typeof coverurl:", typeof posts[1]?.coverUrl);
-
   return posts;
 }
