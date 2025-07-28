@@ -43,7 +43,7 @@ export default function Home() {
         }}
         content={{
           titleHighStart: "WE LIVE 4 ",
-          titleEnd: "THE FUTURE OF LIVING",
+          titleEnd: "THE FUTURE OF LIVING ",
           subtitle: ["EXPERIENCE SMART TECHNOLOGY TODAY"],
           button: <CustomButton text="DESIGN YOUR SPACE" />,
           divider: true,
