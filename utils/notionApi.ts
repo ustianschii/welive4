@@ -5,7 +5,7 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 export async function getPublishedPosts(category: string) {
   const databaseId = process.env.HOME_AUTOMATION_SYSTEM_DATABASE_ID!;
-  const notionSubdomain = "welive4.notion.site";
+  const notionSubdomain = "eight-wheel-012.notion.site";
 
   const response = await notion.databases.query({
     database_id: databaseId,
