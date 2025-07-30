@@ -2,8 +2,9 @@ import { Box } from "@mui/material";
 import { notFound } from "next/navigation";
 
 import { Header } from "@/components/shared/header";
-import { BLACK, GREEN } from "@/src/styles/constants";
+import { BLACK } from "@/src/styles/constants";
 import { getPublishedPosts } from "@/utils/notionApi";
+import ClientPostBox from "@/components/client-post-box/ClientPostBox";
 
 interface BlogPostPageProps {
   params: { slug: string };
@@ -19,8 +20,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <Box bgcolor={BLACK}>
       <Header
         layout={{
-          mobileHeight: "100px",
-          tabletHeight: "100px",
+          mobileHeight: "0px",
+          tabletHeight: "0px",
           desktopHeight: "50px",
           isHeaderTop: true,
         }}
@@ -28,21 +29,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           backColor: BLACK,
         }}
       />
-      <Box
-        height="100vh"
-        width="50%"
-        m="0 auto"
-        pb="3rem"
-        position="relative"
-        overflow="hidden"
-      >
-        <iframe
-          src={post.iframeUrl}
-          width="100%"
-          height="100%"
-          style={{ border: `1px solid ${GREEN}`, borderRadius: "10px" }}
-        />
-      </Box>
+      <ClientPostBox iframeUrl={post.iframeUrl} />
     </Box>
   );
 }

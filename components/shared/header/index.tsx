@@ -41,7 +41,7 @@ interface HeaderContentProps {
   titleEnd?: string;
   titleHighStart?: string;
   titleHighEnd?: string;
-  title?: ReactNode; // should be deleted after refactoring
+  title?: ReactNode;
   subtitle?: string[];
   button?: ReactNode;
   divider?: boolean;
