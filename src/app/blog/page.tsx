@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 
-import { getPublishedPosts } from "@/utils/notionApi";
 import { Header } from "@/components/shared/header";
 import { BLACK } from "@/src/styles/constants";
 import BlogClient from "@/components/blog-client/BlogClient";
@@ -25,9 +24,6 @@ const categories = [
 ];
 
 export default async function Blog() {
-  const initialCategory = categories[0];
-  const initialPosts = await getPublishedPosts(initialCategory);
-
   return (
     <Box bgcolor={BLACK} minHeight="100vh">
       <Header
@@ -41,7 +37,7 @@ export default async function Blog() {
         content={{ titleStart: "Blog" }}
       />
 
-      <BlogClient initialPosts={initialPosts} categories={categories} />
+      <BlogClient categories={categories} />
     </Box>
   );
 }

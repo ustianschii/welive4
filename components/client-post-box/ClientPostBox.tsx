@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, useMediaQuery, useTheme } from "@mui/material";
+
 import { GREEN, BLACK } from "@/src/styles/constants";
 
 export default function ClientPostBox({ iframeUrl }: { iframeUrl: string }) {
@@ -12,7 +13,7 @@ export default function ClientPostBox({ iframeUrl }: { iframeUrl: string }) {
       <Box
         height="100vh"
         m="0 auto"
-        pb="3rem"
+        pb={isDesktop ? "3rem" : ""}
         position="relative"
         overflow="hidden"
         sx={{
