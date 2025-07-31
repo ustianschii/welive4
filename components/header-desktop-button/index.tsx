@@ -1,16 +1,17 @@
-import React, { FC } from "react";
-
 import { motion } from "motion/react";
-
 import { Button } from "@mui/material";
 
 import { LinkLabel } from "./styles";
-import { HeaderDesktopButtonProps } from "./types";
 
-export const HeaderDesktopButton: FC<HeaderDesktopButtonProps> = ({
+interface HeaderDesktopButtonProps {
+  label: string;
+  href: string;
+}
+
+export const HeaderDesktopButton = ({
   label,
   href,
-}) => {
+}: HeaderDesktopButtonProps) => {
   return (
     <motion.div
       whileHover={{

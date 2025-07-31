@@ -21,7 +21,7 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
   titleend,
   titlehighlightedstart,
   titlehighlightedend,
-  border,
+  border = "",
   bgcolor,
   upmdwidth,
 }) => {
@@ -29,9 +29,14 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
     <Box sx={{ backgroundColor: SEPARATOR_BACKGROUND }}>
       <Container maxWidth="lg" disableGutters>
         <Title>
-          <Highlighted>{titlehighlightedstart}</Highlighted> <br />
+          <Highlighted mLeft="5px" mRight="5px">
+            {titlehighlightedstart}
+          </Highlighted>{" "}
+          <br />
           {titlestart}
-          <Highlighted>{titlehighlightedend}</Highlighted>
+          <Highlighted mRight="5px" mLeft="5px">
+            {titlehighlightedend}
+          </Highlighted>
           {titleend}
         </Title>
         <CardsBox>
@@ -45,7 +50,7 @@ export const BlackCardsBoxShared: React.FC<BlackCardsBoxProps> = ({
             }) => (
               <Card
                 key={title}
-                border={border ?? ""}
+                border={border}
                 bgcolor={bgcolor}
                 upmdwidth={upmdwidth}
               >

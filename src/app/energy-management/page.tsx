@@ -126,7 +126,11 @@ export default function EnergyManagement() {
           imgwidth={388}
           button={
             <Button href={ROUTES.LOXONE_PRESENTATION_REQUEST}>
-              MORE ABOUT <Highlighted>LOXONE</Highlighted> &#10230;
+              MORE ABOUT{" "}
+              <Highlighted mLeft="5px" mRight="5px">
+                LOXONE
+              </Highlighted>{" "}
+              &#10230;
             </Button>
           }
         />

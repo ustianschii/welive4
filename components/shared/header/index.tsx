@@ -159,7 +159,7 @@ export const Header = ({ layout, content, background }: HeaderProps) => {
           </DesktopHeaderLinks>
         </Toolbar>
         {content?.dividerTop}
-        {content?.title} {/* to be deleted after refactoring */}
+        {content?.title}
         <HeaderTextBox isHeaderTop={layout?.isHeaderTop}>
           <Subtitle component="h1">
             {content?.titleStart}

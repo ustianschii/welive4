@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Box,
   IconButton,
@@ -17,7 +17,7 @@ import { soundSystems } from "./data";
 import { Container, Title, Wrapper, Dot, Feature } from "./styles";
 import { Highlighted } from "../hero-title/styles";
 
-export const SoundSystemDemo: React.FC = () => {
+export const SoundSystemDemo = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -103,11 +103,14 @@ export const SoundSystemDemo: React.FC = () => {
           flexDirection={isLarge ? "row" : "column"}
           gap={isLarge ? "30px" : ""}
           marginLeft={isLarge ? "30px" : ""}
+          mt={isLarge ? "0" : "20px"}
         >
           {soundSystems[currentIndex].types.map((item, index) => (
             <Box key={index} mb="20px" minHeight="200px" minWidth="50%">
               <Title>
-                <Highlighted>{item.highlighted}</Highlighted>
+                <Highlighted mRight="5px" mLeft="5px">
+                  {item.highlighted}
+                </Highlighted>
                 {item.title}
               </Title>
               {item.features.map((feature, index) => (

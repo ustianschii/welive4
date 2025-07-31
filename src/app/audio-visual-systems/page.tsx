@@ -12,6 +12,7 @@ import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { Header } from "@/components/shared/header";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
+import { ROUTES } from "../utils/routes-constants";
 
 export default function AudioVisualSystems() {
   return (
@@ -53,7 +54,7 @@ export default function AudioVisualSystems() {
         titlepadding="50px 0 0 0"
         containerpadding="30px 0"
       />
-      <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
+      <Box bgcolor={MAIN_SERVICES_BACKGROUND}>
         {GCAudioVisualSystems.map((item, index) => (
           <GrayCardsBox
             key={index + 1}
@@ -76,7 +77,11 @@ export default function AudioVisualSystems() {
       <Box sx={{ backgroundColor: MAIN_SERVICES_BACKGROUND }}>
         <GrayCardsBox
           data={grayCardsAudioVisualSystemsLatest}
-          button={<Button>GET YOUR BOOST &#10230;</Button>}
+          button={
+            <Button href={ROUTES.CHECKLIST_SHORT}>
+              GET YOUR BOOST &#10230;
+            </Button>
+          }
         />
       </Box>
     </>

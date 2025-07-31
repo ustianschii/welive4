@@ -73,8 +73,14 @@ export default function BlogClient({
               onClick={() => fetchPosts(category)}
               sx={{
                 color: isCategorySelected(category) ? GREEN : WHITE,
+                textDecorationLine: isCategorySelected(category)
+                  ? "underline"
+                  : "none",
                 textTransform: "none",
                 fontSize: "1rem",
+                "&:hover": {
+                  color: GREEN,
+                },
               }}
             >
               {category}

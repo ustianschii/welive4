@@ -11,8 +11,8 @@ export default function Presentation() {
       <Meta title={metadata.Presentation.title} />
       <Header
         layout={{
-          mobileHeight: "200px",
-          tabletHeight: "170px",
+          mobileHeight: "50px",
+          tabletHeight: "50px",
           desktopHeight: "150px",
         }}
         background={{
