@@ -17,12 +17,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) return notFound();
 
   return (
-    <Box bgcolor={BLACK}>
+    <Box mb="-100px">
       <Header
         layout={{
           mobileHeight: "0px",
           tabletHeight: "0px",
-          desktopHeight: "50px",
+          desktopHeight: "0px",
           isHeaderTop: true,
         }}
         background={{

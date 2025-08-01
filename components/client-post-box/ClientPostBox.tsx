@@ -1,38 +1,18 @@
 "use client";
 
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-
-import { GREEN, BLACK } from "@/src/styles/constants";
+import { Box } from "@mui/material";
 
 export default function ClientPostBox({ iframeUrl }: { iframeUrl: string }) {
-  const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
-
   return (
-    <Box bgcolor={BLACK}>
-      <Box
-        height="100vh"
-        m="0 auto"
-        pb={isDesktop ? "3rem" : ""}
-        position="relative"
-        overflow="hidden"
-        sx={{
-          width: "100%",
-          "@media (min-width: 1200px)": {
-            width: "50%",
-          },
+    <Box height="110vh" m="0 auto" overflow="hidden" width="100%" pt="50px">
+      <iframe
+        src={iframeUrl}
+        width="100%"
+        height="100%"
+        style={{
+          marginTop: "-100px",
         }}
-      >
-        <iframe
-          src={iframeUrl}
-          width="100%"
-          height="100%"
-          style={{
-            border: isDesktop ? `1px solid ${GREEN}` : "none",
-            borderRadius: isDesktop ? "10px" : "0",
-          }}
-        />
-      </Box>
+      />
     </Box>
   );
 }
