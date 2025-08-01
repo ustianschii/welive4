@@ -11,6 +11,7 @@ export default function ClientPostBox({ iframeUrl }: { iframeUrl: string }) {
         height="100%"
         style={{
           marginTop: "-100px",
+          border: "none",
         }}
       />
     </Box>
