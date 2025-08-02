@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { styled } from "@mui/material/styles";
 import {
   Container as MuiContainer,
@@ -11,9 +12,6 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 import { opensans } from "@/src/app/layout";
-
-import Image from "next/image";
-
 import { SEPARATOR_BACKGROUND } from "@/src/styles/constants";
 
 interface AppBarProps {
@@ -90,7 +88,6 @@ export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
     backgroundColor: backcolor,
     transition: "background-color 0.3s ease-in-out",
     boxShadow: backcolor ? "0px 4px 6px rgba(0, 0, 0, 0.3)" : "none",
-
     [theme.breakpoints.up("md")]: {
       padding: "0 2%",
     },
@@ -146,34 +143,28 @@ export const Menu = styled(MuiMenu)(({ theme }) => ({
     "& .MuiPaper-root": {
       backgroundColor: SEPARATOR_BACKGROUND,
       borderRadius: "10px",
-      height: "450px",
       backgroundImage: `url('dropdown-menu/dropdown-bg.png')`,
-      padding: "20px 0 0 10px",
+      padding: "5%",
     },
   },
   [theme.breakpoints.down("sm")]: {
     "& .MuiPaper-root": {
-      height: "500px",
       padding: "10% 0 10% 10%",
     },
   },
 }));
 
-export const MenuItem = styled(MuiMenuItem)(({ theme }) => ({
+export const MenuItem = styled(MuiMenuItem)(() => ({
   display: "flex",
   flexDirection: "column",
-  [theme.breakpoints.down("sm")]: {
-    alignItems: "start",
-  },
+  alignItems: "start",
 }));
 
 export const MenuItemTypography = styled(MuiTypography)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
-
   [theme.breakpoints.down("md")]: {
     fontSize: "25px",
   },
-
   [theme.breakpoints.down("sm")]: {
     fontSize: "24px",
   },
@@ -183,7 +174,6 @@ export const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     fontSize: "70px",
   },
-
   [theme.breakpoints.down("sm")]: {
     fontSize: "50px",
   },
