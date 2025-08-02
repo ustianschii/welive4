@@ -332,4 +332,10 @@ export const metadata = {
       "automated irrigation control",
     ],
   },
+  Blog: {
+    title: "WeLive4 Blog",
+    description:
+      "Explore our blog for insights on smart home technology, automation, and more.",
+    keywords: ["blog", "smart home", "automation", "technology", "insights"],
+  },
 };

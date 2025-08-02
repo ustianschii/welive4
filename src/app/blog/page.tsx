@@ -3,6 +3,8 @@ import { Box } from "@mui/material";
 import { Header } from "@/components/shared/header";
 import { BLACK } from "@/src/styles/constants";
 import BlogClient from "@/components/blog-client/BlogClient";
+import { Meta } from "@/components/meta";
+import { metadata } from "@/src/app/metadata";
 
 const categories = [
   "All posts",
@@ -26,6 +28,11 @@ const categories = [
 export default async function Blog() {
   return (
     <Box bgcolor={BLACK} minHeight="100vh">
+      <Meta
+        title={metadata.EnergyManagement.title}
+        description={metadata.EnergyManagement.description}
+        keywords={metadata.EnergyManagement.keywords}
+      />
       <Header
         layout={{
           mobileHeight: "100px",
@@ -36,7 +43,6 @@ export default async function Blog() {
         background={{ backColor: BLACK }}
         content={{ titleStart: "Blog" }}
       />
-
       <BlogClient categories={categories} />
     </Box>
   );
