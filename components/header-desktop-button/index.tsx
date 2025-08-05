@@ -20,7 +20,18 @@ export const HeaderDesktopButton = ({
       }}
       whileTap={{ scale: 1.1, transition: { duration: 0.1 } }}
     >
-      <Button href={href}>
+      <Button
+        href={href}
+        disableRipple
+        sx={{
+          backgroundColor: "transparent",
+          boxShadow: "none",
+          "&:hover": {
+            backgroundColor: "transparent",
+            boxShadow: "none",
+          },
+        }}
+      >
         <LinkLabel>{label}</LinkLabel>
       </Button>
     </motion.div>

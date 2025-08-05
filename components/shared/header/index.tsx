@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, ReactNode } from "react";
+import { useState, useEffect, ReactNode, MouseEvent } from "react";
 import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
 
@@ -17,12 +17,12 @@ import {
   DesktopHeaderLinks,
   ShadowBox,
 } from "./styles";
-import { HEADER_TOOLBAR, GREEN, WHITE } from "@/src/styles/constants";
+import { GREEN, WHITE } from "@/src/styles/constants";
 import { ROUTES } from "@/src/app/utils/routes-constants";
 import { HeaderDesktopButton } from "@/components/header-desktop-button";
-import { desktopPages, pages } from "./data";
-import { HeaderSubtitle } from "../header-subtitle";
-import { GreenDivider } from "../green-divider";
+import { desktopPages, pages } from "@/components/shared/header/data";
+import { HeaderSubtitle } from "@/components/shared//header-subtitle";
+import { GreenDivider } from "@/components/shared//green-divider";
 import {
   HeaderTextBox,
   Highlighted,
@@ -65,7 +65,7 @@ export const Header = ({ layout, content, background }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
   const handleCloseNavMenu = () => {
@@ -96,7 +96,7 @@ export const Header = ({ layout, content, background }: HeaderProps) => {
         tabletheight={layout?.tabletHeight}
         desktopheight={layout?.desktopHeight}
       >
-        <Toolbar disableGutters backcolor={scrolled ? HEADER_TOOLBAR : ""}>
+        <Toolbar disableGutters backcolor={scrolled ?? false}>
           <Link href={ROUTES.HOME}>
             <Logo
               alt="logo"
