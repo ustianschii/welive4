@@ -26,7 +26,7 @@ interface ContainerProps {
   desktopheight?: string;
 }
 interface ToolbarProps {
-  backcolor: string;
+  backcolor: boolean;
 }
 
 export const AppBar = styled(MuiAppBar)<AppBarProps>(
@@ -85,9 +85,13 @@ export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
     top: 0,
     left: 0,
     right: 0,
-    backgroundColor: backcolor,
-    transition: "background-color 0.3s ease-in-out",
-    boxShadow: backcolor ? "0px 4px 6px rgba(0, 0, 0, 0.3)" : "none",
+    backgroundColor: backcolor ? "rgba(255, 255, 255, 0.1)" : "transparent",
+    backdropFilter: backcolor ? "blur(10px)" : "none",
+    WebkitBackdropFilter: backcolor ? "blur(10px)" : "none",
+    transition:
+      "background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out",
+    boxShadow: backcolor ? "0px 4px 6px rgba(0, 0, 0, 0.1)" : "none",
+    borderBottom: backcolor ? "1px solid rgba(255, 255, 255, 0.1)" : "none",
     [theme.breakpoints.up("md")]: {
       padding: "0 2%",
     },

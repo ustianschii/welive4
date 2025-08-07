@@ -3,11 +3,12 @@
 import { styled } from "@mui/material/styles";
 import { Button as MuiButton } from "@mui/material";
 
-import { BOLD, WHITE } from "@/src/styles/constants";
+import { BOLD, GREEN, WHITE } from "@/src/styles/constants";
 import { opensans } from "@/src/app/layout";
 
 export const Button = styled(MuiButton)(({ theme }) => ({
   color: WHITE,
+  backgroundColor: "rgba(0, 0, 0, 0.3)",
   fontFamily: opensans.style.fontFamily,
   fontWeight: BOLD,
   border: "2px solid white",
@@ -16,6 +17,9 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   height: "40px",
   position: "absolute",
   left: "50%",
+  "&:hover": {
+    color: GREEN,
+  },
 
   [theme.breakpoints.up("md")]: {
     width: "300px",
