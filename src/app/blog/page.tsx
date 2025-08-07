@@ -29,9 +29,9 @@ export default async function Blog() {
   return (
     <Box bgcolor={BLACK} minHeight="100vh">
       <Meta
-        title={metadata.EnergyManagement.title}
-        description={metadata.EnergyManagement.description}
-        keywords={metadata.EnergyManagement.keywords}
+        title={metadata.Blog.title}
+        description={metadata.Blog.description}
+        keywords={metadata.Blog.keywords}
       />
       <Header
         layout={{
