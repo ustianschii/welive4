@@ -1,7 +1,8 @@
-import { Box, MenuItem, Select } from "@mui/material";
+import { Box, MenuItem, Select, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import { BLACK, GREEN, WHITE } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 type MobileDropdownProps = {
   categories: string[];
@@ -76,7 +77,9 @@ export const MobileDropdown = ({
               },
             }}
           >
-            {category}
+            <Typography fontFamily={opensans.style.fontFamily}>
+              {category}
+            </Typography>
           </MenuItem>
         ))}
       </Select>

@@ -2,9 +2,22 @@
 
 import { Box } from "@mui/material";
 
-export default function ClientPostBox({ iframeUrl }: { iframeUrl: string }) {
+import { Meta } from "@/components/meta";
+
+interface ClientPostBoxProps {
+  iframeUrl: string;
+  title: string;
+  description: string;
+}
+
+export default function ClientPostBox({
+  iframeUrl,
+  title,
+  description,
+}: ClientPostBoxProps) {
   return (
     <Box height="110vh" m="0 auto" overflow="hidden" width="100%" pt="50px">
+      <Meta title={title} description={description} />
       <iframe
         src={iframeUrl}
         width="100%"

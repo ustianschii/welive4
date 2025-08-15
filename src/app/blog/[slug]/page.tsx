@@ -29,7 +29,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           backColor: BLACK,
         }}
       />
-      <ClientPostBox iframeUrl={post.iframeUrl} />
+      <ClientPostBox
+        iframeUrl={post.iframeUrl}
+        title={post.title}
+        description={post.description}
+      />
     </Box>
   );
 }

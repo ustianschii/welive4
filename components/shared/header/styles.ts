@@ -75,31 +75,31 @@ export const Container = styled(MuiContainer)<ContainerProps>(
   })
 );
 
-export const Toolbar = styled(MuiToolbar)<ToolbarProps>(
-  ({ theme, backcolor }) => ({
-    display: "flex",
-    height: "80px",
-    justifyContent: "space-between",
-    zIndex: "3",
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: backcolor ? "rgba(255, 255, 255, 0.1)" : "transparent",
-    backdropFilter: backcolor ? "blur(10px)" : "none",
-    WebkitBackdropFilter: backcolor ? "blur(10px)" : "none",
-    transition:
-      "background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out",
-    boxShadow: backcolor ? "0px 4px 6px rgba(0, 0, 0, 0.1)" : "none",
-    borderBottom: backcolor ? "1px solid rgba(255, 255, 255, 0.1)" : "none",
-    [theme.breakpoints.up("md")]: {
-      padding: "0 2%",
-    },
-    [theme.breakpoints.up("lg")]: {
-      padding: "0 10%",
-    },
-  })
-);
+export const Toolbar = styled(MuiToolbar, {
+  shouldForwardProp: (prop) => prop !== "backcolor",
+})<ToolbarProps>(({ theme, backcolor }) => ({
+  display: "flex",
+  height: "80px",
+  justifyContent: "space-between",
+  zIndex: "3",
+  position: "fixed",
+  top: 0,
+  left: 0,
+  right: 0,
+  backgroundColor: backcolor ? "rgba(255, 255, 255, 0.1)" : "transparent",
+  backdropFilter: backcolor ? "blur(10px)" : "none",
+  WebkitBackdropFilter: backcolor ? "blur(10px)" : "none",
+  transition:
+    "background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out",
+  boxShadow: backcolor ? "0px 4px 6px rgba(0, 0, 0, 0.1)" : "none",
+  borderBottom: backcolor ? "1px solid rgba(255, 255, 255, 0.1)" : "none",
+  [theme.breakpoints.up("md")]: {
+    padding: "0 2%",
+  },
+  [theme.breakpoints.up("lg")]: {
+    padding: "0 10%",
+  },
+}));
 
 export const Logo = styled(Image)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {

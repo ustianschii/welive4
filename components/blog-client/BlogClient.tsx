@@ -5,9 +5,9 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 import PostCard from "@/components/post-card";
 import { BLACK } from "@/src/styles/constants";
-import { MobileDropdown } from "../mobile-dropdown/MobileDropdown";
-import { CategorySelector } from "../category-selector/CategorySelector";
-import { Loading } from "../loading/Loading";
+import { MobileDropdown } from "@/components/mobile-dropdown/MobileDropdown";
+import { CategorySelector } from "@/components/category-selector/CategorySelector";
+import { Loading } from "@/components/loading/Loading";
 
 type Post = {
   id: string;

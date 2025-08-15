@@ -8,21 +8,13 @@ import { metadata } from "@/src/app/metadata";
 
 const categories = [
   "All posts",
-  "Home automation system",
-  "Entertainment",
-  "Outdoor living",
-  "Network",
-  "Interior design",
-  "Smart tech trade",
-  "360 degree Smart home",
-  "Commercial automation system",
-  "Lightning design",
-  "Home & building designs",
-  "Window treatments",
-  "Security systems",
-  "Security cameras",
-  "Solar power & EV charging",
-  "Audio systems",
+  "Explore & Secure",
+  "Jet - Set - Automate",
+  "World Adventures & Smart Returns",
+  "The Connected Traveler",
+  "Luxury Escapes & Luxury Living",
+  "Adventure & Assurance",
+  "Smart Business Travel",
 ];
 
 export default async function Blog() {
@@ -36,7 +28,7 @@ export default async function Blog() {
       <Header
         layout={{
           mobileHeight: "100px",
-          tabletHeight: "100px",
+          tabletHeight: "150px",
           desktopHeight: "150px",
           isHeaderTop: true,
         }}

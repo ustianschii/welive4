@@ -1,8 +1,9 @@
 import { MouseEvent } from "react";
-import { Box, Button, Menu, MenuItem } from "@mui/material";
+import { Box, Button, Menu, MenuItem, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import { BLACK, GREEN, WHITE } from "@/src/styles/constants";
+import { opensans } from "@/src/app/layout";
 
 type CategorySelectorProps = {
   categories: string[];
@@ -55,7 +56,9 @@ export const CategorySelector = ({
               },
             }}
           >
-            {category}
+            <Typography fontFamily={opensans.style.fontFamily}>
+              {category}
+            </Typography>
           </Button>
         ))}
         {moreCategories.length > 0 && (

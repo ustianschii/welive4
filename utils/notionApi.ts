@@ -34,6 +34,7 @@ export async function getPublishedPosts(category: string) {
       const slugProp = page.properties["Slug"];
       const urlProp = page.properties["Url"];
       const coverProp = page.properties["Cover"];
+      const descriptionProp = page.properties["Meta description"];
 
       const title =
         nameProp?.type === "title"
@@ -62,9 +63,16 @@ export async function getPublishedPosts(category: string) {
             : null
           : null;
 
+      const description =
+        descriptionProp?.type === "rich_text" &&
+        descriptionProp.rich_text.length > 0
+          ? descriptionProp.rich_text.map((text) => text.plain_text).join(" ")
+          : "No description available";
+
       return {
         id: page.id,
         title,
+        description,
         slug,
         iframeUrl,
         coverUrl,
