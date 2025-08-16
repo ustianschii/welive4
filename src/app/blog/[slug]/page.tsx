@@ -6,6 +6,7 @@ import { Header } from "@/components/shared/header";
 import NotionPage from "@/components/notion-page/NotionPage";
 import { BLACK } from "@/src/styles/constants";
 import { getPublishedPosts } from "@/utils/notionApi";
+import { Meta } from "@/components/meta";
 
 interface BlogPostPageProps {
   params: { slug: string };
@@ -22,6 +23,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <Box>
+      <Meta title={post.title} description={post.description} />
       <Header
         layout={{
           mobileHeight: "0px",
