@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Box } from "@mui/material";
 import { notFound } from "next/navigation";
 import { NotionAPI } from "notion-client";
@@ -14,9 +16,11 @@ interface BlogPostPageProps {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const posts = await getPublishedPosts("All posts");
-  const post = posts.find((p) => p.slug === params.slug);
 
-  if (!post) return notFound();
+  const post = posts.find((p) => p.slug === params.slug);
+  if (!post) {
+    return notFound();
+  }
 
   const notion = new NotionAPI();
   const recordMap = await notion.getPage(post.id);

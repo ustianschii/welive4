@@ -5,7 +5,6 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 export async function getPublishedPosts(category: string) {
   const databaseId = process.env.HOME_AUTOMATION_SYSTEM_DATABASE_ID!;
-  const notionSubdomain = "eight-wheel-012.notion.site";
 
   const response = await notion.databases.query({
     database_id: databaseId,
@@ -32,7 +31,6 @@ export async function getPublishedPosts(category: string) {
     .map((page) => {
       const nameProp = page.properties["Title"];
       const slugProp = page.properties["Slug"];
-      const urlProp = page.properties["Url"];
       const coverProp = page.properties["Cover"];
       const descriptionProp = page.properties["Meta description"];
 
@@ -45,14 +43,6 @@ export async function getPublishedPosts(category: string) {
         slugProp?.type === "rich_text"
           ? slugProp.rich_text[0]?.plain_text ?? ""
           : "";
-
-      const iframeUrl =
-        urlProp?.type === "url" && urlProp.url
-          ? urlProp.url
-          : `https://${notionSubdomain}.notion.site/ebd/${page.id.replace(
-              /-/g,
-              ""
-            )}`;
 
       const coverUrl =
         coverProp?.type === "files" && coverProp.files.length > 0
@@ -74,7 +64,6 @@ export async function getPublishedPosts(category: string) {
         title,
         description,
         slug,
-        iframeUrl,
         coverUrl,
       };
     });
