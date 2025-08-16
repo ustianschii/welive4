@@ -2,7 +2,6 @@
 
 import { useState, useEffect, ReactNode, MouseEvent } from "react";
 import IconButton from "@mui/material/IconButton";
-import Link from "next/link";
 
 import {
   Container,
@@ -28,6 +27,7 @@ import {
   Highlighted,
   Subtitle,
 } from "@/components/hero-title/styles";
+import { Button } from "@mui/material";
 
 interface HeaderLayoutProps {
   mobileHeight?: string;
@@ -97,17 +97,18 @@ export const Header = ({ layout, content, background }: HeaderProps) => {
         desktopheight={layout?.desktopHeight}
       >
         <Toolbar disableGutters backcolor={scrolled ?? false}>
-          <Link href={ROUTES.HOME}>
+          <Button href={ROUTES.HOME} disableRipple>
             <Logo
-              alt="logo"
+              alt="company logo"
               src="/header-mobile/logo.svg"
               width={0}
               height={0}
               priority
             />
-          </Link>
+          </Button>
           <DropDownMenu>
             <IconButton
+              disableRipple
               size="large"
               aria-controls="menu-appbar"
               aria-haspopup="true"
@@ -132,19 +133,15 @@ export const Header = ({ layout, content, background }: HeaderProps) => {
               }}
             >
               {pages.map((page, index) => (
-                <Link
-                  key={page.text}
-                  href={page.href}
-                  style={{ textDecoration: "none" }}
-                >
-                  <MenuItem onClick={handleCloseNavMenu}>
+                <MenuItem onClick={handleCloseNavMenu} key={page.text}>
+                  <Button href={page.href} disableRipple>
                     <MenuItemTypography
                       color={index === 3 || index === 4 ? GREEN : WHITE}
                     >
                       {page.text}
                     </MenuItemTypography>
-                  </MenuItem>
-                </Link>
+                  </Button>
+                </MenuItem>
               ))}
             </Menu>
           </DropDownMenu>

@@ -12,6 +12,7 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   fontFamily: opensans.style.fontFamily,
   fontWeight: BOLD,
   border: "2px solid white",
+  borderRadius: "10px",
   transform: "translateX(-50%)",
   lineHeight: "120%",
   height: "40px",

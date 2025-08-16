@@ -22,9 +22,12 @@
     "fs": "0.0.1-security",
     "motion": "^11.13.1",
     "next": "14.2.13",
+    "notion-client": "^7.4.3",
+    "notion-utils": "^7.4.3",
     "path": "0.12.7",
     "react": "18",
-    "react-dom": "18"
+    "react-dom": "18",
+    "react-notion-x": "^7.4.3"
   },
   "devDependencies": {
     "@types/node": "20",

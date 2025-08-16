@@ -1,5 +1,5 @@
+import "react-notion-x/src/styles.css";
 import { Open_Sans, Raleway } from "next/font/google";
-
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";

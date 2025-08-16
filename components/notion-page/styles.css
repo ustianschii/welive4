@@ -1,0 +1,9 @@
+.notion-header {
+  display: none !important;
+}
+.notion-page {
+  background-color: black;
+}
+.notion-page-scroller {
+  background-color: black;
+}

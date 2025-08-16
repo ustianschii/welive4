@@ -1,10 +1,11 @@
 import { Box } from "@mui/material";
 import { notFound } from "next/navigation";
+import { NotionAPI } from "notion-client";
 
 import { Header } from "@/components/shared/header";
+import NotionPage from "@/components/notion-page/NotionPage";
 import { BLACK } from "@/src/styles/constants";
 import { getPublishedPosts } from "@/utils/notionApi";
-import ClientPostBox from "@/components/client-post-box/ClientPostBox";
 
 interface BlogPostPageProps {
   params: { slug: string };
@@ -16,8 +17,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   if (!post) return notFound();
 
+  const notion = new NotionAPI();
+  const recordMap = await notion.getPage(post.id);
+
   return (
-    <Box mb="-100px">
+    <Box>
       <Header
         layout={{
           mobileHeight: "0px",
@@ -29,11 +33,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           backColor: BLACK,
         }}
       />
-      <ClientPostBox
-        iframeUrl={post.iframeUrl}
-        title={post.title}
-        description={post.description}
-      />
+      <NotionPage recordMap={recordMap} />
     </Box>
   );
 }

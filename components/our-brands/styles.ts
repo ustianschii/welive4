@@ -5,12 +5,7 @@ import Image from "next/image";
 import { styled } from "@mui/material/styles";
 import { Box as MuiBox, Typography as MuiTypography } from "@mui/material";
 
-import {
-  BOLD,
-  SEPARATOR_BACKGROUND,
-  WHITE,
-  BLOG_CARD_BACKGROUND,
-} from "@/src/styles/constants";
+import { BOLD, SEPARATOR_BACKGROUND, WHITE } from "@/src/styles/constants";
 
 export const Container = styled(MuiBox)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
@@ -61,17 +56,15 @@ export const BrandsBox = styled(MuiBox)(({ theme }) => ({
     "100%": { transform: "translateX(-100%)" },
   },
 
+  animation: "scroll-infinite 20s linear infinite",
   [theme.breakpoints.up("md")]: {
-    animation: "scroll-infinite 20s linear infinite",
     display: "flex",
     justifyContent: "space-between",
     height: "150px",
   },
 
   [theme.breakpoints.down("md")]: {
-    backgroundColor: BLOG_CARD_BACKGROUND,
     height: "200px",
-    overflowX: "auto",
   },
   [theme.breakpoints.down("sm")]: {
     height: "120px",

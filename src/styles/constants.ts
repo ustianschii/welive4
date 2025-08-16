@@ -22,6 +22,7 @@ export const HEADER_TOOLBAR = "#191919";
 export const OUR_BRANDS_ICONS_BACKGROUND = "#212123";
 export const GET_SERVICES_BACKGROUND = "rgb(138,138,138)";
 export const DATE_PICKER_GRAY = "#d9d8d7";
+export const BLOG_HEADER = "#2f3437";
 
 export const REGULAR = "400";
 export const MEDIUM = "500";
