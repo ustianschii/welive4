@@ -1,10 +1,10 @@
-import Link from "next/link";
 import {
   Typography,
   Card,
   CardContent,
   CardMedia,
   CardActionArea,
+  Button,
 } from "@mui/material";
 
 import { TRANSPARENT_GRAY, WHITE } from "@/src/styles/constants";
@@ -18,13 +18,7 @@ interface PostCardProps {
 
 export default function PostCard({ slug, title, coverUrl }: PostCardProps) {
   return (
-    <Link
-      href={`/blog/${slug}`}
-      passHref
-      style={{
-        textDecoration: "none",
-      }}
-    >
+    <Button href={`/blog/${slug}`} disableRipple disableTouchRipple>
       <Card
         sx={{
           backgroundColor: TRANSPARENT_GRAY,
@@ -51,6 +45,6 @@ export default function PostCard({ slug, title, coverUrl }: PostCardProps) {
           </CardContent>
         </CardActionArea>
       </Card>
-    </Link>
+    </Button>
   );
 }
