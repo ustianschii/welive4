@@ -24,6 +24,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const notion = new NotionAPI();
   const recordMap = await notion.getPage(post.id);
+  console.log(recordMap);
 
   return (
     <Box>
