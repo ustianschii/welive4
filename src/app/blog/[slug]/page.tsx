@@ -1,29 +1,51 @@
-export const dynamic = "force-dynamic";
+"use client";
 
+import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
-import { notFound } from "next/navigation";
-import { NotionAPI } from "notion-client";
+import { ExtendedRecordMap } from "notion-types";
 
 import { Header } from "@/components/shared/header";
 import NotionPage from "@/components/notion-page/NotionPage";
 import { BLACK } from "@/src/styles/constants";
-import { getPublishedPosts } from "@/utils/notionApi";
 import { Meta } from "@/components/meta";
+import { Loading } from "@/components/loading/Loading";
 
 interface BlogPostPageProps {
   params: { slug: string };
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const posts = await getPublishedPosts("All posts");
+export default function BlogPostPage({ params }: BlogPostPageProps) {
+  const [recordMap, setRecordMap] = useState<ExtendedRecordMap | null>(null);
+  const [post, setPost] = useState<{
+    title: string;
+    description: string;
+  } | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  const post = posts.find((p) => p.slug === params.slug);
-  if (!post) {
-    return notFound();
-  }
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        const postRes = await fetch(`/api/posts/slug/${params.slug}`);
+        if (!postRes.ok) throw new Error("Failed to fetch post info");
+        const postData = await postRes.json();
+        setPost({ title: postData.title, description: postData.description });
 
-  const notion = new NotionAPI();
-  const recordMap = await notion.getPage(post.id);
+        const recordRes = await fetch(`/api/page/${postData.id}`);
+        if (!recordRes.ok) throw new Error("Failed to fetch recordMap");
+        const recordData = await recordRes.json();
+        setRecordMap(recordData);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPost();
+  }, [params.slug]);
+
+  if (loading) return <Loading />;
+  if (!recordMap || !post) return <div>Post not found</div>;
 
   return (
     <Box>
@@ -35,9 +57,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           desktopHeight: "0px",
           isHeaderTop: true,
         }}
-        background={{
-          backColor: BLACK,
-        }}
+        background={{ backColor: BLACK }}
       />
       <NotionPage recordMap={recordMap} />
     </Box>

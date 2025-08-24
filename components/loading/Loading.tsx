@@ -1,11 +1,15 @@
 import { Box, CircularProgress } from "@mui/material";
 
-import { GREEN } from "@/src/styles/constants";
+import { Header } from "@/components/shared/header";
+import { BLACK, GREEN } from "@/src/styles/constants";
 
 export const Loading = () => {
   return (
-    <Box gridColumn="1/-1" textAlign="center">
-      <CircularProgress sx={{ color: GREEN }} />
+    <Box>
+      <Header background={{ backColor: BLACK }} />
+      <Box gridColumn="1/-1" textAlign="center" height="50vh" bgcolor={BLACK}>
+        <CircularProgress sx={{ color: GREEN }} />
+      </Box>
     </Box>
   );
 };

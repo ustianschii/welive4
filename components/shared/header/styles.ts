@@ -105,6 +105,7 @@ export const Logo = styled(Image)(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     width: "350px",
     height: "100px",
+    marginLeft: "20%",
   },
   [theme.breakpoints.down("md")]: {
     width: "350px",

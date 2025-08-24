@@ -13,7 +13,6 @@ type Post = {
   id: string;
   title: string;
   slug: string;
-  iframeUrl: string;
   coverUrl: string | null;
 };
 
