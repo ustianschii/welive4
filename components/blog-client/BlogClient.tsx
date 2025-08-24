@@ -51,7 +51,7 @@ export default function BlogClient({ categories }: BlogClientProps) {
     selectedCategory === category;
 
   return (
-    <>
+    <Box display="flex" flexDirection="column" alignItems="center">
       {isMobile ? (
         <MobileDropdown
           categories={categories}
@@ -69,23 +69,23 @@ export default function BlogClient({ categories }: BlogClientProps) {
           setAnchorEl={setAnchorEl}
         />
       )}
-      <Box
-        bgcolor={BLACK}
-        p="1rem"
-        maxWidth="1200px"
-        m="0 auto"
-        display="grid"
-        gap="2rem"
-        gridTemplateColumns={{
-          xs: "1fr",
-          sm: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
-        }}
-      >
-        {loading ? (
-          <Loading />
-        ) : (
-          posts.map(({ id, title, slug, coverUrl }) => (
+      {loading ? (
+        <Loading />
+      ) : (
+        <Box
+          bgcolor={BLACK}
+          p="1rem"
+          maxWidth="1200px"
+          m="0 auto"
+          display="grid"
+          gap="2rem"
+          gridTemplateColumns={{
+            xs: "1fr",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+          }}
+        >
+          {posts.map(({ id, title, slug, coverUrl }) => (
             <PostCard
               key={id}
               id={id}
@@ -93,9 +93,9 @@ export default function BlogClient({ categories }: BlogClientProps) {
               slug={slug}
               coverUrl={coverUrl}
             />
-          ))
-        )}
-      </Box>
-    </>
+          ))}
+        </Box>
+      )}
+    </Box>
   );
 }
