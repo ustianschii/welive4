@@ -509,13 +509,340 @@ export const GCHome = [
 export const watchGuardData = [
   {
     image: "/watchguard/desktop/watchguard.jpg",
-    titlestart: "Automated",
-    titlehighlightedend: " Watchguard",
-    firstdescription:
-      "The Automated Watchguard, powered by Loxone technology, is your digital security guard. It's always active and surpasses traditional alarms. This smart tool uses various sensors, cameras, and access controls. It monitors water leaks, manages pool maintenance, and controls irrigation. It detects trespassers and alerts them, activates lights, and contacts you and emergency services when it matters most. It even sends notifications via Telegram and operates seamlessly if your internet is down.",
-    seconddescription:
-      "Imagine a system spotting threats before they escalate. It intelligently detects intrusions, hazards, and unauthorized access. Real-time alerts reach you instantly, wherever you are. This system doesn't just alert you—it responds. It triggers alarms and activates deterrents like lights and shutters. It contacts emergency services when necessary.",
-    thirddescription:
-      "Control it remotely via smartphone or tablet. Arm or disarm it, watch live feeds, and manage access anytime, anywhere. Enjoy peace of mind with presence simulation, making it seem like you're home even when you’re not. Plus, it integrates seamlessly with other smart home functions, creating a responsive and secure environment. Automated Watchguard goes beyond security. It intelligently responds to potential issues, tailored to your needs. It feels like you’re always home, always watching, ready to protect. Elevate your property's security and enjoy worry-free travel with our Automated Watchguard. Bring your property's monitoring and security to the next level today!",
+    titlestart: "When You Live Globally, Your Property Needs to Think for You",
+    descriptionPairs: [
+      {
+        description: "Modern life is no longer tied to one location.",
+      },
+      {
+        description:
+          "Some families split time between countries. Others travel for extended business engagements. Many maintain seasonal properties. When a home sits unoccupied for weeks or months, traditional alarm systems are not enough.",
+      },
+      {
+        description:
+          "Standard security systems are reactive. They wait for intrusion. They send a single alert.",
+      },
+      {
+        description: "They do not understand how your home normally behaves.",
+      },
+      {
+        description:
+          "They do not coordinate lighting, HVAC, access control, and communication intelligently.",
+      },
+      {
+        description:
+          "When you are abroad, your property must operate independently.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "What Is WeLive4 Safeguard?",
+    descriptionPairs: [
+      {
+        description:
+          "WeLive4 Safeguard is an advanced Property Automated Safeguard system built on professional automation platforms such as Loxone.",
+      },
+      {
+        description: "It goes beyond traditional alarms by integrating:",
+        listItems: [
+          "Motion intelligence",
+          "Environmental monitoring",
+          "Smart lighting response",
+          "Occupancy simulation",
+          "Automated escalation logic",
+          "Multi-channel emergency communication",
+        ],
+      },
+      {
+        description: "This is not just monitoring.",
+      },
+      {
+        description: "This is coordinated property intelligence.",
+      },
+      {
+        description:
+          "Safeguard turns your residence into an active system that observes, evaluates, and responds in real time.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Security is not limited to intrusion.",
+    descriptionPairs: [
+      {
+        description:
+          "Many of the most expensive property damages come from environmental failure.",
+      },
+      {
+        description: "Safeguard continuously monitors:",
+        listItems: [
+          "Water leaks",
+          "Pipe freeze risk",
+          "Temperature fluctuations",
+          "HVAC failure",
+          "Smoke and carbon monoxide",
+          "Humidity levels",
+          "Electrical anomalies",
+        ],
+      },
+      {
+        description: "If a water leak is detected, the system can:",
+        listItems: [
+          "Shut off the main valve",
+          "Send alerts immediately",
+          "Escalate if unacknowledged",
+          "Notify nearby family or trusted contacts",
+        ],
+      },
+      {
+        description: "Protection is automatic.",
+      },
+      {
+        description:
+          "Response does not depend on you being awake or in the same time zone.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Behavioral Motion Intelligence",
+    descriptionPairs: [
+      {
+        description: "Not all motion is equal.",
+      },
+      {
+        description:
+          "Safeguard learns occupancy patterns and distinguishes between expected and unexpected activity.",
+      },
+      {
+        description:
+          "If movement occurs during unusual hours or in restricted zones, the system can:",
+        listItems: [
+          "Activate lighting scenes",
+          "Trigger internal alerts",
+          "Begin camera recording",
+          "Notify homeowners",
+          "Escalate to trusted contacts",
+          "Contact authorities if configured",
+        ],
+      },
+      {
+        description:
+          "This layered logic reduces false alarms and increases meaningful response.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Smart Presence Simulation",
+    descriptionPairs: [
+      {
+        description: "Empty homes are vulnerable homes.",
+      },
+
+      {
+        description: "Safeguard creates realistic occupancy simulation using:",
+        listItems: [
+          "Dynamic lighting patterns",
+          "Shade movement",
+          "Audio triggers",
+          "Zoned automation scenes",
+        ],
+      },
+      {
+        description:
+          "Instead of simple on/off timers, lighting behavior mimics natural human movement throughout the property.",
+      },
+      {
+        description:
+          "Your home appears active even when you are across the world.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Immediate Emergency Escalation — Anywhere in the World",
+    descriptionPairs: [
+      {
+        description:
+          "A core feature of WeLive4 Safeguard is intelligent communication routing.",
+      },
+
+      {
+        description: "The system can be configured to:",
+        listItems: [
+          "Call traveling homeowners directly",
+          "Send SMS alerts",
+          "Notify nearby family members",
+          "Alert trusted neighbors",
+          "Escalate to first responders",
+          "Send real-time encrypted alerts via Telegram for international users",
+        ],
+      },
+      {
+        description:
+          "For families abroad, Telegram alerts provide reliable global messaging without carrier limitations.",
+      },
+      {
+        description: "Alert routing follows logic rules:",
+        listItems: [
+          "If you do not respond → notify family.",
+          "If family does not respond → notify neighbor.",
+          "If escalation threshold is reached → contact emergency services.",
+        ],
+      },
+      {
+        description: "No single-point failure.",
+      },
+      {
+        description: "No single-point failure.",
+      },
+      {
+        description: "No single contact dependency.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Built for Multicultural & Global Families",
+    descriptionPairs: [
+      {
+        description: "WeLive4 Safeguard was designed specifically for:",
+        listItems: [
+          "Families living between countries",
+          "Dual-citizenship households",
+          "International executives",
+          "Long-term travelers",
+          "Seasonal property owners",
+          "Global investors",
+        ],
+      },
+      {
+        description: "Time zone differences are considered.",
+      },
+
+      {
+        description: "Escalation chains can be configured per region.",
+      },
+      {
+        description:
+          "Notification language and contact logic can adapt to cultural and family structure needs.",
+      },
+      {
+        description: "This is not a one-size-fits-all alarm system.",
+      },
+      {
+        description:
+          "It is a lifestyle-adaptive property protection framework.",
+      },
+    ],
+  },
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Fully Integrated Automation Ecosystem",
+    descriptionPairs: [
+      {
+        description:
+          "Unlike standalone security systems, Safeguard operates within a fully integrated automation architecture.",
+      },
+      {
+        description: "It connects with:",
+        listItems: [
+          "Lighting systems",
+          "HVAC control",
+          "Access control",
+          "Garage doors",
+          "Energy monitoring",
+          "Irrigation systems",
+          "Surveillance infrastructure",
+        ],
+      },
+
+      {
+        description: "Everything works together under centralized logic.",
+      },
+      {
+        description:
+          "If a door is left open and temperatures drop, HVAC adjusts.",
+      },
+      {
+        description: "If an entry is breached, lighting activates.",
+      },
+      {
+        description: "If water is detected, supply shuts down.",
+      },
+      {
+        description: "Coordination replaces isolated devices.",
+      },
+    ],
+  },
+  {
+    titlestart: "Alarm System vs Property Automated Safeguard",
+    columns: [
+      {
+        title: "Traditional Alarm",
+        descriptions: [
+          "Reactive",
+          "Intrusion-only",
+          "Single alert",
+          "Basic app notification",
+          "Separate devices",
+        ],
+      },
+      {
+        title: "WeLive4 Safeguard",
+        descriptions: [
+          "Proactive",
+          "Environmental + behavioral",
+          "Multi-channel escalation",
+          "Calls, SMS, Telegram, automation response",
+          "Fully integrated ecosystem",
+        ],
+      },
+    ],
+    descriptions: ["Safeguard does not replace security.", "It expands it."],
+  },
+];
+
+export const safeguardData = [
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Your Property Should Protect Itself",
+    descriptionPairs: [
+      {
+        description:
+          "Searching for reliable international home monitoring solutions can feel endless.",
+      },
+      {
+        description:
+          "WeLive4 Safeguard delivers intelligent, proactive protection built around how global families actually live.",
+      },
+      {
+        description: "When you are away, your home remains alert.",
+      },
+      {
+        description: "When you are traveling, your property responds.",
+      },
+      {
+        description: "When something happens, the right people are notified.",
+      },
+      {
+        description: "Security should not depend on geography.",
+      },
+    ],
+  },
+];
+export const safeguardDataWithAction = [
+  {
+    image: "/watchguard/desktop/watchguard.jpg",
+    titlestart: "Schedule a Safeguard Strategy Consultation",
+    descriptionPairs: [
+      {
+        description:
+          "Let’s design a Property Automated Safeguard system tailored to your lifestyle, property layout, and international communication needs.",
+      },
+    ],
+    reverseLayout: true,
   },
 ];

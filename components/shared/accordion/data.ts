@@ -145,3 +145,65 @@ export const homeAudioFaq = [
     answer: "No.",
   },
 ];
+
+export const safeguardFaq = [
+  {
+    question: "What is a Property Automated Safeguard system?",
+    answer:
+      "A Property Automated Safeguard system is an intelligent automation framework that continuously monitors environmental conditions, motion activity, and system performance while automatically escalating alerts and coordinating protective responses across the property.",
+  },
+  {
+    question: "Can Safeguard notify me while I am overseas?",
+    answer:
+      "Yes. Safeguard supports multiple alert channels including SMS, direct phone calls, and secure notifications through Telegram, allowing reliable communication even when traveling internationally.",
+  },
+  {
+    question: "Can it notify nearby family or neighbors?",
+    answer:
+      "Yes. Safeguard can be configured with an escalation chain that notifies trusted local contacts such as family members, neighbors, or property managers before escalating to emergency services.",
+  },
+  {
+    question: "Can Safeguard work with an existing smart home system?",
+    answer:
+      "Safeguard integrates directly with properties built on the Loxone platform. For homes using other technologies, Safeguard may still be deployed as a dedicated protection system focused on monitoring, automated responses, and emergency alerts.",
+  },
+  {
+    question: "Is Safeguard only for luxury estates?",
+    answer: {
+      paragraphsBefore: [
+        "No. Safeguard can scale from smaller homes to large estates.",
+        "A minimal system may include:",
+      ],
+      lists: [
+        "Automation controller",
+        "Motion detection",
+        "Water leak sensors",
+        "Temperature monitoring",
+        "Smart lighting response",
+        "Emergency notifications",
+      ],
+      paragraphsAfter: [
+        "Larger properties can expand the system to include full automation, access control, environmental monitoring, and advanced escalation logic.",
+      ],
+    },
+  },
+  {
+    question: "What risks can Safeguard detect besides intrusion?",
+    answer: {
+      paragraphsBefore: [
+        "Safeguard can monitor multiple property risks including:",
+      ],
+      lists: [
+        "Water leaks and pipe freeze conditions",
+        "HVAC system failure",
+        "Temperature anomalies",
+        "Smoke and carbon monoxide",
+        "Unusual motion activity",
+        "Extended door or window openings",
+      ],
+      paragraphsAfter: [
+        "These conditions can trigger automated responses and alerts before damage becomes severe.",
+      ],
+    },
+  },
+];

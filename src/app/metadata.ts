@@ -311,9 +311,9 @@ export const metadata = {
     ],
   },
   Watchguard: {
-    title: "Automated Watchguard: Smart Security System Powered by Loxone",
+    title: "Automated Safeguard: Smart Security System Powered by Loxone",
     description:
-      "Experience 24/7 intelligent protection with the Automated Watchguard. Powered by Loxone, it detects threats, alerts you in real time, and responds instantly—all while integrating seamlessly with your smart home.",
+      "Advanced Property Automated Safeguard system for global families. Smart monitoring, emergency alerts, Telegram notifications, and proactive protection.",
     keywords: [
       "smart home security",
       "automated security system",

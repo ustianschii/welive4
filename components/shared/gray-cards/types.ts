@@ -1,3 +1,14 @@
+interface DescriptionPair {
+  title?: string;
+  description: string;
+  listItems?: string[];
+}
+
+interface Column {
+  title?: string;
+  descriptions?: string[];
+}
+
 interface GrayCard {
   image?: string;
   imagetablet?: string;
@@ -14,7 +25,10 @@ interface GrayCard {
   titlehighlightedend?: string;
   titleend?: string;
   descriptions?: string[];
+  descriptionPairs?: DescriptionPair[];
+  columns?: Column[];
   link?: string;
+  reverseLayout?: boolean;
 }
 
 export interface GrayCardsBoxProps {

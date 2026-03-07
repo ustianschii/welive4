@@ -15,7 +15,7 @@ export const Button = styled(MuiButton)(({ theme }) => ({
   borderRadius: "10px",
   transform: "translateX(-50%)",
   lineHeight: "120%",
-  height: "40px",
+  height: "50px",
   position: "absolute",
   left: "50%",
   "&:hover": {

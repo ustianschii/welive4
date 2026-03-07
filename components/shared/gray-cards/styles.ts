@@ -34,61 +34,89 @@ export const Container = styled(MuiContainer)(({ theme }) => ({
 }));
 
 export const CardBox = styled(MuiBox, {
-  shouldForwardProp: (prop) => prop !== "index",
-})<{ index: number }>(({ theme, index }) => ({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  backgroundColor: MAIN_SERVICES_BACKGROUND,
-  paddingTop: "30px",
-  [theme.breakpoints.up("md")]: {
-    flexDirection: index % 2 === 0 ? "row" : "row-reverse",
-  },
-}));
-
-export const CardContent = styled(MuiBox)(({ theme }) => ({
-  margin: "0 20px 10px 20px",
-  width: "100%",
-
-  [theme.breakpoints.up("md")]: {
-    "&::before, &::after": {
-      content: '""',
-      position: "absolute",
-      left: "0",
-      width: "25%",
-      borderColor: GREEN,
-      borderStyle: "solid",
-    },
-    "&::before": {
-      top: 0,
-      borderTopWidth: "2px",
-    },
-    "&::after": {
-      bottom: 0,
-      borderBottomWidth: "2px",
-    },
-    position: "relative",
-    padding: "20px 0 20px 30px",
-    borderLeft: "5px solid",
-    borderColor: GREEN,
-    borderRadius: "5px",
-    minWidth: "60%",
-    maxWidth: "100%",
-  },
-
-  [theme.breakpoints.down("md")]: {
+  shouldForwardProp: (prop) => prop !== "index" && prop !== "reverseLayout",
+})<{ index: number; reverseLayout?: boolean }>(
+  ({ theme, index, reverseLayout }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-  },
+    backgroundColor: MAIN_SERVICES_BACKGROUND,
+    paddingTop: "30px",
+    [theme.breakpoints.up("md")]: {
+      flexDirection: reverseLayout
+        ? "row-reverse"
+        : index % 2 === 0
+          ? "row"
+          : "row-reverse",
+    },
+  }),
+);
 
-  [theme.breakpoints.down("sm")]: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "0 20px",
-  },
-}));
+export const CardContent = styled(MuiBox, {
+  shouldForwardProp: (prop) =>
+    prop !== "index" && prop !== "reverseLayout" && prop !== "hasColumns",
+})<{ index?: number; reverseLayout?: boolean; hasColumns?: boolean }>(({
+  theme,
+  index = 0,
+  reverseLayout,
+  hasColumns,
+}) => {
+  const isLeftLayout = reverseLayout || index % 2 !== 0;
+
+  return {
+    margin: hasColumns ? "0" : "0 20px 10px 20px",
+    padding: hasColumns ? "0" : undefined,
+    width: "100%",
+
+    [theme.breakpoints.up("md")]: hasColumns
+      ? {
+          position: "relative",
+          width: "100%",
+          maxWidth: "100%",
+        }
+      : {
+          "&::before, &::after": {
+            content: '""',
+            position: "absolute",
+            left: "0",
+            width: "25%",
+            borderColor: GREEN,
+            borderStyle: "solid",
+          },
+          "&::before": {
+            top: 0,
+            borderTopWidth: "2px",
+          },
+          "&::after": {
+            bottom: 0,
+            borderBottomWidth: "2px",
+          },
+          position: "relative",
+          padding: "20px 0 20px 30px",
+          borderLeft: "5px solid",
+          borderColor: GREEN,
+          borderRadius: "5px",
+          maxWidth: "50%",
+          minWidth: 0,
+          overflow: "hidden",
+          marginLeft: isLeftLayout ? 0 : "20px",
+          marginRight: isLeftLayout ? "20px" : 0,
+        },
+
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
+
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      padding: hasColumns ? "0" : "0 20px",
+    },
+  };
+});
 
 export const ImageBox = styled(MuiBox, {
   shouldForwardProp: (prop) => prop !== "hasImage",
@@ -114,7 +142,9 @@ export const ImageBox = styled(MuiBox, {
   },
 }));
 
-export const Title = styled(MuiTypography)(({ theme }) => ({
+export const Title = styled("h2", {
+  shouldForwardProp: (prop) => prop !== "hasColumns",
+})<{ hasColumns?: boolean }>(({ theme, hasColumns }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
   fontWeight: SEMI_BOLD,
@@ -123,7 +153,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   margin: "20px 0",
 
   [theme.breakpoints.up("md")]: {
-    textAlign: "start",
+    textAlign: hasColumns ? "center" : "start",
     fontSize: "30px",
   },
   [theme.breakpoints.down("md")]: {
@@ -137,16 +167,20 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
   },
 }));
 
-export const Subtitle = styled(MuiTypography)(() => ({
+export const Subtitle = styled(MuiTypography)(({ theme }) => ({
   color: GREEN,
   fontFamily: opensans.style.fontFamily,
   fontSize: "20px",
   margin: "10px 0",
+  [theme.breakpoints.down("md")]: {
+    textAlign: "center",
+  },
 }));
 
 export const Description = styled(MuiTypography)(({ theme }) => ({
   color: WHITE,
   fontFamily: raleway.style.fontFamily,
+  marginBottom: "15px",
   [theme.breakpoints.up("md")]: {
     fontSize: "14px",
   },

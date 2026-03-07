@@ -7,8 +7,8 @@ import {
   Accordion as MuiAccordion,
 } from "@mui/material";
 
-import { SEPARATOR_BACKGROUND, WHITE } from "@/src/styles/constants";
-import { opensans } from "@/src/app/layout";
+import { SEPARATOR_BACKGROUND, WHITE, GREEN } from "@/src/styles/constants";
+import { opensans, raleway } from "@/src/app/layout";
 
 export const Container = styled(MuiContainer)(({ theme }) => ({
   backgroundColor: SEPARATOR_BACKGROUND,
@@ -36,19 +36,48 @@ export const Accordion = styled(MuiAccordion)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {},
 }));
 
-export const Question = styled(MuiTypography)(({ theme }) => ({
-  color: WHITE,
+export const Question = styled(MuiTypography, {
+  shouldForwardProp: (prop) => prop !== "isExpanded",
+})<{ isExpanded?: boolean }>(({ isExpanded }) => ({
+  color: isExpanded ? GREEN : WHITE,
   fontFamily: opensans.style.fontFamily,
-  [theme.breakpoints.down("md")]: {
-    fontSize: "18px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "16px",
-  },
+  transition: "color 0.3s ease",
 }));
 
-export const Answer = styled(MuiTypography)(({ theme }) => ({
+export const Answer = styled(MuiTypography)(() => ({
   color: WHITE,
   fontFamily: opensans.style.fontFamily,
-  [theme.breakpoints.down("sm")]: {},
+}));
+
+export const Title = styled("h2")(({ theme }) => ({
+  color: WHITE,
+  fontFamily: raleway.style.fontFamily,
+  fontWeight: 600,
+  lineHeight: "1.1",
+  textAlign: "center",
+  margin: "0 auto",
+  paddingLeft: "50px",
+  paddingRight: "50px",
+  paddingTop: "40px",
+  paddingBottom: "30px",
+  maxWidth: "1280px",
+
+  [theme.breakpoints.up("md")]: {
+    fontSize: "30px",
+  },
+  [theme.breakpoints.down("lg")]: {
+    paddingLeft: "100px",
+    paddingRight: "100px",
+  },
+  [theme.breakpoints.down("md")]: {
+    paddingLeft: "50px",
+    paddingRight: "50px",
+    fontSize: "30px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    paddingLeft: "10px",
+    paddingRight: "10px",
+    fontSize: "28px",
+  },
 }));

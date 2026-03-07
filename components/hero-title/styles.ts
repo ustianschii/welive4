@@ -51,7 +51,7 @@ export const Highlighted = styled("span")<{ mLeft?: string; mRight?: string }>(
     display: "inline",
     wordWrap: "break-word",
     whiteSpace: "normal",
-  })
+  }),
 );
 
 export const Subtitle = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
