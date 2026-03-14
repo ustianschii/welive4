@@ -1,13 +1,10 @@
 import React from "react";
-
 import { Box, Divider, Typography } from "@mui/material";
-
 import Image from "next/image";
 import Link from "next/link";
 
 import {
   Container,
-  Description,
   FastLinks,
   Label,
   Adress,
@@ -21,33 +18,137 @@ import {
 } from "./styles";
 import { BLACK, GRAY } from "@/src/styles/constants";
 import { emails, FOOTER_LINKS } from "./data";
+import { opensans } from "@/src/app/layout";
 
 interface FooterProps {
   divider?: React.ReactNode;
 }
 
 export const Footer = ({ divider }: FooterProps) => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Box sx={{ backgroundColor: BLACK }}>
       {divider}
       <Container disableGutters maxWidth="lg">
         <GroupBox>
           <Logo alt="logo" src="/header-mobile/logo.svg" width={0} height={0} />
-          <Description>
-            About We Live 4: We are 4 dedication to our clients. Our mission is
-            to build lasting relationships with our clients by providing
-            exceptional service and support. We are aware that each client has 4
-            particular requirements for a trusted experience: clear
-            communication, reliable service, expert advice, and ongoing support.
-            These principles guide everything we do. Meantime, we provide 4
-            Eastern Europeans in North America the greatest smart home solutions
-            that combine aesthetic interior design and technology setup. We
-            assess any problems and establish precise standards for quality,
-            offer design, do project management, and run end-to-end installation
-            services. Our goal is to deliver exceptional solutions while keeping
-            your vision at the forefront.
-          </Description>
+
+          <Box
+            sx={{
+              fontFamily: opensans.style.fontFamily,
+              mt: 2,
+              display: "grid",
+              gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+              gap: { xs: 2, md: 6 },
+              color: "#d1d1d1",
+              fontSize: "14px",
+              lineHeight: 1.6,
+              textAlign: "left",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 2,
+              }}
+            >
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "inherit",
+                  fontFamily: opensans.style.fontFamily,
+                }}
+              >
+                WeLive4 stands for four commitments to our clients. Our mission
+                is to build lasting relationships by delivering exceptional
+                service, thoughtful design, and reliable long-term support.
+              </Typography>
+
+              <Typography variant="body2" sx={{ fontSize: "inherit" }}>
+                We understand that every client expects four essential elements
+                in a trusted experience:
+              </Typography>
+
+              <Box
+                component="ul"
+                sx={{
+                  m: 0,
+                  pl: { xs: 2.5, md: 3 },
+                  listStylePosition: "outside",
+                  fontWeight: "bold",
+                  color: "white",
+                }}
+              >
+                <li>Clear communication</li>
+                <li>Reliable service</li>
+                <li>Expert guidance</li>
+                <li>Ongoing support</li>
+              </Box>
+
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "inherit",
+                  fontFamily: opensans.style.fontFamily,
+                }}
+              >
+                These principles guide everything we design and implement.
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 2,
+              }}
+            >
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "inherit",
+                  fontFamily: opensans.style.fontFamily,
+                }}
+              >
+                WeLive4 specializes in advanced smart home and Property
+                Automated Safeguard solutions, serving Eastern European families
+                and global homeowners across North America. Our approach blends
+                refined interior aesthetics with intelligent technology
+                architecture, ensuring that automation enhances design rather
+                than disrupting it.
+              </Typography>
+
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "inherit",
+                  fontFamily: opensans.style.fontFamily,
+                }}
+              >
+                Every project begins with careful evaluation. We establish clear
+                quality standards, develop system designs, manage project
+                execution, and deliver end-to-end installation services. From
+                concept to commissioning, each system is engineered for
+                performance, reliability, and long-term value.
+              </Typography>
+
+              <Typography
+                variant="body2"
+                sx={{
+                  fontSize: "inherit",
+                  fontFamily: opensans.style.fontFamily,
+                }}
+              >
+                Our goal is simple: to deliver exceptional Property Automated
+                Safeguard and home automation solutions while keeping your
+                vision at the center of every decision.
+              </Typography>
+            </Box>
+          </Box>
         </GroupBox>
+
         <Box m="30px 0">
           <Label>CONTACT US</Label>
           <ContactsBox>
@@ -106,7 +207,7 @@ export const Footer = ({ divider }: FooterProps) => {
           </Adress>
         </AdressBox>
         <Divider sx={{ backgroundColor: GRAY }} flexItem />
-        <Copyright>© 2020-2025 HEYO SMART TECHNOLOGY</Copyright>
+        <Copyright>© 2020-{currentYear} HEYO SMART TECHNOLOGY</Copyright>
       </Container>
     </Box>
   );

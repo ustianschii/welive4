@@ -14,11 +14,16 @@ import { safeguardFaq } from "@/components/shared/accordion/data";
 import { MAIN_SERVICES_BACKGROUND } from "@/src/styles/constants";
 import { metadata } from "@/src/app/metadata";
 import { Button } from "@/components/shared/gray-cards/styles";
-import { ROUTES } from "../utils/routes-constants";
+import { ROUTES } from "@/src/app/utils/routes-constants";
+import { jsonLdData } from "@/src/app/utils/json-ld-data";
 
 export default function Watchguard() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+      />
       <Meta
         title={metadata.Watchguard.title}
         description={metadata.Watchguard.description}
