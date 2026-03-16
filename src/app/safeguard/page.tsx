@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import { Meta } from "@/components/meta";
 import { GrayCardsBox } from "@/components/shared/gray-cards";
@@ -63,9 +63,18 @@ export default function Watchguard() {
           imgheight={300}
           imgwidth={450}
           button={
-            <Button href={ROUTES.CHECKLIST_SHORT}>
-              Book Your Consultation Today &#10230;
-            </Button>
+            <Box
+              sx={{ display: "flex", width: "100%", justifyContent: "center" }}
+            >
+              <Button
+                sx={{ width: "60%", p: "10px" }}
+                href={ROUTES.CHECKLIST_SHORT}
+              >
+                <Typography sx={{ fontSize: { xs: "10px", md: "14px" } }}>
+                  Book Your Consultation Today &#10230;
+                </Typography>
+              </Button>
+            </Box>
           }
         />
       </Box>

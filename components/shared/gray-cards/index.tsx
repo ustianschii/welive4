@@ -25,6 +25,11 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
   const isTablet = useMediaQuery(theme.breakpoints.between("md", "lg"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
 
+  const descriptionSx = {
+    textAlign: { xs: "left", md: "inherit" },
+    marginBottom: "6px",
+  };
+
   return (
     <Container disableGutters>
       {data.map((item, index) => (
@@ -42,11 +47,11 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
                 }
                 fill
                 sizes={`
-    (max-width: 600px) 80vw,
-    (max-width: 900px) 70vw,
-    (max-width: 1200px) 350px,
-    400px
-  `}
+                  (max-width: 600px) 80vw,
+                  (max-width: 900px) 70vw,
+                  (max-width: 1200px) 350px,
+                  400px
+                `}
                 style={{
                   borderRadius: "10px",
                   objectFit: "cover",
@@ -62,130 +67,166 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
             reverseLayout={item.reverseLayout}
             hasColumns={Boolean(item.columns)}
           >
-            {(item.title && (
-              <Title hasColumns={Boolean(item.columns)}>{item.title}</Title>
-            )) || (
-              <Title hasColumns={Boolean(item.columns)}>
-                <Highlighted mLeft="0px" mRight="0px">
-                  {item.titlehighlightedstart}
-                </Highlighted>
-                {item.titlestart}
-                <Highlighted mLeft="0px" mRight="0px">
-                  {item.titlehighlightedend}
-                </Highlighted>
-                {item.titleend}
-              </Title>
-            )}
+            <Box
+              sx={{
+                width: "100%",
+                textAlign: { xs: "left", md: "inherit" },
+                display: "flex",
+                flexDirection: "column",
+                alignItems: { xs: "flex-start", md: "inherit" },
+              }}
+            >
+              {(item.title && (
+                <Title hasColumns={Boolean(item.columns)}>{item.title}</Title>
+              )) || (
+                <Title hasColumns={Boolean(item.columns)}>
+                  <Highlighted mLeft="0px" mRight="0px">
+                    {item.titlehighlightedstart}
+                  </Highlighted>
+                  {item.titlestart}
+                  <Highlighted mLeft="0px" mRight="0px">
+                    {item.titlehighlightedend}
+                  </Highlighted>
+                  {item.titleend}
+                </Title>
+              )}
 
-            {item.columns ? (
-              <>
-                <Box
-                  sx={{
-                    display: "grid",
-                    gridTemplateColumns: { xs: "1fr", md: "auto auto" },
-                    gap: { xs: "20px", md: "60px" },
-                    justifyContent: { xs: "stretch", md: "center" },
-                    maxWidth: { md: "900px", lg: "1000px" },
-                    margin: "0 auto",
-                  }}
-                >
-                  {item.columns.map((column, colIndex) => (
-                    <Box key={colIndex}>
-                      {column.title && <Subtitle>{column.title}</Subtitle>}
-                      {column.descriptions &&
-                        column.descriptions.map((desc, descIndex) => (
-                          <Description key={descIndex}>{desc}</Description>
-                        ))}
-                    </Box>
-                  ))}
-                </Box>
-                {item.descriptions && (
+              {item.columns ? (
+                <>
                   <Box
                     sx={{
-                      marginTop: { xs: "30px", md: "40px" },
-                      paddingTop: { xs: "30px", md: "40px" },
-                      borderTop: `2px solid ${GREEN}`,
+                      display: "grid",
+                      gridTemplateColumns: { xs: "1fr", md: "auto auto" },
+                      gap: { xs: "20px", md: "60px" },
+                      justifyContent: { xs: "stretch", md: "center" },
+                      maxWidth: { md: "900px", lg: "1000px" },
+                      margin: "0 auto",
                       width: "100%",
                     }}
                   >
-                    {item.descriptions.map((desc, descIndex) => (
-                      <Description key={descIndex}>{desc}</Description>
+                    {item.columns.map((column, colIndex) => (
+                      <Box sx={{ mx: "20px" }} key={colIndex}>
+                        {column.title && <Subtitle>{column.title}</Subtitle>}
+                        {column.descriptions &&
+                          column.descriptions.map((desc, descIndex) => (
+                            <Description key={descIndex} sx={descriptionSx}>
+                              {desc}
+                            </Description>
+                          ))}
+                      </Box>
                     ))}
                   </Box>
-                )}
-              </>
-            ) : (
-              <>
-                <Description>{item.maindescription}</Description>
-
-                {item.descriptionPairs ? (
-                  item.descriptionPairs.map((pair, pairIndex) => (
-                    <React.Fragment key={pairIndex}>
-                      <Subtitle>{pair.title}</Subtitle>
-                      <Description>{pair.description}</Description>
-                      {pair.listItems && (
-                        <Box
-                          component="ul"
-                          sx={{ margin: "10px 0", paddingLeft: "0" }}
-                        >
-                          {pair.listItems.map((listItem, liIndex) => (
-                            <Box
-                              component="li"
-                              key={liIndex}
-                              sx={{
-                                color: "white",
-                                marginBottom: "8px",
-                                fontFamily: "raleway",
-                                display: "flex",
-                                alignItems: "center",
-                                listStyle: "none",
-                              }}
-                            >
-                              <DoneIcon
-                                fontSize="large"
-                                style={{
-                                  marginRight: 8,
-                                  color: GREEN,
-                                  flexShrink: 0,
-                                }}
-                              />
-                              {listItem}
-                            </Box>
-                          ))}
-                        </Box>
-                      )}
-                    </React.Fragment>
-                  ))
-                ) : (
-                  <>
-                    <Subtitle>{item.firsttitle}</Subtitle>
-                    <Description>{item.firstdescription}</Description>
-                    <Subtitle>{item.secondtitle}</Subtitle>
-                    <Description>{item.seconddescription}</Description>
-                    <Subtitle>{item.thirdtitle}</Subtitle>
-                    <Description>{item.thirddescription}</Description>
-                  </>
-                )}
-
-                <Box>
-                  {item.descriptions?.map((desc, descIndex) => (
-                    <Description
-                      display="flex"
-                      alignItems="center"
-                      key={descIndex}
+                  {item.descriptions && (
+                    <Box
+                      sx={{
+                        marginTop: { xs: "30px", md: "40px" },
+                        paddingTop: { xs: "30px", md: "40px" },
+                        borderTop: `2px solid ${GREEN}`,
+                        width: "100%",
+                      }}
                     >
-                      <DoneIcon
-                        fontSize="large"
-                        style={{ marginRight: 8, color: GREEN }}
-                      />
-                      {desc}
-                    </Description>
-                  ))}
-                </Box>
-              </>
-            )}
+                      {item.descriptions.map((desc, descIndex) => (
+                        <Description key={descIndex}>{desc}</Description>
+                      ))}
+                    </Box>
+                  )}
+                </>
+              ) : (
+                <>
+                  <Description sx={descriptionSx}>
+                    {item.maindescription}
+                  </Description>
 
-            {button}
+                  {item.descriptionPairs ? (
+                    item.descriptionPairs.map((pair, pairIndex) => (
+                      <React.Fragment key={pairIndex}>
+                        <Subtitle>{pair.title}</Subtitle>
+                        <Description sx={descriptionSx}>
+                          {pair.description}
+                        </Description>
+                        {pair.listItems && (
+                          <Box
+                            component="ul"
+                            sx={{ margin: "10px 0", paddingLeft: "0" }}
+                          >
+                            {pair.listItems.map((listItem, liIndex) => (
+                              <Box
+                                component="li"
+                                key={liIndex}
+                                sx={{
+                                  color: "white",
+                                  marginBottom: { xs: "6px", md: "12px" },
+                                  fontFamily: "raleway",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: {
+                                    xs: "flex-start",
+                                    md: "inherit",
+                                  },
+                                  listStyle: "none",
+                                }}
+                              >
+                                <DoneIcon
+                                  fontSize="large"
+                                  style={{
+                                    marginRight: 8,
+                                    color: GREEN,
+                                    flexShrink: 0,
+                                  }}
+                                />
+                                <Description
+                                  sx={{
+                                    textAlign: { xs: "left", md: "inherit" },
+                                    mb: "0",
+                                  }}
+                                >
+                                  {listItem}
+                                </Description>
+                              </Box>
+                            ))}
+                          </Box>
+                        )}
+                      </React.Fragment>
+                    ))
+                  ) : (
+                    <>
+                      <Subtitle>{item.firsttitle}</Subtitle>
+                      <Description sx={descriptionSx}>
+                        {item.firstdescription}
+                      </Description>
+                      <Subtitle>{item.secondtitle}</Subtitle>
+                      <Description sx={descriptionSx}>
+                        {item.seconddescription}
+                      </Description>
+                      <Subtitle>{item.thirdtitle}</Subtitle>
+                      <Description sx={descriptionSx}>
+                        {item.thirddescription}
+                      </Description>
+                    </>
+                  )}
+
+                  <Box sx={{ width: "100%" }}>
+                    {item.descriptions?.map((desc, descIndex) => (
+                      <Description
+                        display="flex"
+                        alignItems="center"
+                        justifyContent={{ xs: "flex-start", md: "inherit" }}
+                        key={descIndex}
+                        sx={descriptionSx}
+                      >
+                        <DoneIcon
+                          fontSize="large"
+                          style={{ marginRight: 8, color: GREEN }}
+                        />
+                        {desc}
+                      </Description>
+                    ))}
+                  </Box>
+                </>
+              )}
+
+              {button}
+            </Box>
           </CardContent>
         </CardBox>
       ))}

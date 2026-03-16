@@ -696,9 +696,6 @@ export const watchGuardData = [
         description: "No single-point failure.",
       },
       {
-        description: "No single-point failure.",
-      },
-      {
         description: "No single contact dependency.",
       },
     ],

@@ -102,7 +102,6 @@ export const Footer = ({ divider }: FooterProps) => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: 2,
               }}
             >
               <Typography
