@@ -52,6 +52,7 @@ export const GrayCardsBox: React.FC<GrayCardsBoxProps> = ({ data, button }) => {
                   (max-width: 1200px) 350px,
                   400px
                 `}
+                quality={100}
                 style={{
                   borderRadius: "10px",
                   objectFit: "cover",

@@ -171,14 +171,14 @@ export const Footer = ({ divider }: FooterProps) => {
           </ContactsBox>
           <Box mt="30px">
             <Link
-              href="tel:+18779354834"
+              href="tel:+13023949656"
               style={{
                 textDecoration: "underline",
                 textDecorationColor: "white",
               }}
               passHref
             >
-              <Label>Call +1-877-935-4834</Label>
+              <Label>Call +1-302-394-9656</Label>
             </Link>
           </Box>
         </Box>

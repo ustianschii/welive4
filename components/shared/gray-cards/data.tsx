@@ -508,7 +508,7 @@ export const GCHome = [
 
 export const watchGuardData = [
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/When.jpg",
     titlestart: "When You Live Globally, Your Property Needs to Think for You",
     descriptionPairs: [
       {
@@ -536,7 +536,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/What.jpg",
     titlestart: "What Is WeLive4 Safeguard?",
     descriptionPairs: [
       {
@@ -567,7 +567,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Security.jpg",
     titlestart: "Security is not limited to intrusion.",
     descriptionPairs: [
       {
@@ -605,7 +605,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Behavioral.jpg",
     titlestart: "Behavioral Motion Intelligence",
     descriptionPairs: [
       {
@@ -661,7 +661,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Immediate.jpg",
     titlestart: "Immediate Emergency Escalation — Anywhere in the World",
     descriptionPairs: [
       {
@@ -701,7 +701,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Built.jpg",
     titlestart: "Built for Multicultural & Global Families",
     descriptionPairs: [
       {
@@ -736,7 +736,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Fully.jpg",
     titlestart: "Fully Integrated Automation Ecosystem",
     descriptionPairs: [
       {
@@ -804,7 +804,7 @@ export const watchGuardData = [
 
 export const safeguardData = [
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Your.jpg",
     titlestart: "Your Property Should Protect Itself",
     descriptionPairs: [
       {
@@ -832,7 +832,7 @@ export const safeguardData = [
 ];
 export const safeguardDataWithAction = [
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Schedule.jpg",
     titlestart: "Schedule a Safeguard Strategy Consultation",
     descriptionPairs: [
       {
