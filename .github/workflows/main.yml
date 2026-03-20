@@ -42,4 +42,4 @@ jobs:
 
             npm install
             npm run build
-            pm2 restart welive4
+            pm2 restart "welive4.com/"
