@@ -634,7 +634,7 @@ export const watchGuardData = [
     ],
   },
   {
-    image: "/watchguard/desktop/watchguard.jpg",
+    image: "/safeguard/Smart.png",
     titlestart: "Smart Presence Simulation",
     descriptionPairs: [
       {
