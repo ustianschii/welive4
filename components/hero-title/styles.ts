@@ -61,15 +61,14 @@ export const Subtitle = styled(MuiTypography)<TypographyProps>(({ theme }) => ({
   textAlign: "center",
   whiteSpace: "normal",
   [theme.breakpoints.up("md")]: {
-    fontSize: "35px",
-    padding: "0 150px",
+    fontSize: "30px",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "35px",
+    fontSize: "30px",
     padding: "0 70px",
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "25px",
-    padding: "0 10px",
+    padding: "0",
   },
 }));
