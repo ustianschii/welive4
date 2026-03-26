@@ -82,21 +82,28 @@ export const Description = styled(MuiTypography)(({ theme }) => ({
 
 export const FastLinks = styled(MuiBox)(({ theme }) => ({
   display: "flex",
-  justifyContent: "space-around",
+  alignItems: "center",
 
   [theme.breakpoints.up("md")]: {
     width: "100%",
     margin: "30px 0",
+    flexDirection: "row",
+    justifyContent: "space-around",
   },
 
   [theme.breakpoints.down("md")]: {
     width: "100%",
     margin: "50px 0",
+    flexDirection: "row",
+    justifyContent: "space-around",
   },
 
   [theme.breakpoints.down("sm")]: {
     width: "100%",
     margin: "40px 0",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "24px",
   },
 }));
 
