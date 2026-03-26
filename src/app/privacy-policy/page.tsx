@@ -1,3 +1,5 @@
+"use client";
+
 import { Box } from "@mui/material";
 
 import { BLACK, WHITE } from "@/src/styles/constants";
@@ -6,8 +8,13 @@ import { Header } from "@/components/shared/header";
 import { Meta } from "@/components/meta";
 import { metadata } from "@/src/app/metadata";
 import { Subtitle } from "@/components/hero-title/styles";
+import { useScrollToTop } from "@/src/hooks/useScrollToTop";
+import { ROUTES } from "../utils/routes-constants";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
+  useScrollToTop();
+
   return (
     <>
       <Meta
@@ -29,7 +36,7 @@ export default function PrivacyPolicy() {
           titleStart: "WeLive4 Privacy Policy",
         }}
       />
-      <Box bgcolor={BLACK} id="top">
+      <Box bgcolor={BLACK}>
         <Container maxWidth="md">
           <Paragraph>
             WeLive4 is a brand operated by Heyo Smart Technology LLC, a Delaware
@@ -196,8 +203,14 @@ export default function PrivacyPolicy() {
             Additional Notice
           </Subtitle>
           <Paragraph>
-            Use of WeLive4 Safeguard systems is also subject to our Terms and
-            Disclaimer.
+            Use of WeLive4 Safeguard systems is also subject to our{" "}
+            <Link
+              style={{ textDecoration: "underline", color: "inherit" }}
+              href={ROUTES.TERMS_AND_CONDITIONS}
+            >
+              Terms
+            </Link>{" "}
+            and Disclaimer.
           </Paragraph>
         </Container>
       </Box>

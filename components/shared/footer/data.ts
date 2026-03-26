@@ -2,6 +2,8 @@ import { ROUTES } from "@/src/app/utils/routes-constants";
 
 export const FOOTER_LINKS = [
   { label: "Privacy Policy", href: ROUTES.PRIVACY_POLICY },
+  { label: "Terms and Conditions", href: ROUTES.TERMS_AND_CONDITIONS },
+  { label: "Disclaimer", href: ROUTES.DISCLAIMER },
   {
     label: "Our Brands",
     href: ROUTES.OUR_BRANDS,

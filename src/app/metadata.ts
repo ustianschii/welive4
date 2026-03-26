@@ -290,6 +290,17 @@ export const metadata = {
     description: "WeLive4 | Privacy Policy",
     keywords: ["privacy policy welive4"],
   },
+  TermsAndConditions: {
+    title: "Terms and Conditions",
+    description: "WeLive4 | Terms and Conditions",
+    keywords: ["terms and conditions welive4"],
+  },
+  Disclaimer: {
+    title: "Disclaimer",
+    description: "WeLive4 | Disclaimer",
+    keywords: ["disclaimer welive4"],
+  },
+
   SystemDesign: {
     title:
       "Comprehensive System Design Solutions | Smart Automation, Networking & AV",
