@@ -16,9 +16,10 @@ import {
   Contact,
   ContactLabel,
 } from "./styles";
-import { BLACK, GRAY } from "@/src/styles/constants";
+import { BLACK, GRAY, GREEN } from "@/src/styles/constants";
 import { emails, FOOTER_LINKS } from "./data";
 import { opensans } from "@/src/app/layout";
+import { CookieSettingsLink } from "@/components/cookie-consent/CookieSettingsLink";
 
 interface FooterProps {
   divider?: React.ReactNode;
@@ -189,9 +190,19 @@ export const Footer = ({ divider }: FooterProps) => {
               key={index}
               style={{ textDecoration: "none" }}
             >
-              <Label key={index}>{item.label}</Label>
+              <Label
+                key={index}
+                sx={{
+                  "&:hover": {
+                    color: GREEN,
+                  },
+                }}
+              >
+                {item.label}
+              </Label>
             </Link>
           ))}
+          <CookieSettingsLink />
         </FastLinks>
         <AdressBox>
           <Image

@@ -10,6 +10,7 @@ import { Footer } from "@/components/shared/footer";
 import { GreenDivider } from "@/components/shared/green-divider";
 import { Analytics } from "@/components/analytics/analytics";
 import ClientWrapper from "@/components/client-wrapper";
+import { CookieConsent } from "@/components/cookie-consent/CookieConsent";
 
 export const opensans = Open_Sans({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
               {children}
               <Footer divider={<GreenDivider />} />
             </ClientWrapper>
+            <CookieConsent />
           </ThemeProvider>
         </AppRouterCacheProvider>
         <ChatWidget />
